@@ -1,5 +1,8 @@
 # Documentación de los datos de MDS
 
+> [!info] Relacionado
+> [[../Mapa del proyecto|Mapa]] · [[SINCRONIZACION_SENALES|Sincronización]] · [[EDA_SENALES|EDA]] · [[../datos/README|Datos locales]]
+
 ## 1. Resumen general
 
 La carpeta contiene dos conjuntos de datos fisiológicos obtenidos durante un experimento denominado `Toma_muestras_v2`:

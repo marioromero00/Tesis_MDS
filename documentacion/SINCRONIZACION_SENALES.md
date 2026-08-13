@@ -1,5 +1,8 @@
 # Coordinación y sincronización de señales MDS
 
+> [!info] Relacionado
+> [[../Mapa del proyecto|Mapa]] · [[DOCUMENTACION_DATOS_MDS|Fuentes]] · [[EDA_SENALES|EDA]] · [[../resultados/sincronizacion/coordinacion_sesiones.csv|Coordinación]]
+
 ## Objetivo
 
 El programa `sincronizar_senales.py` coordina las grabaciones existentes de EEG OpenBCI con las señales Tobii (eye tracking, pupila y GSR). Está basado en `Sincronizacion señales.ipynb`, pero transforma la parte de sincronización en un proceso ejecutable, auditable y conservador.

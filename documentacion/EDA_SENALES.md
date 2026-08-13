@@ -1,5 +1,8 @@
 # EDA multimodal de señales MDS
 
+> [!info] Navegación
+> [[../Mapa del proyecto|Mapa]] · [[EDA_EEG|EEG]] · [[EDA_GSR|GSR]] · [[EDA_EYE_PUPIL|Pupilometría y eye tracking]] · [[GRAFICOS_TESIS|Figuras]]
+
 Este índice reúne los análisis exploratorios reproducibles de las cuatro señales del conjunto MDS. Los resultados se guardan bajo `resultados/eda/`.
 
 ## Ejecución

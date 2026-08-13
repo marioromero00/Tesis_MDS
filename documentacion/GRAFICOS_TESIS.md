@@ -1,5 +1,8 @@
 # Gráficos EDA para la tesis
 
+> [!info] Relacionado
+> [[../Mapa del proyecto|Mapa]] · [[EDA_SENALES|EDA multimodal]] · [[RESUMEN_PROCESO|Resumen del proceso]]
+
 El script `scripts/graficos_tesis.py` transforma las tablas EDA ya calculadas en seis figuras editoriales consistentes. No vuelve a leer los archivos crudos.
 
 ## Figuras

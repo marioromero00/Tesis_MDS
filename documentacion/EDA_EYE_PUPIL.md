@@ -1,5 +1,16 @@
 # EDA de eye tracking y pupilometría
 
+> [!info] Relacionado
+> [[EDA_SENALES|EDA multimodal]] · [[EDA_GSR|GSR/Tobii]] · [[SINCRONIZACION_SENALES|Sincronización]] · [[../resultados/eda/eye_pupil/calidad_por_participante.csv|Resultados oculares]]
+
+## Pupilometría
+
+La calidad pupilar se resume mediante la validez individual y conjunta de ambos ojos.
+
+## Eye tracking
+
+La calidad de mirada se resume mediante puntos válidos, movimientos I-VT y fijaciones únicas.
+
 Este análisis explora las señales Tobii del archivo `Toma_muestras_v2 Data export.tsv`. Se diseñó para ser reproducible y evitar cargar los 1,47 GB completos en memoria: lee únicamente 18 columnas y procesa bloques de 250.000 filas.
 
 ## Ejecución

@@ -1,5 +1,8 @@
 # MDS — señales neurofisiológicas multimodales
 
+> [!abstract] Navegación Obsidian
+> Consulte [[Mapa del proyecto]] para recorrer datos, sincronización, EDA, resultados y scripts.
+
 Proyecto con EEG, GSR, pupilometría y eye tracking, sus manifiestos de sincronización y análisis exploratorios reproducibles.
 
 ## Estructura
@@ -52,6 +55,13 @@ Todos los scripts procesan los archivos grandes por streaming o directamente den
 - `documentacion/EDA_SENALES.md`: índice de las cuatro señales.
 - `documentacion/EDA_EEG.md`, `EDA_GSR.md`, `EDA_EYE_PUPIL.md`: detalle por modalidad.
 - `documentacion/Sincronizacion señales.ipynb`: notebook original de referencia.
+
+## Notas relacionadas
+
+- [[documentacion/RESUMEN_PROCESO|Resumen del procesamiento]]
+- [[documentacion/EDA_SENALES|EDA de las cuatro señales]]
+- [[documentacion/GRAFICOS_TESIS|Gráficos para la tesis]]
+- [[datos/README|Datos locales]]
 
 ## Precauciones
 

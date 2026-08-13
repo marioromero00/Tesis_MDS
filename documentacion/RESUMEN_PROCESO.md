@@ -1,5 +1,8 @@
 # Resumen completo del procesamiento MDS
 
+> [!info] Navegación
+> [[../Mapa del proyecto|Mapa]] · [[DOCUMENTACION_DATOS_MDS|Datos]] · [[SINCRONIZACION_SENALES|Sincronización]] · [[EDA_SENALES|EDA]] · [[GRAFICOS_TESIS|Gráficos]]
+
 ## Fuentes originales
 
 - `datos/Toma_muestras_v2 Data export.tsv`: 99 columnas de Tobii, con eye tracking, pupila, eventos y GSR.

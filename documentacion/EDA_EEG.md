@@ -1,5 +1,8 @@
 # EDA reproducible de la señal EEG
 
+> [!info] Relacionado
+> [[EDA_SENALES|EDA multimodal]] · [[SINCRONIZACION_SENALES|Sincronización]] · [[GRAFICOS_TESIS|Gráficos]] · [[../resultados/eda/eeg/eeg_resumen_sesiones.csv|Resultados EEG]]
+
 ## Objetivo y alcance
 
 `eda_eeg.py` caracteriza los 16 canales EXG de cada sesión incluida en

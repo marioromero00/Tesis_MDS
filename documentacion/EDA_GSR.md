@@ -1,5 +1,8 @@
 # EDA reproducible de la señal GSR
 
+> [!info] Relacionado
+> [[EDA_SENALES|EDA multimodal]] · [[EDA_EYE_PUPIL|Señales Tobii]] · [[SINCRONIZACION_SENALES|Sincronización]] · [[../resultados/eda/gsr/gsr_por_grabacion.csv|Resultados GSR]]
+
 ## Objetivo
 
 `eda_gsr.py` caracteriza la señal de respuesta galvánica de la piel incluida en `Toma_muestras_v2 Data export.tsv`. El análisis se hace por participante y grabación, usa el inventario creado durante la sincronización y evita cargar el archivo de 1,37 GiB completo en memoria.
