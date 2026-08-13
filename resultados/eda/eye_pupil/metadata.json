@@ -1,0 +1,12 @@
+{
+  "input": "Toma_muestras_v2 Data export.tsv",
+  "input_bytes": 1470821789,
+  "manifest": "sincronizacion_output\\inventario_tobii.csv",
+  "rows_total": 2984636,
+  "eye_rows": 2187110,
+  "participants": 49,
+  "sample_rows": 18000,
+  "unique_fixations": 122302,
+  "chunksize": 250000,
+  "quantiles_are_from_deterministic_sample": true
+}

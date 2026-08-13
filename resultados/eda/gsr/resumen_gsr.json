@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-08-12T23:30:07.436583+00:00",
+  "input": "C:\\Users\\MarioRomero\\Desktop\\MDS\\Toma_muestras_v2 Data export.tsv",
+  "input_bytes": 1470821789,
+  "rows_scanned": 2984636,
+  "recordings_with_gsr": 47,
+  "valid_gsr_samples": 530407,
+  "recordings_review": 0,
+  "method": {
+    "streaming": true,
+    "seed": 20260812,
+    "reservoir_per_recording": 10000,
+    "quantiles": "aproximados por reservoir sampling determinista",
+    "units": "no confirmadas por metadatos"
+  }
+}

@@ -1,26 +1,19 @@
-# Datos pesados EEG
-EDA/Datos EEG/
+# Datos crudos pesados (se mantienen fuera de Git)
+datos/*.tsv
+datos/*.zip
+datos/*.csv
+datos/*.parquet
 
-# Tesis y documentos grandes
-Tesis/
- ppt_imag/ppt_final_3_slides.pptx
-
-# Archivos generados
-EDA/epochs_output/
-
-# Archivos temporales
-*.pyc
+# Salidas temporales y caché
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-.DS_Storegit rm -r --cached "EDA/Datos EEG"
-git rm -r --cached "Tesis"
-git rm -r --cached "EDA/epochs_output"
-
-EDA/Datos EEG/
-EDA/epochs_output/
-Tesis/
-*.DS_Store
 .DS_Store
-.ipynb_checkpoints/
-__pycache__/
 
+# Entornos locales
+.venv/
+venv/
+.env
+
+# Resultados de prueba, no los resultados finales versionados
+resultados/eda/eeg_prueba/

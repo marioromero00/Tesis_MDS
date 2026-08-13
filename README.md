@@ -1,5 +1,62 @@
-aqui se guardara todo lo relacionado a tesis
+# MDS — señales neurofisiológicas multimodales
 
-Presentables: https://www.overleaf.com/project
-Datos: https://drive.google.com/drive/u/1/folders/1is9LIHXTgVnjTIIMXFd4mnylv_P1QgQa
-* Todo en data cruda
+Proyecto con EEG, GSR, pupilometría y eye tracking, sus manifiestos de sincronización y análisis exploratorios reproducibles.
+
+## Estructura
+
+```text
+MDS/
+├── datos/                 # originales sin modificar
+├── scripts/               # sincronización y EDA reproducibles
+├── documentacion/         # metodología e informes por señal
+├── resultados/
+│   ├── sincronizacion/    # inventarios y coordinación EEG–Tobii
+│   └── eda/               # tablas y gráficos por modalidad
+└── README.md
+```
+
+## Resumen de lo realizado
+
+1. Se inventariaron el TSV Tobii/GSR y las 104 sesiones OpenBCI del ZIP.
+2. Se reconstruyó un dominio UTC común y se emparejaron sesiones por participante y proximidad temporal.
+3. No se estimó drift sin triggers compartidos; `drift_scale=1.0` significa que no existe una corrección identificable.
+4. Se ejecutaron EDA independientes para EEG, GSR, pupilometría y eye tracking.
+5. Se instalaron Python 3.13, NumPy, pandas, Matplotlib, SciPy y PyArrow.
+6. Se adoptó un criterio EEG exploratorio flexible: utilizable si saturación y repetición plana son ≤30 %.
+
+## Calidad por fuente
+
+| Fuente | Criterio | Utilizable/válido |
+|---|---|---:|
+| EEG | Sesiones principales con saturación y repetición plana ≤30 % | 45/48 = **93,75 %** |
+| GSR | Grabaciones con señal correcta sobre las 49 Tobii | 47/49 = **95,92 %** |
+| Pupilometría | Ambos ojos válidos simultáneamente | **90,25 %** de muestras |
+| Eye tracking | Punto de mirada válido | **94,98 %** de muestras |
+
+En EEG se excluyen P1, P14 y P17. La regla es útil para exploración tolerante al ruido, pero las sesiones con 20–30 % de saturación deben seguir marcadas como baja calidad para análisis confirmatorios.
+
+## Ejecución
+
+Desde la raíz `MDS`:
+
+```powershell
+& "$env:LOCALAPPDATA\Programs\Python\Python313\python.exe" .\scripts\ejecutar_todo.py
+```
+
+Todos los scripts procesan los archivos grandes por streaming o directamente dentro del ZIP.
+
+## Documentación principal
+
+- `documentacion/DOCUMENTACION_DATOS_MDS.md`: estructura y diccionario de fuentes.
+- `documentacion/SINCRONIZACION_SENALES.md`: coordinación, offsets y limitaciones.
+- `documentacion/EDA_SENALES.md`: índice de las cuatro señales.
+- `documentacion/EDA_EEG.md`, `EDA_GSR.md`, `EDA_EYE_PUPIL.md`: detalle por modalidad.
+- `documentacion/Sincronizacion señales.ipynb`: notebook original de referencia.
+
+## Precauciones
+
+- No mezclar sesiones `test` con principales sin justificarlo.
+- Revisar P29 por offset y `Test_Participant` por falta de correspondencia.
+- P7 y P42 no tienen GSR.
+- Mantener las frecuencias nativas y recortar epochs mediante timestamps comunes.
+- Una sincronización submuestra requiere triggers observables en ambos dispositivos.
