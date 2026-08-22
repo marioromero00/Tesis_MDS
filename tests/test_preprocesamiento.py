@@ -11,6 +11,11 @@ SPEC = importlib.util.spec_from_file_location("preprocesamiento", SCRIPT)
 MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
 
+MODEL_SCRIPT = Path(__file__).parents[1] / "scripts" / "preparar_modelado.py"
+MODEL_SPEC = importlib.util.spec_from_file_location("preparar_modelado", MODEL_SCRIPT)
+MODEL_MODULE = importlib.util.module_from_spec(MODEL_SPEC)
+MODEL_SPEC.loader.exec_module(MODEL_MODULE)
+
 
 class TestPreprocesamiento(unittest.TestCase):
     def test_normaliza_solo_participantes_experimentales(self):
@@ -48,6 +53,20 @@ class TestPreprocesamiento(unittest.TestCase):
             config["eeg"]["excluded_quality_participants"],
             ["P1", "P14", "P17", "P25"],
         )
+
+    def test_particion_es_determinista_y_por_participante(self):
+        metadata = pd.DataFrame([
+            {"participant": f"P{i}", "timeline": f"G{i % 2}", "quality_eligible": True,
+             "eligible_primary": i != 3, "exclusion_reason": "sync" if i == 3 else "ninguna"}
+            for i in range(1, 13)
+        ])
+        config = {"random_seed": 7, "split": {"test_fraction": 0.2,
+                  "validation_fraction": 0.2, "sensitivity_only_participants": ["P3"]}}
+        first = MODEL_MODULE.participant_split(metadata, config)
+        second = MODEL_MODULE.participant_split(metadata, config)
+        pd.testing.assert_frame_equal(first, second)
+        self.assertEqual(first.participant.nunique(), len(first))
+        self.assertEqual(first.set_index("participant").loc["P3", "split"], "sensitivity")
 
 
 if __name__ == "__main__":

@@ -61,3 +61,12 @@ Los scripts escriben en `resultados/`; las decisiones, limitaciones y métricas 
 El pipeline secuencial generó 25.992 ventanas de 2 s con 50 % de solapamiento,
 sin atravesar cambios de estímulo. De ellas, 22.201 cumplen simultáneamente los
 criterios de cobertura y calidad. Véase [[PREPROCESAMIENTO_MULTIMODAL|el protocolo reproducible]].
+
+## Etiquetas y primera evaluación
+
+Se construyeron scores provisionales sin circularidad: Eye Tracking + pupila
+enseñan atención y GSR enseña activación. La partición congelada contiene 25
+participantes de entrenamiento, 8 de validación, 8 de prueba, P29 solo para
+sensibilidad y 6 exclusiones por calidad/disponibilidad. Los baselines estáticos
+quedaron cerca del nivel trivial en prueba; no existe todavía evidencia para
+afirmar predicción fuera de muestra. Véase [[ETIQUETAS_Y_BASELINES]].

@@ -1,0 +1,24 @@
+{
+  "config_sha256": "cb11a9fe558d1ec5b6e78583f11666ff623deae4fddf567cface15436af6970d",
+  "pipeline_sha256": "4895f41ac42f48d363b94f0f26aed6049b651f759b2e3790dbf1e151327758e4",
+  "requirements_sha256": "7dd54a902f87842a59f9b6c24a3c639aa1a91f5826dcdfcd5be0a0b31dc92183",
+  "input_sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c",
+  "rows": 25992,
+  "participants": 48,
+  "split_participants": {
+    "excluded": 6,
+    "sensitivity": 1,
+    "test": 8,
+    "train": 25,
+    "validation": 8
+  },
+  "eligible_attention_rows": 21719,
+  "eligible_arousal_rows": 21719,
+  "attention_equal_vs_pca_spearman": 0.4544672707611477,
+  "arousal_6s_vs_pca_spearman": 0.6675120237387194,
+  "notes": [
+    "P29 solo sensibilidad",
+    "Pupila sin correccion luminica",
+    "Etiquetas provisionales hasta aprobacion del profesor"
+  ]
+}

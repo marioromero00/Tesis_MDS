@@ -22,6 +22,9 @@ flowchart LR
     D --> E[Control de calidad]
     E --> F[Gráficos de tesis]
     F --> G[Preprocesamiento multimodal]
+    G --> H[Pseudoetiquetas]
+    H --> I[Partición por participante]
+    I --> J[Baselines estáticos]
 ```
 
 - [[documentacion/SINCRONIZACION_SENALES|Sincronización EEG–Tobii]]
@@ -29,6 +32,9 @@ flowchart LR
 - [[documentacion/GRAFICOS_TESIS|Figuras finales]]
 - [[documentacion/PREPROCESAMIENTO_MULTIMODAL|Preprocesamiento reproducible]]
 - [[resultados/preprocesamiento/auditoria_participantes.csv|Auditoría del preprocesamiento]]
+- [[documentacion/ETIQUETAS_Y_BASELINES|Etiquetas, partición y baselines]]
+- [[resultados/modelado/particion_participantes.csv|Partición congelada]]
+- [[resultados/modelado/metricas_baselines.csv|Métricas fuera de muestra]]
 - [[resultados/resumen_calidad_fuentes.csv|Calidad por fuente]]
 
 ## Señales
@@ -49,6 +55,8 @@ flowchart LR
 - [[scripts/graficos_tesis.py|Gráficos]]
 - [[scripts/ejecutar_todo.py|Pipeline completo]]
 - [[scripts/preprocesamiento_secuencial.py|Preprocesamiento multimodal]]
+- [[scripts/preparar_modelado.py|Pseudoetiquetas y partición]]
+- [[scripts/baselines_estaticos.py|Baselines estáticos]]
 
 ## Infraestructura
 

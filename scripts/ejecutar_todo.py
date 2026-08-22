@@ -24,21 +24,23 @@ def main() -> None:
     tobii = str((ROOT / config["inputs"]["tobii_tsv"]).resolve())
     eeg = str((ROOT / config["inputs"]["eeg_zip"]).resolve())
     sync = ROOT / "resultados" / "sincronizacion"
-    run("1/6 Sincronizacion", str(SCRIPTS / "sincronizar_senales.py"),
+    run("1/8 Sincronizacion", str(SCRIPTS / "sincronizar_senales.py"),
         "--tobii", tobii, "--eeg", eeg, "--output-dir", str(sync))
-    run("2/6 EDA EEG", str(SCRIPTS / "eda_eeg.py"),
+    run("2/8 EDA EEG", str(SCRIPTS / "eda_eeg.py"),
         "--zip", eeg, "--manifest", str(sync / "inventario_eeg.csv"),
         "--coordination", str(sync / "coordinacion_sesiones.csv"),
         "--output", str(ROOT / "resultados" / "eda" / "eeg"))
-    run("3/6 EDA GSR", str(SCRIPTS / "eda_gsr.py"),
+    run("3/8 EDA GSR", str(SCRIPTS / "eda_gsr.py"),
         "--input", tobii, "--manifest", str(sync / "inventario_tobii.csv"),
         "--output", str(ROOT / "resultados" / "eda" / "gsr"))
-    run("4/6 EDA pupila y mirada", str(SCRIPTS / "eda_eye_pupil.py"),
+    run("4/8 EDA pupila y mirada", str(SCRIPTS / "eda_eye_pupil.py"),
         "--input", tobii, "--manifest", str(sync / "inventario_tobii.csv"),
         "--output", str(ROOT / "resultados" / "eda" / "eye_pupil"))
-    run("5/6 Figuras de tesis", str(SCRIPTS / "graficos_tesis.py"))
-    run("6/6 Preprocesamiento multimodal", str(SCRIPTS / "preprocesamiento_secuencial.py"),
+    run("5/8 Figuras de tesis", str(SCRIPTS / "graficos_tesis.py"))
+    run("6/8 Preprocesamiento multimodal", str(SCRIPTS / "preprocesamiento_secuencial.py"),
         "--config", str(CONFIG))
+    run("7/8 Etiquetas y particion", str(SCRIPTS / "preparar_modelado.py"))
+    run("8/8 Baselines estaticos", str(SCRIPTS / "baselines_estaticos.py"))
     print("\nPipeline completo terminado. Revise resultados/ y el manifiesto de ejecucion.")
 
 

@@ -27,6 +27,7 @@ MDS/
 5. Se implementó y ejecutó un preprocesamiento multimodal secuencial sobre ventanas UTC comunes.
 6. Se fijaron configuración, dependencias, pruebas, hashes y auditoría para reproducirlo.
 7. Se adoptó un criterio EEG exploratorio flexible: utilizable si saturación y repetición plana son ≤30 %.
+8. Se congeló una partición por participante y se ejecutaron baselines estáticos para atención y activación.
 
 ## Calidad por fuente
 
@@ -64,6 +65,7 @@ python .\scripts\ejecutar_todo.py
 - `documentacion/EDA_SENALES.md`: índice de las cuatro señales.
 - `documentacion/EDA_EEG.md`, `EDA_GSR.md`, `EDA_EYE_PUPIL.md`: detalle por modalidad.
 - `documentacion/PREPROCESAMIENTO_MULTIMODAL.md`: protocolo, características, calidad y reproducción.
+- `documentacion/ETIQUETAS_Y_BASELINES.md`: pseudoetiquetas sin circularidad, partición y resultados fuera de muestra.
 - `documentacion/Sincronizacion señales.ipynb`: notebook original de referencia.
 
 ## Notas relacionadas

@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "random_seed": 20260822,
+  "input_features": "resultados/preprocesamiento/caracteristicas_multimodales.csv",
+  "output_dir": "resultados/modelado",
+  "split": {
+    "unit": "participant",
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "test_fraction": 0.2,
+    "stratify_by": "timeline",
+    "sensitivity_only_participants": ["P29"]
+  },
+  "attention_teacher": {
+    "eye_features": [
+      "fixation_total_ms",
+      "fixation_mean_ms",
+      "gaze_dispersion_2d_px",
+      "gaze_path_length_px"
+    ],
+    "pupil_features": ["pupil_mean_z"],
+    "direction": [1, 1, -1, -1, 1]
+  },
+  "arousal_teacher": {
+    "features": [
+      "gsr_tonic_mean_z",
+      "gsr_phasic_mean_z",
+      "gsr_scr_count",
+      "gsr_scr_mean_prominence_z"
+    ],
+    "context_seconds": 6
+  },
+  "labels": {
+    "classes": ["bajo", "medio", "alto"],
+    "quantiles": [0.3333333333, 0.6666666667],
+    "normalization": "within_participant_offline"
+  },
+  "baselines": {
+    "random_forest_estimators": 200,
+    "attention_predictors": ["eeg", "gsr"],
+    "arousal_predictors": ["eeg", "eye", "pupil"]
+  }
+}
