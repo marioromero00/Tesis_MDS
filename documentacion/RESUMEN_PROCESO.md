@@ -28,7 +28,7 @@ Regla flexible final:
 utilizable = rail_pct <= 30 % y flat_repeat_pct <= 30 %
 ```
 
-Resultado: 45/48 (93,75 %) utilizables. Se excluyen P1, P14 y P17. La regla es permisiva: una sesión utilizable aún puede contener ruido considerable y debe revisarse antes de inferencia neurofisiológica.
+Resultado corregido: 44/48 (91,67 %) utilizables. Se excluyen P1, P14, P17 y P25. La selección del TXT más largo por sesión permitió detectar que el registro principal de P25 supera el umbral de repetición plana. La regla es permisiva y no sustituye una revisión neurofisiológica.
 
 ### GSR
 
@@ -55,3 +55,9 @@ Ejecutar desde la raíz:
 ```
 
 Los scripts escriben en `resultados/`; las decisiones, limitaciones y métricas están documentadas en `documentacion/`.
+
+## Preprocesamiento multimodal
+
+El pipeline secuencial generó 25.992 ventanas de 2 s con 50 % de solapamiento,
+sin atravesar cambios de estímulo. De ellas, 22.201 cumplen simultáneamente los
+criterios de cobertura y calidad. Véase [[PREPROCESAMIENTO_MULTIMODAL|el protocolo reproducible]].

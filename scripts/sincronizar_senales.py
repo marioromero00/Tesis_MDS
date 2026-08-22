@@ -141,9 +141,17 @@ def read_eeg_sessions(path: Path) -> tuple[list[EEGSession], list[dict[str, str]
     sessions: dict[str, EEGSession] = {}
     diagnostics: list[dict[str, str]] = []
     with zipfile.ZipFile(path) as archive:
-        entries = sorted(archive.infolist(), key=lambda e: (e.filename.count("/"), e.filename))
-        # TXT tiene timestamp legible y metadatos; CSV es fallback.
-        entries.sort(key=lambda e: 0 if e.filename.lower().endswith(".txt") else 1)
+        # TXT tiene timestamp legible y metadatos; CSV es fallback. Si una sesion
+        # contiene varios TXT (p. ej. un arranque abortado), se conserva el mas
+        # largo: representa la adquisicion principal y evita elegir un fragmento.
+        entries = sorted(
+            archive.infolist(),
+            key=lambda e: (
+                0 if e.filename.lower().endswith(".txt") else 1,
+                -e.file_size,
+                e.filename,
+            ),
+        )
         for entry in entries:
             if entry.is_dir() or not entry.filename.lower().endswith((".txt", ".csv")):
                 continue

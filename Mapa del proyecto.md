@@ -21,18 +21,21 @@ flowchart LR
     C --> D[EDA por modalidad]
     D --> E[Control de calidad]
     E --> F[Gráficos de tesis]
+    F --> G[Preprocesamiento multimodal]
 ```
 
 - [[documentacion/SINCRONIZACION_SENALES|Sincronización EEG–Tobii]]
 - [[documentacion/EDA_SENALES|Índice de EDA]]
 - [[documentacion/GRAFICOS_TESIS|Figuras finales]]
+- [[documentacion/PREPROCESAMIENTO_MULTIMODAL|Preprocesamiento reproducible]]
+- [[resultados/preprocesamiento/auditoria_participantes.csv|Auditoría del preprocesamiento]]
 - [[resultados/resumen_calidad_fuentes.csv|Calidad por fuente]]
 
 ## Señales
 
 | Señal | Nota | Resultado |
 |---|---|---|
-| EEG | [[documentacion/EDA_EEG|EDA EEG]] | 45/48 utilizables |
+| EEG | [[documentacion/EDA_EEG|EDA EEG]] | 44/48 utilizables |
 | GSR | [[documentacion/EDA_GSR|EDA GSR]] | 47/49 disponibles |
 | Pupilometría | [[documentacion/EDA_EYE_PUPIL#Pupilometría|EDA pupilar]] | 90,25 % válido |
 | Eye tracking | [[documentacion/EDA_EYE_PUPIL#Eye tracking|EDA de mirada]] | 94,98 % válido |
@@ -45,6 +48,7 @@ flowchart LR
 - [[scripts/eda_eye_pupil.py|EDA ocular]]
 - [[scripts/graficos_tesis.py|Gráficos]]
 - [[scripts/ejecutar_todo.py|Pipeline completo]]
+- [[scripts/preprocesamiento_secuencial.py|Preprocesamiento multimodal]]
 
 ## Infraestructura
 

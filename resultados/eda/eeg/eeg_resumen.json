@@ -1,20 +1,20 @@
 {
   "parameters": {
-    "zip": "datos/eeg_recordings_exp_V2.zip",
-    "manifest": "resultados/sincronizacion/inventario_eeg.csv",
-    "coordination": "resultados/sincronizacion/coordinacion_sesiones.csv",
+    "zip": "..\\_Archivo\\Duplicados raiz\\datos\\eeg_recordings_exp_V2.zip",
+    "manifest": ".\\resultados\\sincronizacion\\inventario_eeg.csv",
+    "coordination": ".\\resultados\\sincronizacion\\coordinacion_sesiones.csv",
     "stride": 10,
     "rail_uv": 187500.0,
     "quality_rule": "utilizable si rail_pct <= 30 y flat_repeat_pct <= 30"
   },
   "sessions_analyzed": 104,
   "quality_counts": {
-    "excluir": 50,
-    "utilizable": 54
+    "excluir": 51,
+    "utilizable": 53
   },
   "effective_hz": {
-    "median": 125.14541435555842,
-    "p05": 125.08276217438414,
+    "median": 125.14350488701194,
+    "p05": 125.01963002283644,
     "p95": 125.17593204560922
   },
   "rail_pct_median": 27.94487593887316

@@ -20,7 +20,7 @@ Dependencias instaladas: NumPy, pandas, Matplotlib, SciPy y PyArrow.
 
 | Señal | Documentación | Salida | Resultado principal |
 |---|---|---|---|
-| EEG | `EDA_EEG.md` | `resultados/eda/eeg/` | 45/48 sesiones principales utilizables con el umbral flexible de 30 %. |
+| EEG | `EDA_EEG.md` | `resultados/eda/eeg/` | 44/48 sesiones principales utilizables con el umbral flexible de 30 %. |
 | GSR | `EDA_GSR.md` | `resultados/eda/gsr/` | 47/49 grabaciones disponibles y correctas; frecuencia cercana a 15 Hz. |
 | Pupilometría | `EDA_EYE_PUPIL.md` | `resultados/eda/eye_pupil/` | 90,25 % de muestras con ambos ojos válidos. |
 | Eye tracking | `EDA_EYE_PUPIL.md` | `resultados/eda/eye_pupil/` | 94,98 % de muestras con mirada válida y 122.302 fijaciones. |

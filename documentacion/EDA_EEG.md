@@ -81,13 +81,13 @@ Los registros TXT y BrainFlow alternan índices de muestra pares en algunos
 archivos, pero sus timestamps avanzan aproximadamente cada 8 ms; por eso la
 frecuencia se estima desde timestamps y no desde la diferencia del índice.
 
-## Resultado de la ejecución del 12 de agosto de 2026
+## Resultado actualizado el 22 de agosto de 2026
 
 Se procesaron las 104 sesiones del manifiesto sin errores. Para el informe final
-se consideran las 48 sesiones principales: 45 son `utilizable` y 3 se marcan
-`excluir`, equivalentes a 93,75 % utilizable. Se excluyen P17 (59,21 %), P1
-(37,90 %) y P14 (31,24 %) por superar 30 %. La frecuencia efectiva mediana fue 125,145 Hz
-(percentiles 5–95: 125,083–125,176 Hz), coherente con 125 Hz nominales. En
+se consideran las 48 sesiones principales: 44 son `utilizable` y 4 se marcan
+`excluir`, equivalentes a 91,67 % utilizable. Se excluyen P17 (59,21 %), P1
+(37,90 %), P14 (31,24 %) y P25, cuya repetición plana alcanza 36,05 %. La
+frecuencia efectiva mediana global fue 125,144 Hz, coherente con 125 Hz nominales. En
 cambio, la mediana global de canal-muestras en rail fue 27,945%, evidencia de
 que la saturación es el principal problema de calidad del conjunto crudo.
 
@@ -97,3 +97,7 @@ calcularon con `stride=10`; conviene confirmarlos con `--stride 1` antes de
 excluir datos. La alta saturación explica por qué no se presenta potencia por
 bandas como resultado primario: un espectro de canales clavados estaría
 dominado por el defecto de adquisición y podría inducir conclusiones erróneas.
+
+La actualización corrige sesiones con varios TXT: se usa el archivo más largo,
+evitando fragmentos de arranque. Esto recuperó la adquisición completa de P48
+(846,55 s) y reveló la baja calidad del registro principal de P25.

@@ -35,7 +35,10 @@ def pct_label(ax, bars, values):
 
 def overall_quality():
     names=["EEG","GSR","Pupilometría","Eye tracking"]
-    vals=[93.75,95.92,90.25,94.98]
+    eeg=pd.read_csv(EDA/"eeg"/"eeg_resumen_sesiones.csv")
+    eeg=eeg[eeg.kind.eq("principal")]
+    eeg_pct=100*eeg.quality.eq("utilizable").mean()
+    vals=[eeg_pct,95.92,90.25,94.98]
     fig,ax=plt.subplots(figsize=(8.2,4.7))
     bars=ax.barh(names[::-1],vals[::-1],color=[COLORS["blue"],COLORS["gold"],COLORS["teal"],COLORS["green"]][::-1],height=.58)
     ax.set_xlim(0,105); ax.set_xlabel("Señal utilizable o válida (%)")

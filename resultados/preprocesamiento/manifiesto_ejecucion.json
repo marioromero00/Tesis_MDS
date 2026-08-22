@@ -1,0 +1,109 @@
+{
+  "generated_at_utc": "2026-08-22T12:03:54.383380+00:00",
+  "config_sha256": "e9b9947a9f7758b8a46e65520d4e74940fee4776f09e140ca889348fe8d89c9c",
+  "pipeline_sha256": "4d09e89a47bb7e6f54955a5b543b8769b889e2f33fdf363a9dd56020e9ddf071",
+  "requirements_sha256": "937071f62de903741c591a0efbab866e90692745846ebae5f1acda3e18e0fcbc",
+  "inputs": {
+    "tobii_tsv": {
+      "configured_path": "../_Archivo/Duplicados raiz/datos/Toma_muestras_v2 Data export.tsv",
+      "bytes": 1470821789,
+      "sha256": "0e7f2461495ded0c260f5474266bb526897643763bf1fca4b9cc3796ab8c2203"
+    },
+    "eeg_zip": {
+      "configured_path": "../_Archivo/Duplicados raiz/datos/eeg_recordings_exp_V2.zip",
+      "bytes": 1666099115,
+      "sha256": "152ceddb9bb06a05b0701d276e867729836518448cf597ab3c6f74b39d933e79"
+    },
+    "session_manifest": {
+      "configured_path": "resultados/sincronizacion/coordinacion_sesiones.csv",
+      "bytes": 9409,
+      "sha256": "1a9d6f33b052b77157bec01fb6325938a9c3ee739f6f92758d1636b28858a53d"
+    }
+  },
+  "runtime_seconds": 178.849,
+  "python": "3.13.15 (tags/v3.13.15:4061bc4, Aug  5 2026, 13:05:39) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0"
+  },
+  "parameters": {
+    "schema_version": "1.0.0",
+    "random_seed": 20260822,
+    "inputs": {
+      "tobii_tsv": "../_Archivo/Duplicados raiz/datos/Toma_muestras_v2 Data export.tsv",
+      "eeg_zip": "../_Archivo/Duplicados raiz/datos/eeg_recordings_exp_V2.zip",
+      "session_manifest": "resultados/sincronizacion/coordinacion_sesiones.csv"
+    },
+    "output_dir": "resultados/preprocesamiento",
+    "participants": "P1-P48",
+    "window_seconds": 2.0,
+    "step_seconds": 1.0,
+    "excluded_stimuli": [
+      "Eyetracker Calibration"
+    ],
+    "minimum_coverage": {
+      "gsr": 0.5,
+      "pupil": 0.5,
+      "gaze": 0.5,
+      "eeg": 0.8
+    },
+    "gsr": {
+      "nominal_hz": 15.0,
+      "tonic_lowpass_hz": 0.05,
+      "scr_prominence_z": 0.05
+    },
+    "pupil": {
+      "nominal_hz": 60.0,
+      "maximum_interpolation_gap_seconds": 0.2
+    },
+    "eeg": {
+      "nominal_hz": 125.0,
+      "channels": 16,
+      "excluded_quality_participants": [
+        "P1",
+        "P14",
+        "P17",
+        "P25"
+      ],
+      "bands_hz": {
+        "delta": [
+          1.0,
+          4.0
+        ],
+        "theta": [
+          4.0,
+          8.0
+        ],
+        "alpha": [
+          8.0,
+          13.0
+        ],
+        "beta": [
+          13.0,
+          30.0
+        ],
+        "gamma": [
+          30.0,
+          45.0
+        ]
+      }
+    }
+  },
+  "outputs": {
+    "caracteristicas_multimodales.csv": {
+      "rows": 25992,
+      "sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c"
+    },
+    "auditoria_participantes.csv": {
+      "rows": 48,
+      "sha256": "792ee6ca1227dbb2c835d147f3c9256a6037224f09505a163ffece18f63009bb"
+    }
+  },
+  "status_counts": {
+    "candidato": 25510,
+    "revisar_offset": 482
+  },
+  "valid_multimodal_windows": 22201
+}

@@ -17,3 +17,7 @@ venv/
 
 # Resultados de prueba, no los resultados finales versionados
 resultados/eda/eeg_prueba/
+
+# Intermedios y salidas pesadas del preprocesamiento reproducible
+resultados/preprocesamiento/.work/
+resultados/preprocesamiento/*.parquet

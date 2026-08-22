@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0.0",
+  "random_seed": 20260822,
+  "inputs": {
+    "tobii_tsv": "../_Archivo/Duplicados raiz/datos/Toma_muestras_v2 Data export.tsv",
+    "eeg_zip": "../_Archivo/Duplicados raiz/datos/eeg_recordings_exp_V2.zip",
+    "session_manifest": "resultados/sincronizacion/coordinacion_sesiones.csv"
+  },
+  "output_dir": "resultados/preprocesamiento",
+  "participants": "P1-P48",
+  "window_seconds": 2.0,
+  "step_seconds": 1.0,
+  "excluded_stimuli": ["Eyetracker Calibration"],
+  "minimum_coverage": {
+    "gsr": 0.5,
+    "pupil": 0.5,
+    "gaze": 0.5,
+    "eeg": 0.8
+  },
+  "gsr": {
+    "nominal_hz": 15.0,
+    "tonic_lowpass_hz": 0.05,
+    "scr_prominence_z": 0.05
+  },
+  "pupil": {
+    "nominal_hz": 60.0,
+    "maximum_interpolation_gap_seconds": 0.2
+  },
+  "eeg": {
+    "nominal_hz": 125.0,
+    "channels": 16,
+    "excluded_quality_participants": ["P1", "P14", "P17", "P25"],
+    "bands_hz": {
+      "delta": [1.0, 4.0],
+      "theta": [4.0, 8.0],
+      "alpha": [8.0, 13.0],
+      "beta": [13.0, 30.0],
+      "gamma": [30.0, 45.0]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 fuente,unidad_evaluada,numerador_valido,denominador,porcentaje,criterio
-EEG,sesiones principales,45,48,93.75,saturacion y repeticion plana <= 30%
+EEG,sesiones principales,44,48,91.67,saturacion y repeticion plana <= 30%
 GSR,grabaciones Tobii,47,49,95.92,señal presente y controles EDA ok
 Pupilometria,muestras eye tracker,1973941,2187110,90.25,ambos ojos validos simultaneamente
 Eye tracking,muestras eye tracker,2077373,2187110,94.98,punto de mirada valido
