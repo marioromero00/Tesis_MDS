@@ -1,0 +1,298 @@
+{
+  "date": "06-09-2026",
+  "section": "01 Tesis MDS",
+  "archive": "Tesis_Vault_06-09-2026.zip",
+  "archive_sha256": "c972ac9a5eade2ea43dd9733fda966227c5341fad6e7f2cad26eadd5f31b0954",
+  "files": [
+    {
+      "path": "Analisis de Datos/DOCUMENTACION_DATOS_MDS.md",
+      "bytes": 13782,
+      "sha256": "7640a6161b86c38440acad9e97a367aa689c7ab71dfc2cb2e059d172878772c8"
+    },
+    {
+      "path": "Analisis de Datos/EDA_EEG.md",
+      "bytes": 5170,
+      "sha256": "9e8ccd3332c4c68580509dc3473f9176147afc49770eaf236904599b22582aae"
+    },
+    {
+      "path": "Analisis de Datos/EDA_EYE_PUPIL.md",
+      "bytes": 3968,
+      "sha256": "25c80568b855b3a1800f1c8523d7d9ce79602147e5f574f017a64ca0134fd546"
+    },
+    {
+      "path": "Analisis de Datos/EDA_GSR.md",
+      "bytes": 5034,
+      "sha256": "940c846a0c01e5c6024394763992c1e9cb1c1c3c85d9a3691b82ddab69e923fa"
+    },
+    {
+      "path": "Analisis de Datos/EDA_SENALES.md",
+      "bytes": 2586,
+      "sha256": "2fb63006b7595e5a79ee6f3b4aedddb9171bd8934061af3904515ed7c721bd9c"
+    },
+    {
+      "path": "Analisis de Datos/ETIQUETAS_Y_BASELINES.md",
+      "bytes": 7226,
+      "sha256": "6a7e569981fbef6f2b18bc7058b7c3e4441fd2464d67889858b93fe87ce335c7"
+    },
+    {
+      "path": "Analisis de Datos/GRAFICOS_TESIS.md",
+      "bytes": 1343,
+      "sha256": "c772acb923f22fdf53a5337fefd477ca34a971ed1cf1ae9ff1d5ef764f61755e"
+    },
+    {
+      "path": "Analisis de Datos/Librerias.md",
+      "bytes": 4741,
+      "sha256": "578376d4ffe032b07548f8d8b3f7bf66958b7995bc82e14f67d95cafae91619a"
+    },
+    {
+      "path": "Analisis de Datos/Mapa del proyecto.md",
+      "bytes": 5800,
+      "sha256": "617ec9a76f299ca367b9ecd1865885458747dd768c1bcf092545cb6ad55e2fbb"
+    },
+    {
+      "path": "Analisis de Datos/PREPROCESAMIENTO_MULTIMODAL.md",
+      "bytes": 4355,
+      "sha256": "8d2418e30671522187358452ac5bc00e40fee39d80c9f9c3cc225cf0d6d89a5b"
+    },
+    {
+      "path": "Analisis de Datos/RESUMEN_PROCESO.md",
+      "bytes": 3814,
+      "sha256": "ec023bb50114663cefe379a1cf60f582f65b72fc4830d148c07e175de66378c4"
+    },
+    {
+      "path": "Analisis de Datos/SINCRONIZACION_SENALES.md",
+      "bytes": 6532,
+      "sha256": "e5001112682c1dfe1e07739784cee059bb6ac6d5e854ec24eef8a56be5add975"
+    },
+    {
+      "path": "attachments/Analisis de Datos/01_muestras_validas.svg",
+      "bytes": 10284,
+      "sha256": "b5553cfe19a9b1bc6131363b0438c133751eac60c4d1e17b02ababd248d42c16"
+    },
+    {
+      "path": "attachments/Analisis de Datos/01_resumen_calidad_modalidades.png",
+      "bytes": 100404,
+      "sha256": "44419002de1b9e0a3e64884198535673d1113058f7bb369aa586f51bbb137f2f"
+    },
+    {
+      "path": "attachments/Analisis de Datos/02_eeg_saturacion_participantes.png",
+      "bytes": 207143,
+      "sha256": "4416084fbe8fc867c41396834680bc690e14dbd644639ed61659e53cdd3c4245"
+    },
+    {
+      "path": "attachments/Analisis de Datos/02_frecuencia_muestreo.svg",
+      "bytes": 10207,
+      "sha256": "d70dc1f4c43c7f2ff38bd046ed3f1196dd0511cd8443cb9d686d2d78cb9c7d2d"
+    },
+    {
+      "path": "attachments/Analisis de Datos/03_eeg_resumen_calidad.png",
+      "bytes": 144210,
+      "sha256": "9952579e927a971e63dfa2406b0bb7dda8eb772f2810c4f48367a49225eaf57e"
+    },
+    {
+      "path": "attachments/Analisis de Datos/03_mediana_gsr.svg",
+      "bytes": 10225,
+      "sha256": "b2fcac8fd072dc1d2ea9ce115d9f9c57233d8a53e00b1c8a0aec627138ae1c1b"
+    },
+    {
+      "path": "attachments/Analisis de Datos/04_gsr_resumen.png",
+      "bytes": 209273,
+      "sha256": "b15395eac907e2cf2cc9ca1a91e182f9571ebf8154601eee0cbc3a8d18cfa38b"
+    },
+    {
+      "path": "attachments/Analisis de Datos/04_trazas_normalizadas.svg",
+      "bytes": 1032292,
+      "sha256": "cfcd7b5d99fff4d7167eeee6a76a931eebe3b248beb489e02fa2acd0bd731731"
+    },
+    {
+      "path": "attachments/Analisis de Datos/05_eye_pupil_validez_participantes.png",
+      "bytes": 119845,
+      "sha256": "be7afdb690150701e352922fac1e0bac7323948f770a3ada1f6fb7fd5c271df8"
+    },
+    {
+      "path": "attachments/Analisis de Datos/06_eye_tracking_movimientos_fijaciones.png",
+      "bytes": 167614,
+      "sha256": "400c7809acdc7161582011b81aaacb8c5ec9ac8cf73c56ce1f4270f2f83bc60d"
+    },
+    {
+      "path": "attachments/Analisis de Datos/calidad_por_participante.png",
+      "bytes": 59128,
+      "sha256": "6d275e86de8c05c24525610812ec9a0dff3d7b18fe6522fab5e015e994aa2bb7"
+    },
+    {
+      "path": "attachments/Analisis de Datos/densidad_mirada.png",
+      "bytes": 221642,
+      "sha256": "9647f7b94e3ecf9aad80ec0589711a3e31a986b1ffbd2d90b78d84eccd1f0d71"
+    },
+    {
+      "path": "attachments/Analisis de Datos/eeg_frecuencia_efectiva.svg",
+      "bytes": 17437,
+      "sha256": "eb3d18316b0fa598d4d916e9e5fe0f933f6f01d6b048e9442b3362908df01b2c"
+    },
+    {
+      "path": "attachments/Analisis de Datos/eeg_repeticion_plana.svg",
+      "bytes": 17403,
+      "sha256": "e1c0f8f02ee129930ecca669446f1b881cba4fb1700fe47a957fbd73cfd9e2cc"
+    },
+    {
+      "path": "attachments/Analisis de Datos/eeg_saturacion.svg",
+      "bytes": 17232,
+      "sha256": "e944424beb6897171655a69f968694193b83dc29bb0cc9b91534ecb6d87961d7"
+    },
+    {
+      "path": "attachments/Analisis de Datos/pupila_y_movimientos.png",
+      "bytes": 50130,
+      "sha256": "bccc1f595da20e221b70d791d7eaa59aa0f5adf19ec92621e5296318841860bc"
+    },
+    {
+      "path": "attachments/Auditoria Presentacion Baselines - 06-09-2026.json",
+      "bytes": 837,
+      "sha256": "7f2909d0d653a42c5da67e6eb934882235fc52c29d13d1c06e2eea31616ed183"
+    },
+    {
+      "path": "Avances/Avance - 05-09-2026 (Baselines Entrenados y Guardados).md",
+      "bytes": 5984,
+      "sha256": "9dbb0ed4affdf43d073b041b4ee1be73d3d51ccfabc92b2abfeb21b1aa1c192c"
+    },
+    {
+      "path": "Avances/Avance - 06-09-2026 (Presentacion Resultados Baselines).md",
+      "bytes": 3272,
+      "sha256": "d237a85525f4cd0605cb89c8cb11653fa3f0eb221eafc9e569a09344b575f1b1"
+    },
+    {
+      "path": "Avances/Avance - 10-08-2026 (Hipotesis de Investigacion).md",
+      "bytes": 1343,
+      "sha256": "515470300ad52a0a4479959bef2a28464b5dc488f014603f779a3c39e2b7857b"
+    },
+    {
+      "path": "Avances/Avance - 17-08-2026 (Capitulo 1 y Marco Teorico 2.1).md",
+      "bytes": 2515,
+      "sha256": "702b03f7c67a499e195c73672a321e72a43c601d82186d423bcf6c876e0ac8d3"
+    },
+    {
+      "path": "Avances/Avance - 22-08-2026 (Etiquetas Particion y Baselines).md",
+      "bytes": 4387,
+      "sha256": "85ea8134d1a42e38e4f9de92cf7ef191bfbc41169119346c6e08eaa1dfcf441a"
+    },
+    {
+      "path": "Avances/Avance - 22-08-2026 (Frecuencia EEG y Limpieza de Expresion Facial).md",
+      "bytes": 4882,
+      "sha256": "be1aa65c764726c789c63b1dcefa0c147b4ffe902f64a593f8e435f894b970d7"
+    },
+    {
+      "path": "Avances/Avance - 22-08-2026 (Marco Teorico 2.1.2 UX).md",
+      "bytes": 2791,
+      "sha256": "9f9b2c913c9f98e276ef18432ed640387cdcc368131ce5a956062cdd628ce418"
+    },
+    {
+      "path": "Avances/Avance - 22-08-2026 (Pipeline Multimodal Reproducible).md",
+      "bytes": 2700,
+      "sha256": "14b42c3dc68529ca58f3d884afd80f0a8ca2ac41a984cbb70ad1441c0a946257"
+    },
+    {
+      "path": "Avances/Avance - 22-08-2026 (Preprocesamiento GSR Pupila y Eye Tracking).md",
+      "bytes": 5607,
+      "sha256": "2613801acb78a72ec5b6b8ea5ce1844e6abd0d79e60ae6abf7789eb1c5daed2d"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 4986,
+      "sha256": "8911a955f588b798261aee8860719789d4f7f2fd371e84c2c364af9c68d4328a"
+    },
+    {
+      "path": "Diseno Metodologico/Etiqueta Atencion.md",
+      "bytes": 9771,
+      "sha256": "d734b0effa1b3da3ce33e6dd4e8485b60c03f40f54375ffe16f864a020d78320"
+    },
+    {
+      "path": "Diseno Metodologico/Etiqueta Emocion.md",
+      "bytes": 8553,
+      "sha256": "905718ae525f244f8e330ea0829796163e3ae73d64a2d2962dd5c2694d874879"
+    },
+    {
+      "path": "Diseno Metodologico/Modelo Profesor - Decisiones.md",
+      "bytes": 8937,
+      "sha256": "0b17155557799f70db472429bede01d3efba836dd3ae8a8b837089d59ccd96f3"
+    },
+    {
+      "path": "Diseno Metodologico/Resumen Diseño Etiquetas y Modelos.md",
+      "bytes": 5006,
+      "sha256": "8ff3ba38c793945d0594590f0974f347e963a8c2c842c562151713776338e80d"
+    },
+    {
+      "path": "Escritura/Estructura Tesis.md",
+      "bytes": 30450,
+      "sha256": "fb4467dbfca2eb5732fccae439a33673a383eb02436f722a4cb3e19539be81b8"
+    },
+    {
+      "path": "Marco Teorico/Atencion.md",
+      "bytes": 2696,
+      "sha256": "8b1a6620262cdcd340e3dbfa3a3e47aa44706a2a1e32f8d73bdcb1de09419db4"
+    },
+    {
+      "path": "Marco Teorico/Problema e hipótesis.md",
+      "bytes": 9280,
+      "sha256": "a3112489649d37b055c7af58748f0fad05751fd1f8f14518f26371a104be5ad8"
+    },
+    {
+      "path": "Marco Teorico/Referencia Tesis Previas.md",
+      "bytes": 7506,
+      "sha256": "88674f58400637a1f59d03b3394373f7d974670fa2702ad6227c404f56fe4b03"
+    },
+    {
+      "path": "presentaciones/Avance Capitulo 1 y Verificaciones - 22-08-2026.md",
+      "bytes": 9429,
+      "sha256": "1f9ee7773b24cd4dfcf851fa74df8013da7eeae12d4596df615f7da8be223de2"
+    },
+    {
+      "path": "presentaciones/Avance EDA y Sincronizacion - 15-08-2026.md",
+      "bytes": 2691,
+      "sha256": "20b125eb65bdab5ed1676a5b56e1e07ff80e6caa9596ac5f4cd4e035cc7d4394"
+    },
+    {
+      "path": "presentaciones/avance-eda-sincronizacion-15-08-2026.html",
+      "bytes": 36674,
+      "sha256": "99d3052f80e7cddd74dd354a6d95851d25e630f8623a7da5c3782564c9bb600d"
+    },
+    {
+      "path": "presentaciones/Conocimiento Presentaciones Pasadas.md",
+      "bytes": 12056,
+      "sha256": "d224bb87f8028f773a5c29089acb06f10fbbb4c7bb6abfe4d6aa4f13df50fa3e"
+    },
+    {
+      "path": "presentaciones/main_presentacion_mds.md",
+      "bytes": 15478,
+      "sha256": "7f4095940d63a73ad09a9c1e031ae640380cea30884e140898dde5a3b58830ca"
+    },
+    {
+      "path": "presentaciones/presentacion 10-08-26.md",
+      "bytes": 8110,
+      "sha256": "4fd4c72ba553d78a6b92e65a15b181c4c20f6a21bfef82ee5ca0b311ee1c138f"
+    },
+    {
+      "path": "presentaciones/presentacion 25-08-26.md",
+      "bytes": 442,
+      "sha256": "10999f3501135ee4efcbec058b40e07bdf7d0e574ddfea2018c5c5040895fe62"
+    },
+    {
+      "path": "presentaciones/presentacion_avances_eda_sincronizacion.pdf",
+      "bytes": 627843,
+      "sha256": "74f88e5bc598fd5d45a4c25e6506443665b8687d4591472ba55154a794771b2e"
+    },
+    {
+      "path": "presentaciones/presentacion_avances_eda_sincronizacion.tex",
+      "bytes": 7960,
+      "sha256": "e37488074588d658e243a6dc5e210b538b7d50f16f07260637c923dcb6af1173"
+    },
+    {
+      "path": "presentaciones/Tesis MDS junio 2026.pdf",
+      "bytes": 3350213,
+      "sha256": "9cb640c5161f62715de080d3b339a538157763b63d24479d9af6c520d30a9154"
+    },
+    {
+      "path": "Tesis_MDS.md",
+      "bytes": 11549,
+      "sha256": "f7bbaa89506617c8d1862af2373664bf9b3a2d6ca8137f0a871d22819287ec20"
+    }
+  ]
+}

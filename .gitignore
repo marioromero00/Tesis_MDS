@@ -22,3 +22,11 @@ resultados/eda/eeg_prueba/
 resultados/preprocesamiento/.work/
 resultados/preprocesamiento/*.parquet
 resultados/modelado/predicciones_baselines.csv
+resultados/modelado/**/modelos/**/*.joblib
+resultados/modelado/**/predicciones_baselines.csv
+
+# Entrega completa solicitada el 06-09-2026: modelos y predicciones de esta ejecucion.
+!resultados/modelado/ejecuciones/baselines_05-09-2026_02/modelos/**/*.joblib
+!resultados/modelado/ejecuciones/baselines_05-09-2026_02/predicciones_baselines.csv
+# Intento interrumpido, conservado solo como diagnostico local.
+resultados/modelado/ejecuciones/baselines_05-09-2026/

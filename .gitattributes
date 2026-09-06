@@ -1,0 +1,10 @@
+# Mantener reproducibles las huellas del entrenamiento entre Windows y Unix.
+*.joblib binary
+*.zip binary
+scripts/*.py text eol=lf
+requirements.txt text eol=lf
+config/*.json text eol=lf
+presentaciones/*.html text eol=lf
+resultados/modelado/dataset_modelado.csv -text whitespace=cr-at-eol
+resultados/modelado/particion_participantes.csv -text whitespace=cr-at-eol
+resultados/modelado/ejecuciones/** -text whitespace=cr-at-eol

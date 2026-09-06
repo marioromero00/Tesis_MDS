@@ -1,0 +1,29 @@
+{
+  "cellsVerified": 45,
+  "slides": 16,
+  "errors": [],
+  "layout": [],
+  "axeViolations": [],
+  "keyboard": {
+    "focusStart": "next",
+    "afterSpace": 1,
+    "afterEnd": 15,
+    "afterHome": 0,
+    "afterRight": 1,
+    "focusStyle": "3px"
+  },
+  "zoomLayout": {
+    "horizontal": false,
+    "tableWidths": [
+      608,
+      608
+    ]
+  },
+  "motion": "0s",
+  "printSlides": 16,
+  "date": "06-09-2026",
+  "html": "01 Tesis MDS\\presentaciones\\avance-eda-sincronizacion-15-08-2026.html",
+  "html_sha256": "99d3052f80e7cddd74dd354a6d95851d25e630f8623a7da5c3782564c9bb600d",
+  "axe_version": "4.13.0",
+  "review": "Inspeccion visual de portada, protocolo, clasificacion, regresion, sensibilidad y cierre; recorrido de teclado con Playwright. Viewports 1280x720, 320x800 y comprobacion de reflow 640x360."
+}

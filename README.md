@@ -1,84 +1,58 @@
-# MDS — señales neurofisiológicas multimodales
+# Tesis MDS — Baselines multimodales
 
-> [!abstract] Navegación Obsidian
-> Consulte [[Mapa del proyecto]] para recorrer datos, sincronización, EDA, resultados y scripts.
+Estado al 06-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
-Proyecto con EEG, GSR, pupilometría y eye tracking, sus manifiestos de sincronización y análisis exploratorios reproducibles.
+Detección temporal multimodal de atención y activación durante navegación web, con EEG,
+GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
+la comparación temporal es el siguiente paso.
 
-## Estructura
+## Entrega actual
 
-```text
-MDS/
-├── datos/                 # originales sin modificar
-├── scripts/               # sincronización y EDA reproducibles
-├── documentacion/         # metodología e informes por señal
-├── resultados/
-│   ├── sincronizacion/    # inventarios y coordinación EEG–Tobii
-│   └── eda/               # tablas y gráficos por modalidad
-└── README.md
-```
+- [Presentación HTML, 16 diapositivas](presentaciones/avance-eda-sincronizacion-15-08-2026.html).
+- [30 modelos entrenados](resultados/modelado/ejecuciones/baselines_05-09-2026_02/modelos/).
+- [Métricas](resultados/modelado/ejecuciones/baselines_05-09-2026_02/metricas_baselines.csv).
+- [Guía de carga](resultados/modelado/ejecuciones/baselines_05-09-2026_02/COMO_CARGAR.txt).
+- [Manifiesto de entrenamiento](resultados/modelado/ejecuciones/baselines_05-09-2026_02/manifiesto_baselines.json).
+- [Verificación de entrega](resultados/modelado/ejecuciones/baselines_05-09-2026_02/verificacion_entrega.json).
+- [Respaldo completo de la sección de tesis del vault](documentacion/Tesis_Vault_06-09-2026.zip).
+- [Inventario y hashes del respaldo](documentacion/inventario_vault_06-09-2026.json).
+- [Auditoría de la presentación](documentacion/auditoria_presentacion_06-09-2026.json).
 
-## Resumen de lo realizado
+Para visualizar el HTML, descargar o clonar el repositorio y abrir el archivo local.
+Las imágenes están en `attachments/Analisis de Datos/`; conservar esa estructura.
+GitHub muestra el código del HTML, no una presentación alojada.
 
-1. Se inventariaron el TSV Tobii/GSR y las 104 sesiones OpenBCI del ZIP.
-2. Se reconstruyó un dominio UTC común y se emparejaron sesiones por participante y proximidad temporal.
-3. No se estimó drift sin triggers compartidos; `drift_scale=1.0` significa que no existe una corrección identificable.
-4. Se ejecutaron EDA independientes para EEG, GSR, pupilometría y eye tracking.
-5. Se implementó y ejecutó un preprocesamiento multimodal secuencial sobre ventanas UTC comunes.
-6. Se fijaron configuración, dependencias, pruebas, hashes y auditoría para reproducirlo.
-7. Se adoptó un criterio EEG exploratorio flexible: utilizable si saturación y repetición plana son ≤30 %.
-8. Se congeló una partición por participante y se ejecutaron baselines estáticos para atención y activación.
-
-## Calidad por fuente
-
-| Fuente | Criterio | Utilizable/válido |
-|---|---|---:|
-| EEG | Sesiones principales con saturación y repetición plana ≤30 % | 44/48 = **91,67 %** |
-| GSR | Grabaciones con señal correcta sobre las 49 Tobii | 47/49 = **95,92 %** |
-| Pupilometría | Ambos ojos válidos simultáneamente | **90,25 %** de muestras |
-| Eye tracking | Punto de mirada válido | **94,98 %** de muestras |
-
-En EEG se excluyen P1, P14, P17 y P25. P25 se identificó al corregir la selección de sesiones con varios TXT. La regla es útil para exploración tolerante al ruido, pero los casos cercanos al umbral deben seguir marcados como baja calidad.
-
-## Ejecución
-
-Desde la raíz `MDS`:
-
-```powershell
-& "$env:LOCALAPPDATA\Programs\Python\Python313\python.exe" .\scripts\ejecutar_todo.py
-```
-
-Todos los scripts procesan los archivos grandes por streaming o directamente dentro del ZIP.
-
-La ejecución completa es estrictamente secuencial. Preparación y validación:
+## Reproducción
 
 ```powershell
 python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python .\scripts\ejecutar_todo.py
+python scripts/baselines_estaticos.py --run-dir resultados/modelado/ejecuciones/NOMBRE_NUEVO
 ```
 
-## Documentación principal
+El entrenamiento utiliza `resultados/modelado/dataset_modelado.csv` y comprueba la
+partición congelada por participante. El directorio de ejecución debe ser nuevo.
+Solo entrenamiento ajusta imputadores, escaladores y estimadores; validación, prueba
+y P29 se evalúan por separado. El protocolo de etiquetas es offline por participante.
 
-- `documentacion/DOCUMENTACION_DATOS_MDS.md`: estructura y diccionario de fuentes.
-- `documentacion/SINCRONIZACION_SENALES.md`: coordinación, offsets y limitaciones.
-- `documentacion/EDA_SENALES.md`: índice de las cuatro señales.
-- `documentacion/EDA_EEG.md`, `EDA_GSR.md`, `EDA_EYE_PUPIL.md`: detalle por modalidad.
-- `documentacion/PREPROCESAMIENTO_MULTIMODAL.md`: protocolo, características, calidad y reproducción.
-- `documentacion/ETIQUETAS_Y_BASELINES.md`: pseudoetiquetas sin circularidad, partición y resultados fuera de muestra.
-- `documentacion/Sincronizacion señales.ipynb`: notebook original de referencia.
+## Modelos y resultados
 
-## Notas relacionadas
+Cinco objetivos: atención principal, activación principal de 6 s, atención PCA,
+activación de 2 s y activación PCA. Cada objetivo incluye Dummy, Ridge y Random Forest
+para regresión, y Dummy, logística y Random Forest para clasificación.
 
-- [[documentacion/RESUMEN_PROCESO|Resumen del procesamiento]]
-- [[documentacion/EDA_SENALES|EDA de las cuatro señales]]
-- [[documentacion/GRAFICOS_TESIS|Gráficos para la tesis]]
-- [[datos/README|Datos locales]]
+La clasificación principal en prueba obtiene balanced accuracy de 0,3240/0,3197
+para atención (logística/Random Forest), y 0,3169/0,3365 para activación de 6 s.
+La referencia Dummy es 0,3333. Los resultados estáticos permanecen cerca de esa referencia.
+Diez pruebas aprobadas; los 30 pipelines producen las mismas predicciones tras recargarse.
 
-## Precauciones
+## Documentación del vault
 
-- No mezclar sesiones `test` con principales sin justificarlo.
-- Revisar P29 por offset y `Test_Participant` por falta de correspondencia.
-- P7 y P42 no tienen GSR.
-- Mantener las frecuencias nativas y recortar epochs mediante timestamps comunes.
-- Una sincronización submuestra requiere triggers observables en ambos dispositivos.
+Las notas Markdown de trabajo se mantienen en la sección `01 Tesis MDS` del vault.
+El ZIP conserva su estructura completa, notas, presentaciones y adjuntos. Reemplaza como
+snapshot documental a las copias antiguas que fueron retiradas del árbol de trabajo durante
+la consolidación del vault. El archivo no incluye Vinson, inglés ni configuración personal.
+El inventario registra SHA256 y tamaño de cada archivo para verificar la copia.
+
+Los modelos y predicciones de la ejecución final se versionan por solicitud expresa del
+06-09-2026. Datos crudos, credenciales, cachés e intentos incompletos permanecen excluidos.

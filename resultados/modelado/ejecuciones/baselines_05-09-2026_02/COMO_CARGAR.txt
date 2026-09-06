@@ -1,0 +1,46 @@
+Baselines estaticos MDS - ejecucion 05-09-2026
+
+La ejecucion esta completa solamente cuando existe manifiesto_baselines.json.
+Cada .joblib contiene un pipeline sklearn completo: imputacion, escalado cuando
+corresponde y estimador entrenado. El .json adyacente declara las columnas en
+orden, la variable objetivo, las clases, el conjunto de entrenamiento y SHA256.
+
+Ejemplo Python, ejecutado desde la raiz del repositorio Tesis_MDS:
+
+from pathlib import Path
+import json
+import joblib
+import pandas as pd
+
+run = Path('resultados/modelado/ejecuciones/baselines_05-09-2026_02')
+path = run / 'modelos/attention_primary/classification__logistic.joblib'
+metadata = json.loads(path.with_suffix('.json').read_text(encoding='utf-8'))
+model = joblib.load(path)
+data = pd.read_csv('resultados/modelado/dataset_modelado.csv')
+X = data.loc[data['split'].eq('test'), metadata['features']]
+predictions = model.predict(X)
+probabilities = model.predict_proba(X)
+print(model.classes_)  # Orden de columnas de probabilities
+
+Las entradas son features ya preprocesadas por el pipeline multimodal del
+proyecto; estos archivos no reciben EEG/Tobii crudos ni construyen etiquetas.
+El protocolo existente usa normalizacion por participante offline.
+Ningun estimador se reajusta sobre validacion, prueba o sensibilidad.
+
+Modelos por tarea:
+- Regresion: dummy_mean, ridge, random_forest.
+- Clasificacion: dummy_prior, logistic, random_forest.
+
+Tareas principales: attention_primary y arousal_primary_6s.
+Sensibilidad: attention_pca_sensitivity, arousal_2s_sensitivity,
+arousal_pca_sensitivity. Las variantes no deben mezclarse para comparar modelos
+contra objetivos distintos ni seleccionarse segun su resultado en prueba.
+
+Metricas por validacion, prueba y sensibilidad: metricas_baselines.csv.
+Tambien se guardan predicciones, importancias, configuracion, particion y
+manifiesto de versiones, integridad y comprobacion de recarga.
+
+Para repetir sin sobrescribir esta ejecucion:
+python scripts/baselines_estaticos.py --run-dir resultados/modelado/ejecuciones/NOMBRE_NUEVO
+
+Cargar solo artefactos joblib propios o de origen confiable.
