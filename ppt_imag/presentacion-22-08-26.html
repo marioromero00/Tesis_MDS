@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avances Tesis — Magíster en Data Science, Universidad de Chile</title>
+<style>
+/* ============================================================
+   Avances Tesis — Magíster en Data Science, Universidad de Chile
+   22-08-2026. Navegación: flechas / espacio / clic. Tecla P = modo lista.
+   Las cuatro señales llevan color y además una forma propia (cuadrado /
+   rombo / triángulo / círculo), de modo que se distinguen sin depender
+   del matiz.
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --eeg:#002F5D;
+  --gsr:#5A6B84;
+  --pup:#0E8080;
+  --eye:#0F6FB0;
+  --ink:#12243B;
+  --ink-2:#3C4757;
+  --ink-3:#5E6875;
+  --line:#D3DBE4;
+  --paper:#FFFFFF;
+  --soft:#EFF4F9;
+  --accent:#003D73;
+  --font:"Inter","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+html,body{height:100%}
+body{font-family:var(--font);background:var(--paper);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+
+/* ---- Escenario 16:9 escalado al viewport ---- */
+#stage{position:relative;width:1280px;height:720px;transform-origin:center center;
+  background:var(--paper);border:1px solid var(--line);
+  box-shadow:0 2px 28px rgba(18,36,59,.10);overflow:hidden}
+
+.slide{position:absolute;inset:0;padding:62px 76px 74px;display:none;
+  flex-direction:column;background:var(--paper)}
+.slide.on{display:flex}
+.slide::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
+  background:var(--accent)}
+
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:16px}
+h1{font-size:60px;font-weight:700;line-height:1.08;letter-spacing:-1.4px}
+h2{font-size:38px;font-weight:700;line-height:1.16;letter-spacing:-.5px;
+  margin-bottom:26px;max-width:30ch}
+.lead{font-size:20px;color:var(--ink-2);line-height:1.55;max-width:66ch}
+ul{list-style:none;display:grid;gap:13px;margin-top:6px}
+li{font-size:19px;line-height:1.5;color:var(--ink-2);padding-left:24px;position:relative;
+  max-width:66ch}
+li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;
+  border-radius:2px;background:var(--line)}
+strong{color:var(--ink);font-weight:650}
+em{font-style:italic}
+
+/* ---- Chips de señal ---- */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.chip{font-size:14.5px;font-weight:600;padding:8px 15px;border-radius:5px;
+  border:1.5px solid;background:#fff;white-space:nowrap}
+.c-eeg{color:var(--eeg);border-color:var(--eeg)}
+.c-gsr{color:#46556B;border-color:var(--gsr)}
+.c-pup{color:#0B6B6B;border-color:var(--pup)}
+.c-eye{color:#0C5B91;border-color:var(--eye)}
+.chip small{display:block;font-size:11.5px;font-weight:500;color:var(--ink-3);margin-top:2px}
+
+/* ---- Marcador de forma por señal (codificación redundante) ---- */
+.chip::before,.sig::before{content:"";display:inline-block;width:9px;height:9px;
+  margin-right:8px;vertical-align:-1px}
+.c-eeg::before,.sig.s-eeg::before{background:var(--eeg);border-radius:2px}
+.c-eye::before,.sig.s-eye::before{background:var(--eye);border-radius:50%}
+.c-pup::before,.sig.s-pup::before{background:var(--pup);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.c-gsr::before,.sig.s-gsr::before{background:var(--gsr);transform:rotate(45deg) scale(.86)}
+.sig{font-weight:650;white-space:nowrap}
+.sig.s-eeg{color:var(--eeg)}
+.sig.s-eye{color:#0C5B91}
+.sig.s-pup{color:#0B6B6B}
+.sig.s-gsr{color:#46556B}
+
+/* ---- Callout ---- */
+.callout{margin-top:auto;background:var(--soft);border-left:4px solid var(--accent);
+  padding:18px 22px;font-size:17.5px;line-height:1.55;color:var(--ink);max-width:82ch}
+
+/* ---- Portada ---- */
+.cover{justify-content:center;padding-top:56px}
+.cover .inst{font-size:15px;font-weight:700;letter-spacing:2.6px;text-transform:uppercase;
+  color:var(--accent)}
+.cover .prog{font-size:15px;color:var(--ink-3);margin-top:5px;letter-spacing:.3px}
+.cover .sep{width:64px;height:3px;background:var(--accent);margin:26px 0 24px}
+.cover h1{margin-bottom:20px}
+.cover .sub{font-size:21px;color:var(--ink-2);line-height:1.5;max-width:64ch}
+.cover-foot{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,auto);gap:44px;justify-content:start}
+.cover-foot div{font-size:16px;color:var(--ink)}
+.cover-foot span{display:block;font-size:11.5px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+
+/* ---- Tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:17.5px;margin-top:4px}
+th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:12.5px;text-transform:uppercase;letter-spacing:1.4px;color:var(--ink-3);
+  border-bottom:2px solid var(--ink)}
+tbody th{font-weight:650;color:var(--ink);width:24%}
+td{color:var(--ink-2)}
+.col-at{background:#F4F8FC}
+.evid td:first-child{width:56%}
+.evid th,.evid td{padding:13px 16px}
+
+/* ---- Dos columnas ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:4px}
+.two h3{font-size:14px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:13px;padding-bottom:9px;border-bottom:2px solid var(--line)}
+.two li{font-size:17px;line-height:1.45}
+.two li::before{top:9px}
+
+/* ---- Objetivos numerados ---- */
+.obj{display:grid;margin-top:2px;counter-reset:o}
+.obj .o{counter-increment:o;display:grid;grid-template-columns:28px 1fr;gap:14px;
+  align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+.obj .o::before{content:counter(o);font-size:14px;font-weight:700;color:var(--ink-3)}
+.obj .o span{font-size:17.5px;line-height:1.42;color:var(--ink-2)}
+
+/* ---- Pasos numerados ---- */
+.pasos{display:grid;gap:10px;margin-top:4px;counter-reset:p}
+.paso{counter-increment:p;display:grid;grid-template-columns:32px 1fr auto;gap:16px;
+  align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.paso::before{content:counter(p);font-size:14px;font-weight:700;color:var(--ink-3)}
+.paso .t{font-size:18px;line-height:1.45;color:var(--ink-2)}
+.tag{font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+  padding:5px 11px;border-radius:3px;white-space:nowrap}
+.t-prof{background:#DCE8F5;color:#003D73}
+.t-prop{background:#EFF3F7;color:#46556B}
+.t-impl{background:#DFEFEF;color:#0B6B6B}
+
+/* ---- Grupos de limitación ---- */
+.grupo{margin-bottom:16px}
+.grupo h4{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:7px}
+.grupo p{font-size:17px;line-height:1.5;color:var(--ink-2);max-width:94ch}
+
+/* ---- Cambia / no cambia ---- */
+.si-no{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+.si-no > div{padding:15px 20px;border-radius:6px;font-size:16.5px;line-height:1.5;
+  color:var(--ink-2)}
+.si-no h4{font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;
+  margin-bottom:6px;color:var(--ink-3)}
+.cambia{background:#F4F8FC;border-left:4px solid var(--accent)}
+.nocambia{background:#F6F8FA;border-left:4px solid var(--line)}
+
+/* ---- Panel doble: profesor / estudiante por variable ---- */
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:4px}
+.panel{border:1px solid var(--line);border-radius:8px;padding:18px 20px 20px;
+  display:flex;flex-direction:column;align-items:center;background:#FCFDFE}
+.panel h3{font-size:13px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px}
+.rol{font-size:11.5px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;text-align:center}
+.rol b{color:var(--ink-2);font-weight:700}
+.fila{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.fila .chip{font-size:14px;padding:7px 13px}
+.flecha{font-size:17px;color:#5E6875;line-height:1;margin:7px 0;display:flex;
+  align-items:center;gap:9px}
+.flecha i{font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--ink-3)}
+.score{background:var(--accent);color:#fff;font-size:17px;font-weight:700;
+  padding:11px 26px;border-radius:5px;letter-spacing:.2px}
+
+/* ---- Preguntas ---- */
+.preg{display:grid;gap:13px;margin-top:8px}
+.preg div{font-size:18px;line-height:1.5;color:var(--ink-2);padding:15px 20px;
+  background:var(--soft);border-radius:6px;max-width:92ch}
+.preg .q{font-weight:650;color:var(--ink)}
+
+.nota{font-size:15px;color:var(--ink-3);line-height:1.5;margin-top:14px;max-width:88ch}
+
+/* ---- Pie ---- */
+.foot-bar{position:absolute;left:76px;right:76px;bottom:26px;display:flex;
+  justify-content:space-between;align-items:center;font-size:12.5px;color:var(--ink-3);
+  border-top:1px solid var(--line);padding-top:12px}
+.foot-bar .prog{letter-spacing:.3px}
+.cover .foot-bar{display:none}
+
+/* ---- Ayuda ---- */
+#help{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);color:var(--ink-3);
+  font-size:12px;font-family:var(--font);letter-spacing:.4px}
+
+/* ---- Modo lista (impresión / repaso) ---- */
+body.list{display:block;overflow:auto;background:#F4F6F8;padding:40px 0}
+body.list #stage{transform:none!important;margin:0 auto 30px;position:relative}
+body.list .slide{display:flex;position:relative;page-break-after:always}
+body.list #help{display:none}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div id="stage">
+
+  <!-- 1 · PORTADA --------------------------------------------------- -->
+  <section class="slide cover on">
+    <p class="inst">Universidad de Chile</p>
+    <p class="prog">Magíster en Data Science</p>
+    <div class="sep"></div>
+    <h1>Avances Tesis</h1>
+    <p class="sub">Detección de atención y activación emocional durante la navegación web
+      a partir de señales neurofisiológicas.</p>
+    <div class="chips">
+      <span class="chip c-eeg">EEG</span>
+      <span class="chip c-gsr">GSR</span>
+      <span class="chip c-pup">Pupilometría</span>
+      <span class="chip c-eye">Eye Tracking</span>
+    </div>
+    <div class="cover-foot">
+      <div><span>Estudiante</span>Mario Romero</div>
+      <div><span>Profesor guía</span>Dr. Juan D. Velásquez</div>
+      <div><span>Proyecto</span>Fondecyt 1231122</div>
+      <div><span>Fecha</span>22 de agosto de 2026</div>
+    </div>
+  </section>
+
+  <!-- 2 · CONTEXTO GENERAL -------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Contexto general</p>
+    <h2>Atención y activación medidas durante la navegación</h2>
+    <ul>
+      <li>El trabajo se enmarca en el <strong>proyecto Fondecyt 1231122</strong>, que estudia
+        las respuestas neurofisiológicas durante la interacción con contenidos digitales.</li>
+      <li>Los métodos clásicos de evaluación de experiencia de usuario (cuestionarios,
+        <em>usability testing</em>, autorreporte) son retrospectivos y dependen del recuerdo
+        del usuario.</li>
+      <li>Las señales neurofisiológicas permiten observar durante la interacción misma, pero la
+        literatura previa las resume en promedios por sesión y pierde la dinámica temporal.</li>
+    </ul>
+    <div class="chips" style="margin-top:18px">
+      <span class="chip c-eeg">EEG<small>16 canales · 125 Hz</small></span>
+      <span class="chip c-gsr">GSR<small>Tobii Pro · ~8 Hz efectivos</small></span>
+      <span class="chip c-pup">Pupilometría<small>Tobii Pro · 60 Hz</small></span>
+      <span class="chip c-eye">Eye Tracking<small>fijaciones y sacadas</small></span>
+    </div>
+    <p class="callout"><strong>Hipótesis central.</strong> Los modelos temporales multimodales
+      obtienen un mejor desempeño fuera de muestra que los modelos estáticos comparables en la
+      detección de emociones y atención durante la navegación web.</p>
+    <div class="foot-bar"><span>Contexto general</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 3 · OBJETIVO GENERAL ---------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Objetivos</p>
+    <h2>Objetivo general</h2>
+    <p class="lead" style="font-size:26px;line-height:1.45;color:var(--ink);max-width:62ch;
+       border-left:4px solid var(--accent);padding-left:24px">
+      Desarrollar y evaluar modelos temporales multimodales para la detección de emociones y
+      atención durante la navegación web, comparando su desempeño fuera de muestra con modelos
+      estáticos comparables y analizando distintas estrategias de fusión multimodal.</p>
+    <p class="callout">La etiqueta se mantiene fija en todas las comparaciones, de modo que
+      cualquier diferencia de desempeño se atribuye al modelo y no al etiquetado.</p>
+    <div class="foot-bar"><span>Objetivos</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 4 · OBJETIVOS ESPECÍFICOS ------------------------------------------ -->
+  <section class="slide">
+    <p class="eyebrow">Objetivos</p>
+    <h2>Objetivos específicos</h2>
+    <div class="obj">
+      <div class="o"><span>Sistematizar el estado del arte, con foco en dinámica temporal y estrategias de fusión.</span></div>
+      <div class="o"><span>Construir el corpus multimodal sincronizado, con criterios de calidad por participante, sesión y canal.</span></div>
+      <div class="o"><span>Diseñar las pseudoetiquetas mediante modelos profesor, sin circularidad entre señales.</span></div>
+      <div class="o"><span>Desarrollar los modelos temporales (LSTM, TCN, Transformer) y el baseline estático comparable.</span></div>
+      <div class="o"><span>Comparar fusión temprana, intermedia y tardía, y cuantificar cada modalidad mediante <em>ablation</em>.</span></div>
+      <div class="o"><span>Analizar la evolución intra-sesión de los scores: fatiga y habituación.</span></div>
+      <div class="o"><span>Contrastar los resultados con la hipótesis y establecer alcances y limitaciones.</span></div>
+    </div>
+    <div class="foot-bar"><span>Objetivos</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 5 · ESTADO ACTUAL ---------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Estado actual</p>
+    <h2>Cuatro avances desde la última presentación</h2>
+    <table>
+      <thead><tr><th>Avance</th><th>Resultado</th></tr></thead>
+      <tbody>
+        <tr><th>Capítulo 1 incorporado al manuscrito</th>
+          <td>Objetivos, alcances, limitaciones y contribuciones escritos, con la forma calibrada contra seis memorias previas del grupo.</td></tr>
+        <tr><th>EDA de las cuatro señales</th>
+          <td>EEG: 45 de 48 sesiones utilizables. GSR: 47 de 49 grabaciones. Pupilometría: 90,25 % de muestras con ambos ojos válidos. Mirada: 94,98 % válida, con 122.302 fijaciones.</td></tr>
+        <tr><th>Coordinación temporal de las señales</th>
+          <td>47 pares EEG–Tobii sobre un reloj UTC común, conservando las frecuencias nativas. Quedan P29 con offset y <em>Test_Participant</em> sin pareja directa.</td></tr>
+        <tr><th class="col-at">Arquitectura de etiquetas definida</th>
+          <td class="col-at">Esquema Profesor → Estudiante con partición disjunta de señales, tras descartar el clasificador facial por no existir en este dataset.</td></tr>
+      </tbody>
+    </table>
+    <p class="callout">El pipeline es reproducible y no modifica los archivos originales. El
+      código y los datos viven fuera del manuscrito, y las notas los citan por nombre de archivo.</p>
+    <div class="foot-bar"><span>Estado actual</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 6 · ARQUITECTURA DE ETIQUETAS ----------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Arquitectura de etiquetas</p>
+    <h2 style="max-width:38ch;margin-bottom:20px">Ninguna señal construye la etiqueta que después debe predecir</h2>
+    <div class="dual">
+      <div class="panel">
+        <h3>Variable 1 · Atención</h3>
+        <p class="rol"><b>Modelo Profesor</b><br>construye la etiqueta</p>
+        <div class="fila">
+          <span class="chip c-eye">Eye Tracking</span>
+          <span class="chip c-pup">Pupilometría</span>
+        </div>
+        <div class="flecha"><span aria-hidden="true">&#9660;</span><i>construye</i></div>
+        <div class="score">Attention Score</div>
+        <div class="flecha"><span aria-hidden="true">&#9650;</span><i>se evalúa contra</i></div>
+        <div class="fila">
+          <span class="chip c-eeg">EEG</span>
+          <span class="chip c-gsr">GSR</span>
+        </div>
+        <p class="rol" style="margin:9px 0 0"><b>Modelo Estudiante</b><br>predice la etiqueta</p>
+      </div>
+      <div class="panel">
+        <h3>Variable 2 · Arousal</h3>
+        <p class="rol"><b>Modelo Profesor</b><br>construye la etiqueta</p>
+        <div class="fila">
+          <span class="chip c-gsr">GSR</span>
+        </div>
+        <div class="flecha"><span aria-hidden="true">&#9660;</span><i>construye</i></div>
+        <div class="score">Arousal Score</div>
+        <div class="flecha"><span aria-hidden="true">&#9650;</span><i>se evalúa contra</i></div>
+        <div class="fila">
+          <span class="chip c-eeg">EEG</span>
+          <span class="chip c-eye">Eye Tracking</span>
+          <span class="chip c-pup">Pupilometría</span>
+        </div>
+        <p class="rol" style="margin:9px 0 0"><b>Modelo Estudiante</b><br>predice la etiqueta</p>
+      </div>
+    </div>
+    <p class="callout">Dentro de cada panel, ninguna señal aparece arriba y abajo a la vez. Sin
+      esa separación, un buen desempeño sería indistinguible de que el modelo reconstruyó la
+      regla de etiquetado.</p>
+    <div class="foot-bar"><span>Arquitectura de etiquetas</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 7 · CONTRIBUCIONES ----------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Contribuciones</p>
+    <h2>Seis contribuciones declaradas</h2>
+    <div class="two">
+      <div>
+        <h3>Quedan escritas pase lo que pase</h3>
+        <ul>
+          <li>Un protocolo de <strong>pseudoetiquetas por partición disjunta</strong> de señales, aplicable a cualquier estudio multimodal sin <em>ground truth</em>.</li>
+          <li>Un <strong>corpus multimodal sincronizado y documentado</strong>, con criterios explícitos de calidad.</li>
+          <li>La <strong>cuantificación del aporte marginal</strong> de cada modalidad y de la componente temporal.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Dependen del resultado</h3>
+        <ul>
+          <li>Evidencia sobre el <strong>rol de la temporalidad</strong> frente a baselines estáticos sobre la misma variable objetivo.</li>
+          <li>Evidencia sobre las <strong>estrategias de fusión</strong>, donde un trabajo previo del grupo no obtuvo mejoras con fusión tardía de EEG y GSR.</li>
+          <li>Evidencia sobre la <strong>evolución intra-sesión</strong> de atención y activación.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="callout">Las tres de la derecha dicen "evidencia sobre" y no prometen un hallazgo,
+      de modo que un resultado nulo las mantiene en pie.</p>
+    <div class="foot-bar"><span>Contribuciones</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 8 · LIMITACIONES --------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Limitaciones</p>
+    <h2>Tres frentes, con su contramedida</h2>
+    <div class="grupo">
+      <h4>Pseudoetiquetas</h4>
+      <p>El estudiante está acotado por la calidad de la regla del profesor. El eye tracking mide
+        <strong>Observado</strong> y no <strong>Atendido</strong>; el GSR aproxima activación y no
+        valencia. Ninguna de las dos etiquetas tiene validación externa, y por eso ambas se
+        declaran como pseudoetiquetas y no como medición.</p>
+    </div>
+    <div class="grupo">
+      <h4>Señales y sincronización</h4>
+      <p>Sin triggers compartidos, la alineación defendible es por reloj absoluto y no submuestra.
+        Las frecuencias nativas distintas fijan la granularidad mínima. La latencia de SCR
+        (1 a 5 s) puede exceder la ventana de 2 s, de modo que la ventana del GSR queda a validar
+        antes de implementar la etiqueta.</p>
+    </div>
+    <div class="grupo">
+      <h4>Diseño e inferencia</h4>
+      <p>El solapamiento del 50 % genera dependencia entre ventanas, y por eso la partición es por
+        participante. Las líneas base fisiológicas varían entre personas, de modo que la
+        normalización se estima sin el conjunto de evaluación. El entorno es de laboratorio, no
+        navegación naturalista.</p>
+    </div>
+    <div class="foot-bar"><span>Limitaciones</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 10 · PRÓXIMOS PASOS --------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Próximos pasos</p>
+    <h2>Qué falta para los primeros resultados</h2>
+    <div class="pasos">
+      <div class="paso"><span class="t">Preprocesar GSR, eye tracking y pupilometría. El EEG ya está especificado.</span><span class="tag t-impl">Pipeline</span></div>
+      <div class="paso"><span class="t">Recortar las ventanas comunes por evento con los manifiestos de sincronización.</span><span class="tag t-impl">Pipeline</span></div>
+      <div class="paso"><span class="t">Cerrar los umbrales de discretización de ambos scores.</span><span class="tag t-prop">Metodología</span></div>
+      <div class="paso"><span class="t">Validar la ventana de agregación del GSR contra la latencia de SCR.</span><span class="tag t-prop">Metodología</span></div>
+      <div class="paso"><span class="t">Implementar ambas etiquetas y entrenar los primeros baselines.</span><span class="tag t-prof">Modelamiento</span></div>
+    </div>
+    <p class="callout">El Capítulo 2 sigue en desarrollo y los Capítulos 6 a 9 están en blanco.
+      Los pasos 3 y 4 dependen de las decisiones de la lámina siguiente.</p>
+    <div class="foot-bar"><span>Próximos pasos</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 11 · PREGUNTAS ---------------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Preguntas</p>
+    <h2>Cuatro decisiones que necesito cerrar</h2>
+    <div class="preg">
+      <div><span class="q">¿Es aceptable redefinir "emoción" como <em>arousal</em>?</span>
+        El GSR solo mide activación simpática. De esta decisión cuelgan el objetivo específico 3,
+        el alcance 2 y la contribución 1.</div>
+      <div><span class="q">¿Aprueba el manifiesto de sincronización y los criterios de calidad?</span>
+        Quedan dos casos por resolver: P29 con offset y <em>Test_Participant</em> sin pareja directa.</div>
+      <div><span class="q">¿Rehago la búsqueda bibliográfica de la brecha 2?</span>
+        Estaba formulada para la combinación con expresión facial; sin esa señal hay que
+        re-verificarla antes de sostenerla.</div>
+      <div><span class="q">¿Cito <em>view independence</em> de co-training como antecedente?</span>
+        La partición disjunta se le parece. Si corresponde, presento el aporte como adaptación a
+        señales neurofisiológicas sin <em>ground truth</em>.</div>
+    </div>
+    <div class="foot-bar"><span>Preguntas</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+</div>
+
+<p id="help">← → para navegar · P para modo lista</p>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var stage  = document.getElementById('stage');
+  var i = 0;
+
+  slides.forEach(function(s, n){
+    var num = s.querySelector('.num');
+    if (num) num.textContent = (n + 1) + ' / ' + slides.length;
+  });
+
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){ s.classList.toggle('on', k === i); });
+    location.hash = i + 1;
+  }
+  function fit(){
+    if (document.body.classList.contains('list')) return;
+    var s = Math.min(window.innerWidth / 1280, window.innerHeight / 720) * 0.94;
+    stage.style.transform = 'scale(' + s + ')';
+  }
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown'){ e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home'){ show(0); }
+    else if (e.key === 'End'){ show(slides.length - 1); }
+    else if (e.key === 'p' || e.key === 'P'){
+      document.body.classList.toggle('list');
+      if (!document.body.classList.contains('list')){ stage.style.transform=''; fit(); show(i); }
+      else { stage.style.transform = 'none'; }
+    }
+  });
+  stage.addEventListener('click', function(e){
+    if (document.body.classList.contains('list')) return;
+    show(e.clientX < window.innerWidth / 2 ? i - 1 : i + 1);
+  });
+  window.addEventListener('resize', fit);
+
+  var start = parseInt((location.hash || '#1').slice(1), 10);
+  show(isNaN(start) ? 0 : start - 1);
+  fit();
+})();
+</script>
+</body>
+</html>
