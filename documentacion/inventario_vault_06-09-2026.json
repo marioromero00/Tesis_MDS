@@ -2,7 +2,7 @@
   "date": "06-09-2026",
   "section": "01 Tesis MDS",
   "archive": "Tesis_Vault_06-09-2026.zip",
-  "archive_sha256": "c972ac9a5eade2ea43dd9733fda966227c5341fad6e7f2cad26eadd5f31b0954",
+  "archive_sha256": "b84fe7093b67d986f608b0edf3d3b41ad92ccb184d4a511d6040c902338087db",
   "files": [
     {
       "path": "Analisis de Datos/DOCUMENTACION_DATOS_MDS.md",
@@ -160,6 +160,11 @@
       "sha256": "d237a85525f4cd0605cb89c8cb11653fa3f0eb221eafc9e569a09344b575f1b1"
     },
     {
+      "path": "Avances/Avance - 06-09-2026 (Respaldo Completo en GitHub).md",
+      "bytes": 2461,
+      "sha256": "3199f223e6061aeddb79d67d0a9f3bfc76a13aefc9af459e77e7eb7d865090f9"
+    },
+    {
       "path": "Avances/Avance - 10-08-2026 (Hipotesis de Investigacion).md",
       "bytes": 1343,
       "sha256": "515470300ad52a0a4479959bef2a28464b5dc488f014603f779a3c39e2b7857b"
@@ -291,8 +296,8 @@
     },
     {
       "path": "Tesis_MDS.md",
-      "bytes": 11549,
-      "sha256": "f7bbaa89506617c8d1862af2373664bf9b3a2d6ca8137f0a871d22819287ec20"
+      "bytes": 12117,
+      "sha256": "e26a364cf72fac51b1d7e3f6c3820d2251c24961964089ddedfbf396b7308c2f"
     }
   ]
 }
