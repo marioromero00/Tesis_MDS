@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De datos crudos a baselines evaluados — Tesis MDS</title>
+<style>
+/* ============================================================
+   Avances Tesis — Magíster en Data Science, Universidad de Chile
+   Formato oficial de presentaciones Tesis MDS, definido el 06-09-2026.
+   Navegación: flechas / espacio / clic. Tecla P = modo lista.
+   Las cuatro señales llevan color y además una forma propia (cuadrado /
+   rombo / triángulo / círculo), de modo que se distinguen sin depender
+   del matiz.
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --eeg:#002F5D;
+  --gsr:#5A6B84;
+  --pup:#0E8080;
+  --eye:#0F6FB0;
+  --ink:#12243B;
+  --ink-2:#3C4757;
+  --ink-3:#5E6875;
+  --line:#D3DBE4;
+  --paper:#FFFFFF;
+  --soft:#EFF4F9;
+  --accent:#003D73;
+  --font:"Inter","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+html,body{height:100%}
+body{font-family:var(--font);background:var(--paper);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+
+/* ---- Escenario 16:9 escalado al viewport ---- */
+#stage{position:relative;width:1280px;height:720px;transform-origin:center center;
+  background:var(--paper);border:1px solid var(--line);
+  box-shadow:0 2px 28px rgba(18,36,59,.10);overflow:hidden}
+
+.slide{position:absolute;inset:0;padding:62px 76px 74px;display:none;
+  flex-direction:column;background:var(--paper)}
+.slide.on{display:flex}
+.slide::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;
+  background:var(--accent)}
+
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:16px}
+h1{font-size:60px;font-weight:700;line-height:1.08;letter-spacing:-1.4px}
+h2{font-size:38px;font-weight:700;line-height:1.16;letter-spacing:-.5px;
+  margin-bottom:26px;max-width:30ch}
+.lead{font-size:20px;color:var(--ink-2);line-height:1.55;max-width:66ch}
+ul{list-style:none;display:grid;gap:13px;margin-top:6px}
+li{font-size:19px;line-height:1.5;color:var(--ink-2);padding-left:24px;position:relative;
+  max-width:66ch}
+li::before{content:"";position:absolute;left:0;top:10px;width:8px;height:8px;
+  border-radius:2px;background:var(--line)}
+strong{color:var(--ink);font-weight:650}
+em{font-style:italic}
+
+/* ---- Chips de señal ---- */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.chip{font-size:14.5px;font-weight:600;padding:8px 15px;border-radius:5px;
+  border:1.5px solid;background:#fff;white-space:nowrap}
+.c-eeg{color:var(--eeg);border-color:var(--eeg)}
+.c-gsr{color:#46556B;border-color:var(--gsr)}
+.c-pup{color:#0B6B6B;border-color:var(--pup)}
+.c-eye{color:#0C5B91;border-color:var(--eye)}
+.chip small{display:block;font-size:11.5px;font-weight:500;color:var(--ink-3);margin-top:2px}
+
+/* ---- Marcador de forma por señal (codificación redundante) ---- */
+.chip::before,.sig::before{content:"";display:inline-block;width:9px;height:9px;
+  margin-right:8px;vertical-align:-1px}
+.c-eeg::before,.sig.s-eeg::before{background:var(--eeg);border-radius:2px}
+.c-eye::before,.sig.s-eye::before{background:var(--eye);border-radius:50%}
+.c-pup::before,.sig.s-pup::before{background:var(--pup);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.c-gsr::before,.sig.s-gsr::before{background:var(--gsr);transform:rotate(45deg) scale(.86)}
+.sig{font-weight:650;white-space:nowrap}
+.sig.s-eeg{color:var(--eeg)}
+.sig.s-eye{color:#0C5B91}
+.sig.s-pup{color:#0B6B6B}
+.sig.s-gsr{color:#46556B}
+
+/* ---- Callout ---- */
+.callout{margin-top:auto;background:var(--soft);border-left:4px solid var(--accent);
+  padding:18px 22px;font-size:17.5px;line-height:1.55;color:var(--ink);max-width:82ch}
+
+/* ---- Portada ---- */
+.cover{justify-content:center;padding-top:56px}
+.cover .inst{font-size:15px;font-weight:700;letter-spacing:2.6px;text-transform:uppercase;
+  color:var(--accent)}
+.cover .prog{font-size:15px;color:var(--ink-3);margin-top:5px;letter-spacing:.3px}
+.cover .sep{width:64px;height:3px;background:var(--accent);margin:26px 0 24px}
+.cover h1{margin-bottom:20px}
+.cover .sub{font-size:21px;color:var(--ink-2);line-height:1.5;max-width:64ch}
+.cover-foot{margin-top:46px;padding-top:20px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(4,auto);gap:44px;justify-content:start}
+.cover-foot div{font-size:16px;color:var(--ink)}
+.cover-foot span{display:block;font-size:11.5px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:5px}
+
+/* ---- Tablas ---- */
+table{width:100%;border-collapse:collapse;font-size:17.5px;margin-top:4px}
+th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:12.5px;text-transform:uppercase;letter-spacing:1.4px;color:var(--ink-3);
+  border-bottom:2px solid var(--ink)}
+tbody th{font-weight:650;color:var(--ink);width:24%}
+td{color:var(--ink-2)}
+.col-at{background:#F4F8FC}
+.evid td:first-child{width:56%}
+.evid th,.evid td{padding:13px 16px}
+
+/* ---- Dos columnas ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:4px}
+.two h3{font-size:14px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:13px;padding-bottom:9px;border-bottom:2px solid var(--line)}
+.two li{font-size:17px;line-height:1.45}
+.two li::before{top:9px}
+
+/* ---- Objetivos numerados ---- */
+.obj{display:grid;margin-top:2px;counter-reset:o}
+.obj .o{counter-increment:o;display:grid;grid-template-columns:28px 1fr;gap:14px;
+  align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+.obj .o::before{content:counter(o);font-size:14px;font-weight:700;color:var(--ink-3)}
+.obj .o span{font-size:17.5px;line-height:1.42;color:var(--ink-2)}
+
+/* ---- Pasos numerados ---- */
+.pasos{display:grid;gap:10px;margin-top:4px;counter-reset:p}
+.paso{counter-increment:p;display:grid;grid-template-columns:32px 1fr auto;gap:16px;
+  align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.paso::before{content:counter(p);font-size:14px;font-weight:700;color:var(--ink-3)}
+.paso .t{font-size:18px;line-height:1.45;color:var(--ink-2)}
+.tag{font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+  padding:5px 11px;border-radius:3px;white-space:nowrap}
+.t-prof{background:#DCE8F5;color:#003D73}
+.t-prop{background:#EFF3F7;color:#46556B}
+.t-impl{background:#DFEFEF;color:#0B6B6B}
+
+/* ---- Grupos de limitación ---- */
+.grupo{margin-bottom:16px}
+.grupo h4{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:7px}
+.grupo p{font-size:17px;line-height:1.5;color:var(--ink-2);max-width:94ch}
+
+/* ---- Cambia / no cambia ---- */
+.si-no{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+.si-no > div{padding:15px 20px;border-radius:6px;font-size:16.5px;line-height:1.5;
+  color:var(--ink-2)}
+.si-no h4{font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;
+  margin-bottom:6px;color:var(--ink-3)}
+.cambia{background:#F4F8FC;border-left:4px solid var(--accent)}
+.nocambia{background:#F6F8FA;border-left:4px solid var(--line)}
+
+/* ---- Panel doble: profesor / estudiante por variable ---- */
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:4px}
+.panel{border:1px solid var(--line);border-radius:8px;padding:18px 20px 20px;
+  display:flex;flex-direction:column;align-items:center;background:#FCFDFE}
+.panel h3{font-size:13px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px}
+.rol{font-size:11.5px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;
+  color:var(--ink-3);margin-bottom:9px;text-align:center}
+.rol b{color:var(--ink-2);font-weight:700}
+.fila{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.fila .chip{font-size:14px;padding:7px 13px}
+.flecha{font-size:17px;color:#5E6875;line-height:1;margin:7px 0;display:flex;
+  align-items:center;gap:9px}
+.flecha i{font-style:normal;font-size:11.5px;font-weight:700;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--ink-3)}
+.score{background:var(--accent);color:#fff;font-size:17px;font-weight:700;
+  padding:11px 26px;border-radius:5px;letter-spacing:.2px}
+
+/* ---- Preguntas ---- */
+.preg{display:grid;gap:13px;margin-top:8px}
+.preg div{font-size:18px;line-height:1.5;color:var(--ink-2);padding:15px 20px;
+  background:var(--soft);border-radius:6px;max-width:92ch}
+.preg .q{font-weight:650;color:var(--ink)}
+
+.nota{font-size:15px;color:var(--ink-3);line-height:1.5;margin-top:14px;max-width:88ch}
+
+/* ---- Resultados ---- */
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:4px}
+.metric{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#FCFDFE}
+.metric .k{display:block;font-size:12px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--ink-3)}
+.metric .v{display:block;font-size:32px;font-weight:700;color:var(--accent);line-height:1.15;margin:8px 0 4px}
+.metric .d{font-size:14px;line-height:1.4;color:var(--ink-2)}
+.result-table th,.result-table td{font-size:15px;padding:10px 12px}
+.result-table td.num{text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;padding:4px 9px;border-radius:999px;background:var(--soft);color:var(--ink-2);font-size:13px;font-weight:650}
+
+/* ---- Navegación accesible ---- */
+#controls{position:fixed;right:18px;bottom:14px;display:flex;gap:8px}
+#controls button{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--accent);font:700 22px/1 var(--font);cursor:pointer}
+#controls button:hover{background:var(--soft)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---- Pie ---- */
+.foot-bar{position:absolute;left:76px;right:76px;bottom:26px;display:flex;
+  justify-content:space-between;align-items:center;font-size:12.5px;color:var(--ink-3);
+  border-top:1px solid var(--line);padding-top:12px}
+.foot-bar .prog{letter-spacing:.3px}
+.cover .foot-bar{display:none}
+
+/* ---- Ayuda ---- */
+#help{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);color:var(--ink-3);
+  font-size:12px;font-family:var(--font);letter-spacing:.4px}
+
+/* ---- Modo lista (impresión / repaso) ---- */
+body.list{display:block;overflow:auto;background:#F4F6F8;padding:40px 0}
+body.list #stage{transform:none!important;margin:0 auto 30px;position:relative}
+body.list .slide{display:flex;position:relative;page-break-after:always}
+body.list #help,body.list #controls{display:none}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<main id="stage" aria-label="Presentación de avances de tesis">
+
+  <!-- 1 · PORTADA --------------------------------------------------- -->
+  <section class="slide cover on">
+    <p class="inst">Universidad de Chile</p>
+    <p class="prog">Magíster en Data Science</p>
+    <div class="sep"></div>
+    <h1>De datos crudos a<br>baselines evaluados</h1>
+    <p class="sub">Detección de atención y activación durante la navegación web
+      a partir de señales neurofisiológicas.</p>
+    <div class="chips">
+      <span class="chip c-eeg">EEG</span>
+      <span class="chip c-gsr">GSR</span>
+      <span class="chip c-pup">Pupilometría</span>
+      <span class="chip c-eye">Eye Tracking</span>
+    </div>
+    <div class="cover-foot">
+      <div><span>Estudiante</span>Mario Romero</div>
+      <div><span>Profesor guía</span>Dr. Juan D. Velásquez</div>
+      <div><span>Proyecto</span>Fondecyt 1231122</div>
+      <div><span>Fecha</span>6 de septiembre de 2026</div>
+    </div>
+  </section>
+
+  <!-- 2 · RESUMEN EJECUTIVO -------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · El experimento en una lámina</p>
+    <h2>Tomé señales de navegación y probé si podían predecir dos estados por persona</h2>
+    <div class="metric-grid"><div class="metric"><span class="k">Qué predije</span><span class="v">2 scores</span><span class="d">Attention Score y Arousal Score, calculados por ventana.</span></div>
+      <div class="metric"><span class="k">Con qué datos</span><span class="v">48</span><span class="d">participantes; EEG, GSR, pupila y mirada durante navegación web.</span></div>
+      <div class="metric"><span class="k">Qué encontré</span><span class="v">≈ Dummy</span><span class="d">los baselines estáticos no mejoran de forma consistente fuera de muestra.</span></div></div>
+    <div class="two" style="margin-top:24px"><div><h3>Pregunta</h3><p class="lead">¿Las señales distintas de las que construyen la etiqueta pueden predecirla en personas no vistas?</p></div><div><h3>Próximo experimento</h3><p class="lead">Mantener etiquetas y partición, y evaluar si la secuencia temporal aporta información adicional.</p></div></div>
+    <p class="callout"><strong>Para recordar.</strong> Esta presentación documenta el baseline: no responde aún si los modelos temporales superan a los estáticos.</p>
+    <div class="foot-bar"><span>Resumen del experimento</span><span class="prog">Tesis MDS · Baseline estático</span><span class="num"></span></div>
+  </section>
+
+  <!-- 3 · OBJETIVO GENERAL ---------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Participantes y registro</p>
+    <h2>El experimento parte de 48 participantes durante navegación web</h2>
+    <div class="metric-grid"><div class="metric"><span class="k">Participantes auditados</span><span class="v">48</span><span class="d">sesiones revisadas en el pipeline multimodal.</span></div>
+      <div class="metric"><span class="k">Ventanas generadas</span><span class="v">25.992</span><span class="d">ventanas de 2 s con 50 % de solapamiento.</span></div>
+      <div class="metric"><span class="k">Ventanas con 4 señales</span><span class="v">22.201</span><span class="d">base común antes de la partición experimental.</span></div></div>
+    <p class="callout">Cada participante aporta una sesión completa a una sola división. Así, ventanas solapadas de una misma persona nunca contaminan prueba o validación.</p>
+    <div class="foot-bar"><span>Objetivos</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 4 · OBJETIVOS ESPECÍFICOS ------------------------------------------ -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Señales disponibles</p>
+    <h2>Cuatro modalidades describen el experimento desde ángulos distintos</h2>
+    <div class="obj">
+      <div class="o"><span><strong>EEG:</strong> 16 canales a 125 Hz; 44 de 48 participantes pasan el criterio de calidad.</span></div>
+      <div class="o"><span><strong>GSR:</strong> activación electrodérmica; 47 de 49 grabaciones disponibles.</span></div>
+      <div class="o"><span><strong>Pupilometría:</strong> diámetro pupilar; 90,25 % de muestras con ambos ojos válidos.</span></div>
+      <div class="o"><span><strong>Eye Tracking:</strong> fijaciones y sacadas; 94,98 % de muestras de mirada válidas.</span></div>
+      <div class="o"><span>Las señales se conservan a su frecuencia nativa y se alinean por reloj UTC.</span></div>
+    </div>
+    <div class="foot-bar"><span>Objetivos</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 5 · ESTADO ACTUAL ---------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · De señales a ejemplos de aprendizaje</p>
+    <h2>El pipeline convierte registros crudos en filas comparables por ventana</h2>
+    <table>
+      <thead><tr><th>Avance</th><th>Resultado</th></tr></thead>
+      <tbody>
+        <tr><th>Capítulo 1 incorporado al manuscrito</th>
+          <td>Objetivos, alcances, limitaciones y contribuciones escritos, con la forma calibrada contra seis memorias previas del grupo.</td></tr>
+        <tr><th>1. Control de calidad</th><td>Se excluyen sesiones o modalidades que no cumplen los criterios; P25 sale por EEG y P48 se recupera al elegir el TXT principal.</td></tr>
+        <tr><th>2. Sincronización</th><td>EEG y Tobii se coordinan por tiempo UTC, sin forzar una frecuencia común.</td></tr>
+        <tr><th>3. Ventanas</th><td>Cada estímulo se divide en ventanas de 2 s con 50 % de solapamiento; una ventana nunca cruza su borde.</td></tr>
+        <tr><th class="col-at">4. Tabla de modelamiento</th><td class="col-at">Cada fila reúne características de las cuatro modalidades y el score que se quiere predecir.</td></tr>
+      </tbody>
+    </table>
+    <p class="callout">La unidad del experimento es una ventana de navegación. La evaluación, sin embargo, separa por participante, no por ventana.</p>
+    <div class="foot-bar"><span>Estado actual</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 6 · ARQUITECTURA DE ETIQUETAS ----------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Etiquetas sin circularidad</p>
+    <h2 style="max-width:38ch;margin-bottom:20px">Ninguna señal construye la etiqueta que después debe predecir</h2>
+    <div class="dual">
+      <div class="panel">
+        <h3>Variable 1 · Atención</h3>
+        <p class="rol"><b>Modelo Profesor</b><br>construye la etiqueta</p>
+        <div class="fila">
+          <span class="chip c-eye">Eye Tracking</span>
+          <span class="chip c-pup">Pupilometría</span>
+        </div>
+        <div class="flecha"><span aria-hidden="true">&#9660;</span><i>construye</i></div>
+        <div class="score">Attention Score</div>
+        <div class="flecha"><span aria-hidden="true">&#9650;</span><i>se evalúa contra</i></div>
+        <div class="fila">
+          <span class="chip c-eeg">EEG</span>
+          <span class="chip c-gsr">GSR</span>
+        </div>
+        <p class="rol" style="margin:9px 0 0"><b>Modelo Estudiante</b><br>predice la etiqueta</p>
+      </div>
+      <div class="panel">
+        <h3>Variable 2 · Arousal</h3>
+        <p class="rol"><b>Modelo Profesor</b><br>construye la etiqueta</p>
+        <div class="fila">
+          <span class="chip c-gsr">GSR</span>
+        </div>
+        <div class="flecha"><span aria-hidden="true">&#9660;</span><i>construye</i></div>
+        <div class="score">Arousal Score</div>
+        <div class="flecha"><span aria-hidden="true">&#9650;</span><i>se evalúa contra</i></div>
+        <div class="fila">
+          <span class="chip c-eeg">EEG</span>
+          <span class="chip c-eye">Eye Tracking</span>
+          <span class="chip c-pup">Pupilometría</span>
+        </div>
+        <p class="rol" style="margin:9px 0 0"><b>Modelo Estudiante</b><br>predice la etiqueta</p>
+      </div>
+    </div>
+    <p class="callout">Dentro de cada panel, ninguna señal aparece arriba y abajo a la vez. Sin
+      esa separación, un buen desempeño sería indistinguible de que el modelo reconstruyó la
+      regla de etiquetado.</p>
+    <div class="foot-bar"><span>Arquitectura de etiquetas</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 7 · CONTRIBUCIONES ----------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Regla para una predicción válida</p>
+    <h2>La señal que crea el score no puede ser la señal que lo predice</h2>
+    <div class="two">
+      <div>
+        <h3>Atención</h3>
+        <ul>
+          <li>El profesor usa <strong>mirada y pupila</strong> para construir el Attention Score.</li>
+          <li>El estudiante recibe <strong>EEG y GSR</strong> para predecirlo.</li>
+          <li>El resultado mide si EEG y GSR contienen información sobre la etiqueta ocular.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Activación</h3>
+        <ul>
+          <li>El profesor usa <strong>GSR</strong> para construir el Arousal Score.</li>
+          <li>El estudiante recibe <strong>EEG, mirada y pupila</strong> para predecirlo.</li>
+          <li>El resultado mide si esas modalidades anticipan activación sin reutilizar GSR.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="callout">Esta separación evita una respuesta trivial: reconstruir la regla usada para fabricar la pseudoetiqueta no cuenta como predicción.</p>
+    <div class="foot-bar"><span>Contribuciones</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 8 · LIMITACIONES --------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Partición experimental</p>
+    <h2>Las personas, no las ventanas, se separan entre entrenamiento y prueba</h2>
+    <div class="grupo">
+      <h4>25 participantes · entrenamiento</h4>
+      <p>Ajustan imputación, escalado, PCA de sensibilidad y estimadores. Ningún dato de prueba participa en estos ajustes.</p>
+    </div>
+    <div class="grupo">
+      <h4>8 participantes · validación · 8 participantes · prueba</h4>
+      <p>Validación permite comparar configuraciones. Prueba responde la pregunta fuera de muestra sobre personas que el modelo no vio.</p>
+    </div>
+    <div class="grupo">
+      <h4>P29 y seis exclusiones</h4>
+      <p>P29 se reserva para sensibilidad por su offset. P1, P7, P14, P17, P25 y P42 no entran a la comparación principal por calidad o disponibilidad.</p>
+    </div>
+    <p class="callout">El solapamiento entre ventanas no filtra información porque ningún participante aparece en más de una división.</p>
+    <div class="foot-bar"><span>Limitaciones</span><span class="prog">Avances Tesis · Magíster en Data Science</span><span class="num"></span></div>
+  </section>
+
+  <!-- 9 · QUÉ SE ENTRENÓ --------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Baseline estático · Qué se entrenó</p>
+    <h2>De cada ventana de 2 s se intenta predecir un score en personas no vistas</h2>
+    <div class="two">
+      <div class="panel" style="align-items:flex-start">
+        <h3>Predicción 1 · Atención</h3>
+        <p class="rol" style="text-align:left"><b>Entrada al modelo</b></p>
+        <div class="fila" style="justify-content:flex-start"><span class="chip c-eeg">EEG</span><span class="chip c-gsr">GSR</span></div>
+        <div class="flecha"><span aria-hidden="true">→</span><i>predice</i></div>
+        <div class="score">Attention Score</div>
+      </div>
+      <div class="panel" style="align-items:flex-start">
+        <h3>Predicción 2 · Activación</h3>
+        <p class="rol" style="text-align:left"><b>Entrada al modelo</b></p>
+        <div class="fila" style="justify-content:flex-start"><span class="chip c-eeg">EEG</span><span class="chip c-eye">Eye Tracking</span><span class="chip c-pup">Pupilometría</span></div>
+        <div class="flecha"><span aria-hidden="true">→</span><i>predice</i></div>
+        <div class="score">Arousal Score</div>
+      </div>
+    </div>
+    <div class="pasos" style="margin-top:18px"><div class="paso"><span class="t"><strong>Entrenar:</strong> 25 participantes ajustan imputación, escalado y modelo.</span><span class="tag t-impl">25</span></div>
+      <div class="paso"><span class="t"><strong>Probar:</strong> 8 participantes distintos, con 4.025 ventanas por objetivo principal.</span><span class="tag t-prof">8</span></div></div>
+    <p class="callout"><strong>En una frase:</strong> el baseline pregunta si las características agregadas de una ventana permiten estimar atención o activación de una persona que el modelo nunca vio.</p>
+    <div class="foot-bar"><span>Qué se entrenó</span><span class="prog">Tesis MDS · Baseline estático</span><span class="num"></span></div>
+  </section>
+
+  <!-- 10 · CRITERIO DE ÉXITO ----------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Cómo leer los resultados</p>
+    <h2>Un modelo solo aporta si mejora al Dummy en personas no vistas</h2>
+    <div class="metric-grid">
+      <div class="metric"><span class="k">Clasificación</span><span class="v">BA</span><span class="d">Balanced accuracy: 0,3333 es la referencia de tres clases balanceadas.</span></div>
+      <div class="metric"><span class="k">Regresión</span><span class="v">R²</span><span class="d">R² = 0 equivale a predecir la media del entrenamiento.</span></div>
+      <div class="metric"><span class="k">Regla de lectura</span><span class="v">↑ / ↓</span><span class="d">Mayor BA y R²; menor MAE y RMSE indican mejor predicción.</span></div>
+    </div>
+    <div class="two" style="margin-top:24px">
+      <div><h3>Qué se compara</h3><p class="lead">Dummy, modelo lineal y Random Forest con las mismas entradas, etiqueta y partición.</p></div>
+      <div><h3>Qué no se afirma</h3><p class="lead">Un resultado cerca del Dummy no prueba ausencia de información; acota esta etiqueta y estas características estáticas.</p></div>
+    </div>
+    <p class="callout">Las tablas siguientes usan 8 participantes y 4.025 ventanas de prueba por objetivo principal; P29 permanece fuera de ellas.</p>
+    <div class="foot-bar"><span>Criterio de éxito</span><span class="prog">Tesis MDS · Prueba fuera de muestra</span><span class="num"></span></div>
+  </section>
+
+  <!-- 11 · MODELOS --------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Baselines estáticos · 05-09-2026</p>
+    <h2>Treinta pipelines en cinco tareas</h2>
+    <table class="result-table"><thead><tr><th>Tipo</th><th>Modelos por tarea</th><th>Propósito</th></tr></thead>
+      <tbody><tr><th>Regresión</th><td>Dummy de media · Ridge · Random Forest</td><td>Predecir el score continuo.</td></tr>
+      <tr><th>Clasificación</th><td>Dummy de prior · Logística balanceada · Random Forest balanceado</td><td>Predecir la etiqueta ternaria.</td></tr></tbody></table>
+    <div class="two" style="margin-top:26px"><div><h3>Tareas principales</h3><ul><li><strong>Atención:</strong> EEG + GSR.</li><li><strong>Activación:</strong> EEG + mirada + pupila; contexto GSR de 6 s para construir la etiqueta.</li></ul></div>
+    <div><h3>Sensibilidades</h3><ul><li>Atención con fusión PCA.</li><li>Activación con contexto GSR de 2 s.</li><li>Activación con fusión PCA.</li></ul></div></div>
+    <p class="callout">Cada pipeline conserva su preprocesamiento y estimador: la recarga reproduce predicciones y probabilidades.</p>
+    <div class="foot-bar"><span>Baselines estáticos</span><span class="prog">Tesis MDS</span><span class="num"></span></div>
+  </section>
+
+  <!-- 12 · CLASIFICACIÓN --------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Clasificación · 8 participantes en prueba</p>
+    <h2>Desempeño cercano al control trivial</h2>
+    <table class="result-table"><thead><tr><th>Objetivo</th><th>Modelo</th><th>BA valid.</th><th>BA prueba</th><th>F1 macro prueba</th></tr></thead><tbody>
+      <tr><th rowspan="3">Atención<br><small>EEG + GSR</small></th><td>Dummy</td><td class="num">0,3333</td><td class="num">0,3333</td><td class="num">0,1667</td></tr>
+      <tr><td>Logística</td><td class="num">0,3357</td><td class="num">0,3240</td><td class="num">0,3238</td></tr><tr><td>Random Forest</td><td class="num">0,3199</td><td class="num">0,3197</td><td class="num">0,3191</td></tr>
+      <tr><th rowspan="3">Activación 6 s<br><small>EEG + mirada + pupila</small></th><td>Dummy</td><td class="num">0,3333</td><td class="num">0,3333</td><td class="num">0,1978</td></tr>
+      <tr><td>Logística</td><td class="num">0,3626</td><td class="num">0,3169</td><td class="num">0,3098</td></tr><tr><td>Random Forest</td><td class="num">0,3243</td><td class="num">0,3365</td><td class="num">0,3359</td></tr>
+    </tbody></table>
+    <p class="callout">BA promedia el recall de las tres clases y F1 macro promedia su F1. Métricas agregadas sobre ventanas; 8 participantes y 4.025 ventanas en prueba. P29 no se incorpora.</p>
+    <div class="foot-bar"><span>Clasificación</span><span class="prog">Tesis MDS</span><span class="num"></span></div>
+  </section>
+
+  <!-- 13 · REGRESIÓN ------------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Regresión · 8 participantes en prueba</p>
+    <h2>Ridge no explica variación fuera de muestra</h2>
+    <div class="two"><table class="result-table"><caption>Atención · score continuo</caption><thead><tr><th>Modelo</th><th>R²</th><th>MAE</th><th>RMSE</th></tr></thead><tbody><tr><th>Dummy</th><td class="num">0,0000</td><td class="num">0,7343</td><td class="num">1,0000</td></tr><tr><th>Ridge</th><td class="num">−0,0025</td><td class="num">0,7348</td><td class="num">1,0013</td></tr><tr><th>Random Forest</th><td class="num">−0,0705</td><td class="num">0,7646</td><td class="num">1,0346</td></tr></tbody></table>
+    <table class="result-table"><caption>Activación 6 s · score continuo</caption><thead><tr><th>Modelo</th><th>R²</th><th>MAE</th><th>RMSE</th></tr></thead><tbody><tr><th>Dummy</th><td class="num">0,0000</td><td class="num">0,6452</td><td class="num">1,0000</td></tr><tr><th>Ridge</th><td class="num">0,0051</td><td class="num">0,6486</td><td class="num">0,9974</td></tr><tr><th>Random Forest</th><td class="num">−0,0073</td><td class="num">0,6496</td><td class="num">1,0037</td></tr></tbody></table></div>
+    <p class="callout">Prueba: 8 participantes y 4.025 ventanas por objetivo. R² cercano a cero equivale a predecir la media; menor MAE y RMSE es mejor. Los scores están normalizados.</p>
+    <div class="foot-bar"><span>Regresión</span><span class="prog">Tesis MDS</span><span class="num"></span></div>
+  </section>
+
+  <!-- 14 · SENSIBILIDAD ---------------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Sensibilidad de etiqueta · 8 participantes</p>
+    <h2>Las variantes de etiqueta también quedan cerca del Dummy</h2>
+    <table class="result-table"><caption>Balanced accuracy en prueba</caption><thead><tr><th>Objetivo</th><th>Dummy</th><th>Logística</th><th>Random Forest</th></tr></thead><tbody><tr><th>Atención · PCA</th><td class="num">0,3333</td><td class="num">0,3487</td><td class="num">0,3322</td></tr><tr><th>Activación · 2 s</th><td class="num">0,3333</td><td class="num">0,3255</td><td class="num">0,3423</td></tr><tr><th>Activación · PCA</th><td class="num">0,3333</td><td class="num">0,3175</td><td class="num">0,3295</td></tr></tbody></table>
+    <p class="callout">Atención PCA usa 3.998 ventanas; las variantes de activación, 4.025. Todas evalúan los mismos 8 participantes. Son análisis de sensibilidad: no se elige una etiqueta por desempeño en prueba. P29 queda aparte.</p>
+    <div class="foot-bar"><span>Sensibilidad</span><span class="prog">Tesis MDS</span><span class="num"></span></div>
+  </section>
+
+  <!-- 15 · APRENDIZAJE DEL EXPERIMENTO ------------------------------------ -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Qué aprendí con este baseline</p>
+    <h2>Las características estáticas no entregan evidencia predictiva consistente fuera de muestra</h2>
+    <div class="two"><div><h3>Lo que sí quedó hecho</h3><ul><li>Un experimento reproducible con etiquetas separadas de sus predictores.</li><li>Partición por persona que evita contaminación entre ventanas solapadas.</li><li>30 pipelines guardados, 90 filas de métricas y 10 pruebas de integridad aprobadas.</li></ul></div>
+      <div><h3>Lo que todavía no se puede concluir</h3><ul><li>Que las señales no contengan información.</li><li>Que la hipótesis temporal esté confirmada o descartada.</li><li>Que las pseudoetiquetas sean suficientemente robustas, especialmente atención.</li></ul></div></div>
+    <p class="callout">La lectura correcta es acotada: con estas etiquetas y características agregadas, los modelos estáticos quedan cerca del Dummy.</p>
+    <div class="foot-bar"><span>Conclusión del baseline</span><span class="prog">Tesis MDS · Hallazgo actual</span><span class="num"></span></div>
+  </section>
+
+  <!-- 16 · SIGUIENTE CONTRASTE -------------------------------------------- -->
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Siguiente contraste experimental</p>
+    <h2>Incorporar temporalidad sin mover la línea de base</h2>
+    <div class="pasos"><div class="paso"><span class="t">Implementar un primer modelo temporal, por ejemplo TCN o LSTM.</span><span class="tag t-impl">Siguiente</span></div>
+      <div class="paso"><span class="t">Mantener las mismas etiquetas, participantes y métricas de los baselines.</span><span class="tag t-impl">Control</span></div>
+      <div class="paso"><span class="t">Comparar el modelo temporal contra los baselines estáticos de esta ejecución, fuera de muestra.</span><span class="tag t-prof">Evaluación</span></div></div>
+    <p class="callout">Un resultado nulo sigue siendo informativo: delimita el aporte de la temporalidad bajo esta etiqueta y esta partición.</p>
+    <div class="foot-bar"><span>Siguiente contraste</span><span class="prog">Tesis MDS</span><span class="num"></span></div>
+  </section>
+
+</main>
+
+<p id="help">← → para navegar · P para modo lista</p>
+<div id="controls" aria-label="Controles de presentación">
+  <button type="button" id="prev" aria-label="Diapositiva anterior">‹</button>
+  <button type="button" id="next" aria-label="Diapositiva siguiente">›</button>
+</div>
+<p id="announce" class="sr-only" aria-live="polite"></p>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var stage  = document.getElementById('stage');
+  var announce = document.getElementById('announce');
+  var i = 0;
+
+  slides.forEach(function(s, n){
+    var num = s.querySelector('.num');
+    if (num) num.textContent = (n + 1) + ' / ' + slides.length;
+  });
+
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){
+      s.classList.toggle('on', k === i);
+      s.setAttribute('aria-hidden', k === i ? 'false' : 'true');
+    });
+    location.hash = i + 1;
+    announce.textContent = 'Diapositiva ' + (i + 1) + ' de ' + slides.length;
+  }
+  function fit(){
+    if (document.body.classList.contains('list')) return;
+    var s = Math.min(window.innerWidth / 1280, window.innerHeight / 720) * 0.94;
+    stage.style.transform = 'scale(' + s + ')';
+  }
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown'){ e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home'){ show(0); }
+    else if (e.key === 'End'){ show(slides.length - 1); }
+    else if (e.key === 'p' || e.key === 'P'){
+      document.body.classList.toggle('list');
+      if (!document.body.classList.contains('list')){ stage.style.transform=''; fit(); show(i); }
+      else {
+        stage.style.transform = 'none';
+        slides.forEach(function(s){ s.setAttribute('aria-hidden', 'false'); });
+      }
+    }
+  });
+  stage.addEventListener('click', function(e){
+    if (document.body.classList.contains('list')) return;
+    show(e.clientX < window.innerWidth / 2 ? i - 1 : i + 1);
+  });
+  document.getElementById('prev').addEventListener('click', function(){ show(i - 1); });
+  document.getElementById('next').addEventListener('click', function(){ show(i + 1); });
+  window.addEventListener('resize', fit);
+
+  var start = parseInt((location.hash || '#1').slice(1), 10);
+  show(isNaN(start) ? 0 : start - 1);
+  fit();
+})();
+</script>
+</body>
+</html>
