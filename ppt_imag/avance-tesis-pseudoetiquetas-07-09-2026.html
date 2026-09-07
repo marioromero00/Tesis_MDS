@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avance de tesis — Construcción de pseudoetiquetas</title>
+<style>
+/* Formato oficial Tesis MDS · 07-09-2026 */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#003D73;--ink:#12243B;--muted:#526173;--line:#D3DBE4;--soft:#EFF4F9;--paper:#FFF;--eeg:#002F5D;--gsr:#5A6B84;--eye:#0F6FB0;--pup:#0E8080;--font:"Inter","Helvetica Neue",Arial,sans-serif}
+html,body{height:100%}body{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;color:var(--ink);font-family:var(--font)}
+#stage{position:relative;width:1280px;height:720px;overflow:hidden;background:var(--paper);border:1px solid var(--line);box-shadow:0 2px 28px rgba(18,36,59,.1);transform-origin:center}.slide{position:absolute;inset:0;display:none;flex-direction:column;padding:58px 76px 72px;background:#fff}.slide.on{display:flex}.slide::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--navy)}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:2.3px;text-transform:uppercase;color:#5E6875;margin-bottom:14px}h1{font-size:59px;line-height:1.08;letter-spacing:-1.5px;max-width:16ch}h2{font-size:37px;line-height:1.15;letter-spacing:-.6px;max-width:32ch;margin-bottom:22px}h3{font-size:14px;letter-spacing:1.4px;text-transform:uppercase;color:#5E6875;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--line)}p{font-size:18px;line-height:1.48;color:var(--muted)}strong{color:var(--ink)}
+.cover{justify-content:center}.cover .inst{font-size:15px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--navy)}.cover .prog{font-size:15px;margin-top:5px}.cover .rule{width:64px;height:3px;background:var(--navy);margin:25px 0}.cover .sub{font-size:22px;max-width:62ch}.cover-foot{display:flex;gap:40px;margin-top:44px;padding-top:18px;border-top:1px solid var(--line)}.cover-foot div{font-size:15px}.cover-foot span{display:block;color:#5E6875;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;margin-bottom:5px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.chip{border:1.5px solid;border-radius:5px;background:#fff;padding:7px 13px;font-size:14px;font-weight:650}.chip::before,.sig::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;vertical-align:-1px}.eeg{color:var(--eeg);border-color:var(--eeg)}.eeg::before,.sig.eeg::before{background:var(--eeg);border-radius:2px}.gsr{color:#46556B;border-color:var(--gsr)}.gsr::before,.sig.gsr::before{background:var(--gsr);transform:rotate(45deg) scale(.86)}.eye{color:#0C5B91;border-color:var(--eye)}.eye::before,.sig.eye::before{background:var(--eye);border-radius:50%}.pup{color:#0B6B6B;border-color:var(--pup)}.pup::before,.sig.pup::before{background:var(--pup);clip-path:polygon(50% 0,100% 100%,0 100%)}.sig{font-weight:700;white-space:nowrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.box,.card{border:1px solid var(--line);border-radius:8px;padding:18px 20px;background:#FCFDFE}.box p{font-size:17px}.box ul{list-style:none;display:grid;gap:10px}.box li{padding-left:19px;position:relative;font-size:17px;line-height:1.43;color:var(--muted)}.box li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;background:var(--line);border-radius:2px}.card .k{display:block;color:#5E6875;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700}.card .v{display:block;color:var(--navy);font-size:30px;font-weight:700;margin:7px 0 4px}.card p{font-size:15px;line-height:1.42}
+.flow{display:grid;grid-template-columns:1fr 35px 1fr 35px 1fr 35px 1fr;align-items:center;gap:6px}.flow .node{border:1px solid var(--line);border-radius:8px;padding:15px;min-height:122px;background:#FCFDFE}.flow .node b{display:block;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--navy);margin-bottom:8px}.flow .node p{font-size:15px;line-height:1.4}.arrow{text-align:center;color:#5E6875;font-size:28px}
+.teacher{display:grid;grid-template-columns:1fr 55px 1fr;align-items:center;gap:12px}.source{border:1px solid var(--line);border-radius:8px;padding:15px;background:#FCFDFE;text-align:center}.source b{display:block;font-size:13px;letter-spacing:1.1px;text-transform:uppercase;color:#5E6875;margin-bottom:9px}.source p{font-size:14px}.score{border-radius:7px;padding:17px 12px;background:var(--navy);color:#fff;text-align:center;font-size:18px;font-weight:700}.arr{text-align:center;color:#5E6875;font-size:25px}
+.callout{margin-top:auto;padding:14px 18px;background:var(--soft);border-left:4px solid var(--navy);font-size:16px;line-height:1.45;color:var(--ink);max-width:93ch}.refs{font-size:12px;line-height:1.4;color:#5E6875;margin-top:10px}.refs a{color:var(--navy);text-decoration:underline;text-underline-offset:2px}.foot{position:absolute;left:76px;right:76px;bottom:24px;border-top:1px solid var(--line);padding-top:11px;display:flex;justify-content:space-between;color:#5E6875;font-size:12px}
+#controls{position:fixed;right:18px;bottom:14px;display:flex;gap:8px}#controls button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy);font:700 22px/1 var(--font);cursor:pointer}#help{position:fixed;bottom:13px;left:50%;transform:translateX(-50%);font-size:12px;color:#5E6875}:focus-visible{outline:3px solid var(--navy);outline-offset:3px}.sr{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap}body.list{display:block;overflow:auto;background:#F4F6F8;padding:40px 0}body.list #stage{transform:none!important;margin:0 auto 30px;position:relative}body.list .slide{display:flex;position:relative;page-break-after:always}body.list #help,body.list #controls{display:none}@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<main id="stage" aria-label="Avance de tesis sobre construcción de pseudoetiquetas">
+  <section class="slide cover on">
+    <p class="inst">Universidad de Chile</p><p class="prog">Magíster en Data Science · Tesis MDS</p><div class="rule"></div>
+    <h1>Avance de tesis</h1><p class="sub">Construcción de pseudoetiquetas para atención y activación durante la navegación web.</p>
+    <div class="chips"><span class="chip eeg">EEG</span><span class="chip gsr">GSR</span><span class="chip pup">Pupilometría</span><span class="chip eye">Eye Tracking</span></div>
+    <div class="cover-foot"><div><span>Estudiante</span>Mario Romero</div><div><span>Profesor guía</span>Dr. Juan D. Velásquez</div><div><span>Fecha</span>7 de septiembre de 2026</div></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Problema y propósito</p>
+    <h2>Para comparar modelos se necesita un target por ventana, pero no existe una etiqueta externa disponible</h2>
+    <div class="three"><div class="card"><span class="k">Contexto</span><span class="v">48 personas</span><p>Navegaron contenido web mientras se registraron cuatro señales fisiológicas.</p></div><div class="card"><span class="k">Unidad</span><span class="v">2 segundos</span><p>Las señales se sincronizan y se agrupan en ventanas con 50 % de solapamiento.</p></div><div class="card"><span class="k">Problema</span><span class="v">Sin ground truth</span><p>No existe encuesta, anotación humana o diagnóstico por cada ventana.</p></div></div>
+    <div class="two" style="margin-top:23px"><div class="box"><h3>Por qué construir pseudoetiquetas</h3><p>Permiten convertir señales disponibles en un objetivo operativo para entrenar y comparar modelos de manera reproducible.</p></div><div class="box"><h3>Qué no son</h3><p>No son verdad absoluta: son aproximaciones explícitas, con límites que deben declararse y mantenerse fijos durante la comparación de modelos.</p></div></div>
+    <p class="callout"><strong>Rol en la tesis:</strong> las pseudoetiquetas no son el aporte final. Son la infraestructura necesaria para evaluar después si un modelo temporal aporta más que un modelo estático con la misma tarea.</p><div class="foot"><span>Por qué hacen falta targets</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Fundamento de las modalidades</p>
+    <h2>Las señales se eligen por la dimensión que aportan y por las restricciones de los datos disponibles</h2>
+    <div class="two"><div class="box"><h3>Aportes de la literatura</h3><ul><li><span class="sig eye">Mirada</span>: evidencia de foco visual observable.</li><li><span class="sig pup">Pupila</span>: proxy de esfuerzo y carga cognitiva.</li><li><span class="sig eeg">EEG</span>: firmas oscilatorias vinculadas con atención.</li><li><span class="sig gsr">GSR / EDA</span>: índice de activación simpática.</li></ul></div><div class="box"><h3>Límites y alcance</h3><ul><li>Mirar no equivale necesariamente a atender.</li><li>GSR no identifica valencia ni una emoción específica.</li><li>La asociación fisiológica no garantiza capacidad predictiva: se evalúa empíricamente.</li></ul></div></div>
+    <p class="callout"><strong>Por eso hay dos targets acotados:</strong> Attention Score combina evidencia ocular y pupilar; Arousal Score representa activación simpática a partir de GSR. No se presenta ninguno como una medición psicológica completa.</p>
+    <p class="refs">Fuentes: <a href="https://doi.org/10.1016/j.dcn.2016.11.001">Eckstein et al. (2017)</a>; <a href="https://doi.org/10.3758/s13423-018-1432-y">van der Wel &amp; van Steenbergen (2018)</a>; <a href="https://doi.org/10.1016/j.neuroimage.2017.03.008">Harris et al. (2017)</a>; <a href="https://doi.org/10.1177/107385840200800209">Critchley (2002)</a>.</p><div class="foot"><span>Por qué estas señales</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Regla de no-circularidad</p>
+    <h2>La señal que construye una pseudoetiqueta no puede usarse para predecir esa misma etiqueta</h2>
+    <div class="two"><div class="teacher"><div class="source"><b>Profesor de atención</b><div class="chips" style="justify-content:center;margin-top:0"><span class="chip eye">Mirada</span><span class="chip pup">Pupila</span></div><p style="margin-top:9px">Construye la etiqueta.</p></div><div class="arr" aria-hidden="true">→</div><div class="score">Attention Score<br><small style="font-size:12px;font-weight:500">Estudiante: EEG + GSR</small></div></div><div class="teacher" style="margin-top:28px"><div class="source"><b>Profesor de activación</b><div class="chips" style="justify-content:center;margin-top:0"><span class="chip gsr">GSR</span></div><p style="margin-top:9px">Construye la etiqueta.</p></div><div class="arr" aria-hidden="true">→</div><div class="score">Arousal Score<br><small style="font-size:12px;font-weight:500">Estudiante: EEG + mirada + pupila</small></div></div></div><div class="box"><h3>Qué evita esta regla</h3><p>Si GSR construyera Arousal Score y también entrara al modelo que lo predice, el resultado podría ser alto solo porque el modelo repite la misma fuente.</p><p style="margin-top:18px">La separación fuerza una pregunta más útil: si otras modalidades contienen información sobre el target.</p></div></div>
+    <p class="callout"><strong>Modelo Profesor:</strong> regla que produce el target. <strong>Modelo Estudiante:</strong> modelo supervisado que estima ese target desde modalidades distintas. Así, el resultado mide transferencia entre modalidades, no reproducción de una regla.</p><div class="foot"><span>Diseño sin fuga de información</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Cómo se construye cada pseudoetiqueta</p>
+    <h2>De señales crudas a un score por ventana: una receta explícita y reproducible</h2>
+    <div class="flow"><div class="node"><b>1 · Calidad y sincronía</b><p>Se descartan datos inválidos y se alinean las cuatro señales.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>2 · Ventanas</b><p>Se agrupan en tramos de 2 s, con 50 % de solapamiento.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>3 · Características</b><p>Se resumen fijaciones, pupila, GSR y bandas EEG según su rol.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>4 · Score</b><p>Se normaliza por participante y se fusionan las fuentes del Profesor.</p></div></div>
+    <div class="two" style="margin-top:23px"><div class="box"><h3>Attention Score</h3><p>Combina eye tracking —fijaciones, duración, áreas de interés y dispersión— con pupilometría —diámetro/variación— para reunir evidencia visual y cognitiva.</p></div><div class="box"><h3>Arousal Score</h3><p>Resume GSR mediante componentes tónicos y fásicos —nivel, picos, amplitud y variabilidad—; el contexto principal considera 6 s por la latencia de la respuesta.</p></div></div>
+    <p class="callout"><strong>Definición y resultado:</strong> la receta anterior define la pseudoetiqueta; su resultado es un score continuo por ventana, que también puede convertirse en bajo/medio/alto. Es la salida del Modelo Profesor, no el resultado del Modelo Estudiante. La receta se mantiene fija al comparar modelos.</p><div class="foot"><span>Pipeline de etiquetas</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Validación desde la literatura</p>
+    <h2>La literatura fundamenta las variables del score; no valida automáticamente la receta completa</h2>
+    <div class="two"><div class="box"><h3>Attention Score</h3><ul><li><strong>Eckstein et al.:</strong> fijaciones, duración y área de interés describen el foco visual observable.</li><li><strong>van der Wel y van Steenbergen:</strong> diámetro y variación pupilar son proxies de esfuerzo o carga cognitiva.</li><li>Así, el score reúne evidencia visual y cognitiva; la fusión exacta es una decisión operacional de esta tesis.</li></ul></div><div class="box"><h3>Arousal Score</h3><ul><li><strong>Boucsein et al.:</strong> nivel tónico, picos y amplitud fásica son medidas recomendadas de EDA/GSR.</li><li><strong>Critchley:</strong> GSR / EDA refleja activación del sistema nervioso simpático.</li><li>El contexto de 6 s responde a la latencia de la respuesta; no sustituye una referencia externa del estado.</li></ul></div></div>
+    <p class="callout"><strong>Qué queda validado y qué no:</strong> estos trabajos respaldan la <em>validez de constructo</em> de las variables elegidas. Para evaluar si el score combinado se acerca al estado buscado se requiere validación convergente con autoreporte, desempeño en una tarea o anotación humana; eso sigue pendiente.</p>
+    <p class="refs">Fuentes: <a href="https://doi.org/10.1016/j.dcn.2016.11.001">Eckstein et al. (2017)</a>; <a href="https://doi.org/10.3758/s13423-018-1432-y">van der Wel &amp; van Steenbergen (2018)</a>; <a href="https://doi.org/10.1111/j.1469-8986.2012.01384.x">Boucsein et al. (2012)</a>; <a href="https://doi.org/10.1177/107385840200800209">Critchley (2002)</a>.</p><div class="foot"><span>Qué respalda la literatura</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Primeros modelos</p>
+    <h2>Con las pseudoetiquetas fijas, el primer contraste usa modelos estáticos simples y comparables</h2>
+    <div class="two"><div class="box"><h3>Qué recibe cada modelo</h3><ul><li><strong>Atención:</strong> EEG + GSR → Attention Score.</li><li><strong>Activación:</strong> EEG + mirada + pupila → Arousal Score.</li><li><strong>Unidad:</strong> resumen de una ventana de 2 s; no recibe ventanas previas ni posteriores.</li><li><strong>Partición:</strong> 25 participantes entrenan; 8 validan; 8 prueban.</li></ul></div><div class="box"><h3>Qué se compara</h3><ul><li><strong>Clasificación:</strong> Dummy, regresión logística y Random Forest; predicen bajo/media/alta.</li><li><strong>Regresión:</strong> Dummy, Ridge y Random Forest; predicen el score continuo.</li><li><strong>Sensibilidades:</strong> tres variantes de etiqueta comprueban si el resultado depende de una receta única.</li></ul></div></div>
+    <div class="three" style="margin-top:22px"><div class="card"><span class="k">1 · Qué se predice</span><span class="v">5 targets</span><p>Atención y activación principales, más tres variantes para comprobar robustez de la etiqueta.</p></div><div class="card"><span class="k">2 · En qué formato</span><span class="v">2 salidas</span><p>El mismo target se predice como nivel bajo/medio/alto y como score continuo.</p></div><div class="card"><span class="k">3 · Con qué referencia</span><span class="v">3 modelos</span><p>Dummy, lineal y Random Forest. En total: 5 × 2 × 3 = 30 comparaciones.</p></div></div>
+    <div class="foot"><span>Baseline estático</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Primeros resultados · 8 participantes de prueba</p>
+    <h2 style="margin-bottom:10px">La pregunta es simple: ¿usar señales predice mejor que no usarlas?</h2>
+    <p style="font-size:16px;line-height:1.4;margin-bottom:14px">Cada score se evalúa de dos formas: <strong>clasificación</strong> predice bajo/medio/alto; <strong>regresión</strong> estima el valor continuo. En regresión, <strong>R² = 0</strong> equivale a predecir la media; &gt; 0 mejora y &lt; 0 empeora esa referencia.</p>
+    <div class="two"><div class="box"><h3>Attention Score</h3><p style="font-size:16px;margin-bottom:13px"><strong>Clasificación · nivel:</strong> mejor con señales = Logística, 0,3240<br>Dummy, sin señales = 0,3333<br><strong>Resultado:</strong> Dummy sigue siendo mejor.</p><p style="font-size:16px"><strong>Regresión · R² del score:</strong> mejor con señales = Ridge, −0,0025<br>Dummy, sin señales = 0 (predice la media)<br><strong>Resultado:</strong> Dummy sigue siendo mejor.</p></div><div class="box"><h3>Arousal Score · 6 s</h3><p style="font-size:16px;margin-bottom:13px"><strong>Clasificación · nivel:</strong> mejor = Random Forest, 0,3365<br>Dummy, sin señales = 0,3333<br><strong>Resultado:</strong> alza puntual muy pequeña.</p><p style="font-size:16px"><strong>Regresión · R² del score:</strong> mejor = Ridge, 0,0051<br>Dummy, sin señales = 0 (predice la media)<br><strong>Resultado:</strong> mejora prácticamente nula.</p></div></div>
+    <p class="callout"><strong>Cómo se decide:</strong> el Dummy es la referencia porque no usa señales. Una mejora útil debe superar esa referencia de forma clara y repetida en ambos scores y salidas, no solo en una celda. Aparece una alza aislada en clasificación de activación, pero no una mejora consistente; corresponde probar si la secuencia temporal aporta la información que falta.</p><div class="foot"><span>Resultado del baseline</span><span class="num"></span></div>
+  </section>
+
+  <section class="slide">
+    <p class="eyebrow">Tesis MDS · Siguientes pasos</p>
+    <h2>El próximo experimento cambia el modelo, no las pseudoetiquetas ni la evaluación</h2>
+    <div class="flow"><div class="node"><b>1 · Congelar diseño</b><p>Conservar targets, participantes, partición y métricas ya definidos.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>2 · Modelo temporal</b><p>Entrenar una TCN o LSTM que reciba una secuencia de ventanas.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>3 · Misma prueba</b><p>Evaluar en personas nuevas, sin mezclar sus ventanas con entrenamiento.</p></div><div class="arrow" aria-hidden="true">→</div><div class="node"><b>4 · Comparación</b><p>Contrastar contra el baseline estático y atribuir una mejora a temporalidad.</p></div></div>
+    <div class="two" style="margin-top:24px"><div class="box"><h3>Si mejora el modelo temporal</h3><p>Habrá evidencia de que la evolución entre ventanas aporta información que el snapshot estático no captura.</p></div><div class="box"><h3>Si no mejora</h3><p>También será informativo: delimitará el aporte de temporalidad bajo estas pseudoetiquetas y esta partición.</p></div></div>
+    <p class="callout"><strong>Mensaje final:</strong> este avance deja construida la tarea de predicción. El siguiente paso es probar de forma justa la hipótesis central de la tesis: si la temporalidad multimodal mejora el desempeño fuera de muestra.</p><div class="foot"><span>De las pseudoetiquetas al contraste temporal</span><span class="num"></span></div>
+  </section>
+</main>
+<p id="help">← → para navegar · P para modo lista</p><div id="controls" aria-label="Controles de presentación"><button id="prev" type="button" aria-label="Diapositiva anterior">‹</button><button id="next" type="button" aria-label="Diapositiva siguiente">›</button></div><p id="announce" class="sr" aria-live="polite"></p>
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var stage = document.getElementById('stage');
+  var announce = document.getElementById('announce');
+  var i = 0;
+
+  slides.forEach(function(s, n){
+    var num = s.querySelector('.foot .num');
+    if (num) num.textContent = (n + 1) + ' / ' + slides.length;
+  });
+
+  function show(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function(s, k){
+      s.classList.toggle('on', k === i);
+      s.setAttribute('aria-hidden', k === i ? 'false' : 'true');
+    });
+    location.hash = i + 1;
+    announce.textContent = 'Diapositiva ' + (i + 1) + ' de ' + slides.length;
+  }
+
+  function fit(){
+    if (document.body.classList.contains('list')) return;
+    var scale = Math.min(window.innerWidth / 1280, window.innerHeight / 720) * 0.94;
+    stage.style.transform = 'scale(' + scale + ')';
+  }
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown'){
+      e.preventDefault();
+      show(i + 1);
+    } else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){
+      e.preventDefault();
+      show(i - 1);
+    } else if (e.key === 'Home'){
+      show(0);
+    } else if (e.key === 'End'){
+      show(slides.length - 1);
+    } else if (e.key === 'p' || e.key === 'P'){
+      document.body.classList.toggle('list');
+      if (!document.body.classList.contains('list')){
+        stage.style.transform = '';
+        fit();
+        show(i);
+      } else {
+        stage.style.transform = 'none';
+        slides.forEach(function(s){ s.setAttribute('aria-hidden', 'false'); });
+      }
+    }
+  });
+
+  stage.addEventListener('click', function(e){
+    if (document.body.classList.contains('list')) return;
+    show(e.clientX < window.innerWidth / 2 ? i - 1 : i + 1);
+  });
+  document.getElementById('prev').addEventListener('click', function(){ show(i - 1); });
+  document.getElementById('next').addEventListener('click', function(){ show(i + 1); });
+  window.addEventListener('resize', fit);
+
+  var start = parseInt((location.hash || '#1').slice(1), 10);
+  show(isNaN(start) ? 0 : start - 1);
+  fit();
+})();
+</script>
+</body></html>
