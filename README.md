@@ -1,12 +1,19 @@
 # Tesis MDS — Baselines multimodales
 
-Estado al 06-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado al 07-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 la comparación temporal es el siguiente paso.
 
 ## Entrega actual
+
+- [Estabilidad y panel de entradas congelado](documentacion/Estabilidad_Variables_07-09-2026.md):
+  cinco folds por participante, 180 ajustes internos y 36 pipelines finales. La reducción
+  queda como contraste experimental; se conservan los completos como referencia.
+
+- [Análisis de importancia y reducción de variables](documentacion/Analisis_Variables_07-09-2026.md):
+  56 comparaciones en validación, 48 pipelines reducidos y figuras exportables.
 
 - [Presentación HTML, 16 diapositivas](presentaciones/avance-eda-sincronizacion-15-08-2026.html).
 - [30 modelos entrenados](resultados/modelado/ejecuciones/baselines_05-09-2026_02/modelos/).

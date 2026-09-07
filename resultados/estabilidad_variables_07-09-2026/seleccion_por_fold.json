@@ -1,0 +1,912 @@
+[
+  {
+    "fold": 0,
+    "task": "attention_primary",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_beta_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "removed": [
+      {
+        "feature": "eeg_gamma_relative",
+        "reason": "correlation",
+        "representative": "eeg_beta_relative",
+        "abs_spearman": 0.9565693328779752
+      },
+      {
+        "feature": "eeg_delta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9382670953878118
+      },
+      {
+        "feature": "eeg_std_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9793248924826135
+      },
+      {
+        "feature": "eeg_peak_to_peak_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9561534717390986
+      },
+      {
+        "feature": "gsr_scr_mean_prominence_z",
+        "reason": "correlation",
+        "representative": "gsr_scr_count",
+        "abs_spearman": 0.9998947612741609
+      },
+      {
+        "feature": "gsr_mean_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9927142683721213
+      },
+      {
+        "feature": "gsr_min_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9895477714903531
+      },
+      {
+        "feature": "gsr_max_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9910498663777082
+      }
+    ]
+  },
+  {
+    "fold": 0,
+    "task": "arousal_primary_6s",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "removed": []
+  },
+  {
+    "fold": 1,
+    "task": "attention_primary",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_beta_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "removed": [
+      {
+        "feature": "eeg_gamma_relative",
+        "reason": "correlation",
+        "representative": "eeg_beta_relative",
+        "abs_spearman": 0.9549846182542598
+      },
+      {
+        "feature": "eeg_delta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9297957634595939
+      },
+      {
+        "feature": "eeg_std_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9653337442053552
+      },
+      {
+        "feature": "eeg_peak_to_peak_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9368922600194445
+      },
+      {
+        "feature": "gsr_scr_mean_prominence_z",
+        "reason": "correlation",
+        "representative": "gsr_scr_count",
+        "abs_spearman": 0.9999119228656377
+      },
+      {
+        "feature": "gsr_mean_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9932756479362697
+      },
+      {
+        "feature": "gsr_min_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9909217431483055
+      },
+      {
+        "feature": "gsr_max_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9911278052609236
+      }
+    ]
+  },
+  {
+    "fold": 1,
+    "task": "arousal_primary_6s",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "removed": []
+  },
+  {
+    "fold": 2,
+    "task": "attention_primary",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_beta_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "removed": [
+      {
+        "feature": "eeg_gamma_relative",
+        "reason": "correlation",
+        "representative": "eeg_beta_relative",
+        "abs_spearman": 0.9580191002162829
+      },
+      {
+        "feature": "eeg_delta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9334146735012755
+      },
+      {
+        "feature": "eeg_std_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.967716019705299
+      },
+      {
+        "feature": "eeg_peak_to_peak_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9408776396527425
+      },
+      {
+        "feature": "gsr_scr_mean_prominence_z",
+        "reason": "correlation",
+        "representative": "gsr_scr_count",
+        "abs_spearman": 0.9998285278651736
+      },
+      {
+        "feature": "gsr_mean_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9924449959473192
+      },
+      {
+        "feature": "gsr_min_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9899520725606976
+      },
+      {
+        "feature": "gsr_max_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9900560222660696
+      }
+    ]
+  },
+  {
+    "fold": 2,
+    "task": "arousal_primary_6s",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "removed": []
+  },
+  {
+    "fold": 3,
+    "task": "attention_primary",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_gamma_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "removed": [
+      {
+        "feature": "eeg_beta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9107052594014043
+      },
+      {
+        "feature": "eeg_delta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.949381702359121
+      },
+      {
+        "feature": "eeg_std_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9699002647432846
+      },
+      {
+        "feature": "eeg_peak_to_peak_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9461705392805163
+      },
+      {
+        "feature": "gsr_scr_mean_prominence_z",
+        "reason": "correlation",
+        "representative": "gsr_scr_count",
+        "abs_spearman": 0.9998585064137274
+      },
+      {
+        "feature": "gsr_mean_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9924659141808113
+      },
+      {
+        "feature": "gsr_min_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9896630153756805
+      },
+      {
+        "feature": "gsr_max_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.99051109070685
+      }
+    ]
+  },
+  {
+    "fold": 3,
+    "task": "arousal_primary_6s",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "removed": []
+  },
+  {
+    "fold": 4,
+    "task": "attention_primary",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_gamma_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "removed": [
+      {
+        "feature": "eeg_beta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9016273338058532
+      },
+      {
+        "feature": "eeg_delta_relative",
+        "reason": "correlation",
+        "representative": "eeg_alpha_relative",
+        "abs_spearman": 0.9393203458562105
+      },
+      {
+        "feature": "eeg_std_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9709980443971118
+      },
+      {
+        "feature": "eeg_peak_to_peak_uv",
+        "reason": "correlation",
+        "representative": "eeg_rms_uv",
+        "abs_spearman": 0.9509286452849733
+      },
+      {
+        "feature": "gsr_scr_mean_prominence_z",
+        "reason": "correlation",
+        "representative": "gsr_scr_count",
+        "abs_spearman": 0.9998080171931018
+      },
+      {
+        "feature": "gsr_mean_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.993073719169598
+      },
+      {
+        "feature": "gsr_min_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9915069092324104
+      },
+      {
+        "feature": "gsr_max_z",
+        "reason": "correlation",
+        "representative": "gsr_tonic_mean_z",
+        "abs_spearman": 0.9909276952925321
+      }
+    ]
+  },
+  {
+    "fold": 4,
+    "task": "arousal_primary_6s",
+    "subsets": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "removed": []
+  }
+]
