@@ -1,0 +1,48 @@
+{
+  "model_id": "fold4__classification__random_forest__current__20260907",
+  "fold": 4,
+  "kind": "classification",
+  "architecture": "random_forest",
+  "mode": "current",
+  "seed": 20260907,
+  "path": "modelos/fold4__classification__random_forest__current__20260907.joblib",
+  "sha256": "d26364a57b024fd3ade2f55d31353c26e200df9f1524f8d94a448bdd1860fdd2",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s"
+  ],
+  "target": "arousal_label_6s",
+  "train_participants": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P30",
+    "P34",
+    "P35",
+    "P36",
+    "P40",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8"
+  ],
+  "evaluation_participants": [
+    "P20",
+    "P3",
+    "P33",
+    "P4",
+    "P9"
+  ],
+  "reload_verified": true
+}

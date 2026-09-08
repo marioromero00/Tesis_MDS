@@ -1,0 +1,48 @@
+{
+  "model_id": "fold1__regression__random_forest__current__20260907",
+  "fold": 1,
+  "kind": "regression",
+  "architecture": "random_forest",
+  "mode": "current",
+  "seed": 20260907,
+  "path": "modelos/fold1__regression__random_forest__current__20260907.joblib",
+  "sha256": "efd27299cea705bb4c4f2bb84bf896f4d9c02bd574a0442fd78b3d8941d8bdc1",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s"
+  ],
+  "target": "arousal_score_6s",
+  "train_participants": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P3",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P44",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "evaluation_participants": [
+    "P22",
+    "P24",
+    "P30",
+    "P43",
+    "P48"
+  ],
+  "reload_verified": true
+}

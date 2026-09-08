@@ -1,0 +1,48 @@
+{
+  "model_id": "fold3__regression__dummy_mean__current__20260907",
+  "fold": 3,
+  "kind": "regression",
+  "architecture": "dummy_mean",
+  "mode": "current",
+  "seed": 20260907,
+  "path": "modelos/fold3__regression__dummy_mean__current__20260907.joblib",
+  "sha256": "ca48a5aa4c0c1133ec434f5a77b8afdbe4f97829dd428ff83e8fb10a5e135472",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s"
+  ],
+  "target": "arousal_score_6s",
+  "train_participants": [
+    "P12",
+    "P13",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P3",
+    "P30",
+    "P33",
+    "P34",
+    "P35",
+    "P4",
+    "P40",
+    "P43",
+    "P44",
+    "P48",
+    "P9"
+  ],
+  "evaluation_participants": [
+    "P18",
+    "P27",
+    "P36",
+    "P46",
+    "P8"
+  ],
+  "reload_verified": true
+}

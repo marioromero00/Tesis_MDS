@@ -1,0 +1,48 @@
+{
+  "model_id": "fold1__regression__ridge__current__20260907",
+  "fold": 1,
+  "kind": "regression",
+  "architecture": "ridge",
+  "mode": "current",
+  "seed": 20260907,
+  "path": "modelos/fold1__regression__ridge__current__20260907.joblib",
+  "sha256": "ddb8724038658fa0a32f7091cba7c6f5230d9a002f881958c86f168c9751923a",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s"
+  ],
+  "target": "arousal_score_6s",
+  "train_participants": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P3",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P44",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "evaluation_participants": [
+    "P22",
+    "P24",
+    "P30",
+    "P43",
+    "P48"
+  ],
+  "reload_verified": true
+}

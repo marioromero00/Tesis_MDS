@@ -1,0 +1,16 @@
+{
+  "models_reloaded": 170,
+  "predictions_verified": 459816,
+  "preprocessors_independently_refitted": 10,
+  "neural_epoch_selections_verified": 140,
+  "fold_metrics_verified": 170,
+  "participant_metrics_verified": 850,
+  "all_outer_participants_excluded_from_fit_and_epoch_selection": true,
+  "all_original_train_windows_predicted_once_per_configuration_and_seed": true,
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "protocol_sha256": "2feeb8d2bc38e8e430f3b1db5267ab3c15bd537bf6ae1c6b3fab2e2f178a739f",
+  "catalog_sha256": "4dd3817b5329fa0606113165d132ff52678b971bf72cd2bc8b6b6169eef5891a",
+  "report_script_sha256": "212da0ecb690965dbc4eebd16a93171544155fc34b77e5e7e4e296b85bf2e72d",
+  "completed_utc": "2026-09-08T09:30:51.448985+00:00"
+}

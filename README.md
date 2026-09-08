@@ -1,12 +1,18 @@
 # Tesis MDS — Baselines multimodales
 
-Estado al 07-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado al 08-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
 ## Entrega actual
+
+- [Control del historial pupilar con las mismas cinco variables](documentacion/Control_Historial_Pupilar_08-09-2026.md):
+  cinco folds por participante dentro de train, selección interna de época y 170 modelos
+  guardados. LSTM/BiLSTM mejoran puntualmente frente a controles de ventana actual,
+  con intervalos que incluyen cero y sin superar a logística en promedio. 459.816
+  predicciones verificadas y 29 pruebas aprobadas; sin nueva evaluación de validation/test.
 
 - [TCN, LSTM y BiLSTM: resultados y variables frente al baseline](documentacion/Modelos_Temporales_07-09-2026.md):
   104 redes guardadas, dos semillas, evaluación en test y explicaciones por variable e historial.

@@ -1,0 +1,48 @@
+{
+  "model_id": "fold2__classification__logistic__current__20260907",
+  "fold": 2,
+  "kind": "classification",
+  "architecture": "logistic",
+  "mode": "current",
+  "seed": 20260907,
+  "path": "modelos/fold2__classification__logistic__current__20260907.joblib",
+  "sha256": "b67f1698644537cd1e5e5b4c3a096218a41777ce1605f4bf99543224826ec21a",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s"
+  ],
+  "target": "arousal_label_6s",
+  "train_participants": [
+    "P13",
+    "P18",
+    "P20",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P3",
+    "P30",
+    "P33",
+    "P34",
+    "P36",
+    "P4",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "evaluation_participants": [
+    "P12",
+    "P19",
+    "P2",
+    "P35",
+    "P40"
+  ],
+  "reload_verified": true
+}
