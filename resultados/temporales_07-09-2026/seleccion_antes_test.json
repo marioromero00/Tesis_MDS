@@ -1,0 +1,103 @@
+{
+  "frozen_utc": "2026-09-08T00:12:08.582888+00:00",
+  "rule": "checkpoint by validation macro BA / negative MSE; configuration by mean over two seeds; never test",
+  "models": [
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "scope": "panel",
+      "subset": "Pupil_no_quality",
+      "architecture": "BiLSTM",
+      "validation_mean": 0.3905525731640813,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "scope": "full",
+      "subset": "full",
+      "architecture": "LSTM",
+      "validation_mean": 0.3725294571481763,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "scope": "panel",
+      "subset": "Eye_Pupil",
+      "architecture": "BiLSTM",
+      "validation_mean": -0.9971786750682607,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "scope": "full",
+      "subset": "full",
+      "architecture": "BiLSTM",
+      "validation_mean": -0.9985221685521884,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "attention_primary",
+      "kind": "classification",
+      "scope": "panel",
+      "subset": "EEG",
+      "architecture": "LSTM",
+      "validation_mean": 0.34941986766966404,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "attention_primary",
+      "kind": "classification",
+      "scope": "full",
+      "subset": "full",
+      "architecture": "TCN",
+      "validation_mean": 0.3454426427918947,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "attention_primary",
+      "kind": "regression",
+      "scope": "panel",
+      "subset": "EEG",
+      "architecture": "LSTM",
+      "validation_mean": -0.999084051453774,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    },
+    {
+      "task": "attention_primary",
+      "kind": "regression",
+      "scope": "full",
+      "subset": "full",
+      "architecture": "BiLSTM",
+      "validation_mean": -1.000841565487287,
+      "seeds": [
+        20260907,
+        20260908
+      ]
+    }
+  ],
+  "test_used": false
+}

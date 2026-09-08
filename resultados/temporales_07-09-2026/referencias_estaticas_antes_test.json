@@ -1,0 +1,118 @@
+{
+  "frozen_utc": "2026-09-08T00:12:25.997537+00:00",
+  "rule": "best validation participant macro score, matched feature subset with dummy allowed",
+  "references": [
+    {
+      "task": "attention_primary",
+      "kind": "classification",
+      "subset": "full",
+      "model": "logistic",
+      "baseline_subset": "full"
+    },
+    {
+      "task": "attention_primary",
+      "kind": "classification",
+      "subset": "EEG",
+      "model": "logistic",
+      "baseline_subset": "EEG"
+    },
+    {
+      "task": "attention_primary",
+      "kind": "classification",
+      "subset": "compact_no_noise",
+      "model": "logistic",
+      "baseline_subset": "compact_no_noise"
+    },
+    {
+      "task": "attention_primary",
+      "kind": "regression",
+      "subset": "full",
+      "model": "ridge",
+      "baseline_subset": "full"
+    },
+    {
+      "task": "attention_primary",
+      "kind": "regression",
+      "subset": "EEG",
+      "model": "dummy_mean",
+      "baseline_subset": "full"
+    },
+    {
+      "task": "attention_primary",
+      "kind": "regression",
+      "subset": "compact_no_noise",
+      "model": "ridge",
+      "baseline_subset": "compact_no_noise"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "subset": "full",
+      "model": "logistic",
+      "baseline_subset": "full"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "subset": "Pupil",
+      "model": "logistic",
+      "baseline_subset": "Pupil"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "subset": "Eye_Pupil",
+      "model": "logistic",
+      "baseline_subset": "Eye_Pupil"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "subset": "Pupil_no_quality",
+      "model": "logistic",
+      "baseline_subset": "Pupil_no_quality"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "classification",
+      "subset": "Eye_Pupil_no_quality",
+      "model": "logistic",
+      "baseline_subset": "Eye_Pupil_no_quality"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "subset": "full",
+      "model": "ridge",
+      "baseline_subset": "full"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "subset": "Pupil",
+      "model": "ridge",
+      "baseline_subset": "Pupil"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "subset": "Eye_Pupil",
+      "model": "ridge",
+      "baseline_subset": "Eye_Pupil"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "subset": "Pupil_no_quality",
+      "model": "ridge",
+      "baseline_subset": "Pupil_no_quality"
+    },
+    {
+      "task": "arousal_primary_6s",
+      "kind": "regression",
+      "subset": "Eye_Pupil_no_quality",
+      "model": "ridge",
+      "baseline_subset": "Eye_Pupil_no_quality"
+    }
+  ]
+}

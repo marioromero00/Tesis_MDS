@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-08T00:12:25.998274+00:00",
+  "source_sha256": "8506b3082dd5928533ea93c8ddb68bb974a1a98234a4d61c7247d36d18456ada",
+  "repeats": 5,
+  "seed": 20260907,
+  "selected_models": "best panel and best full by mean validation over seeds; primary seed only for explanations",
+  "scopes": [
+    "validation",
+    "test_post_hoc"
+  ],
+  "importance": "circular raw-feature shifts within participant/recording/segment; rebuilt sequences; group modalities jointly",
+  "differential": "temporal importance minus baseline importance = original gain minus perturbed gain",
+  "history_controls": [
+    "repeat_endpoint_in_past",
+    "reverse_past_keep_endpoint"
+  ],
+  "disclaimer": "model dependence, not additive causal explanation; test importance not used for model or feature selection"
+}

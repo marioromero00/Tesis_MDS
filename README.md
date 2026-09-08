@@ -4,9 +4,13 @@ Estado al 07-09-2026. Esta entrada reemplaza la descripción anterior del reposi
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
-la comparación temporal es el siguiente paso.
+se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
 ## Entrega actual
+
+- [TCN, LSTM y BiLSTM: resultados y variables frente al baseline](documentacion/Modelos_Temporales_07-09-2026.md):
+  104 redes guardadas, dos semillas, evaluación en test y explicaciones por variable e historial.
+  Mejoras puntuales de clasificación de activación; todavía sin ventaja general del historial.
 
 - [Estabilidad y panel de entradas congelado](documentacion/Estabilidad_Variables_07-09-2026.md):
   cinco folds por participante, 180 ajustes internos y 36 pipelines finales. La reducción

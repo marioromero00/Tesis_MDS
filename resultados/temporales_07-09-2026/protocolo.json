@@ -1,0 +1,186 @@
+{
+  "context_windows": 8,
+  "maximum_support_seconds": 9,
+  "hidden": 24,
+  "dropout": 0.2,
+  "seeds": [
+    20260907,
+    20260908
+  ],
+  "architectures": [
+    "TCN",
+    "LSTM",
+    "BiLSTM"
+  ],
+  "epochs": 30,
+  "min_epochs": 8,
+  "patience": 6,
+  "min_delta": 0.0001,
+  "batch_size": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "device": "cpu",
+  "threads": 4,
+  "features": {
+    "attention_primary": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "EEG": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio"
+      ],
+      "compact_no_noise": [
+        "eeg_rms_uv",
+        "eeg_alpha_relative",
+        "eeg_theta_relative",
+        "eeg_beta_relative",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_std_z",
+        "gsr_scr_count"
+      ]
+    },
+    "arousal_primary_6s": {
+      "full": [
+        "eeg_rms_uv",
+        "eeg_std_uv",
+        "eeg_peak_to_peak_uv",
+        "eeg_delta_relative",
+        "eeg_theta_relative",
+        "eeg_alpha_relative",
+        "eeg_beta_relative",
+        "eeg_gamma_relative",
+        "eeg_line_noise_ratio",
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil": [
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_both_valid_fraction",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Pupil_no_quality": [
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ],
+      "Eye_Pupil_no_quality": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    }
+  },
+  "targets": {
+    "attention_primary": [
+      "attention_score_equal",
+      "attention_label_equal"
+    ],
+    "arousal_primary_6s": [
+      "arousal_score_6s",
+      "arousal_label_6s"
+    ]
+  },
+  "classes": [
+    "bajo",
+    "medio",
+    "alto"
+  ],
+  "preprocessing": "median train imputation with missing indicators and train StandardScaler",
+  "sequence_policy": "past and present, up to 8 windows; right zero padding; reset at participant/recording/segment/stimulus/gap !=1s",
+  "control": "MLP_current on full sets; same training protocol, reads only endpoint",
+  "selection": "checkpoint by validation macro BA / negative MSE; configuration by mean over two seeds; never test",
+  "scope": "primary pseudo-labels, inherited offline participant normalization; no raw signal training",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "panel_sha256": "6afb01529a2b3e38a706c9ffecb11dd35ce0c7b9c9e7f714836e1e30bb2b6b8f",
+  "source_hashes": {
+    "temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "entrenar_temporales.py": "5457023892315634aa1dad04eba6e5896b0e3b6585e65d94af9845d26f09de8b"
+  },
+  "created_utc": "2026-09-08T00:07:13.038629+00:00",
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.14.0+cpu",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3"
+  }
+}
