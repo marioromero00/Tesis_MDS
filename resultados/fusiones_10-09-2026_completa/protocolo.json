@@ -1,0 +1,1751 @@
+{
+  "created_utc": "2026-09-11T01:47:07.050789+00:00",
+  "tasks": {
+    "attention": {
+      "target": "attention_label_equal",
+      "modalities": {
+        "EEG": [
+          "eeg_rms_uv",
+          "eeg_std_uv",
+          "eeg_peak_to_peak_uv",
+          "eeg_delta_relative",
+          "eeg_theta_relative",
+          "eeg_alpha_relative",
+          "eeg_beta_relative",
+          "eeg_gamma_relative",
+          "eeg_line_noise_ratio"
+        ],
+        "GSR": [
+          "gsr_mean_z",
+          "gsr_std_z",
+          "gsr_min_z",
+          "gsr_max_z",
+          "gsr_tonic_mean_z",
+          "gsr_phasic_mean_z",
+          "gsr_slope_z_s",
+          "gsr_scr_count",
+          "gsr_scr_mean_prominence_z"
+        ]
+      },
+      "forbidden": [
+        "gaze_dispersion_x_px",
+        "gaze_dispersion_y_px",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px",
+        "fixation_count",
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "fixation_median_ms",
+        "saccade_count",
+        "saccade_mean_ms",
+        "pupil_mean_z",
+        "pupil_std_z",
+        "pupil_min_z",
+        "pupil_max_z",
+        "pupil_slope_z_s"
+      ]
+    },
+    "arousal": {
+      "target": "arousal_label_6s",
+      "modalities": {
+        "Pupil": [
+          "pupil_mean_z",
+          "pupil_std_z",
+          "pupil_min_z",
+          "pupil_max_z",
+          "pupil_slope_z_s"
+        ],
+        "Eye": [
+          "gaze_dispersion_x_px",
+          "gaze_dispersion_y_px",
+          "gaze_dispersion_2d_px",
+          "gaze_path_length_px",
+          "fixation_count",
+          "fixation_total_ms",
+          "fixation_mean_ms",
+          "fixation_median_ms",
+          "saccade_count",
+          "saccade_mean_ms"
+        ],
+        "EEG": [
+          "eeg_rms_uv",
+          "eeg_std_uv",
+          "eeg_peak_to_peak_uv",
+          "eeg_delta_relative",
+          "eeg_theta_relative",
+          "eeg_alpha_relative",
+          "eeg_beta_relative",
+          "eeg_gamma_relative",
+          "eeg_line_noise_ratio"
+        ]
+      },
+      "forbidden": [
+        "gsr_mean_z",
+        "gsr_std_z",
+        "gsr_min_z",
+        "gsr_max_z",
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_slope_z_s",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ]
+    }
+  },
+  "candidates": {
+    "attention": [
+      {
+        "candidate_id": "1__logistic__early__",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__logistic__late_mean__0.5,0.5",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_geometric__0.5,0.5",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.25,0.75",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.5,0.5",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.75,0.25",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__unimodal__1.0,0.0",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "1__logistic__unimodal__0.0,1.0",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      },
+      {
+        "candidate_id": "1__lda__early__",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__lda__late_mean__0.5,0.5",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_geometric__0.5,0.5",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.25,0.75",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.5,0.5",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.75,0.25",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__lda__unimodal__1.0,0.0",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "1__lda__unimodal__0.0,1.0",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      },
+      {
+        "candidate_id": "1__extra_trees__early__",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.25,0.75",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.5,0.5",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.75,0.25",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__unimodal__1.0,0.0",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "1__extra_trees__unimodal__0.0,1.0",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      },
+      {
+        "candidate_id": "8__logistic__early__",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__logistic__late_mean__0.5,0.5",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_geometric__0.5,0.5",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.25,0.75",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.5,0.5",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.75,0.25",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__unimodal__1.0,0.0",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__logistic__unimodal__0.0,1.0",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      },
+      {
+        "candidate_id": "8__lda__early__",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__lda__late_mean__0.5,0.5",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_geometric__0.5,0.5",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.25,0.75",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.5,0.5",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.75,0.25",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__lda__unimodal__1.0,0.0",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__lda__unimodal__0.0,1.0",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      },
+      {
+        "candidate_id": "8__extra_trees__early__",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__extra_trees__late_mean__0.5,0.5",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_mean",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_geometric__0.5,0.5",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_geometric",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.25,0.75",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.5,0.5",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.75,0.25",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.75,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__unimodal__1.0,0.0",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__extra_trees__unimodal__0.0,1.0",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0
+        ],
+        "modality": "GSR"
+      }
+    ],
+    "arousal": [
+      {
+        "candidate_id": "1__logistic__early__",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.25,0.25,0.5",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.25,0.5,0.25",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__late_weighted__0.5,0.25,0.25",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__logistic__unimodal__1.0,0.0,0.0",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "1__logistic__unimodal__0.0,1.0,0.0",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "1__logistic__unimodal__0.0,0.0,1.0",
+        "context": 1,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "1__lda__early__",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.25,0.25,0.5",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.25,0.5,0.25",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__lda__late_weighted__0.5,0.25,0.25",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__lda__unimodal__1.0,0.0,0.0",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "1__lda__unimodal__0.0,1.0,0.0",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "1__lda__unimodal__0.0,0.0,1.0",
+        "context": 1,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "1__extra_trees__early__",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "1__extra_trees__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.25,0.25,0.5",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.25,0.5,0.25",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__late_weighted__0.5,0.25,0.25",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "1__extra_trees__unimodal__1.0,0.0,0.0",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "1__extra_trees__unimodal__0.0,1.0,0.0",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "1__extra_trees__unimodal__0.0,0.0,1.0",
+        "context": 1,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__logistic__early__",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.25,0.25,0.5",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.25,0.5,0.25",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__late_weighted__0.5,0.25,0.25",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__logistic__unimodal__1.0,0.0,0.0",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "8__logistic__unimodal__0.0,1.0,0.0",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "8__logistic__unimodal__0.0,0.0,1.0",
+        "context": 8,
+        "estimator": "logistic",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__lda__early__",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.25,0.25,0.5",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.25,0.5,0.25",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__lda__late_weighted__0.5,0.25,0.25",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__lda__unimodal__1.0,0.0,0.0",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "8__lda__unimodal__0.0,1.0,0.0",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "8__lda__unimodal__0.0,0.0,1.0",
+        "context": 8,
+        "estimator": "lda",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      },
+      {
+        "candidate_id": "8__extra_trees__early__",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "early",
+        "weights": null
+      },
+      {
+        "candidate_id": "8__extra_trees__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_mean",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_geometric",
+        "weights": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.25,0.25,0.5",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.25,
+          0.5
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.25,0.5,0.25",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.25,
+          0.5,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__late_weighted__0.5,0.25,0.25",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "late_weighted",
+        "weights": [
+          0.5,
+          0.25,
+          0.25
+        ]
+      },
+      {
+        "candidate_id": "8__extra_trees__unimodal__1.0,0.0,0.0",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "modality": "Pupil"
+      },
+      {
+        "candidate_id": "8__extra_trees__unimodal__0.0,1.0,0.0",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "modality": "Eye"
+      },
+      {
+        "candidate_id": "8__extra_trees__unimodal__0.0,0.0,1.0",
+        "context": 8,
+        "estimator": "extra_trees",
+        "strategy": "unimodal",
+        "weights": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modality": "EEG"
+      }
+    ]
+  },
+  "folds": {
+    "attention": [
+      {
+        "fold": 1,
+        "fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P26",
+          "P27",
+          "P3",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P44",
+          "P46",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P22",
+          "P24",
+          "P30",
+          "P43",
+          "P48"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P26",
+          "P27",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P46",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P3",
+          "P33",
+          "P34",
+          "P44"
+        ]
+      },
+      {
+        "fold": 2,
+        "fit": [
+          "P13",
+          "P18",
+          "P20",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P34",
+          "P36",
+          "P4",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P12",
+          "P19",
+          "P2",
+          "P35",
+          "P40"
+        ],
+        "inner_fit": [
+          "P18",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P36",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P13",
+          "P20",
+          "P34",
+          "P4"
+        ]
+      },
+      {
+        "fold": 3,
+        "fit": [
+          "P12",
+          "P13",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P3",
+          "P30",
+          "P33",
+          "P34",
+          "P35",
+          "P4",
+          "P40",
+          "P43",
+          "P44",
+          "P48",
+          "P9"
+        ],
+        "evaluation": [
+          "P18",
+          "P27",
+          "P36",
+          "P46",
+          "P8"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P24",
+          "P26",
+          "P3",
+          "P30",
+          "P33",
+          "P4",
+          "P40",
+          "P43",
+          "P48",
+          "P9"
+        ],
+        "inner_validation": [
+          "P22",
+          "P34",
+          "P35",
+          "P44"
+        ]
+      },
+      {
+        "fold": 4,
+        "fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P30",
+          "P34",
+          "P35",
+          "P36",
+          "P40",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8"
+        ],
+        "evaluation": [
+          "P20",
+          "P3",
+          "P33",
+          "P4",
+          "P9"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P2",
+          "P21",
+          "P22",
+          "P24",
+          "P34",
+          "P35",
+          "P36",
+          "P40",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8"
+        ],
+        "inner_validation": [
+          "P19",
+          "P26",
+          "P27",
+          "P30"
+        ]
+      },
+      {
+        "fold": 5,
+        "fit": [
+          "P12",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P22",
+          "P24",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P43",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P13",
+          "P21",
+          "P26",
+          "P34",
+          "P44"
+        ],
+        "inner_fit": [
+          "P12",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P22",
+          "P24",
+          "P27",
+          "P3",
+          "P33",
+          "P35",
+          "P4",
+          "P43",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P30",
+          "P36",
+          "P40",
+          "P46"
+        ]
+      }
+    ],
+    "arousal": [
+      {
+        "fold": 1,
+        "fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P26",
+          "P27",
+          "P3",
+          "P33",
+          "P34",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P44",
+          "P46",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P22",
+          "P24",
+          "P30",
+          "P43",
+          "P48"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P26",
+          "P27",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P46",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P3",
+          "P33",
+          "P34",
+          "P44"
+        ]
+      },
+      {
+        "fold": 2,
+        "fit": [
+          "P13",
+          "P18",
+          "P20",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P34",
+          "P36",
+          "P4",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P12",
+          "P19",
+          "P2",
+          "P35",
+          "P40"
+        ],
+        "inner_fit": [
+          "P18",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P36",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P13",
+          "P20",
+          "P34",
+          "P4"
+        ]
+      },
+      {
+        "fold": 3,
+        "fit": [
+          "P12",
+          "P13",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P3",
+          "P30",
+          "P33",
+          "P34",
+          "P35",
+          "P4",
+          "P40",
+          "P43",
+          "P44",
+          "P48",
+          "P9"
+        ],
+        "evaluation": [
+          "P18",
+          "P27",
+          "P36",
+          "P46",
+          "P8"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P19",
+          "P2",
+          "P20",
+          "P21",
+          "P24",
+          "P26",
+          "P3",
+          "P30",
+          "P33",
+          "P4",
+          "P40",
+          "P43",
+          "P48",
+          "P9"
+        ],
+        "inner_validation": [
+          "P22",
+          "P34",
+          "P35",
+          "P44"
+        ]
+      },
+      {
+        "fold": 4,
+        "fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P19",
+          "P2",
+          "P21",
+          "P22",
+          "P24",
+          "P26",
+          "P27",
+          "P30",
+          "P34",
+          "P35",
+          "P36",
+          "P40",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8"
+        ],
+        "evaluation": [
+          "P20",
+          "P3",
+          "P33",
+          "P4",
+          "P9"
+        ],
+        "inner_fit": [
+          "P12",
+          "P13",
+          "P18",
+          "P2",
+          "P21",
+          "P22",
+          "P24",
+          "P34",
+          "P35",
+          "P36",
+          "P40",
+          "P43",
+          "P44",
+          "P46",
+          "P48",
+          "P8"
+        ],
+        "inner_validation": [
+          "P19",
+          "P26",
+          "P27",
+          "P30"
+        ]
+      },
+      {
+        "fold": 5,
+        "fit": [
+          "P12",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P22",
+          "P24",
+          "P27",
+          "P3",
+          "P30",
+          "P33",
+          "P35",
+          "P36",
+          "P4",
+          "P40",
+          "P43",
+          "P46",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "evaluation": [
+          "P13",
+          "P21",
+          "P26",
+          "P34",
+          "P44"
+        ],
+        "inner_fit": [
+          "P12",
+          "P18",
+          "P19",
+          "P2",
+          "P20",
+          "P22",
+          "P24",
+          "P27",
+          "P3",
+          "P33",
+          "P35",
+          "P4",
+          "P43",
+          "P48",
+          "P8",
+          "P9"
+        ],
+        "inner_validation": [
+          "P30",
+          "P36",
+          "P40",
+          "P46"
+        ]
+      }
+    ]
+  },
+  "seeds": [
+    20260910,
+    20260911
+  ],
+  "inner_folds": 3,
+  "selection": "mean BA macro across three internal participant folds; tie by candidate id",
+  "primary": "late_weighted vs early, each selected internally among identical estimator/context panel",
+  "secondary": "mean/geometric/unimodal vs early and fixed logistic on all current permitted predictors",
+  "history": "current or up to eight consecutive past/current 2s windows, 1s step, within recording and person; may cross stimulus",
+  "scope": "exploratory repeated research on original train; unchanged labels and participant split; no fresh confirmation",
+  "late_weights": "positive quarter increments, sum one; all modalities retained; separate unimodal controls",
+  "preprocessing": "each modality separately fit in late fusion; concatenated features jointly fit in early fusion, training people only",
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "sources": {
+    "explorar_fusiones.py": "e47bd90da209ce8338c38c2671d32f91370fa9eb2017a59bd7e64f25fd93c1ea",
+    "temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "optimizar_historial.py": "493197e117e33c39bc20850c49e5fdcfb6e67f74322ccb752037e07135c532b4",
+    "control_historial.py": "238e3980397d07abc4d91e165b7e7bbae082fc81a253e7274c95551aa17bc626"
+  }
+}

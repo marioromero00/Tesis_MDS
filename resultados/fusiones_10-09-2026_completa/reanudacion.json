@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-11T01:51:40.297214+00:00",
+  "source": "resultados/fusiones_10-09-2026",
+  "issue": "Exact reload assertion failed under parallel Extra Trees prediction; observed max absolute probability difference 2.22044605e-16",
+  "correction": "Preserve frozen inner selections; refit outer pipelines; set Extra Trees n_jobs=1 before saving/predicting",
+  "failed_run_preserved": true,
+  "selection_sha256": "d2f9ac8e835d372aabe48873686918d1bab13df14a6826cac867420229915343",
+  "source_sha256": "d6d1e7d5ba14e4dab91cffa5c68d3a097278a5a3d9a72a5e5b05d5adb98cff35",
+  "inner_search_repeated": false,
+  "outer_results_used_for_selection": false
+}

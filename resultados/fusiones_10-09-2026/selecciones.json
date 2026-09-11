@@ -1,0 +1,812 @@
+[
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "early",
+    "inner_score": 0.36284752359302735,
+    "candidate_id": "1__extra_trees__early__",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "late_mean",
+    "inner_score": 0.3603926071748371,
+    "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_mean",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "late_geometric",
+    "inner_score": 0.36188933238260573,
+    "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_geometric",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "late_weighted",
+    "inner_score": 0.3603926071748371,
+    "candidate_id": "1__extra_trees__late_weighted__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "unimodal",
+    "inner_score": 0.3578133564435091,
+    "candidate_id": "1__extra_trees__unimodal__0.0,1.0",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      1.0
+    ],
+    "modality": "GSR"
+  },
+  {
+    "task": "attention",
+    "fold": 1,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "early",
+    "inner_score": 0.34017460504873087,
+    "candidate_id": "1__extra_trees__early__",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "late_mean",
+    "inner_score": 0.34143008794675195,
+    "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_mean",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "late_geometric",
+    "inner_score": 0.34147596717605383,
+    "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_geometric",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "late_weighted",
+    "inner_score": 0.3456322462280046,
+    "candidate_id": "1__extra_trees__late_weighted__0.25,0.75",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_weighted",
+    "weights": [
+      0.25,
+      0.75
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "unimodal",
+    "inner_score": 0.34560897363203386,
+    "candidate_id": "1__extra_trees__unimodal__0.0,1.0",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      1.0
+    ],
+    "modality": "GSR"
+  },
+  {
+    "task": "attention",
+    "fold": 2,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "early",
+    "inner_score": 0.34389205714585563,
+    "candidate_id": "1__extra_trees__early__",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "late_mean",
+    "inner_score": 0.3472688320236815,
+    "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_mean",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "late_geometric",
+    "inner_score": 0.34651568488756607,
+    "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_geometric",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "late_weighted",
+    "inner_score": 0.3565081652357443,
+    "candidate_id": "1__extra_trees__late_weighted__0.25,0.75",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_weighted",
+    "weights": [
+      0.25,
+      0.75
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "unimodal",
+    "inner_score": 0.3622495928497753,
+    "candidate_id": "1__extra_trees__unimodal__0.0,1.0",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      1.0
+    ],
+    "modality": "GSR"
+  },
+  {
+    "task": "attention",
+    "fold": 3,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "early",
+    "inner_score": 0.340189476550026,
+    "candidate_id": "1__logistic__early__",
+    "context": 1,
+    "estimator": "logistic",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "late_mean",
+    "inner_score": 0.34249420696286553,
+    "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_mean",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "late_geometric",
+    "inner_score": 0.3422861051434265,
+    "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_geometric",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "late_weighted",
+    "inner_score": 0.34249420696286553,
+    "candidate_id": "1__extra_trees__late_weighted__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "unimodal",
+    "inner_score": 0.34554961690001407,
+    "candidate_id": "8__lda__unimodal__1.0,0.0",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "unimodal",
+    "weights": [
+      1.0,
+      0.0
+    ],
+    "modality": "EEG"
+  },
+  {
+    "task": "attention",
+    "fold": 4,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "early",
+    "inner_score": 0.3404923910453072,
+    "candidate_id": "1__extra_trees__early__",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "late_mean",
+    "inner_score": 0.34607171413573407,
+    "candidate_id": "1__extra_trees__late_mean__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_mean",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "late_geometric",
+    "inner_score": 0.346441694702174,
+    "candidate_id": "1__extra_trees__late_geometric__0.5,0.5",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_geometric",
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "late_weighted",
+    "inner_score": 0.35358669129275566,
+    "candidate_id": "1__extra_trees__late_weighted__0.25,0.75",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "late_weighted",
+    "weights": [
+      0.25,
+      0.75
+    ]
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "unimodal",
+    "inner_score": 0.3512147381500172,
+    "candidate_id": "1__extra_trees__unimodal__0.0,1.0",
+    "context": 1,
+    "estimator": "extra_trees",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      1.0
+    ],
+    "modality": "GSR"
+  },
+  {
+    "task": "attention",
+    "fold": 5,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "early",
+    "inner_score": 0.3607623740512457,
+    "candidate_id": "8__logistic__early__",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "late_mean",
+    "inner_score": 0.36135541592885384,
+    "candidate_id": "8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "late_geometric",
+    "inner_score": 0.3607770799191729,
+    "candidate_id": "8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_geometric",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "late_weighted",
+    "inner_score": 0.362675060271688,
+    "candidate_id": "8__lda__late_weighted__0.5,0.25,0.25",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "unimodal",
+    "inner_score": 0.36478922503243866,
+    "candidate_id": "8__extra_trees__unimodal__0.0,1.0,0.0",
+    "context": 8,
+    "estimator": "extra_trees",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "modality": "Eye"
+  },
+  {
+    "task": "arousal",
+    "fold": 1,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "early",
+    "inner_score": 0.37530463276483966,
+    "candidate_id": "8__lda__early__",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "late_mean",
+    "inner_score": 0.3697567711354089,
+    "candidate_id": "8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "late_geometric",
+    "inner_score": 0.37044270092500264,
+    "candidate_id": "8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_geometric",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "late_weighted",
+    "inner_score": 0.37079783379453174,
+    "candidate_id": "8__logistic__late_weighted__0.5,0.25,0.25",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "unimodal",
+    "inner_score": 0.3670325544530033,
+    "candidate_id": "8__lda__unimodal__0.0,0.0,1.0",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "modality": "EEG"
+  },
+  {
+    "task": "arousal",
+    "fold": 2,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "early",
+    "inner_score": 0.3414970383139251,
+    "candidate_id": "8__logistic__early__",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "late_mean",
+    "inner_score": 0.34459630005060937,
+    "candidate_id": "8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "late_geometric",
+    "inner_score": 0.3447599346142988,
+    "candidate_id": "8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_geometric",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "late_weighted",
+    "inner_score": 0.34599787800012755,
+    "candidate_id": "8__logistic__late_weighted__0.25,0.25,0.5",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_weighted",
+    "weights": [
+      0.25,
+      0.25,
+      0.5
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "unimodal",
+    "inner_score": 0.3579200893728472,
+    "candidate_id": "8__logistic__unimodal__0.0,0.0,1.0",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "modality": "EEG"
+  },
+  {
+    "task": "arousal",
+    "fold": 3,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "early",
+    "inner_score": 0.34726204154347623,
+    "candidate_id": "8__lda__early__",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "late_mean",
+    "inner_score": 0.3426127200925464,
+    "candidate_id": "8__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "late_geometric",
+    "inner_score": 0.3440854830050261,
+    "candidate_id": "8__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_geometric",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "late_weighted",
+    "inner_score": 0.3494814068369367,
+    "candidate_id": "8__logistic__late_weighted__0.5,0.25,0.25",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "unimodal",
+    "inner_score": 0.3508102264642882,
+    "candidate_id": "8__logistic__unimodal__1.0,0.0,0.0",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "unimodal",
+    "weights": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "modality": "Pupil"
+  },
+  {
+    "task": "arousal",
+    "fold": 4,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "early",
+    "inner_score": 0.34832000749394626,
+    "candidate_id": "8__lda__early__",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "early",
+    "weights": null
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "late_mean",
+    "inner_score": 0.3433622627567696,
+    "candidate_id": "8__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_mean",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "late_geometric",
+    "inner_score": 0.34156721020540154,
+    "candidate_id": "8__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_geometric",
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "late_weighted",
+    "inner_score": 0.3455242257808407,
+    "candidate_id": "8__lda__late_weighted__0.5,0.25,0.25",
+    "context": 8,
+    "estimator": "lda",
+    "strategy": "late_weighted",
+    "weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "unimodal",
+    "inner_score": 0.3494105958742717,
+    "candidate_id": "8__logistic__unimodal__0.0,0.0,1.0",
+    "context": 8,
+    "estimator": "logistic",
+    "strategy": "unimodal",
+    "weights": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "modality": "EEG"
+  },
+  {
+    "task": "arousal",
+    "fold": 5,
+    "scope": "fixed_logistic",
+    "candidate_id": "fixed_logistic",
+    "context": 1,
+    "estimator": "logistic_reference",
+    "strategy": "early",
+    "weights": null,
+    "inner_score": null
+  }
+]

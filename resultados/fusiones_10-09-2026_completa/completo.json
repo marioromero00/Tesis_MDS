@@ -1,0 +1,12 @@
+{
+  "models": 120,
+  "inner_fits": 630,
+  "outer_component_fits": 240,
+  "protocol_sha256": "576341d15cbe6a7aa7c286e005a122ac5f74e319b12669e63ff0f6e5f63b7220",
+  "selection_sha256": "d2f9ac8e835d372aabe48873686918d1bab13df14a6826cac867420229915343",
+  "catalog_sha256": "9813ae80fd23027910088757f19ace47ea3386236ea11d5b2f95133a2f0595b2",
+  "predictions_sha256": "c62804e7f8211f8ca20aa88dd4c346d0181081d8030e9931b04bd94815e0ca3e",
+  "resumption_sha256": "2f4d39cba6c563294599bcd68301afbfef82f77ef5bcf0a9997bc85b1ba5c22b",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

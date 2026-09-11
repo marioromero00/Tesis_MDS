@@ -8,6 +8,12 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [Nuevos modelos y fusiones para atención y activación](documentacion/Fusiones_10-09-2026.md):
+  LDA, Extra Trees y logística; fusión temprana y tardía. 120 bundles guardados, 324.576
+  predicciones verificadas y 38 pruebas. Activación llega a BA macro 0,3651 y atención
+  a 0,3444 con fusión tardía; las diferencias frente a temprana siguen siendo inciertas.
+  Incluye bitácora, 1.530 puntuaciones internas y conservación del intento interrumpido.
+
 - [Tres iteraciones para mejorar activación](documentacion/Optimizacion_Historial_08-09-2026.md):
   búsqueda temporal/no lineal, combinación y mirada/EEG. 795 ajustes internos, 90 archivos
   de modelos y 243.432 predicciones verificadas. Mejor BA macro observada 0,3546 frente a

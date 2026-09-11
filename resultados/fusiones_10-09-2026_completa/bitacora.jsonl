@@ -1,0 +1,423 @@
+{"utc": "2026-09-11T01:47:08.061345+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:08.361023+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:08.361288+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:08.570476+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:08.574773+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:09.194745+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:09.195013+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:09.858099+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:09.858353+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:10.171416+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:10.171686+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:10.921497+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:10.933625+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:11.221060+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:11.221322+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:11.434430+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:11.434715+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:12.086466+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:12.086724+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:12.729010+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:12.729264+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:13.042162+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:13.042390+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:13.808352+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:13.812469+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:14.091670+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:14.091994+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:14.295441+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:14.295689+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:14.934536+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:14.934783+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:15.440660+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:15.440963+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:15.760973+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:15.761217+00:00", "stage": "fit_started", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:16.483574+00:00", "stage": "fit_completed", "task": "attention", "fold": 1, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:16.513065+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:16.822002+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:16.822264+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:17.047958+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:17.048245+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:17.739515+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:17.739778+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:18.383730+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:18.383987+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:18.703437+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:18.703711+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:19.492105+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:19.497802+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:19.868024+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:19.868405+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:20.086839+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:20.087096+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:20.731142+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:20.731417+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:21.403948+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:21.404254+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:21.734652+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:21.734889+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:22.506268+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:22.513629+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:22.790460+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:22.790707+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:22.993259+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:22.993500+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:23.626659+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:23.626922+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:24.193943+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:24.194174+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:24.469100+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:24.469350+00:00", "stage": "fit_started", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:25.206788+00:00", "stage": "fit_completed", "task": "attention", "fold": 2, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:25.228576+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:25.510444+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:25.510688+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:25.732117+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:25.732421+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:26.405067+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:26.405390+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:27.037802+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:27.038046+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:27.356626+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:27.356873+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:28.181832+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:28.189491+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:28.459978+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:28.460220+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:28.673151+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:28.673408+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:29.318667+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:29.318915+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:29.836134+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:29.836393+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:30.189732+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:30.190244+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:30.940483+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:30.945850+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:31.228588+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:31.228839+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:31.450026+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:31.450260+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:32.062857+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:32.063120+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:32.720055+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:32.720302+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:33.025963+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:33.026238+00:00", "stage": "fit_started", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:33.802442+00:00", "stage": "fit_completed", "task": "attention", "fold": 3, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:33.825117+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:34.108949+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:34.109191+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:34.324674+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:34.324930+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:34.948845+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:34.949097+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:35.459023+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:35.459254+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:35.750965+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:35.751219+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:36.541485+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:36.547346+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:36.810961+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:36.811193+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:37.040315+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:37.040571+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:37.703481+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:37.703830+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:38.238090+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:38.238339+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:38.518621+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:38.518951+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:39.279995+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:39.285868+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:39.595873+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:39.596138+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:39.848630+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:39.848996+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:40.571713+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:40.571957+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:41.165408+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:41.165720+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:41.523174+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:41.523488+00:00", "stage": "fit_started", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:42.347495+00:00", "stage": "fit_completed", "task": "attention", "fold": 4, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:42.375067+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:42.698740+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:42.699028+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:42.941285+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:42.941564+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:43.618389+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:43.618679+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:44.314896+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:44.315212+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:44.682080+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:44.682348+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:45.538413+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:45.548047+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:45.861413+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:45.861665+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:46.116567+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:46.116870+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:46.854771+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:46.855049+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:47.406220+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:47.406539+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:47.831009+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:47.831364+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:48.694022+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:48.703214+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:49.039723+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:49.040061+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:49.285590+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:49.286000+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:49.958923+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:49.959313+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:50.657471+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:50.657709+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:50.969190+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:50.969532+00:00", "stage": "fit_started", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:51.791745+00:00", "stage": "fit_completed", "task": "attention", "fold": 5, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:53.304586+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:53.641264+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:53.641533+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:53.885439+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:53.885683+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:54.690627+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:54.690923+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:55.316086+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:55.316370+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:55.674865+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:55.675117+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:56.636085+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:56.647076+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:57.007470+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:57.007861+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:57.313247+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:57.313532+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:58.284064+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:47:58.284337+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:58.895526+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:47:58.895827+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:59.242306+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:47:59.242541+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:00.225500+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:00.232410+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:00.538190+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:00.538438+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:00.803027+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:00.803295+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:01.623149+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:01.623418+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:02.236306+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:02.236575+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:02.561358+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:02.561607+00:00", "stage": "fit_started", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:03.521515+00:00", "stage": "fit_completed", "task": "arousal", "fold": 1, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:03.546148+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:03.892017+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:03.892262+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:04.145573+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:04.145823+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:04.962539+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:04.962798+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:05.639249+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:05.639505+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:05.999026+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:05.999258+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:07.034887+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:07.046204+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:07.390866+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:07.391119+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:07.705579+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:07.705941+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:08.508173+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:08.508552+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:09.169031+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:09.169279+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:09.508583+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:09.508848+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:10.493334+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:10.500564+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:10.842002+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:10.842481+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:11.123616+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:11.123935+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:11.946114+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:11.946399+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:12.654886+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:12.655183+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:13.013923+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:13.014190+00:00", "stage": "fit_started", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:14.035975+00:00", "stage": "fit_completed", "task": "arousal", "fold": 2, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:14.068598+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:14.441959+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:14.442213+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:14.704577+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:14.704821+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:15.520963+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:15.521258+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:16.135773+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:16.136224+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:16.495446+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:16.495780+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:17.539669+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:17.550968+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:17.932911+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:17.933173+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:18.179734+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:18.179984+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:18.981322+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:18.981647+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:19.634692+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:19.634954+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:20.027627+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:20.027892+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:20.976971+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:20.984742+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:21.372911+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:21.373299+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:21.616054+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:21.616308+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:22.429613+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:22.429872+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:23.118623+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:23.118859+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:23.469815+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:23.470058+00:00", "stage": "fit_started", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:24.457443+00:00", "stage": "fit_completed", "task": "arousal", "fold": 3, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:24.482443+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:24.823908+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:24.824159+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:25.075787+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:25.076252+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:25.900701+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:25.900947+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:26.552377+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:26.552618+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:26.904321+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:26.904592+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:27.957086+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:27.965728+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:28.305427+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:28.305665+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:28.568472+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:28.568711+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:29.382299+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:29.382560+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:30.043201+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:30.043486+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:30.382029+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:30.382290+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:31.394635+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:31.405102+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:31.795031+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:31.795394+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:32.032083+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:32.032325+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:32.887090+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:32.887432+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:33.583961+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:33.584462+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:33.959161+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:33.959490+00:00", "stage": "fit_started", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:34.929794+00:00", "stage": "fit_completed", "task": "arousal", "fold": 4, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:34.955977+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:35.308910+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:35.309213+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:35.556628+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:35.556908+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:36.381507+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:36.381768+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:37.011107+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:37.011381+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:37.380203+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:37.380565+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:38.440128+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 1, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:38.449019+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:38.780802+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:38.781093+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:39.036379+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:39.036613+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:39.882215+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:39.882516+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:40.556373+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:40.556620+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:40.926679+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:40.926930+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:41.970732+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 2, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:41.979738+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:42.322710+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:42.323164+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:42.563824+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:42.564089+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:43.367151+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 1, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:43.367427+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:44.072335+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "logistic"}
+{"utc": "2026-09-11T01:48:44.072676+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:44.418315+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "lda"}
+{"utc": "2026-09-11T01:48:44.418547+00:00", "stage": "fit_started", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:45.379918+00:00", "stage": "fit_completed", "task": "arousal", "fold": 5, "inner": 3, "context": 8, "estimator": "extra_trees"}
+{"utc": "2026-09-11T01:48:45.409470+00:00", "stage": "selection_frozen", "sha256": "d2f9ac8e835d372aabe48873686918d1bab13df14a6826cac867420229915343", "inner_fits": 630}
+{"utc": "2026-09-11T01:51:40.309424+00:00", "stage": "resumed", "correction": "Extra Trees prediction single thread; frozen selections retained"}
+{"utc": "2026-09-11T01:51:41.025894+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "early"}
+{"utc": "2026-09-11T01:51:41.817890+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "late_mean"}
+{"utc": "2026-09-11T01:51:42.655131+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:51:43.461059+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:51:44.280906+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "unimodal"}
+{"utc": "2026-09-11T01:51:44.561874+00:00", "stage": "outer_completed", "task": "attention", "fold": 1, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:51:45.087480+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "early"}
+{"utc": "2026-09-11T01:51:45.964436+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "late_mean"}
+{"utc": "2026-09-11T01:51:46.818831+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:51:47.758855+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:51:48.625706+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "unimodal"}
+{"utc": "2026-09-11T01:51:48.969038+00:00", "stage": "outer_completed", "task": "attention", "fold": 2, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:51:49.460955+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "early"}
+{"utc": "2026-09-11T01:51:50.310305+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "late_mean"}
+{"utc": "2026-09-11T01:51:51.143341+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:51:51.975389+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:51:52.839712+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "unimodal"}
+{"utc": "2026-09-11T01:51:53.176268+00:00", "stage": "outer_completed", "task": "attention", "fold": 3, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:51:53.411275+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "early"}
+{"utc": "2026-09-11T01:51:54.293732+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "late_mean"}
+{"utc": "2026-09-11T01:51:55.154915+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:51:56.020539+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:51:57.844118+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "unimodal"}
+{"utc": "2026-09-11T01:51:58.162847+00:00", "stage": "outer_completed", "task": "attention", "fold": 4, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:51:58.666548+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "early"}
+{"utc": "2026-09-11T01:51:59.523698+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "late_mean"}
+{"utc": "2026-09-11T01:52:00.372546+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:52:01.231854+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:52:02.093461+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "unimodal"}
+{"utc": "2026-09-11T01:52:02.339274+00:00", "stage": "outer_completed", "task": "attention", "fold": 5, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:52:05.573025+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "early"}
+{"utc": "2026-09-11T01:52:08.822874+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "late_mean"}
+{"utc": "2026-09-11T01:52:12.040426+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:52:14.774693+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:52:18.799335+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "unimodal"}
+{"utc": "2026-09-11T01:52:19.084318+00:00", "stage": "outer_completed", "task": "arousal", "fold": 1, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:52:21.899472+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "early"}
+{"utc": "2026-09-11T01:52:25.185043+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "late_mean"}
+{"utc": "2026-09-11T01:52:28.531454+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:52:31.799625+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:52:34.432355+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "unimodal"}
+{"utc": "2026-09-11T01:52:34.853274+00:00", "stage": "outer_completed", "task": "arousal", "fold": 2, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:52:38.178082+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "early"}
+{"utc": "2026-09-11T01:52:41.660999+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "late_mean"}
+{"utc": "2026-09-11T01:52:45.192624+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:52:48.529050+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:52:51.727518+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "unimodal"}
+{"utc": "2026-09-11T01:52:52.005318+00:00", "stage": "outer_completed", "task": "arousal", "fold": 3, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:52:54.703600+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "early"}
+{"utc": "2026-09-11T01:52:57.445813+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "late_mean"}
+{"utc": "2026-09-11T01:53:00.369546+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:53:03.628692+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:53:06.902777+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "unimodal"}
+{"utc": "2026-09-11T01:53:07.190639+00:00", "stage": "outer_completed", "task": "arousal", "fold": 4, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:53:10.075804+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "early"}
+{"utc": "2026-09-11T01:53:12.888856+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "late_mean"}
+{"utc": "2026-09-11T01:53:15.673255+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "late_geometric"}
+{"utc": "2026-09-11T01:53:18.491742+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "late_weighted"}
+{"utc": "2026-09-11T01:53:21.873993+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "unimodal"}
+{"utc": "2026-09-11T01:53:22.159499+00:00", "stage": "outer_completed", "task": "arousal", "fold": 5, "scope": "fixed_logistic"}
+{"utc": "2026-09-11T01:53:25.813322+00:00", "stage": "completed", "models": 120, "inner_fits": 630, "outer_component_fits": 240}

@@ -1,0 +1,261 @@
+test_known_predictive_feature_loses_score_under_shift (test_analisis_variables.TestAnalisisVariables.test_known_predictive_feature_loses_score_under_shift) ... ok
+test_participant_weighting_does_not_favor_long_recording (test_analisis_variables.TestAnalisisVariables.test_participant_weighting_does_not_favor_long_recording) ... ok
+test_shift_preserves_segments_and_joint_feature_relationship (test_analisis_variables.TestAnalisisVariables.test_shift_preserves_segments_and_joint_feature_relationship) ... ok
+test_singleton_and_two_window_segments (test_analisis_variables.TestAnalisisVariables.test_singleton_and_two_window_segments) ... ok
+test_accepts_frozen_partition (test_baselines.TestBaselines.test_accepts_frozen_partition) ... ok
+test_all_six_pipelines_reload_with_preprocessing (test_baselines.TestBaselines.test_all_six_pipelines_reload_with_preprocessing) ... C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\impute\_base.py:647: UserWarning: Skipping features without any observed values: ['all_missing']. At least one non-missing value is needed for imputation with strategy='median'.
+  warnings.warn(
+ok
+test_complete_run_writes_30_models_and_manifest (test_baselines.TestBaselines.test_complete_run_writes_30_models_and_manifest) ... C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:204: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape[::-1]
+C:\Users\MarioRomero\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\numpy_pickle.py:207: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  array.shape = self.shape
+ok
+test_rejects_changed_frozen_assignment (test_baselines.TestBaselines.test_rejects_changed_frozen_assignment) ... ok
+test_rejects_participant_leakage (test_baselines.TestBaselines.test_rejects_participant_leakage) ... ok
+test_fixed_refit_reproducible_for_prescribed_epochs (test_control_historial.HistoryControlTests.test_fixed_refit_reproducible_for_prescribed_epochs) ... ok
+test_nested_people_isolation_and_complete_oof_coverage (test_control_historial.HistoryControlTests.test_nested_people_isolation_and_complete_oof_coverage) ... ok
+test_repeat_erases_past_preserves_current_length_padding (test_control_historial.HistoryControlTests.test_repeat_erases_past_preserves_current_length_padding) ... ok
+test_compact_removes_duplicate_and_constant_without_quality (test_estabilidad_variables.TestEstabilidad.test_compact_removes_duplicate_and_constant_without_quality) ... ok
+test_folds_hold_out_each_participant_once (test_estabilidad_variables.TestEstabilidad.test_folds_hold_out_each_participant_once) ... ok
+test_no_teacher_modality_reused (test_estabilidad_variables.TestEstabilidad.test_no_teacher_modality_reused) ... ok
+test_paired_summary_aligns_participants (test_estabilidad_variables.TestEstabilidad.test_paired_summary_aligns_participants) ... ok
+test_equal_experts_and_zero_probabilities (test_explorar_fusiones.FusionTests.test_equal_experts_and_zero_probabilities) ... ok
+test_late_weights_retain_modalities_and_teacher_excluded (test_explorar_fusiones.FusionTests.test_late_weights_retain_modalities_and_teacher_excluded) ... ok
+test_probability_fusions_preserve_simplex_and_unimodal_limit (test_explorar_fusiones.FusionTests.test_probability_fusions_preserve_simplex_and_unimodal_limit) ... ok
+test_temporal_features_never_read_future_or_other_participant (test_explorar_fusiones.FusionTests.test_temporal_features_never_read_future_or_other_participant) ... ok
+test_context_crosses_segments_only_when_declared_and_resets_gap_person (test_optimizar_historial.OptimizationTests.test_context_crosses_segments_only_when_declared_and_resets_gap_person) ... ok
+test_current_selection_excludes_smoothed_current (test_optimizar_historial.OptimizationTests.test_current_selection_excludes_smoothed_current) ... ok
+test_multimodal_inputs_exclude_teacher_and_future_values (test_optimizar_historial.OptimizationTests.test_multimodal_inputs_exclude_teacher_and_future_values) ... ok
+test_representation_and_smoothing_cannot_see_future (test_optimizar_historial.OptimizationTests.test_representation_and_smoothing_cannot_see_future) ... ok
+test_caracteristicas_eeg_son_deterministas (test_preprocesamiento.TestPreprocesamiento.test_caracteristicas_eeg_son_deterministas) ... ok
+test_configuracion_excluye_calibracion (test_preprocesamiento.TestPreprocesamiento.test_configuracion_excluye_calibracion) ... ok
+test_normaliza_solo_participantes_experimentales (test_preprocesamiento.TestPreprocesamiento.test_normaliza_solo_participantes_experimentales) ... ok
+test_particion_es_determinista_y_por_participante (test_preprocesamiento.TestPreprocesamiento.test_particion_es_determinista_y_por_participante) ... ok
+test_segmentos_no_cruzan_cambio_de_estimulo (test_preprocesamiento.TestPreprocesamiento.test_segmentos_no_cruzan_cambio_de_estimulo) ... ok
+test_all_architectures_weights_reload_exactly (test_temporales.TestTemporales.test_all_architectures_weights_reload_exactly) ... ok
+test_bilstm_reads_history_but_mlp_only_endpoint (test_temporales.TestTemporales.test_bilstm_reads_history_but_mlp_only_endpoint) ... ok
+test_differential_importance_equals_loss_of_baseline_advantage (test_temporales.TestTemporales.test_differential_importance_equals_loss_of_baseline_advantage) ... ok
+test_history_is_past_only_and_resets_at_gaps_and_people (test_temporales.TestTemporales.test_history_is_past_only_and_resets_at_gaps_and_people) ... ok
+test_padding_does_not_change_any_network_prediction (test_temporales.TestTemporales.test_padding_does_not_change_any_network_prediction) ... ok
+test_preprocessing_uses_training_values_only (test_temporales.TestTemporales.test_preprocessing_uses_training_values_only) ... ok
+test_tcn_cannot_read_future_positions (test_temporales.TestTemporales.test_tcn_cannot_read_future_positions) ... ok
+test_unsorted_and_duplicate_sequences_fail (test_temporales.TestTemporales.test_unsorted_and_duplicate_sequences_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 5.033s
+
+OK

@@ -1,0 +1,61 @@
+task,fold,scope,inner_score,candidate_id,context,estimator,strategy,weights,modality
+attention,1,early,0.36284752359302735,1__extra_trees__early__,1,extra_trees,early,,
+attention,1,late_mean,0.3603926071748371,"1__extra_trees__late_mean__0.5,0.5",1,extra_trees,late_mean,"[0.5, 0.5]",
+attention,1,late_geometric,0.36188933238260573,"1__extra_trees__late_geometric__0.5,0.5",1,extra_trees,late_geometric,"[0.5, 0.5]",
+attention,1,late_weighted,0.3603926071748371,"1__extra_trees__late_weighted__0.5,0.5",1,extra_trees,late_weighted,"[0.5, 0.5]",
+attention,1,unimodal,0.3578133564435091,"1__extra_trees__unimodal__0.0,1.0",1,extra_trees,unimodal,"[0.0, 1.0]",GSR
+attention,1,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+attention,2,early,0.34017460504873087,1__extra_trees__early__,1,extra_trees,early,,
+attention,2,late_mean,0.34143008794675195,"1__extra_trees__late_mean__0.5,0.5",1,extra_trees,late_mean,"[0.5, 0.5]",
+attention,2,late_geometric,0.34147596717605383,"1__extra_trees__late_geometric__0.5,0.5",1,extra_trees,late_geometric,"[0.5, 0.5]",
+attention,2,late_weighted,0.3456322462280046,"1__extra_trees__late_weighted__0.25,0.75",1,extra_trees,late_weighted,"[0.25, 0.75]",
+attention,2,unimodal,0.34560897363203386,"1__extra_trees__unimodal__0.0,1.0",1,extra_trees,unimodal,"[0.0, 1.0]",GSR
+attention,2,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+attention,3,early,0.34389205714585563,1__extra_trees__early__,1,extra_trees,early,,
+attention,3,late_mean,0.3472688320236815,"1__extra_trees__late_mean__0.5,0.5",1,extra_trees,late_mean,"[0.5, 0.5]",
+attention,3,late_geometric,0.34651568488756607,"1__extra_trees__late_geometric__0.5,0.5",1,extra_trees,late_geometric,"[0.5, 0.5]",
+attention,3,late_weighted,0.3565081652357443,"1__extra_trees__late_weighted__0.25,0.75",1,extra_trees,late_weighted,"[0.25, 0.75]",
+attention,3,unimodal,0.3622495928497753,"1__extra_trees__unimodal__0.0,1.0",1,extra_trees,unimodal,"[0.0, 1.0]",GSR
+attention,3,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+attention,4,early,0.340189476550026,1__logistic__early__,1,logistic,early,,
+attention,4,late_mean,0.34249420696286553,"1__extra_trees__late_mean__0.5,0.5",1,extra_trees,late_mean,"[0.5, 0.5]",
+attention,4,late_geometric,0.3422861051434265,"1__extra_trees__late_geometric__0.5,0.5",1,extra_trees,late_geometric,"[0.5, 0.5]",
+attention,4,late_weighted,0.34249420696286553,"1__extra_trees__late_weighted__0.5,0.5",1,extra_trees,late_weighted,"[0.5, 0.5]",
+attention,4,unimodal,0.34554961690001407,"8__lda__unimodal__1.0,0.0",8,lda,unimodal,"[1.0, 0.0]",EEG
+attention,4,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+attention,5,early,0.3404923910453072,1__extra_trees__early__,1,extra_trees,early,,
+attention,5,late_mean,0.34607171413573407,"1__extra_trees__late_mean__0.5,0.5",1,extra_trees,late_mean,"[0.5, 0.5]",
+attention,5,late_geometric,0.346441694702174,"1__extra_trees__late_geometric__0.5,0.5",1,extra_trees,late_geometric,"[0.5, 0.5]",
+attention,5,late_weighted,0.35358669129275566,"1__extra_trees__late_weighted__0.25,0.75",1,extra_trees,late_weighted,"[0.25, 0.75]",
+attention,5,unimodal,0.3512147381500172,"1__extra_trees__unimodal__0.0,1.0",1,extra_trees,unimodal,"[0.0, 1.0]",GSR
+attention,5,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+arousal,1,early,0.3607623740512457,8__logistic__early__,8,logistic,early,,
+arousal,1,late_mean,0.36135541592885384,"8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_mean,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,1,late_geometric,0.3607770799191729,"8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_geometric,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,1,late_weighted,0.362675060271688,"8__lda__late_weighted__0.5,0.25,0.25",8,lda,late_weighted,"[0.5, 0.25, 0.25]",
+arousal,1,unimodal,0.36478922503243866,"8__extra_trees__unimodal__0.0,1.0,0.0",8,extra_trees,unimodal,"[0.0, 1.0, 0.0]",Eye
+arousal,1,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+arousal,2,early,0.37530463276483966,8__lda__early__,8,lda,early,,
+arousal,2,late_mean,0.3697567711354089,"8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_mean,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,2,late_geometric,0.37044270092500264,"8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_geometric,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,2,late_weighted,0.37079783379453174,"8__logistic__late_weighted__0.5,0.25,0.25",8,logistic,late_weighted,"[0.5, 0.25, 0.25]",
+arousal,2,unimodal,0.3670325544530033,"8__lda__unimodal__0.0,0.0,1.0",8,lda,unimodal,"[0.0, 0.0, 1.0]",EEG
+arousal,2,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+arousal,3,early,0.3414970383139251,8__logistic__early__,8,logistic,early,,
+arousal,3,late_mean,0.34459630005060937,"8__logistic__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_mean,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,3,late_geometric,0.3447599346142988,"8__logistic__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,logistic,late_geometric,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,3,late_weighted,0.34599787800012755,"8__logistic__late_weighted__0.25,0.25,0.5",8,logistic,late_weighted,"[0.25, 0.25, 0.5]",
+arousal,3,unimodal,0.3579200893728472,"8__logistic__unimodal__0.0,0.0,1.0",8,logistic,unimodal,"[0.0, 0.0, 1.0]",EEG
+arousal,3,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+arousal,4,early,0.34726204154347623,8__lda__early__,8,lda,early,,
+arousal,4,late_mean,0.3426127200925464,"8__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,lda,late_mean,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,4,late_geometric,0.3440854830050261,"8__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,lda,late_geometric,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,4,late_weighted,0.3494814068369367,"8__logistic__late_weighted__0.5,0.25,0.25",8,logistic,late_weighted,"[0.5, 0.25, 0.25]",
+arousal,4,unimodal,0.3508102264642882,"8__logistic__unimodal__1.0,0.0,0.0",8,logistic,unimodal,"[1.0, 0.0, 0.0]",Pupil
+arousal,4,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
+arousal,5,early,0.34832000749394626,8__lda__early__,8,lda,early,,
+arousal,5,late_mean,0.3433622627567696,"8__lda__late_mean__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,lda,late_mean,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,5,late_geometric,0.34156721020540154,"8__lda__late_geometric__0.3333333333333333,0.3333333333333333,0.3333333333333333",8,lda,late_geometric,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]",
+arousal,5,late_weighted,0.3455242257808407,"8__lda__late_weighted__0.5,0.25,0.25",8,lda,late_weighted,"[0.5, 0.25, 0.25]",
+arousal,5,unimodal,0.3494105958742717,"8__logistic__unimodal__0.0,0.0,1.0",8,logistic,unimodal,"[0.0, 0.0, 1.0]",EEG
+arousal,5,fixed_logistic,,fixed_logistic,1,logistic_reference,early,,
