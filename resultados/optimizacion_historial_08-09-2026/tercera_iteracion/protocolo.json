@@ -1,0 +1,347 @@
+{
+  "created_utc": "2026-09-08T10:24:46.414952+00:00",
+  "representations": [
+    "eye__current",
+    "eye__recording_8",
+    "full__current",
+    "full__recording_8"
+  ],
+  "estimators": [
+    "logistic_0.1",
+    "logistic_1",
+    "hgb",
+    "rbf"
+  ],
+  "smoothing": [
+    1,
+    4,
+    8
+  ],
+  "seeds": [
+    20260908,
+    20260909
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    }
+  ],
+  "features": {
+    "pupil": [
+      "pupil_mean_z",
+      "pupil_std_z",
+      "pupil_min_z",
+      "pupil_max_z",
+      "pupil_slope_z_s"
+    ],
+    "eye": [
+      "gaze_dispersion_x_px",
+      "gaze_dispersion_y_px",
+      "gaze_dispersion_2d_px",
+      "gaze_path_length_px",
+      "fixation_count",
+      "fixation_total_ms",
+      "fixation_mean_ms",
+      "fixation_median_ms",
+      "saccade_count",
+      "saccade_mean_ms"
+    ],
+    "eeg": [
+      "eeg_rms_uv",
+      "eeg_std_uv",
+      "eeg_peak_to_peak_uv",
+      "eeg_delta_relative",
+      "eeg_theta_relative",
+      "eeg_alpha_relative",
+      "eeg_beta_relative",
+      "eeg_gamma_relative",
+      "eeg_line_noise_ratio"
+    ]
+  },
+  "source_sha256": "82e2511ad2ab21897c528a7284bf25e1f2737e5a54899426ee3dde999ecace36",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "scope": "third exploratory iteration after two pupil-only searches; no independent confirmation",
+  "primary": "nested all multimodal vs fixed pupil logistic",
+  "secondary": "nested multimodal current and temporal rules",
+  "selection": "mean BA macro of three internal participant folds; freeze all choices before outer evaluation",
+  "fusion": "early concatenation: current gaze/EEG plus current pupil or causal pupil summaries; no GSR predictor",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

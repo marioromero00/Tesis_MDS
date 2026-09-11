@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "iteration": "segunda_iteracion",
+      "models": 20,
+      "predictions": 54096,
+      "selections": 5,
+      "internal_scores": 75,
+      "catalog_sha256": "f073f57690b8fd6e314336b2b0e4f674ee7b3c8cfa35e995862ce33ceca04fee",
+      "predictions_sha256": "be6fbb295893e0c0a349e1babd6294c65cf8018b7de321eb033d8895cd922382"
+    },
+    {
+      "iteration": "tercera_iteracion",
+      "models": 30,
+      "predictions": 81144,
+      "selections": 15,
+      "internal_scores": 720,
+      "catalog_sha256": "a7f24ef962ff1a5c5bc49af796e6eadd523c6457b9e68ab1ac491eb70b7533d3",
+      "predictions_sha256": "9429fb559ae7749adae9ae2d32cdc363a32f2111d2ab7fd8be97ccff7cc0e963"
+    }
+  ],
+  "source_sha256": "3786db2fb41af509475e38d0834f7d8f40710d0879f8f7e0e1b9ac79e8c822b2",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

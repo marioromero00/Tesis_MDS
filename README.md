@@ -8,6 +8,11 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [Tres iteraciones para mejorar activación](documentacion/Optimizacion_Historial_08-09-2026.md):
+  búsqueda temporal/no lineal, combinación y mirada/EEG. 795 ajustes internos, 90 archivos
+  de modelos y 243.432 predicciones verificadas. Mejor BA macro observada 0,3546 frente a
+  logística 0,3536: mejora mínima e incierta. 33 pruebas; sin nueva evaluación de validation/test.
+
 - [Control del historial pupilar con las mismas cinco variables](documentacion/Control_Historial_Pupilar_08-09-2026.md):
   cinco folds por participante dentro de train, selección interna de época y 170 modelos
   guardados. LSTM/BiLSTM mejoran puntualmente frente a controles de ventana actual,

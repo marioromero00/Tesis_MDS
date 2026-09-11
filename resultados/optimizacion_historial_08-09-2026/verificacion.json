@@ -1,0 +1,12 @@
+{
+  "models": 40,
+  "predictions": 108192,
+  "fold_metrics": 40,
+  "participant_metrics": 200,
+  "selection_records": 20,
+  "inner_score_records": 1575,
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "report_script_sha256": "cd448ce77ede639c86cd0fe33a4241bcaa6dc3382e3da6af005369e763a4224e",
+  "previous_reference_sha256": "73b00a00e4fe1fddd306f886b9e21d8a24c47cbc38b6da4cf95e8d57abaca240"
+}

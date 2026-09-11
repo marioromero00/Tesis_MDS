@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-08T10:22:12.999686+00:00",
+  "weights": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "rule": "selected maximizes mean internal fold participant BA, ties prefer lower temporal weight; fixed always 0.5",
+  "primary": "selected blend vs fixed logistic; fixed 50/50 is secondary, neither chosen by outer score",
+  "scope": "second exploratory iteration after seeing first search OOF; repeated train research, no independent confirmation",
+  "previous_protocol_sha256": "5b32474dff87b09a2f187848df0896f22c4d94dbee1cff04c190dd82b355fe0c",
+  "previous_selection_sha256": "e2770bcc3ba691b98718d270e046ce59ff52e680b961fbef182665b7afc6e7a4",
+  "source_sha256": "e6d76c27659c85d07428150bb33c78a9c8a45336539b3da0d916ecd4bafc685b",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

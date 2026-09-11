@@ -1,0 +1,162 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "representation": "recording_4",
+    "estimator": "logistic_0.1",
+    "smoothing": 1,
+    "inner_score": 0.3564154214860403
+  },
+  {
+    "fold": 1,
+    "scope": "temporal",
+    "representation": "recording_4",
+    "estimator": "logistic_0.1",
+    "smoothing": 1,
+    "inner_score": 0.3564154214860403
+  },
+  {
+    "fold": 1,
+    "scope": "current",
+    "representation": "current",
+    "estimator": "rbf",
+    "smoothing": 1,
+    "inner_score": 0.34845447526379797
+  },
+  {
+    "fold": 1,
+    "scope": "fixed_logistic",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": null
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "representation": "current",
+    "estimator": "logistic_0.1",
+    "smoothing": 4,
+    "inner_score": 0.35904019429534034
+  },
+  {
+    "fold": 2,
+    "scope": "temporal",
+    "representation": "current",
+    "estimator": "logistic_0.1",
+    "smoothing": 4,
+    "inner_score": 0.35904019429534034
+  },
+  {
+    "fold": 2,
+    "scope": "current",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": 0.3507759160987855
+  },
+  {
+    "fold": 2,
+    "scope": "fixed_logistic",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": null
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "representation": "current",
+    "estimator": "logistic_0.01",
+    "smoothing": 8,
+    "inner_score": 0.35335738593183635
+  },
+  {
+    "fold": 3,
+    "scope": "temporal",
+    "representation": "current",
+    "estimator": "logistic_0.01",
+    "smoothing": 8,
+    "inner_score": 0.35335738593183635
+  },
+  {
+    "fold": 3,
+    "scope": "current",
+    "representation": "current",
+    "estimator": "logistic_0.01",
+    "smoothing": 1,
+    "inner_score": 0.34115657994764265
+  },
+  {
+    "fold": 3,
+    "scope": "fixed_logistic",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": null
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "representation": "current",
+    "estimator": "hgb",
+    "smoothing": 1,
+    "inner_score": 0.34589661271171174
+  },
+  {
+    "fold": 4,
+    "scope": "temporal",
+    "representation": "recording_4",
+    "estimator": "hgb",
+    "smoothing": 1,
+    "inner_score": 0.3430337291444802
+  },
+  {
+    "fold": 4,
+    "scope": "current",
+    "representation": "current",
+    "estimator": "hgb",
+    "smoothing": 1,
+    "inner_score": 0.34589661271171174
+  },
+  {
+    "fold": 4,
+    "scope": "fixed_logistic",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": null
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "representation": "current",
+    "estimator": "rbf",
+    "smoothing": 4,
+    "inner_score": 0.36652997363256107
+  },
+  {
+    "fold": 5,
+    "scope": "temporal",
+    "representation": "current",
+    "estimator": "rbf",
+    "smoothing": 4,
+    "inner_score": 0.36652997363256107
+  },
+  {
+    "fold": 5,
+    "scope": "current",
+    "representation": "current",
+    "estimator": "rbf",
+    "smoothing": 1,
+    "inner_score": 0.36174408305540995
+  },
+  {
+    "fold": 5,
+    "scope": "fixed_logistic",
+    "representation": "current",
+    "estimator": "logistic_1",
+    "smoothing": 1,
+    "inner_score": null
+  }
+]

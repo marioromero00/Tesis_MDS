@@ -1,0 +1,122 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "representation": "full__current",
+    "estimator": "logistic_1",
+    "smoothing": 8,
+    "inner_score": 0.360203503564049
+  },
+  {
+    "fold": 1,
+    "scope": "current",
+    "representation": "full__current",
+    "estimator": "logistic_0.1",
+    "smoothing": 1,
+    "inner_score": 0.3573674816270798
+  },
+  {
+    "fold": 1,
+    "scope": "temporal",
+    "representation": "full__current",
+    "estimator": "logistic_1",
+    "smoothing": 8,
+    "inner_score": 0.360203503564049
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "representation": "full__recording_8",
+    "estimator": "logistic_0.1",
+    "smoothing": 8,
+    "inner_score": 0.35499981426985744
+  },
+  {
+    "fold": 2,
+    "scope": "current",
+    "representation": "full__current",
+    "estimator": "logistic_0.1",
+    "smoothing": 1,
+    "inner_score": 0.3473097312326033
+  },
+  {
+    "fold": 2,
+    "scope": "temporal",
+    "representation": "full__recording_8",
+    "estimator": "logistic_0.1",
+    "smoothing": 8,
+    "inner_score": 0.35499981426985744
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "representation": "full__current",
+    "estimator": "hgb",
+    "smoothing": 8,
+    "inner_score": 0.3560590653596553
+  },
+  {
+    "fold": 3,
+    "scope": "current",
+    "representation": "eye__current",
+    "estimator": "rbf",
+    "smoothing": 1,
+    "inner_score": 0.340284720926406
+  },
+  {
+    "fold": 3,
+    "scope": "temporal",
+    "representation": "full__current",
+    "estimator": "hgb",
+    "smoothing": 8,
+    "inner_score": 0.3560590653596553
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "representation": "full__current",
+    "estimator": "hgb",
+    "smoothing": 4,
+    "inner_score": 0.3394988084041995
+  },
+  {
+    "fold": 4,
+    "scope": "current",
+    "representation": "eye__current",
+    "estimator": "rbf",
+    "smoothing": 1,
+    "inner_score": 0.33933642724200763
+  },
+  {
+    "fold": 4,
+    "scope": "temporal",
+    "representation": "full__current",
+    "estimator": "hgb",
+    "smoothing": 4,
+    "inner_score": 0.3394988084041995
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "representation": "eye__current",
+    "estimator": "rbf",
+    "smoothing": 4,
+    "inner_score": 0.3556347083759425
+  },
+  {
+    "fold": 5,
+    "scope": "current",
+    "representation": "eye__current",
+    "estimator": "rbf",
+    "smoothing": 1,
+    "inner_score": 0.34450974418643043
+  },
+  {
+    "fold": 5,
+    "scope": "temporal",
+    "representation": "eye__current",
+    "estimator": "rbf",
+    "smoothing": 4,
+    "inner_score": 0.3556347083759425
+  }
+]
