@@ -1,6 +1,6 @@
 # Tesis MDS — Baselines multimodales
 
-Estado al 08-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado al 10-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
@@ -36,8 +36,8 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 - [Guía de carga](resultados/modelado/ejecuciones/baselines_05-09-2026_02/COMO_CARGAR.txt).
 - [Manifiesto de entrenamiento](resultados/modelado/ejecuciones/baselines_05-09-2026_02/manifiesto_baselines.json).
 - [Verificación de entrega](resultados/modelado/ejecuciones/baselines_05-09-2026_02/verificacion_entrega.json).
-- [Respaldo completo de notas de tesis, 08-09-2026](documentacion/Tesis_Vault_08-09-2026.zip).
-- [Inventario y hashes del respaldo](documentacion/inventario_vault_08-09-2026.json).
+- [Respaldo completo de notas de tesis, 10-09-2026](documentacion/Tesis_Vault_10-09-2026.zip).
+- [Inventario y hashes del respaldo](documentacion/inventario_vault_10-09-2026.json).
 - [Auditoría de la presentación](documentacion/auditoria_presentacion_06-09-2026.json).
 
 Para visualizar el HTML, descargar o clonar el repositorio y abrir el archivo local.
