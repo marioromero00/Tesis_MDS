@@ -1,0 +1,11 @@
+{
+  "models": 50,
+  "inner_model_bundles": 360,
+  "inner_primitive_fits": 480,
+  "protocol_sha256": "b54b8ea0f2f0772e24b6388fd0ccc3fa4d4f5baaee24907cffc894033fd6be21",
+  "selection_sha256": "9d7eaedda10a904fffb8f83a473438b15d45926e29973f399d2b2e2ced7de0fe",
+  "catalog_sha256": "b65b5d0589fcce9644093e2241d7dd509b8cc25f4faea95b190e4ba463f2944b",
+  "predictions_sha256": "5702cc3b6fd9a172a40d01f5f8ba2bfb3f4b05501baba2b0b2e67f39feeef3a2",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

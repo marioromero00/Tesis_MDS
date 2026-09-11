@@ -1,0 +1,72 @@
+[
+  {
+    "fold": 1,
+    "scope": "global",
+    "candidate_id": "full__8__catboost__global__1__0.3__0.0",
+    "base_id": "full__8__catboost__global",
+    "panel": "full",
+    "context": 8,
+    "family": "catboost",
+    "weighting": "global",
+    "smoothing": 1,
+    "low_bias": 0.3,
+    "high_bias": 0.0,
+    "inner_score": 0.3705831576150727
+  },
+  {
+    "fold": 2,
+    "scope": "global",
+    "candidate_id": "full__8__ordinal__global__4__0.3__0.3",
+    "base_id": "full__8__ordinal__global",
+    "panel": "full",
+    "context": 8,
+    "family": "ordinal",
+    "weighting": "global",
+    "smoothing": 4,
+    "low_bias": 0.3,
+    "high_bias": 0.3,
+    "inner_score": 0.3840909883528841
+  },
+  {
+    "fold": 3,
+    "scope": "global",
+    "candidate_id": "full__1__logistic__global__4__0.0__-0.3",
+    "base_id": "full__1__logistic__global",
+    "panel": "full",
+    "context": 1,
+    "family": "logistic",
+    "weighting": "global",
+    "smoothing": 4,
+    "low_bias": 0.0,
+    "high_bias": -0.3,
+    "inner_score": 0.3532197111509043
+  },
+  {
+    "fold": 4,
+    "scope": "global",
+    "candidate_id": "full__1__catboost__global__4__0.3__0.3",
+    "base_id": "full__1__catboost__global",
+    "panel": "full",
+    "context": 1,
+    "family": "catboost",
+    "weighting": "global",
+    "smoothing": 4,
+    "low_bias": 0.3,
+    "high_bias": 0.3,
+    "inner_score": 0.362233858309503
+  },
+  {
+    "fold": 5,
+    "scope": "global",
+    "candidate_id": "full__8__catboost__global__4__0.3__-0.3",
+    "base_id": "full__8__catboost__global",
+    "panel": "full",
+    "context": 8,
+    "family": "catboost",
+    "weighting": "global",
+    "smoothing": 4,
+    "low_bias": 0.3,
+    "high_bias": -0.3,
+    "inner_score": 0.35575406825978334
+  }
+]

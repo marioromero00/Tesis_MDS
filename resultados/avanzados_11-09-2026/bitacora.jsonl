@@ -1,0 +1,747 @@
+{"utc": "2026-09-11T21:51:42.112519+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:51:42.381933+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:51:42.383223+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:42.606813+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:51:42.607685+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:51:42.782497+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:51:42.783016+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:42.982347+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:51:42.983082+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:51:44.765272+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:51:44.765777+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:46.435871+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:51:46.436467+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:51:46.781048+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:51:46.781585+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:47.305526+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:51:47.306062+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:51:47.618935+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:51:47.619686+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:47.948864+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:51:47.949472+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:51:52.229824+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:51:52.230413+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:56.530289+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:51:56.530891+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:51:56.780181+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:51:56.780919+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:57.007097+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:51:57.007714+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:51:57.209016+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:51:57.209531+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:51:57.389907+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:51:57.390426+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:51:59.664291+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:51:59.665012+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:02.652047+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:52:02.652583+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:03.124261+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:52:03.125376+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:03.727458+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:52:03.728102+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:04.103510+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:52:04.104199+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:04.546709+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:52:04.547362+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:11.075200+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:52:11.075818+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:17.795968+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:52:17.958756+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:18.205704+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:52:18.206330+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:18.406767+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:52:18.407267+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:18.600206+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:52:18.600768+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:18.783363+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:52:18.784110+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:20.491986+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:52:20.492562+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:22.166270+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:52:22.166847+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:22.527863+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:52:22.528591+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:22.944849+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:52:22.945418+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:23.259179+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:52:23.259843+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:23.555758+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:52:23.556513+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:27.607071+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:52:27.607601+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:31.455505+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:52:31.455975+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:31.669675+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:52:31.670362+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:31.893748+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:52:31.894340+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:32.108510+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:52:32.109144+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:32.352497+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:52:32.353145+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:34.432525+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:52:34.433105+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:36.900310+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:52:36.900846+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:37.353395+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:52:37.354329+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:37.836532+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:52:37.837093+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:38.224164+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:52:38.224782+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:38.640007+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:52:38.640628+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:44.568096+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:52:44.568690+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:51.320792+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:52:51.499446+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:51.695710+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:52:51.696319+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:51.886289+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:52:51.886904+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:52.068762+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:52:52.069386+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:52.260591+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:52:52.261322+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:52:53.888087+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:52:53.888682+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:55.510271+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:52:55.510894+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:52:55.885066+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:52:55.885530+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:56.416938+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:52:56.417731+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:52:56.720453+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:52:56.720916+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:52:57.014069+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:52:57.014835+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:01.170842+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:53:01.171409+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:05.081452+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:53:05.081990+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:05.277529+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:53:05.277974+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:05.481056+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:53:05.481535+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:05.686202+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:53:05.686755+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:05.883477+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:53:05.883968+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:07.879697+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:53:07.880171+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:09.840581+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:53:09.841099+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:10.316713+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:53:10.317213+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:10.722940+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:53:10.723476+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:11.050239+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:53:11.050818+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:11.439204+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:53:11.439925+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:16.988142+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:53:16.988841+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:22.422269+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:53:22.690846+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:22.881238+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:53:22.881753+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:23.063690+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:53:23.064214+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:23.347918+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:53:23.348377+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:23.536053+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:53:23.536506+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:24.972279+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:53:24.972773+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:26.546432+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:53:26.546892+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:26.907758+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:53:26.908262+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:27.229765+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:53:27.230245+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:27.507495+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:53:27.508048+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:27.809402+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:53:27.809910+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:31.549769+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:53:31.550306+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:35.189442+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:53:35.189891+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:35.410854+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:53:35.411319+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:35.628492+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:53:35.629267+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:35.858308+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:53:35.858836+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:36.062613+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:53:36.063149+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:38.054808+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:53:38.055321+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:39.988371+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:53:39.988905+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:40.478758+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:53:40.479370+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:41.021346+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:53:41.021961+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:41.439865+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:53:41.440392+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:41.854071+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:53:41.854673+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:47.276236+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:53:47.276731+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:52.611264+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:53:52.784057+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:52.977103+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:53:52.977581+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:53.162607+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:53:53.163185+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:53.352805+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:53:53.353404+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:53.575281+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:53:53.575814+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:53:55.087654+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:53:55.088148+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:56.743452+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:53:56.778737+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:53:57.142715+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:53:57.143237+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:57.490565+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:53:57.491008+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:53:57.780848+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:53:57.781343+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:53:58.070836+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:53:58.071505+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:01.876647+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:54:01.877141+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:05.548990+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:54:05.549522+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:05.771760+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:54:05.772398+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:05.980608+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:54:05.981078+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:06.188872+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:54:06.190208+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:06.513939+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:54:06.514495+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:08.486279+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:54:08.486796+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:10.479763+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:54:10.480347+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:10.924804+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:54:10.925391+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:11.413481+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:54:11.414113+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:11.780421+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:54:11.781010+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:12.146867+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:54:12.147476+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:17.845905+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:54:17.846432+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:23.414791+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:54:23.586716+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:23.767483+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:54:23.768174+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:23.944268+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:54:23.944750+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:24.120931+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:54:24.121414+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:24.291426+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:54:24.291955+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:25.852475+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:54:25.852978+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:27.493958+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:54:27.494445+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:27.843907+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:54:27.844472+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:28.181661+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:54:28.182226+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:28.479841+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:54:28.480359+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:28.736071+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:54:28.736564+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:32.581466+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:54:32.581992+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:36.469770+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:54:36.470301+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:36.685300+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:54:36.685773+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:36.900850+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:54:36.901368+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:37.119127+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:54:37.119704+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:37.325038+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:54:37.325562+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:39.356809+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:54:39.357235+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:41.360028+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:54:41.360536+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:41.871447+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:54:41.872079+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:42.334548+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:54:42.335368+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:42.689566+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:54:42.690543+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:43.082022+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:54:43.082595+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:48.822862+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:54:48.823330+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:54.334372+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:54:54.545182+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:54.730466+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:54:54.730990+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:54.960535+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:54:54.961252+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:55.146071+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:54:55.146812+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:55.335094+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:54:55.335632+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:54:56.901647+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:54:56.902185+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:58.419328+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:54:58.419790+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:54:58.795140+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:54:58.795866+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:59.164421+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:54:59.164950+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:54:59.442881+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:54:59.443385+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:54:59.733959+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:54:59.734481+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:03.497914+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:55:03.498412+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:07.244941+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:55:07.245424+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:07.447267+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:55:07.447747+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:07.676337+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:55:07.676776+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:07.889708+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:55:07.890229+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:08.108450+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:55:08.108935+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:10.119482+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:55:10.119996+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:12.069474+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:55:12.070026+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:12.522565+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:55:12.523042+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:13.022687+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:55:13.023260+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:13.380382+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:55:13.381040+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:13.731955+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:55:13.732656+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:19.341210+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:55:19.341671+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:24.816002+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:55:25.001715+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:25.176054+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:55:25.176819+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:25.358101+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:55:25.385270+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:25.668211+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:55:25.668732+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:25.864764+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:55:25.865354+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:27.445226+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:55:27.445828+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:28.918825+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:55:28.919295+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:29.231890+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:55:29.232309+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:29.606238+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:55:29.606752+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:29.906199+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:55:29.906725+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:30.186402+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:55:30.186895+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:33.850474+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:55:33.850983+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:37.619715+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:55:37.620230+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:37.808146+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:55:37.808686+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:38.010844+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:55:38.011696+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:38.192025+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:55:38.192525+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:38.365669+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:55:38.366190+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:40.308200+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:55:40.308684+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:42.260738+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:55:42.261191+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:42.655365+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:55:42.655939+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:43.056873+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:55:43.057431+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:43.420636+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:55:43.421190+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:43.741403+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:55:43.742087+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:49.151154+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:55:49.151653+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:54.523217+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:55:54.705753+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:54.930030+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:55:54.930714+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:55.154447+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:55:55.154946+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:55.323360+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:55:55.323974+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:55.506800+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:55:55.507897+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:55:57.079154+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:55:57.079660+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:58.630626+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:55:58.631201+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:55:58.969302+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:55:58.969780+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:59.323812+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:55:59.324339+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:55:59.602824+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:55:59.603418+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:55:59.874772+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:55:59.875307+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:03.684369+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:56:03.684866+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:07.537639+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:56:07.538261+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:07.757378+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:56:07.757846+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:07.986146+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:56:07.986706+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:08.186391+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:56:08.186946+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:08.376211+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:56:08.377095+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:10.369167+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:56:10.369638+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:12.346086+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:56:12.346558+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:12.766367+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:56:12.766902+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:13.253245+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:56:13.253773+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:13.592734+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:56:13.593229+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:13.927772+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:56:13.928384+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:19.536837+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:56:19.537320+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:25.040216+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:56:25.267739+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:25.458921+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:56:25.459467+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:25.657285+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:56:25.657810+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:25.854370+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:56:25.854907+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:26.049959+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:56:26.051542+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:27.746611+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:56:27.747235+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:29.244233+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:56:29.244668+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:29.591744+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:56:29.592507+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:29.985678+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:56:29.986134+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:30.280545+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:56:30.281326+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:30.602177+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:56:30.602989+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:34.438969+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:56:34.439472+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:38.230745+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:56:38.231353+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:38.451158+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:56:38.451977+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:38.695493+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:56:38.696010+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:38.889349+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:56:38.889807+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:39.097726+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:56:39.098237+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:41.082110+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:56:41.082656+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:43.027521+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:56:43.028027+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:43.476100+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:56:43.476661+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:43.968016+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:56:43.968536+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:44.313200+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:56:44.313725+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:44.665869+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:56:44.666399+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:50.173312+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:56:50.173777+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:55.624052+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:56:55.814148+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:56:56.006820+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:56:56.007319+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:56.206097+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:56:56.206740+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:56:56.423943+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:56:56.424554+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:56.754837+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:56:56.755344+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:56:58.328197+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:56:58.328690+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:56:59.848227+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:56:59.848754+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:00.245501+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:57:00.246120+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:00.589307+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:57:00.589770+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:00.887902+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:57:00.888438+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:01.177710+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:57:01.178254+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:04.908119+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:57:04.908653+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:08.685564+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:57:08.686040+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:08.915913+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:57:08.916423+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:09.116782+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:57:09.117227+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:09.337976+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:57:09.338579+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:09.539069+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:57:09.539561+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:11.451466+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:57:11.451969+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:13.396933+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:57:13.397431+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:13.813068+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:57:13.813549+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:14.316655+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:57:14.317232+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:14.663674+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:57:14.664166+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:15.002358+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:57:15.002851+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:20.392233+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:57:20.392750+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:25.732839+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:57:25.933355+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:26.097834+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:57:26.098419+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:26.271948+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:57:26.272434+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:26.450566+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:57:26.451125+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:26.657833+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:57:26.658459+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:28.120287+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:57:28.120763+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:29.594469+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:57:29.594988+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:29.931992+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:57:29.932477+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:30.309303+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:57:30.309757+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:30.576077+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:57:30.576649+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:30.914503+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:57:30.917855+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:34.618235+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:57:34.618739+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:38.322390+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:57:38.322925+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:38.511190+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:57:38.511677+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:38.731031+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:57:38.731575+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:38.896152+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:57:38.896636+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:39.072541+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:57:39.073096+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:41.009134+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:57:41.009749+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:42.926705+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:57:42.927175+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:43.313721+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:57:43.314209+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:43.722086+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:57:43.722549+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:44.084451+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:57:44.084945+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:44.408011+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:57:44.408497+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:49.916963+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:57:49.917548+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:55.369658+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:57:55.601117+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:55.853308+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:57:55.853812+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:56.034073+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:57:56.034515+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:57:56.209773+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:57:56.210240+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:56.383547+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:57:56.384193+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:57:57.976240+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:57:57.976741+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:57:59.409356+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:57:59.420920+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:57:59.759676+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:57:59.760160+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:00.071966+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:58:00.072492+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:00.361009+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:58:00.361582+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:00.642467+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:58:00.642959+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:04.532444+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:58:04.533042+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:08.394503+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:58:08.396033+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:08.602369+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:58:08.602934+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:08.833325+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:58:08.833887+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:09.011700+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:58:09.012351+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:09.215484+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:58:09.216011+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:11.156442+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:58:11.156925+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:13.112486+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:58:13.112976+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:13.519862+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:58:13.520396+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:13.918935+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:58:13.919381+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:14.242015+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:58:14.242806+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:14.609675+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:58:14.610134+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:20.034703+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:58:20.035396+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:25.365986+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:58:25.583162+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:25.770404+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:58:25.770941+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:25.975070+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:58:25.975631+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:26.184706+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:58:26.185255+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:26.364273+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:58:26.364791+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:27.999992+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:58:28.000498+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:29.497348+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:58:29.497893+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:29.839965+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:58:29.840600+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:30.188227+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:58:30.188802+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:30.482295+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:58:30.482832+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:30.772009+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:58:30.772489+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:34.498493+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:58:34.498967+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:38.266735+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:58:38.267334+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:38.470212+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:58:38.470775+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:38.703371+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:58:38.703878+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:38.896465+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:58:38.897012+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:39.095892+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:58:39.096434+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:41.048992+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:58:41.049447+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:43.021062+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:58:43.021560+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:43.479249+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:58:43.479715+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:43.960836+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:58:43.961493+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:44.308228+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:58:44.308928+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:44.698749+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:58:44.699547+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:50.122593+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:58:50.123041+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:55.516498+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:58:55.725542+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__logistic__global", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:55.903575+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__logistic__global"}
+{"utc": "2026-09-11T21:58:55.904752+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__logistic__participant", "panel": "eye_pupil", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:56.090822+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__logistic__participant"}
+{"utc": "2026-09-11T21:58:56.091488+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__ordinal__global", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:58:56.289216+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__ordinal__global"}
+{"utc": "2026-09-11T21:58:56.289738+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant", "panel": "eye_pupil", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:56.481889+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__ordinal__participant"}
+{"utc": "2026-09-11T21:58:56.482500+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__catboost__global", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:58:58.104636+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__catboost__global"}
+{"utc": "2026-09-11T21:58:58.105130+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__catboost__participant", "panel": "eye_pupil", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:58:59.649072+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__1__catboost__participant"}
+{"utc": "2026-09-11T21:58:59.649622+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__logistic__global", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:58:59.996202+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__logistic__global"}
+{"utc": "2026-09-11T21:58:59.996740+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__logistic__participant", "panel": "eye_pupil", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:00.368637+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__logistic__participant"}
+{"utc": "2026-09-11T21:59:00.369061+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__ordinal__global", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:59:00.632579+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__ordinal__global"}
+{"utc": "2026-09-11T21:59:00.633129+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant", "panel": "eye_pupil", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:01.023970+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__ordinal__participant"}
+{"utc": "2026-09-11T21:59:01.024621+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__catboost__global", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:59:04.818979+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__catboost__global"}
+{"utc": "2026-09-11T21:59:04.819465+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__catboost__participant", "panel": "eye_pupil", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:08.620760+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "eye_pupil__8__catboost__participant"}
+{"utc": "2026-09-11T21:59:08.621363+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__logistic__global", "panel": "full", "context": 1, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:59:08.844352+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__logistic__global"}
+{"utc": "2026-09-11T21:59:08.844891+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__logistic__participant", "panel": "full", "context": 1, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:09.053957+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__logistic__participant"}
+{"utc": "2026-09-11T21:59:09.054497+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__ordinal__global", "panel": "full", "context": 1, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:59:09.246893+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__ordinal__global"}
+{"utc": "2026-09-11T21:59:09.247542+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__ordinal__participant", "panel": "full", "context": 1, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:09.459996+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__ordinal__participant"}
+{"utc": "2026-09-11T21:59:09.460544+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__catboost__global", "panel": "full", "context": 1, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:59:11.444240+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__catboost__global"}
+{"utc": "2026-09-11T21:59:11.444716+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__1__catboost__participant", "panel": "full", "context": 1, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:13.402381+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__1__catboost__participant"}
+{"utc": "2026-09-11T21:59:13.402920+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__logistic__global", "panel": "full", "context": 8, "family": "logistic", "weighting": "global"}
+{"utc": "2026-09-11T21:59:13.831681+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__logistic__global"}
+{"utc": "2026-09-11T21:59:13.832207+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__logistic__participant", "panel": "full", "context": 8, "family": "logistic", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:14.307319+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__logistic__participant"}
+{"utc": "2026-09-11T21:59:14.307886+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__ordinal__global", "panel": "full", "context": 8, "family": "ordinal", "weighting": "global"}
+{"utc": "2026-09-11T21:59:14.681448+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__ordinal__global"}
+{"utc": "2026-09-11T21:59:14.682111+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__ordinal__participant", "panel": "full", "context": 8, "family": "ordinal", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:15.045910+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__ordinal__participant"}
+{"utc": "2026-09-11T21:59:15.046489+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__catboost__global", "panel": "full", "context": 8, "family": "catboost", "weighting": "global"}
+{"utc": "2026-09-11T21:59:20.696610+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__catboost__global"}
+{"utc": "2026-09-11T21:59:20.697110+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "full__8__catboost__participant", "panel": "full", "context": 8, "family": "catboost", "weighting": "participant"}
+{"utc": "2026-09-11T21:59:26.155057+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "full__8__catboost__participant"}
+{"utc": "2026-09-11T21:59:26.375624+00:00", "stage": "selection_frozen", "sha256": "9d7eaedda10a904fffb8f83a473438b15d45926e29973f399d2b2e2ced7de0fe"}
+{"utc": "2026-09-11T21:59:30.961820+00:00", "stage": "outer_completed", "fold": 1, "scope": "all"}
+{"utc": "2026-09-11T21:59:35.112565+00:00", "stage": "outer_completed", "fold": 1, "scope": "unadjusted"}
+{"utc": "2026-09-11T21:59:39.644182+00:00", "stage": "outer_completed", "fold": 1, "scope": "participant"}
+{"utc": "2026-09-11T21:59:40.349008+00:00", "stage": "outer_completed", "fold": 1, "scope": "ordinal"}
+{"utc": "2026-09-11T21:59:44.742875+00:00", "stage": "outer_completed", "fold": 1, "scope": "catboost"}
+{"utc": "2026-09-11T21:59:47.287813+00:00", "stage": "outer_completed", "fold": 2, "scope": "all"}
+{"utc": "2026-09-11T21:59:49.194261+00:00", "stage": "outer_completed", "fold": 2, "scope": "unadjusted"}
+{"utc": "2026-09-11T21:59:51.732995+00:00", "stage": "outer_completed", "fold": 2, "scope": "participant"}
+{"utc": "2026-09-11T21:59:53.929295+00:00", "stage": "outer_completed", "fold": 2, "scope": "ordinal"}
+{"utc": "2026-09-11T22:00:06.909174+00:00", "stage": "outer_completed", "fold": 2, "scope": "catboost"}
+{"utc": "2026-09-11T22:00:07.557729+00:00", "stage": "outer_completed", "fold": 3, "scope": "all"}
+{"utc": "2026-09-11T22:00:09.344740+00:00", "stage": "outer_completed", "fold": 3, "scope": "unadjusted"}
+{"utc": "2026-09-11T22:00:10.101893+00:00", "stage": "outer_completed", "fold": 3, "scope": "participant"}
+{"utc": "2026-09-11T22:00:10.930959+00:00", "stage": "outer_completed", "fold": 3, "scope": "ordinal"}
+{"utc": "2026-09-11T22:00:15.643137+00:00", "stage": "outer_completed", "fold": 3, "scope": "catboost"}
+{"utc": "2026-09-11T22:00:20.417818+00:00", "stage": "outer_completed", "fold": 4, "scope": "all"}
+{"utc": "2026-09-11T22:00:22.407634+00:00", "stage": "outer_completed", "fold": 4, "scope": "unadjusted"}
+{"utc": "2026-09-11T22:00:27.057029+00:00", "stage": "outer_completed", "fold": 4, "scope": "participant"}
+{"utc": "2026-09-11T22:00:27.748951+00:00", "stage": "outer_completed", "fold": 4, "scope": "ordinal"}
+{"utc": "2026-09-11T22:00:32.456107+00:00", "stage": "outer_completed", "fold": 4, "scope": "catboost"}
+{"utc": "2026-09-11T22:00:37.108176+00:00", "stage": "outer_completed", "fold": 5, "scope": "all"}
+{"utc": "2026-09-11T22:00:41.683700+00:00", "stage": "outer_completed", "fold": 5, "scope": "unadjusted"}
+{"utc": "2026-09-11T22:00:46.354953+00:00", "stage": "outer_completed", "fold": 5, "scope": "participant"}
+{"utc": "2026-09-11T22:00:48.453704+00:00", "stage": "outer_completed", "fold": 5, "scope": "ordinal"}
+{"utc": "2026-09-11T22:00:53.134928+00:00", "stage": "outer_completed", "fold": 5, "scope": "catboost"}
+{"utc": "2026-09-11T22:00:56.167388+00:00", "stage": "completed", "models": 50}

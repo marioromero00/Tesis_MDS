@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-11T22:04:38.781205+00:00",
+  "stage": "independent_preprocessor_refit",
+  "max_absolute_difference": 1.16529009e-11,
+  "cause": "Independent reconstruction used a Fortran contiguous array, while primary training row indexing produced a C contiguous array; floating-point scaler reductions differed.",
+  "correction": "Reconstruct the original C contiguous layout for main fits; retain original layout for global control. Exact equality assertion retained. No training, model, decision or outcome changed."
+}

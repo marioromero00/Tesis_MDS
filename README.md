@@ -1,12 +1,19 @@
 # Tesis MDS — Baselines multimodales
 
-Estado al 10-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado al 11-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
 ## Entrega actual
+
+- [Boosting, ordinalidad y balanceo por participante](documentacion/Avanzados_11-09-2026.md):
+  432 configuraciones de decisión, 360 ajustes internos y comparación con balanceo global.
+  La búsqueda conjunta obtiene BA macro 0,3522 y la ordinal 0,3582: no superan el 0,3651
+  de la fusión geométrica anterior. Se conservan modelos, predicciones internas y externas,
+  registro de cada intento y diagnóstico por clase. Sin nueva evaluación de validation/test.
+  60 bundles recargados, 162.288 predicciones verificadas y 42 pruebas aprobadas.
 
 - [Nuevos modelos y fusiones para atención y activación](documentacion/Fusiones_10-09-2026.md):
   LDA, Extra Trees y logística; fusión temprana y tardía. 120 bundles guardados, 324.576
@@ -83,4 +90,5 @@ la consolidación del vault. El archivo no incluye Vinson, inglés ni configurac
 El inventario registra SHA256 y tamaño de cada archivo para verificar la copia.
 
 Los modelos y predicciones de la ejecución final se versionan por solicitud expresa del
-06-09-2026. Datos crudos, credenciales, cachés e intentos incompletos permanecen excluidos.
+06-09-2026. Datos crudos, credenciales y cachés permanecen excluidos. Los incidentes de
+ejecuciones documentadas se conservan para mantener la trazabilidad de los intentos.

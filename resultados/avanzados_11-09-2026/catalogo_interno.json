@@ -1,0 +1,452 @@
+[
+  {
+    "fold": 1,
+    "inner": 1,
+    "path": "predicciones_internas/fold1__inner1.npz",
+    "sha256": "4072bb961a56aa3357932456a09de133d4a139f2d8a9ed2a6c867c39c40eae27",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P33",
+      "P34",
+      "P36",
+      "P40",
+      "P46",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P27",
+      "P3",
+      "P35",
+      "P4",
+      "P44",
+      "P9"
+    ]
+  },
+  {
+    "fold": 1,
+    "inner": 2,
+    "path": "predicciones_internas/fold1__inner2.npz",
+    "sha256": "b32f45ff7a22f9d4e51dd7eb3815d888b310a6b83ffb1a3ab554f89a29e82a02",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P20",
+      "P21",
+      "P27",
+      "P3",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P44",
+      "P46",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P19",
+      "P2",
+      "P26",
+      "P33",
+      "P40",
+      "P8"
+    ]
+  },
+  {
+    "fold": 1,
+    "inner": 3,
+    "path": "predicciones_internas/fold1__inner3.npz",
+    "sha256": "2009146d5fa535171e5beabbb50e8f2268b9b974b8b794f8d1797d988fdf8cf1",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P40",
+      "P44",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P20",
+      "P21",
+      "P34",
+      "P36",
+      "P46"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 1,
+    "path": "predicciones_internas/fold2__inner1.npz",
+    "sha256": "db90aad6a27ec4553d1fde9d7110d806f70ae9c46a96435070a19b5215101979",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P24",
+      "P27",
+      "P3",
+      "P34",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P26",
+      "P30",
+      "P33",
+      "P36",
+      "P48",
+      "P8"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 2,
+    "path": "predicciones_internas/fold2__inner2.npz",
+    "sha256": "14d663d9ff8e6e370af5bb31d2f87c69bbc34db7be0bb4608de618b90d2452d6",
+    "train_participants": [
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P44",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P27",
+      "P3",
+      "P4",
+      "P43",
+      "P46",
+      "P9"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 3,
+    "path": "predicciones_internas/fold2__inner3.npz",
+    "sha256": "f8ae2fbe8212ee86cdf5e86fba1456521223f67905350b45966f2bebe46d6b5c",
+    "train_participants": [
+      "P13",
+      "P22",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P4",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P20",
+      "P21",
+      "P24",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 1,
+    "path": "predicciones_internas/fold3__inner1.npz",
+    "sha256": "135bc3f879461496bc3fe7553068d9304ec7af65eedebaacbce1cf2b3a85fd2a",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P20",
+      "P22",
+      "P24",
+      "P26",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P43",
+      "P44"
+    ],
+    "evaluation_participants": [
+      "P2",
+      "P21",
+      "P3",
+      "P30",
+      "P40",
+      "P48",
+      "P9"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 2,
+    "path": "predicciones_internas/fold3__inner2.npz",
+    "sha256": "b2f71e1b228ba5e245329e1a8c9882c6e6d271ad45a225fb228cd28380e90417",
+    "train_participants": [
+      "P13",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P3",
+      "P30",
+      "P34",
+      "P35",
+      "P40",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P22",
+      "P26",
+      "P33",
+      "P4",
+      "P43"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 3,
+    "path": "predicciones_internas/fold3__inner3.npz",
+    "sha256": "6356856362ffe45a881271d6b4a7189a8403588d1cdc8140bf49cbe7ae4ee618",
+    "train_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P20",
+      "P24",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 1,
+    "path": "predicciones_internas/fold4__inner1.npz",
+    "sha256": "76b9852a94423fd1326dae9ebd869f4a1c1d1a1ed57b60577493ade8516b1c93",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P22",
+      "P24",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P43",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P2",
+      "P21",
+      "P26",
+      "P27",
+      "P40",
+      "P44"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 2,
+    "path": "predicciones_internas/fold4__inner2.npz",
+    "sha256": "64ab5ed93f59dc355f90c09c8293bc63c1d8c26ce52f6e7ffbc1e1c1ba9fbb18",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P35",
+      "P40",
+      "P44",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P30",
+      "P34",
+      "P36",
+      "P43",
+      "P46",
+      "P48"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 3,
+    "path": "predicciones_internas/fold4__inner3.npz",
+    "sha256": "857f799a5dd953cfadee31b434bd4696e0d2c34630c01cacfca454ba6ce5e9fd",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P2",
+      "P21",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P19",
+      "P22",
+      "P24",
+      "P35",
+      "P8"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 1,
+    "path": "predicciones_internas/fold5__inner1.npz",
+    "sha256": "21c1fa7bfc78101a2b2b59d510bd588b5aea5e7e480ac9b044efa0a60d91a3b7",
+    "train_participants": [
+      "P18",
+      "P19",
+      "P20",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P2",
+      "P22",
+      "P24",
+      "P3",
+      "P30",
+      "P33"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 2,
+    "path": "predicciones_internas/fold5__inner2.npz",
+    "sha256": "7344394bcd8624fe5ef7eaa0c7aa9ecae4df8ff9f9da239f1bd114291b27e62d",
+    "train_participants": [
+      "P12",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P4",
+      "P40",
+      "P43"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P19",
+      "P36",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 3,
+    "path": "predicciones_internas/fold5__inner3.npz",
+    "sha256": "c6eba276ae1c74d288751e39bbc79a29b2add596de55f22c00ccf4eb5ead29b2",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P22",
+      "P24",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P27",
+      "P35",
+      "P4",
+      "P40",
+      "P43"
+    ]
+  }
+]

@@ -5,6 +5,7 @@
 scripts/*.py text eol=lf
 requirements.txt text eol=lf
 requirements_temporales.txt text eol=lf
+requirements_avanzados.txt text eol=lf
 config/*.json text eol=lf
 presentaciones/*.html text eol=lf
 resultados/modelado/dataset_modelado.csv -text whitespace=cr-at-eol
@@ -17,3 +18,4 @@ resultados/control_historial_08-09-2026/** -text whitespace=cr-at-eol
 resultados/optimizacion_historial_08-09-2026/** -text whitespace=cr-at-eol
 resultados/fusiones_10-09-2026/** -text whitespace=cr-at-eol
 resultados/fusiones_10-09-2026_completa/** -text whitespace=cr-at-eol
+resultados/avanzados_11-09-2026/** -text whitespace=cr-at-eol
