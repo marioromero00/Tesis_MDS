@@ -1,0 +1,886 @@
+{
+  "requirements_avanzados.txt": {
+    "sha256": "d0f1fc855f032c13b3c0a435dd768e8839a4a87eaed7fa6f724926165abb3da5",
+    "bytes": 48
+  },
+  "resultados/ablacion_pca_12-09-2026/ablacion_modalidades_historial.pdf": {
+    "sha256": "868791700622f029c26200a1a2f97289972a61e12c54cc6ab7b6819c2fbeaca5",
+    "bytes": 19003
+  },
+  "resultados/ablacion_pca_12-09-2026/ablacion_modalidades_historial.png": {
+    "sha256": "7dbc9577ef8e72999ccbc497e343d957ba2147711cb29a99b24c64b13a41f630",
+    "bytes": 57731
+  },
+  "resultados/ablacion_pca_12-09-2026/ablacion_variables.pdf": {
+    "sha256": "aca983751e4e13a472645191a1c30bf66cc9171e66609a70813b24e31939eeac",
+    "bytes": 20861
+  },
+  "resultados/ablacion_pca_12-09-2026/ablacion_variables.png": {
+    "sha256": "a51eca9f5be253a6c8ad6e60e65f810d193e651494b329bdd168c96d3998f7a7",
+    "bytes": 142380
+  },
+  "resultados/ablacion_pca_12-09-2026/catalogo_modelos.json": {
+    "sha256": "06cde77a77b2622e0576516f04b682bcfec3790ae72e23a3495c1a15cf627e6b",
+    "bytes": 1757142
+  },
+  "resultados/ablacion_pca_12-09-2026/completo.json": {
+    "sha256": "4cebec0f542f0deb3fdbb9795cec0aa5b0558c2147efece8b5abe0e46b920686",
+    "bytes": 302
+  },
+  "resultados/ablacion_pca_12-09-2026/diagnostico_clases.csv": {
+    "sha256": "082aef45c7a01735f4a80f8044a0d214021af271cbf567d997841ca43875ab0b",
+    "bytes": 7180
+  },
+  "resultados/ablacion_pca_12-09-2026/diferencias_participantes.csv": {
+    "sha256": "bd06db366026d250334d0228dd12e31dbab7576d3290e2e8ad329faa8eb0c637",
+    "bytes": 40311
+  },
+  "resultados/ablacion_pca_12-09-2026/metricas_folds.csv": {
+    "sha256": "7ead4c62023281505367520a5e7d5e796040f19450274b6b20d8d0186df07a87",
+    "bytes": 22655
+  },
+  "resultados/ablacion_pca_12-09-2026/metricas_participantes.csv": {
+    "sha256": "a9617853a294acbb10346f40655d9c4793f0a48ec2bd8335c3748ae632d85f81",
+    "bytes": 72807
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_current_keep_smooth.joblib": {
+    "sha256": "341169985576c5d547ae8d55d7e0b9ab85b49d733d84a1973a5f85eac2938971",
+    "bytes": 3191
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_current_no_smooth.joblib": {
+    "sha256": "8ae53abcd30cd56bff298658eaf3da73f9b8d25400319d3b5874d8748aa26f5d",
+    "bytes": 3193
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_alpha_relative.joblib": {
+    "sha256": "e812a3fc08bab0ddf3e564e9a655a565db4df7245ca5e92ec6c52c66c674046f",
+    "bytes": 3144
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_beta_relative.joblib": {
+    "sha256": "efa4a67bcb48c0bfd21dd0a9ddc37458d1517401bc3a25b1eb685084d49ed501",
+    "bytes": 3136
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_delta_relative.joblib": {
+    "sha256": "06b1ff03fe0107f1a08d261830d4bcbc32299db525e644261b925a9b86a6e565",
+    "bytes": 3139
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_gamma_relative.joblib": {
+    "sha256": "9a36e2705d704eb8b884fcd3722ef168b73268ca9c48ec625022b25bd5b548dd",
+    "bytes": 3139
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_line_noise_ratio.joblib": {
+    "sha256": "f2abf9e35109470c1014c55e012b9864df6cdb0a155edfb6851a48d80906066f",
+    "bytes": 3137
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_peak_to_peak_uv.joblib": {
+    "sha256": "4225a0906d260ce1fdc880f3615a71add76b18835d83bef9d8c33471e18d1f8c",
+    "bytes": 3129
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_rms_uv.joblib": {
+    "sha256": "c84318fd30f68b1c9a2ecabddad3ad12b2420615d73aec1a14588974db4dc01a",
+    "bytes": 3135
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_std_uv.joblib": {
+    "sha256": "24b8bba8f6caad934cb7a99c9336660d6b3fb1eef75f821cdaa5f109b47b8692",
+    "bytes": 3131
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_eeg_theta_relative.joblib": {
+    "sha256": "47c52417f335f141b9fab0a98dc1eb840c27ff931192def811a04c2d307b7630",
+    "bytes": 3140
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_fixation_count.joblib": {
+    "sha256": "883cb9cc9aa32c6a690a63834e57497bc59df50dce1b9aad2e217a92e55ac1be",
+    "bytes": 3144
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_fixation_mean_ms.joblib": {
+    "sha256": "2bada386af78b0f6f945877e3c7a7c4cd20b47e6f802c98f5bb459cc947896eb",
+    "bytes": 3121
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_fixation_median_ms.joblib": {
+    "sha256": "dafa57279622a0bea51e740364bbc2c92eb9e29c729655e012a5f43b169ec95f",
+    "bytes": 3127
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_fixation_total_ms.joblib": {
+    "sha256": "e4b15d2779fff0fa098e204712109c2091bb4b2af6578711f4ed190da70be6f9",
+    "bytes": 3141
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_gaze_dispersion_2d_px.joblib": {
+    "sha256": "9b31bb5e6d83f9d94fdfdcdc1dd0cb54b8065d238a3f75778d89254c5b737144",
+    "bytes": 3131
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_gaze_dispersion_x_px.joblib": {
+    "sha256": "7b9b40405b3c314395314eb7d35a1291943f05c02afa4cf9cba8a42f48110b21",
+    "bytes": 3138
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_gaze_dispersion_y_px.joblib": {
+    "sha256": "70665eed9426114b830bf16ea5bf89e90004e22e69efc6d158163d4e39cbd370",
+    "bytes": 3139
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_gaze_path_length_px.joblib": {
+    "sha256": "8d54660473b86d4a466ce98c7110e9ca5a2a7bcd9ac381dad3624bec2b232dc5",
+    "bytes": 3090
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_pupil_max_z.joblib": {
+    "sha256": "3ef5e3db3f501402bf01e99dfb53c7c97ae047f673289d42719b47b21720f619",
+    "bytes": 3141
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_pupil_mean_z.joblib": {
+    "sha256": "5186428ee21a2e10280348aa91426dfc8a0ff8fba0fd41e2ad2f25aa8638bc70",
+    "bytes": 3137
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_pupil_min_z.joblib": {
+    "sha256": "11ea7d0f0576112d478f0ec81c6c740803c9d1ad3bfe6ca698d5707626f83c40",
+    "bytes": 3141
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_pupil_slope_z_s.joblib": {
+    "sha256": "69cafa1199899737ddf8d7ad4c80d05aba3376c97f774ae921ec1791e2e05650",
+    "bytes": 3139
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_pupil_std_z.joblib": {
+    "sha256": "5bfbdcd641e31f990fee5fa419f9a907fed19185c89fac3cb2ee407ac0305c2a",
+    "bytes": 3140
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_saccade_count.joblib": {
+    "sha256": "a8c806d705ec18805fc77b14f2dbe6803e29aba472599e52321c4e065db8cd04",
+    "bytes": 3141
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_drop_saccade_mean_ms.joblib": {
+    "sha256": "bcd44eec1bd25bd8aa977b527bb0a5286b3f6e3668e616e22bf4d1f2bb35a819",
+    "bytes": 3085
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_no_smooth.joblib": {
+    "sha256": "55400f40937aa0d82dbaa4f2d85403c106aed82c5dd48e79ecd54575202479e9",
+    "bytes": 3191
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_only_eeg.joblib": {
+    "sha256": "ff99b85c629d039a127abbac4491f8f646973aa4ec84cdce9293366d3945ee63",
+    "bytes": 1926
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_only_eye.joblib": {
+    "sha256": "cfc98894c3f59f172af8a6fe11617bc5f527d1a74b6543dfe29214aac95d194d",
+    "bytes": 2177
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_only_pupil.joblib": {
+    "sha256": "40855981eefc3e0ccefd52c7cf9c90efdd5f8692716f540aac9822d4e7f2fe1e",
+    "bytes": 1595
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_pca_0.8.joblib": {
+    "sha256": "68ed029f6d2c41a93e3a66c5cb0695fbfffdd2f72ef72f541abee00d518264a2",
+    "bytes": 5442
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_pca_0.9.joblib": {
+    "sha256": "018dfbd7e34e2bef053fb3707a7b144f92595d4147c413e1fe550fc1063802de",
+    "bytes": 6494
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_pca_0.95.joblib": {
+    "sha256": "5669405487fd58ef28f708d0eb5137ef2938811622c8203b512f8fbdcc5bafad",
+    "bytes": 7277
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_pca_full.joblib": {
+    "sha256": "bf14410acfb76a6285bfa1c2132b3ff216e34c56a19bdd744a04f5345e62369d",
+    "bytes": 10399
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_reference.joblib": {
+    "sha256": "d8ed4c58fffe35b9e89316a5db34ae164826c1ed2a0b9ec40cdf451f0e5bed30",
+    "bytes": 3187
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_without_eeg.joblib": {
+    "sha256": "65791914c8df7c88bf2cda50b631f76c039593561909d3a727451ea12f47599d",
+    "bytes": 2535
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_without_eye.joblib": {
+    "sha256": "03c1ace6404e077b7e1b76851cd1ffcd4e0e697f04ef166d9d7b3f4494b9e3bc",
+    "bytes": 2294
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold1_without_pupil.joblib": {
+    "sha256": "52732ea4425d64edc8aaea455640d77ba5e2d1dba8dd96dfc848345923d66799",
+    "bytes": 2834
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_current_keep_smooth.joblib": {
+    "sha256": "7ea9f60ffb804a60ca2cf370103913dcb908345c6bdc552b2d562cd91bdcaaf2",
+    "bytes": 3399
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_current_no_smooth.joblib": {
+    "sha256": "a4c9c52404846fb89f28e34212e703a017a417911b512afeaaa29875202e2d12",
+    "bytes": 3403
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_alpha_relative.joblib": {
+    "sha256": "fd32e783829d9d54c2e86a9058e9351fcb8503132626a4fd26176852351ef9b6",
+    "bytes": 17326
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_beta_relative.joblib": {
+    "sha256": "0b2269271b6b3e9f61969d4e1dde8afe22d765e14e13aa34370a41b52ccc3180",
+    "bytes": 17333
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_delta_relative.joblib": {
+    "sha256": "a32beb09dc1018f1f0c0cb21693aeac1c205bd81efff9ffad46c267bed4ed1db",
+    "bytes": 17339
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_gamma_relative.joblib": {
+    "sha256": "47f253930d7dc9325b97f6debb35888fae2e745ff1cbec5d442bb487019ea2e5",
+    "bytes": 17329
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_line_noise_ratio.joblib": {
+    "sha256": "1cf74ac3ddb3b99274c6ea09f66654db85d2a4dfd0e6a7b46737ee74fe5877e7",
+    "bytes": 17318
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_peak_to_peak_uv.joblib": {
+    "sha256": "635609ac7d7a92a6a508546de5e2fa7a93d92a906f150b9adc2eb6b3e40076f7",
+    "bytes": 17305
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_rms_uv.joblib": {
+    "sha256": "a56e2b960888904693bef81f8ef452461e2473686b66a7c178c5c3c54b254dc6",
+    "bytes": 17334
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_std_uv.joblib": {
+    "sha256": "3b425858dff349d1b0851aa3873805eadce8d3cdb9894fa8434264d1805e7030",
+    "bytes": 17348
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_eeg_theta_relative.joblib": {
+    "sha256": "741c306d398b614c469ace3a79d311c9cf9be88c87f9ec1a23f9cdc17729ad6e",
+    "bytes": 17337
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_fixation_count.joblib": {
+    "sha256": "03e0de32b892313a84707e66f30eb0e8b6fd1086eee538e341f17b0053d92204",
+    "bytes": 17352
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_fixation_mean_ms.joblib": {
+    "sha256": "18997bf09131a5e6db02a4e749476bcc8ed5af79e8c049ae3d0968bf90ce3028",
+    "bytes": 17122
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_fixation_median_ms.joblib": {
+    "sha256": "23e85de70249fd6fe9b981e395006be89708abb0c467793404a6095d0a9d554d",
+    "bytes": 17149
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_fixation_total_ms.joblib": {
+    "sha256": "5cc5a0cb3b64d62ceda773a372f16b434eff25dd42cb25cda32dd45c70c5cead",
+    "bytes": 17344
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_gaze_dispersion_2d_px.joblib": {
+    "sha256": "ba468ca50cefb1b630c5625ffed41493271d9a50f5a8e11f348ee02e329983c7",
+    "bytes": 17204
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_gaze_dispersion_x_px.joblib": {
+    "sha256": "30dbc0f4b443c9013f628b11d95a2ba3d2bdcb5f8d36e69a2f8cf601cf63cddf",
+    "bytes": 17229
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_gaze_dispersion_y_px.joblib": {
+    "sha256": "7c7a8c21d2c9b6c1e9b7171a3c91e4083973fca7437de7f148f878f88f54f75d",
+    "bytes": 17229
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_gaze_path_length_px.joblib": {
+    "sha256": "84aae1630076a7c349753fe1b958266761eb04fa4a1fda3cc4d45279596ebeef",
+    "bytes": 17071
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_pupil_max_z.joblib": {
+    "sha256": "1217fef21ae900e963c0aa7a3d5ad60f747426c92d80366dfe42b453a8133446",
+    "bytes": 17239
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_pupil_mean_z.joblib": {
+    "sha256": "1aefb2ccbe685e8d7508f9c93f1972106f329c28a3438db168b0ec751c887c4d",
+    "bytes": 17217
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_pupil_min_z.joblib": {
+    "sha256": "d102081bcec624f83c3a74190f535eb803d31c842de93efc80e86b3d5b7995ed",
+    "bytes": 17220
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_pupil_slope_z_s.joblib": {
+    "sha256": "dd39f1a54cea820c18ed331e064e897c793b2e1b7c599733a5d41fbf8cf5fd31",
+    "bytes": 17233
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_pupil_std_z.joblib": {
+    "sha256": "f72685b769144545ca2097eab4b332bd33ac8f3b4b1faa62ed54d6e5ad76a86b",
+    "bytes": 17237
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_saccade_count.joblib": {
+    "sha256": "4061cee7e09c49f3b28fac5e9354d25c88c2d26ed4b12a78aac836f182012421",
+    "bytes": 17336
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_drop_saccade_mean_ms.joblib": {
+    "sha256": "b5047f662d9374646e6aeb55f193ca40f97555e31f0b3c4d7328cdf5c9d56324",
+    "bytes": 16927
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_no_smooth.joblib": {
+    "sha256": "30e266d7556213a38af76aca3ba0a6088f75e181327fdbec954ec0c862283a08",
+    "bytes": 17860
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_only_eeg.joblib": {
+    "sha256": "ce3d48512789b82deb59861ede9726fa6d02b17e74d1905a0cd0b9ae6ba1a656",
+    "bytes": 6826
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_only_eye.joblib": {
+    "sha256": "df74eafdd2527f41425409b2814cf29cdfce8570e30b342b6102410c19cd37eb",
+    "bytes": 8891
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_only_pupil.joblib": {
+    "sha256": "b5fbdec566c9c0aa8222af398d6bb6299b062608580653459d484c8d7cf78b12",
+    "bytes": 4989
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_pca_0.8.joblib": {
+    "sha256": "8bf313e9634050aa3603c604faa02e864b1685ac3cfed5c149c850243a12d1df",
+    "bytes": 71418
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_pca_0.9.joblib": {
+    "sha256": "d353b94c1be763ca04460ef989745da115b06e51310d1fb2bf589ddc77bc9eab",
+    "bytes": 108514
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_pca_0.95.joblib": {
+    "sha256": "1edbe09077fc3c8f5186ec5d669aaa3a4bc2d38a1187535d2cb0da1ffd20235c",
+    "bytes": 150015
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_pca_full.joblib": {
+    "sha256": "964099dfed797ac2146977da6c39b7b71d367eca95cb4b8ceb104e02b5ada6f9",
+    "bytes": 743364
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_reference.joblib": {
+    "sha256": "26e85d591d02554f11aa01597e123aa70f0542a7537525347bd163989d496ba0",
+    "bytes": 17855
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_without_eeg.joblib": {
+    "sha256": "205e01bd45f19930842a6a56c7dcc76e709d21857bf0c49566e32886fd790826",
+    "bytes": 12433
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_without_eye.joblib": {
+    "sha256": "8c480828e37deedd48a89d0286f1ad8d2cc67f5fbe34d8acb008b552cb7fcab8",
+    "bytes": 10478
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold2_without_pupil.joblib": {
+    "sha256": "57b5811d86eb12ef37b965ee71c3ac6f05e1ed4513c0a2dd78f4aaed7bd78b09",
+    "bytes": 14398
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_current_keep_smooth.joblib": {
+    "sha256": "405429ac3e8ce01b79d49f7cb23af540acacd3aaa3a26aa6ac8c6ea1e393d662",
+    "bytes": 3404
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_current_no_smooth.joblib": {
+    "sha256": "ab3a3092f0166f55d9933ddd20ae22854d08ace66e3608a1358fcd031cfb7791",
+    "bytes": 3407
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_alpha_relative.joblib": {
+    "sha256": "68efbe7c357a7cdee9c477b42518c6dd324fc73e96792bddb367672f5d8358d3",
+    "bytes": 16772
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_beta_relative.joblib": {
+    "sha256": "bdc6d1822fd44060a1f7ef0d1b9a7687e6f3849b32f3b6e3194b7021dfe2308a",
+    "bytes": 16736
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_delta_relative.joblib": {
+    "sha256": "7df998826542c91555705bc12585c47f431e6c2b1bf905a478458e2ad486125c",
+    "bytes": 16753
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_gamma_relative.joblib": {
+    "sha256": "294b1aeb618d83ef3d3f0b02b5960ced2b42844fac54b48f4a55697a1046ed7b",
+    "bytes": 16763
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_line_noise_ratio.joblib": {
+    "sha256": "a4d0245ce0813bde04bedd815229793226a6c364a6d109c6a578bd88d3f81e37",
+    "bytes": 16744
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_peak_to_peak_uv.joblib": {
+    "sha256": "b77a359ee4d0b0bc1f98d45ad3a1e9296192641f88a4549be66b964f193058c1",
+    "bytes": 16752
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_rms_uv.joblib": {
+    "sha256": "687d5b337d374ad6b771014db2cee88931d52087c377d307b3b14c6f22aa4ea4",
+    "bytes": 16766
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_std_uv.joblib": {
+    "sha256": "2ef55d4f318fb760bd9582920fa9454490b16710d2c25de1f918d2c01cf080af",
+    "bytes": 16752
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_eeg_theta_relative.joblib": {
+    "sha256": "f8e59fe75e28698ba2475e55eb35456b9393fe57a94a4fa160beffe45d93e172",
+    "bytes": 16772
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_fixation_count.joblib": {
+    "sha256": "4c2309f341719382fcc687c1ab6c8fd3e89057f24b894a55ef9e9eb3d9a7c33a",
+    "bytes": 16782
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_fixation_mean_ms.joblib": {
+    "sha256": "379347389b28266c0596b2d793e94ca8617df4bb78e223db68759125c40fd0d6",
+    "bytes": 16541
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_fixation_median_ms.joblib": {
+    "sha256": "63f703488484917b067afb9f582dc110d588d58de8350af883cbd9e4ec689fac",
+    "bytes": 16589
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_fixation_total_ms.joblib": {
+    "sha256": "b37ceaaa78ac73f086b177608dc6f7b16d4176b1a3550ef97fc0b7c19cb36e15",
+    "bytes": 16766
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_gaze_dispersion_2d_px.joblib": {
+    "sha256": "2f4a082b4f1e65d52b9a6c750a742e0f6ff2554d6b9dbab7828a4c9c496f6d41",
+    "bytes": 16668
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_gaze_dispersion_x_px.joblib": {
+    "sha256": "d1a00caab9ec15258ba6c0fc86e05f8c97b6238b7a1cf39966ae99f8cb0daa68",
+    "bytes": 16659
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_gaze_dispersion_y_px.joblib": {
+    "sha256": "004f2e98358999a97d8932da88a6b8cb5a2759592021783e5bf02bd05d189929",
+    "bytes": 16649
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_gaze_path_length_px.joblib": {
+    "sha256": "ba8966789e8bdf88129b17d5dad698c020c590a9dcccf3772926f3e094308047",
+    "bytes": 16517
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_pupil_max_z.joblib": {
+    "sha256": "f80ee7dce29a9db9c0e93a385ea7bf026a178a732eaed1f777f45e952255056a",
+    "bytes": 16671
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_pupil_mean_z.joblib": {
+    "sha256": "bec56d3c2e40d3461318dbf336ddf13ba826588c25465c570c7425c9d9f8f259",
+    "bytes": 16662
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_pupil_min_z.joblib": {
+    "sha256": "945e62c20cfed674eb6ed4ab27f39fad6780b7521fc46b573bd83bd15ef00631",
+    "bytes": 16671
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_pupil_slope_z_s.joblib": {
+    "sha256": "d3d00af9719207efe216803046738762501561de0702033a895c726a0c9c10f1",
+    "bytes": 16675
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_pupil_std_z.joblib": {
+    "sha256": "0925f11cf4842daafb766acaddb7364602dde38366e03539c02a967b2ab4ad6d",
+    "bytes": 16662
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_saccade_count.joblib": {
+    "sha256": "37e1ca05a9cc422dca6b22f0203122b4c238545ed84e7761b59f18849dfe41cb",
+    "bytes": 16766
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_drop_saccade_mean_ms.joblib": {
+    "sha256": "66220f1d691f6543406f0e603ca25aaef59cdbfb137c584e82f1855fc5fa2c55",
+    "bytes": 16361
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_no_smooth.joblib": {
+    "sha256": "e6cdbd794e84eeb2ffa5829426f2f3a094d8cc0b7e87ce36e73cf68108727180",
+    "bytes": 17289
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_only_eeg.joblib": {
+    "sha256": "a0b8bf26214dd42454f99692119c8bc4fbb5aa1bb0f40bef80978af94da31f1e",
+    "bytes": 6620
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_only_eye.joblib": {
+    "sha256": "8847a7abcff2628d622fe5afd869341da4557bd06f2e425702603a257ee51e49",
+    "bytes": 8666
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_only_pupil.joblib": {
+    "sha256": "b26e46bf959a502b042011c424d8e4aa722782fc587336254631cbab740ea658",
+    "bytes": 4837
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_pca_0.8.joblib": {
+    "sha256": "6a9f8ff09deb0fc405843e32932c41b9f5928e4763977a09509006a03798482f",
+    "bytes": 67101
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_pca_0.9.joblib": {
+    "sha256": "f4da65ab85b431c9eb9f00dd193ef9735b157eb2a5238f3a7e2dab8f6a376612",
+    "bytes": 101724
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_pca_0.95.joblib": {
+    "sha256": "22277d2a44fc7aa55d7f43343f9e2857e01128766f5abae607a206cedbd68cbb",
+    "bytes": 140889
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_pca_full.joblib": {
+    "sha256": "747288637547f5cb8c76ef37c407125a3c0dd88ff525a723ee32681615007f43",
+    "bytes": 743616
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_reference.joblib": {
+    "sha256": "890268bf50644d424df64570db56f84dd4549691f4d421667ffa3c05b10d7460",
+    "bytes": 17283
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_without_eeg.joblib": {
+    "sha256": "75b6b6189de19e7e12c56a9335db17a0f7d6f9790113f814737381d62cbf5461",
+    "bytes": 12042
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_without_eye.joblib": {
+    "sha256": "e63a6460cb16ea6aacf2232be5bd821502039bbf6e8e5f1815e2cac90f59a635",
+    "bytes": 10109
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold3_without_pupil.joblib": {
+    "sha256": "905f4f5fedf5b2b34142179853c8beb21a909202db842aaae0c36c80d9a99796",
+    "bytes": 13958
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_current_keep_smooth.joblib": {
+    "sha256": "0c70c2c1ced084acf132477f5d2c1eb86ee3f387530379e5d38f00b51ae8b027",
+    "bytes": 3404
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_current_no_smooth.joblib": {
+    "sha256": "664d419c7b326a3e47ab4da9d1864f4e98603ded4e09436b102e8b230b575b9a",
+    "bytes": 3406
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_alpha_relative.joblib": {
+    "sha256": "e5418f0a55b379e9704a04224c44d935b73f17d9b4546a2510c25ed482e0c606",
+    "bytes": 17371
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_beta_relative.joblib": {
+    "sha256": "167e4d7539350a34bed1e8c63a17ed4b81b403cc33d035ab1c1b09c2bd26f6e6",
+    "bytes": 17367
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_delta_relative.joblib": {
+    "sha256": "53b7e64f25da491e87d4c3af861b70b1f4517f5e62a9a056c0fd02096bf79cc7",
+    "bytes": 17386
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_gamma_relative.joblib": {
+    "sha256": "7a5c41e9be368940978660a95d90ec52831f3ce7707da4401eada176e476eb27",
+    "bytes": 17388
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_line_noise_ratio.joblib": {
+    "sha256": "7158b554c788ed765d736f385bf3815f4c09f9910b1cbb5f7e0651ae5a3e0d58",
+    "bytes": 17362
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_peak_to_peak_uv.joblib": {
+    "sha256": "a80335c0956265c7c27a4713f874090499f79a9bdaf9dc7ca12f39dfa7b81e9e",
+    "bytes": 17338
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_rms_uv.joblib": {
+    "sha256": "9b8d176f824a17810964f8b137bb036f5d135abddf00cd56e7391fdfa360d019",
+    "bytes": 17362
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_std_uv.joblib": {
+    "sha256": "4a310b958506298228c5e4418c401d904d5b69ff88399d39af7d2dd1a913e75e",
+    "bytes": 17380
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_eeg_theta_relative.joblib": {
+    "sha256": "89de4fc5f268f9dae592e8c9a646de2ad17bd1e7640cd70c407f08fe9cc8c1b1",
+    "bytes": 17386
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_fixation_count.joblib": {
+    "sha256": "43cbd35cc42fccab4140fe30dfa56d4ac58f80e3523e6e09d51380fb6e8a0b35",
+    "bytes": 17387
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_fixation_mean_ms.joblib": {
+    "sha256": "3f53773eb9227ae6b45238d3d961945d7edc3eab3104378d6eb039fe5d19fa28",
+    "bytes": 17160
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_fixation_median_ms.joblib": {
+    "sha256": "65041f96b7083ef400798f9f83687cb1c43ebcde8cc3c4dfb29557ad3d719219",
+    "bytes": 17187
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_fixation_total_ms.joblib": {
+    "sha256": "93548cfab5b45a1a603471e607af78088e3467fb66758311c444feec13b1893d",
+    "bytes": 17374
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_gaze_dispersion_2d_px.joblib": {
+    "sha256": "87049d3ff4bff02b77e30d78729aadd64c414c153176a56db77d911884da1074",
+    "bytes": 17277
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_gaze_dispersion_x_px.joblib": {
+    "sha256": "73f547d6490fbc0a3605cc3d77d19bdf0791764c7f9fde39798db39aff7b894f",
+    "bytes": 17275
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_gaze_dispersion_y_px.joblib": {
+    "sha256": "836843738900e03a14e5a9296bbaf519cabbfc8a405a178b847f1f1ffdaee840",
+    "bytes": 17272
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_gaze_path_length_px.joblib": {
+    "sha256": "04deea26aafa06fb86319b073e45e5a98c5372cff909af05cd29993296ccac44",
+    "bytes": 17128
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_pupil_max_z.joblib": {
+    "sha256": "e30057890487a98b8ea48efb446d5e5798f67e2b51e7e14963a29bcf9289ae14",
+    "bytes": 17285
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_pupil_mean_z.joblib": {
+    "sha256": "7d4a8d79a55139f5095a63df7c7ad372fe4a36e478fb58c06af01c390be18746",
+    "bytes": 17278
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_pupil_min_z.joblib": {
+    "sha256": "07c2508896c6c97151ef1457972c602d7a5b658b9950e66d5cda79d481f91fb7",
+    "bytes": 17279
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_pupil_slope_z_s.joblib": {
+    "sha256": "b5b9e7e3312318a9ef3af449e21b1e6e2694852e6cc6246659881916000b1dcc",
+    "bytes": 17290
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_pupil_std_z.joblib": {
+    "sha256": "b9f575feee1b4b72cb023838b6287e097e84e61ea9c8c3f405b9568e15543e34",
+    "bytes": 17251
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_saccade_count.joblib": {
+    "sha256": "47516eb85610a3960e245602eb6b09e2b56d86d7b416d08c3ee267870d867171",
+    "bytes": 17395
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_drop_saccade_mean_ms.joblib": {
+    "sha256": "18b592796093d3afca8404a099bd7d229caf7195b518817e76193a1891799829",
+    "bytes": 16950
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_no_smooth.joblib": {
+    "sha256": "d8a4720e28950153b55e3a3f720ca3c11253a95bf6988f5b774fc56c843460a8",
+    "bytes": 17897
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_only_eeg.joblib": {
+    "sha256": "2b29979f07e4496ca8b141ab0749385395453806eee0b8e59d5d0d857e256f5b",
+    "bytes": 6832
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_only_eye.joblib": {
+    "sha256": "1b41f7d7b7455c883a89c593e9d2bcfedc5489b96a6648ae6bf3d03419bab9e6",
+    "bytes": 8924
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_only_pupil.joblib": {
+    "sha256": "09d47028aa0d6c5d8eec9c2ba4bc4d7973b55274a6ef7f6c96ef7c1711b1f65e",
+    "bytes": 4995
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_pca_0.8.joblib": {
+    "sha256": "1f1395234e39093fe7ab6dae3cf7a21a6b3588d201727b7756c444c6118fb9cd",
+    "bytes": 69434
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_pca_0.9.joblib": {
+    "sha256": "0f366ccb4d06bf1f9c81cd52bce73b91246e88fd085a759907512df0646b24ed",
+    "bytes": 111006
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_pca_0.95.joblib": {
+    "sha256": "145e5f8e394a3e7ec9c2a1cd232315dbc87293fe30b946ed46590c218a618245",
+    "bytes": 152509
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_pca_full.joblib": {
+    "sha256": "274177376fda749291acdff087805372549ba5c17b6b75f0ca7dadd0542a410c",
+    "bytes": 743013
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_reference.joblib": {
+    "sha256": "9fcd3e49d31a46d0241ff4e2265b75e554da3c46b99bebf029ff9b1e0f684c2d",
+    "bytes": 17892
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_without_eeg.joblib": {
+    "sha256": "8a2433de50e4ada56b3c45b6311dabd8a31f0a428cb8687890c7f88d7c333d7f",
+    "bytes": 12482
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_without_eye.joblib": {
+    "sha256": "3bcb3aac64a3dbd88604fc71e656f4284a400036a9e8c8b555332bec9922364a",
+    "bytes": 10491
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold4_without_pupil.joblib": {
+    "sha256": "eef988176b474016451b0b6e83dc2230ac815c8c58d309172fe912230f66dd34",
+    "bytes": 14451
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_current_keep_smooth.joblib": {
+    "sha256": "eaaeb6b66b642b7f382aebdc28c2862e3bba1b091c9d0d45ff454ec820e7fb74",
+    "bytes": 3395
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_current_no_smooth.joblib": {
+    "sha256": "0936c3569a8238825916fff899b53d83fe06752b39a1d621edb1ec431f70e5d5",
+    "bytes": 3398
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_alpha_relative.joblib": {
+    "sha256": "bd0779d0d84b83be2b20ad8419df8f0a9db38a6f91ae17af113e9a9f3d6065c1",
+    "bytes": 9337
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_beta_relative.joblib": {
+    "sha256": "4eb8b1a262e3c4de8d3b8caaebb88c76b7cd50a8dacc1b80fe198c336eeb800d",
+    "bytes": 9316
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_delta_relative.joblib": {
+    "sha256": "989b4918fa22ab644ee9381f3c0d7593b758c8bd685b77819a23f4f468835fc3",
+    "bytes": 9309
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_gamma_relative.joblib": {
+    "sha256": "6c5cb050be49a2996ab63cddc353411398007b1b2507b3a931265cf430c26209",
+    "bytes": 9321
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_line_noise_ratio.joblib": {
+    "sha256": "e46fbc58fe28cdcc6a99d4b73a3fdc10b2ca080d16dc8f3b9b9009670bb950f1",
+    "bytes": 9320
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_peak_to_peak_uv.joblib": {
+    "sha256": "f6e882d767b6b4849faeeeda6f221d23499d494bc8404725cafc1cfabccd0105",
+    "bytes": 9305
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_rms_uv.joblib": {
+    "sha256": "7bea75ed15adfebcc400d926c88a72de5fc8823943129941b0a1c994edd8f684",
+    "bytes": 9320
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_std_uv.joblib": {
+    "sha256": "1f21752fe3b8f0744aa57a3923db3b4b1299b16f2eb3318812e22cb635694843",
+    "bytes": 9320
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_eeg_theta_relative.joblib": {
+    "sha256": "0bdcfb4b0fd055a5be2e16730379d84aa9940770e9b5ac96289ed273b47f2a9b",
+    "bytes": 9329
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_fixation_count.joblib": {
+    "sha256": "8f93fc203eea32bcfbec90c2d274c28cfd13c419a7d39911b51b2035f7783147",
+    "bytes": 9319
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_fixation_mean_ms.joblib": {
+    "sha256": "20878d444ae4eeae1108b96f8e652002d8c88c01d13c55766f857f2fed4e91e5",
+    "bytes": 9236
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_fixation_median_ms.joblib": {
+    "sha256": "1704963f2f960275e85fb23a9bcb7482244aad432ee467a81835b5905d34cb8a",
+    "bytes": 9230
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_fixation_total_ms.joblib": {
+    "sha256": "9bc2541a42758a1785277b009fb4aa90d7bacf7644845b0260aad55b6a3d5085",
+    "bytes": 9332
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_gaze_dispersion_2d_px.joblib": {
+    "sha256": "a297aab5afbf6258fb99744d11954aa8cc40ab274a7464941b86b69f912b3adb",
+    "bytes": 9291
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_gaze_dispersion_x_px.joblib": {
+    "sha256": "b59c04a4778760c7e1ecc2688fadb13b854c49d47ee0920c105cf69e1d1e4e4e",
+    "bytes": 9290
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_gaze_dispersion_y_px.joblib": {
+    "sha256": "2429302a38ee422576f2d29020efa38580fc255a9d440a5cf96d20cdef04502c",
+    "bytes": 9297
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_gaze_path_length_px.joblib": {
+    "sha256": "b9cedcda08cc5bee4bf88be7648b85eb903030126fb77bf2334ad4c3931a4e2a",
+    "bytes": 9225
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_pupil_max_z.joblib": {
+    "sha256": "4e26e20d7504c0c992700474764ddd72a4e06f4efea17689c4351805871ec6e7",
+    "bytes": 9289
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_pupil_mean_z.joblib": {
+    "sha256": "9c840aed608df0d0b437f7d3641cdef35cc3b226b91201be6228ef128cfec844",
+    "bytes": 9284
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_pupil_min_z.joblib": {
+    "sha256": "dd8aed034905341e7a77ea4dc20671af19ac92ddebb3d05245a6d2d84fd313cd",
+    "bytes": 9299
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_pupil_slope_z_s.joblib": {
+    "sha256": "fe9a9dcd6d14f8509aa94288327097eeab0ce0d684cb32d466d6867afff5444d",
+    "bytes": 9277
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_pupil_std_z.joblib": {
+    "sha256": "60a2e171a5471256ad0e39bca1044cbb59d7938707da507f27e65c455a3b61f0",
+    "bytes": 9280
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_saccade_count.joblib": {
+    "sha256": "aad3cda873ea934a9d94f6d25871cba7bbb5aef7aec43ab3522d4de085620758",
+    "bytes": 9301
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_drop_saccade_mean_ms.joblib": {
+    "sha256": "ee0c6c700cf3c25a790c596a6cb1cd0dd9b2a8a6c22f220b85012956fb1cc4d7",
+    "bytes": 9130
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_no_smooth.joblib": {
+    "sha256": "2f1e49a4b532d3b6dfa773903bdf3e777a291bbd509fe4e24b3d9004061c1196",
+    "bytes": 9616
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_only_eeg.joblib": {
+    "sha256": "01d2720e422a7abc7977fafab48d52cd8ba11fade36ec1c8b49c1dc1bea2590d",
+    "bytes": 4067
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_only_eye.joblib": {
+    "sha256": "1330adcfb063e1db97954c69c8271eff5aa1719036e1dc98d5a8275bb0446043",
+    "bytes": 5174
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_only_pupil.joblib": {
+    "sha256": "cbfc0a41892d6cbfc2dd04723eda92da3bae3dedb984ecb1dbb76c10e62cbc3d",
+    "bytes": 3139
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_pca_0.8.joblib": {
+    "sha256": "006d7f78b85e1d7d39d15a31ef2f27844e177c98c4625cb8d72f3238c7472691",
+    "bytes": 31147
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_pca_0.9.joblib": {
+    "sha256": "f4b46448ce049434f7bd4a162679b024b73c3a0b558f508856ad7e21d73586c5",
+    "bytes": 51208
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_pca_0.95.joblib": {
+    "sha256": "2a08a462a91056211672fd82b06c1c37372e05cf4da912f6febda4a6d4d71834",
+    "bytes": 71565
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_pca_full.joblib": {
+    "sha256": "cac9e621c27857e91299d47cdba83f43d1da6e9c799279b687426e4068369ff9",
+    "bytes": 194008
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_reference.joblib": {
+    "sha256": "bfa26213920d0ad93a8dd189a26d114d2485459e7a2fafde0306a7ccc493ba6a",
+    "bytes": 9609
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_without_eeg.joblib": {
+    "sha256": "241a499d8d0b7e135b810a5678d6e868edc3507310a60809811598c6c9f80c98",
+    "bytes": 6903
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_without_eye.joblib": {
+    "sha256": "d5c8b3e2eb826c2dc44874aa1c030f6310ff6954b770d5130eb4f371bdbd957f",
+    "bytes": 5901
+  },
+  "resultados/ablacion_pca_12-09-2026/modelos/fold5_without_pupil.joblib": {
+    "sha256": "1e8616967aa3c5c72cadc4ba4e730a26572df5598efe60821f9f3daf7d5e66ad",
+    "bytes": 7877
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_cargas.csv.gz": {
+    "sha256": "7330f30ffdf47a4aa77b407c87cc90647a2467bb0e880f1f77d621de441fd9b0",
+    "bytes": 6316509
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_prediccion.pdf": {
+    "sha256": "b45ff42299b829a8061483d20a558968679f01d4fb4b9f148ebd5c66702cd930",
+    "bytes": 19326
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_prediccion.png": {
+    "sha256": "17f39fa0b9b2cc869ad3a71799597c19f452781e62ab9e04f4f059d9c6beb7bd",
+    "bytes": 53086
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_varianza.csv": {
+    "sha256": "de856b91d70656bd5506e6aece94028ce77462cce3139570e61d14a13f4e881f",
+    "bytes": 139549
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_varianza.pdf": {
+    "sha256": "e6f20429e7ca51a8f2dab031516ddb3d54afdbf071df21b3afc0dffa6e8d6505",
+    "bytes": 17308
+  },
+  "resultados/ablacion_pca_12-09-2026/pca_varianza.png": {
+    "sha256": "b70a43f1af809444af3af9e9e4197ff28a36721f2d8116f9275585316632ccb5",
+    "bytes": 91552
+  },
+  "resultados/ablacion_pca_12-09-2026/predicciones_oof.csv.gz": {
+    "sha256": "966ba186a57cacbcbcfb8c617e71bfd7ab8d26b4662b29061166b447becd5273",
+    "bytes": 17478001
+  },
+  "resultados/ablacion_pca_12-09-2026/protocolo.json": {
+    "sha256": "d231f7e5440577271d1ba2dee956b17d5563abb95a9e869686236ab9f72c258f",
+    "bytes": 37148
+  },
+  "resultados/ablacion_pca_12-09-2026/pruebas.json": {
+    "sha256": "6e07e9d416a2f3ff51011868603a65211fc240b6077f2c665bbcd0e20a90f056",
+    "bytes": 35339
+  },
+  "resultados/ablacion_pca_12-09-2026/ranking_variables.csv": {
+    "sha256": "02f6b7845c3d58106310f2f7223e44345a7816a08a2e301f52827ff289f50388",
+    "bytes": 4608
+  },
+  "resultados/ablacion_pca_12-09-2026/resumen_ablaciones.csv": {
+    "sha256": "75fd5ce6042b2244538a7833b82fc4f79b7da661cec52965fd4e5ca004949e24",
+    "bytes": 6265
+  },
+  "resultados/ablacion_pca_12-09-2026/resumen_pca.csv": {
+    "sha256": "631d883140b077e55d268e79da187f7ea2e1e5cf3d909999f1d316df94ca0fef",
+    "bytes": 783
+  },
+  "resultados/ablacion_pca_12-09-2026/verificacion.json": {
+    "sha256": "5805f954606dc0d6354016b8dbf0b7c265598a6e791eac28dc04e32de26fcdfe",
+    "bytes": 804
+  },
+  "resultados/ablacion_pca_12-09-2026/verificacion_informe.json": {
+    "sha256": "0bbbec165567021e2a9e927e016bc26a41fa7104a8490c67ed161f44ecf244eb",
+    "bytes": 767
+  },
+  "scripts/ablacion_pca_core.py": {
+    "sha256": "c0e3fc7bde9fea31956b945f4ea96aeab72a9e843cca4121760b2f34f34bb4c9",
+    "bytes": 3363
+  },
+  "scripts/auditar_ablacion_pca.py": {
+    "sha256": "f41ff27ec45505b0be11cdcbd79798c79a71de18f99cc0b27b99ddef0e8f31a0",
+    "bytes": 8436
+  },
+  "scripts/entrenar_ablacion_pca.py": {
+    "sha256": "886424c853d21fb782804dbfa2fd50ab4595c4b8e12863ec0723629f2a929cbb",
+    "bytes": 7379
+  },
+  "scripts/informe_ablacion_pca.py": {
+    "sha256": "d404997e648453a8b5fc869622af68d3705bbacc01bcade0b2de3869a79d192d",
+    "bytes": 11104
+  },
+  "scripts/predecir_ablacion_pca.py": {
+    "sha256": "946a5f26cdcae28e78642001950e4bcb0320c3385c54d11f8f423ccdec49f536",
+    "bytes": 685
+  },
+  "tests/test_ablacion_pca.py": {
+    "sha256": "0013280de1eca165f8d11ab917fa7c9ba6eb44ce03c41dc084113ee5cfb6e19b",
+    "bytes": 2780
+  }
+}

@@ -8,6 +8,13 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [Ablación de modalidades, variables e historial y PCA](documentacion/Ablacion_PCA_12-09-2026.md):
+  38 variantes, 190 modelos, 513.912 predicciones verificadas y 59 pruebas.
+  Quitar EEG baja BA macro de 0,3748 a 0,3546. Solo EEG conserva 0,3722, con pérdida
+  de recall medio. Quitar fixation_count da 0,3843, máximo secundario exploratorio.
+  PCA al 90 % conserva 13–45 componentes y obtiene 0,3764, con mejora incierta.
+  Incluye ranking de variables, cargas PCA, intervalos y cuatro figuras PNG/PDF.
+
 - [Búsqueda de BA macro sobre 0,50](documentacion/Busqueda_Meta_05_12-09-2026.md):
   cuatro enfoques nuevos: persistencia, historial multiescala, adaptación offline y
   regresión ordinal. Mejor BA macro observada: **0,3748**, Ridge multiescala, frente

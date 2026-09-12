@@ -1,0 +1,12 @@
+{
+  "source_verification_sha256": "5805f954606dc0d6354016b8dbf0b7c265598a6e791eac28dc04e32de26fcdfe",
+  "script_sha256": "d404997e648453a8b5fc869622af68d3705bbacc01bcade0b2de3869a79d192d",
+  "reduced_predictor_sha256": "946a5f26cdcae28e78642001950e4bcb0320c3385c54d11f8f423ccdec49f536",
+  "figures": {
+    "ablacion_modalidades_historial.png": "7dbc9577ef8e72999ccbc497e343d957ba2147711cb29a99b24c64b13a41f630",
+    "ablacion_variables.png": "a51eca9f5be253a6c8ad6e60e65f810d193e651494b329bdd168c96d3998f7a7",
+    "pca_prediccion.png": "17f39fa0b9b2cc869ad3a71799597c19f452781e62ab9e04f4f059d9c6beb7bd",
+    "pca_varianza.png": "b70a43f1af809444af3af9e9e4197ff28a36721f2d8116f9275585316632ccb5"
+  },
+  "report": "documentacion/Ablacion_PCA_12-09-2026.md"
+}
