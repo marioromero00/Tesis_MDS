@@ -1,0 +1,400 @@
+{
+  "created_utc": "2026-09-12T01:47:30.808842+00:00",
+  "target": "arousal_label_6s",
+  "folds": [
+    {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "candidate_id": "mean_1",
+      "family": "mean",
+      "window": 1
+    },
+    {
+      "candidate_id": "mean_4",
+      "family": "mean",
+      "window": 4
+    },
+    {
+      "candidate_id": "mean_16",
+      "family": "mean",
+      "window": 16
+    },
+    {
+      "candidate_id": "mean_64",
+      "family": "mean",
+      "window": 64
+    },
+    {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    {
+      "candidate_id": "ema_0.1",
+      "family": "ema",
+      "alpha": 0.1
+    },
+    {
+      "candidate_id": "ema_0.3",
+      "family": "ema",
+      "alpha": 0.3
+    },
+    {
+      "candidate_id": "hmm_0.01_0.25",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 0.25
+    },
+    {
+      "candidate_id": "hmm_0.01_1.0",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 1.0
+    },
+    {
+      "candidate_id": "hmm_0.01_4.0",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 4.0
+    },
+    {
+      "candidate_id": "hmm_0.1_0.25",
+      "family": "hmm",
+      "shrink": 0.1,
+      "temperature": 0.25
+    },
+    {
+      "candidate_id": "hmm_0.1_1.0",
+      "family": "hmm",
+      "shrink": 0.1,
+      "temperature": 1.0
+    },
+    {
+      "candidate_id": "hmm_0.1_4.0",
+      "family": "hmm",
+      "shrink": 0.1,
+      "temperature": 4.0
+    },
+    {
+      "candidate_id": "hmm_0.5_0.25",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 0.25
+    },
+    {
+      "candidate_id": "hmm_0.5_1.0",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 1.0
+    },
+    {
+      "candidate_id": "hmm_0.5_4.0",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 4.0
+    }
+  ],
+  "primary": "all",
+  "scopes": [
+    "all",
+    "hmm",
+    "mean",
+    "ema"
+  ],
+  "seed": 20260911,
+  "base": "pool_fixed_history",
+  "selection": "mean of three inner participant BA scores; ties by candidate_id",
+  "transitions": "person averaged row normalized Laplace counts; inner fit participants only; uniform initial state",
+  "sources": {
+    "scripts\\persistencia_core.py": "6b8ff95f0d5f5509edc6d2590c725a77b53ccd4deb3c6423b5a64327e9fced18",
+    "scripts\\entrenar_persistencia.py": "3839126f62362f093add2a09f33bd3e66e0f874fab072fb4aba300cf240a90f9",
+    "resultados\\ensambles_11-09-2026\\verificacion.json": "b277479d60c104e15e0d08f837c97ae7593082219b9a1207c5224796c4e49f3f",
+    "resultados\\hiperparametros_11-09-2026_paralelo\\catalogo_interno.json": "33ca60a84295754a04f10d9b4e5d3a24213609ec23a5b52912417db8ee540c10",
+    "resultados\\ensambles_11-09-2026\\catalogo_modelos.json": "fd3e27531ebe6181ac46b4e701c7a921a36236a75fe49c1fbe0b59bffbc93e63",
+    "resultados\\modelado\\dataset_modelado.csv": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+    "resultados\\modelado\\particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f"
+  },
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "scope": "adaptive exploratory training cohort; target 0.5 not guaranteed"
+}

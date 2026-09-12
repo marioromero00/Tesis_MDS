@@ -1,0 +1,452 @@
+[
+  {
+    "fold": 1,
+    "inner": 1,
+    "path": "internos/fold1_inner1.npz",
+    "sha256": "25433895b3b5aca408556d1ffa25112ddd71249710b99829d9c0245fd1b302d2",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P20",
+      "P26",
+      "P27",
+      "P34",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P2",
+      "P21",
+      "P3",
+      "P33",
+      "P35",
+      "P46",
+      "P8"
+    ]
+  },
+  {
+    "fold": 1,
+    "inner": 2,
+    "path": "internos/fold1_inner2.npz",
+    "sha256": "dc1c7b2e8aa0c3e83de57f6612bd4f651c085e1d2aa3a97322689cd5fee6184c",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P40",
+      "P46",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P26",
+      "P27",
+      "P36",
+      "P4",
+      "P44",
+      "P9"
+    ]
+  },
+  {
+    "fold": 1,
+    "inner": 3,
+    "path": "internos/fold1_inner3.npz",
+    "sha256": "e3e22ea0754ebd538dad743c1de8b3ae7a45d5aa7afae1865bf6234be42f75f0",
+    "train_participants": [
+      "P12",
+      "P2",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P18",
+      "P19",
+      "P20",
+      "P34",
+      "P40"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 1,
+    "path": "internos/fold2_inner1.npz",
+    "sha256": "025e032dd1ee585c47304eeb60b818d67952da2e95f8b0e0da0afad53a275386",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P22",
+      "P26",
+      "P27",
+      "P3",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P46",
+      "P48"
+    ],
+    "evaluation_participants": [
+      "P21",
+      "P24",
+      "P30",
+      "P33",
+      "P44",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 2,
+    "path": "internos/fold2_inner2.npz",
+    "sha256": "2697588ff67d513a17167fd41a51462e7e6c187574644cabb2b1ee7e4b2a29e2",
+    "train_participants": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P27",
+      "P30",
+      "P33",
+      "P36",
+      "P4",
+      "P44",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P20",
+      "P26",
+      "P3",
+      "P34",
+      "P43",
+      "P46"
+    ]
+  },
+  {
+    "fold": 2,
+    "inner": 3,
+    "path": "internos/fold2_inner3.npz",
+    "sha256": "6c0b483ef735a7ab877b5250a541c9aa0cecdc6b419a8bb91b298f1588e635a5",
+    "train_participants": [
+      "P13",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P43",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P22",
+      "P27",
+      "P36",
+      "P4",
+      "P48"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 1,
+    "path": "internos/fold3_inner1.npz",
+    "sha256": "412258420e265e1cf5f98689817a46697fd0d352d7a6fcbbe0b0d5b7f153f772",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P2",
+      "P22",
+      "P24",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P40",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P19",
+      "P20",
+      "P21",
+      "P26",
+      "P3",
+      "P4",
+      "P43"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 2,
+    "path": "internos/fold3_inner2.npz",
+    "sha256": "6a725755ee586ef94d705a387a9f7b14b9121489daf5a1c691082a8ea6870d8d",
+    "train_participants": [
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P34",
+      "P4",
+      "P43",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P30",
+      "P33",
+      "P35",
+      "P40",
+      "P44",
+      "P48"
+    ]
+  },
+  {
+    "fold": 3,
+    "inner": 3,
+    "path": "internos/fold3_inner3.npz",
+    "sha256": "540a50217902a6faca5d82787b281c4cff50ea77a8d785831c3777b2343d9f4d",
+    "train_participants": [
+      "P12",
+      "P19",
+      "P20",
+      "P21",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P2",
+      "P22",
+      "P24",
+      "P34",
+      "P9"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 1,
+    "path": "internos/fold4_inner1.npz",
+    "sha256": "b3119baa5612781e4aacbf056c34c7744eeaafe2a621adf5aafd9217624357b4",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P2",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P21",
+      "P22",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 2,
+    "path": "internos/fold4_inner2.npz",
+    "sha256": "e2cc8bfc57116c17eb64d16cecfc8afe78383b7b858b38939dd070b38b3f2a7f",
+    "train_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P36",
+      "P40",
+      "P43"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P18",
+      "P35",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ]
+  },
+  {
+    "fold": 4,
+    "inner": 3,
+    "path": "internos/fold4_inner3.npz",
+    "sha256": "9dbbd586bf057b8d2301204bb87fc85a8a72ab7b900688a20e37469d30baf787",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P21",
+      "P22",
+      "P26",
+      "P27",
+      "P30",
+      "P35",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P2",
+      "P24",
+      "P34",
+      "P36",
+      "P40",
+      "P43"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 1,
+    "path": "internos/fold5_inner1.npz",
+    "sha256": "b9fb74d3fb52af1aa02914b34060cf58008dde5b5855af5f542ba3282a11ad48",
+    "train_participants": [
+      "P18",
+      "P19",
+      "P2",
+      "P22",
+      "P24",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P43",
+      "P46",
+      "P48"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P20",
+      "P27",
+      "P4",
+      "P40",
+      "P8",
+      "P9"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 2,
+    "path": "internos/fold5_inner2.npz",
+    "sha256": "19d93d3b4efb8a7f116379e4bf4156d9b99fa68a83d90be62605ec755f094fd4",
+    "train_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P20",
+      "P27",
+      "P3",
+      "P33",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P22",
+      "P24",
+      "P30",
+      "P35",
+      "P46",
+      "P48"
+    ]
+  },
+  {
+    "fold": 5,
+    "inner": 3,
+    "path": "internos/fold5_inner3.npz",
+    "sha256": "2798211414a09424b329c6a8b17042bb0402b6e8f63bc3cee97b2c01df524cdc",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P30",
+      "P35",
+      "P4",
+      "P40",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P19",
+      "P2",
+      "P3",
+      "P33",
+      "P36",
+      "P43"
+    ]
+  }
+]

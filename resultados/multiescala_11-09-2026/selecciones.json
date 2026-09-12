@@ -1,0 +1,275 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "definition": {
+      "base_id": "current_m5",
+      "representation": "current",
+      "family": "trees",
+      "depth": null,
+      "leaf": 100
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m5_s32",
+    "inner_score": 0.3824374631748775
+  },
+  {
+    "fold": 1,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "current_m0",
+      "representation": "current",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m0_s32",
+    "inner_score": 0.3716165342211917
+  },
+  {
+    "fold": 1,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "current_m2",
+      "representation": "current",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m2_s32",
+    "inner_score": 0.3645928097617112
+  },
+  {
+    "fold": 1,
+    "scope": "trees",
+    "definition": {
+      "base_id": "current_m5",
+      "representation": "current",
+      "family": "trees",
+      "depth": null,
+      "leaf": 100
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m5_s32",
+    "inner_score": 0.3824374631748775
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "definition": {
+      "base_id": "current_m2",
+      "representation": "current",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 8,
+    "candidate_id": "current_m2_s8",
+    "inner_score": 0.37206791962196983
+  },
+  {
+    "fold": 2,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "multiscale_m0",
+      "representation": "multiscale",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 8,
+    "candidate_id": "multiscale_m0_s8",
+    "inner_score": 0.3672870078007153
+  },
+  {
+    "fold": 2,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "current_m2",
+      "representation": "current",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 8,
+    "candidate_id": "current_m2_s8",
+    "inner_score": 0.37206791962196983
+  },
+  {
+    "fold": 2,
+    "scope": "trees",
+    "definition": {
+      "base_id": "current_m4",
+      "representation": "current",
+      "family": "trees",
+      "depth": 8,
+      "leaf": 40
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m4_s32",
+    "inner_score": 0.35606604021574695
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "definition": {
+      "base_id": "delayed4_m0",
+      "representation": "delayed4",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 32,
+    "candidate_id": "delayed4_m0_s32",
+    "inner_score": 0.358729120494677
+  },
+  {
+    "fold": 3,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "delayed4_m0",
+      "representation": "delayed4",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 32,
+    "candidate_id": "delayed4_m0_s32",
+    "inner_score": 0.358729120494677
+  },
+  {
+    "fold": 3,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "relative_m3",
+      "representation": "relative",
+      "family": "rbf",
+      "alpha": 100.0,
+      "gamma_factor": 1.0
+    },
+    "smoothing": 8,
+    "candidate_id": "relative_m3_s8",
+    "inner_score": 0.3584651282485978
+  },
+  {
+    "fold": 3,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_m5",
+      "representation": "relative",
+      "family": "trees",
+      "depth": null,
+      "leaf": 100
+    },
+    "smoothing": 1,
+    "candidate_id": "relative_m5_s1",
+    "inner_score": 0.3493648837654877
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "definition": {
+      "base_id": "multiscale_m0",
+      "representation": "multiscale",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 8,
+    "candidate_id": "multiscale_m0_s8",
+    "inner_score": 0.3802846584151032
+  },
+  {
+    "fold": 4,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "multiscale_m0",
+      "representation": "multiscale",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 8,
+    "candidate_id": "multiscale_m0_s8",
+    "inner_score": 0.3802846584151032
+  },
+  {
+    "fold": 4,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "multiscale_m2",
+      "representation": "multiscale",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 32,
+    "candidate_id": "multiscale_m2_s32",
+    "inner_score": 0.3744046070093237
+  },
+  {
+    "fold": 4,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_m5",
+      "representation": "relative",
+      "family": "trees",
+      "depth": null,
+      "leaf": 100
+    },
+    "smoothing": 32,
+    "candidate_id": "relative_m5_s32",
+    "inner_score": 0.36469737774718664
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "definition": {
+      "base_id": "current_m2",
+      "representation": "current",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 8,
+    "candidate_id": "current_m2_s8",
+    "inner_score": 0.3535894265927813
+  },
+  {
+    "fold": 5,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "relative_m0",
+      "representation": "relative",
+      "family": "ridge",
+      "alpha": 1.0
+    },
+    "smoothing": 1,
+    "candidate_id": "relative_m0_s1",
+    "inner_score": 0.35225753093304096
+  },
+  {
+    "fold": 5,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "current_m2",
+      "representation": "current",
+      "family": "rbf",
+      "alpha": 1.0,
+      "gamma_factor": 0.1
+    },
+    "smoothing": 8,
+    "candidate_id": "current_m2_s8",
+    "inner_score": 0.3535894265927813
+  },
+  {
+    "fold": 5,
+    "scope": "trees",
+    "definition": {
+      "base_id": "current_m4",
+      "representation": "current",
+      "family": "trees",
+      "depth": 8,
+      "leaf": 40
+    },
+    "smoothing": 32,
+    "candidate_id": "current_m4_s32",
+    "inner_score": 0.3446128114908908
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "hmm_0.5_4.0",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 4.0
+    },
+    "inner_score": 0.3474680531002592
+  },
+  {
+    "fold": 1,
+    "scope": "hmm",
+    "choice": {
+      "candidate_id": "hmm_0.5_4.0",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 4.0
+    },
+    "inner_score": 0.3474680531002592
+  },
+  {
+    "fold": 1,
+    "scope": "mean",
+    "choice": {
+      "candidate_id": "mean_1",
+      "family": "mean",
+      "window": 1
+    },
+    "inner_score": 0.34620197311653217
+  },
+  {
+    "fold": 1,
+    "scope": "ema",
+    "choice": {
+      "candidate_id": "ema_0.3",
+      "family": "ema",
+      "alpha": 0.3
+    },
+    "inner_score": 0.33342617059889684
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "hmm_0.01_4.0",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 4.0
+    },
+    "inner_score": 0.3752889625671864
+  },
+  {
+    "fold": 2,
+    "scope": "hmm",
+    "choice": {
+      "candidate_id": "hmm_0.01_4.0",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 4.0
+    },
+    "inner_score": 0.3752889625671864
+  },
+  {
+    "fold": 2,
+    "scope": "mean",
+    "choice": {
+      "candidate_id": "mean_4",
+      "family": "mean",
+      "window": 4
+    },
+    "inner_score": 0.3643388092651682
+  },
+  {
+    "fold": 2,
+    "scope": "ema",
+    "choice": {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    "inner_score": 0.36244884288759166
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "hmm_0.1_4.0",
+      "family": "hmm",
+      "shrink": 0.1,
+      "temperature": 4.0
+    },
+    "inner_score": 0.34415485087968106
+  },
+  {
+    "fold": 3,
+    "scope": "hmm",
+    "choice": {
+      "candidate_id": "hmm_0.1_4.0",
+      "family": "hmm",
+      "shrink": 0.1,
+      "temperature": 4.0
+    },
+    "inner_score": 0.34415485087968106
+  },
+  {
+    "fold": 3,
+    "scope": "mean",
+    "choice": {
+      "candidate_id": "mean_1",
+      "family": "mean",
+      "window": 1
+    },
+    "inner_score": 0.34297353097395233
+  },
+  {
+    "fold": 3,
+    "scope": "ema",
+    "choice": {
+      "candidate_id": "ema_0.3",
+      "family": "ema",
+      "alpha": 0.3
+    },
+    "inner_score": 0.33530972348126903
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    "inner_score": 0.34069850930657836
+  },
+  {
+    "fold": 4,
+    "scope": "hmm",
+    "choice": {
+      "candidate_id": "hmm_0.5_0.25",
+      "family": "hmm",
+      "shrink": 0.5,
+      "temperature": 0.25
+    },
+    "inner_score": 0.33516219622259974
+  },
+  {
+    "fold": 4,
+    "scope": "mean",
+    "choice": {
+      "candidate_id": "mean_1",
+      "family": "mean",
+      "window": 1
+    },
+    "inner_score": 0.33729185430740793
+  },
+  {
+    "fold": 4,
+    "scope": "ema",
+    "choice": {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    "inner_score": 0.34069850930657836
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    "inner_score": 0.33421835647863213
+  },
+  {
+    "fold": 5,
+    "scope": "hmm",
+    "choice": {
+      "candidate_id": "hmm_0.01_4.0",
+      "family": "hmm",
+      "shrink": 0.01,
+      "temperature": 4.0
+    },
+    "inner_score": 0.32680297767799144
+  },
+  {
+    "fold": 5,
+    "scope": "mean",
+    "choice": {
+      "candidate_id": "mean_1",
+      "family": "mean",
+      "window": 1
+    },
+    "inner_score": 0.3235702474979842
+  },
+  {
+    "fold": 5,
+    "scope": "ema",
+    "choice": {
+      "candidate_id": "ema_0.02",
+      "family": "ema",
+      "alpha": 0.02
+    },
+    "inner_score": 0.33421835647863213
+  }
+]

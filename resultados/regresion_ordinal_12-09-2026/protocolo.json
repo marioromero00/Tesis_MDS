@@ -1,0 +1,501 @@
+{
+  "created_utc": "2026-09-12T12:38:49.708315+00:00",
+  "target": "arousal_label_6s",
+  "features": [
+    "pupil_mean_z",
+    "pupil_std_z",
+    "pupil_min_z",
+    "pupil_max_z",
+    "pupil_slope_z_s",
+    "gaze_dispersion_x_px",
+    "gaze_dispersion_y_px",
+    "gaze_dispersion_2d_px",
+    "gaze_path_length_px",
+    "fixation_count",
+    "fixation_total_ms",
+    "fixation_mean_ms",
+    "fixation_median_ms",
+    "saccade_count",
+    "saccade_mean_ms",
+    "eeg_rms_uv",
+    "eeg_std_uv",
+    "eeg_peak_to_peak_uv",
+    "eeg_delta_relative",
+    "eeg_theta_relative",
+    "eeg_alpha_relative",
+    "eeg_beta_relative",
+    "eeg_gamma_relative",
+    "eeg_line_noise_ratio"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "base_id": "current_ridge",
+      "representation": "current",
+      "family": "ridge"
+    },
+    {
+      "base_id": "current_rbf",
+      "representation": "current",
+      "family": "rbf"
+    },
+    {
+      "base_id": "current_hgb",
+      "representation": "current",
+      "family": "hgb"
+    },
+    {
+      "base_id": "current_trees",
+      "representation": "current",
+      "family": "trees"
+    },
+    {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    {
+      "base_id": "multiscale_rbf",
+      "representation": "multiscale",
+      "family": "rbf"
+    },
+    {
+      "base_id": "multiscale_hgb",
+      "representation": "multiscale",
+      "family": "hgb"
+    },
+    {
+      "base_id": "multiscale_trees",
+      "representation": "multiscale",
+      "family": "trees"
+    },
+    {
+      "base_id": "relative_ridge",
+      "representation": "relative",
+      "family": "ridge"
+    },
+    {
+      "base_id": "relative_rbf",
+      "representation": "relative",
+      "family": "rbf"
+    },
+    {
+      "base_id": "relative_hgb",
+      "representation": "relative",
+      "family": "hgb"
+    },
+    {
+      "base_id": "relative_trees",
+      "representation": "relative",
+      "family": "trees"
+    }
+  ],
+  "rules": [
+    [
+      1,
+      -0.3,
+      0.03
+    ],
+    [
+      1,
+      -0.3,
+      0.1
+    ],
+    [
+      1,
+      -0.3,
+      0.3
+    ],
+    [
+      1,
+      -0.1,
+      0.03
+    ],
+    [
+      1,
+      -0.1,
+      0.1
+    ],
+    [
+      1,
+      -0.1,
+      0.3
+    ],
+    [
+      1,
+      -0.03,
+      0.03
+    ],
+    [
+      1,
+      -0.03,
+      0.1
+    ],
+    [
+      1,
+      -0.03,
+      0.3
+    ],
+    [
+      16,
+      -0.3,
+      0.03
+    ],
+    [
+      16,
+      -0.3,
+      0.1
+    ],
+    [
+      16,
+      -0.3,
+      0.3
+    ],
+    [
+      16,
+      -0.1,
+      0.03
+    ],
+    [
+      16,
+      -0.1,
+      0.1
+    ],
+    [
+      16,
+      -0.1,
+      0.3
+    ],
+    [
+      16,
+      -0.03,
+      0.03
+    ],
+    [
+      16,
+      -0.03,
+      0.1
+    ],
+    [
+      16,
+      -0.03,
+      0.3
+    ]
+  ],
+  "seeds": [
+    20260912
+  ],
+  "inner_seed": 20260912,
+  "inner_folds": 3,
+  "scopes": [
+    "all",
+    "ridge",
+    "rbf",
+    "hgb",
+    "trees"
+  ],
+  "primary": "all",
+  "target_encoding": {
+    "bajo": -1,
+    "medio": 0,
+    "alto": 1
+  },
+  "selection": "mean internal participant BA; ties by candidate_id",
+  "sources": {
+    "scripts\\regresion_ordinal_core.py": "6e7c5fe89435f4d49231870ef276cdd7d295bd2d2c13c6291c763d550b017d86",
+    "scripts\\entrenar_regresion_ordinal.py": "33e6ed3329adc8bdca2613a52a47075ce8575949b8a2722e6d3fb71c6211d669",
+    "scripts\\multiescala_core.py": "c870e76a97ea121731352c7b80d35a76cd15f35dd2a6c6f5af101ad9000dc3af",
+    "scripts\\persistencia_core.py": "6b8ff95f0d5f5509edc6d2590c725a77b53ccd4deb3c6423b5a64327e9fced18",
+    "scripts\\temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "scripts\\avanzados_core.py": "dc4f9cb3bd987d42e53e93d64e899bdb6c2ec7586be1d00a852fbb9005e5c822",
+    "scripts\\control_historial.py": "238e3980397d07abc4d91e165b7e7bbae082fc81a253e7274c95551aa17bc626",
+    "scripts\\optimizar_historial.py": "493197e117e33c39bc20850c49e5fdcfb6e67f74322ccb752037e07135c532b4",
+    "scripts\\entrenar_hiperparametros.py": "e623f65fd727d6b55fd972f4b3c4c7d641ecfffb0a24e66201dcb18b88135602",
+    "resultados\\modelado\\dataset_modelado.csv": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+    "resultados\\modelado\\particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f"
+  },
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "scope": "adaptive exploratory, fixed evaluated labels, no guaranteed 0.5"
+}

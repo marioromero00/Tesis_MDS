@@ -1,0 +1,752 @@
+[
+  {
+    "model_id": "fold1_all",
+    "fold": 1,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold1_all.joblib",
+    "sha256": "fe90d9eef0a66270a46566f642a47b215f1088ddf138a281c46f9c4f86282c5b",
+    "choice": {
+      "fold": 1,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "center_w1_s0.25_scaleTrue",
+        "family": "center",
+        "window": 1,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.35893936591491943
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold1_rank",
+    "fold": 1,
+    "scope": "rank",
+    "seed": 20260911,
+    "path": "modelos/fold1_rank.joblib",
+    "sha256": "caa6831c8ab4f83f5b3428785f277fdff513a2924b0a81b3d785505919e3779b",
+    "choice": {
+      "fold": 1,
+      "scope": "rank",
+      "choice": {
+        "candidate_id": "rank_w1_l0.400_h0.600",
+        "family": "rank",
+        "window": 1,
+        "low": 0.4,
+        "high": 0.6
+      },
+      "inner_score": 0.3480523676697276
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold1_center",
+    "fold": 1,
+    "scope": "center",
+    "seed": 20260911,
+    "path": "modelos/fold1_center.joblib",
+    "sha256": "e61022bca2cab867fb93f2f940f597a0493182be7579758fe006fb7e27c8998c",
+    "choice": {
+      "fold": 1,
+      "scope": "center",
+      "choice": {
+        "candidate_id": "center_w1_s0.25_scaleTrue",
+        "family": "center",
+        "window": 1,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.35893936591491943
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold2_all",
+    "fold": 2,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold2_all.joblib",
+    "sha256": "9b915403da451f7010a76193f664d5ff6b46e8f1d5cad83aaefcdfd83345a29a",
+    "choice": {
+      "fold": 2,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "rank_w32_l0.400_h0.600",
+        "family": "rank",
+        "window": 32,
+        "low": 0.4,
+        "high": 0.6
+      },
+      "inner_score": 0.36967975087539323
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold2_rank",
+    "fold": 2,
+    "scope": "rank",
+    "seed": 20260911,
+    "path": "modelos/fold2_rank.joblib",
+    "sha256": "9b915403da451f7010a76193f664d5ff6b46e8f1d5cad83aaefcdfd83345a29a",
+    "choice": {
+      "fold": 2,
+      "scope": "rank",
+      "choice": {
+        "candidate_id": "rank_w32_l0.400_h0.600",
+        "family": "rank",
+        "window": 32,
+        "low": 0.4,
+        "high": 0.6
+      },
+      "inner_score": 0.36967975087539323
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold2_center",
+    "fold": 2,
+    "scope": "center",
+    "seed": 20260911,
+    "path": "modelos/fold2_center.joblib",
+    "sha256": "0e5163ca73ed6063edc5c52c0db5a3ad166be966c38c54cdc7f1ba2dfe4df2d9",
+    "choice": {
+      "fold": 2,
+      "scope": "center",
+      "choice": {
+        "candidate_id": "center_w64_s0.5_scaleTrue",
+        "family": "center",
+        "window": 64,
+        "strength": 0.5,
+        "scale": true
+      },
+      "inner_score": 0.36831813403808694
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold3_all",
+    "fold": 3,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold3_all.joblib",
+    "sha256": "6241bd3a1c7a2b60e471ed7ce2e316dee20126977614ec96cf63c329fc0ba57c",
+    "choice": {
+      "fold": 3,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "center_w8_s0.25_scaleTrue",
+        "family": "center",
+        "window": 8,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.3563794385753476
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold3_rank",
+    "fold": 3,
+    "scope": "rank",
+    "seed": 20260911,
+    "path": "modelos/fold3_rank.joblib",
+    "sha256": "43a82d68c841e1d015fcc93c304672fa0b87dac1383fddc79d145ed5b80217d2",
+    "choice": {
+      "fold": 3,
+      "scope": "rank",
+      "choice": {
+        "candidate_id": "rank_w1_l0.400_h0.600",
+        "family": "rank",
+        "window": 1,
+        "low": 0.4,
+        "high": 0.6
+      },
+      "inner_score": 0.3432415899060471
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold3_center",
+    "fold": 3,
+    "scope": "center",
+    "seed": 20260911,
+    "path": "modelos/fold3_center.joblib",
+    "sha256": "6241bd3a1c7a2b60e471ed7ce2e316dee20126977614ec96cf63c329fc0ba57c",
+    "choice": {
+      "fold": 3,
+      "scope": "center",
+      "choice": {
+        "candidate_id": "center_w8_s0.25_scaleTrue",
+        "family": "center",
+        "window": 8,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.3563794385753476
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold4_all",
+    "fold": 4,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold4_all.joblib",
+    "sha256": "4fb9d818354b3cff81cd18008e8d26778722be446090b9e82ffdbda54242d519",
+    "choice": {
+      "fold": 4,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "center_w32_s0.25_scaleTrue",
+        "family": "center",
+        "window": 32,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.346809808416027
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold4_rank",
+    "fold": 4,
+    "scope": "rank",
+    "seed": 20260911,
+    "path": "modelos/fold4_rank.joblib",
+    "sha256": "274cdde9e548a2bd4a1de66533d1fccd2769bf2b5084aacc503765d66bc38c3f",
+    "choice": {
+      "fold": 4,
+      "scope": "rank",
+      "choice": {
+        "candidate_id": "rank_w8_l0.333_h0.600",
+        "family": "rank",
+        "window": 8,
+        "low": 0.3333333333333333,
+        "high": 0.6
+      },
+      "inner_score": 0.3286139324860536
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold4_center",
+    "fold": 4,
+    "scope": "center",
+    "seed": 20260911,
+    "path": "modelos/fold4_center.joblib",
+    "sha256": "4fb9d818354b3cff81cd18008e8d26778722be446090b9e82ffdbda54242d519",
+    "choice": {
+      "fold": 4,
+      "scope": "center",
+      "choice": {
+        "candidate_id": "center_w32_s0.25_scaleTrue",
+        "family": "center",
+        "window": 32,
+        "strength": 0.25,
+        "scale": true
+      },
+      "inner_score": 0.346809808416027
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold5_all",
+    "fold": 5,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold5_all.joblib",
+    "sha256": "c6033139fc57015710bfdddd7ec4923322c32b48ce9dc2508073609f6090407e",
+    "choice": {
+      "fold": 5,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "center_w1_s1.0_scaleFalse",
+        "family": "center",
+        "window": 1,
+        "strength": 1.0,
+        "scale": false
+      },
+      "inner_score": 0.3348090036384003
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  },
+  {
+    "model_id": "fold5_rank",
+    "fold": 5,
+    "scope": "rank",
+    "seed": 20260911,
+    "path": "modelos/fold5_rank.joblib",
+    "sha256": "83846107dd94ab2a74a56dc17c50d9f35ae61c5ab6f4024ac37f2dd93f6485d7",
+    "choice": {
+      "fold": 5,
+      "scope": "rank",
+      "choice": {
+        "candidate_id": "rank_w1_l0.400_h0.800",
+        "family": "rank",
+        "window": 1,
+        "low": 0.4,
+        "high": 0.8
+      },
+      "inner_score": 0.32735398822259715
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  },
+  {
+    "model_id": "fold5_center",
+    "fold": 5,
+    "scope": "center",
+    "seed": 20260911,
+    "path": "modelos/fold5_center.joblib",
+    "sha256": "c6033139fc57015710bfdddd7ec4923322c32b48ce9dc2508073609f6090407e",
+    "choice": {
+      "fold": 5,
+      "scope": "center",
+      "choice": {
+        "candidate_id": "center_w1_s1.0_scaleFalse",
+        "family": "center",
+        "window": 1,
+        "strength": 1.0,
+        "scale": false
+      },
+      "inner_score": 0.3348090036384003
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  }
+]

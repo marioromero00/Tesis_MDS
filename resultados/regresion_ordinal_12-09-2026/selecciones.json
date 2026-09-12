@@ -1,0 +1,352 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.3824509334103927
+  },
+  {
+    "fold": 1,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.3824509334103927
+  },
+  {
+    "fold": 1,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "current_rbf",
+      "representation": "current",
+      "family": "rbf"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "current_rbf_w1_l-0.03_h0.03",
+    "inner_score": 0.3681982001460074
+  },
+  {
+    "fold": 1,
+    "scope": "hgb",
+    "definition": {
+      "base_id": "current_hgb",
+      "representation": "current",
+      "family": "hgb"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "current_hgb_w16_l-0.03_h0.03",
+    "inner_score": 0.36642884749363863
+  },
+  {
+    "fold": 1,
+    "scope": "trees",
+    "definition": {
+      "base_id": "current_trees",
+      "representation": "current",
+      "family": "trees"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "current_trees_w1_l-0.03_h0.03",
+    "inner_score": 0.3565581993763809
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.37895846062184907
+  },
+  {
+    "fold": 2,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.37895846062184907
+  },
+  {
+    "fold": 2,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "relative_rbf",
+      "representation": "relative",
+      "family": "rbf"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_rbf_w1_l-0.03_h0.03",
+    "inner_score": 0.3685540253249777
+  },
+  {
+    "fold": 2,
+    "scope": "hgb",
+    "definition": {
+      "base_id": "current_hgb",
+      "representation": "current",
+      "family": "hgb"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "current_hgb_w16_l-0.03_h0.03",
+    "inner_score": 0.37136980344297016
+  },
+  {
+    "fold": 2,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_trees",
+      "representation": "relative",
+      "family": "trees"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_trees_w16_l-0.03_h0.03",
+    "inner_score": 0.355050564961849
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "definition": {
+      "base_id": "relative_ridge",
+      "representation": "relative",
+      "family": "ridge"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_ridge_w1_l-0.03_h0.03",
+    "inner_score": 0.3615491784085121
+  },
+  {
+    "fold": 3,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "relative_ridge",
+      "representation": "relative",
+      "family": "ridge"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_ridge_w1_l-0.03_h0.03",
+    "inner_score": 0.3615491784085121
+  },
+  {
+    "fold": 3,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "relative_rbf",
+      "representation": "relative",
+      "family": "rbf"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_rbf_w16_l-0.03_h0.03",
+    "inner_score": 0.3599001660124866
+  },
+  {
+    "fold": 3,
+    "scope": "hgb",
+    "definition": {
+      "base_id": "relative_hgb",
+      "representation": "relative",
+      "family": "hgb"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_hgb_w1_l-0.03_h0.03",
+    "inner_score": 0.3463439202562368
+  },
+  {
+    "fold": 3,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_trees",
+      "representation": "relative",
+      "family": "trees"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_trees_w1_l-0.03_h0.03",
+    "inner_score": 0.34979507794043135
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.38949440277395375
+  },
+  {
+    "fold": 4,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "multiscale_ridge",
+      "representation": "multiscale",
+      "family": "ridge"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+    "inner_score": 0.38949440277395375
+  },
+  {
+    "fold": 4,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "relative_rbf",
+      "representation": "relative",
+      "family": "rbf"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_rbf_w1_l-0.03_h0.03",
+    "inner_score": 0.36302931996142024
+  },
+  {
+    "fold": 4,
+    "scope": "hgb",
+    "definition": {
+      "base_id": "multiscale_hgb",
+      "representation": "multiscale",
+      "family": "hgb"
+    },
+    "smoothing": 16,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "multiscale_hgb_w16_l-0.03_h0.03",
+    "inner_score": 0.3682679971969412
+  },
+  {
+    "fold": 4,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_trees",
+      "representation": "relative",
+      "family": "trees"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_trees_w1_l-0.03_h0.03",
+    "inner_score": 0.348118878321431
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "definition": {
+      "base_id": "relative_ridge",
+      "representation": "relative",
+      "family": "ridge"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_ridge_w1_l-0.03_h0.03",
+    "inner_score": 0.3551262212264891
+  },
+  {
+    "fold": 5,
+    "scope": "ridge",
+    "definition": {
+      "base_id": "relative_ridge",
+      "representation": "relative",
+      "family": "ridge"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_ridge_w1_l-0.03_h0.03",
+    "inner_score": 0.3551262212264891
+  },
+  {
+    "fold": 5,
+    "scope": "rbf",
+    "definition": {
+      "base_id": "relative_rbf",
+      "representation": "relative",
+      "family": "rbf"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_rbf_w1_l-0.03_h0.03",
+    "inner_score": 0.3499893137406993
+  },
+  {
+    "fold": 5,
+    "scope": "hgb",
+    "definition": {
+      "base_id": "current_hgb",
+      "representation": "current",
+      "family": "hgb"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "current_hgb_w1_l-0.03_h0.03",
+    "inner_score": 0.35143469638391994
+  },
+  {
+    "fold": 5,
+    "scope": "trees",
+    "definition": {
+      "base_id": "relative_trees",
+      "representation": "relative",
+      "family": "trees"
+    },
+    "smoothing": 1,
+    "low": -0.03,
+    "high": 0.03,
+    "candidate_id": "relative_trees_w1_l-0.03_h0.03",
+    "inner_score": 0.3440376964361036
+  }
+]

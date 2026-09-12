@@ -1,0 +1,182 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "center_w1_s0.25_scaleTrue",
+      "family": "center",
+      "window": 1,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.35893936591491943
+  },
+  {
+    "fold": 1,
+    "scope": "rank",
+    "choice": {
+      "candidate_id": "rank_w1_l0.400_h0.600",
+      "family": "rank",
+      "window": 1,
+      "low": 0.4,
+      "high": 0.6
+    },
+    "inner_score": 0.3480523676697276
+  },
+  {
+    "fold": 1,
+    "scope": "center",
+    "choice": {
+      "candidate_id": "center_w1_s0.25_scaleTrue",
+      "family": "center",
+      "window": 1,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.35893936591491943
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "rank_w32_l0.400_h0.600",
+      "family": "rank",
+      "window": 32,
+      "low": 0.4,
+      "high": 0.6
+    },
+    "inner_score": 0.36967975087539323
+  },
+  {
+    "fold": 2,
+    "scope": "rank",
+    "choice": {
+      "candidate_id": "rank_w32_l0.400_h0.600",
+      "family": "rank",
+      "window": 32,
+      "low": 0.4,
+      "high": 0.6
+    },
+    "inner_score": 0.36967975087539323
+  },
+  {
+    "fold": 2,
+    "scope": "center",
+    "choice": {
+      "candidate_id": "center_w64_s0.5_scaleTrue",
+      "family": "center",
+      "window": 64,
+      "strength": 0.5,
+      "scale": true
+    },
+    "inner_score": 0.36831813403808694
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "center_w8_s0.25_scaleTrue",
+      "family": "center",
+      "window": 8,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.3563794385753476
+  },
+  {
+    "fold": 3,
+    "scope": "rank",
+    "choice": {
+      "candidate_id": "rank_w1_l0.400_h0.600",
+      "family": "rank",
+      "window": 1,
+      "low": 0.4,
+      "high": 0.6
+    },
+    "inner_score": 0.3432415899060471
+  },
+  {
+    "fold": 3,
+    "scope": "center",
+    "choice": {
+      "candidate_id": "center_w8_s0.25_scaleTrue",
+      "family": "center",
+      "window": 8,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.3563794385753476
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "center_w32_s0.25_scaleTrue",
+      "family": "center",
+      "window": 32,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.346809808416027
+  },
+  {
+    "fold": 4,
+    "scope": "rank",
+    "choice": {
+      "candidate_id": "rank_w8_l0.333_h0.600",
+      "family": "rank",
+      "window": 8,
+      "low": 0.3333333333333333,
+      "high": 0.6
+    },
+    "inner_score": 0.3286139324860536
+  },
+  {
+    "fold": 4,
+    "scope": "center",
+    "choice": {
+      "candidate_id": "center_w32_s0.25_scaleTrue",
+      "family": "center",
+      "window": 32,
+      "strength": 0.25,
+      "scale": true
+    },
+    "inner_score": 0.346809808416027
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "choice": {
+      "candidate_id": "center_w1_s1.0_scaleFalse",
+      "family": "center",
+      "window": 1,
+      "strength": 1.0,
+      "scale": false
+    },
+    "inner_score": 0.3348090036384003
+  },
+  {
+    "fold": 5,
+    "scope": "rank",
+    "choice": {
+      "candidate_id": "rank_w1_l0.400_h0.800",
+      "family": "rank",
+      "window": 1,
+      "low": 0.4,
+      "high": 0.8
+    },
+    "inner_score": 0.32735398822259715
+  },
+  {
+    "fold": 5,
+    "scope": "center",
+    "choice": {
+      "candidate_id": "center_w1_s1.0_scaleFalse",
+      "family": "center",
+      "window": 1,
+      "strength": 1.0,
+      "scale": false
+    },
+    "inner_score": 0.3348090036384003
+  }
+]

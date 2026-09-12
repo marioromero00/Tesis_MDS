@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-12T12:57:33.721478+00:00",
+  "source_verifications": {
+    "persistencia_11-09-2026": "f065ca98f234cf43740647107a59d739f828d0c2773d426632be80b03ee25a30",
+    "multiescala_11-09-2026_completa": "2ec062bc9aeba6695613f7c4ac238abc02b88edac7a60164a26911e7c08539d0",
+    "multiescala_11-09-2026_completa/continuacion": "cd9991099c6ea12d824308837bb99f3e49d33fb1fe74585c20f98598c8be19b3",
+    "adaptacion_offline_11-09-2026": "c26fb1e779d058849a2a47e2b43a7ea45bd355d7836c257f1c9820f1aacb4a28",
+    "regresion_ordinal_12-09-2026_completa": "e1ab7eb30ccc30f77652758308561c4aff4211a14850b9836b7fc25da8b644a2",
+    "regresion_ordinal_12-09-2026_completa/continuacion": "2d9cf0243446a037ec0f9a5c48c705391dec1fc6e1b9d65b811800e748f1ca63"
+  },
+  "script_sha256": "e48d7c149358ae8e594e092ee5f1c3898d72816414a85db95d6f85f75f7a975d",
+  "models": 100,
+  "predictions": 270480,
+  "inner_scores": 5460,
+  "best_macro": 0.3747499370640147,
+  "target": 0.5,
+  "target_reached": false,
+  "tests_passed": 56,
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

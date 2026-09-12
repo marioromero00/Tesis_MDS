@@ -1,0 +1,359 @@
+[
+  {
+    "model_id": "fold1_all",
+    "fold": 1,
+    "scope": "all",
+    "seed": 20260912,
+    "path": "modelos/fold1_all.joblib",
+    "sha256": "1aab86d5d0cee6b24a07d2fa2aae3c02eefc1d872dbac23d7e9e52afc2825de3",
+    "choice": {
+      "fold": 1,
+      "scope": "all",
+      "definition": {
+        "base_id": "multiscale_ridge",
+        "representation": "multiscale",
+        "family": "ridge"
+      },
+      "smoothing": 16,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+      "inner_score": 0.3824509334103927
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ]
+  },
+  {
+    "model_id": "fold1_ridge",
+    "fold": 1,
+    "scope": "ridge",
+    "seed": 20260912,
+    "path": "modelos/fold1_ridge.joblib",
+    "sha256": "1aab86d5d0cee6b24a07d2fa2aae3c02eefc1d872dbac23d7e9e52afc2825de3",
+    "choice": {
+      "fold": 1,
+      "scope": "ridge",
+      "definition": {
+        "base_id": "multiscale_ridge",
+        "representation": "multiscale",
+        "family": "ridge"
+      },
+      "smoothing": 16,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+      "inner_score": 0.3824509334103927
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ]
+  },
+  {
+    "model_id": "fold1_rbf",
+    "fold": 1,
+    "scope": "rbf",
+    "seed": 20260912,
+    "path": "modelos/fold1_rbf.joblib",
+    "sha256": "c4d8d65f6e6f18044fb0f5d43a6dd1a93e7087c301d85e9cbcf1127a288ca2a0",
+    "choice": {
+      "fold": 1,
+      "scope": "rbf",
+      "definition": {
+        "base_id": "current_rbf",
+        "representation": "current",
+        "family": "rbf"
+      },
+      "smoothing": 1,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "current_rbf_w1_l-0.03_h0.03",
+      "inner_score": 0.3681982001460074
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ]
+  },
+  {
+    "model_id": "fold1_hgb",
+    "fold": 1,
+    "scope": "hgb",
+    "seed": 20260912,
+    "path": "modelos/fold1_hgb.joblib",
+    "sha256": "515fbf000f822c90797b8335a5ab51e23a98c2f5fe5298efe2796d5df2e4ca6b",
+    "choice": {
+      "fold": 1,
+      "scope": "hgb",
+      "definition": {
+        "base_id": "current_hgb",
+        "representation": "current",
+        "family": "hgb"
+      },
+      "smoothing": 16,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "current_hgb_w16_l-0.03_h0.03",
+      "inner_score": 0.36642884749363863
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ]
+  },
+  {
+    "model_id": "fold1_trees",
+    "fold": 1,
+    "scope": "trees",
+    "seed": 20260912,
+    "path": "modelos/fold1_trees.joblib",
+    "sha256": "cb22850f5e7208fb712c4e787404f17d6449b61800bbc26927976ff47b76e2af",
+    "choice": {
+      "fold": 1,
+      "scope": "trees",
+      "definition": {
+        "base_id": "current_trees",
+        "representation": "current",
+        "family": "trees"
+      },
+      "smoothing": 1,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "current_trees_w1_l-0.03_h0.03",
+      "inner_score": 0.3565581993763809
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ]
+  },
+  {
+    "model_id": "fold2_all",
+    "fold": 2,
+    "scope": "all",
+    "seed": 20260912,
+    "path": "modelos/fold2_all.joblib",
+    "sha256": "4bb3e619d4a2b8dc27cc860ef506e9477bcbbf9dde1d6faa369ca13707f0d3d5",
+    "choice": {
+      "fold": 2,
+      "scope": "all",
+      "definition": {
+        "base_id": "multiscale_ridge",
+        "representation": "multiscale",
+        "family": "ridge"
+      },
+      "smoothing": 16,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+      "inner_score": 0.37895846062184907
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ]
+  },
+  {
+    "model_id": "fold2_ridge",
+    "fold": 2,
+    "scope": "ridge",
+    "seed": 20260912,
+    "path": "modelos/fold2_ridge.joblib",
+    "sha256": "4bb3e619d4a2b8dc27cc860ef506e9477bcbbf9dde1d6faa369ca13707f0d3d5",
+    "choice": {
+      "fold": 2,
+      "scope": "ridge",
+      "definition": {
+        "base_id": "multiscale_ridge",
+        "representation": "multiscale",
+        "family": "ridge"
+      },
+      "smoothing": 16,
+      "low": -0.03,
+      "high": 0.03,
+      "candidate_id": "multiscale_ridge_w16_l-0.03_h0.03",
+      "inner_score": 0.37895846062184907
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ]
+  }
+]

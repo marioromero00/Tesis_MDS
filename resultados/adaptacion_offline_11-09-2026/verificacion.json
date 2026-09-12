@@ -1,0 +1,21 @@
+{
+  "models_reloaded": 15,
+  "predictions_verified": 40572,
+  "inner_scores_verified": 900,
+  "inner_files_verified": 15,
+  "selections_verified": 15,
+  "preprocessors_refitted": 0,
+  "fold_metrics_verified": 15,
+  "participant_metrics_verified": 75,
+  "protocol_sha256": "921dd9b67643f3ce06815943b6f04768ac3cba018974ac7f4b4959ef9425e030",
+  "catalog_sha256": "3a46bdc8f2eace9cba2a84108828d09aee8fb87a5af302736a4fbceebd0babd4",
+  "predictions_sha256": "c4cb92e1b837cd7feeac3f32eec313e7ee07780bbc9a37bba1693a5062f42e37",
+  "audit_script_sha256": "05a55d3910de9ba94f05180ad6db78f5b4e2ce444f4e898268413c304aadf325",
+  "references": {
+    "resultados\\fusiones_10-09-2026_completa\\metricas_participantes.csv": "1ff90f5aacf07982d414fe7627b2ff92d901afaac61f613cb49f4a82d30e64cf",
+    "resultados\\mezclas_ensambles_11-09-2026\\metricas_participantes.csv": "86a6f64fe9a860a26bfce3ac582be437e88efb3503e3f0846c3662e6b12a38a5"
+  },
+  "completed_utc": "2026-09-12T12:40:25.573199+00:00",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

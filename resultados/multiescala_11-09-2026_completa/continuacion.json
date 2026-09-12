@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-12T01:58:14.183333+00:00",
+  "script_sha256": "7f3f6cdf66ed304cb2e3bff3fcc840af9a41257e3bae93ed059d6e834ea3e7bf",
+  "source_inventory": {
+    "bitacora.jsonl": "c0e26763c074a7ce38f357b330f5d6060daa9fc1417513833b166c4b8ef9d614",
+    "catalogo_interno.json": "08f5926410ec6d54d84eea9f95d6d8c77309ba7acfa6fb5228767dc92368bc4b",
+    "catalogo_modelos.json": "6a27b7fc7365e5b0d30aeae0596d6bbc9866db149c331889beb80d311e988962",
+    "intentos.csv": "b17a2edd45c0f2f906b0242e82bc0bb20e41861b5b694c5cfcc60f37cc82c2b1",
+    "protocolo.json": "5a09affa71aba464504c24348497c62be3f2fce9f1af988046dc419b114f01df",
+    "selecciones.json": "5af4d881086406278f5fa1b1f75322b4bf4f2441e71802818e258288ca480578",
+    "internos/fold1_inner1.npz": "25433895b3b5aca408556d1ffa25112ddd71249710b99829d9c0245fd1b302d2",
+    "internos/fold1_inner2.npz": "dc1c7b2e8aa0c3e83de57f6612bd4f651c085e1d2aa3a97322689cd5fee6184c",
+    "internos/fold1_inner3.npz": "e3e22ea0754ebd538dad743c1de8b3ae7a45d5aa7afae1865bf6234be42f75f0",
+    "internos/fold2_inner1.npz": "025e032dd1ee585c47304eeb60b818d67952da2e95f8b0e0da0afad53a275386",
+    "internos/fold2_inner2.npz": "2697588ff67d513a17167fd41a51462e7e6c187574644cabb2b1ee7e4b2a29e2",
+    "internos/fold2_inner3.npz": "6c0b483ef735a7ab877b5250a541c9aa0cecdc6b419a8bb91b298f1588e635a5",
+    "internos/fold3_inner1.npz": "412258420e265e1cf5f98689817a46697fd0d352d7a6fcbbe0b0d5b7f153f772",
+    "internos/fold3_inner2.npz": "6a725755ee586ef94d705a387a9f7b14b9121489daf5a1c691082a8ea6870d8d",
+    "internos/fold3_inner3.npz": "540a50217902a6faca5d82787b281c4cff50ea77a8d785831c3777b2343d9f4d",
+    "internos/fold4_inner1.npz": "b3119baa5612781e4aacbf056c34c7744eeaafe2a621adf5aafd9217624357b4",
+    "internos/fold4_inner2.npz": "e2cc8bfc57116c17eb64d16cecfc8afe78383b7b858b38939dd070b38b3f2a7f",
+    "internos/fold4_inner3.npz": "9dbbd586bf057b8d2301204bb87fc85a8a72ab7b900688a20e37469d30baf787",
+    "internos/fold5_inner1.npz": "b9fb74d3fb52af1aa02914b34060cf58008dde5b5855af5f542ba3282a11ad48",
+    "internos/fold5_inner2.npz": "19d93d3b4efb8a7f116379e4bf4156d9b99fa68a83d90be62605ec755f094fd4",
+    "internos/fold5_inner3.npz": "2798211414a09424b329c6a8b17042bb0402b6e8f63bc3cee97b2c01df524cdc",
+    "modelos/fold1_all_20260911.joblib": "d88a228f93120e649be553f574acfc2c2c4da0547c9efbd6b2aafcfe544ed82b",
+    "modelos/fold1_all_20260912.joblib": "a8ac8533fad0cda128ccf7e929677746826381c3e7dda87446fafad1c7fc1dda",
+    "modelos/fold1_ridge_20260911.joblib": "05b415b78add319ff54a2ebaad296dd19e2496ec140c68977ec395c07004b3e8"
+  },
+  "selection_sha256": "5af4d881086406278f5fa1b1f75322b4bf4f2441e71802818e258288ca480578",
+  "reason": "Strict equality stopped at max abs 1.66533454e-16 during reload of ridge. Preserve all source artifacts.",
+  "policy": "rtol=atol=1e-12 for scores AND exact argmax labels; no hyperparameter changes; repeat external fits only"
+}

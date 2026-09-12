@@ -8,6 +8,13 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [Búsqueda de BA macro sobre 0,50](documentacion/Busqueda_Meta_05_12-09-2026.md):
+  cuatro enfoques nuevos: persistencia, historial multiescala, adaptación offline y
+  regresión ordinal. Mejor BA macro observada: **0,3748**, Ridge multiescala, frente
+  a 0,3716 anterior. **Meta 0,50 no alcanzada**; ganancia secundaria e incierta y
+  menor recall medio. Incluye resultados completos, fallos numéricos y correcciones,
+  configuraciones, modelos, predicciones y figuras. Validation/test sin reevaluar.
+
 - [Auditoría y ensambles](documentacion/Ensambles_11-09-2026.md) y
   [mezclas fijas de stacking e historial](documentacion/Mezclas_Ensambles_11-09-2026.md):
   140 archivos de modelos y 378.672 predicciones verificadas; 47 pruebas aprobadas.

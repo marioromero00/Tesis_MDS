@@ -3,6 +3,7 @@
 *.pt binary
 *.zip binary
 scripts/*.py text eol=lf
+tests/*.py text eol=lf
 requirements.txt text eol=lf
 requirements_temporales.txt text eol=lf
 requirements_avanzados.txt text eol=lf
@@ -23,3 +24,10 @@ resultados/hiperparametros_11-09-2026/** -text whitespace=cr-at-eol
 resultados/hiperparametros_11-09-2026_paralelo/** -text whitespace=cr-at-eol
 resultados/ensambles_11-09-2026/** -text whitespace=cr-at-eol
 resultados/mezclas_ensambles_11-09-2026/** -text whitespace=cr-at-eol
+resultados/persistencia_11-09-2026/** -text whitespace=cr-at-eol
+resultados/multiescala_11-09-2026/** -text whitespace=cr-at-eol
+resultados/multiescala_11-09-2026_completa/** -text whitespace=cr-at-eol
+resultados/adaptacion_offline_11-09-2026/** -text whitespace=cr-at-eol
+resultados/regresion_ordinal_12-09-2026/** -text whitespace=cr-at-eol
+resultados/regresion_ordinal_12-09-2026_completa/** -text whitespace=cr-at-eol
+resultados/meta_05_12-09-2026/** -text whitespace=cr-at-eol

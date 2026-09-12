@@ -1,0 +1,970 @@
+[
+  {
+    "model_id": "fold1_all",
+    "fold": 1,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold1_all.joblib",
+    "sha256": "3189d593ffdd8f464edb55504e5e094b7ca9f938fce1b8a0f2e3975b1cbf9acb",
+    "choice": {
+      "fold": 1,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "hmm_0.5_4.0",
+        "family": "hmm",
+        "shrink": 0.5,
+        "temperature": 4.0
+      },
+      "inner_score": 0.3474680531002592
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold1_hmm",
+    "fold": 1,
+    "scope": "hmm",
+    "seed": 20260911,
+    "path": "modelos/fold1_hmm.joblib",
+    "sha256": "3189d593ffdd8f464edb55504e5e094b7ca9f938fce1b8a0f2e3975b1cbf9acb",
+    "choice": {
+      "fold": 1,
+      "scope": "hmm",
+      "choice": {
+        "candidate_id": "hmm_0.5_4.0",
+        "family": "hmm",
+        "shrink": 0.5,
+        "temperature": 4.0
+      },
+      "inner_score": 0.3474680531002592
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold1_mean",
+    "fold": 1,
+    "scope": "mean",
+    "seed": 20260911,
+    "path": "modelos/fold1_mean.joblib",
+    "sha256": "ddf290f66bbd78e0377d1f4c60d25d77a6909dc49ccc402e8b3fd848d3e11be4",
+    "choice": {
+      "fold": 1,
+      "scope": "mean",
+      "choice": {
+        "candidate_id": "mean_1",
+        "family": "mean",
+        "window": 1
+      },
+      "inner_score": 0.34620197311653217
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold1_ema",
+    "fold": 1,
+    "scope": "ema",
+    "seed": 20260911,
+    "path": "modelos/fold1_ema.joblib",
+    "sha256": "506b4a9debcb20e9e8ab2ea6142c5ee606d22ff8b1aeee39c7f046ae5d0402a0",
+    "choice": {
+      "fold": 1,
+      "scope": "ema",
+      "choice": {
+        "candidate_id": "ema_0.3",
+        "family": "ema",
+        "alpha": 0.3
+      },
+      "inner_score": 0.33342617059889684
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "source_sha256": "c0a839a5a5c3389c8c28d44f5a25ef5f59ff3089e5c5d9176d7d116f0ee7ce52"
+  },
+  {
+    "model_id": "fold2_all",
+    "fold": 2,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold2_all.joblib",
+    "sha256": "f5b70906437cd6d4aea8e940424f2a6e3a76d36eed7bcbed4193b3bb4e1c7b6d",
+    "choice": {
+      "fold": 2,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "hmm_0.01_4.0",
+        "family": "hmm",
+        "shrink": 0.01,
+        "temperature": 4.0
+      },
+      "inner_score": 0.3752889625671864
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold2_hmm",
+    "fold": 2,
+    "scope": "hmm",
+    "seed": 20260911,
+    "path": "modelos/fold2_hmm.joblib",
+    "sha256": "f5b70906437cd6d4aea8e940424f2a6e3a76d36eed7bcbed4193b3bb4e1c7b6d",
+    "choice": {
+      "fold": 2,
+      "scope": "hmm",
+      "choice": {
+        "candidate_id": "hmm_0.01_4.0",
+        "family": "hmm",
+        "shrink": 0.01,
+        "temperature": 4.0
+      },
+      "inner_score": 0.3752889625671864
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold2_mean",
+    "fold": 2,
+    "scope": "mean",
+    "seed": 20260911,
+    "path": "modelos/fold2_mean.joblib",
+    "sha256": "5a1141f595053ef64f268b019ea90dda12b3a7d62bcc5c7ece461ecc1080512f",
+    "choice": {
+      "fold": 2,
+      "scope": "mean",
+      "choice": {
+        "candidate_id": "mean_4",
+        "family": "mean",
+        "window": 4
+      },
+      "inner_score": 0.3643388092651682
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold2_ema",
+    "fold": 2,
+    "scope": "ema",
+    "seed": 20260911,
+    "path": "modelos/fold2_ema.joblib",
+    "sha256": "f3950a448dfa03c80ab2fce4ad13af0905df472ebec0e18ad2a3ec72a77f2149",
+    "choice": {
+      "fold": 2,
+      "scope": "ema",
+      "choice": {
+        "candidate_id": "ema_0.02",
+        "family": "ema",
+        "alpha": 0.02
+      },
+      "inner_score": 0.36244884288759166
+    },
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "source_sha256": "a55002c7a7e6aa1ad06b5bb2752808cd067b7faa4731de5d670450767c1de3c5"
+  },
+  {
+    "model_id": "fold3_all",
+    "fold": 3,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold3_all.joblib",
+    "sha256": "876569ac1ad798fa10051a5c45dcb9b1647e694a93348d5a7f25c6597056d71f",
+    "choice": {
+      "fold": 3,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "hmm_0.1_4.0",
+        "family": "hmm",
+        "shrink": 0.1,
+        "temperature": 4.0
+      },
+      "inner_score": 0.34415485087968106
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold3_hmm",
+    "fold": 3,
+    "scope": "hmm",
+    "seed": 20260911,
+    "path": "modelos/fold3_hmm.joblib",
+    "sha256": "876569ac1ad798fa10051a5c45dcb9b1647e694a93348d5a7f25c6597056d71f",
+    "choice": {
+      "fold": 3,
+      "scope": "hmm",
+      "choice": {
+        "candidate_id": "hmm_0.1_4.0",
+        "family": "hmm",
+        "shrink": 0.1,
+        "temperature": 4.0
+      },
+      "inner_score": 0.34415485087968106
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold3_mean",
+    "fold": 3,
+    "scope": "mean",
+    "seed": 20260911,
+    "path": "modelos/fold3_mean.joblib",
+    "sha256": "f959f2630c7eca891dc852db62e0a033bc0a7f370e69ac3672b1703bb2106340",
+    "choice": {
+      "fold": 3,
+      "scope": "mean",
+      "choice": {
+        "candidate_id": "mean_1",
+        "family": "mean",
+        "window": 1
+      },
+      "inner_score": 0.34297353097395233
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold3_ema",
+    "fold": 3,
+    "scope": "ema",
+    "seed": 20260911,
+    "path": "modelos/fold3_ema.joblib",
+    "sha256": "900829f13fda9d8404cfa348f5f3677a917f1e9cef4d560e0bda2a0073faaf58",
+    "choice": {
+      "fold": 3,
+      "scope": "ema",
+      "choice": {
+        "candidate_id": "ema_0.3",
+        "family": "ema",
+        "alpha": 0.3
+      },
+      "inner_score": 0.33530972348126903
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "source_sha256": "58d8e8d4c6d14b452b00854efe0a6e71525ffa30bc2a51a2532a44c24e972abe"
+  },
+  {
+    "model_id": "fold4_all",
+    "fold": 4,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold4_all.joblib",
+    "sha256": "1b6b41366bda91ae896337049e4424e946b7ba58eb0123c0116add0beee5676e",
+    "choice": {
+      "fold": 4,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "ema_0.02",
+        "family": "ema",
+        "alpha": 0.02
+      },
+      "inner_score": 0.34069850930657836
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold4_hmm",
+    "fold": 4,
+    "scope": "hmm",
+    "seed": 20260911,
+    "path": "modelos/fold4_hmm.joblib",
+    "sha256": "ef480ca7469325af7675fa217dba3f135b191fee66aba2d0689737f4d567a5a8",
+    "choice": {
+      "fold": 4,
+      "scope": "hmm",
+      "choice": {
+        "candidate_id": "hmm_0.5_0.25",
+        "family": "hmm",
+        "shrink": 0.5,
+        "temperature": 0.25
+      },
+      "inner_score": 0.33516219622259974
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold4_mean",
+    "fold": 4,
+    "scope": "mean",
+    "seed": 20260911,
+    "path": "modelos/fold4_mean.joblib",
+    "sha256": "3f3ca1f9e9e31d22207df81e6b91514d7728a7ffeee1d7c32d9d669a733fda0c",
+    "choice": {
+      "fold": 4,
+      "scope": "mean",
+      "choice": {
+        "candidate_id": "mean_1",
+        "family": "mean",
+        "window": 1
+      },
+      "inner_score": 0.33729185430740793
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold4_ema",
+    "fold": 4,
+    "scope": "ema",
+    "seed": 20260911,
+    "path": "modelos/fold4_ema.joblib",
+    "sha256": "1b6b41366bda91ae896337049e4424e946b7ba58eb0123c0116add0beee5676e",
+    "choice": {
+      "fold": 4,
+      "scope": "ema",
+      "choice": {
+        "candidate_id": "ema_0.02",
+        "family": "ema",
+        "alpha": 0.02
+      },
+      "inner_score": 0.34069850930657836
+    },
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "source_sha256": "e11b7e0ca0d70eeeb31b45e756861c5ff8e02bbfc953dae2de2bfe1448dc170b"
+  },
+  {
+    "model_id": "fold5_all",
+    "fold": 5,
+    "scope": "all",
+    "seed": 20260911,
+    "path": "modelos/fold5_all.joblib",
+    "sha256": "40d4281a126a1cc9a72206f669e10500ce7b4b057e8e44cdff35b2f07fae9fc7",
+    "choice": {
+      "fold": 5,
+      "scope": "all",
+      "choice": {
+        "candidate_id": "ema_0.02",
+        "family": "ema",
+        "alpha": 0.02
+      },
+      "inner_score": 0.33421835647863213
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  },
+  {
+    "model_id": "fold5_hmm",
+    "fold": 5,
+    "scope": "hmm",
+    "seed": 20260911,
+    "path": "modelos/fold5_hmm.joblib",
+    "sha256": "4ca7d48482602495844e78bb3bc5bd2d63af58e44f7ccbe4b74c25f84d2dfb28",
+    "choice": {
+      "fold": 5,
+      "scope": "hmm",
+      "choice": {
+        "candidate_id": "hmm_0.01_4.0",
+        "family": "hmm",
+        "shrink": 0.01,
+        "temperature": 4.0
+      },
+      "inner_score": 0.32680297767799144
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  },
+  {
+    "model_id": "fold5_mean",
+    "fold": 5,
+    "scope": "mean",
+    "seed": 20260911,
+    "path": "modelos/fold5_mean.joblib",
+    "sha256": "d39996426e08da5dc31559e80071028a492ebfd7106241596c2077ed0cb803dd",
+    "choice": {
+      "fold": 5,
+      "scope": "mean",
+      "choice": {
+        "candidate_id": "mean_1",
+        "family": "mean",
+        "window": 1
+      },
+      "inner_score": 0.3235702474979842
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  },
+  {
+    "model_id": "fold5_ema",
+    "fold": 5,
+    "scope": "ema",
+    "seed": 20260911,
+    "path": "modelos/fold5_ema.joblib",
+    "sha256": "40d4281a126a1cc9a72206f669e10500ce7b4b057e8e44cdff35b2f07fae9fc7",
+    "choice": {
+      "fold": 5,
+      "scope": "ema",
+      "choice": {
+        "candidate_id": "ema_0.02",
+        "family": "ema",
+        "alpha": 0.02
+      },
+      "inner_score": 0.33421835647863213
+    },
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "source_sha256": "eaa953dd47c2431ebbab4fd4c8b7f07fbdbcbd1538d78595f8436e9645f16944"
+  }
+]
