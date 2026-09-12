@@ -65,8 +65,8 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 - [Guía de carga](resultados/modelado/ejecuciones/baselines_05-09-2026_02/COMO_CARGAR.txt).
 - [Manifiesto de entrenamiento](resultados/modelado/ejecuciones/baselines_05-09-2026_02/manifiesto_baselines.json).
 - [Verificación de entrega](resultados/modelado/ejecuciones/baselines_05-09-2026_02/verificacion_entrega.json).
-- [Respaldo de notas con SVM, QDA e hiperparametros, 11-09-2026](documentacion/Tesis_Vault_Hiperparametros_11-09-2026.zip).
-- [Inventario y hashes del respaldo](documentacion/inventario_vault_hiperparametros_11-09-2026.json).
+- [Respaldo de notas con auditoría, ensambles y mezclas, 11-09-2026](documentacion/Tesis_Vault_Ensambles_11-09-2026.zip).
+- [Inventario y hashes del respaldo](documentacion/inventario_vault_ensambles_11-09-2026.json).
 - [Auditoría de la presentación](documentacion/auditoria_presentacion_06-09-2026.json).
 
 Para visualizar el HTML, descargar o clonar el repositorio y abrir el archivo local.
