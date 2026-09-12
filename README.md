@@ -8,6 +8,15 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [Auditoría y ensambles](documentacion/Ensambles_11-09-2026.md) y
+  [mezclas fijas de stacking e historial](documentacion/Mezclas_Ensambles_11-09-2026.md):
+  140 archivos de modelos y 378.672 predicciones verificadas; 47 pruebas aprobadas.
+  Mejor BA macro observada 0,3716 con 25 % de stacking, frente a 0,3651 anterior
+  (+0,65 pp; IC descriptivo [-0,31; +1,71]). Es un contraste secundario exploratorio;
+  la mezcla principal de 10 % obtiene 0,3687. La auditoría detectó selección inestable
+  y pérdida de recall medio en stacking solo. La mezcla recupera parte de ese recall,
+  con incertidumbre que impide confirmar superioridad. Validation/test sin reevaluar.
+
 - [SVM, QDA e hiperparámetros de boosting y fusiones](documentacion/Hiperparametros_11-09-2026.md):
   44 configuraciones de modelos y 88 decisiones; 660 ajustes internos, 1.320 puntuaciones
   y 70 bundles externos guardados. Fusión logística: BA macro 0,3605; fusión LDA: 0,3593;

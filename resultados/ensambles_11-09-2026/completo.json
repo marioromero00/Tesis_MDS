@@ -1,0 +1,12 @@
+{
+  "models": 110,
+  "base_fits": 140,
+  "base_classifiers": 420,
+  "meta_fits": 60,
+  "protocol_sha256": "3db275c588ea61f9810fc8a094640f05c85b4136515e0091466872546f9961a0",
+  "selection_sha256": "440f8ea328171eee599a68ecf6474a5aec0904096f6a923bea8eec0fdb81258e",
+  "catalog_sha256": "fd3e27531ebe6181ac46b4e701c7a921a36236a75fe49c1fbe0b59bffbc93e63",
+  "predictions_sha256": "97cbee2787cc0e76817dbf3344e8697821792215158c0b4ad3d05339aa06934f",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

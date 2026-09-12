@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-12T01:28:00.134607+00:00",
+  "stack_weights": [
+    0.05,
+    0.1,
+    0.25
+  ],
+  "primary_weight": 0.1,
+  "pool_scope": "pool_fixed_history",
+  "stack_scope": "stack_participant_C0.01",
+  "motivation": "Adaptive follow-up after middle-class recall of 0.0641 in stacking. Fixed low stack weights to check the BA and class-recall tradeoff; weights frozen before mixed predictions are computed.",
+  "source_predictions_sha256": "97cbee2787cc0e76817dbf3344e8697821792215158c0b4ad3d05339aa06934f",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

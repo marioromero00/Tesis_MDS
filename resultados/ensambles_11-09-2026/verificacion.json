@@ -1,0 +1,20 @@
+{
+  "models_reloaded": 110,
+  "unique_bases_verified": 140,
+  "base_preprocessors_verified": 420,
+  "meta_pipelines_refitted": 60,
+  "meta_coefficients_verified": 7560,
+  "predictions_verified": 297528,
+  "inner_scores_verified": 900,
+  "definitions_verified": 55,
+  "fold_metrics": 110,
+  "participant_metrics": 550,
+  "references": {
+    "resultados/fusiones_10-09-2026_completa/metricas_participantes.csv": "1ff90f5aacf07982d414fe7627b2ff92d901afaac61f613cb49f4a82d30e64cf",
+    "resultados/hiperparametros_11-09-2026_paralelo/metricas_participantes.csv": "63859d9820921eaf0cd63b12840da42718dd23f2e6fbe1188e891c4aa88ae9fb"
+  },
+  "report_script_sha256": "d1fd25d4dc439d915509b1aad9f1d9393f2fe0a602cc2ccf8118b985bf9d08e0",
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "completed_utc": "2026-09-12T01:32:00.217007+00:00"
+}

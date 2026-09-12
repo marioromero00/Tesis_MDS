@@ -1,0 +1,352 @@
+{"utc": "2026-09-12T01:22:31.014820+00:00", "stage": "selection_frozen", "sha256": "440f8ea328171eee599a68ecf6474a5aec0904096f6a923bea8eec0fdb81258e"}
+{"utc": "2026-09-12T01:22:35.072791+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:22:35.250300+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:35.250834+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:22:35.582343+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:35.614227+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:22:35.831223+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:35.831712+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:22:36.313809+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:36.314569+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:22:36.564334+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:36.564804+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:22:37.234146+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:37.234604+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:22:37.494626+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:37.495100+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:22:38.587003+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:38.587552+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:22:38.692692+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:38.693215+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:22:38.956005+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:38.957037+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:22:39.085921+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:39.086384+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:22:39.309045+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:39.309483+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:22:39.420691+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:39.421165+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260911, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:22:39.651527+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260911, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:40.538548+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:22:40.798475+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:22:41.293800+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:22:41.507184+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:22:41.829021+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:22:42.284382+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260911, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:22:42.285110+00:00", "stage": "outer_completed", "fold": 1, "seed": 20260911}
+{"utc": "2026-09-12T01:22:42.286599+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:22:42.473632+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:42.474125+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:22:42.771915+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:42.772452+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:22:42.977422+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:42.978093+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:22:43.402365+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:43.403007+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:22:43.651213+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:43.651915+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:22:44.342700+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:44.343166+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:22:44.603420+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:44.603911+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:22:45.595308+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:45.595929+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:22:45.700843+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:45.701396+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:22:45.907616+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:45.908078+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:22:46.056949+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:46.057873+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:22:46.328287+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:46.329470+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:22:46.440974+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:46.441441+00:00", "stage": "base_fit_started", "fold": 1, "seed": 20260912, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:22:46.654477+00:00", "stage": "base_fit_completed", "fold": 1, "seed": 20260912, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:47.579102+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:22:47.860323+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:22:48.321288+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:22:48.540781+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:22:48.823748+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:22:49.352275+00:00", "stage": "meta_fit_completed", "fold": 1, "seed": 20260912, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:22:49.353046+00:00", "stage": "outer_completed", "fold": 1, "seed": 20260912}
+{"utc": "2026-09-12T01:22:49.372486+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:22:49.586993+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:49.587468+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:22:49.937162+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:49.937656+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:22:50.194590+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:50.194995+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:22:50.675887+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:50.676338+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:22:50.945120+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:50.945605+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:22:51.712432+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:51.712989+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:22:51.965492+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:51.965972+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:22:52.932774+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:52.933470+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:22:53.054925+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:53.055408+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:22:53.303954+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:53.304728+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:22:53.422798+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:53.423373+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:22:53.659740+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:53.660198+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:22:53.784716+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:53.785196+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260911, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:22:54.022261+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260911, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:55.224602+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:22:55.547220+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:22:55.980086+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:22:56.232333+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:22:56.524559+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:22:56.974678+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260911, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:22:56.975642+00:00", "stage": "outer_completed", "fold": 2, "seed": 20260911}
+{"utc": "2026-09-12T01:22:56.977859+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:22:57.173630+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:57.174181+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:22:57.537557+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:57.537997+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:22:57.778770+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:57.779278+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:22:58.271476+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:58.272041+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:22:58.559099+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:58.559548+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:22:59.319125+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:22:59.319611+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:22:59.588338+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:22:59.588813+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:00.593547+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:00.594162+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:00.734936+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:00.735421+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:00.999508+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:01.000061+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:01.107371+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:01.107906+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:01.338840+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:01.339315+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:01.454251+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:01.454768+00:00", "stage": "base_fit_started", "fold": 2, "seed": 20260912, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:01.683542+00:00", "stage": "base_fit_completed", "fold": 2, "seed": 20260912, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:02.850020+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:03.155215+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:03.576396+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:03.773113+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:04.062356+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:04.531480+00:00", "stage": "meta_fit_completed", "fold": 2, "seed": 20260912, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:04.532137+00:00", "stage": "outer_completed", "fold": 2, "seed": 20260912}
+{"utc": "2026-09-12T01:23:04.549700+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:04.750777+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:04.751242+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:05.103173+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:05.103681+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:05.335078+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:05.335602+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:05.830881+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:05.831383+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:06.051604+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:06.052128+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:06.850893+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:06.851364+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:07.094939+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:07.095427+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:07.985367+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:07.985872+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:08.128865+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:08.129586+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:08.372379+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:08.372875+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:08.494380+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:08.494827+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:08.700207+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:08.700707+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:08.802848+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:08.803339+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260911, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:09.031490+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260911, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:10.278694+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:10.572942+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:10.958964+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:11.171075+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:11.421717+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:11.837519+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260911, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:11.838228+00:00", "stage": "outer_completed", "fold": 3, "seed": 20260911}
+{"utc": "2026-09-12T01:23:11.840294+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:12.035822+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:12.036274+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:12.353278+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:12.353855+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:12.560537+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:12.561077+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:13.061220+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:13.061710+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:13.278718+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:13.279247+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:13.982897+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:13.983545+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:14.220204+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:14.220694+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:15.096757+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:15.097444+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:15.222736+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:15.223264+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:15.462422+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:15.462872+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:15.566524+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:15.566957+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:15.785795+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:15.786837+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:15.901398+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:15.901899+00:00", "stage": "base_fit_started", "fold": 3, "seed": 20260912, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:16.140751+00:00", "stage": "base_fit_completed", "fold": 3, "seed": 20260912, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:17.518446+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:17.852813+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:18.278788+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:18.509418+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:18.787720+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:19.247973+00:00", "stage": "meta_fit_completed", "fold": 3, "seed": 20260912, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:19.248884+00:00", "stage": "outer_completed", "fold": 3, "seed": 20260912}
+{"utc": "2026-09-12T01:23:19.263979+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:19.463214+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:19.463801+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:19.819648+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:19.820149+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:20.062185+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:20.062785+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:20.533810+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:20.534331+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:20.793922+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:20.794503+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:21.499164+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:21.499616+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:21.772141+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:21.772645+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:22.811787+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:22.812291+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:22.928569+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:22.929078+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:23.150247+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:23.150736+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:23.269505+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:23.270343+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:23.514603+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:23.515217+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:23.643219+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:23.643660+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260911, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:23.874318+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260911, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:24.998383+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:25.300702+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:25.728576+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:25.959099+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:26.239692+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:26.767698+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260911, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:26.768505+00:00", "stage": "outer_completed", "fold": 4, "seed": 20260911}
+{"utc": "2026-09-12T01:23:26.770856+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:26.968929+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:26.969509+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:27.339945+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:27.340502+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:27.548347+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:27.548819+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:28.015406+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:28.016001+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:28.277543+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:28.278499+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:29.023338+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:29.023848+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:29.259891+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:29.260718+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:30.252166+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:30.252706+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:30.379165+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:30.379595+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:30.648840+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:30.649574+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:30.772011+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:30.772533+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:31.042168+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:31.042848+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:31.178910+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:31.179498+00:00", "stage": "base_fit_started", "fold": 4, "seed": 20260912, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:31.443227+00:00", "stage": "base_fit_completed", "fold": 4, "seed": 20260912, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:32.479682+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:32.763421+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:33.225308+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:33.430123+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:33.697364+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:34.189894+00:00", "stage": "meta_fit_completed", "fold": 4, "seed": 20260912, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:34.190585+00:00", "stage": "outer_completed", "fold": 4, "seed": 20260912}
+{"utc": "2026-09-12T01:23:34.205989+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:34.397094+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:34.397596+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:34.749358+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:34.749908+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:34.975607+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:34.976048+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:35.448351+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:35.448843+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:35.684745+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:35.685150+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:36.427546+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:36.428026+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:36.681680+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:36.682267+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:37.731228+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:37.731811+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:37.858483+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:37.859196+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:38.088996+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:38.089448+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:38.193923+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:38.194434+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:38.427304+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:38.427793+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:38.544761+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:38.545221+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260911, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:38.772813+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260911, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:39.528638+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:39.820661+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:40.277101+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:40.492036+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:40.771733+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:41.255466+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260911, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:41.256163+00:00", "stage": "outer_completed", "fold": 5, "seed": 20260911}
+{"utc": "2026-09-12T01:23:41.258448+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T01:23:41.448843+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b15_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:41.449552+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T01:23:41.837748+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b15_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:41.838352+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T01:23:42.077216+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b16_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:42.077677+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T01:23:42.574305+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b16_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:42.574859+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T01:23:42.821739+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b17_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:42.822248+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T01:23:43.524299+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b17_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:43.524757+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T01:23:43.752779+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b18_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:43.753272+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T01:23:44.733715+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b18_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:44.734401+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T01:23:44.858206+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b19_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:44.858736+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T01:23:45.089263+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b19_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:45.090008+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T01:23:45.206447+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b20_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:45.206935+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T01:23:45.425648+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b20_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:45.426409+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T01:23:45.549467+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b21_ctx1", "components": 3}
+{"utc": "2026-09-12T01:23:45.549860+00:00", "stage": "base_fit_started", "fold": 5, "seed": 20260912, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T01:23:45.769056+00:00", "stage": "base_fit_completed", "fold": 5, "seed": 20260912, "base_id": "b21_ctx8", "components": 3}
+{"utc": "2026-09-12T01:23:46.485403+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_global_C0.001"}
+{"utc": "2026-09-12T01:23:46.767476+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_global_C0.01"}
+{"utc": "2026-09-12T01:23:47.260526+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_global_C0.1"}
+{"utc": "2026-09-12T01:23:47.487345+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_participant_C0.001"}
+{"utc": "2026-09-12T01:23:47.780666+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_participant_C0.01"}
+{"utc": "2026-09-12T01:23:48.282100+00:00", "stage": "meta_fit_completed", "fold": 5, "seed": 20260912, "scope": "stack_participant_C0.1"}
+{"utc": "2026-09-12T01:23:48.282928+00:00", "stage": "outer_completed", "fold": 5, "seed": 20260912}
+{"utc": "2026-09-12T01:23:55.077291+00:00", "stage": "completed", "models": 110}
