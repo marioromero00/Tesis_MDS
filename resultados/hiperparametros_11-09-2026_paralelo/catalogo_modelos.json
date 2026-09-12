@@ -1,0 +1,3786 @@
+[
+  {
+    "model_id": "fold1_all_20260911",
+    "fold": 1,
+    "scope": "all",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "all",
+      "candidate_id": "b08_ctx1_smooth1",
+      "definition": {
+        "base_id": "b08_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.37022492911509614
+    },
+    "path": "modelos/fold1_all_20260911.joblib",
+    "sha256": "b114df025dce3bb39161b2c4b302d1ae467e211a693b39d4d81da15a0f682b7d",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_all_20260912",
+    "fold": 1,
+    "scope": "all",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "all",
+      "candidate_id": "b08_ctx1_smooth1",
+      "definition": {
+        "base_id": "b08_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.37022492911509614
+    },
+    "path": "modelos/fold1_all_20260912.joblib",
+    "sha256": "6d5f75f77a428231dd62d5e792c1852ba8c8ead621883dbb7567c526f2a28746",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_svm_rbf_20260911",
+    "fold": 1,
+    "scope": "svm_rbf",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "svm_rbf",
+      "candidate_id": "b03_ctx1_smooth4",
+      "definition": {
+        "base_id": "b03_ctx1",
+        "context": 1,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3465748337768269
+    },
+    "path": "modelos/fold1_svm_rbf_20260911.joblib",
+    "sha256": "0c320fb8d4a01074b49cbf66c27da2121a7f5f9110fb949345eae816022499fc",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_svm_rbf_20260912",
+    "fold": 1,
+    "scope": "svm_rbf",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "svm_rbf",
+      "candidate_id": "b03_ctx1_smooth4",
+      "definition": {
+        "base_id": "b03_ctx1",
+        "context": 1,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3465748337768269
+    },
+    "path": "modelos/fold1_svm_rbf_20260912.joblib",
+    "sha256": "b46b3c3681a1017aeb7bf79c4494f52a15b031fc4b9ade2c94748f1a935cb202",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_hgb_20260911",
+    "fold": 1,
+    "scope": "hgb",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "hgb",
+      "candidate_id": "b08_ctx1_smooth1",
+      "definition": {
+        "base_id": "b08_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.37022492911509614
+    },
+    "path": "modelos/fold1_hgb_20260911.joblib",
+    "sha256": "b114df025dce3bb39161b2c4b302d1ae467e211a693b39d4d81da15a0f682b7d",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_hgb_20260912",
+    "fold": 1,
+    "scope": "hgb",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "hgb",
+      "candidate_id": "b08_ctx1_smooth1",
+      "definition": {
+        "base_id": "b08_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 15,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.37022492911509614
+    },
+    "path": "modelos/fold1_hgb_20260912.joblib",
+    "sha256": "6d5f75f77a428231dd62d5e792c1852ba8c8ead621883dbb7567c526f2a28746",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_qda_20260911",
+    "fold": 1,
+    "scope": "qda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "qda",
+      "candidate_id": "b13_ctx1_smooth4",
+      "definition": {
+        "base_id": "b13_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34395364719824
+    },
+    "path": "modelos/fold1_qda_20260911.joblib",
+    "sha256": "ae3ba5d5f0eecdb270428972a573383c0164df451b658c2114ffaba38d73da60",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_qda_20260912",
+    "fold": 1,
+    "scope": "qda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "qda",
+      "candidate_id": "b13_ctx1_smooth4",
+      "definition": {
+        "base_id": "b13_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34395364719824
+    },
+    "path": "modelos/fold1_qda_20260912.joblib",
+    "sha256": "1648f696a693706249cb8a5eb83aa6bb052864107ef1615a90d56ab8cc25ab65",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_logistic_20260911",
+    "fold": 1,
+    "scope": "fusion_logistic",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion_logistic",
+      "candidate_id": "b18_ctx1_smooth1",
+      "definition": {
+        "base_id": "b18_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3529305902510031
+    },
+    "path": "modelos/fold1_fusion_logistic_20260911.joblib",
+    "sha256": "e9c7d475f0bf15d119a696cf5309dd4a75969c5b3aa0c40a06782ebf4df34287",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_logistic_20260912",
+    "fold": 1,
+    "scope": "fusion_logistic",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion_logistic",
+      "candidate_id": "b18_ctx1_smooth1",
+      "definition": {
+        "base_id": "b18_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3529305902510031
+    },
+    "path": "modelos/fold1_fusion_logistic_20260912.joblib",
+    "sha256": "690c73c542045c13ddf8bc87e1905eb1a02fc66414f0b92aedcbbfbeddcfb5e7",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_lda_20260911",
+    "fold": 1,
+    "scope": "fusion_lda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth1",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3499838980577122
+    },
+    "path": "modelos/fold1_fusion_lda_20260911.joblib",
+    "sha256": "1befe7972ec7a7bfeea8bd6a1ea7d1908a97e2c0c6c2fe77e1208feb3fea992d",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_lda_20260912",
+    "fold": 1,
+    "scope": "fusion_lda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth1",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3499838980577122
+    },
+    "path": "modelos/fold1_fusion_lda_20260912.joblib",
+    "sha256": "0802d40bbb7ee0c553aa6b35f5f1de5b1c096ebf61cd02a508dff53b935e3398",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_20260911",
+    "fold": 1,
+    "scope": "fusion",
+    "seed": 20260911,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion",
+      "candidate_id": "b18_ctx1_smooth1",
+      "definition": {
+        "base_id": "b18_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3529305902510031
+    },
+    "path": "modelos/fold1_fusion_20260911.joblib",
+    "sha256": "e9c7d475f0bf15d119a696cf5309dd4a75969c5b3aa0c40a06782ebf4df34287",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold1_fusion_20260912",
+    "fold": 1,
+    "scope": "fusion",
+    "seed": 20260912,
+    "choice": {
+      "fold": 1,
+      "scope": "fusion",
+      "candidate_id": "b18_ctx1_smooth1",
+      "definition": {
+        "base_id": "b18_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3529305902510031
+    },
+    "path": "modelos/fold1_fusion_20260912.joblib",
+    "sha256": "690c73c542045c13ddf8bc87e1905eb1a02fc66414f0b92aedcbbfbeddcfb5e7",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_all_20260911",
+    "fold": 2,
+    "scope": "all",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "all",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_all_20260911.joblib",
+    "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_all_20260912",
+    "fold": 2,
+    "scope": "all",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "all",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_all_20260912.joblib",
+    "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_svm_rbf_20260911",
+    "fold": 2,
+    "scope": "svm_rbf",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "svm_rbf",
+      "candidate_id": "b02_ctx8_smooth4",
+      "definition": {
+        "base_id": "b02_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3576222839009267
+    },
+    "path": "modelos/fold2_svm_rbf_20260911.joblib",
+    "sha256": "531706bf10eef35fd520c33d2ba764da33439bd1cd4b8700aaeb8bce525cc33e",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_svm_rbf_20260912",
+    "fold": 2,
+    "scope": "svm_rbf",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "svm_rbf",
+      "candidate_id": "b02_ctx8_smooth4",
+      "definition": {
+        "base_id": "b02_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3576222839009267
+    },
+    "path": "modelos/fold2_svm_rbf_20260912.joblib",
+    "sha256": "c18e590c5fba546288860a4bb4cfe93c61a64266ba669101c49b42f387be63b3",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_hgb_20260911",
+    "fold": 2,
+    "scope": "hgb",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx1_smooth4",
+      "definition": {
+        "base_id": "b11_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3460561923940885
+    },
+    "path": "modelos/fold2_hgb_20260911.joblib",
+    "sha256": "ecdb7515296adc648a3e5e27682d4196c81a8ce171e65113b477d245ecc5a1a7",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_hgb_20260912",
+    "fold": 2,
+    "scope": "hgb",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx1_smooth4",
+      "definition": {
+        "base_id": "b11_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3460561923940885
+    },
+    "path": "modelos/fold2_hgb_20260912.joblib",
+    "sha256": "c69e0d0dff8bc2ad1ebf6952980d72cbcff84b0666e497a5ee08404845f53e4f",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_qda_20260911",
+    "fold": 2,
+    "scope": "qda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "qda",
+      "candidate_id": "b12_ctx8_smooth1",
+      "definition": {
+        "base_id": "b12_ctx8",
+        "context": 8,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.36108726079785636
+    },
+    "path": "modelos/fold2_qda_20260911.joblib",
+    "sha256": "d5d888b2b1d4cb697452c7b75be06dd485640c656ecbf49e286e00185b662333",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_qda_20260912",
+    "fold": 2,
+    "scope": "qda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "qda",
+      "candidate_id": "b12_ctx8_smooth1",
+      "definition": {
+        "base_id": "b12_ctx8",
+        "context": 8,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.36108726079785636
+    },
+    "path": "modelos/fold2_qda_20260912.joblib",
+    "sha256": "a2613cbe9ddcde2051cfc889845cbef422f841415ff803df98dfb54304934768",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_logistic_20260911",
+    "fold": 2,
+    "scope": "fusion_logistic",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion_logistic",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_fusion_logistic_20260911.joblib",
+    "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_logistic_20260912",
+    "fold": 2,
+    "scope": "fusion_logistic",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion_logistic",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_fusion_logistic_20260912.joblib",
+    "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_lda_20260911",
+    "fold": 2,
+    "scope": "fusion_lda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx8_smooth4",
+      "definition": {
+        "base_id": "b19_ctx8",
+        "context": 8,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36816434697571004
+    },
+    "path": "modelos/fold2_fusion_lda_20260911.joblib",
+    "sha256": "0dab6f75d7a12c1bdbbeb2302dd24bf262c0db23b86bc284ee15665a76f9f92a",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_lda_20260912",
+    "fold": 2,
+    "scope": "fusion_lda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx8_smooth4",
+      "definition": {
+        "base_id": "b19_ctx8",
+        "context": 8,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36816434697571004
+    },
+    "path": "modelos/fold2_fusion_lda_20260912.joblib",
+    "sha256": "26202a4b6fa3524c4859c2fea036bc1bdf2e14983cf66902873bb8ebe301021f",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_20260911",
+    "fold": 2,
+    "scope": "fusion",
+    "seed": 20260911,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_fusion_20260911.joblib",
+    "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold2_fusion_20260912",
+    "fold": 2,
+    "scope": "fusion",
+    "seed": 20260912,
+    "choice": {
+      "fold": 2,
+      "scope": "fusion",
+      "candidate_id": "b17_ctx8_smooth4",
+      "definition": {
+        "base_id": "b17_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.37231388280345173
+    },
+    "path": "modelos/fold2_fusion_20260912.joblib",
+    "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_all_20260911",
+    "fold": 3,
+    "scope": "all",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "all",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_all_20260911.joblib",
+    "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_all_20260912",
+    "fold": 3,
+    "scope": "all",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "all",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_all_20260912.joblib",
+    "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_svm_rbf_20260911",
+    "fold": 3,
+    "scope": "svm_rbf",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "svm_rbf",
+      "candidate_id": "b03_ctx8_smooth1",
+      "definition": {
+        "base_id": "b03_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34307789421333584
+    },
+    "path": "modelos/fold3_svm_rbf_20260911.joblib",
+    "sha256": "3bcea3af41100d0a10e46499fa2bcb2b674dbf60e814a6109278be87d701d4b7",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_svm_rbf_20260912",
+    "fold": 3,
+    "scope": "svm_rbf",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "svm_rbf",
+      "candidate_id": "b03_ctx8_smooth1",
+      "definition": {
+        "base_id": "b03_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 1.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34307789421333584
+    },
+    "path": "modelos/fold3_svm_rbf_20260912.joblib",
+    "sha256": "9fee3a2c9b4cf9c647762331fe0ca884586b5ad24c30d269afa0cdc10f95ab85",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_hgb_20260911",
+    "fold": 3,
+    "scope": "hgb",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx1_smooth1",
+      "definition": {
+        "base_id": "b11_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34216006417067346
+    },
+    "path": "modelos/fold3_hgb_20260911.joblib",
+    "sha256": "d14281e5ed245f4f80448ff7e11a2ce88fa73a30be3bf3a3e05a59fd0f4993e9",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_hgb_20260912",
+    "fold": 3,
+    "scope": "hgb",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx1_smooth1",
+      "definition": {
+        "base_id": "b11_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34216006417067346
+    },
+    "path": "modelos/fold3_hgb_20260912.joblib",
+    "sha256": "e50ae145ce50c8d684a645845c62f3938b6558a9cb97f03d04ff9d08b909e1a8",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_qda_20260911",
+    "fold": 3,
+    "scope": "qda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "qda",
+      "candidate_id": "b13_ctx1_smooth4",
+      "definition": {
+        "base_id": "b13_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3386386061652485
+    },
+    "path": "modelos/fold3_qda_20260911.joblib",
+    "sha256": "bfb52cfd0d8dc734b09e27b74cc9e069ee8546d84b26d66b73a3c99a07e950e1",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_qda_20260912",
+    "fold": 3,
+    "scope": "qda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "qda",
+      "candidate_id": "b13_ctx1_smooth4",
+      "definition": {
+        "base_id": "b13_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3386386061652485
+    },
+    "path": "modelos/fold3_qda_20260912.joblib",
+    "sha256": "814f62d36f41a01a35b2b324d0107ca2655f6310be704194a6b5dadf78a77726",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_logistic_20260911",
+    "fold": 3,
+    "scope": "fusion_logistic",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion_logistic",
+      "candidate_id": "b16_ctx1_smooth4",
+      "definition": {
+        "base_id": "b16_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.01
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34840213476968684
+    },
+    "path": "modelos/fold3_fusion_logistic_20260911.joblib",
+    "sha256": "e4dd08a679231b576e48c9d0d3d311265f462edaecbf9785b1a68e629678eb29",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_logistic_20260912",
+    "fold": 3,
+    "scope": "fusion_logistic",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion_logistic",
+      "candidate_id": "b16_ctx1_smooth4",
+      "definition": {
+        "base_id": "b16_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.01
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34840213476968684
+    },
+    "path": "modelos/fold3_fusion_logistic_20260912.joblib",
+    "sha256": "6d233208cece7a788b080f99e1fb7f594d39b6986ece05ac4f1626a25e5a11c4",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_lda_20260911",
+    "fold": 3,
+    "scope": "fusion_lda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_fusion_lda_20260911.joblib",
+    "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_lda_20260912",
+    "fold": 3,
+    "scope": "fusion_lda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_fusion_lda_20260912.joblib",
+    "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_20260911",
+    "fold": 3,
+    "scope": "fusion",
+    "seed": 20260911,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_fusion_20260911.joblib",
+    "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold3_fusion_20260912",
+    "fold": 3,
+    "scope": "fusion",
+    "seed": 20260912,
+    "choice": {
+      "fold": 3,
+      "scope": "fusion",
+      "candidate_id": "b19_ctx1_smooth4",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3528677181104077
+    },
+    "path": "modelos/fold3_fusion_20260912.joblib",
+    "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_all_20260911",
+    "fold": 4,
+    "scope": "all",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "all",
+      "candidate_id": "b11_ctx8_smooth4",
+      "definition": {
+        "base_id": "b11_ctx8",
+        "context": 8,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36848680638837594
+    },
+    "path": "modelos/fold4_all_20260911.joblib",
+    "sha256": "09df102ecce388be01e8f35013ab762a16f3e4d0700f6c3b46c14cb47ea70ac2",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_all_20260912",
+    "fold": 4,
+    "scope": "all",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "all",
+      "candidate_id": "b11_ctx8_smooth4",
+      "definition": {
+        "base_id": "b11_ctx8",
+        "context": 8,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36848680638837594
+    },
+    "path": "modelos/fold4_all_20260912.joblib",
+    "sha256": "ccc94765e7ede5dc41f4edb535c670f5d2c04c8acf00d14b95069b6a67bd7191",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_svm_rbf_20260911",
+    "fold": 4,
+    "scope": "svm_rbf",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "svm_rbf",
+      "candidate_id": "b05_ctx8_smooth4",
+      "definition": {
+        "base_id": "b05_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 10.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3532157957417576
+    },
+    "path": "modelos/fold4_svm_rbf_20260911.joblib",
+    "sha256": "338e892aeb6073d26d0dde2f5343f6fa96170060aef1c9c7771be0f3554a323a",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_svm_rbf_20260912",
+    "fold": 4,
+    "scope": "svm_rbf",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "svm_rbf",
+      "candidate_id": "b05_ctx8_smooth4",
+      "definition": {
+        "base_id": "b05_ctx8",
+        "context": 8,
+        "family": "svm_rbf",
+        "params": {
+          "C": 10.0,
+          "gamma_factor": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.3532157957417576
+    },
+    "path": "modelos/fold4_svm_rbf_20260912.joblib",
+    "sha256": "538f9e6fda13a53cd72d78cd249b09d1c9e19a9b7e5fcb07e88904b12aa7af81",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_hgb_20260911",
+    "fold": 4,
+    "scope": "hgb",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx8_smooth4",
+      "definition": {
+        "base_id": "b11_ctx8",
+        "context": 8,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36848680638837594
+    },
+    "path": "modelos/fold4_hgb_20260911.joblib",
+    "sha256": "09df102ecce388be01e8f35013ab762a16f3e4d0700f6c3b46c14cb47ea70ac2",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_hgb_20260912",
+    "fold": 4,
+    "scope": "hgb",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "hgb",
+      "candidate_id": "b11_ctx8_smooth4",
+      "definition": {
+        "base_id": "b11_ctx8",
+        "context": 8,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "min_samples_leaf": 30,
+          "l2_regularization": 1.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36848680638837594
+    },
+    "path": "modelos/fold4_hgb_20260912.joblib",
+    "sha256": "ccc94765e7ede5dc41f4edb535c670f5d2c04c8acf00d14b95069b6a67bd7191",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_qda_20260911",
+    "fold": 4,
+    "scope": "qda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "qda",
+      "candidate_id": "b13_ctx8_smooth4",
+      "definition": {
+        "base_id": "b13_ctx8",
+        "context": 8,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36121859024527875
+    },
+    "path": "modelos/fold4_qda_20260911.joblib",
+    "sha256": "41e7e5f16ff4cb8e95e435ad36631e592adc4582bc9fb3edf4a4e6879c333858",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_qda_20260912",
+    "fold": 4,
+    "scope": "qda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "qda",
+      "candidate_id": "b13_ctx8_smooth4",
+      "definition": {
+        "base_id": "b13_ctx8",
+        "context": 8,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.36121859024527875
+    },
+    "path": "modelos/fold4_qda_20260912.joblib",
+    "sha256": "7ef68a814c096edc807a891702ada698e3e9fac5d47434e2b8c3be1478f58c07",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_logistic_20260911",
+    "fold": 4,
+    "scope": "fusion_logistic",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion_logistic",
+      "candidate_id": "b15_ctx8_smooth1",
+      "definition": {
+        "base_id": "b15_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.001
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3399606751688904
+    },
+    "path": "modelos/fold4_fusion_logistic_20260911.joblib",
+    "sha256": "b63a6822b73ea07961f2d140e77705393b410adf45af15d80525fd1df6b07595",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_logistic_20260912",
+    "fold": 4,
+    "scope": "fusion_logistic",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion_logistic",
+      "candidate_id": "b15_ctx8_smooth1",
+      "definition": {
+        "base_id": "b15_ctx8",
+        "context": 8,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.001
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.3399606751688904
+    },
+    "path": "modelos/fold4_fusion_logistic_20260912.joblib",
+    "sha256": "a64cb0b350e4a669f3afc017e122a70b36b3e7daa37b1c276ebe4b8a58ff3b12",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_lda_20260911",
+    "fold": 4,
+    "scope": "fusion_lda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion_lda",
+      "candidate_id": "b20_ctx1_smooth4",
+      "definition": {
+        "base_id": "b20_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34017362440233273
+    },
+    "path": "modelos/fold4_fusion_lda_20260911.joblib",
+    "sha256": "22dd2439030ff3d15518200420dddc1fe67a8a01c7137d2db85715e8647da56f",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_lda_20260912",
+    "fold": 4,
+    "scope": "fusion_lda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion_lda",
+      "candidate_id": "b20_ctx1_smooth4",
+      "definition": {
+        "base_id": "b20_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34017362440233273
+    },
+    "path": "modelos/fold4_fusion_lda_20260912.joblib",
+    "sha256": "50b45cf17d5d4dc58e87ca384d4f9e267dc2904e1b96a75bcbaf75dbe8cce056",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_20260911",
+    "fold": 4,
+    "scope": "fusion",
+    "seed": 20260911,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion",
+      "candidate_id": "b20_ctx1_smooth4",
+      "definition": {
+        "base_id": "b20_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34017362440233273
+    },
+    "path": "modelos/fold4_fusion_20260911.joblib",
+    "sha256": "22dd2439030ff3d15518200420dddc1fe67a8a01c7137d2db85715e8647da56f",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold4_fusion_20260912",
+    "fold": 4,
+    "scope": "fusion",
+    "seed": 20260912,
+    "choice": {
+      "fold": 4,
+      "scope": "fusion",
+      "candidate_id": "b20_ctx1_smooth4",
+      "definition": {
+        "base_id": "b20_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.5
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34017362440233273
+    },
+    "path": "modelos/fold4_fusion_20260912.joblib",
+    "sha256": "50b45cf17d5d4dc58e87ca384d4f9e267dc2904e1b96a75bcbaf75dbe8cce056",
+    "train_participants": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P30",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P20",
+      "P3",
+      "P33",
+      "P4",
+      "P9"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_all_20260911",
+    "fold": 5,
+    "scope": "all",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "all",
+      "candidate_id": "b10_ctx1_smooth4",
+      "definition": {
+        "base_id": "b10_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.35044858768528536
+    },
+    "path": "modelos/fold5_all_20260911.joblib",
+    "sha256": "29b188f37cc0371c5d2ab21a1c6403389177f38f3ebebcf6f2db595e04d10ba1",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_all_20260912",
+    "fold": 5,
+    "scope": "all",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "all",
+      "candidate_id": "b10_ctx1_smooth4",
+      "definition": {
+        "base_id": "b10_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.35044858768528536
+    },
+    "path": "modelos/fold5_all_20260912.joblib",
+    "sha256": "1667ed4d6590694fd1bde57a8d4c8a02b5a331faace127fd53291a5df783096b",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_svm_rbf_20260911",
+    "fold": 5,
+    "scope": "svm_rbf",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "svm_rbf",
+      "candidate_id": "b00_ctx1_smooth1",
+      "definition": {
+        "base_id": "b00_ctx1",
+        "context": 1,
+        "family": "svm_rbf",
+        "params": {
+          "C": 0.1,
+          "gamma_factor": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.33710415190589194
+    },
+    "path": "modelos/fold5_svm_rbf_20260911.joblib",
+    "sha256": "d82bb43ab0759205e7df36215fb68633cd55462f2dfde7afb0cae1115f56ebac",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_svm_rbf_20260912",
+    "fold": 5,
+    "scope": "svm_rbf",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "svm_rbf",
+      "candidate_id": "b00_ctx1_smooth1",
+      "definition": {
+        "base_id": "b00_ctx1",
+        "context": 1,
+        "family": "svm_rbf",
+        "params": {
+          "C": 0.1,
+          "gamma_factor": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.33710415190589194
+    },
+    "path": "modelos/fold5_svm_rbf_20260912.joblib",
+    "sha256": "140077cf493d943759f40c639c71258b13105c103a0afd48074c65084c09f1fd",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_hgb_20260911",
+    "fold": 5,
+    "scope": "hgb",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "hgb",
+      "candidate_id": "b10_ctx1_smooth4",
+      "definition": {
+        "base_id": "b10_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.35044858768528536
+    },
+    "path": "modelos/fold5_hgb_20260911.joblib",
+    "sha256": "29b188f37cc0371c5d2ab21a1c6403389177f38f3ebebcf6f2db595e04d10ba1",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_hgb_20260912",
+    "fold": 5,
+    "scope": "hgb",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "hgb",
+      "candidate_id": "b10_ctx1_smooth4",
+      "definition": {
+        "base_id": "b10_ctx1",
+        "context": 1,
+        "family": "hgb",
+        "params": {
+          "max_leaf_nodes": 31,
+          "learning_rate": 0.03,
+          "max_iter": 150,
+          "min_samples_leaf": 100,
+          "l2_regularization": 20.0
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.35044858768528536
+    },
+    "path": "modelos/fold5_hgb_20260912.joblib",
+    "sha256": "1667ed4d6590694fd1bde57a8d4c8a02b5a331faace127fd53291a5df783096b",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_qda_20260911",
+    "fold": 5,
+    "scope": "qda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "qda",
+      "candidate_id": "b12_ctx1_smooth4",
+      "definition": {
+        "base_id": "b12_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34369988653086986
+    },
+    "path": "modelos/fold5_qda_20260911.joblib",
+    "sha256": "6cc288de8d4272d651031849e98cf9ea50d7be131e286a84e84cefac4a0a942b",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_qda_20260912",
+    "fold": 5,
+    "scope": "qda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "qda",
+      "candidate_id": "b12_ctx1_smooth4",
+      "definition": {
+        "base_id": "b12_ctx1",
+        "context": 1,
+        "family": "qda",
+        "params": {
+          "reg_param": 0.1
+        }
+      },
+      "smoothing": 4,
+      "inner_score": 0.34369988653086986
+    },
+    "path": "modelos/fold5_qda_20260912.joblib",
+    "sha256": "7e3fb157810a809135e372ca3a77da35ab45469aa69e5c3281418a76e05d2795",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_logistic_20260911",
+    "fold": 5,
+    "scope": "fusion_logistic",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion_logistic",
+      "candidate_id": "b17_ctx1_smooth1",
+      "definition": {
+        "base_id": "b17_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34122743971864017
+    },
+    "path": "modelos/fold5_fusion_logistic_20260911.joblib",
+    "sha256": "945fbcd4cbeecefa39f1cc4181c7b383112aa3997144003f6db9681493df7bd4",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_logistic_20260912",
+    "fold": 5,
+    "scope": "fusion_logistic",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion_logistic",
+      "candidate_id": "b17_ctx1_smooth1",
+      "definition": {
+        "base_id": "b17_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34122743971864017
+    },
+    "path": "modelos/fold5_fusion_logistic_20260912.joblib",
+    "sha256": "0ecdffbc7846f06357e4a4e2c63db80a79741d6c67d7378516bb3ec85be3508e",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_lda_20260911",
+    "fold": 5,
+    "scope": "fusion_lda",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth1",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.33943224723116466
+    },
+    "path": "modelos/fold5_fusion_lda_20260911.joblib",
+    "sha256": "752d5fcbf424aedecc902c4758b3f0f3b505e5e3d62815b50e798d4796a3c951",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_lda_20260912",
+    "fold": 5,
+    "scope": "fusion_lda",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion_lda",
+      "candidate_id": "b19_ctx1_smooth1",
+      "definition": {
+        "base_id": "b19_ctx1",
+        "context": 1,
+        "family": "fusion_lda",
+        "params": {
+          "shrinkage": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.33943224723116466
+    },
+    "path": "modelos/fold5_fusion_lda_20260912.joblib",
+    "sha256": "3ddd5761a99bf825fcd3396dd0342073a29cc9fec835776d9df9345f115a4c61",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_20260911",
+    "fold": 5,
+    "scope": "fusion",
+    "seed": 20260911,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion",
+      "candidate_id": "b17_ctx1_smooth1",
+      "definition": {
+        "base_id": "b17_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34122743971864017
+    },
+    "path": "modelos/fold5_fusion_20260911.joblib",
+    "sha256": "945fbcd4cbeecefa39f1cc4181c7b383112aa3997144003f6db9681493df7bd4",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  },
+  {
+    "model_id": "fold5_fusion_20260912",
+    "fold": 5,
+    "scope": "fusion",
+    "seed": 20260912,
+    "choice": {
+      "fold": 5,
+      "scope": "fusion",
+      "candidate_id": "b17_ctx1_smooth1",
+      "definition": {
+        "base_id": "b17_ctx1",
+        "context": 1,
+        "family": "fusion_logistic",
+        "params": {
+          "C": 0.1
+        }
+      },
+      "smoothing": 1,
+      "inner_score": 0.34122743971864017
+    },
+    "path": "modelos/fold5_fusion_20260912.joblib",
+    "sha256": "0ecdffbc7846f06357e4a4e2c63db80a79741d6c67d7378516bb3ec85be3508e",
+    "train_participants": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation_participants": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "warnings": []
+  }
+]

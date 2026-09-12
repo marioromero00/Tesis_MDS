@@ -1,0 +1,564 @@
+[
+  {
+    "fold": 1,
+    "scope": "all",
+    "candidate_id": "b08_ctx1_smooth1",
+    "definition": {
+      "base_id": "b08_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.37022492911509614
+  },
+  {
+    "fold": 1,
+    "scope": "svm_rbf",
+    "candidate_id": "b03_ctx1_smooth4",
+    "definition": {
+      "base_id": "b03_ctx1",
+      "context": 1,
+      "family": "svm_rbf",
+      "params": {
+        "C": 1.0,
+        "gamma_factor": 1.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3465748337768269
+  },
+  {
+    "fold": 1,
+    "scope": "hgb",
+    "candidate_id": "b08_ctx1_smooth1",
+    "definition": {
+      "base_id": "b08_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.37022492911509614
+  },
+  {
+    "fold": 1,
+    "scope": "qda",
+    "candidate_id": "b13_ctx1_smooth4",
+    "definition": {
+      "base_id": "b13_ctx1",
+      "context": 1,
+      "family": "qda",
+      "params": {
+        "reg_param": 0.5
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.34395364719824
+  },
+  {
+    "fold": 1,
+    "scope": "fusion_logistic",
+    "candidate_id": "b18_ctx1_smooth1",
+    "definition": {
+      "base_id": "b18_ctx1",
+      "context": 1,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 1.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.3529305902510031
+  },
+  {
+    "fold": 1,
+    "scope": "fusion_lda",
+    "candidate_id": "b19_ctx1_smooth1",
+    "definition": {
+      "base_id": "b19_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.3499838980577122
+  },
+  {
+    "fold": 1,
+    "scope": "fusion",
+    "candidate_id": "b18_ctx1_smooth1",
+    "definition": {
+      "base_id": "b18_ctx1",
+      "context": 1,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 1.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.3529305902510031
+  },
+  {
+    "fold": 2,
+    "scope": "all",
+    "candidate_id": "b17_ctx8_smooth4",
+    "definition": {
+      "base_id": "b17_ctx8",
+      "context": 8,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.37231388280345173
+  },
+  {
+    "fold": 2,
+    "scope": "svm_rbf",
+    "candidate_id": "b02_ctx8_smooth4",
+    "definition": {
+      "base_id": "b02_ctx8",
+      "context": 8,
+      "family": "svm_rbf",
+      "params": {
+        "C": 1.0,
+        "gamma_factor": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3576222839009267
+  },
+  {
+    "fold": 2,
+    "scope": "hgb",
+    "candidate_id": "b11_ctx1_smooth4",
+    "definition": {
+      "base_id": "b11_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3460561923940885
+  },
+  {
+    "fold": 2,
+    "scope": "qda",
+    "candidate_id": "b12_ctx8_smooth1",
+    "definition": {
+      "base_id": "b12_ctx8",
+      "context": 8,
+      "family": "qda",
+      "params": {
+        "reg_param": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.36108726079785636
+  },
+  {
+    "fold": 2,
+    "scope": "fusion_logistic",
+    "candidate_id": "b17_ctx8_smooth4",
+    "definition": {
+      "base_id": "b17_ctx8",
+      "context": 8,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.37231388280345173
+  },
+  {
+    "fold": 2,
+    "scope": "fusion_lda",
+    "candidate_id": "b19_ctx8_smooth4",
+    "definition": {
+      "base_id": "b19_ctx8",
+      "context": 8,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.36816434697571004
+  },
+  {
+    "fold": 2,
+    "scope": "fusion",
+    "candidate_id": "b17_ctx8_smooth4",
+    "definition": {
+      "base_id": "b17_ctx8",
+      "context": 8,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.37231388280345173
+  },
+  {
+    "fold": 3,
+    "scope": "all",
+    "candidate_id": "b19_ctx1_smooth4",
+    "definition": {
+      "base_id": "b19_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3528677181104077
+  },
+  {
+    "fold": 3,
+    "scope": "svm_rbf",
+    "candidate_id": "b03_ctx8_smooth1",
+    "definition": {
+      "base_id": "b03_ctx8",
+      "context": 8,
+      "family": "svm_rbf",
+      "params": {
+        "C": 1.0,
+        "gamma_factor": 1.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.34307789421333584
+  },
+  {
+    "fold": 3,
+    "scope": "hgb",
+    "candidate_id": "b11_ctx1_smooth1",
+    "definition": {
+      "base_id": "b11_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.34216006417067346
+  },
+  {
+    "fold": 3,
+    "scope": "qda",
+    "candidate_id": "b13_ctx1_smooth4",
+    "definition": {
+      "base_id": "b13_ctx1",
+      "context": 1,
+      "family": "qda",
+      "params": {
+        "reg_param": 0.5
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3386386061652485
+  },
+  {
+    "fold": 3,
+    "scope": "fusion_logistic",
+    "candidate_id": "b16_ctx1_smooth4",
+    "definition": {
+      "base_id": "b16_ctx1",
+      "context": 1,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.01
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.34840213476968684
+  },
+  {
+    "fold": 3,
+    "scope": "fusion_lda",
+    "candidate_id": "b19_ctx1_smooth4",
+    "definition": {
+      "base_id": "b19_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3528677181104077
+  },
+  {
+    "fold": 3,
+    "scope": "fusion",
+    "candidate_id": "b19_ctx1_smooth4",
+    "definition": {
+      "base_id": "b19_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3528677181104077
+  },
+  {
+    "fold": 4,
+    "scope": "all",
+    "candidate_id": "b11_ctx8_smooth4",
+    "definition": {
+      "base_id": "b11_ctx8",
+      "context": 8,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.36848680638837594
+  },
+  {
+    "fold": 4,
+    "scope": "svm_rbf",
+    "candidate_id": "b05_ctx8_smooth4",
+    "definition": {
+      "base_id": "b05_ctx8",
+      "context": 8,
+      "family": "svm_rbf",
+      "params": {
+        "C": 10.0,
+        "gamma_factor": 1.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.3532157957417576
+  },
+  {
+    "fold": 4,
+    "scope": "hgb",
+    "candidate_id": "b11_ctx8_smooth4",
+    "definition": {
+      "base_id": "b11_ctx8",
+      "context": 8,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "min_samples_leaf": 30,
+        "l2_regularization": 1.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.36848680638837594
+  },
+  {
+    "fold": 4,
+    "scope": "qda",
+    "candidate_id": "b13_ctx8_smooth4",
+    "definition": {
+      "base_id": "b13_ctx8",
+      "context": 8,
+      "family": "qda",
+      "params": {
+        "reg_param": 0.5
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.36121859024527875
+  },
+  {
+    "fold": 4,
+    "scope": "fusion_logistic",
+    "candidate_id": "b15_ctx8_smooth1",
+    "definition": {
+      "base_id": "b15_ctx8",
+      "context": 8,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.001
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.3399606751688904
+  },
+  {
+    "fold": 4,
+    "scope": "fusion_lda",
+    "candidate_id": "b20_ctx1_smooth4",
+    "definition": {
+      "base_id": "b20_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.5
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.34017362440233273
+  },
+  {
+    "fold": 4,
+    "scope": "fusion",
+    "candidate_id": "b20_ctx1_smooth4",
+    "definition": {
+      "base_id": "b20_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.5
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.34017362440233273
+  },
+  {
+    "fold": 5,
+    "scope": "all",
+    "candidate_id": "b10_ctx1_smooth4",
+    "definition": {
+      "base_id": "b10_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.35044858768528536
+  },
+  {
+    "fold": 5,
+    "scope": "svm_rbf",
+    "candidate_id": "b00_ctx1_smooth1",
+    "definition": {
+      "base_id": "b00_ctx1",
+      "context": 1,
+      "family": "svm_rbf",
+      "params": {
+        "C": 0.1,
+        "gamma_factor": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.33710415190589194
+  },
+  {
+    "fold": 5,
+    "scope": "hgb",
+    "candidate_id": "b10_ctx1_smooth4",
+    "definition": {
+      "base_id": "b10_ctx1",
+      "context": 1,
+      "family": "hgb",
+      "params": {
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.03,
+        "max_iter": 150,
+        "min_samples_leaf": 100,
+        "l2_regularization": 20.0
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.35044858768528536
+  },
+  {
+    "fold": 5,
+    "scope": "qda",
+    "candidate_id": "b12_ctx1_smooth4",
+    "definition": {
+      "base_id": "b12_ctx1",
+      "context": 1,
+      "family": "qda",
+      "params": {
+        "reg_param": 0.1
+      }
+    },
+    "smoothing": 4,
+    "inner_score": 0.34369988653086986
+  },
+  {
+    "fold": 5,
+    "scope": "fusion_logistic",
+    "candidate_id": "b17_ctx1_smooth1",
+    "definition": {
+      "base_id": "b17_ctx1",
+      "context": 1,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.34122743971864017
+  },
+  {
+    "fold": 5,
+    "scope": "fusion_lda",
+    "candidate_id": "b19_ctx1_smooth1",
+    "definition": {
+      "base_id": "b19_ctx1",
+      "context": 1,
+      "family": "fusion_lda",
+      "params": {
+        "shrinkage": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.33943224723116466
+  },
+  {
+    "fold": 5,
+    "scope": "fusion",
+    "candidate_id": "b17_ctx1_smooth1",
+    "definition": {
+      "base_id": "b17_ctx1",
+      "context": 1,
+      "family": "fusion_logistic",
+      "params": {
+        "C": 0.1
+      }
+    },
+    "smoothing": 1,
+    "inner_score": 0.34122743971864017
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "files": [
+    {
+      "path": "advertencias.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "bitacora.jsonl",
+      "bytes": 15220,
+      "sha256": "913ab096f502d67b8621463857df3351cde6a6eb0bdf9938f1c56234cd3c4192"
+    },
+    {
+      "path": "catalogo_interno.json",
+      "bytes": 536,
+      "sha256": "c207893475b68f90e35b83a623d79ae9e67d9b070523a7e1079c8878eec14af6"
+    },
+    {
+      "path": "interrupcion.json",
+      "bytes": 266,
+      "sha256": "c6906a313d50edaf27c8127d7597de833c3a2cbbc6ff3a7d417cf961e877bf16"
+    },
+    {
+      "path": "predicciones_internas/fold1_inner1.npz",
+      "bytes": 3435048,
+      "sha256": "c1436e94f828277c5a2ccf802d93faa0d3f59f3bda021aeacbb0893dd1f535de"
+    },
+    {
+      "path": "protocolo.json",
+      "bytes": 15575,
+      "sha256": "ef55fb311febd9b54965fa87f03c5f78654666143e0dbce67e8345c5f39c1dcf"
+    },
+    {
+      "path": "pruebas.txt",
+      "bytes": 36410,
+      "sha256": "bc9d2e9451c8399187b3fea4efc5ab7f5aab58901f92e148e0888da6b26c0c84"
+    },
+    {
+      "path": "todos_los_intentos.csv",
+      "bytes": 5574,
+      "sha256": "d0e60b1ab476849bd729d8e114469e292d35fc3c6d858a4968ee2daf28cd6248"
+    }
+  ],
+  "reason": "Preserved serial attempt; same grid repeated in parallel without external evaluations"
+}

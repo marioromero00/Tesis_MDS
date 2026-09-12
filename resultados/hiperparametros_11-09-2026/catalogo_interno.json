@@ -1,0 +1,32 @@
+[
+  {
+    "fold": 1,
+    "inner": 1,
+    "path": "predicciones_internas/fold1_inner1.npz",
+    "sha256": "c1436e94f828277c5a2ccf802d93faa0d3f59f3bda021aeacbb0893dd1f535de",
+    "train_participants": [
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P33",
+      "P34",
+      "P36",
+      "P40",
+      "P46",
+      "P8"
+    ],
+    "evaluation_participants": [
+      "P12",
+      "P27",
+      "P3",
+      "P35",
+      "P4",
+      "P44",
+      "P9"
+    ]
+  }
+]

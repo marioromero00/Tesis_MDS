@@ -8,6 +8,13 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Entrega actual
 
+- [SVM, QDA e hiperparámetros de boosting y fusiones](documentacion/Hiperparametros_11-09-2026.md):
+  44 configuraciones de modelos y 88 decisiones; 660 ajustes internos, 1.320 puntuaciones
+  y 70 bundles externos guardados. Fusión logística: BA macro 0,3605; fusión LDA: 0,3593;
+  búsqueda conjunta: 0,3548. Ninguna supera el 0,3651 anterior. Incluye hiperparámetros
+  elegidos, diagnóstico por clase y el intento serial conservado. 45 pruebas aprobadas.
+  Se verificaron 189.336 predicciones, 138 preprocesadores y las 35 selecciones.
+
 - [Boosting, ordinalidad y balanceo por participante](documentacion/Avanzados_11-09-2026.md):
   432 configuraciones de decisión, 360 ajustes internos y comparación con balanceo global.
   La búsqueda conjunta obtiene BA macro 0,3522 y la ordinal 0,3582: no superan el 0,3651

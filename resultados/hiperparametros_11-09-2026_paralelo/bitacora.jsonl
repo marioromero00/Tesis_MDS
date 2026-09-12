@@ -1,0 +1,1357 @@
+{"utc": "2026-09-12T00:03:12.459178+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:03:38.649613+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:03:38.650357+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:03:45.484771+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:03:45.485392+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:03:49.086498+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:03:49.087282+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:03:54.331132+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:03:54.332178+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:03:57.538268+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:03:57.539049+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:04:02.671891+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:02.673199+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:04:05.760397+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:05.760962+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:04:10.199410+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:10.199986+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:04:13.729266+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:13.739743+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:04:21.927432+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:21.928059+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:04:24.518426+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:24.518976+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:04:27.700135+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:27.700761+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:04:28.460610+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:28.461141+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:04:28.637982+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:28.638517+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:04:28.846012+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:28.846509+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:04:29.039439+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:29.039958+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:04:29.257472+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:29.257968+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:04:29.474918+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:29.475401+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:04:29.654883+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:29.655409+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:04:29.885268+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:29.885745+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:04:30.185117+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:30.206312+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:04:30.430571+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:30.431004+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:04:30.664901+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:30.665387+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:04:30.903711+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:30.904175+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:04:31.023426+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.023972+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:04:31.180704+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.181189+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:04:31.299812+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.300448+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:04:31.422822+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.423411+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:04:31.527509+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.527979+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:04:31.652888+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:31.653427+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:04:31.770285+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:31.770843+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:04:31.883206+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:31.883707+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:04:32.006808+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.007364+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:04:32.121210+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.121715+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:04:32.242032+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.242815+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:04:32.387700+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.388204+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:04:32.587793+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.588472+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:04:32.716266+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.716808+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:04:32.827281+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.827863+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:04:32.962388+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:32.963021+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:04:33.082806+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:33.083293+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:04:33.194908+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:33.195396+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:04:33.305523+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:33.306013+00:00", "stage": "fit_started", "fold": 1, "inner": 1, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:04:33.424243+00:00", "stage": "fit_completed", "fold": 1, "inner": 1, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:04:33.684023+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:04:42.722517+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:42.723347+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:04:49.028081+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:49.028726+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:04:53.011321+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:53.012047+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:04:58.359617+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:04:58.360251+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:05:01.751628+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:01.752230+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:05:07.078621+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:07.079547+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:05:10.423650+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:10.424326+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:05:15.305061+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:15.305860+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:05:19.081879+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:19.082536+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:05:24.036344+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:24.036885+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:05:26.781687+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:26.782394+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:05:30.230234+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:30.230762+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:05:30.424316+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:30.424819+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:05:30.627520+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:30.628072+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:05:30.846644+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:30.847136+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:05:31.076824+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:31.077326+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:05:31.318082+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:31.318647+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:05:31.574467+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:31.575084+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:05:31.805834+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:31.806326+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:05:32.143366+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:32.143924+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:05:32.401576+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:32.402132+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:05:32.771959+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:32.772443+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:05:33.001882+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:33.002430+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:05:34.847609+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:34.848083+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:05:34.965490+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:34.966087+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:05:35.099554+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:35.100206+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:05:35.212696+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:35.213299+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:05:35.347090+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:35.347987+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:05:35.478289+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:35.478775+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:05:35.631996+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:35.632581+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:05:35.761696+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:35.762231+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:05:35.887956+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:35.888646+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:05:36.039188+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.039657+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:05:36.170458+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.170952+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:05:36.305086+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.305689+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:05:36.453381+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.453879+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:05:36.573023+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.573476+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:05:36.702781+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.703276+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:05:36.833625+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.834163+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:05:36.958288+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:36.958731+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:05:37.079744+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:37.080199+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:05:37.214135+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:37.214566+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:05:37.329603+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:37.330147+00:00", "stage": "fit_started", "fold": 1, "inner": 2, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:05:37.457858+00:00", "stage": "fit_completed", "fold": 1, "inner": 2, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:05:37.734776+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:05:46.703960+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:46.704752+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:05:53.218401+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:53.219638+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:05:56.942893+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:05:56.943557+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:06:02.193060+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:02.193929+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:06:05.524316+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:05.524980+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:06:10.391856+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:10.392848+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:06:13.802932+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:13.803921+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:06:23.076475+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:23.077183+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:06:26.197943+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:26.198813+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:06:31.278222+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:31.308530+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:06:34.046312+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:34.046896+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:06:37.283822+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:37.284446+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:06:37.476666+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:37.477250+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:06:37.671792+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:37.672331+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:06:37.855168+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:37.855656+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:06:38.026602+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:38.027118+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:06:38.215629+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:38.216144+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:06:38.433718+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:38.434299+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:06:38.640095+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:38.640719+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:06:38.851552+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:38.852039+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:06:39.064507+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:39.064995+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:06:39.300918+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:39.301394+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:06:39.515048+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:39.515495+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:06:41.845582+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:41.846106+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:06:41.963478+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:41.964001+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:06:42.090998+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:42.091518+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:06:42.211582+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:42.212219+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:06:42.344486+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:42.344989+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:06:42.446678+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:42.447235+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:06:42.638578+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:42.639292+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:06:42.771908+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:42.772443+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:06:42.887165+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:42.887793+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:06:43.008659+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.009208+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:06:43.129969+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.130539+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:06:43.233885+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.234401+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:06:43.375647+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.376222+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:06:43.496416+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.496957+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:06:43.607553+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.608045+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:06:43.730890+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.731361+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:06:43.842404+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.842962+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:06:43.949065+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:43.949535+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:06:44.062883+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:44.063670+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:06:44.177816+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:44.178298+00:00", "stage": "fit_started", "fold": 1, "inner": 3, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:06:44.288868+00:00", "stage": "fit_completed", "fold": 1, "inner": 3, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:06:44.624047+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:06:54.006552+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:06:54.007406+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:07:00.195359+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:00.196176+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:07:04.645553+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:04.646297+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:07:10.122776+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:10.123473+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:07:13.797923+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:13.798526+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:07:19.068902+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:19.069531+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:07:22.706740+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:22.708201+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:07:27.997640+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:27.998528+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:07:31.551336+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:31.552053+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:07:37.277711+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:37.278378+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:07:39.970984+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:39.971647+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:07:43.667872+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:43.668679+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:07:43.890566+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:43.891031+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:07:44.086181+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:44.086660+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:07:44.284170+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:44.284673+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:07:44.485038+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:44.485505+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:07:44.741186+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:44.741740+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:07:45.019861+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:45.020334+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:07:45.295508+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:45.296062+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:07:45.575905+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:45.576437+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:07:45.837084+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:45.837588+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:07:46.147133+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:46.147875+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:07:46.428976+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:46.429554+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:07:47.233741+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.234181+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:07:47.348168+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.348726+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:07:47.478960+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.479403+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:07:47.599745+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.600289+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:07:47.738587+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.739051+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:07:47.885126+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:47.885962+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:07:48.051864+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:07:48.052365+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:07:48.189706+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.190210+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:07:48.332378+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.332968+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:07:48.462125+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.462626+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:07:48.590670+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.591172+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:07:48.718505+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.719003+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:07:48.854350+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.854871+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:07:48.975763+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:48.976267+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:07:49.112987+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.113481+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:07:49.249399+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.249982+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:07:49.390611+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.391087+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:07:49.518075+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.518666+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:07:49.665022+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.665559+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:07:49.782080+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:49.782623+00:00", "stage": "fit_started", "fold": 2, "inner": 1, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:07:49.912831+00:00", "stage": "fit_completed", "fold": 2, "inner": 1, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:07:50.194129+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:08:00.160509+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:00.161335+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:08:06.959341+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:06.974226+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:08:11.222898+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:11.223714+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:08:16.705487+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:16.706082+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:08:20.359350+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:20.359928+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:08:25.547238+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:25.548051+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:08:29.478568+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:29.479150+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:08:34.522600+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:34.523525+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:08:42.949953+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:42.950553+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:08:47.617006+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:47.617711+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:08:50.134324+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:50.134833+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:08:53.631819+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:53.632677+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:08:53.820413+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:53.820914+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:08:54.018447+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:54.018946+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:08:54.225657+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:54.226229+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:08:54.445987+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:54.446528+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:08:54.657159+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:54.657621+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:08:54.943661+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:54.944135+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:08:55.251585+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:55.252069+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:08:55.478731+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:55.479297+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:08:55.742363+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:55.742829+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:08:55.991436+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:55.991892+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:08:56.217917+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:56.218415+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:08:58.076941+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.077424+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:08:58.189132+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.189601+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:08:58.324647+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.325154+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:08:58.440194+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.440663+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:08:58.597001+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.597710+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:08:58.731489+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.732013+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:08:58.872265+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:08:58.872701+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:08:58.993877+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:58.994502+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:08:59.126382+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.126974+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:08:59.242616+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.243087+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:08:59.376584+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.377106+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:08:59.497582+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.498100+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:08:59.626980+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.627479+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:08:59.766066+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.766858+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:08:59.898037+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:08:59.898518+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:09:00.022918+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:00.023544+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:09:00.149626+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:00.150077+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:09:00.300166+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:00.300694+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:09:00.429239+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:00.429968+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:09:00.551267+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:00.551893+00:00", "stage": "fit_started", "fold": 2, "inner": 2, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:09:00.708424+00:00", "stage": "fit_completed", "fold": 2, "inner": 2, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:09:01.012249+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:09:12.134977+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:12.135682+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:09:18.843462+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:18.844375+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:09:23.322522+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:23.323478+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:09:29.050711+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:29.051471+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:09:32.339555+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:32.340224+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:09:37.444899+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:37.445767+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:09:40.879620+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:40.880282+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:09:45.990231+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:45.990831+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:09:49.436387+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:49.437116+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:09:53.928884+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:53.929590+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:09:57.579878+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:09:57.580519+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:10:01.845727+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:01.846403+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:10:02.016514+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:02.017013+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:10:02.209967+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:02.210570+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:10:02.405422+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:02.405992+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:10:02.617278+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:02.617863+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:10:02.995830+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:02.996349+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:10:03.214484+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:03.215026+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:10:03.428129+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:03.428609+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:10:03.653906+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:03.654414+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:10:03.888474+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:03.888982+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:10:05.440472+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:05.440956+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:10:05.688116+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:05.688563+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:10:12.635785+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:12.636497+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:10:12.795437+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:12.796119+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:10:12.934986+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:12.935453+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:10:13.035579+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:13.036061+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:10:13.153215+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:13.153662+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:10:13.277365+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:13.277963+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:10:13.427991+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:13.428545+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:10:13.550535+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:13.551017+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:10:13.663578+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:13.664092+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:10:13.776362+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:13.776891+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:10:13.883730+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:13.884270+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:10:13.987443+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:13.988012+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:10:14.100169+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.100759+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:10:14.230215+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.230878+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:10:14.339803+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.340273+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:10:14.459251+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.459817+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:10:14.605622+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.606124+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:10:14.717715+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.718160+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:10:14.853529+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.854050+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:10:14.957147+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:14.957673+00:00", "stage": "fit_started", "fold": 2, "inner": 3, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:10:15.063587+00:00", "stage": "fit_completed", "fold": 2, "inner": 3, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:10:15.418168+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:10:25.151881+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:25.152708+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:10:32.148758+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:32.149691+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:10:36.441486+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:36.442272+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:10:42.119417+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:42.120076+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:10:45.883777+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:45.884482+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:10:51.236854+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:51.237527+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:10:54.866386+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:54.866932+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:10:59.978772+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:10:59.979399+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:11:03.481819+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:03.482382+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:11:08.769339+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:08.770060+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:11:11.973969+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:11.974611+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:11:15.573739+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:15.574249+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:11:15.763942+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:15.764432+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:11:15.965650+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:15.966103+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:11:16.183063+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:16.183548+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:11:16.420483+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:16.421050+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:11:16.672429+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:16.673189+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:11:16.930165+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:16.930625+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:11:17.159050+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:17.159593+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:11:17.398834+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:17.399364+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:11:17.651653+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:17.652117+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:11:17.937429+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:17.938086+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:11:18.195857+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:18.196406+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:11:21.322030+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.322581+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:11:21.437238+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.437693+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:11:21.576422+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.576972+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:11:21.706842+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.707548+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:11:21.845928+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.846401+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:11:21.966164+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:21.966630+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:11:22.121582+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:22.122132+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:11:22.251648+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:22.252651+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:11:22.382822+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:22.383386+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:11:22.505186+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:22.505944+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:11:22.649990+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:22.650534+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:11:22.865919+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:22.866588+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:11:23.015882+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.016331+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:11:23.134309+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.134734+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:11:23.272822+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.273374+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:11:23.422469+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.423059+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:11:23.561715+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.562328+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:11:23.698429+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.698903+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:11:23.836960+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.838036+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:11:23.958901+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:23.959341+00:00", "stage": "fit_started", "fold": 3, "inner": 1, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:11:24.085082+00:00", "stage": "fit_completed", "fold": 3, "inner": 1, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:11:24.375714+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:11:34.077674+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:34.078549+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:11:40.247994+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:40.248842+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:11:44.340720+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:44.341601+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:11:50.018544+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:50.019150+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:11:53.525224+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:53.525913+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:11:58.416780+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:11:58.417387+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:12:01.770829+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:01.780473+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:12:07.031906+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:07.032975+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:12:15.307092+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:15.307747+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:12:20.002507+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:20.003086+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:12:23.024660+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:23.025505+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:12:26.810200+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:26.810745+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:12:26.989211+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:26.989760+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:12:27.192835+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:27.193333+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:12:27.392298+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:27.392972+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:12:27.614130+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:27.614769+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:12:27.814507+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:27.815071+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:12:28.042417+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:28.042945+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:12:28.268221+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:28.268710+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:12:28.504280+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:28.504764+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:12:28.736308+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:28.736754+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:12:28.961220+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:28.961696+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:12:29.191891+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.192346+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:12:29.450436+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.450843+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:12:29.566384+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.566824+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:12:29.706179+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.706653+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:12:29.823399+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.823921+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:12:29.963607+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:29.964281+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:12:30.076964+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:30.077431+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:12:30.315258+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:30.315825+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:12:30.445507+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:30.445965+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:12:30.563654+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:30.564181+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:12:30.675885+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:30.676377+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:12:30.823615+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:30.824273+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:12:30.969749+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:30.970191+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:12:31.088955+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.089458+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:12:31.216244+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.216899+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:12:31.346365+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.347118+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:12:31.467682+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.468115+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:12:31.594696+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.595178+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:12:31.727415+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.727970+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:12:31.856003+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.856725+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:12:31.982814+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:31.983285+00:00", "stage": "fit_started", "fold": 3, "inner": 2, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:12:32.142272+00:00", "stage": "fit_completed", "fold": 3, "inner": 2, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:12:32.424720+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:12:42.364439+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:42.365553+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:12:49.250062+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:49.251205+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:12:53.741064+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:53.741891+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:12:59.454596+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:12:59.455260+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:13:02.591829+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:02.592481+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:13:07.730125+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:07.730784+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:13:11.135284+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:11.135856+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:13:16.157215+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:16.157993+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:13:19.588751+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:19.589407+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:13:24.358796+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:24.359596+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:13:27.869245+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:27.869947+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:13:32.527380+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:32.528001+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:13:32.721067+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:32.721585+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:13:33.047030+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:33.047757+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:13:33.264586+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:33.265248+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:13:33.512211+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:33.512706+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:13:33.722037+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:33.722521+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:13:33.948893+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:33.949410+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:13:34.176446+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:34.177021+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:13:34.407419+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:34.407932+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:13:34.665129+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:34.665637+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:13:36.209263+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:36.209768+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:13:36.453064+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:36.453516+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:13:42.813839+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:42.814427+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:13:42.999491+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.000132+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:13:43.128965+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.129415+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:13:43.232861+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.233318+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:13:43.353827+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.354299+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:13:43.458251+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.459000+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:13:43.581033+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:43.581495+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:13:43.685735+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:43.686240+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:13:43.793412+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:43.793911+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:13:43.899660+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:43.900227+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:13:44.030445+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.030869+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:13:44.145445+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.145887+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:13:44.258220+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.258707+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:13:44.374355+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.375125+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:13:44.491053+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.491592+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:13:44.616566+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.617462+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:13:44.727561+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.728079+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:13:44.832864+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.833319+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:13:44.946932+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:44.947453+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:13:45.071218+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:45.071675+00:00", "stage": "fit_started", "fold": 3, "inner": 3, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:13:45.179190+00:00", "stage": "fit_completed", "fold": 3, "inner": 3, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:13:45.501420+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:13:55.258927+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:13:55.260404+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:14:02.115261+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:02.116196+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:14:06.381062+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:06.381666+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:14:11.554869+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:11.555444+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:14:15.060818+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:15.061504+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:14:19.978433+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:19.979075+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:14:23.665862+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:23.666475+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:14:28.427079+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:28.427637+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:14:31.922641+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:31.923534+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:14:37.048610+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:37.049232+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:14:40.486054+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:40.486765+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:14:44.113097+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:44.113751+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:14:44.310211+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:44.310749+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:14:44.553276+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:44.553802+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:14:44.750180+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:44.750748+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:14:45.000140+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:45.000614+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:14:45.261064+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:45.261514+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:14:45.475221+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:45.475858+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:14:45.713974+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:45.714480+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:14:45.937538+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:45.937990+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:14:46.168437+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:46.169013+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:14:46.419309+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:46.419807+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:14:46.663480+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:46.664258+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:14:51.456628+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:51.457145+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:14:51.580647+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:51.581258+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:14:51.717134+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:51.717868+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:14:51.833390+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:51.833876+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:14:51.976583+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:51.977249+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:14:52.096065+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:52.096628+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:14:52.231866+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:14:52.232419+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:14:52.353118+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:52.353628+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:14:52.475736+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:52.476206+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:14:52.634584+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:52.635196+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:14:52.776889+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:52.777598+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:14:52.923682+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:52.924204+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:14:53.127503+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.128066+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:14:53.245192+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.245768+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:14:53.364902+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.365475+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:14:53.482939+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.483445+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:14:53.604386+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.604926+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:14:53.725792+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.726605+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:14:53.848009+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.848547+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:14:53.961810+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:53.962275+00:00", "stage": "fit_started", "fold": 4, "inner": 1, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:14:54.087983+00:00", "stage": "fit_completed", "fold": 4, "inner": 1, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:14:54.354124+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:15:03.494932+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:03.495900+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:15:10.560692+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:10.561483+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:15:14.787738+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:14.788510+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:15:20.158110+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:20.158676+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:15:23.681050+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:23.681780+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:15:29.122722+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:29.123452+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:15:32.687145+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:32.688048+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:15:38.007156+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:38.007896+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:15:41.757762+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:41.758386+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:15:46.997145+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:46.997707+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:15:49.771075+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:49.771626+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:15:53.415638+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:53.416135+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:15:53.635534+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:53.636018+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:15:53.867633+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:53.868138+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:15:54.053796+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:54.054269+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:15:54.279403+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:54.279973+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:15:54.500162+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:54.500846+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:15:54.744222+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:54.744714+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:15:54.962355+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:54.962844+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:15:55.247371+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:55.247898+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:15:55.515885+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:55.516458+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:15:55.790187+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:55.790697+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:15:56.060333+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:56.060794+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:15:57.698752+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:57.699384+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:15:57.834455+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:57.835008+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:15:57.973357+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:57.973877+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:15:58.095203+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:58.095729+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:15:58.242689+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:58.243232+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:15:58.374118+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:58.374640+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:15:58.640951+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:15:58.641471+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:15:58.801936+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:58.802508+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:15:58.965561+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:58.965993+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:15:59.111869+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.112336+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:15:59.244004+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.244555+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:15:59.379496+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.380184+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:15:59.519493+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.520026+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:15:59.659053+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.659574+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:15:59.807652+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.808270+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:15:59.956994+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:15:59.957467+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:16:00.091473+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:16:00.091932+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:16:00.233025+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:16:00.233522+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:16:00.376371+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:16:00.376851+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:16:00.503602+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:16:00.504022+00:00", "stage": "fit_started", "fold": 4, "inner": 2, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:16:00.652697+00:00", "stage": "fit_completed", "fold": 4, "inner": 2, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:16:00.954330+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:16:11.015533+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:11.016266+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:16:16.999780+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:17.000640+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:16:21.089856+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:21.090661+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:16:26.829773+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:26.830413+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:16:30.363245+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:30.363864+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:16:34.914036+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:34.914659+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:16:38.099160+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:38.099955+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:16:42.714370+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:42.715146+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:16:46.054116+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:46.054737+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:16:50.407054+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:50.407978+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:16:53.943140+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:53.944043+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:16:58.383876+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:58.384641+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:16:58.648161+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:58.648676+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:16:58.862459+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:58.862940+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:16:59.042906+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:59.043433+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:16:59.228067+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:59.228545+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:16:59.439494+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:59.439996+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:16:59.694701+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:59.695174+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:16:59.885998+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:16:59.886570+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:17:00.110900+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:00.111412+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:17:00.329333+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:00.330057+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:17:02.613424+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:02.614019+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:17:02.853345+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:02.853873+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:17:08.385947+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.386433+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:17:08.486556+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.487066+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:17:08.603755+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.604302+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:17:08.710453+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.710984+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:17:08.825250+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.825831+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:17:08.936808+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:08.937380+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:17:09.082200+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:09.082730+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:17:09.221421+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.221918+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:17:09.327500+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.328010+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:17:09.434616+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.435120+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:17:09.558047+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.558559+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:17:09.669238+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.670085+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:17:09.806239+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.806752+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:17:09.911392+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:09.912014+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:17:10.023087+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.023570+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:17:10.132455+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.133048+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:17:10.246429+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.247360+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:17:10.379368+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.379968+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:17:10.511465+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.511993+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:17:10.624271+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:10.624774+00:00", "stage": "fit_started", "fold": 4, "inner": 3, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:17:10.744107+00:00", "stage": "fit_completed", "fold": 4, "inner": 3, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:17:11.037939+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:17:20.197586+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:20.198423+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:17:26.719232+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:26.720138+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:17:32.170721+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:32.171504+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:17:39.190245+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:39.190955+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:17:43.199829+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:43.200847+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:17:49.232909+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:49.233600+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:17:53.142180+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:53.143053+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:17:58.989264+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:17:58.989907+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:18:02.941654+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:02.942372+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:18:09.200530+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:09.201139+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:18:12.427014+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:12.427795+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:18:16.899407+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:16.900024+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:18:17.126955+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:17.127633+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:18:17.345692+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:17.346508+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:18:17.560684+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:17.561280+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:18:17.929540+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:17.930162+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:18:18.161650+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:18.162357+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:18:18.434413+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:18.434976+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:18:18.685835+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:18.686407+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:18:18.935005+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:18.935658+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:18:19.228419+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:19.228909+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:18:19.535698+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:19.536289+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:18:19.819466+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:19.820107+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:18:21.815158+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:21.815725+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:18:21.930335+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:21.931114+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:18:22.104129+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:22.104990+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:18:22.222465+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:22.222964+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:18:22.352935+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:22.353541+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:18:22.494256+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:22.494706+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:18:22.687442+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:22.687932+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:18:22.807290+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:22.807815+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:18:22.930307+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:22.930810+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:18:23.049433+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.049998+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:18:23.224442+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.225108+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:18:23.403925+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.404480+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:18:23.527281+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.527802+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:18:23.653037+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.653811+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:18:23.825559+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.826189+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:18:23.959375+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:23.959860+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:18:24.093722+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:24.094142+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:18:24.223214+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:24.223730+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:18:24.376165+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:24.376983+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:18:24.506730+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:24.507258+00:00", "stage": "fit_started", "fold": 5, "inner": 1, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:18:24.630437+00:00", "stage": "fit_completed", "fold": 5, "inner": 1, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:18:24.929876+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:18:35.950973+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:35.952216+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:18:43.875045+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:43.876004+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:18:48.705683+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:48.706476+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:18:54.491496+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:54.492144+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:18:58.568340+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:18:58.569025+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:19:04.514602+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:04.515360+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:19:08.715267+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:08.715913+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:19:14.277362+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:14.278068+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:19:18.666752+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:18.672480+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:19:24.823025+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:24.823608+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:19:28.301522+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:28.302163+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:19:32.608253+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:32.608947+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:19:32.823823+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:32.824421+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:19:33.068207+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:33.068865+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:19:33.327330+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:33.328137+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:19:33.651091+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:33.651667+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:19:33.911561+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:33.912114+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:19:34.199480+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:34.200063+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:19:34.485668+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:34.486345+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:19:34.780250+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:34.780862+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:19:35.044283+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:35.044816+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:19:35.327091+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:35.327659+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:19:35.707066+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:35.707757+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:19:37.552460+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:37.552994+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:19:37.671750+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:37.672281+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:19:37.825000+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:37.825575+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:19:37.987912+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:37.988435+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:19:38.136350+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:38.137178+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:19:38.266956+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:38.267670+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:19:38.438060+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:38.438662+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:19:38.566246+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:38.566812+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:19:38.692239+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:38.693024+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:19:38.816785+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:38.817355+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:19:38.956448+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:38.956988+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:19:39.116294+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.116917+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:19:39.388030+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.388648+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:19:39.523516+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.524027+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:19:39.651171+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.651683+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:19:39.799374+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.799877+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:19:39.935526+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:39.936016+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:19:40.056954+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:40.057433+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:19:40.207531+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:40.208043+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:19:40.375701+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:40.376291+00:00", "stage": "fit_started", "fold": 5, "inner": 2, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:19:40.512256+00:00", "stage": "fit_completed", "fold": 5, "inner": 2, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:19:40.816913+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b00_ctx1"}
+{"utc": "2026-09-12T00:19:51.958067+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b00_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:51.959070+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b00_ctx8"}
+{"utc": "2026-09-12T00:19:59.217323+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b00_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:19:59.218701+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b01_ctx1"}
+{"utc": "2026-09-12T00:20:04.185940+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b01_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:04.186634+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b01_ctx8"}
+{"utc": "2026-09-12T00:20:11.322722+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b01_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:11.323379+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b02_ctx1"}
+{"utc": "2026-09-12T00:20:15.156979+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b02_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:15.157565+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b02_ctx8"}
+{"utc": "2026-09-12T00:20:20.451184+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b02_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:20.451837+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b03_ctx1"}
+{"utc": "2026-09-12T00:20:24.430810+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b03_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:24.431551+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b03_ctx8"}
+{"utc": "2026-09-12T00:20:29.955448+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b03_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:29.956190+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b04_ctx1"}
+{"utc": "2026-09-12T00:20:34.070563+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b04_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:34.071376+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b04_ctx8"}
+{"utc": "2026-09-12T00:20:39.322647+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b04_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:39.323878+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b05_ctx1"}
+{"utc": "2026-09-12T00:20:43.622069+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b05_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:43.623062+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b05_ctx8"}
+{"utc": "2026-09-12T00:20:48.818253+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b05_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:48.818945+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b06_ctx1"}
+{"utc": "2026-09-12T00:20:49.057867+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b06_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:49.058703+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b06_ctx8"}
+{"utc": "2026-09-12T00:20:49.327308+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b06_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:49.328147+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b07_ctx1"}
+{"utc": "2026-09-12T00:20:49.561041+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b07_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:49.561531+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b07_ctx8"}
+{"utc": "2026-09-12T00:20:49.770378+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b07_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:49.771056+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b08_ctx1"}
+{"utc": "2026-09-12T00:20:50.044372+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b08_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:50.045009+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b08_ctx8"}
+{"utc": "2026-09-12T00:20:50.280502+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b08_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:50.281186+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b09_ctx1"}
+{"utc": "2026-09-12T00:20:50.516390+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b09_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:50.516960+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b09_ctx8"}
+{"utc": "2026-09-12T00:20:50.784552+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b09_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:50.785238+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b10_ctx1"}
+{"utc": "2026-09-12T00:20:51.057892+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b10_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:51.058596+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b10_ctx8"}
+{"utc": "2026-09-12T00:20:53.241003+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b10_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:53.241604+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b11_ctx1"}
+{"utc": "2026-09-12T00:20:53.649619+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b11_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:20:53.650348+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b11_ctx8"}
+{"utc": "2026-09-12T00:21:00.222438+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b11_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.224398+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b12_ctx1"}
+{"utc": "2026-09-12T00:21:00.330617+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b12_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.331108+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b12_ctx8"}
+{"utc": "2026-09-12T00:21:00.454197+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b12_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.454837+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b13_ctx1"}
+{"utc": "2026-09-12T00:21:00.584613+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b13_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.585136+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b13_ctx8"}
+{"utc": "2026-09-12T00:21:00.714288+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b13_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.714988+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b14_ctx1"}
+{"utc": "2026-09-12T00:21:00.842455+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b14_ctx1", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.842976+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b14_ctx8"}
+{"utc": "2026-09-12T00:21:00.978074+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b14_ctx8", "components": 1, "warnings": []}
+{"utc": "2026-09-12T00:21:00.978592+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b15_ctx1"}
+{"utc": "2026-09-12T00:21:01.082390+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b15_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.082994+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b15_ctx8"}
+{"utc": "2026-09-12T00:21:01.194738+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b15_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.195265+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b16_ctx1"}
+{"utc": "2026-09-12T00:21:01.298767+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b16_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.299272+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b16_ctx8"}
+{"utc": "2026-09-12T00:21:01.408654+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b16_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.409211+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b17_ctx1"}
+{"utc": "2026-09-12T00:21:01.521190+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b17_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.522018+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b17_ctx8"}
+{"utc": "2026-09-12T00:21:01.651460+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b17_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.652175+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b18_ctx1"}
+{"utc": "2026-09-12T00:21:01.781877+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b18_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.782358+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b18_ctx8"}
+{"utc": "2026-09-12T00:21:01.891252+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b18_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:01.891816+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b19_ctx1"}
+{"utc": "2026-09-12T00:21:02.007998+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b19_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.008554+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b19_ctx8"}
+{"utc": "2026-09-12T00:21:02.134378+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b19_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.134859+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b20_ctx1"}
+{"utc": "2026-09-12T00:21:02.237744+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b20_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.238215+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b20_ctx8"}
+{"utc": "2026-09-12T00:21:02.358812+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b20_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.359335+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b21_ctx1"}
+{"utc": "2026-09-12T00:21:02.471112+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b21_ctx1", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.471629+00:00", "stage": "fit_started", "fold": 5, "inner": 3, "base_id": "b21_ctx8"}
+{"utc": "2026-09-12T00:21:02.592452+00:00", "stage": "fit_completed", "fold": 5, "inner": 3, "base_id": "b21_ctx8", "components": 3, "warnings": []}
+{"utc": "2026-09-12T00:21:02.879471+00:00", "stage": "selection_frozen", "sha256": "6b99455c239507af00e284a45a29dfede399f14c5610e166f628f847915ce8f4"}
+{"utc": "2026-09-12T00:21:14.198585+00:00", "stage": "outer_completed", "fold": 1, "scope": "all"}
+{"utc": "2026-09-12T00:21:28.405608+00:00", "stage": "outer_completed", "fold": 1, "scope": "svm_rbf"}
+{"utc": "2026-09-12T00:21:29.223965+00:00", "stage": "outer_completed", "fold": 1, "scope": "hgb"}
+{"utc": "2026-09-12T00:21:29.776714+00:00", "stage": "outer_completed", "fold": 1, "scope": "qda"}
+{"utc": "2026-09-12T00:21:29.979733+00:00", "stage": "outer_completed", "fold": 1, "scope": "fusion_logistic"}
+{"utc": "2026-09-12T00:21:30.231356+00:00", "stage": "outer_completed", "fold": 1, "scope": "fusion_lda"}
+{"utc": "2026-09-12T00:21:30.377034+00:00", "stage": "outer_completed", "fold": 1, "scope": "fusion"}
+{"utc": "2026-09-12T00:21:33.924360+00:00", "stage": "outer_completed", "fold": 2, "scope": "all"}
+{"utc": "2026-09-12T00:22:06.435675+00:00", "stage": "outer_completed", "fold": 2, "scope": "svm_rbf"}
+{"utc": "2026-09-12T00:22:08.035788+00:00", "stage": "outer_completed", "fold": 2, "scope": "hgb"}
+{"utc": "2026-09-12T00:22:08.349157+00:00", "stage": "outer_completed", "fold": 2, "scope": "qda"}
+{"utc": "2026-09-12T00:22:08.901483+00:00", "stage": "outer_completed", "fold": 2, "scope": "fusion_logistic"}
+{"utc": "2026-09-12T00:22:09.506641+00:00", "stage": "outer_completed", "fold": 2, "scope": "fusion_lda"}
+{"utc": "2026-09-12T00:22:10.046568+00:00", "stage": "outer_completed", "fold": 2, "scope": "fusion"}
+{"utc": "2026-09-12T00:22:11.437196+00:00", "stage": "outer_completed", "fold": 3, "scope": "all"}
+{"utc": "2026-09-12T00:22:45.119212+00:00", "stage": "outer_completed", "fold": 3, "scope": "svm_rbf"}
+{"utc": "2026-09-12T00:22:46.167911+00:00", "stage": "outer_completed", "fold": 3, "scope": "hgb"}
+{"utc": "2026-09-12T00:22:46.744431+00:00", "stage": "outer_completed", "fold": 3, "scope": "qda"}
+{"utc": "2026-09-12T00:22:47.363140+00:00", "stage": "outer_completed", "fold": 3, "scope": "fusion_logistic"}
+{"utc": "2026-09-12T00:22:47.923588+00:00", "stage": "outer_completed", "fold": 3, "scope": "fusion_lda"}
+{"utc": "2026-09-12T00:22:48.453695+00:00", "stage": "outer_completed", "fold": 3, "scope": "fusion"}
+{"utc": "2026-09-12T00:23:39.372805+00:00", "stage": "outer_completed", "fold": 4, "scope": "all"}
+{"utc": "2026-09-12T00:23:54.955788+00:00", "stage": "outer_completed", "fold": 4, "scope": "svm_rbf"}
+{"utc": "2026-09-12T00:23:56.445892+00:00", "stage": "outer_completed", "fold": 4, "scope": "hgb"}
+{"utc": "2026-09-12T00:23:57.073599+00:00", "stage": "outer_completed", "fold": 4, "scope": "qda"}
+{"utc": "2026-09-12T00:23:57.338282+00:00", "stage": "outer_completed", "fold": 4, "scope": "fusion_logistic"}
+{"utc": "2026-09-12T00:23:57.957708+00:00", "stage": "outer_completed", "fold": 4, "scope": "fusion_lda"}
+{"utc": "2026-09-12T00:23:58.462058+00:00", "stage": "outer_completed", "fold": 4, "scope": "fusion"}
+{"utc": "2026-09-12T00:24:14.194222+00:00", "stage": "outer_completed", "fold": 5, "scope": "all"}
+{"utc": "2026-09-12T00:24:26.484494+00:00", "stage": "outer_completed", "fold": 5, "scope": "svm_rbf"}
+{"utc": "2026-09-12T00:24:27.936179+00:00", "stage": "outer_completed", "fold": 5, "scope": "hgb"}
+{"utc": "2026-09-12T00:24:28.604550+00:00", "stage": "outer_completed", "fold": 5, "scope": "qda"}
+{"utc": "2026-09-12T00:24:28.803215+00:00", "stage": "outer_completed", "fold": 5, "scope": "fusion_logistic"}
+{"utc": "2026-09-12T00:24:29.037140+00:00", "stage": "outer_completed", "fold": 5, "scope": "fusion_lda"}
+{"utc": "2026-09-12T00:24:29.183346+00:00", "stage": "outer_completed", "fold": 5, "scope": "fusion"}
+{"utc": "2026-09-12T00:24:33.751366+00:00", "stage": "completed", "models": 70}

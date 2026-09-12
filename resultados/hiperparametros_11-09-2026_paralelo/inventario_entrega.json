@@ -1,0 +1,614 @@
+{
+  "files": [
+    {
+      "path": "requirements_avanzados.txt",
+      "bytes": 48,
+      "sha256": "d0f1fc855f032c13b3c0a435dd768e8839a4a87eaed7fa6f724926165abb3da5"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/advertencias.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/bitacora.jsonl",
+      "bytes": 15220,
+      "sha256": "913ab096f502d67b8621463857df3351cde6a6eb0bdf9938f1c56234cd3c4192"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/catalogo_interno.json",
+      "bytes": 536,
+      "sha256": "c207893475b68f90e35b83a623d79ae9e67d9b070523a7e1079c8878eec14af6"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/interrupcion.json",
+      "bytes": 266,
+      "sha256": "c6906a313d50edaf27c8127d7597de833c3a2cbbc6ff3a7d417cf961e877bf16"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/inventario_parcial.json",
+      "bytes": 1401,
+      "sha256": "207120c8188ccf610f5e8c27605ca4fe8264f9872584d29116b836e831d2df1f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/predicciones_internas/fold1_inner1.npz",
+      "bytes": 3435048,
+      "sha256": "c1436e94f828277c5a2ccf802d93faa0d3f59f3bda021aeacbb0893dd1f535de"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/protocolo.json",
+      "bytes": 15575,
+      "sha256": "ef55fb311febd9b54965fa87f03c5f78654666143e0dbce67e8345c5f39c1dcf"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/pruebas.txt",
+      "bytes": 36410,
+      "sha256": "bc9d2e9451c8399187b3fea4efc5ab7f5aab58901f92e148e0888da6b26c0c84"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026/todos_los_intentos.csv",
+      "bytes": 5574,
+      "sha256": "d0e60b1ab476849bd729d8e114469e292d35fc3c6d858a4968ee2daf28cd6248"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/advertencias.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/bitacora.jsonl",
+      "bytes": 178763,
+      "sha256": "daec494ba45fac0de685cf14d6246b53095e52413dda611c235788e7e78ecdfa"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/catalogo_interno.json",
+      "bytes": 8013,
+      "sha256": "33ca60a84295754a04f10d9b4e5d3a24213609ec23a5b52912417db8ee540c10"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/catalogo_modelos.json",
+      "bytes": 76011,
+      "sha256": "c9dc125c46a8f9fdd378d91a9e053a1c61115e995214672c82881f928e9568c5"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/comparacion.pdf",
+      "bytes": 23568,
+      "sha256": "b1b4e9f40e0173a11dd13da088ce9f60f3e0869c2a99c0e3ca809bb34c1e1152"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/comparacion.png",
+      "bytes": 87244,
+      "sha256": "76ecf7420c77cc1551b057e93e9836b8fe54f47f8b364f69a69cb094c5cd1f36"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/completo.json",
+      "bytes": 470,
+      "sha256": "fc099fec285b1905c2bbf1fb6a4089c680d5e62f07457b9351431502c2adeb19"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/diagnostico_clases.csv",
+      "bytes": 3644,
+      "sha256": "acad5c5087c8effb22185ff4fb6e785ccddc43a6b9cb466ccea6b215891040d3"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/ejecucion_paralela.json",
+      "bytes": 328844,
+      "sha256": "56192c5aa1db7558931d045d9c8eedb2800ca9ebaa12ca144d48c40933ed2d57"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/ganancias_pareadas.csv",
+      "bytes": 1470,
+      "sha256": "a113a971424b3d7a20c71772b162c0fa3d71016eb05b61823e5c88f4657f2c08"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/ganancias_participantes.csv",
+      "bytes": 20130,
+      "sha256": "81c630ae8c366f16c85379f50f07f63f1f7a0da1512d6fc61222a05d92964866"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/hiperparametros_elegidos.csv",
+      "bytes": 3212,
+      "sha256": "f4bf227897cb7e19d0681f26840816f04b9765b7364edacc7ee04227d622ef55"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/metricas_folds.csv",
+      "bytes": 7603,
+      "sha256": "3d9f6348139c2a0e48cb6b421a0dfd0c2f9bda32191a36fe952c3ea9043a6f6d"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/metricas_participantes.csv",
+      "bytes": 22956,
+      "sha256": "63859d9820921eaf0cd63b12840da42718dd23f2e6fbe1188e891c4aa88ae9fb"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_all_20260911.joblib",
+      "bytes": 368579,
+      "sha256": "b114df025dce3bb39161b2c4b302d1ae467e211a693b39d4d81da15a0f682b7d"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_all_20260912.joblib",
+      "bytes": 368579,
+      "sha256": "6d5f75f77a428231dd62d5e792c1852ba8c8ead621883dbb7567c526f2a28746"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_20260911.joblib",
+      "bytes": 3398,
+      "sha256": "e9c7d475f0bf15d119a696cf5309dd4a75969c5b3aa0c40a06782ebf4df34287"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_20260912.joblib",
+      "bytes": 3405,
+      "sha256": "690c73c542045c13ddf8bc87e1905eb1a02fc66414f0b92aedcbbfbeddcfb5e7"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_lda_20260911.joblib",
+      "bytes": 5590,
+      "sha256": "1befe7972ec7a7bfeea8bd6a1ea7d1908a97e2c0c6c2fe77e1208feb3fea992d"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_lda_20260912.joblib",
+      "bytes": 5590,
+      "sha256": "0802d40bbb7ee0c553aa6b35f5f1de5b1c096ebf61cd02a508dff53b935e3398"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_logistic_20260911.joblib",
+      "bytes": 3398,
+      "sha256": "e9c7d475f0bf15d119a696cf5309dd4a75969c5b3aa0c40a06782ebf4df34287"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_fusion_logistic_20260912.joblib",
+      "bytes": 3405,
+      "sha256": "690c73c542045c13ddf8bc87e1905eb1a02fc66414f0b92aedcbbfbeddcfb5e7"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_hgb_20260911.joblib",
+      "bytes": 368579,
+      "sha256": "b114df025dce3bb39161b2c4b302d1ae467e211a693b39d4d81da15a0f682b7d"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_hgb_20260912.joblib",
+      "bytes": 368579,
+      "sha256": "6d5f75f77a428231dd62d5e792c1852ba8c8ead621883dbb7567c526f2a28746"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_qda_20260911.joblib",
+      "bytes": 21516,
+      "sha256": "ae3ba5d5f0eecdb270428972a573383c0164df451b658c2114ffaba38d73da60"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_qda_20260912.joblib",
+      "bytes": 21513,
+      "sha256": "1648f696a693706249cb8a5eb83aa6bb052864107ef1615a90d56ab8cc25ab65"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_svm_rbf_20260911.joblib",
+      "bytes": 1729659,
+      "sha256": "0c320fb8d4a01074b49cbf66c27da2121a7f5f9110fb949345eae816022499fc"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold1_svm_rbf_20260912.joblib",
+      "bytes": 1729662,
+      "sha256": "b46b3c3681a1017aeb7bf79c4494f52a15b031fc4b9ade2c94748f1a935cb202"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_all_20260911.joblib",
+      "bytes": 7960,
+      "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_all_20260912.joblib",
+      "bytes": 7961,
+      "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_20260911.joblib",
+      "bytes": 7960,
+      "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_20260912.joblib",
+      "bytes": 7961,
+      "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_lda_20260911.joblib",
+      "bytes": 35957,
+      "sha256": "0dab6f75d7a12c1bdbbeb2302dd24bf262c0db23b86bc284ee15665a76f9f92a"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_lda_20260912.joblib",
+      "bytes": 35958,
+      "sha256": "26202a4b6fa3524c4859c2fea036bc1bdf2e14983cf66902873bb8ebe301021f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_logistic_20260911.joblib",
+      "bytes": 7960,
+      "sha256": "e7023de53f3fa55c647f603345913957af06fa84f1b4075c13ab1831c34a11d1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_fusion_logistic_20260912.joblib",
+      "bytes": 7961,
+      "sha256": "07229741118139feac0e06394c305cd407a899a6dca356f4d642825caf4c6cad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_hgb_20260911.joblib",
+      "bytes": 1005698,
+      "sha256": "ecdb7515296adc648a3e5e27682d4196c81a8ce171e65113b477d245ecc5a1a7"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_hgb_20260912.joblib",
+      "bytes": 1005697,
+      "sha256": "c69e0d0dff8bc2ad1ebf6952980d72cbcff84b0666e497a5ee08404845f53e4f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_qda_20260911.joblib",
+      "bytes": 362590,
+      "sha256": "d5d888b2b1d4cb697452c7b75be06dd485640c656ecbf49e286e00185b662333"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_qda_20260912.joblib",
+      "bytes": 362590,
+      "sha256": "a2613cbe9ddcde2051cfc889845cbef422f841415ff803df98dfb54304934768"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_svm_rbf_20260911.joblib",
+      "bytes": 6936786,
+      "sha256": "531706bf10eef35fd520c33d2ba764da33439bd1cd4b8700aaeb8bce525cc33e"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold2_svm_rbf_20260912.joblib",
+      "bytes": 6936786,
+      "sha256": "c18e590c5fba546288860a4bb4cfe93c61a64266ba669101c49b42f387be63b3"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_all_20260911.joblib",
+      "bytes": 6054,
+      "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_all_20260912.joblib",
+      "bytes": 6055,
+      "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_20260911.joblib",
+      "bytes": 6054,
+      "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_20260912.joblib",
+      "bytes": 6055,
+      "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_lda_20260911.joblib",
+      "bytes": 6054,
+      "sha256": "ac0d4ee1e3b426efaecf2001ae0da349e8137eb2b3c57b31833c4c84e8f378de"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_lda_20260912.joblib",
+      "bytes": 6055,
+      "sha256": "f0920caee491262a9f1e369e33062fa89967ebe9ff0ceb17b271d351e6cd8aad"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_logistic_20260911.joblib",
+      "bytes": 3543,
+      "sha256": "e4dd08a679231b576e48c9d0d3d311265f462edaecbf9785b1a68e629678eb29"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_fusion_logistic_20260912.joblib",
+      "bytes": 3542,
+      "sha256": "6d233208cece7a788b080f99e1fb7f594d39b6986ece05ac4f1626a25e5a11c4"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_hgb_20260911.joblib",
+      "bytes": 1006855,
+      "sha256": "d14281e5ed245f4f80448ff7e11a2ce88fa73a30be3bf3a3e05a59fd0f4993e9"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_hgb_20260912.joblib",
+      "bytes": 1006851,
+      "sha256": "e50ae145ce50c8d684a645845c62f3938b6558a9cb97f03d04ff9d08b909e1a8"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_qda_20260911.joblib",
+      "bytes": 30441,
+      "sha256": "bfb52cfd0d8dc734b09e27b74cc9e069ee8546d84b26d66b73a3c99a07e950e1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_qda_20260912.joblib",
+      "bytes": 30441,
+      "sha256": "814f62d36f41a01a35b2b324d0107ca2655f6310be704194a6b5dadf78a77726"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_svm_rbf_20260911.joblib",
+      "bytes": 6848734,
+      "sha256": "3bcea3af41100d0a10e46499fa2bcb2b674dbf60e814a6109278be87d701d4b7"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold3_svm_rbf_20260912.joblib",
+      "bytes": 6848733,
+      "sha256": "9fee3a2c9b4cf9c647762331fe0ca884586b5ad24c30d269afa0cdc10f95ab85"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_all_20260911.joblib",
+      "bytes": 1164169,
+      "sha256": "09df102ecce388be01e8f35013ab762a16f3e4d0700f6c3b46c14cb47ea70ac2"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_all_20260912.joblib",
+      "bytes": 1164165,
+      "sha256": "ccc94765e7ede5dc41f4edb535c670f5d2c04c8acf00d14b95069b6a67bd7191"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_20260911.joblib",
+      "bytes": 6027,
+      "sha256": "22dd2439030ff3d15518200420dddc1fe67a8a01c7137d2db85715e8647da56f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_20260912.joblib",
+      "bytes": 6025,
+      "sha256": "50b45cf17d5d4dc58e87ca384d4f9e267dc2904e1b96a75bcbaf75dbe8cce056"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_lda_20260911.joblib",
+      "bytes": 6027,
+      "sha256": "22dd2439030ff3d15518200420dddc1fe67a8a01c7137d2db85715e8647da56f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_lda_20260912.joblib",
+      "bytes": 6025,
+      "sha256": "50b45cf17d5d4dc58e87ca384d4f9e267dc2904e1b96a75bcbaf75dbe8cce056"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_logistic_20260911.joblib",
+      "bytes": 7948,
+      "sha256": "b63a6822b73ea07961f2d140e77705393b410adf45af15d80525fd1df6b07595"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_fusion_logistic_20260912.joblib",
+      "bytes": 7946,
+      "sha256": "a64cb0b350e4a669f3afc017e122a70b36b3e7daa37b1c276ebe4b8a58ff3b12"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_hgb_20260911.joblib",
+      "bytes": 1164169,
+      "sha256": "09df102ecce388be01e8f35013ab762a16f3e4d0700f6c3b46c14cb47ea70ac2"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_hgb_20260912.joblib",
+      "bytes": 1164165,
+      "sha256": "ccc94765e7ede5dc41f4edb535c670f5d2c04c8acf00d14b95069b6a67bd7191"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_qda_20260911.joblib",
+      "bytes": 362867,
+      "sha256": "41e7e5f16ff4cb8e95e435ad36631e592adc4582bc9fb3edf4a4e6879c333858"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_qda_20260912.joblib",
+      "bytes": 362868,
+      "sha256": "7ef68a814c096edc807a891702ada698e3e9fac5d47434e2b8c3be1478f58c07"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_svm_rbf_20260911.joblib",
+      "bytes": 6291965,
+      "sha256": "338e892aeb6073d26d0dde2f5343f6fa96170060aef1c9c7771be0f3554a323a"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold4_svm_rbf_20260912.joblib",
+      "bytes": 6291962,
+      "sha256": "538f9e6fda13a53cd72d78cd249b09d1c9e19a9b7e5fcb07e88904b12aa7af81"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_all_20260911.joblib",
+      "bytes": 766357,
+      "sha256": "29b188f37cc0371c5d2ab21a1c6403389177f38f3ebebcf6f2db595e04d10ba1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_all_20260912.joblib",
+      "bytes": 766355,
+      "sha256": "1667ed4d6590694fd1bde57a8d4c8a02b5a331faace127fd53291a5df783096b"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_20260911.joblib",
+      "bytes": 3536,
+      "sha256": "945fbcd4cbeecefa39f1cc4181c7b383112aa3997144003f6db9681493df7bd4"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_20260912.joblib",
+      "bytes": 3534,
+      "sha256": "0ecdffbc7846f06357e4a4e2c63db80a79741d6c67d7378516bb3ec85be3508e"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_lda_20260911.joblib",
+      "bytes": 6048,
+      "sha256": "752d5fcbf424aedecc902c4758b3f0f3b505e5e3d62815b50e798d4796a3c951"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_lda_20260912.joblib",
+      "bytes": 6050,
+      "sha256": "3ddd5761a99bf825fcd3396dd0342073a29cc9fec835776d9df9345f115a4c61"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_logistic_20260911.joblib",
+      "bytes": 3536,
+      "sha256": "945fbcd4cbeecefa39f1cc4181c7b383112aa3997144003f6db9681493df7bd4"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_fusion_logistic_20260912.joblib",
+      "bytes": 3534,
+      "sha256": "0ecdffbc7846f06357e4a4e2c63db80a79741d6c67d7378516bb3ec85be3508e"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_hgb_20260911.joblib",
+      "bytes": 766357,
+      "sha256": "29b188f37cc0371c5d2ab21a1c6403389177f38f3ebebcf6f2db595e04d10ba1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_hgb_20260912.joblib",
+      "bytes": 766355,
+      "sha256": "1667ed4d6590694fd1bde57a8d4c8a02b5a331faace127fd53291a5df783096b"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_qda_20260911.joblib",
+      "bytes": 30456,
+      "sha256": "6cc288de8d4272d651031849e98cf9ea50d7be131e286a84e84cefac4a0a942b"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_qda_20260912.joblib",
+      "bytes": 30456,
+      "sha256": "7e3fb157810a809135e372ca3a77da35ab45469aa69e5c3281418a76e05d2795"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_svm_rbf_20260911.joblib",
+      "bytes": 1808820,
+      "sha256": "d82bb43ab0759205e7df36215fb68633cd55462f2dfde7afb0cae1115f56ebac"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/modelos/fold5_svm_rbf_20260912.joblib",
+      "bytes": 1808817,
+      "sha256": "140077cf493d943759f40c639c71258b13105c103a0afd48074c65084c09f1fd"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold1_inner1.npz",
+      "bytes": 3435120,
+      "sha256": "fe85c889d23d2ccee4d24f274470cbf3c7488cb5ea3082b2bab429aa006a9255"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold1_inner2.npz",
+      "bytes": 3778055,
+      "sha256": "2a400f8fb28ae782c2b8a5fe2610b8069183ad28f456aa2abf9156b14feb13f1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold1_inner3.npz",
+      "bytes": 3325456,
+      "sha256": "9c4e3ed160fe480dbc12ee8c15d54e5550a8d9f88cb24d209acd2e75d8c8e6e5"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold2_inner1.npz",
+      "bytes": 3840215,
+      "sha256": "fd4741e29e50b678709719fbedcfebbf64b8d97fbcca36df63bd36577e87caa1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold2_inner2.npz",
+      "bytes": 3672327,
+      "sha256": "605eac72b59d1f9fcb0e9aa8d6a823c37e051122adb95925142750d6ced9df7f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold2_inner3.npz",
+      "bytes": 3291972,
+      "sha256": "049793ec9e74427136bf889332ba1c6cf54850064bb131f2d110a75297209d89"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold3_inner1.npz",
+      "bytes": 3824738,
+      "sha256": "a4d99ed92e7914f0951b1c10c2534916028da78898be4207fdc1e5fff0794a2e"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold3_inner2.npz",
+      "bytes": 3576552,
+      "sha256": "259ab17877d4286f12f0e49f1e30ec67d1714138c680f51b4d5ce590b9a67328"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold3_inner3.npz",
+      "bytes": 3335660,
+      "sha256": "24e436cc1962e9743005e84c9b188b6156874617f11e9800d8c9ae235df98df6"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold4_inner1.npz",
+      "bytes": 3657276,
+      "sha256": "94b085366d6f45746c50596df03aa802f058e0e9fddc443ea6264db3476b7cb2"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold4_inner2.npz",
+      "bytes": 3906956,
+      "sha256": "fa68b254a803c4061c04f990d24cd809200972874f5d728b9eb12db8af4deaaf"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold4_inner3.npz",
+      "bytes": 3192022,
+      "sha256": "a5591dd9dcfb9f8e1d54a6e38b2a3c7a48bb59cb152833e64549503bc3840b7b"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold5_inner1.npz",
+      "bytes": 3692682,
+      "sha256": "1642a43dcd3c69768b88a8084ef8e11b0c9fae1eaadf8131c5415504fcd41509"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold5_inner2.npz",
+      "bytes": 3737797,
+      "sha256": "0339a45768e72b12b2f9594b2a218d673bfa3efc63074ec5d6d159cfd42359ab"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_internas/fold5_inner3.npz",
+      "bytes": 3277569,
+      "sha256": "546cb631828b4698404b67ab60e653b939ab5f0307de0e8187d61237b4fbe0c1"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/predicciones_oof.csv.gz",
+      "bytes": 6941755,
+      "sha256": "6c47b24b77a8a9864ffd1d481314e7804d3e8c26d11c56f458be688b86b3b7ea"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/protocolo.json",
+      "bytes": 15992,
+      "sha256": "41498745c90f938cfff9c16e909349b0e7f4caefb0162effd02d51abf6eedaf5"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/pruebas.txt",
+      "bytes": 36410,
+      "sha256": "bc9d2e9451c8399187b3fea4efc5ab7f5aab58901f92e148e0888da6b26c0c84"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/ranking_interno.csv",
+      "bytes": 10380,
+      "sha256": "0d76ff9356d7783a46bfdccab9be06383680b08535b5d2bef48fe6ceb0e2194f"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/resumen_oof.csv",
+      "bytes": 513,
+      "sha256": "5f388f5857d4392949ee2d79522b2e0a241a89f71557a6c730028df8ef3a2fba"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/resumen_por_semilla.csv",
+      "bytes": 1255,
+      "sha256": "177dc7c07646ec3c77419cbef4708d71f3c8a2bca66342a31deef1432aab2024"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/selecciones.json",
+      "bytes": 12168,
+      "sha256": "6b99455c239507af00e284a45a29dfede399f14c5610e166f628f847915ce8f4"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/todos_los_intentos.csv",
+      "bytes": 82710,
+      "sha256": "757dec7899ec7b9273093d0deb32dbbcf0d1ec2d83c6c92e5fcb32e624d1f3fa"
+    },
+    {
+      "path": "resultados/hiperparametros_11-09-2026_paralelo/verificacion.json",
+      "bytes": 622,
+      "sha256": "fe0d9125940435b7cd3d714ec5b8db119897b75e4b41002c1a976742e66b026a"
+    },
+    {
+      "path": "scripts/ejecutar_hiperparametros_paralelo.py",
+      "bytes": 3295,
+      "sha256": "fa52b5e1ff96b977fe4de1bee63e83cfda8084d9cd9eb96e20ec9ff43a484e17"
+    },
+    {
+      "path": "scripts/entrenar_hiperparametros.py",
+      "bytes": 9244,
+      "sha256": "e623f65fd727d6b55fd972f4b3c4c7d641ecfffb0a24e66201dcb18b88135602"
+    },
+    {
+      "path": "scripts/hiperparametros_core.py",
+      "bytes": 5272,
+      "sha256": "e32f91c90bfced9e1c9360b768af6856dd1b3be8eb56870e06a0dcc2754b51e9"
+    },
+    {
+      "path": "scripts/informe_hiperparametros.py",
+      "bytes": 23048,
+      "sha256": "70c26dfc3729c76a84759e90bc66a2da6f6d7824284ab90beb043aa085224ef1"
+    }
+  ]
+}
