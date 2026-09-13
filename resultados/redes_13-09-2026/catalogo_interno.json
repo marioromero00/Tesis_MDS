@@ -1,0 +1,2612 @@
+[
+  {
+    "path": "internos/fold1_Transformer_0_epoch4.joblib",
+    "sha256": "857e79d58f7e2bc0dbcf7d27282d238f18604301f9db120e5d10e8777d9bf970",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_0_epoch8.joblib",
+    "sha256": "4ffbd0ebe043a28f4d3c16355686f7346027290d88d1a92e1cb82d9c33cbb4be",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_0_epoch12.joblib",
+    "sha256": "432ed683dd259a8b8fe56d2d835d2a6d0f584ef488c9e84da4fc71be9eec8093",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_1_epoch4.joblib",
+    "sha256": "e568d1e8e5abbe8456f4c3cbea538f3459a09c4e44de2e49d914b20b5c99113a",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_1_epoch8.joblib",
+    "sha256": "f480a3709058f22cda1636877f872adcc5cd5b0d44141f72392c9afb0c55bb1b",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_1_epoch12.joblib",
+    "sha256": "74280387c56c31e636b4e9d5192fa36c61bc973358edf87c1995f6867e7cd316",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_2_epoch4.joblib",
+    "sha256": "24ccc790484e1b93e10a7136ddc2aa8154df866ec5190116a8c54ae907b7578c",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_2_epoch8.joblib",
+    "sha256": "51ce27d6715cb588b540a638b199151c165bbe557af12497247e60c4d0d6ae71",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_Transformer_2_epoch12.joblib",
+    "sha256": "b2f2cda072974e3d749c31ed00ca0ceeb19db1b1f87a154747c0e9d3cf95cfd8",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_0_epoch4.joblib",
+    "sha256": "67cfc0efb55d2f16e232ce0860cf01a2cc3f6c69b7b1e154a66548581bb06d31",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_0_epoch8.joblib",
+    "sha256": "025fa13c04111d8de23e1664500d302b9086139233e7b89303c7c1bde248a948",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_0_epoch12.joblib",
+    "sha256": "0830da30259f08426070f5fa3e4c11e4945a6aa3915c74fe9aeaf4430493f95a",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_1_epoch4.joblib",
+    "sha256": "4b08ad45b8964a6985256ec71e5c9b2205ced0af7153cb5a48a62b7e5cebf80b",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_1_epoch8.joblib",
+    "sha256": "b935028f80519d046ff4108012dbac5572232a0c24056886685acfd78182be65",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_1_epoch12.joblib",
+    "sha256": "50ade9b2fdb8f040d8b4eb82667e6e42f3a6f54141dff418b4bc575959470a87",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_2_epoch4.joblib",
+    "sha256": "dcce1369a7834a0339a6131c6d0cf7d653257e39ac329cbe847dce84f735f2cf",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_2_epoch8.joblib",
+    "sha256": "0a753f673e497d9650cbfab0807f87473c42ad885b6d5fb68d9ed2271e70503b",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold1_TCN_2_epoch12.joblib",
+    "sha256": "cd8c42a56cd7ea54f260ad2b23461672cd951e8285c8984ba35ba461ab9551a2",
+    "fold": 1,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_0_epoch4.joblib",
+    "sha256": "f82747c6199cf1d5ede07c4cf2e940eea6ba27b0ebc18014ee3cb3eece1fccfe",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_0_epoch8.joblib",
+    "sha256": "d827f764ff12b4aa242d8af92a07d4e8e2152d7f5a222f2339c817f00418474f",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_0_epoch12.joblib",
+    "sha256": "92192e3a8bffcce9e632b3b71d4e8fd21b352a3eaeacb23ee913fce6b687b542",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_1_epoch4.joblib",
+    "sha256": "bef156542ed83a358dec948e4527b3215eb6d737df3508cde97f3a7565e09db2",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_1_epoch8.joblib",
+    "sha256": "ca257bae436376492679caacdd159c94f29499cb5fb8dbb5d286d07c7bcc858f",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_1_epoch12.joblib",
+    "sha256": "b00713b79b24a72b0858ca0b9d10c2f366bf61de2b198a6c32333b493376757f",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_2_epoch4.joblib",
+    "sha256": "d721f51adc391bc636043c4a6745652abd0e5ba9fe6b106647ffbcd0d9a5800a",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_2_epoch8.joblib",
+    "sha256": "5c0d875f3681bfeb06498b9fd1c47211213c23b31bb6d944d969dd5989b04a0d",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_Transformer_2_epoch12.joblib",
+    "sha256": "325ab86e21b5fa076097d064792ad649b2a0d6acb0e54094a513f8b6fdd047a6",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_0_epoch4.joblib",
+    "sha256": "0a06108dec0fe464ce1ad204d33792fd151c395a7e3ad6a214937ccf00964582",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_0_epoch8.joblib",
+    "sha256": "1296cd721bcaa3e10b8b0a8b1a0c557675d649b5ea462381c81c11844ddf9201",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_0_epoch12.joblib",
+    "sha256": "29adccddebb3f399aab9b5a0545dfc59d713830cd70248117e76bcdea15b88cb",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_1_epoch4.joblib",
+    "sha256": "237802c8fb00b227e148c343a23b086dc0b02f0ce99cf33165f9c1c6db4de137",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_1_epoch8.joblib",
+    "sha256": "0435801209023bee01f34df7c5e0ef22e0415b92fc0b1819efc10a2d3219e701",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_1_epoch12.joblib",
+    "sha256": "789ca315797ad0228cd54e939fb56d71be9e8c5b59fa9db4e359b1e93a1a50cb",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_2_epoch4.joblib",
+    "sha256": "583cffd1b1ddeadc517c105073ab043977d543ffc27d8fc9c821a1cc448d42d3",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_2_epoch8.joblib",
+    "sha256": "6b8c4eaf3bdfb7e14b7f88475e7a03793ef801f353adbe1002a68ce6c8a393bd",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold2_TCN_2_epoch12.joblib",
+    "sha256": "6d908834d92967c0655dc88bd79abb8ad1332f1552c023836d844f2a64fc80ae",
+    "fold": 2,
+    "fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_0_epoch4.joblib",
+    "sha256": "e9cf1d2c59f6fc2fe62ad6aca59c5889151ac3e4068889e2b620d7851edf9ec4",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_0_epoch8.joblib",
+    "sha256": "8da53c9a206bfd983b8da826834caa93ee96cec35fc8407f5c315eb5305e55e9",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_0_epoch12.joblib",
+    "sha256": "3fc18e842037cd0733d8cd43ae53a2b933399d258021650db5def2918b2e1045",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_1_epoch4.joblib",
+    "sha256": "ae29181fb53c7d4590514facd44a6d12f616921bdc7c4f7e164d8a90b7c49c7b",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_1_epoch8.joblib",
+    "sha256": "f8618c79c9c9f0c90841d8962cde16df402c4bb89d694489eaeff1fdcd6853ac",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_1_epoch12.joblib",
+    "sha256": "d2bba91d097e78c3e12639a6e06da79cf1bcc82190f86ced5b677bee15bb94b6",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_2_epoch4.joblib",
+    "sha256": "12ffa1ed95486b42c766a4d18946e951f733c772b70dc164edc56bfba2763d22",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_2_epoch8.joblib",
+    "sha256": "ed1ff7503ef45d8663130f8d89afcbc113256102fc248d0e5c83ca32bcbbec41",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_Transformer_2_epoch12.joblib",
+    "sha256": "022fe35552871a73a82d9082eb275613beb5b7d90a091d8b5f2927bad31d9da5",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_0_epoch4.joblib",
+    "sha256": "7090601032e414f3c36d3272f08d4eba73fb19e507987784a9031b19bcb3b6dd",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_0_epoch8.joblib",
+    "sha256": "225efda69f590fdfe1b6615bdb5d3f22405562ac8b8fd39725b9204caecd5ab3",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_0_epoch12.joblib",
+    "sha256": "b2127d080a70204ab421298441e578383949af37c1684dd7a31741043b2bbda0",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_1_epoch4.joblib",
+    "sha256": "9128be7a8c331449b1b7cb54170ccb614e8226b9f1ab02024250bf3664207337",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_1_epoch8.joblib",
+    "sha256": "332d39334bc23277e7caa625762a86d1026f352612092066dbcb6446464e881e",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_1_epoch12.joblib",
+    "sha256": "b385227bf57771dfc9381a2e4c5a0cd4541ddcb124adc49016f432db633e8473",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_2_epoch4.joblib",
+    "sha256": "25204346c16a0c82f1c4fc5ec8abe50ebfbfe528082b2c9333a2fca6c76ef1d9",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_2_epoch8.joblib",
+    "sha256": "c45db72dd737d38fce4b5a0f73f96de99e5e3f3d9b8103a3cfd0e582a627fb55",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold3_TCN_2_epoch12.joblib",
+    "sha256": "7185db288de99b943e8ccc32f4bf1808b91e1545ff7762a2f320d6d3ab78a835",
+    "fold": 3,
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_0_epoch4.joblib",
+    "sha256": "29d6dfcd335b77499729aa0985fa32be555381a1f7d00ad818e51150c64c3f47",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_0_epoch8.joblib",
+    "sha256": "eeec4148d71f106c73e0bab0a0662d0b7f9008f53d51399708e83887fd4a7057",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_0_epoch12.joblib",
+    "sha256": "67791683e4fc87de470cf6b501885b55f55de8c448ba61ab56ca15b979426305",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_1_epoch4.joblib",
+    "sha256": "1d75b554add932ed9342ed978af5fe8c61b53f274de8be649e5ca93dce7ab70b",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_1_epoch8.joblib",
+    "sha256": "f3d7aa23b437474ce7ba10c965f8b15d1aaaf815e58bbe5c7549138eb0dd55ab",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_1_epoch12.joblib",
+    "sha256": "64643691de862d11b4d3025f5525cb93e3858b488ca27ecd0c468df452e889ef",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_2_epoch4.joblib",
+    "sha256": "6007a9ab2dde202855656bbe33e41437c50d4ce1ead12ee0d32c159d20b0fe61",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_2_epoch8.joblib",
+    "sha256": "7bbf44308b90479a165e2ada01188c756a95520531da8ac51cbcac66a0b1ab98",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_Transformer_2_epoch12.joblib",
+    "sha256": "7ef50df55856a29213a06cebee69577f068e8a5657c25e96a314616f9b70aa65",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_0_epoch4.joblib",
+    "sha256": "14e02a60b794631cc549d0465217bc76cd13c10d9e93e33d0cce87b46ae2daa0",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_0_epoch8.joblib",
+    "sha256": "87e984950b41a3f4e08107f1f20450025fdc13c7a33c65ed80a06d88c87b47e5",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_0_epoch12.joblib",
+    "sha256": "2b6be95d6e1c6408ab6f0836cd64509a4fcc2e1e78cd0c2fd4f1a003b07821d8",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_1_epoch4.joblib",
+    "sha256": "183a4a2aaf19903c4a8b935c3ee50044f9413d43ffe113572a657de44fc9000b",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_1_epoch8.joblib",
+    "sha256": "069908f558a5fc1ffa72f4ade343ab879f3b5e57eb1d6e13ae1edd52536faf21",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_1_epoch12.joblib",
+    "sha256": "cec5da5e7b7b6a9bdab92883de9bf33a1e794a0449b85f5d8efbbcdf00d8933b",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_2_epoch4.joblib",
+    "sha256": "62989f52f48ab0de66fbb4daf05814a2080e82d6d6dcf9e6cfc7aca41f75b838",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_2_epoch8.joblib",
+    "sha256": "b3475173a74071120d9d36422ecded797b649934ac94f3c811b775a497c074ee",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold4_TCN_2_epoch12.joblib",
+    "sha256": "ca98ed49974362cdd8606b09baafcb0df721bb566a4d0b556e7d00efe84d0a65",
+    "fold": 4,
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "evaluation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_0_epoch4.joblib",
+    "sha256": "c9ba2be8aa3ad87e48ec3ec7fe677351f70667d9a4f28fc9e80d188e40aa23d7",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_0_epoch8.joblib",
+    "sha256": "1971be59b3281e2026513cde36c773e6061c45a4628141aea1d428b429ffbf3b",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_0_epoch12.joblib",
+    "sha256": "47eab1078a200efb4f9c601040334bfa76df3da8aa002bcc61b5cfae3e21f1bc",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_1_epoch4.joblib",
+    "sha256": "5a5dc970b1b55f604e38b41067fd34f3188beda1eb8a1314a078e570595005c5",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_1_epoch8.joblib",
+    "sha256": "747c0692a845edd1cea0aea81987c004692e2d933b7051a92cfc78bce9746db9",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_1_epoch12.joblib",
+    "sha256": "fb867017e536cc0528dde1c5eb2cabb41dc7d536fa0c64a7e31ab9a95b993209",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_2_epoch4.joblib",
+    "sha256": "5bbc7ee5a2a0bcb22013a992023d024a7fa93a0308de9449077485942a750349",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_2_epoch8.joblib",
+    "sha256": "4f6be929cb889c33f9f6b225d4b14b4f8f38a2c501aa30129c5e3b6a64a9f91c",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_Transformer_2_epoch12.joblib",
+    "sha256": "328685071617762259dfd27f257e2be31fee9d28d05619d71869ad60396c3df4",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_0_epoch4.joblib",
+    "sha256": "fd50678a165fb3a4f1f9adc2fa4c86134d15b196f894ef80d46c83839764057e",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_0_epoch8.joblib",
+    "sha256": "105f4db48aa199c9fac953658a601c8786e84cdad80b9838010fccd791bd57af",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_0_epoch12.joblib",
+    "sha256": "6c3a327483370117f46fc18b7eed0cedff781b31d6c42745eb970e6945470f87",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_1_epoch4.joblib",
+    "sha256": "d7e889301d1cde1df083384c7ce5081d78683fef0cda8dc42e97a7b386888d3e",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_1_epoch8.joblib",
+    "sha256": "ce5ba499437cfcf62043a65da8773acac2783553fca8d9989a17cee5717a2104",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_1_epoch12.joblib",
+    "sha256": "c71dd210705fe4867f96d6fe7601661d01ffbf818ac87bdb9cec6a8764f666c6",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_2_epoch4.joblib",
+    "sha256": "b8a04f2da744503699f77e0590dba24ce1cc3a3c01069e68e392d623e6bf4d67",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_2_epoch8.joblib",
+    "sha256": "de24bb6d81bc2b55eff62b218f9ce506efb566430b270b589dedeb7a03e52034",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  },
+  {
+    "path": "internos/fold5_TCN_2_epoch12.joblib",
+    "sha256": "0d546160949258db2dbe95a75cac29e74fb58293e970124d8a8f64fa1b9a0d86",
+    "fold": 5,
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P33",
+      "P35",
+      "P4",
+      "P43",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P30",
+      "P36",
+      "P40",
+      "P46"
+    ]
+  }
+]

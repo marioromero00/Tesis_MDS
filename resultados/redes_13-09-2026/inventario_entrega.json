@@ -1,0 +1,1126 @@
+{
+  "documentacion/Transformer_TCN_13-09-2026.md": {
+    "sha256": "89dc350132202e0e4c1c605fad57559b0862f38403d2f88dc7438703afcea7b2",
+    "bytes": 6561
+  },
+  "requirements_temporales.txt": {
+    "sha256": "5cd3bbd0a4d8ab1e5e68dde64a6ec88938e1496f40d57fffc185d6edfd05fce5",
+    "bytes": 93
+  },
+  "resultados/redes_13-09-2026/catalogo_interno.json": {
+    "sha256": "b6cb5b456ac2ad0d670edff7cce99d0b686112562f9c9d9b906849a7041fdc51",
+    "bytes": 44043
+  },
+  "resultados/redes_13-09-2026/catalogo_modelos.json": {
+    "sha256": "652b7cd6b868070e3da683fed922dacd34f5057deb4f243f67112aaaa573af94",
+    "bytes": 14725
+  },
+  "resultados/redes_13-09-2026/comparacion.pdf": {
+    "sha256": "8e1b0570d295889a507f54782bb2af74192c2bb6afe8999c7426c86c8de3a166",
+    "bytes": 15324
+  },
+  "resultados/redes_13-09-2026/comparacion.png": {
+    "sha256": "1ba2a0c352a8bf33bc4a8021c0702babb454745216a93ec48a5c79ec92ee5430",
+    "bytes": 39519
+  },
+  "resultados/redes_13-09-2026/completo.json": {
+    "sha256": "54b183fdea9005579c2ac2ddecf87d9c308766179c09d6d8736e84a4e6f7f2f4",
+    "bytes": 166
+  },
+  "resultados/redes_13-09-2026/contrastes.csv": {
+    "sha256": "e97ee412d5822c9a2f89f74b65dd5668326ec642588acb29889dc6baeeec2014",
+    "bytes": 1144
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_all_outer.json": {
+    "sha256": "21ab0c5f062b2ca236fc2621f154fe3c501cec87fa088df423e34a5335139c61",
+    "bytes": 241
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_repeat_current_outer.json": {
+    "sha256": "44e8319ec5e1f777f078322048d2e755507850370f0f57f100719f91b3de47be",
+    "bytes": 243
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_TCN_0.json": {
+    "sha256": "e3b39a55a52d0907e643b1113ac28b6b213247aa1b844bcdb201d9c33935e600",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_TCN_1.json": {
+    "sha256": "eb56b53e5e9f7fba08e0e1e9fb29e9d96efc66d7b55d07ea9af80784814d875d",
+    "bytes": 725
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_TCN_2.json": {
+    "sha256": "c4f5b2f6c1c79f13b3f2ed3b5fc5fc11db95bf00fdcc8a0315656aee98501218",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_TCN_outer.json": {
+    "sha256": "bb59dbff080865f75e2d0cf2fa3d433b76a819fe743861a7031e73adf61a3361",
+    "bytes": 240
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_Transformer_0.json": {
+    "sha256": "4c4ff5b1bc2514178bc02aff5af7fdc9d90a4ec394671d1f785b494ed22272cc",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_Transformer_1.json": {
+    "sha256": "dc90a5fac553d21100ce300f89d87ed909a6ee144640de64050f2451a8a4f3bf",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_Transformer_2.json": {
+    "sha256": "bd3115900ea425316ee05ceff11b92c16e4d04f23475aa2ae1e498b3d4a3cbbb",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold1_Transformer_outer.json": {
+    "sha256": "21ab0c5f062b2ca236fc2621f154fe3c501cec87fa088df423e34a5335139c61",
+    "bytes": 241
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_all_outer.json": {
+    "sha256": "1fb5b8adf573bf40e72a59a18197397e2bbb46a30d38067ce407ea9143d2977e",
+    "bytes": 241
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_repeat_current_outer.json": {
+    "sha256": "e0b586860d19323c684a528aefa3e3d3a1f60e5e10abead679006a9f95a183ec",
+    "bytes": 243
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_TCN_0.json": {
+    "sha256": "be176bec4d4ce09d23e6c2e6203b948100dd38b2736c03ed5354c1098bf13082",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_TCN_1.json": {
+    "sha256": "f95f9836b1fd758dd08bff576b1b23c829d117412f1a9f1a25cdc526859ddbda",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_TCN_2.json": {
+    "sha256": "a3bf2dc4730fd5330087cdc4627dc7608d32d357dcfb6ac854057dd42adb1a09",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_TCN_outer.json": {
+    "sha256": "1fb5b8adf573bf40e72a59a18197397e2bbb46a30d38067ce407ea9143d2977e",
+    "bytes": 241
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_Transformer_0.json": {
+    "sha256": "53e69f540c11546b9a46c61856c9c817c867bc09095fe5baf6bd7f3699cb1880",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_Transformer_1.json": {
+    "sha256": "97d39928a502ee1beac56b727e4354ac56d75170471361dbe178ccae9338690a",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_Transformer_2.json": {
+    "sha256": "467b61401eb5764b20bd6de40244e14bd915f19b04ef9d27c1fbf9a014385042",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold2_Transformer_outer.json": {
+    "sha256": "6d291ef6fde78bdab3e5db9e38850923251dc956088d0cf24ccba8278e334afc",
+    "bytes": 243
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_all_outer.json": {
+    "sha256": "49fbbbc256cc37c0dcf81a2c187112a145e66f0fe1481e24d580b5b8d2fd7374",
+    "bytes": 243
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_repeat_current_outer.json": {
+    "sha256": "f4dd2450fa0b06bdb2bf61210b6589cf9e12e8656a5384e2017f4ebcf44dcc0c",
+    "bytes": 239
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_TCN_0.json": {
+    "sha256": "8af7a2e011dd300f05a59af966a9f19fda8f163d891131e66bd8325d383008f4",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_TCN_1.json": {
+    "sha256": "0ef5988ac8c43453fa27d40b67af98c1a6c9f6d9e6253cf9dcbeebdf3cee9046",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_TCN_2.json": {
+    "sha256": "099fcc8db03410e4bc9c5e8b46739133459419d61c1585886634de59c3e10c55",
+    "bytes": 718
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_TCN_outer.json": {
+    "sha256": "f7bae60a654a7dacfe9f20f008032ef1279f9bdad45b5cc846a2b8ac81322bf0",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_Transformer_0.json": {
+    "sha256": "0c47e0add7e11fc5091a2f1e2af2f39370e8688ff9db598fae92df8afc8dde09",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_Transformer_1.json": {
+    "sha256": "6ee5cd2b61ead66747d9ceefa4bda842e9f43badeba0fd4ec7edeea92a7992a4",
+    "bytes": 726
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_Transformer_2.json": {
+    "sha256": "001e38af832265a63cbde88459ccc28fce87270c851100ee23a8e3eef7117756",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold3_Transformer_outer.json": {
+    "sha256": "49fbbbc256cc37c0dcf81a2c187112a145e66f0fe1481e24d580b5b8d2fd7374",
+    "bytes": 243
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_all_outer.json": {
+    "sha256": "43cfb0dfd48c39b8c3f1f921f38f6ff0b6172601345a87c6f1c42c2d25202faa",
+    "bytes": 725
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_repeat_current_outer.json": {
+    "sha256": "1daa1bf6017008cff13efbbd44954c2cffb5e9cd605613999ca6d3d2b547cce3",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_TCN_0.json": {
+    "sha256": "95140f59d98d3eb182c62b90cc7509763d0f6762ded6c88cab0e2b1dbe4fa7d5",
+    "bytes": 725
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_TCN_1.json": {
+    "sha256": "95f024c400b0fa5d25d128c67de3c61c3d3a7726ff30120fa1b7f9aa1f3bd92b",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_TCN_2.json": {
+    "sha256": "4faa3318a9bbfbea9338a8c40d6520245dcd6cf99906250bb12ad94c27e35a37",
+    "bytes": 725
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_TCN_outer.json": {
+    "sha256": "2004b39fbdb4bad843fa254c80dd189ad08c91bd826d6bcdd72b48ab78e4e5ee",
+    "bytes": 478
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_Transformer_0.json": {
+    "sha256": "79e239c7de6b3977cb8b5f8801a3326491170dbc537c6728062b8e4b325102d4",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_Transformer_1.json": {
+    "sha256": "cb8579640925a3074b5e23cc53937bdf1a4f8911b31b41389837b69d2aaf73eb",
+    "bytes": 726
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_Transformer_2.json": {
+    "sha256": "6c3ea24246b161744577ad19506452116dcce9c9fc36d525daebf8b263ad8768",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold4_Transformer_outer.json": {
+    "sha256": "43cfb0dfd48c39b8c3f1f921f38f6ff0b6172601345a87c6f1c42c2d25202faa",
+    "bytes": 725
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_all_outer.json": {
+    "sha256": "9721ff8d2787dad32db946a36e0e6d1edf5d23e2fedf53db106622c5a9e3d29d",
+    "bytes": 481
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_repeat_current_outer.json": {
+    "sha256": "683aec66aba003e2487c5d7767e09dbf73a5faa5781632f40f6380de9a1b6e77",
+    "bytes": 482
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_TCN_0.json": {
+    "sha256": "444a7ad5c89a7a84de7169a2d1ff77c561e9a1127a5d681dd39684a7a42c87e7",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_TCN_1.json": {
+    "sha256": "39f5521d770df1473cdbe4b5a179c45246cad78ce1265f09f9f008d038f677ee",
+    "bytes": 722
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_TCN_2.json": {
+    "sha256": "4dbe2381b38eaabd373c2fb473a673f1c677639c758eb1734d1dcabdf6f29d5c",
+    "bytes": 724
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_TCN_outer.json": {
+    "sha256": "9721ff8d2787dad32db946a36e0e6d1edf5d23e2fedf53db106622c5a9e3d29d",
+    "bytes": 481
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_Transformer_0.json": {
+    "sha256": "b66e87c4bbe273cb10d040ae21987b11a41378e138067945133efec5a74cce9c",
+    "bytes": 723
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_Transformer_1.json": {
+    "sha256": "dfdbba02ab5558b7a8a219b6f0888fb2461a9924c506cf6f47ba2408ef39b78e",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_Transformer_2.json": {
+    "sha256": "aa2a66122cb02b3e873ae9656f94f4bdbffd8b1eeaa768e72d0fdc57a5881786",
+    "bytes": 721
+  },
+  "resultados/redes_13-09-2026/curvas/fold5_Transformer_outer.json": {
+    "sha256": "da80fec9bb91d09df693725971c40bca60c64a36cd40a3b00e50c24045a6ecdc",
+    "bytes": 482
+  },
+  "resultados/redes_13-09-2026/diagnostico_clases.csv": {
+    "sha256": "002690ecf2d10b8a2ec49d02b68e8515233066220f64da921fe3501ca26bb478",
+    "bytes": 662
+  },
+  "resultados/redes_13-09-2026/intentos.csv": {
+    "sha256": "9be7115cd762aeb1e083a73b9d8163e5c531d72b1bd6f767aa80d566e277081b",
+    "bytes": 12191
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_0_epoch12.joblib": {
+    "sha256": "0830da30259f08426070f5fa3e4c11e4945a6aa3915c74fe9aeaf4430493f95a",
+    "bytes": 30679
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_0_epoch4.joblib": {
+    "sha256": "67cfc0efb55d2f16e232ce0860cf01a2cc3f6c69b7b1e154a66548581bb06d31",
+    "bytes": 30597
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_0_epoch8.joblib": {
+    "sha256": "025fa13c04111d8de23e1664500d302b9086139233e7b89303c7c1bde248a948",
+    "bytes": 30644
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_1_epoch12.joblib": {
+    "sha256": "50ade9b2fdb8f040d8b4eb82667e6e42f3a6f54141dff418b4bc575959470a87",
+    "bytes": 30663
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_1_epoch4.joblib": {
+    "sha256": "4b08ad45b8964a6985256ec71e5c9b2205ced0af7153cb5a48a62b7e5cebf80b",
+    "bytes": 30586
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_1_epoch8.joblib": {
+    "sha256": "b935028f80519d046ff4108012dbac5572232a0c24056886685acfd78182be65",
+    "bytes": 30629
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_2_epoch12.joblib": {
+    "sha256": "cd8c42a56cd7ea54f260ad2b23461672cd951e8285c8984ba35ba461ab9551a2",
+    "bytes": 97779
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_2_epoch4.joblib": {
+    "sha256": "dcce1369a7834a0339a6131c6d0cf7d653257e39ac329cbe847dce84f735f2cf",
+    "bytes": 97333
+  },
+  "resultados/redes_13-09-2026/internos/fold1_TCN_2_epoch8.joblib": {
+    "sha256": "0a753f673e497d9650cbfab0807f87473c42ad885b6d5fb68d9ed2271e70503b",
+    "bytes": 97602
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_0_epoch12.joblib": {
+    "sha256": "432ed683dd259a8b8fe56d2d835d2a6d0f584ef488c9e84da4fc71be9eec8093",
+    "bytes": 14118
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_0_epoch4.joblib": {
+    "sha256": "857e79d58f7e2bc0dbcf7d27282d238f18604301f9db120e5d10e8777d9bf970",
+    "bytes": 14119
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_0_epoch8.joblib": {
+    "sha256": "4ffbd0ebe043a28f4d3c16355686f7346027290d88d1a92e1cb82d9c33cbb4be",
+    "bytes": 14124
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_1_epoch12.joblib": {
+    "sha256": "74280387c56c31e636b4e9d5192fa36c61bc973358edf87c1995f6867e7cd316",
+    "bytes": 15594
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_1_epoch4.joblib": {
+    "sha256": "e568d1e8e5abbe8456f4c3cbea538f3459a09c4e44de2e49d914b20b5c99113a",
+    "bytes": 15606
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_1_epoch8.joblib": {
+    "sha256": "f480a3709058f22cda1636877f872adcc5cd5b0d44141f72392c9afb0c55bb1b",
+    "bytes": 15612
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_2_epoch12.joblib": {
+    "sha256": "b2f2cda072974e3d749c31ed00ca0ceeb19db1b1f87a154747c0e9d3cf95cfd8",
+    "bytes": 43088
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_2_epoch4.joblib": {
+    "sha256": "24ccc790484e1b93e10a7136ddc2aa8154df866ec5190116a8c54ae907b7578c",
+    "bytes": 43114
+  },
+  "resultados/redes_13-09-2026/internos/fold1_Transformer_2_epoch8.joblib": {
+    "sha256": "51ce27d6715cb588b540a638b199151c165bbe557af12497247e60c4d0d6ae71",
+    "bytes": 43081
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_0_epoch12.joblib": {
+    "sha256": "29adccddebb3f399aab9b5a0545dfc59d713830cd70248117e76bcdea15b88cb",
+    "bytes": 32655
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_0_epoch4.joblib": {
+    "sha256": "0a06108dec0fe464ce1ad204d33792fd151c395a7e3ad6a214937ccf00964582",
+    "bytes": 32580
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_0_epoch8.joblib": {
+    "sha256": "1296cd721bcaa3e10b8b0a8b1a0c557675d649b5ea462381c81c11844ddf9201",
+    "bytes": 32638
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_1_epoch12.joblib": {
+    "sha256": "789ca315797ad0228cd54e939fb56d71be9e8c5b59fa9db4e359b1e93a1a50cb",
+    "bytes": 32630
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_1_epoch4.joblib": {
+    "sha256": "237802c8fb00b227e148c343a23b086dc0b02f0ce99cf33165f9c1c6db4de137",
+    "bytes": 32566
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_1_epoch8.joblib": {
+    "sha256": "0435801209023bee01f34df7c5e0ef22e0415b92fc0b1819efc10a2d3219e701",
+    "bytes": 32594
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_2_epoch12.joblib": {
+    "sha256": "6d908834d92967c0655dc88bd79abb8ad1332f1552c023836d844f2a64fc80ae",
+    "bytes": 101822
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_2_epoch4.joblib": {
+    "sha256": "583cffd1b1ddeadc517c105073ab043977d543ffc27d8fc9c821a1cc448d42d3",
+    "bytes": 101366
+  },
+  "resultados/redes_13-09-2026/internos/fold2_TCN_2_epoch8.joblib": {
+    "sha256": "6b8c4eaf3bdfb7e14b7f88475e7a03793ef801f353adbe1002a68ce6c8a393bd",
+    "bytes": 101636
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_0_epoch12.joblib": {
+    "sha256": "92192e3a8bffcce9e632b3b71d4e8fd21b352a3eaeacb23ee913fce6b687b542",
+    "bytes": 14694
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_0_epoch4.joblib": {
+    "sha256": "f82747c6199cf1d5ede07c4cf2e940eea6ba27b0ebc18014ee3cb3eece1fccfe",
+    "bytes": 14726
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_0_epoch8.joblib": {
+    "sha256": "d827f764ff12b4aa242d8af92a07d4e8e2152d7f5a222f2339c817f00418474f",
+    "bytes": 14703
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_1_epoch12.joblib": {
+    "sha256": "b00713b79b24a72b0858ca0b9d10c2f366bf61de2b198a6c32333b493376757f",
+    "bytes": 16179
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_1_epoch4.joblib": {
+    "sha256": "bef156542ed83a358dec948e4527b3215eb6d737df3508cde97f3a7565e09db2",
+    "bytes": 16192
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_1_epoch8.joblib": {
+    "sha256": "ca257bae436376492679caacdd159c94f29499cb5fb8dbb5d286d07c7bcc858f",
+    "bytes": 16175
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_2_epoch12.joblib": {
+    "sha256": "325ab86e21b5fa076097d064792ad649b2a0d6acb0e54094a513f8b6fdd047a6",
+    "bytes": 44160
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_2_epoch4.joblib": {
+    "sha256": "d721f51adc391bc636043c4a6745652abd0e5ba9fe6b106647ffbcd0d9a5800a",
+    "bytes": 44179
+  },
+  "resultados/redes_13-09-2026/internos/fold2_Transformer_2_epoch8.joblib": {
+    "sha256": "5c0d875f3681bfeb06498b9fd1c47211213c23b31bb6d944d969dd5989b04a0d",
+    "bytes": 44126
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_0_epoch12.joblib": {
+    "sha256": "b2127d080a70204ab421298441e578383949af37c1684dd7a31741043b2bbda0",
+    "bytes": 30672
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_0_epoch4.joblib": {
+    "sha256": "7090601032e414f3c36d3272f08d4eba73fb19e507987784a9031b19bcb3b6dd",
+    "bytes": 30617
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_0_epoch8.joblib": {
+    "sha256": "225efda69f590fdfe1b6615bdb5d3f22405562ac8b8fd39725b9204caecd5ab3",
+    "bytes": 30647
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_1_epoch12.joblib": {
+    "sha256": "b385227bf57771dfc9381a2e4c5a0cd4541ddcb124adc49016f432db633e8473",
+    "bytes": 30659
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_1_epoch4.joblib": {
+    "sha256": "9128be7a8c331449b1b7cb54170ccb614e8226b9f1ab02024250bf3664207337",
+    "bytes": 30638
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_1_epoch8.joblib": {
+    "sha256": "332d39334bc23277e7caa625762a86d1026f352612092066dbcb6446464e881e",
+    "bytes": 30640
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_2_epoch12.joblib": {
+    "sha256": "7185db288de99b943e8ccc32f4bf1808b91e1545ff7762a2f320d6d3ab78a835",
+    "bytes": 97739
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_2_epoch4.joblib": {
+    "sha256": "25204346c16a0c82f1c4fc5ec8abe50ebfbfe528082b2c9333a2fca6c76ef1d9",
+    "bytes": 97292
+  },
+  "resultados/redes_13-09-2026/internos/fold3_TCN_2_epoch8.joblib": {
+    "sha256": "c45db72dd737d38fce4b5a0f73f96de99e5e3f3d9b8103a3cfd0e582a627fb55",
+    "bytes": 97466
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_0_epoch12.joblib": {
+    "sha256": "3fc18e842037cd0733d8cd43ae53a2b933399d258021650db5def2918b2e1045",
+    "bytes": 14129
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_0_epoch4.joblib": {
+    "sha256": "e9cf1d2c59f6fc2fe62ad6aca59c5889151ac3e4068889e2b620d7851edf9ec4",
+    "bytes": 14138
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_0_epoch8.joblib": {
+    "sha256": "8da53c9a206bfd983b8da826834caa93ee96cec35fc8407f5c315eb5305e55e9",
+    "bytes": 14122
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_1_epoch12.joblib": {
+    "sha256": "d2bba91d097e78c3e12639a6e06da79cf1bcc82190f86ced5b677bee15bb94b6",
+    "bytes": 15607
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_1_epoch4.joblib": {
+    "sha256": "ae29181fb53c7d4590514facd44a6d12f616921bdc7c4f7e164d8a90b7c49c7b",
+    "bytes": 15627
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_1_epoch8.joblib": {
+    "sha256": "f8618c79c9c9f0c90841d8962cde16df402c4bb89d694489eaeff1fdcd6853ac",
+    "bytes": 15618
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_2_epoch12.joblib": {
+    "sha256": "022fe35552871a73a82d9082eb275613beb5b7d90a091d8b5f2927bad31d9da5",
+    "bytes": 43071
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_2_epoch4.joblib": {
+    "sha256": "12ffa1ed95486b42c766a4d18946e951f733c772b70dc164edc56bfba2763d22",
+    "bytes": 43110
+  },
+  "resultados/redes_13-09-2026/internos/fold3_Transformer_2_epoch8.joblib": {
+    "sha256": "ed1ff7503ef45d8663130f8d89afcbc113256102fc248d0e5c83ca32bcbbec41",
+    "bytes": 43115
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_0_epoch12.joblib": {
+    "sha256": "2b6be95d6e1c6408ab6f0836cd64509a4fcc2e1e78cd0c2fd4f1a003b07821d8",
+    "bytes": 32692
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_0_epoch4.joblib": {
+    "sha256": "14e02a60b794631cc549d0465217bc76cd13c10d9e93e33d0cce87b46ae2daa0",
+    "bytes": 32583
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_0_epoch8.joblib": {
+    "sha256": "87e984950b41a3f4e08107f1f20450025fdc13c7a33c65ed80a06d88c87b47e5",
+    "bytes": 32641
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_1_epoch12.joblib": {
+    "sha256": "cec5da5e7b7b6a9bdab92883de9bf33a1e794a0449b85f5d8efbbcdf00d8933b",
+    "bytes": 32595
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_1_epoch4.joblib": {
+    "sha256": "183a4a2aaf19903c4a8b935c3ee50044f9413d43ffe113572a657de44fc9000b",
+    "bytes": 32581
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_1_epoch8.joblib": {
+    "sha256": "069908f558a5fc1ffa72f4ade343ab879f3b5e57eb1d6e13ae1edd52536faf21",
+    "bytes": 32626
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_2_epoch12.joblib": {
+    "sha256": "ca98ed49974362cdd8606b09baafcb0df721bb566a4d0b556e7d00efe84d0a65",
+    "bytes": 101751
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_2_epoch4.joblib": {
+    "sha256": "62989f52f48ab0de66fbb4daf05814a2080e82d6d6dcf9e6cfc7aca41f75b838",
+    "bytes": 101325
+  },
+  "resultados/redes_13-09-2026/internos/fold4_TCN_2_epoch8.joblib": {
+    "sha256": "b3475173a74071120d9d36422ecded797b649934ac94f3c811b775a497c074ee",
+    "bytes": 101572
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_0_epoch12.joblib": {
+    "sha256": "67791683e4fc87de470cf6b501885b55f55de8c448ba61ab56ca15b979426305",
+    "bytes": 14723
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_0_epoch4.joblib": {
+    "sha256": "29d6dfcd335b77499729aa0985fa32be555381a1f7d00ad818e51150c64c3f47",
+    "bytes": 14708
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_0_epoch8.joblib": {
+    "sha256": "eeec4148d71f106c73e0bab0a0662d0b7f9008f53d51399708e83887fd4a7057",
+    "bytes": 14704
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_1_epoch12.joblib": {
+    "sha256": "64643691de862d11b4d3025f5525cb93e3858b488ca27ecd0c468df452e889ef",
+    "bytes": 16190
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_1_epoch4.joblib": {
+    "sha256": "1d75b554add932ed9342ed978af5fe8c61b53f274de8be649e5ca93dce7ab70b",
+    "bytes": 16209
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_1_epoch8.joblib": {
+    "sha256": "f3d7aa23b437474ce7ba10c965f8b15d1aaaf815e58bbe5c7549138eb0dd55ab",
+    "bytes": 16201
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_2_epoch12.joblib": {
+    "sha256": "7ef50df55856a29213a06cebee69577f068e8a5657c25e96a314616f9b70aa65",
+    "bytes": 44160
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_2_epoch4.joblib": {
+    "sha256": "6007a9ab2dde202855656bbe33e41437c50d4ce1ead12ee0d32c159d20b0fe61",
+    "bytes": 44187
+  },
+  "resultados/redes_13-09-2026/internos/fold4_Transformer_2_epoch8.joblib": {
+    "sha256": "7bbf44308b90479a165e2ada01188c756a95520531da8ac51cbcac66a0b1ab98",
+    "bytes": 44182
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_0_epoch12.joblib": {
+    "sha256": "6c3a327483370117f46fc18b7eed0cedff781b31d6c42745eb970e6945470f87",
+    "bytes": 32681
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_0_epoch4.joblib": {
+    "sha256": "fd50678a165fb3a4f1f9adc2fa4c86134d15b196f894ef80d46c83839764057e",
+    "bytes": 32590
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_0_epoch8.joblib": {
+    "sha256": "105f4db48aa199c9fac953658a601c8786e84cdad80b9838010fccd791bd57af",
+    "bytes": 32591
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_1_epoch12.joblib": {
+    "sha256": "c71dd210705fe4867f96d6fe7601661d01ffbf818ac87bdb9cec6a8764f666c6",
+    "bytes": 32594
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_1_epoch4.joblib": {
+    "sha256": "d7e889301d1cde1df083384c7ce5081d78683fef0cda8dc42e97a7b386888d3e",
+    "bytes": 32555
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_1_epoch8.joblib": {
+    "sha256": "ce5ba499437cfcf62043a65da8773acac2783553fca8d9989a17cee5717a2104",
+    "bytes": 32602
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_2_epoch12.joblib": {
+    "sha256": "0d546160949258db2dbe95a75cac29e74fb58293e970124d8a8f64fa1b9a0d86",
+    "bytes": 101731
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_2_epoch4.joblib": {
+    "sha256": "b8a04f2da744503699f77e0590dba24ce1cc3a3c01069e68e392d623e6bf4d67",
+    "bytes": 101318
+  },
+  "resultados/redes_13-09-2026/internos/fold5_TCN_2_epoch8.joblib": {
+    "sha256": "de24bb6d81bc2b55eff62b218f9ce506efb566430b270b589dedeb7a03e52034",
+    "bytes": 101539
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_0_epoch12.joblib": {
+    "sha256": "47eab1078a200efb4f9c601040334bfa76df3da8aa002bcc61b5cfae3e21f1bc",
+    "bytes": 14720
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_0_epoch4.joblib": {
+    "sha256": "c9ba2be8aa3ad87e48ec3ec7fe677351f70667d9a4f28fc9e80d188e40aa23d7",
+    "bytes": 14729
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_0_epoch8.joblib": {
+    "sha256": "1971be59b3281e2026513cde36c773e6061c45a4628141aea1d428b429ffbf3b",
+    "bytes": 14702
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_1_epoch12.joblib": {
+    "sha256": "fb867017e536cc0528dde1c5eb2cabb41dc7d536fa0c64a7e31ab9a95b993209",
+    "bytes": 16196
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_1_epoch4.joblib": {
+    "sha256": "5a5dc970b1b55f604e38b41067fd34f3188beda1eb8a1314a078e570595005c5",
+    "bytes": 16189
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_1_epoch8.joblib": {
+    "sha256": "747c0692a845edd1cea0aea81987c004692e2d933b7051a92cfc78bce9746db9",
+    "bytes": 16197
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_2_epoch12.joblib": {
+    "sha256": "328685071617762259dfd27f257e2be31fee9d28d05619d71869ad60396c3df4",
+    "bytes": 44135
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_2_epoch4.joblib": {
+    "sha256": "5bbc7ee5a2a0bcb22013a992023d024a7fa93a0308de9449077485942a750349",
+    "bytes": 44194
+  },
+  "resultados/redes_13-09-2026/internos/fold5_Transformer_2_epoch8.joblib": {
+    "sha256": "4f6be929cb889c33f9f6b225d4b14b4f8f38a2c501aa30129c5e3b6a64a9f91c",
+    "bytes": 44145
+  },
+  "resultados/redes_13-09-2026/metricas_folds.csv": {
+    "sha256": "17297c334417197bea5df4cab381a409b83ec789a8e1b06230594ba4d3f057fd",
+    "bytes": 1612
+  },
+  "resultados/redes_13-09-2026/metricas_participantes.csv": {
+    "sha256": "45f078fe524b0b7f98a71f3a8ca0e9276a7e5724b7d2eca752530f2fc2de3e15",
+    "bytes": 3516
+  },
+  "resultados/redes_13-09-2026/modelos/fold1_all.joblib": {
+    "sha256": "f529004941e25c2b96794e4c72e380a66166d19966438ec61ea42efa61a4fd25",
+    "bytes": 14161
+  },
+  "resultados/redes_13-09-2026/modelos/fold1_repeat_current.joblib": {
+    "sha256": "17911623801c1df735f7f4f780ae73852a3837104eacc615855bc40f7dd1b129",
+    "bytes": 14160
+  },
+  "resultados/redes_13-09-2026/modelos/fold1_TCN.joblib": {
+    "sha256": "201c26d3f1ef7b17a2c9f62e4060b0424a9c3b9846ff965a07fc0beb635c2e02",
+    "bytes": 30609
+  },
+  "resultados/redes_13-09-2026/modelos/fold1_Transformer.joblib": {
+    "sha256": "5d080b16c0ca9ed50000e95ad61da3afbe61f86a977912493c327717a4f08e71",
+    "bytes": 14163
+  },
+  "resultados/redes_13-09-2026/modelos/fold2_all.joblib": {
+    "sha256": "526fdb02af3996a4f5b90687e6cd7578f8050c4c0ae95fc19e02425d50dadd6c",
+    "bytes": 32568
+  },
+  "resultados/redes_13-09-2026/modelos/fold2_repeat_current.joblib": {
+    "sha256": "c1a22a5c4ac58a5c91364ccd094823dd28f2fa786a1e28303b501e6371504dd5",
+    "bytes": 32567
+  },
+  "resultados/redes_13-09-2026/modelos/fold2_TCN.joblib": {
+    "sha256": "d57df2d26a44095069a820515ae0cf3df6416baadb6fb35a836bb1594d6aedf1",
+    "bytes": 32577
+  },
+  "resultados/redes_13-09-2026/modelos/fold2_Transformer.joblib": {
+    "sha256": "3179ecd9fe601c1f970dd66ac503664b6a5b844c2662136696f9fb9cd3c97b58",
+    "bytes": 44151
+  },
+  "resultados/redes_13-09-2026/modelos/fold3_all.joblib": {
+    "sha256": "783ca7116b782458245f5221df2bb5b2adcb67c09bd3c1600386f9bc16766d10",
+    "bytes": 14733
+  },
+  "resultados/redes_13-09-2026/modelos/fold3_repeat_current.joblib": {
+    "sha256": "71bb80872378240adb3102d4c743c4050b9375c1a09e8ac4740ed5063c635f24",
+    "bytes": 14724
+  },
+  "resultados/redes_13-09-2026/modelos/fold3_TCN.joblib": {
+    "sha256": "59490aa9ca8a08a0d5b197e25400f1921da76160589e0a6bc4bdcf4ddab139b2",
+    "bytes": 32670
+  },
+  "resultados/redes_13-09-2026/modelos/fold3_Transformer.joblib": {
+    "sha256": "40a4970f46c329681938c66ad74f395d59f976fc8cb1721f536c4a16eb6ccb3f",
+    "bytes": 14714
+  },
+  "resultados/redes_13-09-2026/modelos/fold4_all.joblib": {
+    "sha256": "b417fdc5c3f604eb4457601b7b36ad1f66154a68b6992616838e7d90fc395b1b",
+    "bytes": 44149
+  },
+  "resultados/redes_13-09-2026/modelos/fold4_repeat_current.joblib": {
+    "sha256": "9fd2e8a332a481dfe99aa41acb2b9eb7d66bb0ab3eb203b6dd9218f509113199",
+    "bytes": 44111
+  },
+  "resultados/redes_13-09-2026/modelos/fold4_TCN.joblib": {
+    "sha256": "fb00ae4b40501e5adf7268f130bf69d80d59ea53b70b84e18d91882675fa9106",
+    "bytes": 101653
+  },
+  "resultados/redes_13-09-2026/modelos/fold4_Transformer.joblib": {
+    "sha256": "2e749ccb0e8a9e0fc6c9ad0161105f10e851a4ce576f727fc5b652c2c41d0b94",
+    "bytes": 44124
+  },
+  "resultados/redes_13-09-2026/modelos/fold5_all.joblib": {
+    "sha256": "0728a7c630c1fd8513fc200623ae81366905ecc0bd34968a96929a24cae7be47",
+    "bytes": 32566
+  },
+  "resultados/redes_13-09-2026/modelos/fold5_repeat_current.joblib": {
+    "sha256": "64cb7b34e8f6f647853651eea7645c19b0b1e0d27a8df932cb22ba073923eec9",
+    "bytes": 32595
+  },
+  "resultados/redes_13-09-2026/modelos/fold5_TCN.joblib": {
+    "sha256": "9e1bbe7c4b1cc099b701c10a9481d30f068411ad308c08d2c06f9ed9e6fb64d5",
+    "bytes": 32557
+  },
+  "resultados/redes_13-09-2026/modelos/fold5_Transformer.joblib": {
+    "sha256": "a36dbb20afedc2f01b47f3aaae14dc973587c78e7600a657fb10d877fea2ec43",
+    "bytes": 14706
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_0_epoch12.npz": {
+    "sha256": "952ab161344b83b7622da8caf6ec538f2b2fed139acffce6783c0f81189b71e4",
+    "bytes": 25352
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_0_epoch4.npz": {
+    "sha256": "139948de183cc72aa847124fe9f01d130aa848bad16ee8b8ef08502ef9f8e70a",
+    "bytes": 24797
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_0_epoch8.npz": {
+    "sha256": "1baa5fdd6bd6fc5f56b630fe99e92cb02291a15fdeda2f3ea1239e2570c7b42d",
+    "bytes": 25062
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_1_epoch12.npz": {
+    "sha256": "caf2ec3c46049f02c48988ef723891a9e35c8e921b650734e1cf4b081edfeb96",
+    "bytes": 24991
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_1_epoch4.npz": {
+    "sha256": "0a02188765e108d638296b6aec46e0cb216472171bd5d1901802782a4e6b54ce",
+    "bytes": 24702
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_1_epoch8.npz": {
+    "sha256": "47be0ee05423b431dea35406baedb425753db708999e0acc644e8ce17b6c5e9e",
+    "bytes": 24825
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_2_epoch12.npz": {
+    "sha256": "06429fcfe374762b19edaa6549d7172a16ad3fd6434318a7a251f0ca384f4437",
+    "bytes": 25544
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_2_epoch4.npz": {
+    "sha256": "c5919f6c7cf1874d9240064fe650c7bcbf431f86e01acdefea568a54c5f19fde",
+    "bytes": 24902
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_TCN_2_epoch8.npz": {
+    "sha256": "6d90b7ba8cc41be4372048884564fdbd7c9ccf32c0fd5b563ab6d37a9048bbd8",
+    "bytes": 25382
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_0_epoch12.npz": {
+    "sha256": "1ad780bbe11e82b4793e65a39f56ee68aa7c9dd65f682dfca21cf2e095a5ae30",
+    "bytes": 25074
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_0_epoch4.npz": {
+    "sha256": "8128a65ae16b0a3b95d18442d7c2d3133fb5d352dcdbf4d4ccae45850fd859ae",
+    "bytes": 24880
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_0_epoch8.npz": {
+    "sha256": "7b8b75b546518c4fef6f923c0b2962730ab3057ad9d6b7657df0f96548f51201",
+    "bytes": 24922
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_1_epoch12.npz": {
+    "sha256": "86f641e88cf5c59462b22266f65a4cc6fdb7dbf48ba4e71bd16fa942fd0a64bb",
+    "bytes": 24918
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_1_epoch4.npz": {
+    "sha256": "19c2ca200d278d87fc0855c16b7099117fcea58318dd5fd11604102be7cb5660",
+    "bytes": 24832
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_1_epoch8.npz": {
+    "sha256": "3145f7d414a21d0308d5882a21f92077536bdaaf48d2a550ef742e5e94fcddaa",
+    "bytes": 24861
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_2_epoch12.npz": {
+    "sha256": "4c3361a6901674c477a6ddb6416078e4185a58b806da5807370a6086e361754e",
+    "bytes": 25220
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_2_epoch4.npz": {
+    "sha256": "ecaa37539454942d4150c6b87ef05f253827be122540e3026f90fdd6c39ff5bc",
+    "bytes": 24951
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold1_Transformer_2_epoch8.npz": {
+    "sha256": "6bba76e180c0e8ff345df9ea1763724ba9834c2d2067ef546c8a8783f6f959a6",
+    "bytes": 25029
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_0_epoch12.npz": {
+    "sha256": "edc613abd890bb404c5afa75f55ed5c83a80c1bdcdec1af03916edcee4b5c13d",
+    "bytes": 27150
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_0_epoch4.npz": {
+    "sha256": "d46e07ac27186c788bd0435c775dc6d348a9dd5ad5e515a4fc61b7d5b4f7d45d",
+    "bytes": 26543
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_0_epoch8.npz": {
+    "sha256": "ce4126b7e4f4d034a2fb64bfc1813663e986f8ecac5a5b185d065ff3d6ca84b2",
+    "bytes": 27009
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_1_epoch12.npz": {
+    "sha256": "d17625dfb63869148b886b40f0fb0cf4ddc269efd32f5baa2899d1ff0277039b",
+    "bytes": 26819
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_1_epoch4.npz": {
+    "sha256": "ba95b75fd3e0f968fd74b58a6f1cf6a94cdec00503573a6f30077b91ca610d6e",
+    "bytes": 26284
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_1_epoch8.npz": {
+    "sha256": "177942089c023979246f0602f598d3d97fbd99501b3edebe1f95be9ac6e6a8c5",
+    "bytes": 26506
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_2_epoch12.npz": {
+    "sha256": "34cce65e085604c1faa5059cbb62ed0c8dcf4c4766d5a470b294775cd6b73959",
+    "bytes": 27114
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_2_epoch4.npz": {
+    "sha256": "ea8cde2428b29b9cd3ec9c9c10a54b37bea2ac0683bf7676b90b94df3e577baf",
+    "bytes": 26599
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_TCN_2_epoch8.npz": {
+    "sha256": "56a87fbcbbe3ed3564f40b496984bf500ac754c79c337cea4b455ac0db5dc7fa",
+    "bytes": 26963
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_0_epoch12.npz": {
+    "sha256": "7e83180de78e7299970888f3b8a62972c512bccb151400ce7d6b079ca2bc22b0",
+    "bytes": 26936
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_0_epoch4.npz": {
+    "sha256": "30875b0c1796ad26f8533f92da3de7ac086d6a1ae08942db9513749c61a237b0",
+    "bytes": 26597
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_0_epoch8.npz": {
+    "sha256": "c805a84ed7f4870001b20de0b49d0db8bc589339476f0ba054e93f9aab3347dc",
+    "bytes": 26763
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_1_epoch12.npz": {
+    "sha256": "b8bd1ef3473fff30fb0ef120c9426149db994733228dde10abb85840adabd9de",
+    "bytes": 26666
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_1_epoch4.npz": {
+    "sha256": "cac3eeddbcba663e6d7686abcb4faab81e8cb6115b7a5888d922463ec8603c3b",
+    "bytes": 26507
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_1_epoch8.npz": {
+    "sha256": "c991d02ef1b604909a3b581011d9968e0b2f2ec2e994955c992f3984caa8ce4c",
+    "bytes": 26587
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_2_epoch12.npz": {
+    "sha256": "e19714f49fda6fa66cde8e4658c6ceb62a6218ba3dff616af059c282ed086b87",
+    "bytes": 27193
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_2_epoch4.npz": {
+    "sha256": "b59135bb14357128a775c799d4021cfdd78984d0147d3e6f76d77bfa40425b7a",
+    "bytes": 26845
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold2_Transformer_2_epoch8.npz": {
+    "sha256": "97dac2ab46ec789899ad89fbf523e262d5626f3c9071300817a5953625048006",
+    "bytes": 27048
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_0_epoch12.npz": {
+    "sha256": "2c663ca228f7d87c2b0136a6d0b6c5f6948309e066ca5791d37a662860dedf4f",
+    "bytes": 26022
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_0_epoch4.npz": {
+    "sha256": "fc65e15e0d0b38af8e09b7673df87b5f885f90212a176861490638fc6f67960d",
+    "bytes": 25467
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_0_epoch8.npz": {
+    "sha256": "3fe24116c50f56796a251a85cc3c208a9302793b027cea2c7a4a0a440cbacf08",
+    "bytes": 25710
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_1_epoch12.npz": {
+    "sha256": "c01ba587bff790136ec6088d7f695d8ac733f382508e256c276998916a178470",
+    "bytes": 25609
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_1_epoch4.npz": {
+    "sha256": "65986b0553571687974826c012504ca56835c4a7034436a76b78aa57ac2d147a",
+    "bytes": 25338
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_1_epoch8.npz": {
+    "sha256": "5e4d12cee7de64a0c33c80e12fb980dca224c51922a572ebd4369f5f218a2859",
+    "bytes": 25477
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_2_epoch12.npz": {
+    "sha256": "7314076a4c878ad6abb54c3522fc0996f328ef6baedab31bfcfc3439a8c66c30",
+    "bytes": 26013
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_2_epoch4.npz": {
+    "sha256": "53d92f3c1953fc590be82cf14001a6314b122dd52ad1fb998a2760a3704847d0",
+    "bytes": 25617
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_TCN_2_epoch8.npz": {
+    "sha256": "e47841eea77a3475a5b89c799a47db4c7dff237dace6a526cfec0ccf96588d61",
+    "bytes": 25794
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_0_epoch12.npz": {
+    "sha256": "2ef9f2fd76b4a1a0d1d61f6064b991fb7ab52f5de639522b2e94d83ecbff140c",
+    "bytes": 25554
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_0_epoch4.npz": {
+    "sha256": "3888edc19e952246dbac7ca44dbf60269909b62f5324fcdbea2b2b9348dd96b7",
+    "bytes": 25421
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_0_epoch8.npz": {
+    "sha256": "cb66c8bff0dba61d9118543a4530f60cfdc350ee38d83c62a2404350ad10d868",
+    "bytes": 25483
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_1_epoch12.npz": {
+    "sha256": "ea570b260fc8fb161d88a0abae42357ef9d5c3a1ea29b58f7625175a33142ba4",
+    "bytes": 25497
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_1_epoch4.npz": {
+    "sha256": "dfc396b6e9f883a05adc20ab900f1878823dd87a47e29293a1421d628af45fc4",
+    "bytes": 25513
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_1_epoch8.npz": {
+    "sha256": "64e75c51c986ab4a3aa7bf614b1c8f4e06c3170efa76c4de3a41fec21f97b73a",
+    "bytes": 25476
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_2_epoch12.npz": {
+    "sha256": "6b85b41b8a86c357cc79ab603624f5cf9f29d4f5ac445af76f63007243906ec8",
+    "bytes": 25764
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_2_epoch4.npz": {
+    "sha256": "4c4b2637de672886e22c15d29bfecb0daf57ed28a7a39995a43ba5658afda533",
+    "bytes": 25540
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold3_Transformer_2_epoch8.npz": {
+    "sha256": "aa50fe9028c174071fd4279efaf75a1ed46848c78ab881c4d2c21c03cca70793",
+    "bytes": 25593
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_0_epoch12.npz": {
+    "sha256": "1def0c8cb80fd7014c6ccf3466e8632864dcd3373ec33f8c7e4a6f5332e5b130",
+    "bytes": 25033
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_0_epoch4.npz": {
+    "sha256": "216f628de2262c459b0f667f36e21862d1544f5ff0dbe4161f4be7e95ea93de4",
+    "bytes": 24566
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_0_epoch8.npz": {
+    "sha256": "799d59b66fd36bde8b4085427fa8cefef2e5305c6f463796f2c45d60abe5b56e",
+    "bytes": 24813
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_1_epoch12.npz": {
+    "sha256": "be0e05ec090a6537a92075a814677476fbe73d5dcc28a8f6b15d71901cac18d3",
+    "bytes": 24670
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_1_epoch4.npz": {
+    "sha256": "c44597c55ffe90cf36708c85760612f2335c547343bca2e5dabd4e785d0e7da7",
+    "bytes": 24388
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_1_epoch8.npz": {
+    "sha256": "c1f3b4f6c67238ba2cd575f7f2051b8d860deb0cc9df02840aff84ada6ac2b99",
+    "bytes": 24573
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_2_epoch12.npz": {
+    "sha256": "a41400487885df0787f0b0998dcc2cd140765bd5504e0969838e31e6d4a5f62d",
+    "bytes": 25109
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_2_epoch4.npz": {
+    "sha256": "95c719cc1103ebe27b74db87229fa504d9bb8313384af77e6d124d89692a3026",
+    "bytes": 24536
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_TCN_2_epoch8.npz": {
+    "sha256": "98f2d6fd505c26cbae2609f856212bf3ed981b9d588105355d3c8145dd1049d9",
+    "bytes": 24912
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_0_epoch12.npz": {
+    "sha256": "2ea8997b1401d06c0afeb923db48e78e91e2c447242cf9a24c14c5c753a72f77",
+    "bytes": 24927
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_0_epoch4.npz": {
+    "sha256": "833f4fa223fbb7fbc08665c27153c92ff03e76a8c8f3af81812b707415644844",
+    "bytes": 24674
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_0_epoch8.npz": {
+    "sha256": "a890b728534231107338fe46b5caf235306152162bf25e6b4999acc98f8d1bab",
+    "bytes": 24777
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_1_epoch12.npz": {
+    "sha256": "17a1ab1b9c55336f587f8005dbd3ea43af41fcd437c7f7fcf9d7d214ca572c09",
+    "bytes": 24645
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_1_epoch4.npz": {
+    "sha256": "c63d29411a86fe76c2c5523eb36ea008b20966ce780b784458de66efa5d3d8ce",
+    "bytes": 24566
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_1_epoch8.npz": {
+    "sha256": "6b783f44433602693192266f09ac5d96f81f591025b3db37a04f53c14514d05d",
+    "bytes": 24605
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_2_epoch12.npz": {
+    "sha256": "4416cbe09d35e6c23acd0c3a601b48a2e9859f642b735bf1b578f89dde791244",
+    "bytes": 25052
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_2_epoch4.npz": {
+    "sha256": "8c74afbb5249788e87d47e5c918574d0970088d916b3a5b5182d7b261a4676e6",
+    "bytes": 24757
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold4_Transformer_2_epoch8.npz": {
+    "sha256": "62d637d9f9145f6dcc64b5d07fcc8160fa31c4a87ec1ae18c797702480eb5917",
+    "bytes": 24940
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_0_epoch12.npz": {
+    "sha256": "6f70e08b0a3dded1c85db9e76cfa3cd388cff2ff582f2174f234799e8d927708",
+    "bytes": 26258
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_0_epoch4.npz": {
+    "sha256": "8474060cbacd8fc2db4f0faf858ead6376931936a335cf59b48df0435a3ed05e",
+    "bytes": 25830
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_0_epoch8.npz": {
+    "sha256": "0f927275cf653e9ca2a338a203c0f093e34dde9b058f5a00e75c59cb9d6eed9f",
+    "bytes": 26133
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_1_epoch12.npz": {
+    "sha256": "0c262ce1a9d77beabbcd748824da88f93b0d1eb23cb4948d6256b9462d0d5e41",
+    "bytes": 25945
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_1_epoch4.npz": {
+    "sha256": "2d1e59cc696b9101ebf0bb6f934eb303d61d775df561546ce800c6afb0a6ecd4",
+    "bytes": 25557
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_1_epoch8.npz": {
+    "sha256": "fdc6784a14c221d3dc5052ba1fca6b8ec6afb953e7a858302e087ca802f4582f",
+    "bytes": 25724
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_2_epoch12.npz": {
+    "sha256": "111cd3b28156df959ef8dade7d7cdd4a333babd051385fcb2deb70e346741833",
+    "bytes": 26508
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_2_epoch4.npz": {
+    "sha256": "8e00ff7ff05e6fa80567ec21cd01cd0407b716711d33278ca0802d102d8d6e9c",
+    "bytes": 25861
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_TCN_2_epoch8.npz": {
+    "sha256": "b9717d55ea8c13ec01efa73633ece889c511c932198c23786a87dadc8893329b",
+    "bytes": 26144
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_0_epoch12.npz": {
+    "sha256": "08e040677dcd853dc3ff5c61f5269014df4c2551c4f142f12062fe2b491d20b2",
+    "bytes": 26094
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_0_epoch4.npz": {
+    "sha256": "0b0aafa922abdde1067dffc62f4234d9bf91caf221f16cdc3bb02d17b5fc9bb2",
+    "bytes": 25846
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_0_epoch8.npz": {
+    "sha256": "aac193cef162d7fc7946eef07a582703cb6567e750cf1403e646e53ed7c1836a",
+    "bytes": 25970
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_1_epoch12.npz": {
+    "sha256": "01f3edc7c44c1d6b4368255a808d66c9a302ab872ff43bda3902fe3e77aa9b7c",
+    "bytes": 25884
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_1_epoch4.npz": {
+    "sha256": "39028a33210d09057de45f52a945c1874eac7eaa9fb6eaa4dc5c17e76b4dc2ef",
+    "bytes": 25826
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_1_epoch8.npz": {
+    "sha256": "adcdd55e0a1234dcae0d7d0254c8acc5ef9b3e607300b0eddcb2714055d06d6b",
+    "bytes": 25850
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_2_epoch12.npz": {
+    "sha256": "dc18105c8f28ded1064c98e18f75419757b7da1a28732b657194550a46ef0fff",
+    "bytes": 26335
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_2_epoch4.npz": {
+    "sha256": "fc626359028d15fc0164b9b444bf34bf3c32b7d204564e41956e5c72ddab62c9",
+    "bytes": 26013
+  },
+  "resultados/redes_13-09-2026/predicciones_internas/fold5_Transformer_2_epoch8.npz": {
+    "sha256": "47412374c9c134424d2c718adc5aff3b9ae53c30b2bc0c58053121d13d382c18",
+    "bytes": 26226
+  },
+  "resultados/redes_13-09-2026/predicciones_oof.csv.gz": {
+    "sha256": "0dad1fc67dd66f45ef765c47ec9856947a87ece491169e3e1f87fb9f14351035",
+    "bytes": 1184691
+  },
+  "resultados/redes_13-09-2026/protocolo.json": {
+    "sha256": "574f6cf0a9d611d70696e9fd21315c57b94824f57766c7309bec347860f613b1",
+    "bytes": 7991
+  },
+  "resultados/redes_13-09-2026/pruebas.json": {
+    "sha256": "083e8b3037663a5710da519c06e675ee27b8fa5f8837959fca725b62ddc17e1c",
+    "bytes": 260
+  },
+  "resultados/redes_13-09-2026/resumen.csv": {
+    "sha256": "1921378a6dc96dd90e9c7a32aeb17502fb0c442f6ea4437760fd4d56ce031f92",
+    "bytes": 302
+  },
+  "resultados/redes_13-09-2026/selecciones.json": {
+    "sha256": "b67440da98c5bd9233f0d1145135d2e8fe4933802233efd23e3ce097d3d222d7",
+    "bytes": 2598
+  },
+  "resultados/redes_13-09-2026/trayectoria_interna.csv": {
+    "sha256": "8bf3b3b99be371ddd4a030d0288cc396daece4271e2937a8feb0ad6feeada98b",
+    "bytes": 606
+  },
+  "resultados/redes_13-09-2026/verificacion.json": {
+    "sha256": "b0588f0beca9b748653aad9ba77904237a75990bfb903f78c20f626cd2cbb84d",
+    "bytes": 385
+  },
+  "scripts/auditar_redes_13.py": {
+    "sha256": "afdf0fc7716172586856c8a2b166b7b30ef43c5ca6e07d6b9275a2af3bd1d989",
+    "bytes": 6197
+  },
+  "scripts/avanzados_core.py": {
+    "sha256": "dc4f9cb3bd987d42e53e93d64e899bdb6c2ec7586be1d00a852fbb9005e5c822",
+    "bytes": 3361
+  },
+  "scripts/baselines_estaticos.py": {
+    "sha256": "abcad957cd11f87c17fab5549c55144a32889b60c34f59d668ff13d93cf1b910",
+    "bytes": 13999
+  },
+  "scripts/control_historial.py": {
+    "sha256": "238e3980397d07abc4d91e165b7e7bbae082fc81a253e7274c95551aa17bc626",
+    "bytes": 16388
+  },
+  "scripts/entrenar_hiperparametros.py": {
+    "sha256": "e623f65fd727d6b55fd972f4b3c4c7d641ecfffb0a24e66201dcb18b88135602",
+    "bytes": 9244
+  },
+  "scripts/entrenar_redes_13.py": {
+    "sha256": "816196c7eccc164651470692a06162e9b9f8f5f08df9a1d71518181fea51b8e0",
+    "bytes": 6793
+  },
+  "scripts/hiperparametros_core.py": {
+    "sha256": "e32f91c90bfced9e1c9360b768af6856dd1b3be8eb56870e06a0dcc2754b51e9",
+    "bytes": 5272
+  },
+  "scripts/informe_redes_13.py": {
+    "sha256": "9345c2f33db8d26c50174d920c6509bdd9b0c99647d37c295b6141c4eceb8a93",
+    "bytes": 10027
+  },
+  "scripts/optimizar_historial.py": {
+    "sha256": "493197e117e33c39bc20850c49e5fdcfb6e67f74322ccb752037e07135c532b4",
+    "bytes": 11653
+  },
+  "scripts/redes_secuencia_13.py": {
+    "sha256": "e519dc52249aa05f234cf88525b5d16f610eec5e5f5d7d1935780e9cd7789d69",
+    "bytes": 4662
+  },
+  "scripts/temporales_core.py": {
+    "sha256": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "bytes": 7470
+  },
+  "tests/test_redes_13.py": {
+    "sha256": "5ef9d47294b19d60ff7d5f56a050427b35dbef5c72bda760cabee113164fd094",
+    "bytes": 1608
+  }
+}

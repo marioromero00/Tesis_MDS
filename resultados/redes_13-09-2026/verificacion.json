@@ -1,0 +1,12 @@
+{
+  "models": 110,
+  "internal_scores": 270,
+  "outer_predictions": 54096,
+  "max_prediction_error": 2.9766845655032625e-08,
+  "selection_verified": true,
+  "train_only_preprocessing": true,
+  "teacher_free_prediction": true,
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "auditor_sha256": "afdf0fc7716172586856c8a2b166b7b30ef43c5ca6e07d6b9275a2af3bd1d989"
+}

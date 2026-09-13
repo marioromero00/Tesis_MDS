@@ -1,0 +1,137 @@
+[
+  {
+    "fold": 1,
+    "id": "Transformer_0",
+    "family": "Transformer",
+    "epoch": 4,
+    "smoothing": 1,
+    "score": 0.3872965461010311,
+    "scope": "all"
+  },
+  {
+    "fold": 1,
+    "id": "Transformer_0",
+    "family": "Transformer",
+    "epoch": 4,
+    "smoothing": 1,
+    "score": 0.3872965461010311,
+    "scope": "Transformer"
+  },
+  {
+    "fold": 1,
+    "id": "TCN_0",
+    "family": "TCN",
+    "epoch": 4,
+    "smoothing": 1,
+    "score": 0.37141351401999356,
+    "scope": "TCN"
+  },
+  {
+    "fold": 2,
+    "id": "TCN_1",
+    "family": "TCN",
+    "epoch": 4,
+    "smoothing": 1,
+    "score": 0.3796206611807582,
+    "scope": "all"
+  },
+  {
+    "fold": 2,
+    "id": "Transformer_2",
+    "family": "Transformer",
+    "epoch": 4,
+    "smoothing": 32,
+    "score": 0.3718566744173119,
+    "scope": "Transformer"
+  },
+  {
+    "fold": 2,
+    "id": "TCN_1",
+    "family": "TCN",
+    "epoch": 4,
+    "smoothing": 1,
+    "score": 0.3796206611807582,
+    "scope": "TCN"
+  },
+  {
+    "fold": 3,
+    "id": "Transformer_0",
+    "family": "Transformer",
+    "epoch": 4,
+    "smoothing": 8,
+    "score": 0.37191189165473765,
+    "scope": "all"
+  },
+  {
+    "fold": 3,
+    "id": "Transformer_0",
+    "family": "Transformer",
+    "epoch": 4,
+    "smoothing": 8,
+    "score": 0.37191189165473765,
+    "scope": "Transformer"
+  },
+  {
+    "fold": 3,
+    "id": "TCN_0",
+    "family": "TCN",
+    "epoch": 12,
+    "smoothing": 1,
+    "score": 0.35192402597945893,
+    "scope": "TCN"
+  },
+  {
+    "fold": 4,
+    "id": "Transformer_2",
+    "family": "Transformer",
+    "epoch": 12,
+    "smoothing": 1,
+    "score": 0.34661245161112975,
+    "scope": "all"
+  },
+  {
+    "fold": 4,
+    "id": "Transformer_2",
+    "family": "Transformer",
+    "epoch": 12,
+    "smoothing": 1,
+    "score": 0.34661245161112975,
+    "scope": "Transformer"
+  },
+  {
+    "fold": 4,
+    "id": "TCN_2",
+    "family": "TCN",
+    "epoch": 8,
+    "smoothing": 8,
+    "score": 0.338857757256268,
+    "scope": "TCN"
+  },
+  {
+    "fold": 5,
+    "id": "TCN_1",
+    "family": "TCN",
+    "epoch": 8,
+    "smoothing": 32,
+    "score": 0.4075325811071311,
+    "scope": "all"
+  },
+  {
+    "fold": 5,
+    "id": "Transformer_0",
+    "family": "Transformer",
+    "epoch": 8,
+    "smoothing": 32,
+    "score": 0.3775751076963882,
+    "scope": "Transformer"
+  },
+  {
+    "fold": 5,
+    "id": "TCN_1",
+    "family": "TCN",
+    "epoch": 8,
+    "smoothing": 32,
+    "score": 0.4075325811071311,
+    "scope": "TCN"
+  }
+]

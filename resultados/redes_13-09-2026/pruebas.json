@@ -1,0 +1,8 @@
+{
+  "command": "python -m unittest discover -s tests",
+  "exit_code": 0,
+  "tests": 61,
+  "seconds": 11.76,
+  "utc": "2026-09-13T15:07:18.328663+00:00",
+  "warnings": "Existing joblib NumPy 2.5 deprecations and existing empty-feature fixture warnings"
+}
