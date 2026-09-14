@@ -1,0 +1,331 @@
+{
+  "task": {
+    "kind": "inner",
+    "fold": {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    "config": {
+      "id": "g29",
+      "context": 32,
+      "hidden": 32,
+      "layers": 2,
+      "lr": 0.0003,
+      "dropout": 0.4,
+      "heads": 4,
+      "ff_multiplier": 2,
+      "decay": 0.01,
+      "batch": 256
+    },
+    "name": "fold4_g29"
+  },
+  "attempts": [
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 2,
+      "smoothing": 1,
+      "score": 0.34051043210267984
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.3454730967995958
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 2,
+      "smoothing": 32,
+      "score": 0.3393336731160455
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 4,
+      "smoothing": 1,
+      "score": 0.3466767884486623
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 4,
+      "smoothing": 8,
+      "score": 0.34772140791849426
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 4,
+      "smoothing": 32,
+      "score": 0.34511438823904605
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 8,
+      "smoothing": 1,
+      "score": 0.3482960331450519
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 8,
+      "smoothing": 8,
+      "score": 0.35696835270180544
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 8,
+      "smoothing": 32,
+      "score": 0.3489284325894569
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 16,
+      "smoothing": 1,
+      "score": 0.3509294919216952
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 16,
+      "smoothing": 8,
+      "score": 0.3479041876548745
+    },
+    {
+      "fold": 4,
+      "id": "g29",
+      "epoch": 16,
+      "smoothing": 32,
+      "score": 0.3406921411324963
+    }
+  ],
+  "catalog": [
+    {
+      "path": "internos/fold4_g29_e2.joblib",
+      "sha256": "e554d1a02053d6649b2db45efff3245b1f0198578a0d724ded88a6ff5a5f456f",
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "config": {
+        "id": "g29",
+        "context": 32,
+        "hidden": 32,
+        "layers": 2,
+        "lr": 0.0003,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 2
+    },
+    {
+      "path": "internos/fold4_g29_e4.joblib",
+      "sha256": "fde1095c73be44d2b0482e7801ddf7371b4d6d20c83629c3bded9a18bd7379e7",
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "config": {
+        "id": "g29",
+        "context": 32,
+        "hidden": 32,
+        "layers": 2,
+        "lr": 0.0003,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 4
+    },
+    {
+      "path": "internos/fold4_g29_e8.joblib",
+      "sha256": "9aaf0bc8328291925dc8966e1f92d18ebf4cfc3f77935dc448a1b87f3de771b6",
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "config": {
+        "id": "g29",
+        "context": 32,
+        "hidden": 32,
+        "layers": 2,
+        "lr": 0.0003,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 8
+    },
+    {
+      "path": "internos/fold4_g29_e16.joblib",
+      "sha256": "da88adeafe70a44223d4bd99835988efabba62d7baba08143e8eadcc1dfe6b32",
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "config": {
+        "id": "g29",
+        "context": 32,
+        "hidden": 32,
+        "layers": 2,
+        "lr": 0.0003,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 16
+    }
+  ],
+  "seconds": 81.22438502311707
+}

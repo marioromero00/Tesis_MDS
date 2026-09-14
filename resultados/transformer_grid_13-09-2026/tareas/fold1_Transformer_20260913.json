@@ -1,0 +1,174 @@
+{
+  "task": {
+    "kind": "outer",
+    "fold": {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    "config": {
+      "id": "g09",
+      "context": 8,
+      "hidden": 32,
+      "layers": 1,
+      "lr": 0.0003,
+      "dropout": 0.4,
+      "heads": 4,
+      "ff_multiplier": 2,
+      "decay": 0.01,
+      "batch": 256
+    },
+    "choice": {
+      "fold": 1,
+      "id": "g09",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.42222607253252553
+    },
+    "scope": "Transformer",
+    "seed": 20260913,
+    "name": "fold1_Transformer_20260913"
+  },
+  "catalog": {
+    "path": "modelos/fold1_Transformer_20260913.joblib",
+    "sha256": "dfacac0413ba9038408cc07897ceb330d5631faccfe6ac0a524f819249a01c93",
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "choice": {
+      "fold": 1,
+      "id": "g09",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.42222607253252553
+    },
+    "fold": 1,
+    "scope": "Transformer",
+    "seed": 20260913
+  },
+  "metric": {
+    "fold": 1,
+    "scope": "Transformer",
+    "seed": 20260913,
+    "macro_score": 0.3815900921732708,
+    "rows": 2886,
+    "participants": 5,
+    "balanced_accuracy": 0.3839223839223839,
+    "macro_f1": 0.35731519333639916
+  },
+  "people": [
+    {
+      "fold": 1,
+      "scope": "Transformer",
+      "seed": 20260913,
+      "participant": "P22",
+      "score": 0.27591074069095306
+    },
+    {
+      "fold": 1,
+      "scope": "Transformer",
+      "seed": 20260913,
+      "participant": "P24",
+      "score": 0.4509454675807681
+    },
+    {
+      "fold": 1,
+      "scope": "Transformer",
+      "seed": 20260913,
+      "participant": "P30",
+      "score": 0.3664027206740775
+    },
+    {
+      "fold": 1,
+      "scope": "Transformer",
+      "seed": 20260913,
+      "participant": "P43",
+      "score": 0.4373649667767314
+    },
+    {
+      "fold": 1,
+      "scope": "Transformer",
+      "seed": 20260913,
+      "participant": "P48",
+      "score": 0.37732656514382407
+    }
+  ],
+  "seconds": 3.0857017040252686
+}

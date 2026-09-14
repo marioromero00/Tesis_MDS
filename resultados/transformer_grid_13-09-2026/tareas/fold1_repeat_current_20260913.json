@@ -1,0 +1,174 @@
+{
+  "task": {
+    "kind": "outer",
+    "fold": {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    "config": {
+      "id": "g09",
+      "context": 8,
+      "hidden": 32,
+      "layers": 1,
+      "lr": 0.0003,
+      "dropout": 0.4,
+      "heads": 4,
+      "ff_multiplier": 2,
+      "decay": 0.01,
+      "batch": 256
+    },
+    "choice": {
+      "fold": 1,
+      "id": "g09",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.42222607253252553
+    },
+    "scope": "repeat_current",
+    "seed": 20260913,
+    "name": "fold1_repeat_current_20260913"
+  },
+  "catalog": {
+    "path": "modelos/fold1_repeat_current_20260913.joblib",
+    "sha256": "21b40201fe47713330b889545b6cea968fda9e7197b752c764fe784e66cfc4ca",
+    "fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P3",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P44",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P22",
+      "P24",
+      "P30",
+      "P43",
+      "P48"
+    ],
+    "choice": {
+      "fold": 1,
+      "id": "g09",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.42222607253252553
+    },
+    "fold": 1,
+    "scope": "repeat_current",
+    "seed": 20260913
+  },
+  "metric": {
+    "fold": 1,
+    "scope": "repeat_current",
+    "seed": 20260913,
+    "macro_score": 0.37119465205064045,
+    "rows": 2886,
+    "participants": 5,
+    "balanced_accuracy": 0.3735273735273736,
+    "macro_f1": 0.34640465145479626
+  },
+  "people": [
+    {
+      "fold": 1,
+      "scope": "repeat_current",
+      "seed": 20260913,
+      "participant": "P22",
+      "score": 0.25085136891159204
+    },
+    {
+      "fold": 1,
+      "scope": "repeat_current",
+      "seed": 20260913,
+      "participant": "P24",
+      "score": 0.4586301922301385
+    },
+    {
+      "fold": 1,
+      "scope": "repeat_current",
+      "seed": 20260913,
+      "participant": "P30",
+      "score": 0.34967768133597277
+    },
+    {
+      "fold": 1,
+      "scope": "repeat_current",
+      "seed": 20260913,
+      "participant": "P43",
+      "score": 0.4313317842729607
+    },
+    {
+      "fold": 1,
+      "scope": "repeat_current",
+      "seed": 20260913,
+      "participant": "P48",
+      "score": 0.36548223350253806
+    }
+  ],
+  "seconds": 3.0703771114349365
+}

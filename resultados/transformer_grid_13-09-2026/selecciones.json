@@ -1,0 +1,37 @@
+[
+  {
+    "fold": 1,
+    "id": "g09",
+    "epoch": 2,
+    "smoothing": 8,
+    "score": 0.42222607253252553
+  },
+  {
+    "fold": 2,
+    "id": "g05",
+    "epoch": 2,
+    "smoothing": 32,
+    "score": 0.3959359716916492
+  },
+  {
+    "fold": 3,
+    "id": "g09",
+    "epoch": 2,
+    "smoothing": 32,
+    "score": 0.38705841027498716
+  },
+  {
+    "fold": 4,
+    "id": "g01",
+    "epoch": 2,
+    "smoothing": 32,
+    "score": 0.39883840879034727
+  },
+  {
+    "fold": 5,
+    "id": "g25",
+    "epoch": 2,
+    "smoothing": 32,
+    "score": 0.41863723652298035
+  }
+]

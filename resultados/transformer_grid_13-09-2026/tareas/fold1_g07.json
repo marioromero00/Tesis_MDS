@@ -1,0 +1,331 @@
+{
+  "task": {
+    "kind": "inner",
+    "fold": {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    "config": {
+      "id": "g07",
+      "context": 8,
+      "hidden": 16,
+      "layers": 2,
+      "lr": 0.001,
+      "dropout": 0.4,
+      "heads": 4,
+      "ff_multiplier": 2,
+      "decay": 0.01,
+      "batch": 256
+    },
+    "name": "fold1_g07"
+  },
+  "attempts": [
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 2,
+      "smoothing": 1,
+      "score": 0.3690419475267914
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 2,
+      "smoothing": 8,
+      "score": 0.3610407618084942
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 2,
+      "smoothing": 32,
+      "score": 0.36742774686714236
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 4,
+      "smoothing": 1,
+      "score": 0.37045690445865503
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 4,
+      "smoothing": 8,
+      "score": 0.3643951215021477
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 4,
+      "smoothing": 32,
+      "score": 0.36393652786695846
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 8,
+      "smoothing": 1,
+      "score": 0.36383293597649613
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 8,
+      "smoothing": 8,
+      "score": 0.3696889836281267
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 8,
+      "smoothing": 32,
+      "score": 0.37305661948138835
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 16,
+      "smoothing": 1,
+      "score": 0.3543526660122747
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 16,
+      "smoothing": 8,
+      "score": 0.3536191912319291
+    },
+    {
+      "fold": 1,
+      "id": "g07",
+      "epoch": 16,
+      "smoothing": 32,
+      "score": 0.35418271809586166
+    }
+  ],
+  "catalog": [
+    {
+      "path": "internos/fold1_g07_e2.joblib",
+      "sha256": "ff44b8afeff3128d8531fd6d5a2c021fdf44991ce4b2a6482bd6bfba7cc92c77",
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ],
+      "config": {
+        "id": "g07",
+        "context": 8,
+        "hidden": 16,
+        "layers": 2,
+        "lr": 0.001,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 2
+    },
+    {
+      "path": "internos/fold1_g07_e4.joblib",
+      "sha256": "0b91ab2513a3381b77f4d97af9c522366a66397db2080eb38a64f9de4b6428e6",
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ],
+      "config": {
+        "id": "g07",
+        "context": 8,
+        "hidden": 16,
+        "layers": 2,
+        "lr": 0.001,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 4
+    },
+    {
+      "path": "internos/fold1_g07_e8.joblib",
+      "sha256": "0bcab7e66fe1af2ef6e6f2b98fdeff9db62103857c170b747203cb28b119971a",
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ],
+      "config": {
+        "id": "g07",
+        "context": 8,
+        "hidden": 16,
+        "layers": 2,
+        "lr": 0.001,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 8
+    },
+    {
+      "path": "internos/fold1_g07_e16.joblib",
+      "sha256": "54f2873224a4f278eaf19cab0daf6eb06f374889cf1e1604767f1bce42c4d434",
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ],
+      "config": {
+        "id": "g07",
+        "context": 8,
+        "hidden": 16,
+        "layers": 2,
+        "lr": 0.001,
+        "dropout": 0.4,
+        "heads": 4,
+        "ff_multiplier": 2,
+        "decay": 0.01,
+        "batch": 256
+      },
+      "epoch": 16
+    }
+  ],
+  "seconds": 12.626965761184692
+}
