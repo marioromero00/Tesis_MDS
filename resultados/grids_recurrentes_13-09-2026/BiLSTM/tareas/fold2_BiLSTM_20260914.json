@@ -1,0 +1,173 @@
+{
+  "task": {
+    "kind": "outer",
+    "fold": {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    "config": {
+      "id": "g17",
+      "context": 32,
+      "hidden": 16,
+      "layers": 1,
+      "lr": 0.0003,
+      "dropout": 0.4,
+      "family": "BiLSTM",
+      "decay": 0.01,
+      "batch": 256
+    },
+    "choice": {
+      "fold": 2,
+      "id": "g17",
+      "epoch": 8,
+      "smoothing": 8,
+      "score": 0.38922870239346524
+    },
+    "scope": "BiLSTM",
+    "seed": 20260914,
+    "name": "fold2_BiLSTM_20260914"
+  },
+  "catalog": {
+    "path": "modelos/fold2_BiLSTM_20260914.joblib",
+    "sha256": "64052b5a2c918939f1f896154f0cb8552dc539466043ffe29482ffd9deb5d9b3",
+    "fit": [
+      "P13",
+      "P18",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P36",
+      "P4",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P12",
+      "P19",
+      "P2",
+      "P35",
+      "P40"
+    ],
+    "choice": {
+      "fold": 2,
+      "id": "g17",
+      "epoch": 8,
+      "smoothing": 8,
+      "score": 0.38922870239346524
+    },
+    "fold": 2,
+    "scope": "BiLSTM",
+    "seed": 20260914
+  },
+  "metric": {
+    "fold": 2,
+    "scope": "BiLSTM",
+    "seed": 20260914,
+    "macro_score": 0.31730696952217663,
+    "rows": 2612,
+    "participants": 5,
+    "balanced_accuracy": 0.3248031565257127,
+    "macro_f1": 0.284241508454425
+  },
+  "people": [
+    {
+      "fold": 2,
+      "scope": "BiLSTM",
+      "seed": 20260914,
+      "participant": "P12",
+      "score": 0.2553833263510683
+    },
+    {
+      "fold": 2,
+      "scope": "BiLSTM",
+      "seed": 20260914,
+      "participant": "P19",
+      "score": 0.36470125786163526
+    },
+    {
+      "fold": 2,
+      "scope": "BiLSTM",
+      "seed": 20260914,
+      "participant": "P2",
+      "score": 0.44501195392306014
+    },
+    {
+      "fold": 2,
+      "scope": "BiLSTM",
+      "seed": 20260914,
+      "participant": "P35",
+      "score": 0.29444444444444445
+    },
+    {
+      "fold": 2,
+      "scope": "BiLSTM",
+      "seed": 20260914,
+      "participant": "P40",
+      "score": 0.22699386503067484
+    }
+  ],
+  "seconds": 8.254968404769897
+}

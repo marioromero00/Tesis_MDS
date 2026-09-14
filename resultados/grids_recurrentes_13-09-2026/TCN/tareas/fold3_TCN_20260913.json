@@ -1,0 +1,173 @@
+{
+  "task": {
+    "kind": "outer",
+    "fold": {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    "config": {
+      "id": "g26",
+      "context": 32,
+      "hidden": 32,
+      "layers": 1,
+      "lr": 0.001,
+      "dropout": 0.1,
+      "family": "TCN",
+      "decay": 0.01,
+      "batch": 256
+    },
+    "choice": {
+      "fold": 3,
+      "id": "g26",
+      "epoch": 16,
+      "smoothing": 1,
+      "score": 0.3843499216337152
+    },
+    "scope": "TCN",
+    "seed": 20260913,
+    "name": "fold3_TCN_20260913"
+  },
+  "catalog": {
+    "path": "modelos/fold3_TCN_20260913.joblib",
+    "sha256": "e84bae80ea28bbc2b7301aa1988f8b95a61c9f98de365cea7423ea91b439f750",
+    "fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P34",
+      "P35",
+      "P4",
+      "P40",
+      "P43",
+      "P44",
+      "P48",
+      "P9"
+    ],
+    "evaluation": [
+      "P18",
+      "P27",
+      "P36",
+      "P46",
+      "P8"
+    ],
+    "choice": {
+      "fold": 3,
+      "id": "g26",
+      "epoch": 16,
+      "smoothing": 1,
+      "score": 0.3843499216337152
+    },
+    "fold": 3,
+    "scope": "TCN",
+    "seed": 20260913
+  },
+  "metric": {
+    "fold": 3,
+    "scope": "TCN",
+    "seed": 20260913,
+    "macro_score": 0.378057591486562,
+    "rows": 2659,
+    "participants": 5,
+    "balanced_accuracy": 0.3819014486531809,
+    "macro_f1": 0.37803407384492327
+  },
+  "people": [
+    {
+      "fold": 3,
+      "scope": "TCN",
+      "seed": 20260913,
+      "participant": "P18",
+      "score": 0.30148619957537154
+    },
+    {
+      "fold": 3,
+      "scope": "TCN",
+      "seed": 20260913,
+      "participant": "P27",
+      "score": 0.42963273285853926
+    },
+    {
+      "fold": 3,
+      "scope": "TCN",
+      "seed": 20260913,
+      "participant": "P36",
+      "score": 0.3495881192713772
+    },
+    {
+      "fold": 3,
+      "scope": "TCN",
+      "seed": 20260913,
+      "participant": "P46",
+      "score": 0.44005102040816324
+    },
+    {
+      "fold": 3,
+      "scope": "TCN",
+      "seed": 20260913,
+      "participant": "P8",
+      "score": 0.369529885319359
+    }
+  ],
+  "seconds": 23.947083950042725
+}

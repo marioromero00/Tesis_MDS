@@ -1,0 +1,173 @@
+{
+  "task": {
+    "kind": "outer",
+    "fold": {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    },
+    "config": {
+      "id": "g20",
+      "context": 32,
+      "hidden": 16,
+      "layers": 2,
+      "lr": 0.0003,
+      "dropout": 0.1,
+      "family": "LSTM",
+      "decay": 0.01,
+      "batch": 256
+    },
+    "choice": {
+      "fold": 5,
+      "id": "g20",
+      "epoch": 8,
+      "smoothing": 32,
+      "score": 0.3995797626960642
+    },
+    "scope": "LSTM",
+    "seed": 20260913,
+    "name": "fold5_LSTM_20260913"
+  },
+  "catalog": {
+    "path": "modelos/fold5_LSTM_20260913.joblib",
+    "sha256": "37510cafa5972194745cdb9c586d46a2d2b84b7c6b6062ea7aba852465f393ea",
+    "fit": [
+      "P12",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P22",
+      "P24",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P43",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "evaluation": [
+      "P13",
+      "P21",
+      "P26",
+      "P34",
+      "P44"
+    ],
+    "choice": {
+      "fold": 5,
+      "id": "g20",
+      "epoch": 8,
+      "smoothing": 32,
+      "score": 0.3995797626960642
+    },
+    "fold": 5,
+    "scope": "LSTM",
+    "seed": 20260913
+  },
+  "metric": {
+    "fold": 5,
+    "scope": "LSTM",
+    "seed": 20260913,
+    "macro_score": 0.36897944442880454,
+    "rows": 2707,
+    "participants": 5,
+    "balanced_accuracy": 0.35466452704689866,
+    "macro_f1": 0.32671095693885416
+  },
+  "people": [
+    {
+      "fold": 5,
+      "scope": "LSTM",
+      "seed": 20260913,
+      "participant": "P13",
+      "score": 0.36857990587272355
+    },
+    {
+      "fold": 5,
+      "scope": "LSTM",
+      "seed": 20260913,
+      "participant": "P21",
+      "score": 0.25819044851302914
+    },
+    {
+      "fold": 5,
+      "scope": "LSTM",
+      "seed": 20260913,
+      "participant": "P26",
+      "score": 0.41523809523809524
+    },
+    {
+      "fold": 5,
+      "scope": "LSTM",
+      "seed": 20260913,
+      "participant": "P34",
+      "score": 0.37067435669920146
+    },
+    {
+      "fold": 5,
+      "scope": "LSTM",
+      "seed": 20260913,
+      "participant": "P44",
+      "score": 0.43221441582097325
+    }
+  ],
+  "seconds": 8.298611402511597
+}

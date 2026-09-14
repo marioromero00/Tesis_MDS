@@ -1,0 +1,13 @@
+{"utc": "2026-09-14T00:17:16.092299+00:00", "stage": "started", "family": "BiLSTM", "script": "entrenar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:28:39.232172+00:00", "stage": "finished", "family": "BiLSTM", "script": "entrenar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:28:39.239108+00:00", "stage": "started", "family": "BiLSTM", "script": "auditar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:29:34.670610+00:00", "stage": "finished", "family": "BiLSTM", "script": "auditar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:29:34.671732+00:00", "stage": "started", "family": "LSTM", "script": "entrenar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:36:17.354691+00:00", "stage": "finished", "family": "LSTM", "script": "entrenar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:36:17.355384+00:00", "stage": "started", "family": "LSTM", "script": "auditar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:37:10.045496+00:00", "stage": "finished", "family": "LSTM", "script": "auditar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:37:10.046393+00:00", "stage": "started", "family": "TCN", "script": "entrenar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:47:33.981205+00:00", "stage": "finished", "family": "TCN", "script": "entrenar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:47:33.982199+00:00", "stage": "started", "family": "TCN", "script": "auditar_recurrentes_grid.py", "resume": false}
+{"utc": "2026-09-14T00:48:33.986103+00:00", "stage": "finished", "family": "TCN", "script": "auditar_recurrentes_grid.py", "exit_code": 0}
+{"utc": "2026-09-14T00:48:33.987079+00:00", "stage": "all_completed", "order": ["BiLSTM", "LSTM", "TCN"]}

@@ -1,0 +1,17 @@
+{
+  "order": [
+    "BiLSTM",
+    "LSTM",
+    "TCN"
+  ],
+  "created_utc": "2026-09-14T00:17:16.091040+00:00",
+  "sources": {
+    "ejecutar_grids_recurrentes.py": "a5eb98012e255315a2f49a1ca6a93b044f17db1d7fd918694792a18590170526",
+    "recurrentes_grid_core.py": "d60d6cc6071ec6ac71631cc81e3bf4afb7da0875f73b9e2fb994488812670ac5",
+    "entrenar_recurrentes_grid.py": "efc52f96b0ff4a08f498cbdbcdc878b1db0cb9979967845b1e437a9d3b05d6ed",
+    "auditar_recurrentes_grid.py": "8a0ac9be22b23515198d347e4aeff669a88b9f29860d9cff0938777ea47b18c2"
+  },
+  "configs_per_family": 32,
+  "primary": "each family versus fixed references; no global post-hoc family winner",
+  "stages": "training and audit complete before starting next family"
+}
