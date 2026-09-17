@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avances de tesis MDS · 17 septiembre 2026</title>
+<style>
+:root{--ink:#12243b;--muted:#46556b;--blue:#003d73;--teal:#09686b;--paper:#fff;--soft:#eff4f9;--line:#ccd7e2;--warn:#87501a}
+*{box-sizing:border-box}body{margin:0;background:var(--soft);color:var(--ink);font:20px/1.5 "Segoe UI",Arial,sans-serif}a{color:var(--blue);text-underline-offset:3px}button,select{font:inherit;color:var(--ink);background:white;border:1px solid var(--muted);border-radius:4px;min-height:44px;padding:6px 12px}button{cursor:pointer}button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid var(--teal);outline-offset:4px}.skip{position:absolute;top:-80px;left:10px;z-index:4;background:white;padding:10px}.skip:focus{top:5px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:12px max(20px,calc((100vw - 1200px)/2));font-size:14px;background:white;border-bottom:1px solid var(--line)}.toolbar[hidden]{display:none}.toolbar label{font-weight:600}.toolbar select{max-width:240px}.toolbar .status{margin-left:auto;font-variant-numeric:tabular-nums}
+main{max-width:1280px;margin:auto}.slide{background:var(--paper);margin:24px 16px;padding:42px 56px;min-height:650px;border-top:5px solid var(--blue);box-shadow:0 4px 24px #12243b0c;display:flex;flex-direction:column;scroll-margin-top:12px}.slide[hidden]{display:none}.eyebrow{font-size:13px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin:0 0 16px}h1{font-size:clamp(38px,4.8vw,62px);line-height:1.08;letter-spacing:-1.5px;max-width:20ch;margin:12px 0 24px}h2{font-size:clamp(28px,3vw,40px);line-height:1.15;letter-spacing:-.6px;margin:0 0 24px;max-width:38ch}h3{font-size:21px;margin:0 0 10px}p{margin:0 0 18px}.lead{font-size:24px;max-width:65ch}.small,figcaption,caption{font-size:15px;color:var(--muted)}.columns{display:grid;grid-template-columns:1fr 1fr;gap:32px}.panel{background:var(--soft);padding:24px;border-left:4px solid var(--blue)}.panel.teal{border-color:var(--teal)}.callout{padding:15px 20px;border-left:4px solid var(--teal);background:var(--soft);margin-top:20px}.source{font-size:13px;color:var(--muted);margin-top:auto;padding-top:22px}.pill{display:inline-block;border:1px solid var(--muted);padding:5px 12px;margin:3px;font-size:16px;border-radius:4px}.big{font:700 62px/1.1 Consolas,monospace;color:var(--blue)}.metric{font-variant-numeric:tabular-nums;font-family:Consolas,monospace}ul,ol{padding-left:25px;margin:0}li{margin-bottom:12px}table{width:100%;border-collapse:collapse;font-size:18px}caption{text-align:left;margin-bottom:10px}th{text-align:left;color:var(--muted);font-size:14px}td,th{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}td:not(:first-child){font-variant-numeric:tabular-nums}figure{margin:0}.bars{display:grid;gap:13px}.barrow{display:grid;grid-template-columns:190px 1fr 75px;gap:14px;align-items:center;font-size:18px}.track{height:26px;background:var(--soft);border-right:2px dashed var(--muted)}.fill{height:100%;background:var(--blue)}.fill.secondary{background:var(--teal)}.barrow.reference{font-weight:700}.axis{display:flex;justify-content:space-between;margin:10px 89px 12px 204px;font-size:13px;color:var(--muted)}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.timeline article{border-top:3px solid var(--blue);padding-top:14px}.timeline time{font:700 20px Consolas,monospace}.timeline p{font-size:17px;margin-top:12px}.pipeline{display:flex;gap:12px;margin:16px 0 24px;align-items:center}.pipeline div{flex:1;padding:18px;background:var(--soft)}.pipeline strong{display:block;font-size:27px}.warn{color:var(--warn)}code{font-size:.86em;overflow-wrap:anywhere}.footer{font-size:13px;color:var(--muted);text-align:center;padding:0 16px 20px}.sources li{font-size:17px;margin-bottom:14px}
+@media(max-width:700px){body{font-size:18px}.slide{padding:28px 22px;min-height:0;margin:14px 10px}.columns,.timeline{grid-template-columns:1fr;gap:20px}.pipeline{flex-direction:column;align-items:stretch}.pipeline .arrow{display:none}.lead{font-size:21px}.barrow{grid-template-columns:1fr 68px;gap:4px}.barrow .track{grid-column:1;grid-row:auto}.barrow .metric{grid-column:2;grid-row:span 2}.axis{margin:8px 75px 8px 0}.barrow span:first-child{grid-column:1}.toolbar{padding:10px;gap:8px}.toolbar select{max-width:180px}.toolbar .status{margin-left:0}table{font-size:14px}td,th{padding:7px 3px;overflow-wrap:anywhere}.big{font-size:48px}.source{overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{@page{size:A4 landscape;margin:10mm}body{background:white;font-size:14px}.toolbar,.footer,.skip{display:none!important}main{max-width:none}.slide,.slide[hidden]{display:flex!important;margin:0;padding:20px 30px;box-shadow:none;min-height:175mm;break-after:page;break-inside:avoid}.slide:last-child{break-after:auto}h1{font-size:44px}h2{font-size:28px}.lead{font-size:19px}.source{font-size:10px}td,th{padding:6px}table,.barrow{font-size:15px}.small,figcaption,caption{font-size:12px}.timeline p{font-size:14px}.sources li{font-size:14px}a{color:inherit}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<nav class="toolbar" aria-label="Controles de presentación" hidden>
+<button id="prev" type="button" aria-label="Diapositiva anterior">← Anterior</button>
+<button id="next" type="button" aria-label="Diapositiva siguiente">Siguiente →</button>
+<label for="jump">Ir a</label><select id="jump"></select>
+<button id="all" type="button" aria-pressed="false">Ver todas</button>
+<button id="print" type="button">Imprimir / PDF</button>
+<span id="status" class="status" role="status" aria-live="polite"></span>
+</nav>
+<main id="contenido" tabindex="-1">
+<section class="slide" aria-labelledby="s1" data-title="Avances">
+<p class="eyebrow">Universidad de Chile · Magíster en Data Science</p>
+<h1 id="s1">Atención y activación durante la navegación web</h1>
+<p class="lead">Avances en modelos temporales, fusión multimodal y reducción de variables.</p>
+<div><span class="pill">EEG</span><span class="pill">GSR</span><span class="pill">Pupilometría</span><span class="pill">Eye tracking</span></div>
+<div class="callout"><strong>Resultado central.</strong> Las búsquedas recientes no mejoran la referencia Ridge. La ablación identifica señales útiles para acotar el problema, con confirmación independiente pendiente.</div>
+<p class="source">Mario Romero · 17 septiembre 2026 · Resultados experimentales cerrados al 14 septiembre. Presentación de avance, no validación final.</p>
+</section>
+<section class="slide" aria-labelledby="s2" data-title="Pregunta y objetivos">
+<p class="eyebrow">Problema de investigación</p><h2 id="s2">¿La historia y la fusión ayudan a generalizar a otras personas?</h2>
+<div class="columns"><article class="panel"><h3>Atención</h3><p>Profesor: eye tracking + pupilometría.</p><p>Estudiante: EEG + GSR.</p><p class="small">El profesor genera las etiquetas; sus señales se excluyen de los predictores.</p></article><article class="panel teal"><h3>Activación — arousal</h3><p>Profesor: GSR.</p><p>Estudiante: EEG + eye tracking + pupilometría.</p><p class="small">La activación es la definición operacional utilizada; no equivale a emoción general.</p></article></div>
+<div class="callout">Las rondas más recientes se concentran en <strong>activación</strong>, con tres clases y etiqueta fija <code>arousal_label_6s</code>. Atención no se reentrenó en estos grids.</div>
+<p class="source">Toma de Muestra 2: cuatro señales, sin expresión facial. Marco: notas de tesis; protocolo en los informes de experimentos.</p>
+</section>
+<section class="slide" aria-labelledby="s3" data-title="Evaluación">
+<p class="eyebrow">Protocolo de los grids recientes</p><h2 id="s3">La selección separa participantes de ajuste y evaluación</h2>
+<div class="pipeline"><div><strong>25 personas</strong>13.524 ventanas en train</div><span class="arrow" aria-hidden="true">→</span><div><strong>5 folds</strong>20 ajuste / 5 evaluación</div><span class="arrow" aria-hidden="true">→</span><div><strong>16 / 4</strong>División interna para elegir</div></div>
+<ul><li>Configuración, época y suavizado se eligen dentro de cada fold; se congelan antes de evaluar fuera del ajuste.</li><li>Imputación y escalado se ajustan solo con los participantes de entrenamiento correspondientes.</li><li>Ventanas de 2 segundos, paso de 1 segundo. Dos semillas externas en los grids neuronales.</li></ul>
+<div class="callout"><strong>BA macro por participante:</strong> promedio de recalls de clases presentes en cada persona, luego promedio entre personas. La constante bajo/alto obtiene <strong>0,3467</strong>; no equivale a BA global.</div>
+<p class="source">Sin nueva evaluación de validation (8) ni test (8) en estas rondas. Dos participantes de train no tienen una de las tres clases.</p>
+</section>
+<section class="slide" aria-labelledby="s4" data-title="Recorrido experimental">
+<p class="eyebrow">Del baseline a los controles temporales</p><h2 id="s4">El avance incluye modelos, controles y trazabilidad</h2>
+<div class="timeline"><article><time>06–10 SEP</time><p>Baselines, primeras redes temporales y comparación de fusiones tempranas y tardías.</p></article><article><time>11–12 SEP</time><p>Ensambles, SVM, QDA, boosting, persistencia, Ridge multiescala y variantes ordinales.</p></article><article><time>12 SEP</time><p>Ablación de modalidades y variables; PCA. 38 variantes y 190 modelos guardados.</p></article><article><time>13–14 SEP</time><p>Transformer y grids de BiLSTM → LSTM → TCN. Controles repetidos y auditoría de predicciones.</p></article></div>
+<div class="callout">Las conclusiones siguientes usan resultados externos de los folds de train. Las múltiples rondas sobre las mismas personas hacen que el balance global sea <strong>exploratorio</strong>.</div>
+<p class="source">Fuentes: informes fechados en documentacion/. Los intentos y sus resultados se conservan, incluidos los que no mejoraron.</p>
+</section>
+<section class="slide" aria-labelledby="s5" data-title="Comparación de modelos">
+<p class="eyebrow">Activación · BA macro por participante</p><h2 id="s5">Ninguna red del grid supera a Ridge</h2>
+<figure><div class="bars">
+<div class="barrow reference"><span>Ridge de referencia</span><div class="track" aria-hidden="true"><div class="fill" style="width:74.95%"></div></div><span class="metric">0,3748</span></div>
+<div class="barrow"><span>BiLSTM · grid</span><div class="track" aria-hidden="true"><div class="fill" style="width:68.20%"></div></div><span class="metric">0,3410</span></div>
+<div class="barrow"><span>LSTM · grid</span><div class="track" aria-hidden="true"><div class="fill" style="width:66.65%"></div></div><span class="metric">0,3333</span></div>
+<div class="barrow"><span>TCN · grid</span><div class="track" aria-hidden="true"><div class="fill" style="width:70.58%"></div></div><span class="metric">0,3529</span></div>
+<div class="barrow"><span>Transformer · grid</span><div class="track" aria-hidden="true"><div class="fill" style="width:70.52%"></div></div><span class="metric">0,3526</span></div>
+<div class="barrow"><span>Sin conteo fijaciones*</span><div class="track" aria-hidden="true"><div class="fill secondary" style="width:76.86%"></div></div><span class="metric">0,3843</span></div>
+</div><div class="axis" aria-hidden="true"><span>0</span><span>Escala hasta la meta 0,50</span></div><figcaption>*Sin <code>fixation_count</code>: máximo secundario entre 24 eliminaciones, pendiente de confirmación. Ridge incluye representaciones temporales seleccionadas por fold; no es un baseline puramente estático.</figcaption></figure>
+<p class="source">Fuentes: Grid_BiLSTM_LSTM_TCN_13-09-2026, Grid_Transformer_13-09-2026 y Ablacion_PCA_12-09-2026. La meta 0,50 no se alcanzó.</p>
+</section>
+<section class="slide" aria-labelledby="s6" data-title="Diseño del grid">
+<p class="eyebrow">BiLSTM → LSTM → TCN · ejecución completada</p><h2 id="s6">32 configuraciones por familia y selección interna</h2>
+<div class="columns"><table><caption>Producto cartesiano de cinco dimensiones</caption><thead><tr><th scope="col">Dimensión</th><th scope="col">Valores</th></tr></thead><tbody><tr><th scope="row">Contexto</th><td>8 / 32 ventanas</td></tr><tr><th scope="row">Ancho oculto</th><td>16 / 32</td></tr><tr><th scope="row">Profundidad</th><td>1 / 2 niveles</td></tr><tr><th scope="row">Learning rate</th><td>0,0003 / 0,001</td></tr><tr><th scope="row">Dropout</th><td>0,1 / 0,4</td></tr></tbody></table><article><h3>Decisiones adicionales</h3><p>Épocas: 2, 4, 8, 16.<br>Suavizado causal: 1, 8, 32.</p><p><strong>480 entrenamientos internos</strong> y 5.760 puntuaciones de selección entre las tres familias.</p><p class="small">AdamW, batch 256, weight decay 0,01 y clip 1. En TCN, los niveles corresponden a 2 / 4 bloques; en las recurrentes, a 1 / 2 capas.</p></article></div>
+<p class="source">Cinco folds y dos semillas externas. BiLSTM recorre en ambas direcciones un bloque pasado que termina en la ventana actual; no usa ventanas futuras.</p>
+</section>
+<section class="slide" aria-labelledby="s7" data-title="¿Aporta la historia?">
+<p class="eyebrow">Contraste pareado · puntos de BA</p><h2 id="s7">La ventaja temporal de TCN sigue siendo incierta</h2>
+<table><caption>Red con historia menos control que repite la ventana actual</caption><thead><tr><th scope="col">Familia</th><th scope="col">Ganancia (pp)</th><th scope="col">IC descriptivo 95 % (pp)</th><th scope="col">Personas que mejoran</th></tr></thead><tbody><tr><th scope="row">BiLSTM</th><td>−0,668</td><td>[−1,997; +0,711]</td><td>11 / 25</td></tr><tr><th scope="row">LSTM</th><td>−1,724</td><td>[−2,959; −0,618]</td><td>9 / 25</td></tr><tr><th scope="row">TCN</th><td>+0,713</td><td>[−0,134; +1,515]</td><td>20 / 25</td></tr></tbody></table>
+<div class="callout">El control se reentrena con la misma configuración, época y semilla, y <strong>conserva el suavizado</strong>. Este contraste aísla la historia de entrada, no toda forma de temporalidad.</div>
+<p class="source">Bootstrap pareado por persona, 2.000 remuestreos; semillas promediadas antes del remuestreo. IC sin corrección por multiplicidad ni dependencia entre folds. Fuente: contrastes.csv de los grids recurrentes.</p>
+</section>
+<section class="slide" aria-labelledby="s8" data-title="Ablación de modalidades">
+<p class="eyebrow">Acotar las señales · arousal</p><h2 id="s8">EEG aporta, pero usarlo solo debilita la clase media</h2>
+<div class="columns"><table><caption>Ridge con hiperparámetros fijados previamente</caption><thead><tr><th scope="col">Entradas</th><th scope="col">BA macro</th></tr></thead><tbody><tr><th scope="row">Todas las del estudiante</th><td>0,3747</td></tr><tr><th scope="row">Sin pupila</th><td>0,3740</td></tr><tr><th scope="row">Sin mirada</th><td>0,3706</td></tr><tr><th scope="row">Sin EEG</th><td>0,3546</td></tr><tr><th scope="row">Solo EEG</th><td>0,3722</td></tr></tbody></table><article class="panel"><h3>Dos resultados distintos</h3><p>Quitar EEG reduce BA en <strong>2,019 pp</strong>, IC [+0,045; +4,116].</p><p>Usar solo EEG reduce el recall de la clase media de <strong>23,3 % a 10,8 %</strong>.</p><p class="small">La cercanía en BA no basta para recomendar un panel reducido a EEG.</p></article></div>
+<p class="source">Ablacion_PCA_12-09-2026. Aporte condicionado a Ridge y a sus representaciones seleccionadas; no demuestra importancia fisiológica ni causalidad.</p>
+</section>
+<section class="slide" aria-labelledby="s9" data-title="Variables y reducción">
+<p class="eyebrow">Ablación individual · hipótesis para confirmar</p><h2 id="s9">No hay un ranking individual firme</h2>
+<table><caption>Mayores pérdidas medias al quitar una variable y todas sus derivadas</caption><thead><tr><th scope="col">Variable</th><th scope="col">Pérdida BA (pp)</th><th scope="col">IC 95 % (pp)</th></tr></thead><tbody><tr><th scope="row">Amplitud pico a pico EEG</th><td>+0,421</td><td>[−0,319; +1,289]</td></tr><tr><th scope="row">Media pupilar</th><td>+0,356</td><td>[−0,323; +1,010]</td></tr><tr><th scope="row">Recorrido de la mirada</th><td>+0,260</td><td>[−0,292; +0,799]</td></tr><tr><th scope="row">Máximo pupilar</th><td>+0,234</td><td>[−0,256; +0,683]</td></tr></tbody></table>
+<div class="callout">Quitar <code>fixation_count</code> obtiene <strong>0,3843</strong>: +0,957 pp, IC [+0,287; +1,702]. Es un hallazgo secundario tras comparar 24 eliminaciones; requiere seleccionar el panel dentro del ajuste y confirmarlo fuera.</div>
+<p class="source">Las cuatro contribuciones positivas mostradas tienen IC que incluye cero. Variables correlacionadas pueden compensarse. Fuente: ranking_variables.csv e informe de ablación.</p>
+</section>
+<section class="slide" aria-labelledby="s10" data-title="PCA">
+<p class="eyebrow">Compresión de características</p><h2 id="s10">PCA al 90 % conserva rendimiento sin una mejora clara</h2>
+<div class="columns"><table><caption>Varianza retenida y BA macro por participante</caption><thead><tr><th scope="col">Variante</th><th scope="col">BA macro</th></tr></thead><tbody><tr><th scope="row">Referencia</th><td>0,3747</td></tr><tr><th scope="row">PCA 80 %</th><td>0,3554</td></tr><tr><th scope="row">PCA 90 %</th><td>0,3764</td></tr><tr><th scope="row">PCA 95 %</th><td>0,3644</td></tr></tbody></table><article class="panel teal"><h3>PCA 90 %</h3><p><strong>13–45 componentes</strong> según el fold, frente a 28–324 dimensiones transformadas.</p><p>Ganancia +0,165 pp.<br>IC [−2,032; +2,433].</p><p class="small">Son dimensiones tras ingeniería temporal e indicadores de ausencia; no son cantidades de sensores.</p></article></div>
+<div class="callout">Explicar varianza de las entradas no equivale a explicar la etiqueta. PCA se ajustó solo con las personas de ajuste de cada fold.</div>
+<p class="source">Fuente: resumen_pca.csv e informe Ablacion_PCA_12-09-2026. Comparación secundaria.</p>
+</section>
+<section class="slide" aria-labelledby="s11" data-title="Clase media">
+<p class="eyebrow">Error pendiente</p><h2 id="s11">La activación media sigue siendo difícil de recuperar</h2>
+<table><caption>Recall de la clase media sobre predicciones externas agrupadas</caption><thead><tr><th scope="col">Modelo / variante</th><th scope="col">Recall medio</th><th scope="col">Macro-F1 agrupada</th></tr></thead><tbody><tr><th scope="row">Ridge de referencia</th><td>23,3 %</td><td>0,3646</td></tr><tr><th scope="row">Ridge solo EEG</th><td>10,8 %</td><td>0,3385</td></tr><tr><th scope="row">BiLSTM grid</th><td>16,2 %</td><td>0,3215</td></tr><tr><th scope="row">LSTM grid</th><td>14,5 %</td><td>0,3127</td></tr><tr><th scope="row">TCN grid</th><td>14,5 %</td><td>0,3293</td></tr><tr><th scope="row">Transformer grid</th><td>17,5 %</td><td>0,3327</td></tr></tbody></table>
+<p class="source">Estas métricas agrupan ventanas; no son el promedio por persona de BA. En redes se agrupan ambas semillas, sin tratarlas como personas independientes ni como un ensamble.</p>
+</section>
+<section class="slide" aria-labelledby="s12" data-title="Reproducibilidad">
+<p class="eyebrow">Entrega experimental · últimos tres grids</p><h2 id="s12">Modelos y predicciones quedaron guardados y auditados</h2>
+<div class="columns"><article><p class="big">1.980</p><h3>Modelos y checkpoints</h3><p>1.920 checkpoints internos + 60 modelos externos, incluidos controles.</p></article><article><p class="big">162.288</p><h3>Predicciones externas</h3><p>Verificación de recarga, probabilidades y clase predicha.</p></article></div>
+<div class="callout"><strong>66 pruebas aprobadas</strong> en el cierre de los grids. Auditorías de particiones, preprocesamiento, exclusión del profesor, selección congelada e integridad de artefactos.</div>
+<p class="small" style="margin-top:16px">Tolerancia de probabilidades: 10⁻⁷; coincidencia exacta de clase. Inventario conjunto con 5.118 hashes. Estas cantidades corresponden a BiLSTM, LSTM y TCN, no a todo el historial.</p>
+<p class="source">Resultados: commit 40cfa2f · respaldo de notas: 91c5d9a. Fuentes: pruebas.json, verificacion_conjunta.json e inventario_entrega.json.</p>
+</section>
+<section class="slide" aria-labelledby="s13" data-title="Límites y próximos pasos">
+<p class="eyebrow">Interpretación y decisiones pendientes</p><h2 id="s13">El siguiente paso debe confirmar hipótesis acotadas</h2>
+<div class="columns"><article><h3>Lo que limita la conclusión</h3><ul><li>Muchas búsquedas sobre las mismas 25 personas; riesgo de optimismo por selección.</li><li>Etiquetas por cuantiles individuales: la misma magnitud puede representar clases distintas.</li><li>Normalización original offline. No se ha validado un sistema completo en tiempo real.</li><li>Los intervalos son descriptivos y no corrigen búsquedas múltiples.</li></ul></article><article class="panel teal"><h3>Propuesta para discutir</h3><ol><li>Revisar separabilidad de la clase media y estabilidad de etiquetas.</li><li>Predefinir pocos paneles: completo, EEG y exclusión de fijaciones seleccionada internamente.</li><li>Congelar protocolo y criterios antes de una evaluación confirmatoria.</li><li>Extender a atención los controles que correspondan, sin trasladar conclusiones de arousal.</li></ol></article></div>
+<p class="source">Propuestas pendientes de decisión. No se cambió el etiquetado ni se reevaluaron validation/test para esta presentación.</p>
+</section>
+<section class="slide" aria-labelledby="s14" data-title="Fuentes y cierre">
+<p class="eyebrow">Material de respaldo</p><h2 id="s14">Los avances sostienen una conclusión prudente</h2>
+<p class="lead">Hay una evaluación reproducible y evidencia para reducir el espacio de búsqueda. Todavía no hay una mejora temporal estable ni una BA macro superior a 0,50.</p>
+<ul class="sources"><li><a href="../documentacion/Grid_BiLSTM_LSTM_TCN_13-09-2026.md">Informe de BiLSTM, LSTM y TCN: selección, resultados y controles</a></li><li><a href="../documentacion/Grid_Transformer_13-09-2026.md">Informe del grid de Transformer</a></li><li><a href="../documentacion/Ablacion_PCA_12-09-2026.md">Ablaciones de modalidades, variables y PCA</a></li><li><a href="../documentacion/Transformer_TCN_13-09-2026.md">Primera iteración de Transformer y TCN</a></li><li><a href="../resultados/grids_recurrentes_13-09-2026/resumen.csv">Resultados numéricos de los últimos tres grids</a> · <a href="../resultados/grids_recurrentes_13-09-2026/contrastes.csv">Contrastes pareados e intervalos</a></li></ul>
+<p class="source">Los enlaces relativos requieren el repositorio junto al HTML. La presentación y sus gráficos funcionan sin conexión ni bibliotecas externas.</p>
+</section>
+</main>
+<footer class="footer">Flechas ← → para avanzar · Inicio / Fin · “Ver todas” para lectura continua · Impresión con todas las diapositivas</footer>
+<script>
+(()=>{'use strict';const slides=[...document.querySelectorAll('.slide')],jump=document.querySelector('#jump'),status=document.querySelector('#status'),prev=document.querySelector('#prev'),next=document.querySelector('#next'),all=document.querySelector('#all');let index=Math.max(0,Math.min(slides.length-1,Number(location.hash.slice(1))-1||0)),list=false;
+slides.forEach((s,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`${i+1}. ${s.dataset.title}`;jump.append(o)});
+function render(){slides.forEach((s,i)=>s.hidden=!list&&i!==index);jump.value=index;prev.disabled=list||index===0;next.disabled=list||index===slides.length-1;status.textContent=list?`${slides.length} diapositivas`:`${index+1} / ${slides.length}`;all.setAttribute('aria-pressed',String(list));all.textContent=list?'Ver una':'Ver todas';history.replaceState(null,'',`#${index+1}`)}
+function go(i){index=Math.max(0,Math.min(slides.length-1,i));render();if(list)slides[index].scrollIntoView();else window.scrollTo(0,0)}
+prev.addEventListener('click',()=>go(index-1));next.addEventListener('click',()=>go(index+1));jump.addEventListener('change',()=>go(+jump.value));all.addEventListener('click',()=>{list=!list;render();window.scrollTo(0,0)});document.querySelector('#print').addEventListener('click',()=>window.print());document.addEventListener('keydown',e=>{if(list||/INPUT|SELECT|TEXTAREA|BUTTON|A/.test(e.target.tagName)||e.ctrlKey||e.altKey||e.metaKey)return;const keys={ArrowRight:index+1,ArrowLeft:index-1,Home:0,End:slides.length-1};if(e.key in keys){e.preventDefault();go(keys[e.key])}});window.addEventListener('hashchange',()=>go(Number(location.hash.slice(1))-1||0));document.querySelector('.toolbar').hidden=false;render();})();
+</script>
+</body>
+</html>

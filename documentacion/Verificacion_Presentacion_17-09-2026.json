@@ -1,0 +1,120 @@
+{
+  "date": "2026-09-17",
+  "checks": [
+    {
+      "name": "14 diapositivas",
+      "passed": true
+    },
+    {
+      "name": "Primera visible",
+      "passed": true
+    },
+    {
+      "name": "Flecha siguiente",
+      "passed": true
+    },
+    {
+      "name": "Fin",
+      "passed": true
+    },
+    {
+      "name": "Selector",
+      "passed": true
+    },
+    {
+      "name": "Lectura continua",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde a 1440px",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones a 1440px",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde a 720px",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones a 720px",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde a 320px",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones a 320px",
+      "passed": true
+    },
+    {
+      "name": "Espaciado ampliado sin desborde",
+      "passed": true
+    },
+    {
+      "name": "Impresion incluye 14",
+      "passed": true
+    },
+    {
+      "name": "Tab alcanza fuentes",
+      "passed": true
+    },
+    {
+      "name": "Foco visible definido",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Enlaces relativos existen",
+      "passed": true
+    },
+    {
+      "name": "BA BiLSTM coincide CSV",
+      "passed": true
+    },
+    {
+      "name": "BA LSTM coincide CSV",
+      "passed": true
+    },
+    {
+      "name": "BA TCN coincide CSV",
+      "passed": true
+    },
+    {
+      "name": "Sin JavaScript se lee todo",
+      "passed": true
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 720,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 320,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "limitations": [
+    "Sin prueba con lector de pantalla real. La auditoria no certifica cumplimiento WCAG completo."
+  ]
+}
