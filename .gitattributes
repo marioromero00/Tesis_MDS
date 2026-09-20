@@ -2,6 +2,7 @@
 *.joblib binary
 *.pt binary
 *.zip binary
+*.pptx binary
 scripts/*.py text eol=lf
 tests/*.py text eol=lf
 requirements.txt text eol=lf
