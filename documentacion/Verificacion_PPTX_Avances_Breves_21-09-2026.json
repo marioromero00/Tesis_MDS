@@ -1,0 +1,44 @@
+{
+  "slides": 5,
+  "aspect_ratio": "16:9",
+  "source_sha256": "a4b0a371f48f6b4e8ebc741b93628e3e3689f12adb2dd4be59452f00ad48ca23",
+  "pptx_sha256": "2a2943bcf5a43ad017a13141ef8d66a2dea16e16990e1c2ea34b31677b11b430",
+  "slides_verified": [
+    {
+      "slide": 1,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 2,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 3,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 4,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 5,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    }
+  ],
+  "media_files": [],
+  "external_relationships": [],
+  "powerpoint_render": {
+    "opened_in": "Microsoft PowerPoint",
+    "slides": 5,
+    "overflow": [],
+    "tolerance_points": 2,
+    "pdf_pages_expected": 5,
+    "canva_import_tested": false,
+    "pdf_pages_verified": 5
+  }
+}
