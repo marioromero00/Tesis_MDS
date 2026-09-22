@@ -1,0 +1,64 @@
+{
+  "revision_date": "2026-09-22",
+  "slides": 6,
+  "aspect_ratio": "16:9",
+  "font": "Arial",
+  "source_sha256": "e1ce2479b12abaab31643ad08411223c0072f8bf5cd2145a7f41ea6c3d7fe425",
+  "pptx_sha256": "f2e2af5ce892d14a03cae1677e3930360c986da4ed395f193e7b8bc165b08f0f",
+  "slides_verified": [
+    {
+      "slide": 1,
+      "shapes": 13,
+      "text_boxes": 10,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 2,
+      "shapes": 20,
+      "text_boxes": 11,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 3,
+      "shapes": 16,
+      "text_boxes": 10,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 4,
+      "shapes": 26,
+      "text_boxes": 25,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 5,
+      "shapes": 40,
+      "text_boxes": 30,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 6,
+      "shapes": 34,
+      "text_boxes": 27,
+      "source_text_preserved": true,
+      "out_of_bounds": []
+    }
+  ],
+  "media_files": [],
+  "external_relationships": [],
+  "powerpoint_render": {
+    "opened_in": "Microsoft PowerPoint",
+    "slides": 6,
+    "overflow": [],
+    "tolerance_points": 2,
+    "pdf_pages_expected": 6,
+    "canva_import_tested": false,
+    "pdf_pages_verified": 6
+  },
+  "objectives_match_thesis_notes": true
+}

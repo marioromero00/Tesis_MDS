@@ -1,5 +1,7 @@
 # Conversión de la presentación breve a PowerPoint — 20-09-2026
 
+> **Actualización 22-09-2026:** el PowerPoint fue regenerado y reemplazado en la misma ruta con nuevos objetivos y metodología KDD. La descripción siguiente registra la conversión original del 20-09; la revisión vigente se documenta en [Revision_Objetivos_KDD_22-09-2026.md](Revision_Objetivos_KDD_22-09-2026.md).
+
 [PowerPoint editable](../presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.pptx)
 generado desde el HTML homónimo para que Mario pueda importarlo en Canva.
 

@@ -75,7 +75,7 @@ def base(section, index):
     text(slide,txt(section.select_one('.source')),50,490,830,40,8.3,False,MUTED)
     text(slide,f'{index+1} / 6',898,510,45,15,9,False,MUTED)
     slide.notes_slide.notes_text_frame.text = (
-        f'Fuente: {SOURCE.name}\nConversión editable del HTML del 20-09-2026.\n\n'
+        f'Fuente: {SOURCE.name}\nRevisión de objetivos y KDD del 22-09-2026.\n\n'
         + section.get_text('\n', strip=True)
     )
     return slide
@@ -112,30 +112,30 @@ text(slide,'+',471,390,23,28,20,False,BLUE)
 s = sections[3]; slide = base(s,3)
 for i,li in enumerate(s.select('.goals li')):
     x = 50 if i < 3 else 500
-    y = 153 + i*103 if i < 3 else 153+(i-3)*81
+    y = 153 + i*103 if i < 3 else [153,236,327,410][i-3]
     label = txt(li.strong)
     text(slide,str(i+1)+'.',x,y,25,25,17,True,TEAL)
     text(slide,label,x+31,y,368,26,16.5,True)
-    text(slide,txt(li)[len(label):].strip(),x+31,y+28,368,65 if i<3 else 48,15.4)
+    text(slide,txt(li)[len(label):].strip(),x+31,y+28,368,70 if i<3 else 61,14.5)
 
 # 5. Metodología.
 s = sections[4]; slide = base(s,4)
 for i,li in enumerate(s.select('.steps li')):
-    x = 50+i*219
-    rect(slide,x,150,203,132,SOFT)
-    text(slide,f'{i+1:02}',x+12,159,40,22,18,True,TEAL)
+    x = 50+i*175
+    rect(slide,x,148,160,159,SOFT)
+    text(slide,f'{i+1:02}',x+12,158,40,22,17,True,TEAL)
     label = txt(li.strong)
-    text(slide,label,x+12,186,179,22,15,True)
-    text(slide,txt(li)[len(label):].strip(),x+10,213,183,64,12.5)
-text(slide,txt(s.caption),50,297,860,22,11.5,False,MUTED)
+    text(slide,label,x+12,186,136,35,13.7,True)
+    text(slide,txt(li)[len(label):].strip(),x+9,232,142,68,11.4)
+text(slide,txt(s.caption),50,316,860,22,11.5,False,MUTED)
 xs, widths = [50,246,564],[178,301,346]
 for ri,tr in enumerate(s.select('tr')):
-    y = 326+ri*34
+    y = 345+ri*31
     for ci,cell in enumerate(tr.select('th,td')):
         text(slide,txt(cell),xs[ci]+4,y,widths[ci]-8,29,11 if ri==0 else 13,ri==0 or ci==0,MUTED if ri==0 else INK)
     rect(slide,50,y+30,860,.6,LINE)
-rect(slide,50,434,860,42,SOFT)
-text(slide,txt(s.select_one('.note')),61,441,838,33,11.5)
+rect(slide,50,448,860,36,SOFT)
+text(slide,txt(s.select_one('.note')),61,452,838,29,10.7)
 
 # 6. Datos disponibles.
 s = sections[5]; slide = base(s,5)
@@ -158,7 +158,7 @@ prs.save(DEST)
 loaded = Presentation(DEST)
 def norm(value):
     return re.sub(r'\s+',' ',value).strip()
-verification = {'slides':len(loaded.slides),'aspect_ratio':'16:9','font':'Arial',
+verification = {'revision_date':'2026-09-22','slides':len(loaded.slides),'aspect_ratio':'16:9','font':'Arial',
                 'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
                 'pptx_sha256':hashlib.sha256(DEST.read_bytes()).hexdigest(),
                 'slides_verified':[]}
@@ -178,5 +178,5 @@ with zipfile.ZipFile(DEST) as z:
     verification['external_relationships'] = [n for n in z.namelist() if n.endswith('.rels') and b'TargetMode="External"' in z.read(n)]
     assert not verification['media_files']
     assert not verification['external_relationships']
-(ROOT/'documentacion/Verificacion_PPTX_Tema_20-09-2026.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'documentacion/Verificacion_PPTX_Tema_22-09-2026.json').write_text(json.dumps(verification,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(f'Created: {DEST.name}, {DEST.stat().st_size:,} bytes, {len(loaded.slides)} editable slides')

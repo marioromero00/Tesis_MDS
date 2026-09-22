@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'
 $repoDir = Split-Path -Parent $PSScriptRoot
 $pptPath = Join-Path $repoDir 'presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.pptx'
-$renderDir = Join-Path $env:TEMP 'mds-pptx-tema-20-09-2026'
+$renderDir = Join-Path $env:TEMP 'mds-pptx-tema-22-09-2026'
 New-Item -ItemType Directory -Force -Path $renderDir | Out-Null
 $pptApp = New-Object -ComObject PowerPoint.Application
 $initialCount = $pptApp.Presentations.Count
@@ -23,7 +23,7 @@ try {
     }
     $deck.SaveAs((Join-Path $renderDir 'presentacion.pdf'),32)
     $audit = [pscustomobject]@{opened_in='Microsoft PowerPoint'; slides=$deck.Slides.Count; overflow=@($overflow); tolerance_points=2; pdf_pages_expected=6; canva_import_tested=$false}
-    $reportPath = Join-Path $repoDir 'documentacion/Verificacion_PPTX_Tema_20-09-2026.json'
+    $reportPath = Join-Path $repoDir 'documentacion/Verificacion_PPTX_Tema_22-09-2026.json'
     $report = Get-Content -LiteralPath $reportPath -Raw -Encoding UTF8 | ConvertFrom-Json
     $report | Add-Member -NotePropertyName 'powerpoint_render' -NotePropertyValue $audit -Force
     $report | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $reportPath -Encoding UTF8

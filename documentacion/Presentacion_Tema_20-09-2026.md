@@ -1,5 +1,7 @@
 # Presentación breve del tema de tesis — 20-09-2026
 
+> **Actualización 22-09-2026:** el archivo fue reemplazado en la misma ruta con nuevos objetivos y metodología KDD. La descripción siguiente registra la entrega original del 20-09; la revisión vigente se documenta en [Revision_Objetivos_KDD_22-09-2026.md](Revision_Objetivos_KDD_22-09-2026.md).
+
 Entregable: [HTML autocontenido](../presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.html).
 
 Seis diapositivas: tema y profesor guía; antecedentes; objetivo general; síntesis

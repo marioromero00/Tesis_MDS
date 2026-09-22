@@ -1,0 +1,197 @@
+{
+  "date": "2026-09-22",
+  "html_sha256": "e1ce2479b12abaab31643ad08411223c0072f8bf5cd2145a7f41ea6c3d7fe425",
+  "checks": [
+    {
+      "name": "Contraste de texto >= 4.5",
+      "passed": true
+    },
+    {
+      "name": "Particion 25/8/8, seis excluidos y sensibilidad",
+      "passed": true
+    },
+    {
+      "name": "Tabla de 59 columnas",
+      "passed": true
+    },
+    {
+      "name": "25992 ventanas",
+      "passed": true
+    },
+    {
+      "name": "Autocontenida sin recursos externos",
+      "passed": true
+    },
+    {
+      "name": "Seis diapositivas, una visible",
+      "passed": true
+    },
+    {
+      "name": "Flecha siguiente",
+      "passed": true
+    },
+    {
+      "name": "Fin",
+      "passed": true
+    },
+    {
+      "name": "Inicio",
+      "passed": true
+    },
+    {
+      "name": "Selector",
+      "passed": true
+    },
+    {
+      "name": "Lectura continua",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 1440",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 1440",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 720",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 720",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 320",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 320",
+      "passed": true
+    },
+    {
+      "name": "Texto espaciado sin desborde",
+      "passed": true
+    },
+    {
+      "name": "Impresion de seis diapositivas",
+      "passed": true
+    },
+    {
+      "name": "PDF seis paginas completas",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco next",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco jump",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco all",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco print",
+      "passed": true
+    },
+    {
+      "name": "Orden teclado de controles",
+      "passed": true
+    },
+    {
+      "name": "Retroceso de foco",
+      "passed": true
+    },
+    {
+      "name": "Espacio activa lectura",
+      "passed": true
+    },
+    {
+      "name": "Espacio vuelve al deck",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Cero peticiones HTTP",
+      "passed": true
+    },
+    {
+      "name": "Contenido completo sin JavaScript",
+      "passed": true
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 720,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 320,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "#12243b",
+      "background": "#ffffff",
+      "ratio": 15.66
+    },
+    {
+      "foreground": "#12243b",
+      "background": "#eff4f9",
+      "ratio": 14.15
+    },
+    {
+      "foreground": "#46556b",
+      "background": "#ffffff",
+      "ratio": 7.58
+    },
+    {
+      "foreground": "#46556b",
+      "background": "#eff4f9",
+      "ratio": 6.85
+    },
+    {
+      "foreground": "#003d73",
+      "background": "#ffffff",
+      "ratio": 10.97
+    },
+    {
+      "foreground": "#003d73",
+      "background": "#eff4f9",
+      "ratio": 9.91
+    },
+    {
+      "foreground": "#09686b",
+      "background": "#ffffff",
+      "ratio": 6.55
+    },
+    {
+      "foreground": "#09686b",
+      "background": "#eff4f9",
+      "ratio": 5.92
+    }
+  ],
+  "limitations": [
+    "Sin lector de pantalla real.",
+    "720 px aproxima reflujo al 200%; no se opero el zoom manual del navegador.",
+    "La auditoria no certifica cumplimiento integral de WCAG."
+  ]
+}

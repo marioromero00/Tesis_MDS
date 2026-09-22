@@ -16,10 +16,10 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML = ROOT / 'presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.html'
-TEMP = Path(os.environ['TEMP']) / 'mds-presentation-20-09-2026'
+TEMP = Path(os.environ['TEMP']) / 'mds-presentation-22-09-2026'
 TEMP.mkdir(exist_ok=True)
 AXE = TEMP.parent / 'mds-presentation-audit/axe.min.js'
-report = {'date': '2026-09-20', 'html_sha256': hashlib.sha256(HTML.read_bytes()).hexdigest(), 'checks': [], 'axe': []}
+report = {'date': '2026-09-22', 'html_sha256': hashlib.sha256(HTML.read_bytes()).hexdigest(), 'checks': [], 'axe': []}
 
 def check(name, ok):
     report['checks'].append({'name': name, 'passed': bool(ok)})
@@ -111,5 +111,5 @@ with sync_playwright() as p:
     check('Contenido completo sin JavaScript', nojs.locator('.slide:visible').count() == 6)
     browser.close()
 report['limitations'] = ['Sin lector de pantalla real.', '720 px aproxima reflujo al 200%; no se opero el zoom manual del navegador.', 'La auditoria no certifica cumplimiento integral de WCAG.']
-(ROOT/'documentacion/Verificacion_Presentacion_Tema_20-09-2026.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'documentacion/Verificacion_Presentacion_Tema_22-09-2026.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'checks':len(report['checks']),'screenshots':str(TEMP)}))

@@ -12,6 +12,11 @@
 @media screen and (max-width:480px){.data-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.data-table tr{display:block;padding:12px 0;border-bottom:1px solid var(--line)}.data-table th,.data-table td{display:block;padding:4px 0;border:0;font-size:15px;overflow-wrap:normal}.data-table td::before{content:attr(data-label);display:block;font-size:12px;color:var(--muted);font-weight:600}.data-table tbody th{font-size:18px;color:var(--blue)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 @media print{@page{size:A4 landscape;margin:10mm}body{background:white;font-size:15px}.toolbar,.footer,.skip{display:none!important}main{max-width:none}.slide,.slide[hidden]{display:flex!important;min-height:178mm;break-after:page;break-inside:avoid;margin:0;padding:20px 30px;box-shadow:none}.slide:last-child{break-after:auto}h1{font-size:36px}h2{font-size:29px}h3{font-size:18px}.objective{font-size:23px}.question{font-size:19px}.goals{font-size:16px}.goals li{margin-bottom:15px}.steps li{font-size:13px}.steps strong{font-size:16px}table,tbody th{font-size:14px}th,td{padding:8px}.small,.note,caption{font-size:12px}.source{font-size:10px}.metrics b{font-size:29px}.metrics span{font-size:12px}.columns{gap:24px}}
+
+/* Revision 22-09-2026: objetivos cientificos y marco KDD. */
+.kdd{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.kdd li{padding:14px;font-size:15px}.kdd strong{font-size:17px}.goals{font-size:18px}.goals li{margin-bottom:15px}
+@media(max-width:760px){.kdd{grid-template-columns:1fr}.goals{font-size:18px}}
+@media print{.kdd li{font-size:12px;padding:12px}.kdd strong{font-size:14px}.goals{font-size:15px}.goals li{margin-bottom:12px}.objective{font-size:22px}}
 </style>
 </head>
 <body>
@@ -30,7 +35,7 @@
 <h1 id="s1">Modelos temporales multimodales para la detección de atención y activación emocional durante la navegación web</h1>
 <dl class="identification"><div><dt>Estudiante</dt><dd>Mario Romero</dd></div><div><dt>Profesor guía</dt><dd>Dr. Juan D. Velásquez</dd></div></dl>
 <div class="panel teal"><span class="label">Tema de tesis</span><p style="margin:8px 0 0">Estudiar el aporte de la información temporal y de la fusión de señales neurofisiológicas para predecir atención y activación en otras personas.</p></div>
-<p class="source">Proyecto Fondecyt 1231122 · Toma de Muestra 2 · 20 de septiembre de 2026.<br>Alcance operacional de activación emocional: arousal, sin inferir valencia ni emociones discretas.</p>
+<p class="source">Proyecto Fondecyt 1231122 · Toma de Muestra 2 · Revisión del 22 de septiembre de 2026.<br>Alcance operacional de activación emocional: arousal, sin inferir valencia ni emociones discretas.</p>
 </section>
 <section class="slide" aria-labelledby="s2" data-title="Antecedentes">
 <p class="eyebrow">Antecedentes</p><h2 id="s2">La navegación produce respuestas que cambian en el tiempo</h2>
@@ -39,22 +44,22 @@
 <p class="source">Base conceptual: «Problema e hipótesis» y «Estructura Tesis», capítulo 1. La superioridad temporal es una hipótesis a evaluar.</p>
 </section>
 <section class="slide" aria-labelledby="s3" data-title="Objetivo general">
-<p class="eyebrow">Objetivo general</p><h2 id="s3">Evaluar el aporte de la temporalidad y la fusión multimodal</h2>
-<p class="objective">Desarrollar y evaluar modelos temporales multimodales para la detección de atención y activación emocional durante la navegación web, comparando su desempeño fuera de muestra con modelos estáticos comparables y contrastando distintas estrategias de fusión multimodal.</p>
+<p class="eyebrow">Objetivo general</p><h2 id="s3">Evaluar el aporte predictivo de la temporalidad y la fusión</h2>
+<p class="objective">Evaluar el aporte de la información temporal y de la fusión multimodal a la predicción de pseudoetiquetas de atención y activación emocional durante la navegación web, mediante la comparación de modelos temporales y estáticos en participantes no utilizados para su ajuste.</p>
 <div class="comparison"><div><b>Comparación temporal</b>Ventana actual frente a secuencia de ventanas.</div><span aria-hidden="true">+</span><div><b>Comparación de fusión</b>Temprana, intermedia y tardía.</div></div>
-<p class="source">Formulación operacional del objetivo vigente en «Tesis_MDS»; desarrollo en «Estructura Tesis». Fuera de muestra: participantes separados de los usados para ajustar cada modelo.</p>
+<p class="source">Objetivo revisado el 22-09-2026. La comparación mantiene las mismas pseudoetiquetas y particiones; estima capacidad predictiva, sin atribuir validez fisiológica directa.</p>
 </section>
 <section class="slide" aria-labelledby="s4" data-title="Objetivos específicos">
-<p class="eyebrow">Objetivos específicos · síntesis de los siete objetivos</p><h2 id="s4">Del corpus sincronizado al contraste de la hipótesis</h2>
-<div class="columns"><ol class="goals"><li><strong>Sistematizar el estado del arte</strong>Revisar atención, activación, dinámica temporal y fusión de señales en navegación web.</li><li><strong>Construir el corpus multimodal</strong>Sincronizar EEG, GSR, mirada y pupila con criterios explícitos de calidad.</li><li><strong>Diseñar pseudoetiquetas</strong>Separar las señales que construyen cada etiqueta de las que la predicen.</li></ol><ol class="goals" start="4"><li><strong>Desarrollar y evaluar modelos</strong>Comparar LSTM, TCN y Transformer con baselines estáticos por participante.</li><li><strong>Comparar estrategias de fusión</strong>Evaluar fusión temprana, intermedia y tardía; medir aportes mediante ablación.</li><li><strong>Analizar trayectorias intra-sesión</strong>Explorar patrones compatibles con fatiga o habituación.</li><li><strong>Contrastar la hipótesis</strong>Establecer resultados, alcances y limitaciones.</li></ol></div>
-<p class="source">Síntesis de «Estructura Tesis», objetivos específicos 1–7. El análisis de fatiga/habituación es complementario y descriptivo.</p>
+<p class="eyebrow">Objetivos específicos</p><h2 id="s4">Caracterizar, comparar y contrastar con evidencia</h2>
+<div class="columns"><ol class="goals"><li><strong>Sistematizar la evidencia científica</strong>sobre temporalidad y fusión multimodal para fundamentar el diseño experimental.</li><li><strong>Caracterizar e integrar las señales</strong>EEG, GSR, mirada y pupila mediante criterios reproducibles de calidad y sincronización.</li><li><strong>Operacionalizar las variables objetivo</strong>con pseudoetiquetas continuas y categóricas, evaluando su estabilidad y separando señales de etiquetado y predicción.</li></ol><ol class="goals" start="4"><li><strong>Comparar el desempeño predictivo</strong>de modelos temporales y estáticos mediante evaluación por participante y selección interna de hiperparámetros.</li><li><strong>Cuantificar el aporte de la fusión</strong>temprana, intermedia y tardía, de las modalidades y del historial mediante comparaciones controladas y ablación.</li><li><strong>Caracterizar las trayectorias intra-sesión</strong>de los scores para identificar patrones compatibles con fatiga o habituación, con alcance descriptivo.</li><li><strong>Contrastar la hipótesis de investigación</strong>estimando la incertidumbre y la variabilidad entre participantes de las diferencias de desempeño.</li></ol></div>
+<p class="source">Formulación revisada en «Estructura Tesis», 22-09-2026. La estabilidad de las pseudoetiquetas no equivale a validación externa de los constructos.</p>
 </section>
 <section class="slide" aria-labelledby="s5" data-title="Metodología">
-<p class="eyebrow">Metodología</p><h2 id="s5">Un protocolo común para comparar modelos y fusiones</h2>
-<ol class="steps"><li><strong>Preparar</strong>Auditar calidad y sincronizar por tiempo. Extraer ventanas de 2 s con paso de 1 s.</li><li><strong>Etiquetar</strong>Construir Attention Score y Arousal Score; conservar el continuo y tres niveles.</li><li><strong>Modelar</strong>Entrenar baselines y redes temporales. Comparar fusiones con etiquetas fijas.</li><li><strong>Evaluar</strong>Separar participantes; ajustar hiperparámetros dentro de entrenamiento y analizar ablaciones.</li></ol>
+<p class="eyebrow">Metodología · Knowledge Discovery in Databases</p><h2 id="s5">KDD como marco del análisis multimodal</h2>
+<ol class="steps kdd"><li><strong>Selección</strong>Delimitar participantes, sesiones y señales de la Toma de Muestra 2.</li><li><strong>Preprocesamiento</strong>Auditar calidad, tratar faltantes y sincronizar registros.</li><li><strong>Transformación</strong>Extraer características y pseudoetiquetas en ventanas; construir secuencias.</li><li><strong>Minería de datos</strong>Ajustar modelos estáticos y temporales, fusiones e hiperparámetros dentro de entrenamiento.</li><li><strong>Interpretación y evaluación</strong>Comparar por participante, cuantificar incertidumbre y ablaciones; documentar hallazgos.</li></ol>
 <table><caption>Modelo Profesor → pseudoetiqueta → Modelo Estudiante</caption><thead><tr><th scope="col">Variable objetivo</th><th scope="col">Profesor: construye la etiqueta</th><th scope="col">Estudiante: predice</th></tr></thead><tbody><tr><th scope="row">Atención</th><td>Eye tracking + pupilometría</td><td>EEG + GSR</td></tr><tr><th scope="row">Activación</th><td>GSR</td><td>EEG + eye tracking + pupilometría</td></tr></tbody></table>
-<p class="note">Evaluación offline: BA macro por participante, macro-F1 y recall por clase; regresión para los scores continuos. Las pseudoetiquetas no constituyen una medición directa del estado interno.</p>
-<p class="source">Base: «Resumen Diseño Etiquetas y Modelos», «PREPROCESAMIENTO_MULTIMODAL» y «ETIQUETAS_Y_BASELINES». La normalización original por sesión limita la interpretación en tiempo real.</p>
+<p class="note"><strong>Proceso iterativo:</strong> los resultados retroalimentan las etapas anteriores dentro del desarrollo. Evaluación offline con BA por participante, macro-F1 y recall; sin reutilizar la evaluación final para seleccionar modelos.</p>
+<p class="source">Adaptación en cinco bloques de KDD: Fayyad, Piatetsky-Shapiro y Smyth (1996), AI Magazine 17(3), 37–54. DOI: 10.1609/aimag.v17i3.1230. La normalización original por sesión limita la interpretación en tiempo real.</p>
 </section>
 <section class="slide" aria-labelledby="s6" data-title="Datos disponibles">
 <p class="eyebrow">Datos disponibles · Toma de Muestra 2</p><h2 id="s6">Cuatro señales registradas durante navegación web en laboratorio</h2>
