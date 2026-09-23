@@ -3,8 +3,8 @@
   "slides": 6,
   "aspect_ratio": "16:9",
   "font": "Arial",
-  "source_sha256": "e1ce2479b12abaab31643ad08411223c0072f8bf5cd2145a7f41ea6c3d7fe425",
-  "pptx_sha256": "f2e2af5ce892d14a03cae1677e3930360c986da4ed395f193e7b8bc165b08f0f",
+  "source_sha256": "f84e4405e147a3727fbda5b3c7b1a0087ba6df37af76f56fd1709ae2f66b59d7",
+  "pptx_sha256": "1480be517d15e1e672da6ed0262d738029d1536a5398b2912dbdee2231914ecd",
   "slides_verified": [
     {
       "slide": 1,
@@ -60,5 +60,6 @@
     "canva_import_tested": false,
     "pdf_pages_verified": 6
   },
-  "objectives_match_thesis_notes": true
+  "objectives_match_thesis_notes": true,
+  "editorial_revision": 2
 }

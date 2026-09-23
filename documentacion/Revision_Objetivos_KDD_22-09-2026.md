@@ -1,5 +1,7 @@
 # Revisión de objetivos y metodología KDD — 22-09-2026
 
+**Segunda revisión del 22-09:** se simplificó la redacción a solicitud de Mario. Se cambiaron títulos generales por los nombres habituales de las secciones y expresiones como «operacionalizar las variables objetivo» por «definir las pseudoetiquetas». Se acortaron explicaciones y notas al pie, y se desarrolló la sigla BA. Se mantienen los siete objetivos, KDD, las comparaciones por participante y los límites de las pseudoetiquetas. El borrador y el índice usan la nueva redacción. Los informes de verificación de esta fecha corresponden a esta segunda revisión; la primera permanece en el commit `46b054d`.
+
 A solicitud de Mario, se reemplazaron en sus rutas originales el [HTML del tema de tesis](../presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.html) y el [PowerPoint editable](../presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.pptx). Se mantienen seis diapositivas. La fecha del nombre identifica el entregable original; el contenido declara la revisión del 22-09-2026.
 
 ## Objetivos revisados

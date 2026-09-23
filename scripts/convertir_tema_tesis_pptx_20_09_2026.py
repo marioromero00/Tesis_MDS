@@ -62,7 +62,7 @@ def panel(slide, title, body, x, y, w, h, accent=BLUE, body_size=16):
     rect(slide, x,y,w,h,SOFT)
     rect(slide, x,y,3,h,accent)
     text(slide,title,x+18,y+16,w-36,29,18,True)
-    text(slide,body,x+18,y+54,w-36,h-67,body_size)
+    text(slide,body,x+16,y+54,w-32,h-67,body_size)
 
 def base(section, index):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
@@ -97,7 +97,7 @@ for i,article in enumerate(s.select('article')):
     panel(slide,txt(article.h3),txt(article.p),50+i*294,161,272,210,TEAL if i==2 else BLUE,16)
 rect(slide,50,394,860,71,SOFT)
 rect(slide,50,394,3,71,TEAL)
-text(slide,txt(s.select_one('.question')),68,407,821,51,18)
+text(slide,txt(s.select_one('.question')),68,407,829,51,18)
 
 # 3. Objetivo general.
 s = sections[2]; slide = base(s,2)
@@ -112,7 +112,7 @@ text(slide,'+',471,390,23,28,20,False,BLUE)
 s = sections[3]; slide = base(s,3)
 for i,li in enumerate(s.select('.goals li')):
     x = 50 if i < 3 else 500
-    y = 153 + i*103 if i < 3 else [153,236,327,410][i-3]
+    y = 153 + i*103 if i < 3 else [153,246,327,410][i-3]
     label = txt(li.strong)
     text(slide,str(i+1)+'.',x,y,25,25,17,True,TEAL)
     text(slide,label,x+31,y,368,26,16.5,True)
@@ -126,7 +126,8 @@ for i,li in enumerate(s.select('.steps li')):
     text(slide,f'{i+1:02}',x+12,158,40,22,17,True,TEAL)
     label = txt(li.strong)
     text(slide,label,x+12,186,136,35,13.7,True)
-    text(slide,txt(li)[len(label):].strip(),x+9,232,142,68,11.4)
+    body_width = 146 if i == 1 else 142
+    text(slide,txt(li)[len(label):].strip(),x+(160-body_width)/2,232,body_width,68,11.4)
 text(slide,txt(s.caption),50,316,860,22,11.5,False,MUTED)
 xs, widths = [50,246,564],[178,301,346]
 for ri,tr in enumerate(s.select('tr')):
