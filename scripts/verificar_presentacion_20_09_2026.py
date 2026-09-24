@@ -16,10 +16,10 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 HTML = ROOT / 'presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026.html'
-TEMP = Path(os.environ['TEMP']) / 'mds-presentation-22-09-2026'
+TEMP = Path(os.environ['TEMP']) / 'mds-presentation-23-09-2026'
 TEMP.mkdir(exist_ok=True)
 AXE = TEMP.parent / 'mds-presentation-audit/axe.min.js'
-report = {'date': '2026-09-22', 'html_sha256': hashlib.sha256(HTML.read_bytes()).hexdigest(), 'checks': [], 'axe': []}
+report = {'date': '2026-09-23', 'html_sha256': hashlib.sha256(HTML.read_bytes()).hexdigest(), 'checks': [], 'axe': []}
 
 def check(name, ok):
     report['checks'].append({'name': name, 'passed': bool(ok)})
@@ -31,8 +31,8 @@ def luminance(h):
     return sum(x*w for x,w in zip(c, [.2126,.7152,.0722]))
 
 report['contrast'] = []
-for fg in ['#12243b','#46556b','#003d73','#09686b']:
-    for bg in ['#ffffff','#eff4f9']:
+for fg in ['#16324f','#4b5968','#145da0','#066a70']:
+    for bg in ['#ffffff','#f1f5f8']:
         ratio = (luminance(bg)+.05)/(luminance(fg)+.05)
         report['contrast'].append({'foreground':fg,'background':bg,'ratio':round(ratio,2)})
 check('Contraste de texto >= 4.5', all(x['ratio'] >= 4.5 for x in report['contrast']))
@@ -55,17 +55,26 @@ with sync_playwright() as p:
     page.on('request', lambda r: requests.append(r.url))
     page.goto(copy.as_uri())
     check('Autocontenida sin recursos externos', page.locator('[src],link[href],a[href]:not([href^="#"])').count() == 0)
-    check('Seis diapositivas, una visible', page.locator('.slide').count() == 6 and page.locator('.slide:visible').count() == 1)
+    check('Siete diapositivas, una visible', page.locator('.slide').count() == 7 and page.locator('.slide:visible').count() == 1)
     page.keyboard.press('ArrowRight')
-    check('Flecha siguiente', page.locator('#status').inner_text() == '2 / 6')
+    check('Flecha siguiente', page.locator('#status').inner_text() == '2 / 7')
     page.keyboard.press('End')
-    check('Fin', page.locator('#s6').is_visible())
+    check('Fin', page.locator('#s7').is_visible())
     page.keyboard.press('Home')
     check('Inicio', page.locator('#s1').is_visible())
     page.locator('#jump').select_option('3')
     check('Selector', page.locator('#s4').is_visible())
     page.locator('#all').click()
-    check('Lectura continua', page.locator('.slide:visible').count() == 6)
+    check('Lectura continua', page.locator('.slide:visible').count() == 7)
+    check('Siete objetivos y cinco etapas KDD', page.locator('.goal').count() == 7 and page.locator('.kdd-stage').count() == 5)
+    check('Diagramas vectoriales incluidos', page.locator('svg.graphic').count() == 7 and page.locator('svg image').count() == 0)
+    overflow = page.evaluate('''() => [...document.querySelectorAll('.t')].flatMap(el => {
+        const range = document.createRange(); range.selectNodeContents(el);
+        const box = el.getBoundingClientRect(), actual = range.getBoundingClientRect();
+        return actual.bottom > box.bottom + 2 || actual.right > box.right + 2 ? [el.textContent.slice(0,70)] : [];
+    })''')
+    report['text_overflow'] = overflow
+    check('Texto dentro de los espacios asignados', not overflow)
     page.add_script_tag(path=str(AXE))
     for w,h in [(1440,900),(720,450),(320,700)]:
         page.set_viewport_size({'width':w,'height':h})
@@ -77,17 +86,17 @@ with sync_playwright() as p:
     check('Texto espaciado sin desborde', page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
     page.reload()
     page.set_viewport_size({'width':1440,'height':900})
-    for i in range(6):
+    for i in range(7):
         page.locator('#jump').select_option(str(i))
         page.screenshot(path=str(TEMP/f'slide-{i+1}.png'), full_page=True)
     page.set_viewport_size({'width':320,'height':700})
     page.screenshot(path=str(TEMP/'mobile.png'), full_page=True)
     page.set_viewport_size({'width':1440,'height':900})
     page.emulate_media(media='print')
-    check('Impresion de seis diapositivas', page.locator('.slide:visible').count() == 6)
+    check('Impresion de siete diapositivas', page.locator('.slide:visible').count() == 7)
     page.pdf(path=str(TEMP/'presentacion.pdf'), prefer_css_page_size=True, print_background=True)
     doc = pymupdf.open(TEMP/'presentacion.pdf')
-    check('PDF seis paginas completas', len(doc) == 6 and all(len(x.get_text())>200 for x in doc))
+    check('PDF siete paginas completas', len(doc) == 7 and all(len(x.get_text())>200 for x in doc))
     page.emulate_media(media='screen', reduced_motion='reduce')
     page.locator('#jump').select_option('2')
     page.locator('#prev').focus()
@@ -101,15 +110,15 @@ with sync_playwright() as p:
     check('Retroceso de foco', page.evaluate('document.activeElement.id') == 'all')
     page.locator('#all').focus()
     page.keyboard.press('Space')
-    check('Espacio activa lectura', page.locator('.slide:visible').count() == 6)
+    check('Espacio activa lectura', page.locator('.slide:visible').count() == 7)
     page.keyboard.press('Space')
     check('Espacio vuelve al deck', page.locator('.slide:visible').count() == 1)
     check('Sin errores JavaScript', not errors)
     check('Cero peticiones HTTP', not any(x.startswith('http') for x in requests))
     nojs = browser.new_page(java_script_enabled=False)
     nojs.goto(copy.as_uri())
-    check('Contenido completo sin JavaScript', nojs.locator('.slide:visible').count() == 6)
+    check('Contenido completo sin JavaScript', nojs.locator('.slide:visible').count() == 7)
     browser.close()
 report['limitations'] = ['Sin lector de pantalla real.', '720 px aproxima reflujo al 200%; no se opero el zoom manual del navegador.', 'La auditoria no certifica cumplimiento integral de WCAG.']
-(ROOT/'documentacion/Verificacion_Presentacion_Tema_22-09-2026.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(ROOT/'documentacion/Verificacion_Presentacion_Tema_23-09-2026.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'checks':len(report['checks']),'screenshots':str(TEMP)}))

@@ -1,0 +1,63 @@
+{
+  "revision_date": "2026-09-23",
+  "slides": 7,
+  "editable": true,
+  "slides_verified": [
+    {
+      "slide": 1,
+      "text_boxes": 16,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 2,
+      "text_boxes": 23,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 3,
+      "text_boxes": 16,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 4,
+      "text_boxes": 18,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 5,
+      "text_boxes": 29,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 6,
+      "text_boxes": 18,
+      "out_of_bounds": []
+    },
+    {
+      "slide": 7,
+      "text_boxes": 27,
+      "out_of_bounds": []
+    }
+  ],
+  "source_sha256": "a50da6cb2a421f0fbd32f71d98a68f6ef45b9c4631ce3a57a07e9c8365a1a9ec",
+  "pptx_sha256": "b6ae1604616550d06f9eb5bcdcbff64c0cf4d4c42c822a1ab5a05526509f8a4a",
+  "source_text_preserved": true,
+  "objectives_match_thesis_notes": true,
+  "powerpoint_render": {
+    "opened_in": "Microsoft PowerPoint",
+    "slides": 7,
+    "overflow": [],
+    "tolerance_points": 2,
+    "pdf_pages_expected": 7,
+    "canva_import_tested": false,
+    "pdf_pages_verified": 7
+  },
+  "pdf_sha256": "af431157dbf38ca5de022f01b2316e91dbf6f9e37d35f7d40515012989abff73",
+  "visual_review": [
+    "all slides",
+    "mobile KDD",
+    "mobile labels",
+    "mobile fusion"
+  ],
+  "delivery_verified_on": "2026-09-24"
+}

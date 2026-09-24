@@ -1,0 +1,213 @@
+{
+  "date": "2026-09-23",
+  "html_sha256": "a50da6cb2a421f0fbd32f71d98a68f6ef45b9c4631ce3a57a07e9c8365a1a9ec",
+  "checks": [
+    {
+      "name": "Contraste de texto >= 4.5",
+      "passed": true
+    },
+    {
+      "name": "Particion 25/8/8, seis excluidos y sensibilidad",
+      "passed": true
+    },
+    {
+      "name": "Tabla de 59 columnas",
+      "passed": true
+    },
+    {
+      "name": "25992 ventanas",
+      "passed": true
+    },
+    {
+      "name": "Autocontenida sin recursos externos",
+      "passed": true
+    },
+    {
+      "name": "Siete diapositivas, una visible",
+      "passed": true
+    },
+    {
+      "name": "Flecha siguiente",
+      "passed": true
+    },
+    {
+      "name": "Fin",
+      "passed": true
+    },
+    {
+      "name": "Inicio",
+      "passed": true
+    },
+    {
+      "name": "Selector",
+      "passed": true
+    },
+    {
+      "name": "Lectura continua",
+      "passed": true
+    },
+    {
+      "name": "Siete objetivos y cinco etapas KDD",
+      "passed": true
+    },
+    {
+      "name": "Diagramas vectoriales incluidos",
+      "passed": true
+    },
+    {
+      "name": "Texto dentro de los espacios asignados",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 1440",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 1440",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 720",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 720",
+      "passed": true
+    },
+    {
+      "name": "Sin desborde horizontal 320",
+      "passed": true
+    },
+    {
+      "name": "axe sin violaciones 320",
+      "passed": true
+    },
+    {
+      "name": "Texto espaciado sin desborde",
+      "passed": true
+    },
+    {
+      "name": "Impresion de siete diapositivas",
+      "passed": true
+    },
+    {
+      "name": "PDF siete paginas completas",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco next",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco jump",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco all",
+      "passed": true
+    },
+    {
+      "name": "Indicador foco print",
+      "passed": true
+    },
+    {
+      "name": "Orden teclado de controles",
+      "passed": true
+    },
+    {
+      "name": "Retroceso de foco",
+      "passed": true
+    },
+    {
+      "name": "Espacio activa lectura",
+      "passed": true
+    },
+    {
+      "name": "Espacio vuelve al deck",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Cero peticiones HTTP",
+      "passed": true
+    },
+    {
+      "name": "Contenido completo sin JavaScript",
+      "passed": true
+    }
+  ],
+  "axe": [
+    {
+      "width": 1440,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "width": 720,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 320,
+      "version": "4.10.3",
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "contrast": [
+    {
+      "foreground": "#16324f",
+      "background": "#ffffff",
+      "ratio": 13.1
+    },
+    {
+      "foreground": "#16324f",
+      "background": "#f1f5f8",
+      "ratio": 11.95
+    },
+    {
+      "foreground": "#4b5968",
+      "background": "#ffffff",
+      "ratio": 7.17
+    },
+    {
+      "foreground": "#4b5968",
+      "background": "#f1f5f8",
+      "ratio": 6.54
+    },
+    {
+      "foreground": "#145da0",
+      "background": "#ffffff",
+      "ratio": 6.77
+    },
+    {
+      "foreground": "#145da0",
+      "background": "#f1f5f8",
+      "ratio": 6.17
+    },
+    {
+      "foreground": "#066a70",
+      "background": "#ffffff",
+      "ratio": 6.36
+    },
+    {
+      "foreground": "#066a70",
+      "background": "#f1f5f8",
+      "ratio": 5.8
+    }
+  ],
+  "text_overflow": [],
+  "limitations": [
+    "Sin lector de pantalla real.",
+    "720 px aproxima reflujo al 200%; no se opero el zoom manual del navegador.",
+    "La auditoria no certifica cumplimiento integral de WCAG."
+  ],
+  "delivery_verified_on": "2026-09-24"
+}
