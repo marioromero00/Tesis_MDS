@@ -4,6 +4,8 @@ Se reemplazaron el HTML y el PowerPoint del tema de tesis a solicitud de Mario. 
 
 Archivos: `presentaciones/Presentacion-Tema-Tesis-Autocontenida-20-09-2026` con extensiones `.html`, `.pptx` y `.pdf`. Se conserva el nombre para reemplazar las versiones que ya usa Mario; la portada declara la revisión del 23-09. La versión anterior permanece en Git, commit `da6152d`.
 
+El 24-09 se añadió una copia idéntica del PowerPoint con un nombre más fácil de encontrar: [Tema-Tesis-KDD-Visual-24-09-2026.pptx](../presentaciones/Tema-Tesis-KDD-Visual-24-09-2026.pptx). Contiene las mismas siete láminas; se verificaron su apertura mediante python-pptx y la igualdad de hashes con el original.
+
 ## Contenido
 
 1. Tema, estudiante, profesor guía y antecedentes, con un esquema de señales a lo largo de una sesión.
