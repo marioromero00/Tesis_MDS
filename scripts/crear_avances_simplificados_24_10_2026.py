@@ -1,4 +1,4 @@
-"""Genera una presentacion autocontenida de los avances del 24-10-2026."""
+"""Presentación académica de avances: 24 de octubre de 2026."""
 from __future__ import annotations
 
 import json
@@ -7,238 +7,243 @@ from pathlib import Path
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Pt
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / "presentaciones/Avances-Experimentales-Simplificados-24-10-2026.pptx"
-TOTAL = 8
-NAVY, BLUE, TEAL = "102A3D", "376B91", "087E83"
-PALE, PAPER, INK = "DDF0ED", "F7F8F5", "173348"
-MUTED, ORANGE, WHITE, LINE = "5D7180", "C66A44", "FFFFFF", "D9E2E3"
-CORAL_PALE = "F9EBE5"
-BLUE_PALE = "E7F0F5"
+AUDIT = ROOT / "documentacion/Verificacion_Avances_Simplificados_24-10-2026.json"
+W, H, N = 960, 540, 8
 
+# Paleta deliberadamente corta: papel, tinta, gris y un solo color de énfasis.
+PAPER, INK, MUTED, RULE, ACCENT = "FAFAF7", "17252D", "53636B", "C9D2D3", "12686C"
+WHITE = "FFFFFF"
 prs = Presentation()
-prs.slide_width, prs.slide_height = Pt(960), Pt(540)
-prs.core_properties.title = "Avances experimentales autocontenidos — tesis MDS"
+prs.slide_width, prs.slide_height = Pt(W), Pt(H)
+prs.core_properties.title = "Avances experimentales — tesis MDS"
 prs.core_properties.subject = "Temporalidad, fusión, robustez y control negativo"
 prs.core_properties.author = "Mario Romero"
 prs.core_properties.language = "es-CL"
 
 
-def color(code):
+def rgb(code):
     return RGBColor.from_string(code)
 
 
-def shape(slide, x, y, w, h, fill, kind=MSO_SHAPE.ROUNDED_RECTANGLE):
-    item = slide.shapes.add_shape(kind, Pt(x), Pt(y), Pt(w), Pt(h))
+def box(slide, x, y, w, h, fill):
+    item = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, Pt(x), Pt(y), Pt(w), Pt(h))
     item.fill.solid()
-    item.fill.fore_color.rgb = color(fill)
+    item.fill.fore_color.rgb = rgb(fill)
     item.line.fill.background()
-    if kind == MSO_SHAPE.ROUNDED_RECTANGLE:
-        item.adjustments[0] = 0.10
     return item
 
 
-def text(slide, value, x, y, w, h, size=17, bold=False, fill=INK,
-         align=PP_ALIGN.LEFT):
-    box = slide.shapes.add_textbox(Pt(x), Pt(y), Pt(w), Pt(h))
-    frame = box.text_frame
+def text(slide, value, x, y, w, h, size=18, color=INK, bold=False,
+         align=PP_ALIGN.LEFT, valign=MSO_ANCHOR.MIDDLE):
+    item = slide.shapes.add_textbox(Pt(x), Pt(y), Pt(w), Pt(h))
+    frame = item.text_frame
     frame.clear()
     frame.word_wrap = True
     frame.margin_left = frame.margin_right = Pt(0)
     frame.margin_top = frame.margin_bottom = Pt(0)
-    frame.vertical_anchor = MSO_ANCHOR.MIDDLE
-    for index, line in enumerate(value.split("\n")):
-        p = frame.paragraphs[0] if index == 0 else frame.add_paragraph()
-        p.text = line
-        p.alignment = align
-        p.space_before = p.space_after = Pt(0)
-        p.line_spacing = 1.04
-        p.font.name = "Aptos"
-        p.font.size = Pt(size)
-        p.font.bold = bold
-        p.font.color.rgb = color(fill)
-    return box
+    frame.vertical_anchor = valign
+    for i, value_line in enumerate(value.split("\n")):
+        paragraph = frame.paragraphs[0] if i == 0 else frame.add_paragraph()
+        paragraph.text = value_line
+        paragraph.alignment = align
+        paragraph.space_before = paragraph.space_after = Pt(0)
+        paragraph.line_spacing = 1.08
+        paragraph.font.name = "Arial"
+        paragraph.font.size = Pt(size)
+        paragraph.font.bold = bold
+        paragraph.font.color.rgb = rgb(color)
+    return item
 
 
-def base(index, section, title, source):
+def rule(slide, x, y, w, color=RULE, weight=1):
+    box(slide, x, y, w, weight, color)
+
+
+def base(number, section, title, source):
     slide = prs.slides.add_slide(prs.slide_layouts[6])
-    dark = index == 1
     slide.background.fill.solid()
-    slide.background.fill.fore_color.rgb = color(NAVY if dark else PAPER)
-    shape(slide, 0, 0, 960, 6, TEAL, MSO_SHAPE.RECTANGLE)
-    text(slide, f"{index:02d}  /  {section.upper()}", 48, 27, 820, 22, 11, True,
-         PALE if dark else TEAL)
-    text(slide, title, 48, 57, 864, 78, 32, True, WHITE if dark else NAVY)
-    shape(slide, 48, 483, 864, 1, BLUE if dark else LINE, MSO_SHAPE.RECTANGLE)
-    shape(slide, 48, 479, 864 * index / TOTAL, 3, TEAL, MSO_SHAPE.RECTANGLE)
-    text(slide, source, 48, 491, 805, 35, 9, False, PALE if dark else MUTED)
-    text(slide, f"{index:02d} / {TOTAL:02d}", 852, 491, 58, 22, 10, True,
-         PALE if dark else MUTED, PP_ALIGN.RIGHT)
+    slide.background.fill.fore_color.rgb = rgb(PAPER)
+    text(slide, section.upper(), 60, 27, 760, 23, 11, ACCENT, True)
+    text(slide, f"{number:02d} / {N:02d}", 831, 27, 69, 23, 11, MUTED,
+         align=PP_ALIGN.RIGHT)
+    rule(slide, 60, 60, 840)
+    text(slide, title, 60, 76, 840, 70, 32, INK, True)
+    rule(slide, 60, 483, 840)
+    text(slide, source, 60, 490, 840, 37, 9, MUTED)
     return slide
-
-
-def card(slide, x, y, w, h, heading, body, accent=TEAL, heading_size=16,
-         body_size=17):
-    shape(slide, x, y, w, h, WHITE)
-    shape(slide, x, y, w, 5, accent, MSO_SHAPE.RECTANGLE)
-    compact = h < 140
-    text(slide, heading, x + 19, y + (12 if compact else 17), w - 36,
-         28 if compact else 30, heading_size, True, accent)
-    text(slide, body, x + 19, y + (43 if compact else 54), w - 38,
-         h - (48 if compact else 63), body_size)
-
-
-def strip(slide, value, y=406, accent=ORANGE, size=17):
-    shape(slide, 48, y, 864, 58, CORAL_PALE if accent == ORANGE else PALE)
-    shape(slide, 48, y, 5, 58, accent, MSO_SHAPE.RECTANGLE)
-    text(slide, value, 68, y + 5, 824, 48, size, True, accent)
 
 
 def notes(slide, value):
     slide.notes_slide.notes_text_frame.text = value
 
 
+# 1. Pregunta de investigación y lectura honesta del estado actual.
 s = base(1, "Tesis MDS · 24 de octubre de 2026",
-         "¿Qué muestran los experimentos recientes?",
-         "Fuentes: informes experimentales del 24-10-2026; Toma de Muestra 2")
-text(s, "Predicción de pseudoetiquetas de activación y atención", 48, 148, 860, 42,
-     23, True, WHITE)
-shape(s, 48, 218, 864, 155, BLUE)
-shape(s, 48, 218, 7, 155, TEAL, MSO_SHAPE.RECTANGLE)
-text(s, "PREGUNTA CENTRAL", 69, 232, 796, 28, 15, True, PALE)
-text(s, "¿Pueden EEG, mirada y pupila anticipar una etiqueta calculada con otras señales? ¿Aportan valor el historial o la fusión?",
-     69, 273, 797, 77, 23, True, WHITE)
-shape(s, 48, 394, 864, 63, PALE)
-text(s, "Hay señal alineada en train; la generalización y la validez psicológica siguen abiertas.",
-     67, 399, 825, 52, 18, True, NAVY)
+         "Avances experimentales",
+         "Fuentes: informes experimentales del 24-10-2026; Toma de Muestra 2.")
+text(s, "Pseudoetiquetas de activación y atención", 60, 162, 840, 40,
+     21, MUTED)
+rule(s, 60, 225, 840, ACCENT, 3)
+text(s, "¿Pueden EEG, mirada y pupila predecir una etiqueta calculada con otras señales?",
+     60, 242, 790, 91, 29, INK, True)
+text(s, "También se evaluó si ayudan el historial temporal y la fusión por modalidad.",
+     60, 352, 786, 59, 19, MUTED)
+text(s, "Resultado hasta ahora: hay señal alineada en train. La generalización y la validez psicológica siguen abiertas.",
+     60, 431, 840, 45, 17, ACCENT, True)
 notes(s, "La etiqueta es una referencia computacional, no una medida directa del estado psicológico.")
 
-s = base(2, "Diseño y significado de la etiqueta",
-         "Profesor y estudiante usan señales separadas",
-         "Fuente: metodología del manuscrito; Evaluacion_Independiente_y_Validez_24-10-2026.md")
-card(s, 48, 148, 405, 174, "PROFESOR · DEFINE EL OBJETIVO",
-     "GSR genera la pseudoetiqueta principal de activación: bajo, medio o alto. Se usan terciles relativos a cada persona y toda su sesión.", TEAL, body_size=17)
-card(s, 507, 148, 405, 174, "ESTUDIANTE · HACE LA PREDICCIÓN",
-     "EEG, mirada y pupila predicen esa etiqueta. GSR no entra al predictor. Atención es un objetivo secundario con otra etiqueta.", BLUE, body_size=17)
-strip(s, "“Alto” significa alto para esa persona; no es un umbral fisiológico común ni una etiqueta causal en tiempo real.", 350, ORANGE, 17)
-notes(s, "La construcción de las etiquetas es offline. La etiqueta de atención depende de mirada y pupila.")
+# 2. Diagrama con entradas y etiqueta, sin lenguaje de 'profesor/estudiante'
+# que dificultaba la lectura fuera del contexto del manuscrito.
+s = base(2, "Diseño de la tarea",
+         "La señal que define la etiqueta no entra al predictor",
+         "Fuente: metodología del manuscrito; Evaluacion_Independiente_y_Validez_24-10-2026.md.")
+text(s, "ETIQUETA", 60, 163, 323, 25, 12, ACCENT, True)
+text(s, "GSR", 60, 194, 323, 52, 38, INK, True)
+text(s, "Activación baja, media o alta, según terciles de cada persona y de toda su sesión.",
+     60, 263, 335, 91, 18)
+rule(s, 451, 163, 1, RULE, 230)
+text(s, "PREDICTOR", 506, 163, 394, 25, 12, ACCENT, True)
+text(s, "EEG + mirada + pupila", 506, 194, 394, 52, 27, INK, True)
+text(s, "El modelo intenta recuperar la etiqueta de GSR. GSR no figura entre sus entradas.",
+     506, 263, 374, 91, 18)
+rule(s, 60, 393, 840)
+text(s, "“Alto” es relativo a esa persona. La etiqueta se calcula offline; no es una medición causal en tiempo real.",
+     60, 403, 840, 61, 17, MUTED)
+notes(s, "Atención es un objetivo secundario con otra etiqueta, dependiente de mirada y pupila.")
 
-s = base(3, "Muestra, evaluación y lectura de la métrica",
-         "La partición es por persona",
-         "Fuente: Evaluacion_Independiente_y_Validez_24-10-2026.md; protocolo de robustez")
-for x, w, label, count, detail, accent in [
-    (48, 260, "TRAIN", "25", "13.524 ventanas · 5 folds", TEAL),
-    (326, 260, "VALIDATION", "8", "Ya usada para comparar entradas", BLUE),
-    (604, 308, "TEST", "8", "4.025 ventanas · ya consultado", ORANGE),
+# 3. Tamaño de muestra y unidad de análisis.
+s = base(3, "Muestra y evaluación",
+         "Train, validation y test se separan por persona",
+         "Fuente: Evaluacion_Independiente_y_Validez_24-10-2026.md; protocolo de robustez.")
+for x, label, value, detail in [
+    (60, "TRAIN", "25", "13.524 ventanas\n5 folds"),
+    (348, "VALIDATION", "8", "Usado antes para\ncomparar entradas"),
+    (635, "TEST", "8", "4.025 ventanas\nya consultado"),
 ]:
-    shape(s, x, 148, w, 190, WHITE)
-    shape(s, x, 148, w, 6, accent, MSO_SHAPE.RECTANGLE)
-    text(s, label, x + 18, 167, w - 36, 24, 13, True, accent)
-    text(s, count, x + 16, 197, w - 32, 74, 58, True, NAVY)
-    text(s, detail, x + 18, 285, w - 36, 38, 15, False, MUTED)
-shape(s, 48, 356, 864, 91, NAVY)
-text(s, "BA macro por persona", 68, 367, 770, 31, 20, True, WHITE)
-text(s, "Recall por clase presente, promediado por persona con igual peso.",
-     68, 401, 795, 33, 16, False, PALE)
-notes(s, "P29 se reserva solo para sensibilidad; seis personas fueron excluidas. La BA global por ventana es otra métrica.")
+    text(s, label, x, 168, 236, 28, 12, ACCENT, True)
+    text(s, value, x, 199, 222, 95, 69, INK, True)
+    text(s, detail, x, 303, 237, 65, 17, MUTED)
+rule(s, 327, 169, 1, RULE, 196)
+rule(s, 615, 169, 1, RULE, 196)
+rule(s, 60, 391, 840)
+text(s, "Métrica principal: BA macro por persona", 60, 402, 840, 29, 19, INK, True)
+text(s, "Se promedia el recall de las clases presentes en cada persona y luego se promedian las personas con igual peso.",
+     60, 432, 840, 40, 15, MUTED)
+notes(s, "Los intervalos descriptivos remuestrean personas, no ventanas. P29 se reserva solo para sensibilidad; seis personas fueron excluidas. La BA global por ventana es otra métrica.")
 
-s = base(4, "Contraste factorial 2 × 2 · train",
-         "El historial aporta poco en activación",
-         "Fuente: Contraste_Temporalidad_Fusion_24-10-2026.md; 25 personas, 5 folds, 2 semillas")
-text(s, "TCN: historial real (R) o ventana actual repetida (C); fusión temprana (E) o tardía (T).", 48, 140, 864, 38, 17)
-for x, label, value, col in [(48, "E-C", "0,3524", MUTED), (269, "E-R", "0,3612", TEAL),
-                             (490, "T-C", "0,3596", BLUE), (711, "T-R", "0,3630", BLUE)]:
-    shape(s, x, 197, 201, 87, PAPER)
-    text(s, label, x + 14, 207, 172, 25, 16, True, col)
-    text(s, value, x + 14, 237, 172, 35, 26, True, NAVY)
-text(s, "BA macro por persona fuera de fold", 48, 290, 864, 23, 13, False, MUTED)
-card(s, 48, 327, 405, 70, "HISTORIAL: E-R − E-C", "+0,88 pp · intervalo [−0,28; +2,00]", TEAL, 15, 16)
-card(s, 507, 327, 405, 70, "FUSIÓN: T-R − E-R", "+0,18 pp · intervalo [−0,80; +1,37]", BLUE, 15, 16)
-strip(s, "Ambos intervalos incluyen cero; no hay ventaja general confirmada.", 411, ORANGE, 18)
-notes(s, "El historial puede abarcar hasta nueve segundos. La fusión tardía usa expertos por modalidad y distinta capacidad.")
+# 4. Tabla factorial compacta. Cada cifra lleva su condición.
+s = base(4, "Contraste factorial · train",
+         "Historial y fusión: ventajas pequeñas e inciertas",
+         "Fuente: Contraste_Temporalidad_Fusion_24-10-2026.md; 25 personas, 5 folds, 2 semillas.")
+text(s, "BA macro por persona, fuera de fold", 60, 151, 840, 26, 15, MUTED)
+text(s, "Fusión", 60, 197, 170, 27, 13, ACCENT, True)
+text(s, "Ventana repetida (C)", 304, 197, 230, 27, 13, ACCENT, True)
+text(s, "Historial real (R)", 654, 197, 246, 27, 13, ACCENT, True)
+rule(s, 60, 234, 840)
+for y, label, c, r in [
+    (243, "Temprana (E)", "0,3524", "0,3612"),
+    (304, "Tardía (T)", "0,3596", "0,3630"),
+]:
+    text(s, label, 60, y, 208, 44, 18, INK)
+    text(s, c, 304, y, 202, 44, 24, INK, True)
+    text(s, r, 654, y, 202, 44, 24, INK, True)
+    rule(s, 60, y + 51, 840)
+text(s, "Historial E: +0,88 pp  [−0,28; +2,00]", 60, 379, 420, 34, 17, INK, True)
+text(s, "Fusión con R: +0,18 pp  [−0,80; +1,37]", 497, 379, 403, 34, 17, INK, True)
+text(s, "Ambos intervalos descriptivos incluyen cero.", 60, 437, 840, 30,
+     16, ACCENT, True)
+notes(s, "R significa historial real; C, ventana actual repetida. E significa fusión temprana; T, tardía. El historial puede abarcar hasta nueve segundos. La fusión tardía usa expertos por modalidad y distinta capacidad.")
 
-s = base(5, "Diagnóstico del contraste",
-         "Una media similar oculta diferencias por clase",
-         "Fuente: Contraste_Temporalidad_Fusion_24-10-2026.md; diagnóstico por clase")
-shape(s, 48, 150, 405, 163, WHITE)
-shape(s, 48, 150, 405, 5, ORANGE, MSO_SHAPE.RECTANGLE)
-text(s, "ACTIVACIÓN · CLASE MEDIA", 67, 165, 365, 27, 15, True, ORANGE)
-text(s, "23,4 %", 68, 203, 170, 49, 31, True, NAVY)
-text(s, "→", 231, 207, 40, 41, 25, True, ORANGE)
-text(s, "8,2 %", 280, 203, 152, 49, 31, True, ORANGE)
-text(s, "E-R · fusión temprana       T-R · fusión tardía", 68, 262, 355, 31,
-     13, False, MUTED)
-card(s, 507, 150, 405, 163, "ATENCIÓN · OBJETIVO SECUNDARIO",
-     "El historial temprano baja BA en 0,65 pp. La fusión tardía con historial sube 1,01 pp; resultados exploratorios.", BLUE, body_size=18)
-strip(s, "La pequeña diferencia media de activación no representa una mejora uniforme de las tres clases.", 346, NAVY, 18)
-text(s, "Los contrastes usan solo train y pseudoetiquetas; no verifican activación o atención psicológica.", 50, 418, 860, 43, 15, False, MUTED)
-notes(s, "Para atención, los intervalos descriptivos de esos contrastes fueron [-1,20; -0,05] y [+0,13; +1,86] pp. No corrigen búsqueda previa ni comparaciones múltiples.")
+# 5. El contraste por clase evita que la media tape un daño concreto.
+s = base(5, "Diagnóstico por clase",
+         "La clase media cae con fusión tardía",
+         "Fuente: Contraste_Temporalidad_Fusion_24-10-2026.md; diagnóstico por clase.")
+text(s, "RECALL DE ACTIVACIÓN, CLASE MEDIA", 60, 157, 840, 25, 12, ACCENT, True)
+text(s, "23,4 %", 60, 199, 340, 81, 49, INK, True)
+text(s, "8,2 %", 560, 199, 340, 81, 49, INK, True, PP_ALIGN.RIGHT)
+rule(s, 60, 293, 840)
+text(s, "E-R · fusión temprana", 60, 307, 345, 33, 16, MUTED)
+text(s, "T-R · fusión tardía", 555, 307, 345, 33, 16, MUTED,
+     align=PP_ALIGN.RIGHT)
+text(s, "La BA media no refleja una mejora uniforme de las tres clases.",
+     60, 363, 840, 37, 21, INK, True)
+rule(s, 60, 413, 840)
+text(s, "Atención, objetivo secundario: historial temprano −0,65 pp; fusión tardía con historial +1,01 pp. Resultados exploratorios.",
+     60, 424, 840, 48, 16, MUTED)
+notes(s, "Los intervalos descriptivos de atención fueron [−1,20; −0,05] y [+0,13; +1,86] pp. No corrigen búsqueda previa ni comparaciones múltiples. Los contrastes usan solo train y pseudoetiquetas; no verifican activación o atención psicológica.")
 
-s = base(6, "Ridge de activación · evaluación adicional",
-         "En test, la BA queda cerca de la referencia",
-         "Fuentes: Evaluacion_Independiente_y_Validez_24-10-2026.md; Robustez_Sin_Cohorte_Nueva_24-10-2026.md")
-for y, label, value, col in [(156, "Train · fuera de fold", "0,3843", TEAL),
-                             (228, "Test · ensamble fijo", "0,3557", BLUE),
-                             (300, "Referencia matemática 1/k · test", "0,3542", MUTED)]:
-    text(s, label, 48, y, 323, 32, 17, True)
-    shape(s, 379, y + 5, 396, 22, PALE)
-    shape(s, 379, y + 5, 396 * float(value.replace(",", ".")) / .5, 22, col)
-    text(s, value, 796, y - 2, 113, 39, 23, True, NAVY)
-text(s, "1/k = BA de predecir siempre una clase presente; en test la media es 0,3542 porque una persona tiene dos clases.", 48, 363, 864, 45, 15, False, MUTED)
-strip(s, "Solo 4/8 personas superan 1/k. El recall de la clase media en test es 21,8 %.", 412, ORANGE, 18)
-notes(s, "Train usa un modelo por fold; test promedia probabilidades de cinco modelos. La diferencia train-test es descriptiva. La referencia 1/k no es un clasificador desplegable.")
+# 6. Barras con la misma escala y la referencia junto al resultado de test.
+s = base(6, "Ridge · evaluación adicional",
+         "El test queda prácticamente en la referencia",
+         "Fuentes: Evaluacion_Independiente_y_Validez_24-10-2026.md; Robustez_Sin_Cohorte_Nueva_24-10-2026.md.")
+for y, label, value in [
+    (190, "Train, fuera de fold", 0.3843),
+    (269, "Test, ensamble fijo", 0.3557),
+    (348, "Referencia 1/k en test", 0.3542),
+]:
+    text(s, label, 60, y - 5, 270, 35, 17, INK)
+    box(s, 362, y + 2, 385, 16, RULE)
+    box(s, 362, y + 2, 385 * value / .5, 16, ACCENT if y == 269 else MUTED)
+    text(s, f"{value:.4f}".replace(".", ","), 774, y - 10, 126, 44, 24,
+         INK, True, PP_ALIGN.RIGHT)
+text(s, "Escala 0–0,5", 362, 404, 385, 25, 12, MUTED)
+rule(s, 60, 438, 840)
+text(s, "Solo 4 de 8 personas superan 1/k. Recall de la clase media en test: 21,8 %.",
+     60, 445, 840, 31, 16, ACCENT, True)
+notes(s, "1/k es la BA de predecir siempre una clase presente. En test, su media es 0,3542 porque una persona tiene dos clases. Train usa un modelo por fold; test promedia probabilidades de cinco modelos. La diferencia train-test es descriptiva; test ya había sido consultado.")
 
+# 7. Dos resultados con sus límites, sin recuadros de métricas.
 s = base(7, "Control negativo y sensibilidad",
-         "La alineación importa; la etiqueta influye",
-         "Fuentes: Control_Negativo_Temporal_y_Errores_24-10-2026.md; Robustez_Sin_Cohorte_Nueva_24-10-2026.md")
-shape(s, 48, 149, 405, 213, WHITE)
-shape(s, 48, 149, 405, 5, TEAL, MSO_SHAPE.RECTANGLE)
-text(s, "CONTROL TEMPORAL · TRAIN", 67, 167, 362, 26, 15, True, TEAL)
-text(s, "+5,76 pp", 67, 205, 363, 55, 35, True, NAVY)
-text(s, "BA 0,3843 original vs. 0,3268 con etiqueta desplazada.",
-     67, 272, 360, 47, 16)
-text(s, "Ninguno de 12 controles alcanzó el original.",
-     67, 326, 360, 24, 13, True, MUTED)
-shape(s, 507, 149, 405, 213, WHITE)
-shape(s, 507, 149, 405, 5, BLUE, MSO_SHAPE.RECTANGLE)
-text(s, "OTRAS REGLAS · TEST", 526, 167, 362, 26, 15, True, BLUE)
-text(s, "19,7–30,5 %", 526, 205, 365, 55, 31, True, NAVY)
-text(s, "de etiquetas cambian con GSR de 2 s o PCA GSR.",
-     526, 272, 360, 47, 16)
-text(s, "Las diferencias de BA son inciertas.",
-     526, 326, 360, 24, 13, True, MUTED)
-strip(s, "El control apoya dependencia de la pseudoetiqueta GSR, no validez psicológica ni rendimiento en personas nuevas.", 389, ORANGE, 17)
-notes(s, "El control preserva frecuencias de clase; el modelo original fue seleccionado con etiquetas de train. Las reglas alternativas de test no reentrenan el predictor.")
+         "La alineación con GSR importa",
+         "Fuentes: Control_Negativo_Temporal_y_Errores_24-10-2026.md; Robustez_Sin_Cohorte_Nueva_24-10-2026.md.")
+text(s, "CONTROL TEMPORAL · TRAIN", 60, 158, 392, 26, 12, ACCENT, True)
+text(s, "+5,76 pp", 60, 190, 392, 73, 43, INK, True)
+text(s, "BA 0,3843 original frente a 0,3268 con la etiqueta GSR desplazada.",
+     60, 275, 385, 63, 18)
+text(s, "0 de 12 controles alcanzó el original.", 60, 344, 385, 41, 15, MUTED)
+rule(s, 478, 159, 1, RULE, 229)
+text(s, "DEFINICIÓN DE ETIQUETA · TEST", 516, 158, 384, 26, 12, ACCENT, True)
+text(s, "19,7 % y 30,5 %", 516, 190, 384, 73, 34, INK, True)
+text(s, "de etiquetas cambian con GSR de 2 s o PCA GSR, respectivamente.",
+     516, 275, 384, 63, 18)
+text(s, "Las diferencias de BA incluyen cero.", 516, 344, 384, 41, 15, MUTED)
+rule(s, 60, 408, 840)
+text(s, "El control mide dependencia de la pseudoetiqueta. Aún falta una medida externa del estado psicológico.",
+     60, 420, 840, 51, 17, ACCENT, True)
+notes(s, "El control preserva frecuencias de clase; el modelo original fue seleccionado con etiquetas de train. Las reglas alternativas de test usan predicciones fijas y no reentrenan el predictor. El control no prueba rendimiento en personas nuevas.")
 
-s = base(8, "Balance y siguiente evidencia necesaria",
-         "Qué se puede afirmar ahora",
-         "Fuentes: informes del 24-10-2026; Evaluacion_Independiente_y_Validez_24-10-2026.md")
-card(s, 48, 145, 864, 88, "OBSERVADO",
-     "En train, la predicción Ridge depende de la alineación temporal con su pseudoetiqueta GSR.", TEAL, body_size=18)
-card(s, 48, 244, 864, 88, "LÍMITE DE LA CONCLUSIÓN",
-     "No se confirma una ventaja general del historial o la fusión; test ya se había consultado y falta una medida externa del estado psicológico.", ORANGE, body_size=17)
-card(s, 48, 343, 864, 109, "PARA CONFIRMAR",
-     "Fijar predictor y protocolo antes de evaluar personas no utilizadas en decisiones previas; contrastar la pseudoetiqueta con una medida independiente y apropiada a su escala temporal.", BLUE, body_size=17)
+# 8. Cierre completo: evidencia, alcance y siguiente evaluación.
+s = base(8, "Balance",
+         "Qué permite concluir esta evidencia",
+         "Fuentes: informes del 24-10-2026; Evaluacion_Independiente_y_Validez_24-10-2026.md.")
+for y, number, heading, body in [
+    (158, "01", "En train", "Ridge capta una relación temporal con la pseudoetiqueta GSR."),
+    (255, "02", "Alcance", "No se confirma una ventaja general del historial o la fusión. El test ya se había consultado."),
+    (352, "03", "Siguiente paso", "Fijar modelo y protocolo antes de evaluar personas nuevas y contrastar la etiqueta con una medida independiente."),
+]:
+    text(s, number, 60, y, 62, 56, 23, ACCENT, True)
+    text(s, heading, 135, y, 170, 33, 18, INK, True)
+    text(s, body, 314, y - 2, 586, 59, 17, INK)
+    rule(s, 60, y + 72, 840)
 notes(s, "Conservar la distinción entre evaluación de la pseudoetiqueta y validez del constructo. La disponibilidad de datos externos sigue pendiente de confirmación.")
 
 prs.save(DEST)
 opened = Presentation(DEST)
-assert len(opened.slides) == TOTAL
-report = {"slides": TOTAL, "size_points": [960, 540], "visible_text": [],
-          "out_of_bounds": []}
-for index, slide in enumerate(opened.slides, 1):
-    values = [item.text for item in slide.shapes if item.has_text_frame and item.text.strip()]
-    report["visible_text"].append({"slide": index, "items": len(values),
+assert len(opened.slides) == N
+report = {"slides": N, "size_points": [W, H], "visible_text": [], "out_of_bounds": []}
+for number, slide in enumerate(opened.slides, 1):
+    values = [obj.text for obj in slide.shapes if obj.has_text_frame and obj.text.strip()]
+    report["visible_text"].append({"slide": number, "items": len(values),
                                    "characters": sum(map(len, values))})
-    for item in slide.shapes:
-        if (item.left < 0 or item.top < 0 or
-                item.left + item.width > opened.slide_width or
-                item.top + item.height > opened.slide_height):
-            report["out_of_bounds"].append({"slide": index, "shape_id": item.shape_id})
+    for obj in slide.shapes:
+        if (obj.left < 0 or obj.top < 0 or obj.left + obj.width > opened.slide_width
+                or obj.top + obj.height > opened.slide_height):
+            report["out_of_bounds"].append({"slide": number, "shape_id": obj.shape_id})
 assert not report["out_of_bounds"]
-(ROOT / "documentacion/Verificacion_Avances_Simplificados_24-10-2026.json").write_text(
-    json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+AUDIT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"Presentación creada: {DEST}")
