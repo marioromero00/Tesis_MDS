@@ -71,9 +71,7 @@ def teacher_components(frame: pd.DataFrame, config: dict) -> tuple[pd.DataFrame,
     attention_component_cols = []
     for column, direction in zip(attention_cols, attention["direction"]):
         target = f"teacher_z_{column}"
-        result[target] = result.groupby("participant", group_keys=False).apply(
-            lambda group: zscore(transformed_feature(group, column)), include_groups=False
-        ).reset_index(level=0, drop=True)
+        result[target] = transformed_feature(result, column).groupby(result["participant"]).transform(zscore)
         result[target] *= direction
         attention_component_cols.append(target)
     eye_cols = attention_component_cols[:len(attention["eye_features"])]
@@ -86,9 +84,7 @@ def teacher_components(frame: pd.DataFrame, config: dict) -> tuple[pd.DataFrame,
     arousal_cols = []
     for column in config["arousal_teacher"]["features"]:
         target = f"teacher_z_{column}"
-        result[target] = result.groupby("participant", group_keys=False).apply(
-            lambda group: zscore(transformed_feature(group, column)), include_groups=False
-        ).reset_index(level=0, drop=True)
+        result[target] = transformed_feature(result, column).groupby(result["participant"]).transform(zscore)
         arousal_cols.append(target)
     result["arousal_score_2s"] = result[arousal_cols].mean(axis=1)
     result["arousal_score_2s"] = result.groupby("participant")["arousal_score_2s"].transform(zscore)
@@ -104,7 +100,7 @@ def teacher_components(frame: pd.DataFrame, config: dict) -> tuple[pd.DataFrame,
 
 def add_pca_sensitivity(frame: pd.DataFrame, split_map: dict, attention_cols: list[str], arousal_cols: list[str]) -> pd.DataFrame:
     result = frame.copy()
-    train = result.participant.map(split_map).eq("train")
+    train = result.participant.map(split_map).eq("train") & result.eligible_attention
     for label, columns, reference in [
         ("attention_score_pca", attention_cols, "attention_score_equal"),
         ("arousal_score_pca", arousal_cols, "arousal_score_6s"),
@@ -114,7 +110,8 @@ def add_pca_sensitivity(frame: pd.DataFrame, split_map: dict, attention_cols: li
         values = np.full(len(result), np.nan)
         complete = result[columns].notna().all(axis=1)
         values[complete] = pca.transform(result.loc[complete, columns]).ravel()
-        correlation = np.corrcoef(values[complete], result.loc[complete, reference])[0, 1]
+        # La orientación también es un parámetro del profesor: se decide solo con train.
+        correlation = np.corrcoef(values[complete_train], result.loc[complete_train, reference])[0, 1]
         if correlation < 0:
             values *= -1
         result[label] = values
@@ -123,6 +120,7 @@ def add_pca_sensitivity(frame: pd.DataFrame, split_map: dict, attention_cols: li
 
 
 def ternary(series: pd.Series, quantiles: list[float]) -> pd.Series:
+    """Conserva empates: una clase puede faltar si los scores tienen pocos valores únicos."""
     valid = series.dropna()
     if valid.empty:
         return pd.Series(pd.NA, index=series.index, dtype="string")
@@ -134,11 +132,12 @@ def ternary(series: pd.Series, quantiles: list[float]) -> pd.Series:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", default="config/modelado.json")
+    parser.add_argument("--output-dir", help="Directorio de salida alternativo para una nueva versión")
     args = parser.parse_args()
     config_path = (ROOT / args.config).resolve() if not Path(args.config).is_absolute() else Path(args.config)
     config = json.loads(config_path.read_text(encoding="utf-8"))
     source = (ROOT / config["input_features"]).resolve()
-    output = (ROOT / config["output_dir"]).resolve()
+    output = (ROOT / (args.output_dir or config["output_dir"])).resolve()
     output.mkdir(parents=True, exist_ok=True)
     frame = pd.read_csv(source)
     participant_meta = []
@@ -160,13 +159,16 @@ def main() -> int:
     split = participant_split(metadata, config)
     split_map = split.set_index("participant").split.to_dict()
     frame["split"] = frame.participant.map(split_map)
+    # Sensibilidad se evalúa por separado; excluidos nunca reciben una clase utilizable.
+    eligible = frame.multimodal_window_valid & frame.split.isin(["train", "validation", "test", "sensitivity"])
+    frame["eligible_attention"] = eligible
+    frame["eligible_arousal"] = eligible
     frame, attention_cols, arousal_cols = teacher_components(frame, config)
     frame = add_pca_sensitivity(frame, split_map, attention_cols, arousal_cols)
     quantiles = config["labels"]["quantiles"]
     for score in ["attention_score_equal", "attention_score_pca", "arousal_score_2s", "arousal_score_6s", "arousal_score_pca"]:
-        frame[score.replace("score", "label")] = frame.groupby("participant")[score].transform(lambda s: ternary(s, quantiles))
-    frame["eligible_attention"] = frame.multimodal_window_valid & frame.split.isin(["train", "validation", "test"])
-    frame["eligible_arousal"] = frame["eligible_attention"]
+        valid_score = frame[score].where(eligible)
+        frame[score.replace("score", "label")] = valid_score.groupby(frame["participant"]).transform(lambda s: ternary(s, quantiles))
     keep_identity = ["participant", "recording", "timeline", "stimulus", "segment_id", "window_index",
                      "window_start_utc", "window_end_utc", "split", "eeg_match_status"]
     teacher_outputs = ["attention_eye_component", "attention_pupil_component", "attention_score_equal",
@@ -187,6 +189,17 @@ def main() -> int:
         "split_participants": split.groupby("split").size().to_dict(),
         "eligible_attention_rows": int(dataset.eligible_attention.sum()),
         "eligible_arousal_rows": int(dataset.eligible_arousal.sum()),
+        "eligible_primary_rows": int((eligible & frame.split.isin(["train", "validation", "test"])).sum()),
+        "eligible_sensitivity_rows": int((eligible & frame.split.eq("sensitivity")).sum()),
+        "tie_policy": "Los scores iguales permanecen en la misma clase; no se fuerzan tres clases por participante.",
+        "class_counts_by_participant": {
+            score.replace("score", "label"): {
+                participant: {name: int(group[score.replace("score", "label")].eq(name).sum())
+                              for name in config["labels"]["classes"]}
+                for participant, group in dataset[dataset.eligible_attention].groupby("participant")
+            }
+            for score in ["attention_score_equal", "attention_score_pca", "arousal_score_2s", "arousal_score_6s", "arousal_score_pca"]
+        },
         "attention_equal_vs_pca_spearman": float(dataset[["attention_score_equal", "attention_score_pca"]].corr(method="spearman").iloc[0, 1]),
         "arousal_6s_vs_pca_spearman": float(dataset[["arousal_score_6s", "arousal_score_pca"]].corr(method="spearman").iloc[0, 1]),
         "notes": ["P29 solo sensibilidad", "Pupila sin correccion luminica", "Etiquetas provisionales hasta aprobacion del profesor"],

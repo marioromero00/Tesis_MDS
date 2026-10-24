@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0.0",
+  "source_features": "resultados/preprocesamiento/caracteristicas_multimodales.csv",
+  "source_partition": "resultados/modelado_auditado_24-10-2026/particion_participantes.csv",
+  "output_dir": "resultados/pca_senales_v2_24-10-2026",
+  "random_seed": 20260822,
+  "teacher": {
+    "attention_eye": ["fixation_total_ms", "fixation_mean_ms", "gaze_dispersion_2d_px", "gaze_path_length_px"],
+    "attention_pupil": ["pupil_mean_z"],
+    "arousal_gsr": ["gsr_tonic_mean_z", "gsr_phasic_mean_z"],
+    "components_per_modality": 1,
+    "arousal_context_windows": 5,
+    "label_quantiles": [0.3333333333, 0.6666666667],
+    "normalization_population": "eligible_windows_only",
+    "context_gap_policy": "reset_on_nonconsecutive_1s_start"
+  },
+  "student": {
+    "variance_retained_per_modality": 0.90,
+    "estimator": "balanced_logistic_regression",
+    "comparison": "full_features_vs_pca_features_on_same_new_labels"
+  }
+}

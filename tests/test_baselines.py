@@ -67,6 +67,9 @@ class TestBaselines(unittest.TestCase):
         data = pd.DataFrame(rng.normal(size=(45, len(columns))), columns=columns)
         data["participant"] = np.repeat(["P1", "P2", "P3"], 15)
         data["split"] = np.repeat(["train", "validation", "test"], 15)
+        data["eligible_attention"] = True
+        data["eligible_arousal"] = True
+        data.loc[[0, 15], ["eligible_attention", "eligible_arousal"]] = False
         data["window_start_utc"] = np.arange(45)
         for stem in ["attention", "arousal"]:
             variants = ["equal", "pca"] if stem == "attention" else ["6s", "2s", "pca"]
@@ -93,8 +96,11 @@ class TestBaselines(unittest.TestCase):
             self.assertEqual(manifest["metrics_rows"], 60)
             for artifact in manifest["artifacts"]:
                 self.assertEqual(artifact["train_participants"], ["P1"])
+                self.assertEqual(artifact["train_rows"], 14)
                 self.assertTrue(artifact["reload_verified"])
                 self.assertTrue((root / "run" / artifact["path"]).with_suffix(".json").exists())
+            metrics = pd.read_csv(root / "run/metricas_baselines.csv")
+            self.assertTrue(metrics.loc[metrics.split.eq("validation"), "rows"].eq(14).all())
 
 
 if __name__ == "__main__":

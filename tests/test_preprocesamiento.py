@@ -18,6 +18,35 @@ MODEL_SPEC.loader.exec_module(MODEL_MODULE)
 
 
 class TestPreprocesamiento(unittest.TestCase):
+    def test_empates_de_pseudoetiquetas_no_se_rompen_artificialmente(self):
+        values = pd.Series([0.0] * 8 + [1.0] * 2)
+        labels = MODEL_MODULE.ternary(values, [1 / 3, 2 / 3])
+        self.assertEqual(labels.iloc[:8].unique().tolist(), ["bajo"])
+        self.assertEqual(labels.iloc[8:].unique().tolist(), ["alto"])
+        self.assertNotIn("medio", labels.tolist())
+
+    def test_componentes_profesor_respetan_indice_entre_participantes(self):
+        import json
+        config = json.loads((Path(__file__).parents[1] / "config/modelado_auditado.json").read_text(encoding="utf-8"))
+        frame = pd.DataFrame({
+            "participant": ["P2", "P2", "P2", "P10", "P10", "P10"],
+            "recording": ["R"] * 6,
+            "segment_id": [1] * 6,
+            "window_start_recording_s": [0, 1, 2, 0, 1, 2],
+            "fixation_total_ms": [1, 2, 3, 3, 2, 1],
+            "fixation_mean_ms": [1, 2, 3, 3, 2, 1],
+            "gaze_dispersion_2d_px": [3, 2, 1, 1, 2, 3],
+            "gaze_path_length_px": [3, 2, 1, 1, 2, 3],
+            "pupil_mean_z": [1., 2., 3., 10., 20., 30.],
+            "gsr_tonic_mean_z": [1., 2., 3., 10., 20., 30.],
+            "gsr_phasic_mean_z": [1., 2., 3., 10., 20., 30.],
+            "gsr_scr_count": [0, 1, 2, 2, 1, 0],
+            "gsr_scr_mean_prominence_z": [0., 1., 2., 2., 1., 0.],
+        })
+        result, _, _ = MODEL_MODULE.teacher_components(frame, config)
+        expected = frame.pupil_mean_z.groupby(frame.participant).transform(MODEL_MODULE.zscore)
+        np.testing.assert_allclose(result.attention_pupil_component, expected)
+
     def test_normaliza_solo_participantes_experimentales(self):
         self.assertEqual(MODULE.normalize_participant("P01"), "P1")
         self.assertEqual(MODULE.normalize_participant("p48"), "P48")

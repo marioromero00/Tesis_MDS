@@ -1,0 +1,9 @@
+target,split,rows,balanced_accuracy
+attention_label_equal,validation,4640,0.3148627746451352
+attention_label_equal,test,4017,0.32088623350759277
+attention_label_eye_only,validation,4640,0.33445445050345746
+attention_label_eye_only,test,4017,0.34851879512073686
+arousal_label_6s,validation,4640,0.36342502611299526
+arousal_label_6s,test,4017,0.3873879229382548
+arousal_label_gsr_continuous_6s,validation,4640,0.45345064087929926
+arousal_label_gsr_continuous_6s,test,4017,0.3990540204132437

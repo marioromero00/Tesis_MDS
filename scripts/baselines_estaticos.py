@@ -130,6 +130,9 @@ def main() -> int:
     partition_path = source_dir / "particion_participantes.csv"
     data = pd.read_csv(dataset_path)
     validate_partition(data, pd.read_csv(partition_path))
+    for column in ["eligible_attention", "eligible_arousal"]:
+        if column not in data or data[column].isna().any():
+            raise ValueError(f"Indicador de elegibilidad ausente o incompleto: {column}")
     output = source_dir
     if args.run_dir:
         output = (ROOT / args.run_dir).resolve()
@@ -142,17 +145,17 @@ def main() -> int:
     seed = int(config["random_seed"])
     trees = int(config["baselines"]["random_forest_estimators"])
     tasks = {
-        "attention_primary": {"score": "attention_score_equal", "label": "attention_label_equal", "features": EEG + GSR},
-        "attention_pca_sensitivity": {"score": "attention_score_pca", "label": "attention_label_pca", "features": EEG + GSR},
-        "arousal_primary_6s": {"score": "arousal_score_6s", "label": "arousal_label_6s", "features": EEG + EYE + PUPIL},
-        "arousal_2s_sensitivity": {"score": "arousal_score_2s", "label": "arousal_label_2s", "features": EEG + EYE + PUPIL},
-        "arousal_pca_sensitivity": {"score": "arousal_score_pca", "label": "arousal_label_pca", "features": EEG + EYE + PUPIL},
+        "attention_primary": {"score": "attention_score_equal", "label": "attention_label_equal", "features": EEG + GSR, "eligible": "eligible_attention"},
+        "attention_pca_sensitivity": {"score": "attention_score_pca", "label": "attention_label_pca", "features": EEG + GSR, "eligible": "eligible_attention"},
+        "arousal_primary_6s": {"score": "arousal_score_6s", "label": "arousal_label_6s", "features": EEG + EYE + PUPIL, "eligible": "eligible_arousal"},
+        "arousal_2s_sensitivity": {"score": "arousal_score_2s", "label": "arousal_label_2s", "features": EEG + EYE + PUPIL, "eligible": "eligible_arousal"},
+        "arousal_pca_sensitivity": {"score": "arousal_score_pca", "label": "arousal_label_pca", "features": EEG + EYE + PUPIL, "eligible": "eligible_arousal"},
     }
     metrics_rows, prediction_rows, importance_rows = [], [], []
     train = data[data.split.eq("train")]
     for task_name, task in tasks.items():
         columns = task["features"]
-        train_valid = train[train[task["score"]].notna() & train[task["label"]].notna()]
+        train_valid = train[train[task["eligible"]] & train[task["score"]].notna() & train[task["label"]].notna()]
         for kind, target, models in [
             ("regression", task["score"], regression_models(seed, trees)),
             ("classification", task["label"], classification_models(seed, trees)),
@@ -165,6 +168,7 @@ def main() -> int:
                 model.fit(x_train, y_train)
                 model_path = output / "modelos" / task_name / f"{kind}__{model_name}.joblib"
                 verification = data.loc[data.split.isin(["validation", "test", "sensitivity"])
+                                        & data[task["eligible"]]
                                         & data[target].notna(), columns]
                 artifact = save_pipeline(model, model_path, verification)
                 artifact.update({"path": model_path.relative_to(output).as_posix(),
@@ -178,7 +182,7 @@ def main() -> int:
                     json.dumps(artifact, indent=2, ensure_ascii=False), encoding="utf-8")
                 artifacts.append(artifact)
                 for split_name in ["validation", "test", "sensitivity"]:
-                    evaluation = data[data.split.eq(split_name) & data[target].notna()]
+                    evaluation = data[data.split.eq(split_name) & data[task["eligible"]] & data[target].notna()]
                     if evaluation.empty:
                         continue
                     predicted = model.predict(evaluation[columns])

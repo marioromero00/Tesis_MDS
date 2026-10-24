@@ -30,3 +30,6 @@ resultados/modelado/**/predicciones_baselines.csv
 !resultados/modelado/ejecuciones/baselines_05-09-2026_02/predicciones_baselines.csv
 # Intento interrumpido, conservado solo como diagnostico local.
 resultados/modelado/ejecuciones/baselines_05-09-2026/
+
+# Primera corrida interrumpida de la auditoría; conservar solo la definitiva.
+resultados/modelado_auditado_24-10-2026/baselines/

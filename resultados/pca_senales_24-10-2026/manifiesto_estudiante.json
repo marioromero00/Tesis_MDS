@@ -1,0 +1,104 @@
+{
+  "config_sha256": "405dc99cedabd17ff29af8c2817ed5a1c13de02241b29320ce18ffc396598fd8",
+  "dataset_sha256": "bb6d1bec870065ff0d59972752c9ae0132d465cb2156d3f6715e38a1fed248e6",
+  "script_sha256": "992e5e2765e5cc9bc5b8c13cf14ecb19419a3e8017e7c00ffd71289f9442e28f",
+  "models": {
+    "attention": {
+      "target": "attention_label_teacher_pca",
+      "raw_features": 18,
+      "retained_components": {
+        "EEG": {
+          "raw_features": 9,
+          "transformed_input_dimension": 9,
+          "components": 4,
+          "variance_retained": 0.9420809019833641
+        },
+        "GSR": {
+          "raw_features": 9,
+          "transformed_input_dimension": 9,
+          "components": 5,
+          "variance_retained": 0.9625379580191058
+        }
+      },
+      "one_pc_variance": {
+        "EEG": 0.5373325771510277,
+        "GSR": 0.45624789345795635
+      },
+      "models": {
+        "dummy": {
+          "path": "student_models/attention__dummy.joblib",
+          "sha256": "d17d54732940ada666fd785bb88bc14387183f4f9a2940d9956bb2d975cb4aa4",
+          "reload_verified": true
+        },
+        "full_logistic": {
+          "path": "student_models/attention__full_logistic.joblib",
+          "sha256": "65c1510c78032557badef066c1610ae7965178d85a02f716b5308c070ebd0545",
+          "reload_verified": true
+        },
+        "pca_logistic": {
+          "path": "student_models/attention__pca_logistic.joblib",
+          "sha256": "985c9ec50fdf935be66eab5f6a43c65b48793764bd1a521fb8d86db6b9f347bf",
+          "reload_verified": true
+        },
+        "pca_1pc_logistic": {
+          "path": "student_models/attention__pca_1pc_logistic.joblib",
+          "sha256": "d49b41d1330681da1fe440e3ccc21a03f5e86a4b13ea2744b6e5fe4a84325757",
+          "reload_verified": true
+        }
+      }
+    },
+    "arousal": {
+      "target": "arousal_label_teacher_pca_6s",
+      "raw_features": 25,
+      "retained_components": {
+        "EEG": {
+          "raw_features": 9,
+          "transformed_input_dimension": 9,
+          "components": 4,
+          "variance_retained": 0.9420809019833641
+        },
+        "Eye": {
+          "raw_features": 10,
+          "transformed_input_dimension": 13,
+          "components": 7,
+          "variance_retained": 0.9288193764354185
+        },
+        "Pupil": {
+          "raw_features": 6,
+          "transformed_input_dimension": 6,
+          "components": 4,
+          "variance_retained": 0.9601342233044975
+        }
+      },
+      "one_pc_variance": {
+        "EEG": 0.5373325771510277,
+        "Eye": 0.3279702490878183,
+        "Pupil": 0.36726903617934936
+      },
+      "models": {
+        "dummy": {
+          "path": "student_models/arousal__dummy.joblib",
+          "sha256": "e6964a9dd034187a70de0bff9c74c49ed369a4acdeeeb7058c574b5eebb27eb0",
+          "reload_verified": true
+        },
+        "full_logistic": {
+          "path": "student_models/arousal__full_logistic.joblib",
+          "sha256": "1c1386b83f4482fc0fcc6b6e71b7ad296a74715e7592df16e43abc74a7054e13",
+          "reload_verified": true
+        },
+        "pca_logistic": {
+          "path": "student_models/arousal__pca_logistic.joblib",
+          "sha256": "73dd5b2ceef4cbf047a184b15b86b113405cf7e40730716ba96dea58f3f5dbb7",
+          "reload_verified": true
+        },
+        "pca_1pc_logistic": {
+          "path": "student_models/arousal__pca_1pc_logistic.joblib",
+          "sha256": "f3d21c03e60cad7a843f2646d0c971d45817bcb6bdda6551266d0bcaedba87bc",
+          "reload_verified": true
+        }
+      }
+    }
+  },
+  "comparison": "PCA versus variables completas sobre las mismas pseudoetiquetas nuevas; mismo train/validation/test",
+  "test_scope": "Exploratorio: test ya se había inspeccionado en estudios anteriores"
+}

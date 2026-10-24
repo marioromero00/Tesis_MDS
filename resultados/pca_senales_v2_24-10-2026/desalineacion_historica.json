@@ -1,0 +1,6 @@
+{
+  "primary_valid_rows": 21719,
+  "historical_pupil_component_mismatched_rows": 21719,
+  "cause": "groupby.apply ordenó participantes lexicográficamente y reset_index reasignó valores a otras filas",
+  "historical_results_comparable": false
+}

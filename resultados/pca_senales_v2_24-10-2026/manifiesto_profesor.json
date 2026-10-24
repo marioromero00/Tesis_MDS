@@ -1,0 +1,95 @@
+{
+  "config_sha256": "ef2df85024cc021e8069eaa3a3d48a115b2a00b6d29623d367b2a36f89919136",
+  "script_sha256": "599d748834058d108bfa16bcd27f68db2d54527ca113287312fde3552968fac9",
+  "source_sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "dataset_sha256": "fe6c5846c770d43fef0f0fc6f37636f651bebf155246d392a98f5cc60c2ef9dc",
+  "teacher": {
+    "attention_eye": {
+      "features": [
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px"
+      ],
+      "raw_features": 4,
+      "components": 1,
+      "explained_variance_ratio": 0.6423515689559903,
+      "train_orientation_correlation": 0.9982946171932291,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/attention_eye.joblib",
+      "model_sha256": "93c70c197ab3b9ecd3d90ce20fcc7c31cb31d85f4a673a1c6c92520fc0956b1d"
+    },
+    "attention_pupil": {
+      "features": [
+        "pupil_mean_z"
+      ],
+      "raw_features": 1,
+      "components": 1,
+      "explained_variance_ratio": 1.0,
+      "train_orientation_correlation": 0.9999999999999998,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/attention_pupil.joblib",
+      "model_sha256": "3d468fed645214591347a3b6097c7d2966f1ae0dc6681c5cbcdf52cab8548748"
+    },
+    "arousal_gsr": {
+      "features": [
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z"
+      ],
+      "raw_features": 2,
+      "components": 1,
+      "explained_variance_ratio": 0.5208571156175231,
+      "train_orientation_correlation": 1.0,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/arousal_gsr.joblib",
+      "model_sha256": "ffa8ee04f8c5823c1902765645b0328ddce43dd740091b7c15404fd5d33001f8"
+    }
+  },
+  "eligible_gap_resets": 28,
+  "primary_rows": {
+    "train": 13062,
+    "validation": 4640,
+    "test": 4017
+  },
+  "class_counts": {
+    "attention_label_teacher_pca": {
+      "train": {
+        "bajo": 4354,
+        "alto": 4354,
+        "medio": 4354
+      },
+      "validation": {
+        "bajo": 1547,
+        "alto": 1547,
+        "medio": 1546
+      },
+      "test": {
+        "bajo": 1339,
+        "alto": 1339,
+        "medio": 1339
+      }
+    },
+    "arousal_label_teacher_pca_6s": {
+      "train": {
+        "alto": 4354,
+        "bajo": 4354,
+        "medio": 4354
+      },
+      "validation": {
+        "bajo": 1547,
+        "alto": 1547,
+        "medio": 1546
+      },
+      "test": {
+        "bajo": 1339,
+        "alto": 1339,
+        "medio": 1339
+      }
+    }
+  },
+  "notes": "PCA y signo ajustados con train elegible; normalización por participante solo en ventanas elegibles; contexto reiniciado ante huecos. Etiquetas offline por participante."
+}

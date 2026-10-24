@@ -1,0 +1,96 @@
+{
+  "config_sha256": "405dc99cedabd17ff29af8c2817ed5a1c13de02241b29320ce18ffc396598fd8",
+  "script_sha256": "a29bd9c1c474f5d9adacb5e7c464626aa488b17893de9962670a67be47cdf990",
+  "source_sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "dataset_sha256": "bb6d1bec870065ff0d59972752c9ae0132d465cb2156d3f6715e38a1fed248e6",
+  "teacher": {
+    "attention_eye": {
+      "features": [
+        "fixation_total_ms",
+        "fixation_mean_ms",
+        "gaze_dispersion_2d_px",
+        "gaze_path_length_px"
+      ],
+      "raw_features": 4,
+      "components": 1,
+      "explained_variance_ratio": 0.6393825169313714,
+      "train_orientation_correlation": 0.9985237494262065,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/attention_eye.joblib",
+      "model_sha256": "99597fe7eab0d5d722e07962e7249e085064f809e8fe5f90173e809c124b17d9"
+    },
+    "attention_pupil": {
+      "features": [
+        "pupil_mean_z"
+      ],
+      "raw_features": 1,
+      "components": 1,
+      "explained_variance_ratio": 1.0,
+      "train_orientation_correlation": 1.0,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/attention_pupil.joblib",
+      "model_sha256": "587a2fe88fc148a45f33ff9fbe2b21053158694be0cab2b355ba8a318a1b34b9"
+    },
+    "arousal_gsr": {
+      "features": [
+        "gsr_tonic_mean_z",
+        "gsr_phasic_mean_z",
+        "gsr_scr_count",
+        "gsr_scr_mean_prominence_z"
+      ],
+      "raw_features": 4,
+      "components": 1,
+      "explained_variance_ratio": 0.5240392566407154,
+      "train_orientation_correlation": 0.943466143008148,
+      "direction": 1,
+      "train_rows": 13062,
+      "model_path": "teacher_models/arousal_gsr.joblib",
+      "model_sha256": "9dca2f3939bbf89371a70c5ae5c41f93c9f25aa42aec388c2c711ca8185843df"
+    }
+  },
+  "primary_rows": {
+    "train": 13062,
+    "validation": 4640,
+    "test": 4017
+  },
+  "class_counts": {
+    "attention_label_teacher_pca": {
+      "train": {
+        "bajo": 4354,
+        "alto": 4354,
+        "medio": 4354
+      },
+      "validation": {
+        "bajo": 1547,
+        "alto": 1547,
+        "medio": 1546
+      },
+      "test": {
+        "bajo": 1339,
+        "alto": 1339,
+        "medio": 1339
+      }
+    },
+    "arousal_label_teacher_pca_6s": {
+      "train": {
+        "alto": 4354,
+        "bajo": 4354,
+        "medio": 4354
+      },
+      "validation": {
+        "bajo": 1547,
+        "alto": 1547,
+        "medio": 1546
+      },
+      "test": {
+        "bajo": 1339,
+        "alto": 1339,
+        "medio": 1339
+      }
+    }
+  },
+  "notes": "PCA y signo ajustados con train elegible; normalización y cuantiles de etiqueta offline por participante. Los scores históricos no son referencia válida por desalineación de filas."
+}

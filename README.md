@@ -1,5 +1,9 @@
 # Tesis MDS — Baselines multimodales
 
+**Aviso de reproducibilidad (24-10-2026):** se detectó una desalineación de filas en la generación histórica de pseudoetiquetas. Las métricas de esta página y de los experimentos anteriores se conservan como registro, pero no validan predicción de las señales correctamente alineadas. El [pipeline PCA v2 auditado](documentacion/Auditoria_PCA_Senales_v2_24-10-2026.md) usa las características originales y la partición congelada.
+
+Los cambios recientes se anotan en [CHANGELOG.md](CHANGELOG.md). La [presentación final PCA](presentaciones/Presentacion-Final-Tesis-PCA-24-10-2026.pptx) resume la auditoría y los resultados nuevos.
+
 Estado al 11-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,

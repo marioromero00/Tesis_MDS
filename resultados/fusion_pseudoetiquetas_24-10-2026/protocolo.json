@@ -1,0 +1,63 @@
+{
+  "dataset_sha256": "12c2254d84f8e9805666e99f357bf6da9082c86d3760ecbdcf27e120d9694df9",
+  "train_participants": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P3",
+    "P30",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "validation_participants": [
+    "P23",
+    "P28",
+    "P31",
+    "P32",
+    "P38",
+    "P41",
+    "P47",
+    "P6"
+  ],
+  "test_participants": [
+    "P10",
+    "P11",
+    "P15",
+    "P16",
+    "P37",
+    "P39",
+    "P45",
+    "P5"
+  ],
+  "contexts": {
+    "current": "2 s current window",
+    "history6": "current plus mean of six 2 s windows, maximum support 7 s"
+  },
+  "strategies": {
+    "early": "Concatenate all allowed modality features, one logistic pipeline",
+    "intermediate_pca90": "Per-modality imputer, scaler and unsupervised PCA retaining 90% train variance; concatenate embeddings, logistic classifier",
+    "late_mean": "Separate logistic pipeline per modality; arithmetic mean of class probabilities",
+    "late_geometric": "Separate logistic pipeline per modality; normalized geometric mean of class probabilities",
+    "unimodal": "Separate logistic pipeline for each allowed modality"
+  },
+  "selection": "No model, weight, PCA threshold or context selected from validation or test metrics",
+  "evaluation": "Same eligible rows and frozen participant split for all strategies; exploratory because test was previously inspected"
+}

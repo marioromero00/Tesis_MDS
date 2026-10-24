@@ -1,0 +1,27 @@
+{
+  "scr_count_zero_fraction_train": 0.9712142091563314,
+  "scr_prominence_zero_fraction_train": 0.9712142091563314,
+  "stimulus_eta_train": {
+    "attention_eye_component": 0.35189301814134566,
+    "attention_pupil_component": 0.5483139808152449,
+    "pupil_mean_z": 0.6699110326673489,
+    "gsr_mean_z": 0.8752950625544287,
+    "gsr_scr_count": 0.15043743289046665
+  },
+  "arousal_score_stimulus_eta_train": {
+    "audited_6s": 0.5981595704199908,
+    "gsr_continuous_6s": 0.8905700279473303
+  },
+  "participants_without_middle_train": {
+    "attention_label_equal": [],
+    "attention_label_eye_only": [],
+    "arousal_label_6s": [
+      "P34",
+      "P46"
+    ],
+    "arousal_label_gsr_continuous_6s": []
+  },
+  "source_sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c",
+  "audited_sha256": "ea47674da222afb34dc3e2e70bce4c91a03ebaf09dab3eafd0d6b2c5d771bfaa",
+  "candidate_rule": "Candidata de atención: excluir pupila por alta asociación con estímulo sin medición de luminancia. Candidata de activación: excluir recuento/prominencia SCR por casi todos los valores cero. Variantes definidas con diagnósticos de train antes de comparar modelos; son exploratorias."
+}

@@ -1,0 +1,1089 @@
+{
+  "config_sha256": "f6c354a83a28d7fe1341b09bd85dcc2c240682855e6a3c9b8121c4f93e0903b3",
+  "pipeline_sha256": "e6439299ca28cf04460d7d1e7a70aee5e7ffb42b609a6058463ee9e42fe3164a",
+  "requirements_sha256": "240e82c28f69b0136d582cf78f100c2b97e4e6af93c51a579ea8b21e3cba2897",
+  "input_sha256": "90c4872f34e27f456f9d926d1ce1e7575f24331c5f79de2f9490f7512e77754c",
+  "rows": 25992,
+  "participants": 48,
+  "split_participants": {
+    "excluded": 6,
+    "sensitivity": 1,
+    "test": 8,
+    "train": 25,
+    "validation": 8
+  },
+  "eligible_attention_rows": 22201,
+  "eligible_arousal_rows": 22201,
+  "eligible_primary_rows": 21719,
+  "eligible_sensitivity_rows": 482,
+  "tie_policy": "Los scores iguales permanecen en la misma clase; no se fuerzan tres clases por participante.",
+  "class_counts_by_participant": {
+    "attention_label_equal": {
+      "P10": {
+        "bajo": 167,
+        "medio": 166,
+        "alto": 167
+      },
+      "P11": {
+        "bajo": 161,
+        "medio": 161,
+        "alto": 161
+      },
+      "P12": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P13": {
+        "bajo": 179,
+        "medio": 179,
+        "alto": 179
+      },
+      "P15": {
+        "bajo": 163,
+        "medio": 164,
+        "alto": 163
+      },
+      "P16": {
+        "bajo": 163,
+        "medio": 163,
+        "alto": 163
+      },
+      "P18": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P19": {
+        "bajo": 159,
+        "medio": 159,
+        "alto": 159
+      },
+      "P2": {
+        "bajo": 214,
+        "medio": 215,
+        "alto": 214
+      },
+      "P20": {
+        "bajo": 231,
+        "medio": 230,
+        "alto": 231
+      },
+      "P21": {
+        "bajo": 184,
+        "medio": 184,
+        "alto": 184
+      },
+      "P22": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P23": {
+        "bajo": 138,
+        "medio": 138,
+        "alto": 138
+      },
+      "P24": {
+        "bajo": 173,
+        "medio": 172,
+        "alto": 173
+      },
+      "P26": {
+        "bajo": 175,
+        "medio": 175,
+        "alto": 175
+      },
+      "P27": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P28": {
+        "bajo": 148,
+        "medio": 147,
+        "alto": 148
+      },
+      "P29": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P3": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P30": {
+        "bajo": 198,
+        "medio": 199,
+        "alto": 198
+      },
+      "P31": {
+        "bajo": 195,
+        "medio": 194,
+        "alto": 195
+      },
+      "P32": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P33": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P34": {
+        "bajo": 179,
+        "medio": 178,
+        "alto": 179
+      },
+      "P35": {
+        "bajo": 180,
+        "medio": 180,
+        "alto": 180
+      },
+      "P36": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P37": {
+        "bajo": 187,
+        "medio": 187,
+        "alto": 187
+      },
+      "P38": {
+        "bajo": 252,
+        "medio": 253,
+        "alto": 252
+      },
+      "P39": {
+        "bajo": 160,
+        "medio": 160,
+        "alto": 160
+      },
+      "P4": {
+        "bajo": 19,
+        "medio": 20,
+        "alto": 19
+      },
+      "P40": {
+        "bajo": 163,
+        "medio": 162,
+        "alto": 163
+      },
+      "P41": {
+        "bajo": 174,
+        "medio": 175,
+        "alto": 174
+      },
+      "P43": {
+        "bajo": 221,
+        "medio": 220,
+        "alto": 221
+      },
+      "P44": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P45": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P46": {
+        "bajo": 196,
+        "medio": 196,
+        "alto": 196
+      },
+      "P47": {
+        "bajo": 251,
+        "medio": 251,
+        "alto": 251
+      },
+      "P48": {
+        "bajo": 197,
+        "medio": 197,
+        "alto": 197
+      },
+      "P5": {
+        "bajo": 156,
+        "medio": 155,
+        "alto": 156
+      },
+      "P6": {
+        "bajo": 219,
+        "medio": 219,
+        "alto": 219
+      },
+      "P8": {
+        "bajo": 209,
+        "medio": 210,
+        "alto": 209
+      },
+      "P9": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      }
+    },
+    "attention_label_pca": {
+      "P10": {
+        "bajo": 167,
+        "medio": 166,
+        "alto": 167
+      },
+      "P11": {
+        "bajo": 161,
+        "medio": 161,
+        "alto": 161
+      },
+      "P12": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P13": {
+        "bajo": 179,
+        "medio": 179,
+        "alto": 179
+      },
+      "P15": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P16": {
+        "bajo": 163,
+        "medio": 163,
+        "alto": 163
+      },
+      "P18": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P19": {
+        "bajo": 159,
+        "medio": 159,
+        "alto": 159
+      },
+      "P2": {
+        "bajo": 214,
+        "medio": 215,
+        "alto": 214
+      },
+      "P20": {
+        "bajo": 230,
+        "medio": 231,
+        "alto": 230
+      },
+      "P21": {
+        "bajo": 184,
+        "medio": 184,
+        "alto": 184
+      },
+      "P22": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P23": {
+        "bajo": 138,
+        "medio": 138,
+        "alto": 138
+      },
+      "P24": {
+        "bajo": 173,
+        "medio": 172,
+        "alto": 173
+      },
+      "P26": {
+        "bajo": 175,
+        "medio": 175,
+        "alto": 175
+      },
+      "P27": {
+        "bajo": 154,
+        "medio": 154,
+        "alto": 154
+      },
+      "P28": {
+        "bajo": 148,
+        "medio": 147,
+        "alto": 148
+      },
+      "P29": {
+        "bajo": 160,
+        "medio": 161,
+        "alto": 160
+      },
+      "P3": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P30": {
+        "bajo": 198,
+        "medio": 199,
+        "alto": 198
+      },
+      "P31": {
+        "bajo": 195,
+        "medio": 194,
+        "alto": 195
+      },
+      "P32": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P33": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      },
+      "P34": {
+        "bajo": 179,
+        "medio": 178,
+        "alto": 179
+      },
+      "P35": {
+        "bajo": 180,
+        "medio": 180,
+        "alto": 180
+      },
+      "P36": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      },
+      "P37": {
+        "bajo": 187,
+        "medio": 187,
+        "alto": 187
+      },
+      "P38": {
+        "bajo": 252,
+        "medio": 253,
+        "alto": 252
+      },
+      "P39": {
+        "bajo": 160,
+        "medio": 160,
+        "alto": 160
+      },
+      "P4": {
+        "bajo": 19,
+        "medio": 20,
+        "alto": 19
+      },
+      "P40": {
+        "bajo": 163,
+        "medio": 162,
+        "alto": 163
+      },
+      "P41": {
+        "bajo": 174,
+        "medio": 174,
+        "alto": 174
+      },
+      "P43": {
+        "bajo": 221,
+        "medio": 220,
+        "alto": 221
+      },
+      "P44": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P45": {
+        "bajo": 180,
+        "medio": 181,
+        "alto": 180
+      },
+      "P46": {
+        "bajo": 196,
+        "medio": 196,
+        "alto": 196
+      },
+      "P47": {
+        "bajo": 251,
+        "medio": 251,
+        "alto": 251
+      },
+      "P48": {
+        "bajo": 197,
+        "medio": 197,
+        "alto": 197
+      },
+      "P5": {
+        "bajo": 156,
+        "medio": 155,
+        "alto": 156
+      },
+      "P6": {
+        "bajo": 219,
+        "medio": 219,
+        "alto": 219
+      },
+      "P8": {
+        "bajo": 209,
+        "medio": 210,
+        "alto": 209
+      },
+      "P9": {
+        "bajo": 169,
+        "medio": 169,
+        "alto": 169
+      }
+    },
+    "arousal_label_2s": {
+      "P10": {
+        "bajo": 167,
+        "medio": 166,
+        "alto": 167
+      },
+      "P11": {
+        "bajo": 161,
+        "medio": 161,
+        "alto": 161
+      },
+      "P12": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P13": {
+        "bajo": 179,
+        "medio": 179,
+        "alto": 179
+      },
+      "P15": {
+        "bajo": 163,
+        "medio": 164,
+        "alto": 163
+      },
+      "P16": {
+        "bajo": 163,
+        "medio": 163,
+        "alto": 163
+      },
+      "P18": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P19": {
+        "bajo": 159,
+        "medio": 159,
+        "alto": 159
+      },
+      "P2": {
+        "bajo": 214,
+        "medio": 215,
+        "alto": 214
+      },
+      "P20": {
+        "bajo": 231,
+        "medio": 230,
+        "alto": 231
+      },
+      "P21": {
+        "bajo": 184,
+        "medio": 184,
+        "alto": 184
+      },
+      "P22": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P23": {
+        "bajo": 138,
+        "medio": 138,
+        "alto": 138
+      },
+      "P24": {
+        "bajo": 173,
+        "medio": 172,
+        "alto": 173
+      },
+      "P26": {
+        "bajo": 175,
+        "medio": 175,
+        "alto": 175
+      },
+      "P27": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P28": {
+        "bajo": 148,
+        "medio": 147,
+        "alto": 148
+      },
+      "P29": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P3": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P30": {
+        "bajo": 198,
+        "medio": 199,
+        "alto": 198
+      },
+      "P31": {
+        "bajo": 195,
+        "medio": 194,
+        "alto": 195
+      },
+      "P32": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P33": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P34": {
+        "bajo": 493,
+        "medio": 0,
+        "alto": 43
+      },
+      "P35": {
+        "bajo": 180,
+        "medio": 180,
+        "alto": 180
+      },
+      "P36": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P37": {
+        "bajo": 548,
+        "medio": 0,
+        "alto": 13
+      },
+      "P38": {
+        "bajo": 252,
+        "medio": 253,
+        "alto": 252
+      },
+      "P39": {
+        "bajo": 160,
+        "medio": 160,
+        "alto": 160
+      },
+      "P4": {
+        "bajo": 19,
+        "medio": 20,
+        "alto": 19
+      },
+      "P40": {
+        "bajo": 163,
+        "medio": 162,
+        "alto": 163
+      },
+      "P41": {
+        "bajo": 174,
+        "medio": 175,
+        "alto": 174
+      },
+      "P43": {
+        "bajo": 221,
+        "medio": 220,
+        "alto": 221
+      },
+      "P44": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P45": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P46": {
+        "bajo": 403,
+        "medio": 0,
+        "alto": 185
+      },
+      "P47": {
+        "bajo": 251,
+        "medio": 128,
+        "alto": 374
+      },
+      "P48": {
+        "bajo": 197,
+        "medio": 197,
+        "alto": 197
+      },
+      "P5": {
+        "bajo": 156,
+        "medio": 155,
+        "alto": 156
+      },
+      "P6": {
+        "bajo": 219,
+        "medio": 219,
+        "alto": 219
+      },
+      "P8": {
+        "bajo": 209,
+        "medio": 210,
+        "alto": 209
+      },
+      "P9": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      }
+    },
+    "arousal_label_6s": {
+      "P10": {
+        "bajo": 167,
+        "medio": 166,
+        "alto": 167
+      },
+      "P11": {
+        "bajo": 161,
+        "medio": 161,
+        "alto": 161
+      },
+      "P12": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P13": {
+        "bajo": 179,
+        "medio": 179,
+        "alto": 179
+      },
+      "P15": {
+        "bajo": 163,
+        "medio": 164,
+        "alto": 163
+      },
+      "P16": {
+        "bajo": 163,
+        "medio": 163,
+        "alto": 163
+      },
+      "P18": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P19": {
+        "bajo": 159,
+        "medio": 159,
+        "alto": 159
+      },
+      "P2": {
+        "bajo": 214,
+        "medio": 215,
+        "alto": 214
+      },
+      "P20": {
+        "bajo": 231,
+        "medio": 230,
+        "alto": 231
+      },
+      "P21": {
+        "bajo": 184,
+        "medio": 184,
+        "alto": 184
+      },
+      "P22": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P23": {
+        "bajo": 138,
+        "medio": 138,
+        "alto": 138
+      },
+      "P24": {
+        "bajo": 173,
+        "medio": 172,
+        "alto": 173
+      },
+      "P26": {
+        "bajo": 175,
+        "medio": 175,
+        "alto": 175
+      },
+      "P27": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P28": {
+        "bajo": 148,
+        "medio": 147,
+        "alto": 148
+      },
+      "P29": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P3": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P30": {
+        "bajo": 198,
+        "medio": 199,
+        "alto": 198
+      },
+      "P31": {
+        "bajo": 195,
+        "medio": 194,
+        "alto": 195
+      },
+      "P32": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P33": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P34": {
+        "bajo": 490,
+        "medio": 0,
+        "alto": 46
+      },
+      "P35": {
+        "bajo": 180,
+        "medio": 180,
+        "alto": 180
+      },
+      "P36": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P37": {
+        "bajo": 543,
+        "medio": 0,
+        "alto": 18
+      },
+      "P38": {
+        "bajo": 252,
+        "medio": 253,
+        "alto": 252
+      },
+      "P39": {
+        "bajo": 160,
+        "medio": 160,
+        "alto": 160
+      },
+      "P4": {
+        "bajo": 19,
+        "medio": 20,
+        "alto": 19
+      },
+      "P40": {
+        "bajo": 163,
+        "medio": 162,
+        "alto": 163
+      },
+      "P41": {
+        "bajo": 174,
+        "medio": 175,
+        "alto": 174
+      },
+      "P43": {
+        "bajo": 221,
+        "medio": 220,
+        "alto": 221
+      },
+      "P44": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P45": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P46": {
+        "bajo": 392,
+        "medio": 0,
+        "alto": 196
+      },
+      "P47": {
+        "bajo": 251,
+        "medio": 106,
+        "alto": 396
+      },
+      "P48": {
+        "bajo": 197,
+        "medio": 197,
+        "alto": 197
+      },
+      "P5": {
+        "bajo": 156,
+        "medio": 155,
+        "alto": 156
+      },
+      "P6": {
+        "bajo": 219,
+        "medio": 219,
+        "alto": 219
+      },
+      "P8": {
+        "bajo": 209,
+        "medio": 210,
+        "alto": 209
+      },
+      "P9": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      }
+    },
+    "arousal_label_pca": {
+      "P10": {
+        "bajo": 167,
+        "medio": 166,
+        "alto": 167
+      },
+      "P11": {
+        "bajo": 161,
+        "medio": 161,
+        "alto": 161
+      },
+      "P12": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P13": {
+        "bajo": 179,
+        "medio": 179,
+        "alto": 179
+      },
+      "P15": {
+        "bajo": 163,
+        "medio": 164,
+        "alto": 163
+      },
+      "P16": {
+        "bajo": 163,
+        "medio": 163,
+        "alto": 163
+      },
+      "P18": {
+        "bajo": 156,
+        "medio": 157,
+        "alto": 156
+      },
+      "P19": {
+        "bajo": 159,
+        "medio": 159,
+        "alto": 159
+      },
+      "P2": {
+        "bajo": 214,
+        "medio": 215,
+        "alto": 214
+      },
+      "P20": {
+        "bajo": 231,
+        "medio": 230,
+        "alto": 231
+      },
+      "P21": {
+        "bajo": 184,
+        "medio": 184,
+        "alto": 184
+      },
+      "P22": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P23": {
+        "bajo": 138,
+        "medio": 138,
+        "alto": 138
+      },
+      "P24": {
+        "bajo": 173,
+        "medio": 172,
+        "alto": 173
+      },
+      "P26": {
+        "bajo": 175,
+        "medio": 175,
+        "alto": 175
+      },
+      "P27": {
+        "bajo": 154,
+        "medio": 155,
+        "alto": 154
+      },
+      "P28": {
+        "bajo": 148,
+        "medio": 147,
+        "alto": 148
+      },
+      "P29": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P3": {
+        "bajo": 161,
+        "medio": 160,
+        "alto": 161
+      },
+      "P30": {
+        "bajo": 198,
+        "medio": 199,
+        "alto": 198
+      },
+      "P31": {
+        "bajo": 195,
+        "medio": 194,
+        "alto": 195
+      },
+      "P32": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P33": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P34": {
+        "bajo": 45,
+        "medio": 46,
+        "alto": 45
+      },
+      "P35": {
+        "bajo": 180,
+        "medio": 180,
+        "alto": 180
+      },
+      "P36": {
+        "bajo": 170,
+        "medio": 169,
+        "alto": 170
+      },
+      "P37": {
+        "bajo": 541,
+        "medio": 0,
+        "alto": 20
+      },
+      "P38": {
+        "bajo": 252,
+        "medio": 253,
+        "alto": 252
+      },
+      "P39": {
+        "bajo": 160,
+        "medio": 160,
+        "alto": 160
+      },
+      "P4": {
+        "bajo": 19,
+        "medio": 20,
+        "alto": 19
+      },
+      "P40": {
+        "bajo": 163,
+        "medio": 162,
+        "alto": 163
+      },
+      "P41": {
+        "bajo": 174,
+        "medio": 175,
+        "alto": 174
+      },
+      "P43": {
+        "bajo": 221,
+        "medio": 220,
+        "alto": 221
+      },
+      "P44": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P45": {
+        "bajo": 182,
+        "medio": 183,
+        "alto": 182
+      },
+      "P46": {
+        "bajo": 449,
+        "medio": 0,
+        "alto": 139
+      },
+      "P47": {
+        "bajo": 251,
+        "medio": 205,
+        "alto": 297
+      },
+      "P48": {
+        "bajo": 197,
+        "medio": 197,
+        "alto": 197
+      },
+      "P5": {
+        "bajo": 156,
+        "medio": 155,
+        "alto": 156
+      },
+      "P6": {
+        "bajo": 219,
+        "medio": 219,
+        "alto": 219
+      },
+      "P8": {
+        "bajo": 209,
+        "medio": 210,
+        "alto": 209
+      },
+      "P9": {
+        "bajo": 169,
+        "medio": 170,
+        "alto": 169
+      }
+    }
+  },
+  "attention_equal_vs_pca_spearman": 0.4498861344709985,
+  "arousal_6s_vs_pca_spearman": 0.67724948830744,
+  "notes": [
+    "P29 solo sensibilidad",
+    "Pupila sin correccion luminica",
+    "Etiquetas provisionales hasta aprobacion del profesor"
+  ]
+}
