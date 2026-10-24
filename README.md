@@ -1,12 +1,57 @@
 # Tesis MDS — Baselines multimodales
 
-Estado al 11-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado experimental actualizado al 24-10-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
 ## Entrega actual
+
+- [Presentación simplificada y avance del manuscrito, 24-10-2026](documentacion/Presentacion_y_Manuscrito_24-10-2026.md):
+  seis diapositivas en [PowerPoint editable](presentaciones/Avances-Experimentales-Simplificados-24-10-2026.pptx)
+  y [PDF](presentaciones/Avances-Experimentales-Simplificados-24-10-2026.pdf).
+  Se amplió la metodología del borrador en `../01 Tesis MDS/Escritura/Estructura Tesis.md`
+  y se redactaron experimentos, resultados y discusión, con límites de validez explícitos.
+
+- [Control negativo temporal y errores, 24-10-2026](documentacion/Control_Negativo_Temporal_y_Errores_24-10-2026.md):
+  con los cinco folds originales se reprodujo BA 0,3843 y se entrenaron 12 controles
+  que desplazan etiquetas GSR por persona; BA promedio 0,3268 (rango 0,3097–0,3488).
+  Diferencia descriptiva +5,76 pp, con 19/25 personas sobre su control promedio.
+  El análisis de errores muestra recall medio de 21,8 % en test y variación entre
+  personas y estímulos. Incluye predicciones, hashes, tablas y figura PNG/PDF.
+  Es un control interno retrospectivo, no validez psicológica ni confirmación nueva.
+
+- [Robustez sin cohorte nueva, 24-10-2026](documentacion/Robustez_Sin_Cohorte_Nueva_24-10-2026.md):
+  se reutilizaron predicciones fijas de 25 personas de train y ocho de test para
+  medir variación individual y sensibilidad a pseudoetiquetas GSR 6 s, GSR 2 s
+  y PCA GSR. BA en test: 0,3557 con GSR 6 s, cercana a la referencia aritmética
+  0,3542 (`1/k` por persona). Cambió 19,7 % de etiquetas de test al usar 2 s
+  y 30,5 % al usar PCA; las diferencias de BA tuvieron intervalos descriptivos
+  que incluyen cero. Incluye tablas y figura PNG/PDF. Test ya había sido consultado.
+
+- [Evaluación adicional y auditoría de pseudoetiquetas, 24-10-2026](documentacion/Evaluacion_Independiente_y_Validez_24-10-2026.md):
+  el ensamble fijado de cinco Ridge sin `fixation_count` obtuvo BA macro por persona
+  0,3557 en las ocho personas de test existentes (4.025 ventanas; intervalo descriptivo
+  [0,2988; 0,4109]). El test ya había sido consultado antes: no es confirmación
+  independiente nueva. La auditoría interna de etiquetas encontró 48,9 % de acuerdo
+  entre las reglas igualitaria y PCA de atención, y 67,0 % entre GSR 6 s y PCA de
+  activación. Falta una medida externa para validar ambos constructos.
+
+- [Tres intentos adicionales de mejora, 24-10-2026](documentacion/Mejoras_Adicionales_24-10-2026.md):
+  ajuste de decisión del TCN, mezcla fija con Ridge y ablación conjunta de
+  variables de fijación. Ninguno superó al Ridge sin `fixation_count` (BA macro
+  0,3843); se registraron resultados por clase, intervalos descriptivos,
+  protocolos y artefactos. 71 pruebas aprobadas; validation/test no usados en esos intentos.
+
+- [Contraste de temporalidad y fusión, 24-10-2026](documentacion/Contraste_Temporalidad_Fusion_24-10-2026.md):
+  diseño 2 × 2 ejecutado en activación y atención con 25 participantes de train,
+  cinco folds y dos semillas. 140 modelos y 216.384 predicciones auditadas.
+  Activación: historial +0,88 pp de BA en fusión temprana, IC descriptivo
+  [-0,28; +2,00]; fusión tardía con historial +0,18 pp, IC [-0,80; +1,37],
+  pero recall medio cae de 23,4 % a 8,2 %. Atención: historial -0,65 pp y
+  fusión tardía con historial +1,01 pp, ambas diferencias exploratorias.
+  No se reevaluaron validation ni test.
 
 - [Ablación de modalidades, variables e historial y PCA](documentacion/Ablacion_PCA_12-09-2026.md):
   38 variantes, 190 modelos, 513.912 predicciones verificadas y 59 pruebas.

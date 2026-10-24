@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-24T19:17:37.941079+00:00",
+  "source_sha256": "cfe35f8b58910db1ea3ce9c107208ed480a66000b7f20736168e50494eb47a9e",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "catalog_sha256": "06cde77a77b2622e0576516f04b682bcfec3790ae72e23a3495c1a15cf627e6b",
+  "audit_sha256": "5805f954606dc0d6354016b8dbf0b7c265598a6e791eac28dc04e32de26fcdfe",
+  "models": [
+    {
+      "fold": 1,
+      "path": "modelos/fold1_drop_fixation_count.joblib",
+      "sha256": "883cb9cc9aa32c6a690a63834e57497bc59df50dce1b9aad2e217a92e55ac1be"
+    },
+    {
+      "fold": 2,
+      "path": "modelos/fold2_drop_fixation_count.joblib",
+      "sha256": "03e0de32b892313a84707e66f30eb0e8b6fd1086eee538e341f17b0053d92204"
+    },
+    {
+      "fold": 3,
+      "path": "modelos/fold3_drop_fixation_count.joblib",
+      "sha256": "4c2309f341719382fcc687c1ab6c8fd3e89057f24b894a55ef9e9eb3d9a7c33a"
+    },
+    {
+      "fold": 4,
+      "path": "modelos/fold4_drop_fixation_count.joblib",
+      "sha256": "43cbd35cc42fccab4140fe30dfa56d4ac58f80e3523e6e09d51380fb6e8a0b35"
+    },
+    {
+      "fold": 5,
+      "path": "modelos/fold5_drop_fixation_count.joblib",
+      "sha256": "8f93fc203eea32bcfbec90c2d274c28cfd13c419a7d39911b51b2035f7783147"
+    }
+  ],
+  "split": "test",
+  "target": "arousal_label_6s",
+  "variant": "drop_fixation_count",
+  "prediction_rule": "media aritmetica de probabilidades de los cinco modelos, pesos 0.2, argmax",
+  "primary_metric": "media de BA por participante, clases presentes",
+  "status": "evaluacion adicional; test fue consultado en investigaciones anteriores",
+  "new_independent_sample": false,
+  "external_construct_validation": false
+}

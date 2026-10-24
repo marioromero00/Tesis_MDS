@@ -1,0 +1,124 @@
+{
+  "task": "attention",
+  "scope": "T-C",
+  "seed": 20261024,
+  "fold": 2,
+  "fit": [
+    "P13",
+    "P18",
+    "P20",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P3",
+    "P30",
+    "P33",
+    "P34",
+    "P36",
+    "P4",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "evaluation": [
+    "P12",
+    "P19",
+    "P2",
+    "P35",
+    "P40"
+  ],
+  "rows": 2612,
+  "source_sha256": "68e9178a1ca8ef9ada663b35c4a487ae0755382b51ead02eefcd2768b4a65f0e",
+  "models": [
+    {
+      "modality": "eeg",
+      "path": "modelos/attention_fold2_T-C_20261024_eeg.joblib",
+      "sha256": "bd08c9690b49da3e633677c736d436bc411bc0cbe4838ccb22047b30f054938b"
+    },
+    {
+      "modality": "gsr",
+      "path": "modelos/attention_fold2_T-C_20261024_gsr.joblib",
+      "sha256": "5a576ed3a7f6ae4cd7a8ff6fce3f618d120826d238caa34632ab6378c1140363"
+    }
+  ],
+  "predictions": {
+    "path": "predicciones/attention_fold2_T-C_20261024.csv.gz",
+    "sha256": "34362c1a9bf68e8efa102d9b77f7d8547b69995c87747c4857f9bd1f61f99b31"
+  },
+  "curves": {
+    "eeg": [
+      {
+        "epoch": 1,
+        "loss": 1.1129494391578383
+      },
+      {
+        "epoch": 2,
+        "loss": 1.1024042402893917
+      },
+      {
+        "epoch": 3,
+        "loss": 1.099614320262786
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0997025837296963
+      },
+      {
+        "epoch": 5,
+        "loss": 1.1002476582429277
+      },
+      {
+        "epoch": 6,
+        "loss": 1.0972060409109614
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0971656370023128
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0960936703639996
+      }
+    ],
+    "gsr": [
+      {
+        "epoch": 1,
+        "loss": 1.1083523472033638
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0991944808764191
+      },
+      {
+        "epoch": 3,
+        "loss": 1.098705069060899
+      },
+      {
+        "epoch": 4,
+        "loss": 1.096409238328682
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0955712113562217
+      },
+      {
+        "epoch": 6,
+        "loss": 1.0933624289252541
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0939199483988922
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0926808353043722
+      }
+    ]
+  },
+  "seconds": 9.227123999968171
+}

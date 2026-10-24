@@ -1,0 +1,25 @@
+{
+  "clean_ba_macro": 0.3843249274518329,
+  "null_ba_mean": 0.3267504098015263,
+  "null_ba_range": [
+    0.30965952925715107,
+    0.34882145705583967
+  ],
+  "null_ba_quantile_descriptive": [
+    0.311553619837489,
+    0.3461617279236167
+  ],
+  "clean_minus_mean_null": 0.05757451765030655,
+  "difference_people_ci_descriptive": [
+    0.018459161452963842,
+    0.09581180434521047
+  ],
+  "people_clean_above_mean_null": 19,
+  "null_repetitions_at_or_above_clean": 0,
+  "repetitions": 12,
+  "models_retrained": 65,
+  "rows_per_repetition": 13524,
+  "clean_predictions_sha256": "e7b9cd781b05cb214fc370bd473dc8b42e2f158d5b77a8801d21265fdadd4924",
+  "control_predictions_sha256": "0de2bfc0bb278db4390848cc73d01322e096ec3abe67409cad465d3ebf3723c4",
+  "interpretation": "Control interno retrospectivo; no valida constructo ni confirma generalizacion nueva"
+}

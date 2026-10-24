@@ -1,0 +1,55 @@
+{
+  "summaries": [
+    {
+      "split": "train",
+      "rows": 13524,
+      "people": 25,
+      "classes_present": 3,
+      "accuracy": 0.38620230700976044,
+      "ba": 0.3778173414605402,
+      "true_bajo": 5015,
+      "true_medio": 4134,
+      "true_alto": 4375,
+      "predicted_bajo": 5903,
+      "predicted_medio": 2791,
+      "predicted_alto": 4830,
+      "recall_bajo": 0.5030907278165504,
+      "recall_medio": 0.23996129656507015,
+      "recall_alto": 0.3904
+    },
+    {
+      "split": "test",
+      "rows": 4025,
+      "people": 8,
+      "classes_present": 3,
+      "accuracy": 0.3314285714285714,
+      "ba": 0.3337801965475928,
+      "true_bajo": 1698,
+      "true_medio": 1154,
+      "true_alto": 1173,
+      "predicted_bajo": 1326,
+      "predicted_medio": 961,
+      "predicted_alto": 1738,
+      "recall_bajo": 0.3115429917550059,
+      "recall_medio": 0.21750433275563258,
+      "recall_alto": 0.4722932651321398
+    }
+  ],
+  "person_ba_range": {
+    "test": [
+      0.22114794352363415,
+      0.4596273291925466
+    ],
+    "train": [
+      0.16122004357298472,
+      0.5752551020408163
+    ]
+  },
+  "shared_stimuli": [
+    "Meg",
+    "diario_financiero",
+    "temu",
+    "Despega"
+  ],
+  "interpretation": "Descriptivo; diferencias por estimulo confundidas por persona, orden y duracion"
+}

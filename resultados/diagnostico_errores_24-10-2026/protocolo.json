@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-24T19:31:52.709023+00:00",
+  "sources_sha256": {
+    "scripts\\diagnosticar_errores_24_10_2026.py": "20819e5f41de69651672d12dce69daa718dee53e304ce9beb6ef814cd50f2b05",
+    "documentacion\\Protocolo_Control_Negativo_Temporal_24-10-2026.md": "9776fb7343ae3a6f7605fdf4a95e5f8a1b78570b6442676ae17707eef48894da",
+    "resultados\\modelado\\dataset_modelado.csv": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+    "resultados\\modelado\\particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados\\ablacion_pca_12-09-2026\\predicciones_oof.csv.gz": "966ba186a57cacbcbcfb8c617e71bfd7ab8d26b4662b29061166b447becd5273",
+    "resultados\\evaluacion_test_existente_24-10-2026\\predicciones_ciegas.csv.gz": "915c23b491f17b3a8ca107fadbadd74a91a7447ec4894e50dd1a9a183d1c0fc6"
+  },
+  "shared_stimuli": [
+    "Meg",
+    "diario_financiero",
+    "temu",
+    "Despega"
+  ],
+  "target": "arousal_label_6s",
+  "new_independent_sample": false,
+  "external_construct_validation": false
+}

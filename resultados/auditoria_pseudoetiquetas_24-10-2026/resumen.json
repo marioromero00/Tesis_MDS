@@ -1,0 +1,48 @@
+{
+  "rows": 13524,
+  "participants": 25,
+  "comparisons": [
+    {
+      "comparison": "attention_equal_vs_pca",
+      "rows": 13518,
+      "agreement": 0.4891256102973813,
+      "kappa": 0.23368837770423467,
+      "spearman": 0.4596621059539468
+    },
+    {
+      "comparison": "arousal_6s_vs_pca",
+      "rows": 13124,
+      "agreement": 0.6696891191709845,
+      "kappa": 0.5040622885995347,
+      "spearman": 0.667746931088764
+    },
+    {
+      "comparison": "arousal_6s_vs_2s",
+      "rows": 13524,
+      "agreement": 0.8195060632948832,
+      "kappa": 0.7283153048737783,
+      "spearman": 0.8521661123975497
+    }
+  ],
+  "eye_pupil_component_spearman": -0.09676538827671227,
+  "quality": {
+    "pupil_both_valid_fraction": {
+      "missing_fraction": 0.0,
+      "median": 0.73225511
+    },
+    "pupil_coverage": {
+      "missing_fraction": 0.0,
+      "median": 1.0
+    },
+    "gaze_coverage": {
+      "missing_fraction": 0.0,
+      "median": 1.0
+    },
+    "gsr_coverage": {
+      "missing_fraction": 0.0,
+      "median": 1.0
+    }
+  },
+  "external_construct_validation": false,
+  "interpretation": "Concordancia entre reglas derivadas de las mismas senales; no prueba atencion o activacion reales."
+}

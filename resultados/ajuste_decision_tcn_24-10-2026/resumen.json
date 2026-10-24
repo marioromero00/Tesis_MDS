@@ -1,0 +1,16 @@
+{
+  "ba_original": 0.3611760278758353,
+  "ba_ajustada": 0.351185197534638,
+  "delta_ba": -0.009990830341197353,
+  "ci_low": -0.02242973158184463,
+  "ci_high": 5.059410987168133e-05,
+  "positive_participants": 8,
+  "selection_sha256": "b30f745d730b392cf6f5dbcdc2f948bdd8505925e005fee2b97ce4ccc372dc58",
+  "predictions": 27048,
+  "recall_bajo_original": 0.4852442671984048,
+  "recall_medio_original": 0.2339138848572811,
+  "recall_alto_original": 0.35645714285714286,
+  "recall_bajo_ajustada": 0.4687936191425723,
+  "recall_medio_ajustada": 0.26427189163038217,
+  "recall_alto_ajustada": 0.31657142857142856
+}

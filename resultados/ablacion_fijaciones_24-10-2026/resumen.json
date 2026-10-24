@@ -1,0 +1,16 @@
+{
+  "ba_reference": 0.3843249274518329,
+  "ba_group": 0.37743125435976105,
+  "delta_ba": -0.006893673092071837,
+  "ci_low": -0.014508511197601088,
+  "ci_high": 0.0008968310787699156,
+  "positive_participants": 7,
+  "models": 5,
+  "predictions": 13524,
+  "recall_bajo_reference": 0.5030907278165504,
+  "recall_medio_reference": 0.23996129656507015,
+  "recall_alto_reference": 0.3904,
+  "recall_bajo_group": 0.4885343968095713,
+  "recall_medio_group": 0.20295113691340105,
+  "recall_alto_group": 0.4176
+}

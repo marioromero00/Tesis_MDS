@@ -1,0 +1,11 @@
+{
+  "tasks": 80,
+  "models_reloaded": 140,
+  "predictions_recomputed": 216384,
+  "teacher_signals_absent": true,
+  "labels_absent_at_prediction": true,
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "source_sha256": "68e9178a1ca8ef9ada663b35c4a487ae0755382b51ead02eefcd2768b4a65f0e",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861"
+}

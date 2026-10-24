@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-24T19:08:07.132283+00:00",
+  "source_sha256": "ea25e1c17f8e1cdb8e03629fce4e50cfcbe866a4d6e12387ef64432eaf98d4dc",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "ridge_predictions_sha256": "966ba186a57cacbcbcfb8c617e71bfd7ab8d26b4662b29061166b447becd5273",
+  "tcn_predictions_sha256": "c94755f4a59125e0c8d4073b78c51bc4a540e6347b5aa2cf9bd25ee3c274c3e2",
+  "ridge_audit_sha256": "5805f954606dc0d6354016b8dbf0b7c265598a6e791eac28dc04e32de26fcdfe",
+  "tcn_audit_sha256": "afebaaa85866aca067a1684c8fc283b42e2e9a3b6d0d48e4ac93433c656376e0",
+  "ridge_variant": "drop_fixation_count",
+  "tcn_scope": "E-R",
+  "ridge_weight": 0.75,
+  "tcn_weight": 0.25,
+  "primary": "BA macro de mezcla menos Ridge sin fixation_count",
+  "secondary": "BA macro de mezcla menos TCN E-R; recall de medio",
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

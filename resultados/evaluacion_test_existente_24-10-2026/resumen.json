@@ -1,0 +1,15 @@
+{
+  "rows": 4025,
+  "participants": 8,
+  "ba_macro": 0.35566588273982935,
+  "ba_ci_descriptive": [
+    0.29881418365661394,
+    0.41087944740552024
+  ],
+  "ba_global": 0.3337801965475928,
+  "macro_f1": 0.32261506181115346,
+  "predictions_sha256": "915c23b491f17b3a8ca107fadbadd74a91a7447ec4894e50dd1a9a183d1c0fc6",
+  "models": 5,
+  "new_independent_sample": false,
+  "external_construct_validation": false
+}

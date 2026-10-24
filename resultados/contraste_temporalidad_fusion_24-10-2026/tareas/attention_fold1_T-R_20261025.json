@@ -1,0 +1,124 @@
+{
+  "task": "attention",
+  "scope": "T-R",
+  "seed": 20261025,
+  "fold": 1,
+  "fit": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P3",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P44",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "evaluation": [
+    "P22",
+    "P24",
+    "P30",
+    "P43",
+    "P48"
+  ],
+  "rows": 2886,
+  "source_sha256": "68e9178a1ca8ef9ada663b35c4a487ae0755382b51ead02eefcd2768b4a65f0e",
+  "models": [
+    {
+      "modality": "eeg",
+      "path": "modelos/attention_fold1_T-R_20261025_eeg.joblib",
+      "sha256": "5a5667b60a38015edd97b458a34a78997e70a936f6004950e1d39d47216b0212"
+    },
+    {
+      "modality": "gsr",
+      "path": "modelos/attention_fold1_T-R_20261025_gsr.joblib",
+      "sha256": "ab9ca629cb3473fc2bd883649162b9e087aa432ba3b8aaa2b2fa1d22e4e16845"
+    }
+  ],
+  "predictions": {
+    "path": "predicciones/attention_fold1_T-R_20261025.csv.gz",
+    "sha256": "6ce5e71b5b52cfed794600f9368fe722dbb3ad1555165eda3bfc73bfe0ff6149"
+  },
+  "curves": {
+    "eeg": [
+      {
+        "epoch": 1,
+        "loss": 1.115118357646194
+      },
+      {
+        "epoch": 2,
+        "loss": 1.1013074675142418
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0999737824011306
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0982921125073477
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0971196169332356
+      },
+      {
+        "epoch": 6,
+        "loss": 1.094811905414275
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0947585581478083
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0931614917076313
+      }
+    ],
+    "gsr": [
+      {
+        "epoch": 1,
+        "loss": 1.110389642550502
+      },
+      {
+        "epoch": 2,
+        "loss": 1.1022830096643028
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0982592547605485
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0978304546205233
+      },
+      {
+        "epoch": 5,
+        "loss": 1.096674588394918
+      },
+      {
+        "epoch": 6,
+        "loss": 1.095548891756718
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0944882083553236
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0932870205911305
+      }
+    ]
+  },
+  "seconds": 7.740293599665165
+}

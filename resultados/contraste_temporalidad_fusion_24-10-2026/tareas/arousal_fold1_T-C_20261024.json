@@ -1,0 +1,163 @@
+{
+  "task": "arousal",
+  "scope": "T-C",
+  "seed": 20261024,
+  "fold": 1,
+  "fit": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P3",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P44",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "evaluation": [
+    "P22",
+    "P24",
+    "P30",
+    "P43",
+    "P48"
+  ],
+  "rows": 2886,
+  "source_sha256": "68e9178a1ca8ef9ada663b35c4a487ae0755382b51ead02eefcd2768b4a65f0e",
+  "models": [
+    {
+      "modality": "pupil",
+      "path": "modelos/arousal_fold1_T-C_20261024_pupil.joblib",
+      "sha256": "4000a579eb894c77ee28896a2d87349b59485adcf03bca988108c44da08c316b"
+    },
+    {
+      "modality": "eye",
+      "path": "modelos/arousal_fold1_T-C_20261024_eye.joblib",
+      "sha256": "470a2971c0b9f34e21107113e6f8db61b5b2d7a16e5f16b8d6e9c9af7911d508"
+    },
+    {
+      "modality": "eeg",
+      "path": "modelos/arousal_fold1_T-C_20261024_eeg.joblib",
+      "sha256": "34675b2abba9d7bb6b7bf146ad5541fb1f189ce8d1dc42ebad85aa70ecad3539"
+    }
+  ],
+  "predictions": {
+    "path": "predicciones/arousal_fold1_T-C_20261024.csv.gz",
+    "sha256": "c2b2bf81406d41dcf44e0da001c514c4f47468c0e724c38b4cea1c66d08e85a7"
+  },
+  "curves": {
+    "pupil": [
+      {
+        "epoch": 1,
+        "loss": 1.1068061699565135
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0967242659023548
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0931581931805383
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0911775438335969
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0919526758263896
+      },
+      {
+        "epoch": 6,
+        "loss": 1.0900725711219
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0893780508756772
+      },
+      {
+        "epoch": 8,
+        "loss": 1.088781525013388
+      }
+    ],
+    "eye": [
+      {
+        "epoch": 1,
+        "loss": 1.10558560757871
+      },
+      {
+        "epoch": 2,
+        "loss": 1.094198272492254
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0898088370079517
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0903136867131253
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0868961161342547
+      },
+      {
+        "epoch": 6,
+        "loss": 1.0835851254510709
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0825135466254145
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0814598642764492
+      }
+    ],
+    "eeg": [
+      {
+        "epoch": 1,
+        "loss": 1.1075034215051802
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0933883855566537
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0891931637222325
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0877390920185779
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0850489871307836
+      },
+      {
+        "epoch": 6,
+        "loss": 1.085431211916749
+      },
+      {
+        "epoch": 7,
+        "loss": 1.082400260036165
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0810175966916171
+      }
+    ]
+  },
+  "seconds": 10.350307400338352
+}

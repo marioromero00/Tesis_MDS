@@ -1,0 +1,27 @@
+{
+  "ba_ridge": 0.3843249274518329,
+  "ba_tcn": 0.3611760278758353,
+  "ba_mezcla": 0.38059891569237986,
+  "predictions": 27048,
+  "delta_vs_ridge": -0.003726011759453003,
+  "ci_vs_ridge": [
+    -0.016561994477607096,
+    0.009673428304950021
+  ],
+  "positive_vs_ridge": 10,
+  "delta_vs_tcn": 0.019422887816544623,
+  "ci_vs_tcn": [
+    0.0027899985369823177,
+    0.034970005387649106
+  ],
+  "positive_vs_tcn": 17,
+  "recall_bajo_ridge": 0.5030907278165504,
+  "recall_medio_ridge": 0.23996129656507015,
+  "recall_alto_ridge": 0.3904,
+  "recall_bajo_tcn": 0.4852442671984048,
+  "recall_medio_tcn": 0.2339138848572811,
+  "recall_alto_tcn": 0.35645714285714286,
+  "recall_bajo_mezcla": 0.5129611166500498,
+  "recall_medio_mezcla": 0.22435897435897437,
+  "recall_alto_mezcla": 0.3872
+}

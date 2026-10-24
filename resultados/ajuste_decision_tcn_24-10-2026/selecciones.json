@@ -1,0 +1,32 @@
+[
+  {
+    "fold": 1,
+    "smoothing": 1,
+    "medium_bias": 1.0,
+    "ba_macro": 0.3474980703314712
+  },
+  {
+    "fold": 2,
+    "smoothing": 4,
+    "medium_bias": 1.0,
+    "ba_macro": 0.3678107754487484
+  },
+  {
+    "fold": 3,
+    "smoothing": 1,
+    "medium_bias": 1.25,
+    "ba_macro": 0.34022021129286106
+  },
+  {
+    "fold": 4,
+    "smoothing": 4,
+    "medium_bias": 1.0,
+    "ba_macro": 0.3506567099138238
+  },
+  {
+    "fold": 5,
+    "smoothing": 8,
+    "medium_bias": 1.0,
+    "ba_macro": 0.35581369510127925
+  }
+]

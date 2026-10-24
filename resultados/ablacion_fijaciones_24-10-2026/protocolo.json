@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-24T19:09:34.803814+00:00",
+  "source_sha256": "dc6f47f31272f80905823660300e267952d9d86858909dbf568714ef142bd9a8",
+  "old_protocol_sha256": "d231f7e5440577271d1ba2dee956b17d5563abb95a9e869686236ab9f72c258f",
+  "old_catalog_sha256": "06cde77a77b2622e0576516f04b682bcfec3790ae72e23a3495c1a15cf627e6b",
+  "old_predictions_sha256": "966ba186a57cacbcbcfb8c617e71bfd7ab8d26b4662b29061166b447becd5273",
+  "old_verification_sha256": "5805f954606dc0d6354016b8dbf0b7c265598a6e791eac28dc04e32de26fcdfe",
+  "dataset_sha256": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "reference": "drop_fixation_count",
+  "variant": {
+    "variant": "drop_fixation_group",
+    "kind": "group",
+    "removed": [
+      "fixation_count",
+      "fixation_total_ms",
+      "fixation_mean_ms",
+      "fixation_median_ms"
+    ],
+    "keep": [
+      "pupil_mean_z",
+      "pupil_std_z",
+      "pupil_min_z",
+      "pupil_max_z",
+      "pupil_slope_z_s",
+      "gaze_dispersion_x_px",
+      "gaze_dispersion_y_px",
+      "gaze_dispersion_2d_px",
+      "gaze_path_length_px",
+      "saccade_count",
+      "saccade_mean_ms",
+      "eeg_rms_uv",
+      "eeg_std_uv",
+      "eeg_peak_to_peak_uv",
+      "eeg_delta_relative",
+      "eeg_theta_relative",
+      "eeg_alpha_relative",
+      "eeg_beta_relative",
+      "eeg_gamma_relative",
+      "eeg_line_noise_ratio"
+    ]
+  },
+  "comparison": "BA macro de grupo sin fijaciones menos Ridge sin fixation_count",
+  "no_new_hyperparameter_selection": true,
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-24T19:22:06.656493+00:00",
+  "sources_sha256": {
+    "scripts\\robustez_sin_cohorte_nueva_24_10_2026.py": "e7ddc5363a8af4f1ac084589e69f05e2215cdd85e464ca7fb88774fc8ef67cd7",
+    "documentacion\\Protocolo_Robustez_Sin_Cohorte_Nueva_24-10-2026.md": "e0c9fece20717a0828a13b7cea52655f9a22f3481c1406f055d0a58418cf15a3",
+    "resultados\\modelado\\dataset_modelado.csv": "766df7b1729083d616a3d6966bc40ecb07a881cd7dbf7c0979a34202b7133861",
+    "resultados\\modelado\\particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados\\ablacion_pca_12-09-2026\\predicciones_oof.csv.gz": "966ba186a57cacbcbcfb8c617e71bfd7ab8d26b4662b29061166b447becd5273",
+    "resultados\\evaluacion_test_existente_24-10-2026\\predicciones_ciegas.csv.gz": "915c23b491f17b3a8ca107fadbadd74a91a7447ec4894e50dd1a9a183d1c0fc6",
+    "resultados\\evaluacion_test_existente_24-10-2026\\protocolo.json": "44a07194bf647006785712d19be01e95079120f44ede7fd124f14d11d307eefa"
+  },
+  "labels": {
+    "gsr_6s": "arousal_label_6s",
+    "gsr_2s": "arousal_label_2s",
+    "pca_gsr": "arousal_label_pca"
+  },
+  "predictions_frozen": true,
+  "selection_after_results": false,
+  "bootstrap_seed": 20261024,
+  "bootstrap_resamples": 5000,
+  "validation_evaluated": false,
+  "new_independent_sample": false,
+  "external_construct_validation": false
+}

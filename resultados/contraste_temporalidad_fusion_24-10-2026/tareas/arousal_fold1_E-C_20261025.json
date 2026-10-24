@@ -1,0 +1,85 @@
+{
+  "task": "arousal",
+  "scope": "E-C",
+  "seed": 20261025,
+  "fold": 1,
+  "fit": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P3",
+    "P33",
+    "P34",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P44",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "evaluation": [
+    "P22",
+    "P24",
+    "P30",
+    "P43",
+    "P48"
+  ],
+  "rows": 2886,
+  "source_sha256": "68e9178a1ca8ef9ada663b35c4a487ae0755382b51ead02eefcd2768b4a65f0e",
+  "models": [
+    {
+      "modality": "early",
+      "path": "modelos/arousal_fold1_E-C_20261025_early.joblib",
+      "sha256": "856ce9d5c535ed12ad2ae637f395e32ca55b0e48c98e6b9c546fd32ed9e7a43b"
+    }
+  ],
+  "predictions": {
+    "path": "predicciones/arousal_fold1_E-C_20261025.csv.gz",
+    "sha256": "251cbcc1bb591531bdae69a10b63811c5b15d37202f8c8e394c5f1ef4fd1e74e"
+  },
+  "curves": {
+    "early": [
+      {
+        "epoch": 1,
+        "loss": 1.102040119089563
+      },
+      {
+        "epoch": 2,
+        "loss": 1.0863271283126232
+      },
+      {
+        "epoch": 3,
+        "loss": 1.0782829938156306
+      },
+      {
+        "epoch": 4,
+        "loss": 1.074736940903331
+      },
+      {
+        "epoch": 5,
+        "loss": 1.0695936559936028
+      },
+      {
+        "epoch": 6,
+        "loss": 1.0653033458014407
+      },
+      {
+        "epoch": 7,
+        "loss": 1.0604493280711267
+      },
+      {
+        "epoch": 8,
+        "loss": 1.0589762209814997
+      }
+    ]
+  },
+  "seconds": 3.4144243001937866
+}
