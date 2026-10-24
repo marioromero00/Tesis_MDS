@@ -1,0 +1,314 @@
+{
+  "dataset_sha256": "fe6c5846c770d43fef0f0fc6f37636f651bebf155246d392a98f5cc60c2ef9dc",
+  "selection": "pca_catboost elegido en validation para ambas tareas; test exploratorio ya observado antes",
+  "tasks": {
+    "attention": {
+      "validation": {
+        "baseline": {
+          "balanced_accuracy": 0.4659139404592567,
+          "participant_macro_ba": 0.46861849022561414
+        },
+        "pca": {
+          "balanced_accuracy": 0.4728134661168677,
+          "participant_macro_ba": 0.476345847260735
+        },
+        "paired": {
+          "positive_participants": 6,
+          "total_participants": 8,
+          "mean_participant_delta": 0.007727357035120855,
+          "participant_bootstrap_ci95": [
+            -0.0047022579326356706,
+            0.02034521679864798
+          ],
+          "per_participant": [
+            {
+              "participant": "P23",
+              "baseline_ba": 0.5024154589371981,
+              "pca_ba": 0.504830917874396,
+              "delta_ba": 0.0024154589371979673
+            },
+            {
+              "participant": "P28",
+              "baseline_ba": 0.4352362566648282,
+              "pca_ba": 0.450864129435558,
+              "delta_ba": 0.0156278727707298
+            },
+            {
+              "participant": "P31",
+              "baseline_ba": 0.45175786412899815,
+              "pca_ba": 0.4689840514582783,
+              "delta_ba": 0.017226187329280163
+            },
+            {
+              "participant": "P32",
+              "baseline_ba": 0.5102448079823646,
+              "pca_ba": 0.5535328924469196,
+              "delta_ba": 0.04328808446455501
+            },
+            {
+              "participant": "P38",
+              "baseline_ba": 0.4280956563565259,
+              "pca_ba": 0.43333437898655286,
+              "delta_ba": 0.0052387226300269485
+            },
+            {
+              "participant": "P41",
+              "baseline_ba": 0.5070826491516147,
+              "pca_ba": 0.48394088669950736,
+              "delta_ba": -0.02314176245210736
+            },
+            {
+              "participant": "P47",
+              "baseline_ba": 0.4940239043824701,
+              "pca_ba": 0.4860557768924303,
+              "delta_ba": -0.007968127490039834
+            },
+            {
+              "participant": "P6",
+              "baseline_ba": 0.4200913242009132,
+              "pca_ba": 0.42922374429223736,
+              "delta_ba": 0.009132420091324145
+            }
+          ]
+        }
+      },
+      "test": {
+        "baseline": {
+          "balanced_accuracy": 0.4612895195419467,
+          "participant_macro_ba": 0.4613739431032928
+        },
+        "pca": {
+          "balanced_accuracy": 0.46079163554891717,
+          "participant_macro_ba": 0.4616674862757144
+        },
+        "pca_shuffled": {
+          "balanced_accuracy": 0.4513318396813542,
+          "participant_macro_ba": 0.45227462321776557
+        },
+        "paired": {
+          "positive_participants": 3,
+          "total_participants": 8,
+          "mean_participant_delta": 0.0002935431724215426,
+          "participant_bootstrap_ci95": [
+            -0.012983839021112645,
+            0.015109432908210853
+          ],
+          "per_participant": [
+            {
+              "participant": "P10",
+              "baseline_ba": 0.4816150830868384,
+              "pca_ba": 0.4815910347978741,
+              "delta_ba": -2.4048288964351183e-05
+            },
+            {
+              "participant": "P11",
+              "baseline_ba": 0.4699792960662526,
+              "pca_ba": 0.4803312629399586,
+              "delta_ba": 0.010351966873705987
+            },
+            {
+              "participant": "P15",
+              "baseline_ba": 0.47769215422215566,
+              "pca_ba": 0.4573794204199711,
+              "delta_ba": -0.020312733802184568
+            },
+            {
+              "participant": "P16",
+              "baseline_ba": 0.4212678936605317,
+              "pca_ba": 0.40286298568507156,
+              "delta_ba": -0.018404907975460127
+            },
+            {
+              "participant": "P37",
+              "baseline_ba": 0.4438502673796792,
+              "pca_ba": 0.4224598930481284,
+              "delta_ba": -0.021390374331550777
+            },
+            {
+              "participant": "P39",
+              "baseline_ba": 0.45625,
+              "pca_ba": 0.4875,
+              "delta_ba": 0.03125
+            },
+            {
+              "participant": "P45",
+              "baseline_ba": 0.4719469965371605,
+              "pca_ba": 0.4628695530334875,
+              "delta_ba": -0.00907744350367301
+            },
+            {
+              "participant": "P5",
+              "baseline_ba": 0.46838985387372495,
+              "pca_ba": 0.49834574028122414,
+              "delta_ba": 0.029955886407499188
+            }
+          ]
+        }
+      },
+      "models": {
+        "stimulus_catboost": {
+          "path": "attention__stimulus_catboost.joblib",
+          "sha256": "2ab5aae48d27806e804017989c9a6ab41c469db82be29b8060e085b13ff2a043"
+        },
+        "pca_catboost": {
+          "path": "attention__pca_catboost.joblib",
+          "sha256": "0f5ed8e50327158d0a31b5be3aec5d41a875a4e7ddfc91d05f88995a327bb43e"
+        }
+      }
+    },
+    "arousal": {
+      "validation": {
+        "baseline": {
+          "balanced_accuracy": 0.40821208570999307,
+          "participant_macro_ba": 0.4012885535700575
+        },
+        "pca": {
+          "balanced_accuracy": 0.43254843981577107,
+          "participant_macro_ba": 0.425829634214536
+        },
+        "paired": {
+          "positive_participants": 7,
+          "total_participants": 8,
+          "mean_participant_delta": 0.02454108064447854,
+          "participant_bootstrap_ci95": [
+            -0.005737050177997421,
+            0.05682752390626175
+          ],
+          "per_participant": [
+            {
+              "participant": "P23",
+              "baseline_ba": 0.37439613526570054,
+              "pca_ba": 0.31884057971014496,
+              "delta_ba": -0.05555555555555558
+            },
+            {
+              "participant": "P28",
+              "baseline_ba": 0.43571122142550717,
+              "pca_ba": 0.49627688913403195,
+              "delta_ba": 0.060565667708524784
+            },
+            {
+              "participant": "P31",
+              "baseline_ba": 0.4082121772843423,
+              "pca_ba": 0.43873469028108203,
+              "delta_ba": 0.030522512996739748
+            },
+            {
+              "participant": "P32",
+              "baseline_ba": 0.36925397377886066,
+              "pca_ba": 0.3790810998955796,
+              "delta_ba": 0.009827126116718932
+            },
+            {
+              "participant": "P38",
+              "baseline_ba": 0.4146694690172952,
+              "pca_ba": 0.42528284919589265,
+              "delta_ba": 0.010613380178597476
+            },
+            {
+              "participant": "P41",
+              "baseline_ba": 0.27305966064586756,
+              "pca_ba": 0.3879584017515052,
+              "delta_ba": 0.11489874110563764
+            },
+            {
+              "participant": "P47",
+              "baseline_ba": 0.5073041168658698,
+              "pca_ba": 0.5205843293492696,
+              "delta_ba": 0.013280212483399723
+            },
+            {
+              "participant": "P6",
+              "baseline_ba": 0.4277016742770167,
+              "pca_ba": 0.4398782343987823,
+              "delta_ba": 0.0121765601217656
+            }
+          ]
+        }
+      },
+      "test": {
+        "baseline": {
+          "balanced_accuracy": 0.4119990042320139,
+          "participant_macro_ba": 0.41380600181859567
+        },
+        "pca": {
+          "balanced_accuracy": 0.37664924072691064,
+          "participant_macro_ba": 0.3770931130401999
+        },
+        "pca_shuffled": {
+          "balanced_accuracy": 0.3764002987303958,
+          "participant_macro_ba": 0.37694841707255744
+        },
+        "paired": {
+          "positive_participants": 2,
+          "total_participants": 8,
+          "mean_participant_delta": -0.036712888778395805,
+          "participant_bootstrap_ci95": [
+            -0.07133882630955343,
+            -0.001854383074526962
+          ],
+          "per_participant": [
+            {
+              "participant": "P10",
+              "baseline_ba": 0.34015102325469543,
+              "pca_ba": 0.28405838924560517,
+              "delta_ba": -0.05609263400909026
+            },
+            {
+              "participant": "P11",
+              "baseline_ba": 0.3664596273291925,
+              "pca_ba": 0.3146997929606625,
+              "delta_ba": -0.05175983436852999
+            },
+            {
+              "participant": "P15",
+              "baseline_ba": 0.332684921941244,
+              "pca_ba": 0.3082073918898698,
+              "delta_ba": -0.024477530051374208
+            },
+            {
+              "participant": "P16",
+              "baseline_ba": 0.5685071574642127,
+              "pca_ba": 0.47852760736196315,
+              "delta_ba": -0.0899795501022495
+            },
+            {
+              "participant": "P37",
+              "baseline_ba": 0.4046345811051693,
+              "pca_ba": 0.44385026737967914,
+              "delta_ba": 0.03921568627450983
+            },
+            {
+              "participant": "P39",
+              "baseline_ba": 0.5354166666666667,
+              "pca_ba": 0.41875,
+              "delta_ba": -0.11666666666666664
+            },
+            {
+              "participant": "P45",
+              "baseline_ba": 0.33455433455433453,
+              "pca_ba": 0.31072479433135175,
+              "delta_ba": -0.02382954022298278
+            },
+            {
+              "participant": "P5",
+              "baseline_ba": 0.42803970223325055,
+              "pca_ba": 0.45792666115246766,
+              "delta_ba": 0.02988695891921711
+            }
+          ]
+        }
+      },
+      "models": {
+        "stimulus_catboost": {
+          "path": "arousal__stimulus_catboost.joblib",
+          "sha256": "6e0dd878afe66c647023281287b3bfb83bbbf6791479ee1dbfabb4ef1bcc125b"
+        },
+        "pca_catboost": {
+          "path": "arousal__pca_catboost.joblib",
+          "sha256": "f7aa62aa6207cb153878a68b9c2cc8d82cbc7c475e8e73d3b55564333296eadd"
+        }
+      }
+    }
+  }
+}

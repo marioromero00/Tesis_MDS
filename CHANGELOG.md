@@ -2,6 +2,13 @@
 
 Los cambios de código, datos derivados, evaluaciones y presentaciones se registran aquí antes de publicarlos en Git.
 
+## 24-10-2026 — Reintentos de mejora condicional v2
+
+- Se compararon modelos que combinan estímulo y fisiología contra controles del mismo algoritmo que usan solo el estímulo. Se probaron PCA ≥90 % por señal, un PC por señal, variables completas e historial causal de seis ventanas; imputación y PCA se ajustaron solo con train.
+- Se añadió validación por participante en train para la regresión logística y se conservaron predicciones, modelos, resultados por participante, intervalos bootstrap y un control de señales desordenadas dentro de participante y estímulo en `resultados/mejora_condicional_v2_24-10-2026/`.
+- Las ganancias de CatBoost + PCA en validation no se reprodujeron en test. La pequeña subida de atención con un PC por señal tampoco superó el control desordenado. Se documentó explícitamente que **no hay mejora robusta** y que test es exploratorio por haber sido consultado varias veces.
+- Se agregó el análisis a [Reintentos de mejora condicional](documentacion/Reintentos_Mejora_Condicional_PCA_v2_24-10-2026.md) y una lámina de resultados a la presentación final; su verificador ahora coteja los números nuevos con los reportes.
+
 ## 24-10-2026 — Auditoría de pseudoetiquetas y pipeline PCA v2
 
 - Se detectó y corrigió una desalineación de filas en `scripts/preparar_modelado.py`. El componente pupilar histórico era incorrecto en las 21.719 ventanas primarias válidas. Los documentos de resultados anteriores se marcaron como históricos no comparables.

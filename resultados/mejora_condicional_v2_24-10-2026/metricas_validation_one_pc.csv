@@ -1,0 +1,5 @@
+task,model,split,rows,participants,balanced_accuracy,participant_macro_ba
+attention,pca_one_logistic,validation,4640,8,0.46979938358067885,0.47248685331771667
+attention,pca_one_catboost,validation,4640,8,0.4635455734687148,0.4668815215906602
+arousal,pca_one_logistic,validation,4640,8,0.4075553596899004,0.3993737619964609
+arousal,pca_one_catboost,validation,4640,8,0.43039805234463174,0.4276042809762651

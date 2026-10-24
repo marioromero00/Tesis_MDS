@@ -135,6 +135,30 @@ def add_results(prs):
              13, GRAY)
 
 
+def add_retry(prs):
+    slide = new_slide(prs, "Reintentos de predicción · control por estímulo",
+                      "La mejora en validation no se sostuvo en test", 11)
+    headings = [("Tarea", 0.72, 2.1), ("Solo estímulo", 3.24, 2.2),
+                ("Estímulo + PCA", 6.22, 2.65), ("Cambio", 10.12, 1.6)]
+    for heading, x, w in headings:
+        text_box(slide, x, 1.76, w, 0.48, heading, 16, TEAL, True)
+    rows = [("Atención", "0,4613", "0,4608", "−0,0005"),
+            ("Activación", "0,4120", "0,3766", "−0,0353")]
+    for i, row in enumerate(rows):
+        y = 2.38 + i * 1.05
+        box(slide, 0.52, y, 12.25, 0.83)
+        for value, (_, x, w) in zip(row, headings):
+            text_box(slide, x, y + 0.17, w, 0.47, value, 20, NAVY if x < 10 else AMBER,
+                     x < 10)
+    box(slide, 0.54, 4.65, 12.20, 1.44, WHITE, TEAL)
+    text_box(slide, 0.80, 4.78, 11.65, 1.14,
+             "En validation, el PCA parecía sumar: atención 0,4728 frente a 0,4659; activación 0,4325 frente a 0,4082. El resultado no se generalizó.",
+             18, NAVY, True)
+    text_box(slide, 0.56, 6.35, 12.10, 0.56,
+             "Un PC/señal dio 0,4658 en atención, pero 0,4722 con las señales desordenadas. Test exploratorio ya consultado.",
+             13, AMBER)
+
+
 def main() -> None:
     prs = Presentation(SOURCE)
     if len(prs.slides) != 7:
@@ -142,6 +166,7 @@ def main() -> None:
     add_audit(prs)
     add_pipeline(prs)
     add_results(prs)
+    add_retry(prs)
     prs.save(OUTPUT)
     print(f"{OUTPUT}: {len(prs.slides)} láminas")
 

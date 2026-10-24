@@ -1,0 +1,13 @@
+task,model,split,rows,participants,balanced_accuracy,participant_macro_ba
+attention,stimulus_logistic,validation,4640,8,0.4631156074729623,0.46511757569990386
+attention,pca_logistic,validation,4640,8,0.4693663513768529,0.471928902917895
+attention,stimulus_catboost,validation,4640,8,0.4659139404592567,0.46861849022561414
+attention,pca_catboost,validation,4640,8,0.4728134661168677,0.476345847260735
+attention,raw_catboost,validation,4640,8,0.4680765927626897,0.4708420778679888
+attention,pca_history_catboost,validation,4640,8,0.4611719103005915,0.46559044116662784
+arousal,stimulus_logistic,validation,4640,8,0.4125213624110207,0.40707813904261514
+arousal,pca_logistic,validation,4640,8,0.41315550998984524,0.4025887273691007
+arousal,stimulus_catboost,validation,4640,8,0.40821208570999307,0.4012885535700575
+arousal,pca_catboost,validation,4640,8,0.43254843981577107,0.425829634214536
+arousal,raw_catboost,validation,4640,8,0.3844899488305622,0.38123135853560774
+arousal,pca_history_catboost,validation,4640,8,0.4224132284021182,0.4180305069287572

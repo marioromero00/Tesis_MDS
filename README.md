@@ -2,7 +2,7 @@
 
 **Aviso de reproducibilidad (24-10-2026):** se detectó una desalineación de filas en la generación histórica de pseudoetiquetas. Las métricas de esta página y de los experimentos anteriores se conservan como registro, pero no validan predicción de las señales correctamente alineadas. El [pipeline PCA v2 auditado](documentacion/Auditoria_PCA_Senales_v2_24-10-2026.md) usa las características originales y la partición congelada.
 
-Los cambios recientes se anotan en [CHANGELOG.md](CHANGELOG.md). La [presentación final PCA](presentaciones/Presentacion-Final-Tesis-PCA-24-10-2026.pptx) resume la auditoría y los resultados nuevos.
+Los cambios recientes se anotan en [CHANGELOG.md](CHANGELOG.md). La [presentación final PCA](presentaciones/Presentacion-Final-Tesis-PCA-24-10-2026.pptx) resume la auditoría y los resultados nuevos. Los [reintentos de mejora condicional](documentacion/Reintentos_Mejora_Condicional_PCA_v2_24-10-2026.md) muestran que añadir señales PCA al estímulo todavía no logra una mejora robusta en participantes nuevos.
 
 Estado al 11-09-2026. Esta entrada reemplaza la descripción anterior del repositorio.
 

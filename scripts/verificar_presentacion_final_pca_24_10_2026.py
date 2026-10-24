@@ -23,7 +23,7 @@ def decimal(value: float) -> str:
 
 def main() -> None:
     prs = Presentation(DECK)
-    if len(prs.slides) != 10:
+    if len(prs.slides) != 11:
         raise ValueError("Se esperaban diez láminas")
     with zipfile.ZipFile(DECK) as archive:
         if archive.testzip() is not None:
@@ -38,6 +38,7 @@ def main() -> None:
     control = pd.read_csv(RESULTS / "control_estimulo.csv")
     slide9 = slide_text(prs.slides[8])
     slide10 = slide_text(prs.slides[9])
+    slide11 = slide_text(prs.slides[10])
     for task in ["attention", "arousal"]:
         components = manifest["models"][task]["retained_components"]
         total = sum(entry["components"] for entry in components.values())
@@ -52,10 +53,24 @@ def main() -> None:
                                "balanced_accuracy"].iloc[0]
         if decimal(stimulus) not in slide10:
             raise ValueError(f"Falta control de estímulo de {task}")
-    result = {"slides": len(prs.slides), "added_slides": 3,
+    retry_dir = ROOT / "resultados/mejora_condicional_v2_24-10-2026"
+    retry = json.loads((retry_dir / "reporte_condicional.json").read_text(encoding="utf-8"))
+    one_pc = json.loads((retry_dir / "reporte_un_pc.json").read_text(encoding="utf-8"))
+    for task in ["attention", "arousal"]:
+        for split in ["validation", "test"]:
+            for key in ["baseline", "pca"]:
+                value = retry["tasks"][task][split][key]["balanced_accuracy"]
+                if decimal(value) not in slide11:
+                    raise ValueError(f"Falta BA reintento {task}/{split}/{key}")
+    for key in ["pca_one", "pca_shuffled"]:
+        value = one_pc["tasks"]["attention"][key]["balanced_accuracy"]
+        if decimal(value) not in slide11:
+            raise ValueError(f"Falta BA un PC atención/{key}")
+    result = {"slides": len(prs.slides), "added_slides": 4,
               "pptx_sha256": hashlib.sha256(DECK.read_bytes()).hexdigest(),
               "metricas_sha256": hashlib.sha256((RESULTS / "metricas_estudiante.csv").read_bytes()).hexdigest(),
               "control_sha256": hashlib.sha256((RESULTS / "control_estimulo.csv").read_bytes()).hexdigest(),
+              "retry_sha256": hashlib.sha256((retry_dir / "reporte_condicional.json").read_bytes()).hexdigest(),
               "numbers_verified": True, "bounds_verified": True, "zip_verified": True}
     OUTPUT.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(result, indent=2, ensure_ascii=False))
