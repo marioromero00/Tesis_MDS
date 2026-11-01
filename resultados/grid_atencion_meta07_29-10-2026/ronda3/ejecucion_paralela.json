@@ -1,0 +1,14 @@
+{
+  "reason": "Acelerar grid de 48 configuraciones por fold sin modificar protocolo ni funciones",
+  "serial_process_stopped_after_saved_checkpoints": true,
+  "worker_script": "scripts/grid_atencion_meta07_worker.py",
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "collector": "scripts/grid_atencion_meta07.py --round 3",
+  "shared_folds_between_workers": false
+}

@@ -1,0 +1,44 @@
+{
+  "fold": 4,
+  "candidate": {
+    "scope": "relativo_offline",
+    "context": 32,
+    "family": "CatBoost",
+    "multiscale": false,
+    "params": {
+      "depth": 6,
+      "l2_leaf_reg": 3.0,
+      "iterations": 500,
+      "learning_rate": 0.05
+    },
+    "id": "r2_c026"
+  },
+  "auc_inner": 0.6286294201351399,
+  "seconds": 4.055927667000105,
+  "warnings": [],
+  "prediction_sha256": "d1a9e12359df9b885ff5bf6aeb300dd6a69aa80d30c5d71fc6259c1a8b099ddb",
+  "inner_fit": [
+    "P12",
+    "P13",
+    "P18",
+    "P2",
+    "P21",
+    "P22",
+    "P24",
+    "P34",
+    "P35",
+    "P36",
+    "P40",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8"
+  ],
+  "inner_validation": [
+    "P19",
+    "P26",
+    "P27",
+    "P30"
+  ]
+}

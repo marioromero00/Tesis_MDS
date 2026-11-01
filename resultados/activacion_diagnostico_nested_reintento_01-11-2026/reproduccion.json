@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rerun_from_scratch": true,
+  "outputs_match": {
+    "predicciones_oof.csv.gz": true,
+    "metricas.csv": true,
+    "contrastes.csv": true,
+    "selecciones.csv": true,
+    "diagnostico_personas.csv": true
+  },
+  "tolerance": 1e-10
+}

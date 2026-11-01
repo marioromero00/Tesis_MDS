@@ -1,0 +1,44 @@
+{
+  "fold": 1,
+  "candidate": {
+    "scope": "inductivo",
+    "context": 32,
+    "family": "CatReg",
+    "multiscale": false,
+    "params": {
+      "depth": 4,
+      "l2_leaf_reg": 10.0,
+      "iterations": 300,
+      "learning_rate": 0.05
+    },
+    "id": "distil_c010"
+  },
+  "auc_inner": 0.6861665958701645,
+  "seconds": 1.245372958000189,
+  "warnings": [],
+  "prediction_sha256": "88782d4596d806738737eb4b74e467f3ff5399b6b311193eaff15e8f61bbc655",
+  "inner_fit": [
+    "P12",
+    "P13",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P26",
+    "P27",
+    "P35",
+    "P36",
+    "P4",
+    "P40",
+    "P46",
+    "P8",
+    "P9"
+  ],
+  "inner_validation": [
+    "P3",
+    "P33",
+    "P34",
+    "P44"
+  ]
+}

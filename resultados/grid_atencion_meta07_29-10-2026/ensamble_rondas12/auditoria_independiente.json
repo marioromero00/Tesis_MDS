@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "predictions_verified": 40494,
+  "mixtures_reconstructed": true,
+  "base_audits_passed": true,
+  "target_07_exceeded_by_strategy": {
+    "inductivo": false,
+    "relativo_offline": false,
+    "seleccion_interna": false
+  }
+}

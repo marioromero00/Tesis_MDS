@@ -1,0 +1,44 @@
+{
+  "fold": 3,
+  "candidate": {
+    "scope": "inductivo",
+    "context": 128,
+    "family": "HistBoost",
+    "multiscale": true,
+    "params": {
+      "max_leaf_nodes": 31,
+      "max_iter": 400,
+      "l2_regularization": 30.0,
+      "learning_rate": 0.05
+    },
+    "id": "r3_c014"
+  },
+  "auc_inner": 0.6483816058576526,
+  "seconds": 22.482287792000534,
+  "warnings": [],
+  "prediction_sha256": "b44be3acda85941f3a13ed52782e37d02b4e4ebb2acc942baf403d977e30c6ce",
+  "inner_fit": [
+    "P12",
+    "P13",
+    "P19",
+    "P2",
+    "P20",
+    "P21",
+    "P24",
+    "P26",
+    "P3",
+    "P30",
+    "P33",
+    "P4",
+    "P40",
+    "P43",
+    "P48",
+    "P9"
+  ],
+  "inner_validation": [
+    "P22",
+    "P34",
+    "P35",
+    "P44"
+  ]
+}

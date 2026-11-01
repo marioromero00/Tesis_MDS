@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "rows_train": 13524,
+  "participants": 25,
+  "positive_rate": 0.3333333333333333,
+  "models": 75,
+  "predictions": 202860,
+  "reload_predictions_verified": true,
+  "oof_coverage_verified": true
+}

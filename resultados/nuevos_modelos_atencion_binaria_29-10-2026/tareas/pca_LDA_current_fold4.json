@@ -1,0 +1,123 @@
+{
+  "selected": {
+    "teacher": "pca",
+    "fold": 4,
+    "family": "LDA",
+    "mode": "current",
+    "config_index": 0,
+    "config": {
+      "shrinkage": "auto"
+    },
+    "auc_inner": 0.5903956259833241,
+    "warnings": [],
+    "inner_fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "inner_validation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ],
+    "model_path": "internos/pca_LDA_current_fold4_config0.joblib",
+    "model_sha256": "a66e27feab6b2ab906b935625eb45b3b6249929c1148e630161b91912a082b45"
+  },
+  "trials": [
+    {
+      "teacher": "pca",
+      "fold": 4,
+      "family": "LDA",
+      "mode": "current",
+      "config_index": 0,
+      "config": {
+        "shrinkage": "auto"
+      },
+      "auc_inner": 0.5903956259833241,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "model_path": "internos/pca_LDA_current_fold4_config0.joblib",
+      "model_sha256": "a66e27feab6b2ab906b935625eb45b3b6249929c1148e630161b91912a082b45"
+    },
+    {
+      "teacher": "pca",
+      "fold": 4,
+      "family": "LDA",
+      "mode": "current",
+      "config_index": 1,
+      "config": {
+        "shrinkage": 0.5
+      },
+      "auc_inner": 0.5869028743935041,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "model_path": "internos/pca_LDA_current_fold4_config1.joblib",
+      "model_sha256": "2fe5613373fffcfe60e70362cfeef0677c46c4e07996abfc2864fb43cf546366"
+    }
+  ],
+  "outer_warnings": [],
+  "model_path": "modelos/pca_LDA_current_fold4.joblib",
+  "model_sha256": "b2ba3c040265359cbce3eb0152844a6c31fce7dd3d330c9e9930c8632449efe9",
+  "prediction_path": "predicciones/pca_LDA_current_fold4.csv.gz",
+  "prediction_sha256": "f3cda787d6e2cab610419ea51f483310ea1887dca7bfc13194ae8f300929bd3f"
+}

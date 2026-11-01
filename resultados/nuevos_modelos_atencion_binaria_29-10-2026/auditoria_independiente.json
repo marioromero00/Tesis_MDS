@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "outer_models_reloaded": 100,
+  "inner_models_verified": 200,
+  "predictions_verified": 296956,
+  "labels_unchanged": true,
+  "group_separation_verified": true,
+  "inner_selection_verified": true,
+  "auc_recomputed": true
+}

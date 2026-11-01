@@ -1,0 +1,44 @@
+{
+  "fold": 2,
+  "candidate": {
+    "scope": "rangos_offline",
+    "context": 8,
+    "family": "HistBoost",
+    "multiscale": false,
+    "params": {
+      "max_leaf_nodes": 7,
+      "max_iter": 200,
+      "l2_regularization": 5.0,
+      "learning_rate": 0.05
+    },
+    "id": "ampliado_c016"
+  },
+  "auc_inner": 0.650687640427817,
+  "seconds": 4.724925583000186,
+  "warnings": [],
+  "prediction_sha256": "c86da26c1f5539bfceb2ae1cecfd7b098c3146cf22eee8ad40fc80a87d216bca",
+  "inner_fit": [
+    "P18",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P3",
+    "P30",
+    "P33",
+    "P36",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "inner_validation": [
+    "P13",
+    "P20",
+    "P34",
+    "P4"
+  ]
+}

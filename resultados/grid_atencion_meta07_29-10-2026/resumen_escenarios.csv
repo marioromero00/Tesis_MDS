@@ -1,0 +1,4 @@
+scenario,run,strategy,auc,ci_low,ci_high
+Sin calibración personal adicional,Ensamble ampliado,inductivo,0.6514710726390289,0.6348853418570948,0.668461504006614
+Con calibración personal offline disponible,Ensamble de grids,relativo_offline,0.6549282852272702,0.6374663769414702,0.6719508738306407
+Retrospectivo: usa señales posteriores,Retrospectivo: usa ventanas posteriores,relativo_offline,0.6589577418352802,0.6412174430035268,0.6782010239834322

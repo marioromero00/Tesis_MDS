@@ -1,0 +1,48 @@
+{
+  "selected": {
+    "fold": 1,
+    "candidate": {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "CatReg",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 300,
+        "learning_rate": 0.05
+      },
+      "id": "distil_c022"
+    },
+    "auc_inner": 0.6694872724338128,
+    "seconds": 1.2472477080000317,
+    "warnings": [],
+    "prediction_sha256": "28e65f3f5d2224314fc36aa718a86076650709d87241007716775adb99cf5015",
+    "inner_fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P26",
+      "P27",
+      "P35",
+      "P36",
+      "P4",
+      "P40",
+      "P46",
+      "P8",
+      "P9"
+    ],
+    "inner_validation": [
+      "P3",
+      "P33",
+      "P34",
+      "P44"
+    ]
+  },
+  "model_sha256": "581a63f308a9be1f27b49f44f3c059127ed2450f69d4f44749be92e84c4b54e3",
+  "prediction_sha256": "1a1eacd62638e4aeaa1876060d375abfbec842d7462f99f9bce4089810db0e57"
+}

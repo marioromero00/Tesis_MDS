@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "all_runs_complete_and_audited": true,
+  "unique_inner_fits": 1000,
+  "outer_models": 75,
+  "target_07_exceeded": false,
+  "best_auc": 0.6589577418352802,
+  "best_requires_future_and_offline_calibration": true,
+  "labels_changed_to_reach_target": false,
+  "test_evaluated": false,
+  "validation_evaluated": false
+}

@@ -1,0 +1,246 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{Madrid}
+\usecolortheme{seagull}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+% ---- Paquetes ----
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amssymb,graphicx,booktabs,xcolor}
+
+% ---- Mismo estilo de main_presentacion_mds ----
+\definecolor{myblue}{HTML}{0D47A1}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{structure}{fg=myblue}
+\setbeamercolor{frametitle}{fg=white,bg=myblue}
+\setbeamercolor{headline}{bg=myblue}
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.8ex,dp=0.4ex]{headline}%
+  \end{beamercolorbox}%
+}
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.6ex,dp=1.2ex,left]{frametitle}
+    \hspace*{1ex}\insertframetitle
+  \end{beamercolorbox}
+}
+
+\graphicspath{{../attachments/Analisis de Datos/figuras_tesis/}}
+
+% ---- Datos ----
+\title[Avances Tesis]{Presentación de Avances}
+\subtitle{Sincronización y EDA de señales multimodales}
+\author[Mario Romero]{Mario Romero}
+\institute{Magíster en Data Science}
+\date{Agosto 2026}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Contenidos}
+\begin{enumerate}
+  \item Contexto y objetivo
+  \item Pipeline implementado
+  \item Coordinación y sincronización
+  \item Resultados del EDA multimodal
+  \item Limitaciones metodológicas
+  \item Próximos pasos
+\end{enumerate}
+\end{frame}
+
+% ===== CONTEXTO =====
+\section{Contexto}
+\begin{frame}{Contexto y objetivo de la tesis}
+\textbf{Problema:} atención y activación emocional cambian durante la navegación web;
+resumir las señales mediante promedios elimina esa dinámica temporal.
+
+\medskip
+\begin{block}{Objetivo}
+Comparar modelos temporales multimodales con modelos estáticos equivalentes para predecir
+\textbf{atención} y \textbf{activación} durante la navegación web.
+\end{block}
+
+\begin{itemize}
+  \item Señales disponibles: \textbf{EEG, GSR, pupilometría y eye tracking}.
+  \item La Toma de Muestra 2 \textbf{no incluye expresión facial}.
+  \item Antes de modelar se debe establecer qué sesiones son utilizables y cómo se coordinan temporalmente.
+\end{itemize}
+\end{frame}
+
+% ===== PIPELINE =====
+\section{Pipeline}
+\begin{frame}{Pipeline reproducible implementado}
+\begin{columns}[t]
+\column{0.48\textwidth}
+\begin{enumerate}
+  \item \textbf{Inventario} de sesiones EEG y grabaciones Tobii.
+  \item \textbf{Normalización} de participantes y tiempos.
+  \item \textbf{Coordinación} de sesiones mediante UTC.
+\end{enumerate}
+\column{0.48\textwidth}
+\begin{enumerate}
+  \setcounter{enumi}{3}
+  \item \textbf{EDA} con criterios específicos por modalidad.
+  \item Generación de \textbf{manifiestos, diagnósticos y tablas}.
+  \item Exportación de \textbf{seis figuras} reproducibles.
+\end{enumerate}
+\end{columns}
+
+\begin{alertblock}{Principio de trabajo}
+Los archivos originales no se modifican. La lectura se realiza por streaming y las decisiones
+quedan documentadas.
+\end{alertblock}
+\end{frame}
+
+% ===== SINCRONIZACION =====
+\section{Sincronización}
+\begin{frame}{Coordinación EEG--Tobii}
+\begin{columns}[t]
+\column{0.42\textwidth}
+\begin{block}{Resultado}
+\centering
+{\Huge \textbf{47}}\\
+candidatos directos EEG--Tobii
+\end{block}
+
+\begin{itemize}
+  \item P29 requiere revisión por offset.
+  \item \texttt{Test\_Participant} no tiene pareja directa.
+\end{itemize}
+
+\column{0.54\textwidth}
+\begin{block}{Ventana común}
+\begin{align*}
+t_{inicio} &= \max(t_{inicio}^{EEG},t_{inicio}^{Tobii}) \\
+t_{fin} &= \min(t_{fin}^{EEG},t_{fin}^{Tobii})
+\end{align*}
+\end{block}
+Cada señal conserva su frecuencia nativa; no es necesario remuestrear para coordinar.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Límite de la sincronización}
+\begin{alertblock}{No existen triggers compartidos}
+La alineación absoluta puede estimarse mediante los relojes del sistema, pero el \textbf{drift}
+entre dispositivos no puede identificarse válidamente sin eventos observados por ambos equipos.
+\end{alertblock}
+
+\begin{itemize}
+  \item \texttt{drift\_scale = 1.0} significa ``sin corrección identificable''.
+  \item No demuestra ausencia de drift.
+  \item Una corrección afín requiere al menos dos anclajes compartidos: TTL, LSL o artefactos deliberados.
+  \item Toda fila distinta de \texttt{candidato} debe revisarse manualmente.
+\end{itemize}
+\end{frame}
+
+% ===== EDA GENERAL =====
+\section{EDA multimodal}
+\begin{frame}{Disponibilidad y calidad de las señales}
+\begin{center}
+\includegraphics[width=0.93\linewidth,height=0.78\textheight,keepaspectratio]
+{01_resumen_calidad_modalidades.png}
+\end{center}
+\end{frame}
+
+% ===== EEG =====
+\begin{frame}{EDA EEG: 45 de 48 sesiones utilizables}
+\begin{columns}
+\column{0.57\textwidth}
+\includegraphics[width=\linewidth,height=0.67\textheight,keepaspectratio]
+{03_eeg_resumen_calidad.png}
+\column{0.40\textwidth}
+\begin{itemize}
+  \item 104 sesiones inventariadas.
+  \item Resumen final sobre 48 sesiones principales.
+  \item Frecuencia efectiva estable alrededor de \textbf{125 Hz}.
+  \item Se excluyen P1, P14 y P17.
+\end{itemize}
+\begin{alertblock}{Interpretación}
+El umbral de 30\,\% es exploratorio y permisivo. ``Utilizable'' no equivale a señal limpia.
+\end{alertblock}
+\end{columns}
+\end{frame}
+
+% ===== GSR =====
+\begin{frame}{EDA GSR: frecuencia efectiva cercana a 15 Hz}
+\begin{columns}
+\column{0.55\textwidth}
+\begin{itemize}
+  \item 2.984.636 filas procesadas por streaming.
+  \item 530.407 muestras GSR válidas.
+  \item 47 de 49 grabaciones disponibles: \textbf{95,92\,\%}.
+  \item P7 y P42 no contienen GSR.
+\end{itemize}
+\begin{block}{Corrección respecto del supuesto inicial}
+La frecuencia empírica es cercana a \textbf{15 Hz}, no 8 Hz.
+\end{block}
+\column{0.42\textwidth}
+\includegraphics[width=\linewidth,height=0.65\textheight,keepaspectratio]
+{04_gsr_resumen.png}
+\end{columns}
+\end{frame}
+
+% ===== OCULAR =====
+\begin{frame}{EDA de pupilometría y eye tracking}
+\begin{columns}
+\column{0.55\textwidth}
+\includegraphics[width=\linewidth,height=0.66\textheight,keepaspectratio]
+{05_eye_pupil_validez_participantes.png}
+\column{0.42\textwidth}
+\begin{itemize}
+  \item 2.187.110 muestras oculares evaluadas.
+  \item 1.973.941 con ambos ojos válidos: \textbf{90,25\,\%}.
+  \item 2.077.373 muestras de mirada válidas: \textbf{94,98\,\%}.
+  \item 122.302 fijaciones únicas.
+  \item Duración mediana: \textbf{183 ms}.
+\end{itemize}
+\end{columns}
+\end{frame}
+
+% ===== LECTURA CONJUNTA =====
+\begin{frame}{Lectura conjunta del avance}
+\begin{block}{Resultado principal}
+Las cuatro modalidades presentan más de 90\,\% de disponibilidad o validez global, lo que
+permite avanzar hacia la construcción de ventanas multimodales.
+\end{block}
+
+\begin{alertblock}{Lo que aún no está resuelto}
+\begin{itemize}
+  \item La calidad global no reemplaza criterios por participante, sesión y canal.
+  \item Los emparejamientos no confirmados requieren revisión manual.
+  \item La sincronización submuestra no puede defenderse sin triggers compartidos.
+  \item La latencia de SCR debe incorporarse al diseño temporal de GSR.
+\end{itemize}
+\end{alertblock}
+\end{frame}
+
+% ===== PROXIMOS PASOS =====
+\section{Siguientes pasos}
+\begin{frame}{Siguientes pasos}
+\begin{enumerate}
+  \item Aprobar o corregir el manifiesto de sincronización.
+  \item Definir criterios finales de calidad y exclusión.
+  \item Recortar ventanas comunes por evento.
+  \item Preprocesar cada modalidad conservando su frecuencia nativa.
+  \item Construir \textit{Attention Score} y \textit{Arousal Score}.
+  \item Entrenar los primeros modelos baseline.
+\end{enumerate}
+
+\begin{block}{Decisión inmediata}
+Cerrar emparejamientos y criterios de exclusión antes de extraer características o entrenar modelos.
+\end{block}
+\end{frame}
+
+\begin{frame}{}
+\centering
+\vspace{1cm}
+{\Large \textbf{Gracias}}\\[1em]
+¿Preguntas?
+\end{frame}
+
+\end{document}

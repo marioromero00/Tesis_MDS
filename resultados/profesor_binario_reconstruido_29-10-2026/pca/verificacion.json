@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "profesor": "pca",
+  "models": 75,
+  "teacher_bundles": 6,
+  "rows_oof": 13498,
+  "predictions": 202470,
+  "positive_rate_oof": 0.4994814046525411,
+  "reload_verified": true,
+  "coverage_verified": true
+}

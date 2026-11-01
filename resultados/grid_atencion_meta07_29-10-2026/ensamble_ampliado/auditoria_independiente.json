@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "predictions_verified": 40494,
+  "inner_subset_selection_recomputed": true,
+  "base_audits_passed": true,
+  "uses_future_inputs": false,
+  "target_07_exceeded_by_strategy": {
+    "inductivo": false,
+    "relativo_offline": false,
+    "seleccion_interna": false
+  }
+}

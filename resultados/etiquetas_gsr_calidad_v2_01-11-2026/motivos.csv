@@ -1,0 +1,11 @@
+split,label_reason,windows
+test,empate_mediana,2
+test,etiquetada,2184
+test,historial_insuficiente,1839
+train,cobertura_o_flag_invalido,401
+train,empate_mediana,13
+train,etiquetada,7028
+train,historial_insuficiente,6082
+validation,empate_mediana,4
+validation,etiquetada,2584
+validation,historial_insuficiente,2074

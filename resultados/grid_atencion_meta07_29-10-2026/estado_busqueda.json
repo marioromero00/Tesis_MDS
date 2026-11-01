@@ -1,0 +1,96 @@
+{
+  "target": 0.7,
+  "metric": "macro participant ROC-AUC; 25 people OOF",
+  "target_exceeded": false,
+  "runs": [
+    {
+      "name": "Boosting, grid 32",
+      "path": "ronda1",
+      "internal_trials_completed": 160,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "CatBoost, grid 32",
+      "path": "ronda2",
+      "internal_trials_completed": 160,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Ensamble de grids",
+      "path": "ensamble_rondas12",
+      "internal_trials_completed": 0,
+      "outer_models_saved": 0,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Multiescala, grid 48",
+      "path": "ronda3",
+      "internal_trials_completed": 240,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "EEG/GSR ampliados",
+      "path": "caracteristicas_ampliadas/ronda1",
+      "internal_trials_completed": 120,
+      "outer_models_saved": 15,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Retrospectivo: usa ventanas posteriores",
+      "path": "retrospectivo/ronda1",
+      "internal_trials_completed": 120,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Destilaci\u00f3n de score docente",
+      "path": "destilacion/ronda1",
+      "internal_trials_completed": 120,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Ranking por persona",
+      "path": "ranking/ronda1",
+      "internal_trials_completed": 80,
+      "outer_models_saved": 10,
+      "complete": true,
+      "audited": true
+    },
+    {
+      "name": "Ensamble ampliado",
+      "path": "ensamble_ampliado",
+      "internal_trials_completed": 0,
+      "outer_models_saved": 0,
+      "complete": true,
+      "audited": true
+    }
+  ],
+  "total_unique_inner_fits": 1000,
+  "total_outer_models_saved": 75,
+  "best_audited": {
+    "run": "Retrospectivo: usa ventanas posteriores",
+    "run_path": "retrospectivo/ronda1",
+    "round": 1,
+    "strategy": "relativo_offline",
+    "auc_macro": 0.6589577418352802,
+    "ci_low": 0.6412174430035268,
+    "ci_high": 0.6782010239834322,
+    "auc_pooled": 0.6560060701286826,
+    "delta_previous": 0.012550121933303965,
+    "delta_ci_low": 0.00010028182684931987,
+    "delta_ci_high": 0.024064654311513806,
+    "n": 13498,
+    "participants": 25
+  }
+}

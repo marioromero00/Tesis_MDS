@@ -1,0 +1,41 @@
+{
+  "fold": 5,
+  "candidate": {
+    "scope": "relativo_offline",
+    "context": 32,
+    "family": "RidgeReg",
+    "multiscale": false,
+    "params": {
+      "alpha": 100.0
+    },
+    "id": "distil_c019"
+  },
+  "auc_inner": 0.622453227674617,
+  "seconds": 0.013235749999694235,
+  "warnings": [],
+  "prediction_sha256": "a5072b94ae09e5c558c9c17b61e784aef42998538884fa15af84e9ba910f7b28",
+  "inner_fit": [
+    "P12",
+    "P18",
+    "P19",
+    "P2",
+    "P20",
+    "P22",
+    "P24",
+    "P27",
+    "P3",
+    "P33",
+    "P35",
+    "P4",
+    "P43",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "inner_validation": [
+    "P30",
+    "P36",
+    "P40",
+    "P46"
+  ]
+}

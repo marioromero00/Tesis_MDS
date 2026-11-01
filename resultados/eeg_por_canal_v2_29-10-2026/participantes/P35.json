@@ -1,0 +1,48 @@
+{
+  "participant": "P35",
+  "raw_member": "OpenBCISession_P35/OpenBCI-RAW-2025-08-27_12-15-59.txt",
+  "rows": 540,
+  "features_sha256": "77b8292693df565ae8263d8c6e02dccf5899fe714bd74be2c5ab8a0a31717fc6",
+  "legacy_checks": [
+    {
+      "source_row": 17966,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18025,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18085,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18145,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18205,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18265,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18325,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18385,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18445,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 18505,
+      "legacy_selection_and_features_match": true
+    }
+  ]
+}

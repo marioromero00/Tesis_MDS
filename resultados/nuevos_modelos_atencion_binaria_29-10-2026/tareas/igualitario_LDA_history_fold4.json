@@ -1,0 +1,123 @@
+{
+  "selected": {
+    "teacher": "igualitario",
+    "fold": 4,
+    "family": "LDA",
+    "mode": "history",
+    "config_index": 1,
+    "config": {
+      "shrinkage": 0.5
+    },
+    "auc_inner": 0.589237606692345,
+    "warnings": [],
+    "inner_fit": [
+      "P12",
+      "P13",
+      "P18",
+      "P2",
+      "P21",
+      "P22",
+      "P24",
+      "P34",
+      "P35",
+      "P36",
+      "P40",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8"
+    ],
+    "inner_validation": [
+      "P19",
+      "P26",
+      "P27",
+      "P30"
+    ],
+    "model_path": "internos/igualitario_LDA_history_fold4_config1.joblib",
+    "model_sha256": "dfc86d3c223ebe085331305e1cc53ebb22a1b6ff043cc3db6258314a1f1b0658"
+  },
+  "trials": [
+    {
+      "teacher": "igualitario",
+      "fold": 4,
+      "family": "LDA",
+      "mode": "history",
+      "config_index": 0,
+      "config": {
+        "shrinkage": "auto"
+      },
+      "auc_inner": 0.5866616246126768,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "model_path": "internos/igualitario_LDA_history_fold4_config0.joblib",
+      "model_sha256": "63f98fa97e5d16044da090e2abf55e5156a4594e29b6bbb07070ad66d0c54dd0"
+    },
+    {
+      "teacher": "igualitario",
+      "fold": 4,
+      "family": "LDA",
+      "mode": "history",
+      "config_index": 1,
+      "config": {
+        "shrinkage": 0.5
+      },
+      "auc_inner": 0.589237606692345,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ],
+      "model_path": "internos/igualitario_LDA_history_fold4_config1.joblib",
+      "model_sha256": "dfc86d3c223ebe085331305e1cc53ebb22a1b6ff043cc3db6258314a1f1b0658"
+    }
+  ],
+  "outer_warnings": [],
+  "model_path": "modelos/igualitario_LDA_history_fold4.joblib",
+  "model_sha256": "83f4dba167faf266ee0eecccd90446b6a4696ffff2984d599122bb87e8194afa",
+  "prediction_path": "predicciones/igualitario_LDA_history_fold4.csv.gz",
+  "prediction_sha256": "09a9a0aa86a307c46c708c1f6547fedfb03a34181ba30938c26746135b82642d"
+}

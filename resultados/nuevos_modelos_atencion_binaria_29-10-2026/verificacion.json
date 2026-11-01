@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "outer_models": 100,
+  "inner_models": 200,
+  "predictions": 296956,
+  "teachers": 2,
+  "participants": 25,
+  "rows_per_variant": 13498,
+  "outer_reload_verified": true,
+  "old_labels_matched": true,
+  "oof_coverage_verified": true
+}

@@ -1,0 +1,48 @@
+{
+  "participant": "P46",
+  "raw_member": "OpenBCISession_P46/OpenBCI-RAW-2025-08-30_11-51-04.txt",
+  "rows": 588,
+  "features_sha256": "d6d687f566a9615be51f6028cf4d13857fc0bb9abf378f063b753de14b1d6b31",
+  "legacy_checks": [
+    {
+      "source_row": 24060,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24125,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24190,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24255,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24320,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24386,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24451,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24516,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24581,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 24647,
+      "legacy_selection_and_features_match": true
+    }
+  ]
+}

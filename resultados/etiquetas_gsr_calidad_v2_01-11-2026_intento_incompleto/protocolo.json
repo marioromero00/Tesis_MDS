@@ -1,0 +1,32 @@
+{
+  "version": "gsr_quality_v2",
+  "created_utc": "2026-11-01T18:00:10.938293+00:00",
+  "source_sha256": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "old_labels_sha256": "2b75434eb0cdc0a15fe59e41ed2771f9964773e6824c62bdc119af99ba300f2c",
+  "script_sha256": "586207b0b1ea45c3f204bb6badf364b5e54b6cb5c7e6a12026783ff6b7f23294",
+  "coverage_threshold": 0.5,
+  "coverage_origin": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/config/preprocesamiento_macos_v2.json",
+  "components": [
+    "gsr_tonic_mean_z",
+    "gsr_phasic_mean_z",
+    "gsr_scr_count",
+    "gsr_scr_mean_prominence_z"
+  ],
+  "finite_components_required": 4,
+  "context_windows": 5,
+  "window_seconds": 2,
+  "step_seconds": 1,
+  "context_reset": [
+    "participant",
+    "recording",
+    "segment_id",
+    "stimulus",
+    "invalid_window",
+    "gap_not_1s"
+  ],
+  "normalization": "within participant offline, valid windows only; constant observed components zero; missing remain missing",
+  "ties": "abs(score - median)<=1e-8 in standardized units excluded, not forced balanced",
+  "scope": "label reconstruction on frozen train/validation/test; no model fitting or predictive evaluation",
+  "limitations": "derived-feature QA; no new raw artifact detection or psychological validation; new task version"
+}

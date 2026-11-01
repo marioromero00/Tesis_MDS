@@ -1,0 +1,48 @@
+{
+  "participant": "P19",
+  "raw_member": "OpenBCISession_P19/OpenBCI-RAW-2025-08-20_11-18-46.txt",
+  "rows": 478,
+  "features_sha256": "b657b1487a5330a127ed0440d70f14d4fc9c4759c8bc4a9aaade7bd10150d49c",
+  "legacy_checks": [
+    {
+      "source_row": 9519,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9572,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9625,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9678,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9731,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9784,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9837,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9890,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9943,
+      "legacy_selection_and_features_match": true
+    },
+    {
+      "source_row": 9996,
+      "legacy_selection_and_features_match": true
+    }
+  ]
+}

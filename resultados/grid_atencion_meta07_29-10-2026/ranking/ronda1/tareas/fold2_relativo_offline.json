@@ -1,0 +1,48 @@
+{
+  "selected": {
+    "fold": 2,
+    "candidate": {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "CatRank",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 3.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "rank_c012"
+    },
+    "auc_inner": 0.6595384608126438,
+    "seconds": 2.150887666000017,
+    "warnings": [],
+    "prediction_sha256": "504085788ae4debdb347ad634accc47964093b3d0771a4d3ea3c3731ceb6d056",
+    "inner_fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "inner_validation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  "model_sha256": "814af82b51cf45e281edb7a84c3b5f8ef2125082fda10138451046055fd3e199",
+  "prediction_sha256": "f3588b509cc2ac6e7d089b8e18849eaa4148106019a31bb4b2a7e766f8891248"
+}

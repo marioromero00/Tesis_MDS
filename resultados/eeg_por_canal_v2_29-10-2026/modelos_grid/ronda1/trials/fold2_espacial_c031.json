@@ -1,0 +1,41 @@
+{
+  "fold": 2,
+  "candidate": {
+    "scope": "relativo_offline",
+    "context": 32,
+    "family": "Logistica",
+    "multiscale": false,
+    "params": {
+      "C": 1.0
+    },
+    "id": "espacial_c031"
+  },
+  "auc_inner": 0.6782184390565917,
+  "seconds": 0.2153595419999874,
+  "warnings": [],
+  "prediction_sha256": "c6f25972ab266097ecf98ad63f72f232394d8e78d7abff36b1d29266e9f56ac8",
+  "inner_fit": [
+    "P18",
+    "P21",
+    "P22",
+    "P24",
+    "P26",
+    "P27",
+    "P3",
+    "P30",
+    "P33",
+    "P36",
+    "P43",
+    "P44",
+    "P46",
+    "P48",
+    "P8",
+    "P9"
+  ],
+  "inner_validation": [
+    "P13",
+    "P20",
+    "P34",
+    "P4"
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "source_sha256": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "source_code_sha256": "0b8f08dd083e52bd22ebe727391b0e20495b49ce34efcdcbb13e4268784e4894",
+  "student_code_sha256": "4a013a727f170f369fbeb74623b1891611fd89bdb0127a130961c0245c73c073",
+  "temporal_code_sha256": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+  "teacher_columns": [
+    "fixation_total_ms",
+    "fixation_mean_ms",
+    "gaze_dispersion_2d_px",
+    "gaze_path_length_px",
+    "pupil_mean_z"
+  ],
+  "directions": [
+    1,
+    1,
+    -1,
+    -1,
+    1
+  ],
+  "old_labels_used": false,
+  "old_scores_used": false,
+  "teachers": [
+    "igualitario",
+    "pca"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    }
+  ],
+  "student_features": [
+    "eeg_rms_uv",
+    "eeg_std_uv",
+    "eeg_peak_to_peak_uv",
+    "eeg_delta_relative",
+    "eeg_theta_relative",
+    "eeg_alpha_relative",
+    "eeg_beta_relative",
+    "eeg_gamma_relative",
+    "eeg_line_noise_ratio",
+    "gsr_mean_z",
+    "gsr_std_z",
+    "gsr_min_z",
+    "gsr_max_z",
+    "gsr_tonic_mean_z",
+    "gsr_phasic_mean_z",
+    "gsr_slope_z_s",
+    "gsr_scr_count",
+    "gsr_scr_mean_prominence_z"
+  ],
+  "variants": [
+    [
+      "Dummy",
+      "current"
+    ],
+    [
+      "Logistica",
+      "current"
+    ],
+    [
+      "Logistica",
+      "history"
+    ],
+    [
+      "RandomForest",
+      "current"
+    ],
+    [
+      "RandomForest",
+      "history"
+    ],
+    [
+      "MLP_current",
+      "current"
+    ],
+    [
+      "TCN",
+      "repeat_current"
+    ],
+    [
+      "TCN",
+      "history"
+    ],
+    [
+      "LSTM",
+      "repeat_current"
+    ],
+    [
+      "LSTM",
+      "history"
+    ]
+  ],
+  "seeds": [
+    20261029,
+    20261030
+  ],
+  "epochs": 8,
+  "binary_rule": "1 = atento (score > mediana personal); 0 = no atento (score <= mediana); ausentes = NA",
+  "offline_person_calibration": true,
+  "pca_fit": "solo participantes de ajuste de cada fold",
+  "test_evaluated": false,
+  "validation_evaluated": false,
+  "context_windows": 8,
+  "binary_definition": "1 = atento (score > mediana personal); 0 = no atento (score <= mediana); ausentes = NA",
+  "teacher": "igualitario"
+}

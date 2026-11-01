@@ -1,0 +1,14 @@
+{
+  "description": "Ensamble predefinido de familias diversas, pesos elegidos internamente; excluye las señales futuras del contraste retrospectivo",
+  "base_runs": ["ronda1", "ronda2", "ronda3", "caracteristicas_ampliadas/ronda1", "destilacion/ronda1"],
+  "scopes": ["inductivo", "relativo_offline"],
+  "candidate_subsets": "todas las combinaciones de 1, 2 y 3 miembros (25 por escenario)",
+  "weights": "uniformes dentro del subconjunto",
+  "selection": "AUC macro de las cuatro personas internas; desempate hacia menos miembros y orden lexicografico",
+  "outer_evaluation": "mismos cinco folds y etiquetas PCA binarias congeladas",
+  "metric": "promedio ROC-AUC de 25 personas, OOF",
+  "uses_future_inputs": false,
+  "offline_calibration_reported_separately": true,
+  "test_evaluated": false,
+  "validation_evaluated": false
+}

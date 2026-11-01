@@ -1,0 +1,745 @@
+{
+  "source_sha256": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+  "partition_sha256": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+  "channel_sha256": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+  "script_sha256": "2005c77c0703834c089b6ad7a057e8afc08c6d67183586d8ec16586585e4b67e",
+  "dependencies": {
+    "modelar_eeg_por_canal_v2.py": "bcbc750466b99aeac5e5882906def4cbfef78c97bfb6d231e9cf11aefa48fd7b",
+    "eeg_por_canal_v2.py": "ab9a47c6b2230b55b5361d2446ea755cfd6b07b9082365d8a4d3cedb3b79a489",
+    "reconstruir_profesor_atencion_binaria.py": "0b8f08dd083e52bd22ebe727391b0e20495b49ce34efcdcbb13e4268784e4894",
+    "temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c"
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P3",
+        "P33",
+        "P34",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P44",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P22",
+        "P24",
+        "P30",
+        "P43",
+        "P48"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P26",
+        "P27",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P46",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P3",
+        "P33",
+        "P34",
+        "P44"
+      ]
+    },
+    {
+      "fold": 2,
+      "fit": [
+        "P13",
+        "P18",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P36",
+        "P4",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P12",
+        "P19",
+        "P2",
+        "P35",
+        "P40"
+      ],
+      "inner_fit": [
+        "P18",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P36",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P13",
+        "P20",
+        "P34",
+        "P4"
+      ]
+    },
+    {
+      "fold": 3,
+      "fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P34",
+        "P35",
+        "P4",
+        "P40",
+        "P43",
+        "P44",
+        "P48",
+        "P9"
+      ],
+      "evaluation": [
+        "P18",
+        "P27",
+        "P36",
+        "P46",
+        "P8"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ]
+    },
+    {
+      "fold": 4,
+      "fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P19",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P26",
+        "P27",
+        "P30",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "evaluation": [
+        "P20",
+        "P3",
+        "P33",
+        "P4",
+        "P9"
+      ],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P18",
+        "P2",
+        "P21",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P36",
+        "P40",
+        "P43",
+        "P44",
+        "P46",
+        "P48",
+        "P8"
+      ],
+      "inner_validation": [
+        "P19",
+        "P26",
+        "P27",
+        "P30"
+      ]
+    },
+    {
+      "fold": 5,
+      "fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P30",
+        "P33",
+        "P35",
+        "P36",
+        "P4",
+        "P40",
+        "P43",
+        "P46",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "evaluation": [
+        "P13",
+        "P21",
+        "P26",
+        "P34",
+        "P44"
+      ],
+      "inner_fit": [
+        "P12",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P22",
+        "P24",
+        "P27",
+        "P3",
+        "P33",
+        "P35",
+        "P4",
+        "P43",
+        "P48",
+        "P8",
+        "P9"
+      ],
+      "inner_validation": [
+        "P30",
+        "P36",
+        "P40",
+        "P46"
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c000"
+    },
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c001"
+    },
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c002"
+    },
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c003"
+    },
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c004"
+    },
+    {
+      "scope": "inductivo",
+      "context": 1,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c005"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c006"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c007"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c008"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c009"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c010"
+    },
+    {
+      "scope": "inductivo",
+      "context": 8,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c011"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c012"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c013"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c014"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c015"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c016"
+    },
+    {
+      "scope": "inductivo",
+      "context": 32,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c017"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c018"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c019"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c020"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c021"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c022"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 1,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c023"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c024"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c025"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c026"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c027"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c028"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 8,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c029"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 0.1
+      },
+      "id": "espacial_c030"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "Logistica",
+      "multiscale": false,
+      "params": {
+        "C": 1.0
+      },
+      "id": "espacial_c031"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c032"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 300,
+        "l2_regularization": 10.0,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c033"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 4,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c034"
+    },
+    {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "CatBoost",
+      "multiscale": false,
+      "params": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "iterations": 400,
+        "learning_rate": 0.05
+      },
+      "id": "espacial_c035"
+    }
+  ],
+  "primary": "inductivo",
+  "secondary": "relativo_offline",
+  "contexts": [
+    1,
+    8,
+    32
+  ],
+  "span_seconds": [
+    2,
+    9,
+    33
+  ],
+  "selection": "highest macro participant AUC across five fixed train folds; ties candidate id",
+  "validation_previously_used": true,
+  "test_evaluated": false,
+  "teacher": "PCA fit on training persons only; same relative offline components and participant median rule",
+  "comparison": "Six context-specific models plus two scope-selected aliases; no reselection on validation"
+}

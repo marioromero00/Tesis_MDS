@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "test_people": 8,
+  "rows_per_model": 4024,
+  "models": 8,
+  "identical_labels_rows": true,
+  "reload_verified": true,
+  "hashes_verified": true,
+  "train_test_disjoint": true,
+  "teacher_fit_train_only": true,
+  "matched_controls_fit_train_only": true,
+  "test_evaluated": true
+}

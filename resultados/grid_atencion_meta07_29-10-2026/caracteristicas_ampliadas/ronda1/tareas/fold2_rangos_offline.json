@@ -1,0 +1,48 @@
+{
+  "selected": {
+    "fold": 2,
+    "candidate": {
+      "scope": "rangos_offline",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": false,
+      "params": {
+        "max_leaf_nodes": 7,
+        "max_iter": 200,
+        "l2_regularization": 5.0,
+        "learning_rate": 0.05
+      },
+      "id": "ampliado_c020"
+    },
+    "auc_inner": 0.6581604843618636,
+    "seconds": 5.6047723330002555,
+    "warnings": [],
+    "prediction_sha256": "39b36cdbaaf8101875a713f5437687a45f6dcf927394b27c62f65b2adec4ce9e",
+    "inner_fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "inner_validation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  "model_sha256": "27ec2ee2a4470b78cea9f02c61315b59ff2abba9e9ca5cc88136f6ac65cb8d80",
+  "prediction_sha256": "d525153bb426f19ff08e000af48d35df1685a4e0cdf9376552b8df4e5d751d10"
+}

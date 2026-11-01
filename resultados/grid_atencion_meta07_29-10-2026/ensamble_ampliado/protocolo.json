@@ -1,0 +1,34 @@
+{
+  "description": "Ensamble predefinido de familias diversas, pesos elegidos internamente; excluye las señales futuras del contraste retrospectivo",
+  "base_runs": [
+    "ronda1",
+    "ronda2",
+    "ronda3",
+    "caracteristicas_ampliadas/ronda1",
+    "destilacion/ronda1",
+    "ranking/ronda1"
+  ],
+  "scopes": [
+    "inductivo",
+    "relativo_offline"
+  ],
+  "candidate_subsets": "todas las combinaciones de 1, 2 y 3 miembros (41 por escenario)",
+  "weights": "uniformes dentro del subconjunto",
+  "selection": "AUC macro de las cuatro personas internas; desempate hacia menos miembros y orden lexicografico",
+  "outer_evaluation": "mismos cinco folds y etiquetas PCA binarias congeladas",
+  "metric": "promedio ROC-AUC de 25 personas, OOF",
+  "uses_future_inputs": false,
+  "offline_calibration_reported_separately": true,
+  "test_evaluated": false,
+  "validation_evaluated": false,
+  "amendment": "Se incorpora ranking antes de conocer sus AUC externas completas; se conserva plan anterior.",
+  "base_protocol_hashes": {
+    "ronda1": "5d86df9ba593d9006fe6cf46752218c481c9fa2f2b0f259227f3093f1ec3a7e5",
+    "ronda2": "829b6a61b3a1bc659d493966df4085251b3e6b2f68042f0d9bd7d23d8346be44",
+    "ronda3": "311888fcc6ba2f1c3ff4e9c23cfb809da544feca4ef65a844694e56a34d14a9f",
+    "caracteristicas_ampliadas/ronda1": "d1f1e9aeadb7356ad35fc759a451cdc7501cf746f026cd1b4132fed273439d31",
+    "destilacion/ronda1": "cf4a79b79dda03faa78c64f9646dfde0ad73e09fc642589a84097effe7825e4d",
+    "ranking/ronda1": "b5f671a9072bddd04e9e9c21e974e4ebd0932421df1d36b29776dc85c4cb8985"
+  },
+  "source_sha256": "c19f6a2db81c3301006e41ebc68da8e5aff7d85ec739b2e34a3dbd0a2b8e0ba8"
+}

@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-10-29T22:21:04.108157+00:00",
+  "models": {
+    "inductivo_ctx1": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c005.joblib",
+      "sha256": "bebc499a95310cd5caa7f9b4f3e4979b03f7b125a87bd7471b2a091f1a1738ce"
+    },
+    "inductivo_ctx8": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c010.joblib",
+      "sha256": "0ac1f36c890693211aafd7f2cfd1bbc232d995d41b3701ec1ffe8f6a8d6a79c8"
+    },
+    "inductivo_ctx32": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c015.joblib",
+      "sha256": "b36dda0a625eda606caea9f39d7663f14b569b827dcfb9390308d1e4cd6867f9"
+    },
+    "relativo_offline_ctx1": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c020.joblib",
+      "sha256": "dde344a255fdb648a43d30f348b091657bb35b8c40438115b2145e1c942f901b"
+    },
+    "relativo_offline_ctx8": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c028.joblib",
+      "sha256": "d731365e69b2cab254d46b8ff22f0013c9b93b345fb564ba3cf490c1405b42a0"
+    },
+    "relativo_offline_ctx32": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c034.joblib",
+      "sha256": "6a1004f60ba306992aeb4cf06b0667d38c0ef6879acdec205bc51df55daca964"
+    },
+    "inductivo_estatico_pareado": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_test_29-10-2026/modelos_controles/inductivo.joblib",
+      "sha256": "7735f153999eafcc6039db6dfcf2dd75ac0bd3cb72c13479ddc081aaad82905e"
+    },
+    "relativo_offline_estatico_pareado": {
+      "path": "/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/temporalidad_eeg_v2_test_29-10-2026/modelos_controles/relativo_offline.joblib",
+      "sha256": "0440f79b060582a4961354a2a5beea052d0ceb33d0d0caa58ebf6dbe36c7d24c"
+    }
+  },
+  "teacher_sha256": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+  "test_evaluated": false
+}

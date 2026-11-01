@@ -1,0 +1,48 @@
+{
+  "selected": {
+    "fold": 2,
+    "candidate": {
+      "scope": "relativo_offline",
+      "context": 32,
+      "family": "HistBoost",
+      "multiscale": true,
+      "params": {
+        "max_leaf_nodes": 15,
+        "max_iter": 400,
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05
+      },
+      "id": "r3_c024"
+    },
+    "auc_inner": 0.6520296688648494,
+    "seconds": 11.93224525000005,
+    "warnings": [],
+    "prediction_sha256": "2ba5bf155664e445df720455a7cf34483e51d562d1309c7ea5dddf0a5e6cdf46",
+    "inner_fit": [
+      "P18",
+      "P21",
+      "P22",
+      "P24",
+      "P26",
+      "P27",
+      "P3",
+      "P30",
+      "P33",
+      "P36",
+      "P43",
+      "P44",
+      "P46",
+      "P48",
+      "P8",
+      "P9"
+    ],
+    "inner_validation": [
+      "P13",
+      "P20",
+      "P34",
+      "P4"
+    ]
+  },
+  "model_sha256": "0b17e93f0c5adfd914cd0845645693a79a8cd695b5d61ea4ea46152ea090af8d",
+  "prediction_sha256": "92ebb05cc30929b2bd8ec1a9df2a3668e92b2c76f6f419366d908e8befa4c0c0"
+}

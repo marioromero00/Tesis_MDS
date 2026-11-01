@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "inner_trials": 120,
+  "outer_models_reloaded": 15,
+  "predictions_verified": 53992,
+  "labels_unchanged": true,
+  "participants": 25,
+  "fold_groups_disjoint": true,
+  "inner_selection_verified": true,
+  "target_07_exceeded_by_strategy": {
+    "inductivo": false,
+    "relativo_offline": false,
+    "rangos_offline": false,
+    "seleccion_interna": false
+  },
+  "offline_calibration_identified": true
+}

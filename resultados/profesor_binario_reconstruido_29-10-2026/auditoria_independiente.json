@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "teachers": [
+    {
+      "profesor": "igualitario",
+      "predictions_verified": 202470,
+      "labels_verified": 13498,
+      "auc_verified": true,
+      "hashes_verified": true,
+      "train_only": true
+    },
+    {
+      "profesor": "pca",
+      "predictions_verified": 202470,
+      "labels_verified": 13498,
+      "auc_verified": true,
+      "hashes_verified": true,
+      "train_only": true
+    }
+  ]
+}

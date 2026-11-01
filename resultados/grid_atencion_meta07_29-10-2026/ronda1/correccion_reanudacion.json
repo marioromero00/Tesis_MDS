@@ -1,0 +1,7 @@
+{
+  "reason": "TypeError al guardar seleccion: fold duplicado en dict; corregido guardado de metadatos, sin cambios en features, labels, modelos o grid",
+  "previous_source_sha256": "d39b3112e397b28c3a92c3f8142ae7aecaa9507c11fac011194cf36ce179509b",
+  "corrected_source_sha256": "90859bfdde180e2a30e46aac50729ffaccdeecd47213ed2d2ab3a4d8c0225bb8",
+  "reused_inner_trials": 32,
+  "original_protocol": "protocolo_intento_interrumpido.json"
+}

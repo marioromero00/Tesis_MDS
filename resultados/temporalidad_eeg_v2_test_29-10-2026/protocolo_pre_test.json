@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-29T22:20:45.459074+00:00",
+  "script_sha256": "c0e229ec16455993c180aea5815778870a21bf1b8c77e67047770a18d4fd7c07",
+  "previous_freeze_sha256": "7705e17984c6948e85e1a9351f890a5a22c1a057465564f10d870cfeb3bd4697",
+  "hypothesis": "Temporal multimodal models outperform comparable static models for attention and activation; this run assesses attention only.",
+  "primary_contrast": "inductivo_ctx32 minus inductivo_estatico_pareado (same family and hyperparameters, no history)",
+  "secondary_contrasts": "ctx8 and ctx32 vs original selected static, separately inductive/offline; offline matched static",
+  "primary_metric": "mean ROC-AUC per participant",
+  "uncertainty": "paired participant bootstrap percentile 95%, 20000 draws, seed20261029, descriptive; no multiplicity correction",
+  "decision": "CI above zero: descriptive support; CI below zero: descriptive contrary evidence; CI includes zero: inconclusive, not proof of equality",
+  "test_previously_consulted": true,
+  "validation_previously_consulted": true,
+  "no_test_selection": true,
+  "activation_evaluated": false,
+  "fusion_ablation": false,
+  "caveats": "session-relative offline teacher, overlapping windows; no psychological ground truth; histogram aggregation is not sequence-order modeling"
+}

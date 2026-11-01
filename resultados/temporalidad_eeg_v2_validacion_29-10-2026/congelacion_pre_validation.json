@@ -1,0 +1,23 @@
+{
+  "models_sha256": {
+    "espacial_c005": "bebc499a95310cd5caa7f9b4f3e4979b03f7b125a87bd7471b2a091f1a1738ce",
+    "espacial_c010": "0ac1f36c890693211aafd7f2cfd1bbc232d995d41b3701ec1ffe8f6a8d6a79c8",
+    "espacial_c015": "b36dda0a625eda606caea9f39d7663f14b569b827dcfb9390308d1e4cd6867f9",
+    "espacial_c020": "dde344a255fdb648a43d30f348b091657bb35b8c40438115b2145e1c942f901b",
+    "espacial_c028": "d731365e69b2cab254d46b8ff22f0013c9b93b345fb564ba3cf490c1405b42a0",
+    "espacial_c034": "6a1004f60ba306992aeb4cf06b0667d38c0ef6879acdec205bc51df55daca964"
+  },
+  "teacher_sha256": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+  "selected": {
+    "inductivo_ctx1": "espacial_c005",
+    "inductivo_ctx8": "espacial_c010",
+    "inductivo_ctx32": "espacial_c015",
+    "inductivo_seleccionado": "espacial_c015",
+    "relativo_offline_ctx1": "espacial_c020",
+    "relativo_offline_ctx8": "espacial_c028",
+    "relativo_offline_ctx32": "espacial_c034",
+    "relativo_offline_seleccionado": "espacial_c034"
+  },
+  "validation_evaluated": false,
+  "timestamp_utc": "2026-10-29T22:17:00.832134+00:00"
+}

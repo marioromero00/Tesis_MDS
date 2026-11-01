@@ -1,0 +1,21 @@
+{
+  "description": "Combinacion predefinida de candidatos elegidos internamente en rondas 1 y 2, antes de consultar sus AUC externas completas",
+  "teacher": "PCA binario reconstruido, etiquetas fijas",
+  "weights_round1": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "selection": "por fold y escenario, escoger peso con AUC macro en los cuatro participantes internos; desempate hacia 0.5 y luego menor peso",
+  "scope_selection": "seleccion conjunta entre escenarios con solo puntuacion interna",
+  "outer_predictions": "mezclar probabilidades de ambos modelos reajustados en los 20 participantes de ajuste externo",
+  "metric": "promedio ROC-AUC de los 25 participantes externos OOF",
+  "test_evaluated": false,
+  "validation_evaluated": false,
+  "offline_calibration_reported_separately": true,
+  "round1_protocol_sha256": "5d86df9ba593d9006fe6cf46752218c481c9fa2f2b0f259227f3093f1ec3a7e5",
+  "round2_protocol_sha256": "829b6a61b3a1bc659d493966df4085251b3e6b2f68042f0d9bd7d23d8346be44",
+  "source_code_sha256": "598c9306b06127c98b9620b8cd81efd54e40c983324d53e7512ba5c759939ed6"
+}

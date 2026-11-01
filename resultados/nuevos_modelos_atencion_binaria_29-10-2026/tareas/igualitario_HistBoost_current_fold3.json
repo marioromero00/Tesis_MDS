@@ -1,0 +1,126 @@
+{
+  "selected": {
+    "teacher": "igualitario",
+    "fold": 3,
+    "family": "HistBoost",
+    "mode": "current",
+    "config_index": 1,
+    "config": {
+      "max_leaf_nodes": 15,
+      "l2_regularization": 15.0
+    },
+    "auc_inner": 0.5529053429670379,
+    "warnings": [],
+    "inner_fit": [
+      "P12",
+      "P13",
+      "P19",
+      "P2",
+      "P20",
+      "P21",
+      "P24",
+      "P26",
+      "P3",
+      "P30",
+      "P33",
+      "P4",
+      "P40",
+      "P43",
+      "P48",
+      "P9"
+    ],
+    "inner_validation": [
+      "P22",
+      "P34",
+      "P35",
+      "P44"
+    ],
+    "model_path": "internos/igualitario_HistBoost_current_fold3_config1.joblib",
+    "model_sha256": "683689c8acb71833ac4aeb87d2ff3be2c84a61dba2ff3f6e70599a5832dee1bf"
+  },
+  "trials": [
+    {
+      "teacher": "igualitario",
+      "fold": 3,
+      "family": "HistBoost",
+      "mode": "current",
+      "config_index": 0,
+      "config": {
+        "max_leaf_nodes": 7,
+        "l2_regularization": 5.0
+      },
+      "auc_inner": 0.5389582194810152,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ],
+      "model_path": "internos/igualitario_HistBoost_current_fold3_config0.joblib",
+      "model_sha256": "525754d9bca7ed3e7dad4fade028a87f1c15d00f90b929e72af09cf77ad34bb3"
+    },
+    {
+      "teacher": "igualitario",
+      "fold": 3,
+      "family": "HistBoost",
+      "mode": "current",
+      "config_index": 1,
+      "config": {
+        "max_leaf_nodes": 15,
+        "l2_regularization": 15.0
+      },
+      "auc_inner": 0.5529053429670379,
+      "warnings": [],
+      "inner_fit": [
+        "P12",
+        "P13",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P24",
+        "P26",
+        "P3",
+        "P30",
+        "P33",
+        "P4",
+        "P40",
+        "P43",
+        "P48",
+        "P9"
+      ],
+      "inner_validation": [
+        "P22",
+        "P34",
+        "P35",
+        "P44"
+      ],
+      "model_path": "internos/igualitario_HistBoost_current_fold3_config1.joblib",
+      "model_sha256": "683689c8acb71833ac4aeb87d2ff3be2c84a61dba2ff3f6e70599a5832dee1bf"
+    }
+  ],
+  "outer_warnings": [],
+  "model_path": "modelos/igualitario_HistBoost_current_fold3.joblib",
+  "model_sha256": "1cec0722a74e2d0c0fd178089b47aa5b6a80047ef2710047f6bc8267acd63f73",
+  "prediction_path": "predicciones/igualitario_HistBoost_current_fold3.csv.gz",
+  "prediction_sha256": "f84a2a52a9545d315bf83ddd93338ebe820cff274a1b5fe6d9b245d8586054f7"
+}
