@@ -53,3 +53,9 @@ Limitación de cobertura de la corrida final: ninguna ventana validation/test di
 ## 01-11-2026 — Ablación V2 y cierre de temporalidad solicitados
 
 Mario solicitó ejecutar la comparación EEG/mirada/pupila frente a fusión y cerrar interpretación temporal. Protocolo de ablación guardado antes del entrenamiento: contextos 1/8/32, mismas filas V2, hiperparámetros controlados heredados de selección interna previa, sin nueva búsqueda. Se reutilizan modelos completos con hashes y se entrenan 45 variantes OOF más nueve finales unimodales. Cierre temporal en ../repos/Tesis_MDS/documentacion/Cierre_Temporalidad_V2_01-11-2026.md. No se afirma superioridad temporal general; se explicita la insuficiencia de historial completo y la diferencia entre contraste principal y secundario.
+
+## 01-11-2026 — Ablación de modalidades y cierre completados
+
+54 modelos nuevos (45 OOF y nueve finales), con hiperparámetros heredados de selección interna del modelo completo. Mismas etiquetas V2, participantes y filas. Auditoría aprobada: 63 recargas, 492 AUC y 27 contrastes. Test: EEG 0,4982/0,5123/0,5173; mirada 0,5151/0,5129/0,5215; pupila 0,5172/0,5461/0,5386; fusión 0,5141/0,5470/0,5363 (contextos1/8/32). Los nueve intervalos pareados de fusión en test incluyen cero; no hay ventaja clara sobre las modalidades individuales. Solo validation contexto32 frente a mirada tiene intervalo de diferencia positivo, sin reproducirse en test. No elegir un ganador ni ajustar de nuevo usando test.
+
+Cierre conjunto: ../repos/Tesis_MDS/documentacion/Cierre_Experimental_V2_01-11-2026.md. Cierre temporal: Cierre_Temporalidad_V2_01-11-2026.md en la misma carpeta. No se obtiene apoyo conjunto suficiente a superioridad temporal multimodal; resultados exploratorios, sin validar constructos psicológicos. Subida GitHub pendiente por DNS; commits locales conservados.

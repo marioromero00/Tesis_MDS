@@ -18,6 +18,10 @@ tesis-mds/
 
 La ubicación principal del vault es `documentos/01 Tesis MDS`. El enlace en `repos` mantiene compatibles las referencias del código y los informes históricos; apunta a los mismos archivos, sin duplicarlos. Los resultados y presentaciones del repositorio conservan sus rutas originales.
 
+## Último cierre experimental
+
+[Cierre V2: temporalidad y fusión](repos/Tesis_MDS/documentacion/Cierre_Experimental_V2_01-11-2026.md). Ablación completada y auditada; no hay ventaja consistente de temporalidad/fusión para activación. Subida remota pendiente por conexión.
+
 ## Para continuar
 
 - [Índice original de la tesis](documentos/01%20Tesis%20MDS/Tesis_MDS.md).

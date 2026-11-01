@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "new_models": 54,
+  "prediction_reload_checks": 63,
+  "participant_auc_verified": 492,
+  "paired_contrasts_verified": 27,
+  "same_rows_labels": true,
+  "rows": {
+    "oof_train": 7028,
+    "validation": 2584,
+    "test": 2184
+  },
+  "full_models_unchanged": true,
+  "source_hashes_unchanged": true
+}
