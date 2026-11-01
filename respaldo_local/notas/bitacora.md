@@ -27,3 +27,11 @@ Por solicitud del usuario se reentrenaron 60 ajustes internos y 15 modelos exter
 ## 01-11-2026 — Organización de carpetas en el Mac
 
 Vault recuperado movido a `../documentos/01 Tesis MDS`, con enlace de compatibilidad en `../repos/01 Tesis MDS`. Índices y pautas actualizados. Se verificaron los hashes de los 80 archivos y el estado Git sin cambios. Código, datos y experimentos conservan sus ubicaciones. Recuperar la redacción posterior no es una prioridad actual para Mario. Detalle: `organizacion-carpetas-01-11-2026.json`.
+
+## 01-11-2026 — Primer contraste fijo de activación V2 y respaldo Git
+
+15 regresiones logísticas C=1, cinco folds y contextos 1/8/32; 7.028 filas de train con etiquetas V2 idénticas entre modelos. AUC macro persona 0,526132 / 0,518344 / 0,513917. Diferencias frente a ventana actual −0,007788 y −0,012215, con intervalos descriptivos que incluyen cero. No hay mejora temporal clara en esta comparación. No se evaluaron validation/test. Auditoría de recarga y verificación de 75 AUC desde disco aprobadas; cuatro pruebas de calidad de etiquetas aprobadas.
+
+Informe: ../repos/Tesis_MDS/resultados/activacion_v2_historial_01-11-2026/INFORME.md. Script: experimento_activacion_v2.py. La representación temporal agrega media y desviación: no evalúa modelos sensibles al orden. No comparar directamente esta AUC con etiquetas anteriores.
+
+Mario pidió guardar y subir cada etapa a Git. Se incorporaron los avances pendientes y copia verificable de documentos/notas al commit 6c02bb3. El envío a GitHub falló por resolución DNS (`Could not resolve host: github.com`); el respaldo remoto queda pendiente. Datos crudos externos, entornos, cachés y logs externos no están incluidos en esta copia Git.
