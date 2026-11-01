@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-01T20:37:07.363478+00:00",
+  "protocol_sha256": "ded05c3eddff42da98a0077315e00106ad1231720ed4f887be150ab73749f036",
+  "search_sha256": "e4e5130b5a04bb2e6668de5e51b85ea4a39c442f75ae625873ab6a5c39adb54a",
+  "leaves": 15,
+  "models": {
+    "1": {
+      "path": "resultados/activacion_v2_comparacion_final_01-11-2026/modelos/final_ctx1.joblib",
+      "sha256": "2e6838088636431f68a6e42964c58270622d8765839f836ec390863199b370aa"
+    },
+    "8": {
+      "path": "resultados/activacion_v2_comparacion_final_01-11-2026/modelos/final_ctx8.joblib",
+      "sha256": "e9a2a5b49dbc0211ac16d94389a1964eb5f3c7352b70b3cccb0daff6e831e61a"
+    },
+    "32": {
+      "path": "resultados/activacion_v2_comparacion_final_01-11-2026/modelos/final_ctx32.joblib",
+      "sha256": "bdc2e9fc2a91df87bbf375421d098e5b2cb4d2f651439ba652ec184abfe191a3"
+    }
+  },
+  "validation_evaluated": false,
+  "test_evaluated": false
+}

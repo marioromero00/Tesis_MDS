@@ -35,3 +35,9 @@ Vault recuperado movido a `../documentos/01 Tesis MDS`, con enlace de compatibil
 Informe: ../repos/Tesis_MDS/resultados/activacion_v2_historial_01-11-2026/INFORME.md. Script: experimento_activacion_v2.py. La representación temporal agrega media y desviación: no evalúa modelos sensibles al orden. No comparar directamente esta AUC con etiquetas anteriores.
 
 Mario pidió guardar y subir cada etapa a Git. Se incorporaron los avances pendientes y copia verificable de documentos/notas al commit 6c02bb3. El envío a GitHub falló por resolución DNS (`Could not resolve host: github.com`); el respaldo remoto queda pendiente. Datos crudos externos, entornos, cachés y logs externos no están incluidos en esta copia Git.
+
+## 01-11-2026 — Aprobación de etiquetas V2 y protocolo final
+
+Mario comunica que su profesor aprobó usar las etiquetas V2 y solicita completar la comparación no lineal con/sin historial. Se fijó HistGradientBoosting, contextos 1/8/32 y dos candidatos de máximo de hojas (7/15), con los cinco folds heredados. Configuración compartida elegida por promedio de AUC internas entre contextos; ajuste final elegido solo desde las puntuaciones internas de train. Contraste principal 32−1 y secundario 8−1. Modelos se congelan antes de consultar validation/test; una corrida acotada sin ampliación posterior por rendimiento.
+
+Protocolo: ../repos/Tesis_MDS/resultados/activacion_v2_comparacion_final_01-11-2026/protocolo.json. La aprobación de uso no implica validación psicológica externa ni elimina la exposición histórica de las particiones. El estudio de ablación de modalidades queda fuera de esta solicitud (punto 2).
