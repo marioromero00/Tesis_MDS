@@ -49,3 +49,7 @@ Protocolo: ../repos/Tesis_MDS/resultados/activacion_v2_comparacion_final_01-11-2
 Se evaluaron 7.028 ventanas train, 2.584 validation y 2.184 test, con idénticas etiquetas/filas por contexto. Auditoría desde disco: 30 scores internos, 123 AUC por persona y 21 recargas predictivas aprobadas. Informe: ../repos/Tesis_MDS/resultados/activacion_v2_comparacion_final_01-11-2026/INFORME.md. Regla de parada cumplida, sin nueva búsqueda. Subida a GitHub continúa pendiente por fallo DNS; commits locales conservados.
 
 Limitación de cobertura de la corrida final: ninguna ventana validation/test dispone de 32 ventanas consecutivas retenidas; ctx32 en test tiene longitud media por persona de 8,75. Contexto es máximo disponible, no longitud completa garantizada. Registrado en el informe.
+
+## 01-11-2026 — Ablación V2 y cierre de temporalidad solicitados
+
+Mario solicitó ejecutar la comparación EEG/mirada/pupila frente a fusión y cerrar interpretación temporal. Protocolo de ablación guardado antes del entrenamiento: contextos 1/8/32, mismas filas V2, hiperparámetros controlados heredados de selección interna previa, sin nueva búsqueda. Se reutilizan modelos completos con hashes y se entrenan 45 variantes OOF más nueve finales unimodales. Cierre temporal en ../repos/Tesis_MDS/documentacion/Cierre_Temporalidad_V2_01-11-2026.md. No se afirma superioridad temporal general; se explicita la insuficiencia de historial completo y la diferencia entre contraste principal y secundario.

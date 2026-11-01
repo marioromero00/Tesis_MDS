@@ -1,0 +1,387 @@
+{
+  "created_utc": "2026-11-01T20:49:25.057839+00:00",
+  "protocol_sha256": "36bd8d81d0a8d9375cefb6a7d886d2534fc16d588116a60a3bb939ecdf57be90",
+  "models": [
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold1_ctx1.joblib",
+      "sha256": "3847eef2e04a8bbb21069d4af83a8c6ca677b626697503baea02a4e8ef04a304",
+      "modality": "EEG",
+      "context": 1,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold1_ctx8.joblib",
+      "sha256": "c8a0fc3bc912559b4fcfd4e58d43fe12ba497aeae013399d4ac8a4dac9daafd8",
+      "modality": "EEG",
+      "context": 8,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold1_ctx32.joblib",
+      "sha256": "f103ae61aeac3dfeaed4b92313a331aa8efb2ee8de319af49b7fd750045e6895",
+      "modality": "EEG",
+      "context": 32,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold2_ctx1.joblib",
+      "sha256": "494e2beca9342e2d86aedaa7e973bb3ffd12ca594349f970d93066bc0eebb78f",
+      "modality": "EEG",
+      "context": 1,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold2_ctx8.joblib",
+      "sha256": "cafbff05717deaf27ff4bfda4d6cc8208d32f36976cff194887f874b5a29c1b9",
+      "modality": "EEG",
+      "context": 8,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold2_ctx32.joblib",
+      "sha256": "e2fe11c77d0de1afeae260d6637070a420bc4bbb688a7c81ccd4c804d569cf2a",
+      "modality": "EEG",
+      "context": 32,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold3_ctx1.joblib",
+      "sha256": "5a0288493c16172e251a0ff92f72b3ff4576bc2421234f926e47b84b9b3f3f64",
+      "modality": "EEG",
+      "context": 1,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold3_ctx8.joblib",
+      "sha256": "85c17c0f611e4fdb71322e691cb5b70e74377396aa147e6455196fdf3fb49415",
+      "modality": "EEG",
+      "context": 8,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold3_ctx32.joblib",
+      "sha256": "3eaa5364e9084665b208611e17eaf38915e70aef4803e241fb77723bb83e2aa9",
+      "modality": "EEG",
+      "context": 32,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold4_ctx1.joblib",
+      "sha256": "974f58e9a3ee8fc26b5a4efa8b7b3ce10ea53dabff9c181779d3c4c749bac38e",
+      "modality": "EEG",
+      "context": 1,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold4_ctx8.joblib",
+      "sha256": "5648b6095d21cd04d98b815fe63cfc1479549970ddf02d4131a537d040b386bb",
+      "modality": "EEG",
+      "context": 8,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold4_ctx32.joblib",
+      "sha256": "58af28e1753174dcf1e1666c07bb8d6d9da034c9c8ef355c1d05040bb8419f32",
+      "modality": "EEG",
+      "context": 32,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold5_ctx1.joblib",
+      "sha256": "d9b75df95d16bc184798174fc417110982d229a6addf2c5dc5a2c2e0527ee821",
+      "modality": "EEG",
+      "context": 1,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold5_ctx8.joblib",
+      "sha256": "f43b2db2f524e2b5b144bfa2116f9e01cd338b42f4ccd056a6b965893c0cde84",
+      "modality": "EEG",
+      "context": 8,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_fold5_ctx32.joblib",
+      "sha256": "a5087275e439cf7db0dad311aa803618845cbbcbae2aa9bb7f9ca52ed0700195",
+      "modality": "EEG",
+      "context": 32,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_final_ctx1.joblib",
+      "sha256": "46188c8b1709d14c7645e0388d1bc99dad13329fc9573160b27c334fd4db24ff",
+      "modality": "EEG",
+      "context": 1,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_final_ctx8.joblib",
+      "sha256": "73aa995db9760d8de1bd792e4a46cdc4bbcda17f6877e7a645b4be7f96e11a23",
+      "modality": "EEG",
+      "context": 8,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/EEG_final_ctx32.joblib",
+      "sha256": "0adba6e5e321307352e26d661c64b990a8a9dc64da1adb1d8b4537c75a1eca86",
+      "modality": "EEG",
+      "context": 32,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold1_ctx1.joblib",
+      "sha256": "3ef456e16ad26b04ede24aabe6c4061774b79bbb2b3ac142e65d73b596d55a91",
+      "modality": "Eye",
+      "context": 1,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold1_ctx8.joblib",
+      "sha256": "2a0657765ea0de37e88f1d0ff93a281fddb6474023cda81f1056fa2353a79c7d",
+      "modality": "Eye",
+      "context": 8,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold1_ctx32.joblib",
+      "sha256": "4015e6c48ef228dfe37076bc7ade459a48fc1ba421634b53513d53e3ec717e60",
+      "modality": "Eye",
+      "context": 32,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold2_ctx1.joblib",
+      "sha256": "790f5cad26c98ec92e2263d3912ca2277628d4108522ff71b7887c6f4c4e2b49",
+      "modality": "Eye",
+      "context": 1,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold2_ctx8.joblib",
+      "sha256": "1e54ff5c34bbf96742b8fd846c3e59b4375fdd9ebda92506c173870dd97f94bc",
+      "modality": "Eye",
+      "context": 8,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold2_ctx32.joblib",
+      "sha256": "2c90982233c664396f304e3dc1e3a0912735ff5c0c5b8e1e66310cbe19a77be0",
+      "modality": "Eye",
+      "context": 32,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold3_ctx1.joblib",
+      "sha256": "234d18e8a6625b5f4f37ccc565f384f1d77d40a6e5bdcaa7e5b10b589c9dd0a2",
+      "modality": "Eye",
+      "context": 1,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold3_ctx8.joblib",
+      "sha256": "4bd25a3a2a0c711890bdf1f1909cb9a42351987e128b8182b7e81debacac70ce",
+      "modality": "Eye",
+      "context": 8,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold3_ctx32.joblib",
+      "sha256": "d4006764be8997dc2303bde177073522603341ee7bf72d46ec4837887f24764e",
+      "modality": "Eye",
+      "context": 32,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold4_ctx1.joblib",
+      "sha256": "5e355838963d5cb109accb7c5f53bd18a1af613df202923096d629395e70c35b",
+      "modality": "Eye",
+      "context": 1,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold4_ctx8.joblib",
+      "sha256": "f6493141f7498569d656b456f0284bc3b82c24d4a68f86d1059863d44bb3f67f",
+      "modality": "Eye",
+      "context": 8,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold4_ctx32.joblib",
+      "sha256": "951b18ac6c822fb292603c9cfc4cc8d72b6d67cbd236f91db779263c58fa9f85",
+      "modality": "Eye",
+      "context": 32,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold5_ctx1.joblib",
+      "sha256": "0581406d3d33f0faa9e4962b81a793ed7b7d23d69afff3f0fda15faeff9896fe",
+      "modality": "Eye",
+      "context": 1,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold5_ctx8.joblib",
+      "sha256": "037732a2be52ac57eb73b911e3299adbe4fcc339be02f2d851407445698120b7",
+      "modality": "Eye",
+      "context": 8,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_fold5_ctx32.joblib",
+      "sha256": "35864db6e4c63421029b62d420d295346047162cf023aa42c42dd16163716879",
+      "modality": "Eye",
+      "context": 32,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_final_ctx1.joblib",
+      "sha256": "8bfb965db7c4972c413bbfb6d079593d598ba632988a8c7e36e0158f3fff66e4",
+      "modality": "Eye",
+      "context": 1,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_final_ctx8.joblib",
+      "sha256": "57136763c772790dd77efa33cfee25af8533fa9d96763d2e72c4f6c9c1d8c03c",
+      "modality": "Eye",
+      "context": 8,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Eye_final_ctx32.joblib",
+      "sha256": "d86e22260181877bb8af2cf6737d08e78964f595e774e3eb7ca5b1335c0ad02c",
+      "modality": "Eye",
+      "context": 32,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold1_ctx1.joblib",
+      "sha256": "23ea454248571055894596e56bd6abcb9035921c50f47f13fa5c0131dc60c6c2",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold1_ctx8.joblib",
+      "sha256": "e830a88f37d4943d0098ca1d391d76c37784b16e70e82eb6edb2c82d11d5174f",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold1_ctx32.joblib",
+      "sha256": "469a02fc32ef7a02a9c2607f2a68d2e4f10180387f6ed617dc32b8495535a78a",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": 1
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold2_ctx1.joblib",
+      "sha256": "522328d41b6c310acf6e2020811d49a24be86dba09bb27bb45ba5eacb18baad8",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold2_ctx8.joblib",
+      "sha256": "dacd13f67060e670db713179a32adcf6f5a301d033bd9d385ef261115a3235bf",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold2_ctx32.joblib",
+      "sha256": "65c5937c1f3dc9730409869f0a8579b834e461c5b567703394d8a943f06a12e2",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": 2
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold3_ctx1.joblib",
+      "sha256": "4af0e4d2655778a1908f8baad5ed5f840ffd48ddc10374549096a16c54e5e300",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold3_ctx8.joblib",
+      "sha256": "810a017852f1b1abc7af94d87b3e12b975a56edc52550a12c0ce81d6e37be7c7",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold3_ctx32.joblib",
+      "sha256": "11724d8d02bc5be62a4bc139e0e59bfef69ace973649a2793eeb08393034126a",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": 3
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold4_ctx1.joblib",
+      "sha256": "cecfcc8ef0603a35ae6896193ef64edc65ceff2896f52869248b58cd278af3e0",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold4_ctx8.joblib",
+      "sha256": "848a63bb7618a3b77a5fe84b575c19a9413d78d21dba318dd1ad9cd1065d5b7c",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold4_ctx32.joblib",
+      "sha256": "d59f917e1f17d5e38c258d64ffe35dd870d213a3cee6e1726628711a732620ea",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": 4
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold5_ctx1.joblib",
+      "sha256": "5748374158a09eaa4c4f7967f3780cdfb8a9c1e2631d293fbc87dd3ae4bec4d1",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold5_ctx8.joblib",
+      "sha256": "8e480223516548839a8f0a2b6aa04f45b2f805a58fa483ecf82f5daafbcf86a4",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_fold5_ctx32.joblib",
+      "sha256": "ce2204c7ba938e27266079c5fa5000f4f05d2bbdcc8daa7c08c35e00325c74ba",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": 5
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_final_ctx1.joblib",
+      "sha256": "33846a2272aa6b46d3adcd272c5926c8d87094bb1bc9f376629ebce96f2d1aee",
+      "modality": "Pupil",
+      "context": 1,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_final_ctx8.joblib",
+      "sha256": "170f312e87adf3ceaa04adc57ebda748c3205cbb78cf5484694614c1eb5dc379",
+      "modality": "Pupil",
+      "context": 8,
+      "fold": "final"
+    },
+    {
+      "path": "resultados/ablacion_modalidades_v2_01-11-2026/modelos/Pupil_final_ctx32.joblib",
+      "sha256": "2b46854b4f5cc8edb125c007db1cd1707c64f72904f41543e55d975f27b76e40",
+      "modality": "Pupil",
+      "context": 32,
+      "fold": "final"
+    }
+  ],
+  "validation_evaluated": false,
+  "test_evaluated": false,
+  "final_leaves": 15
+}
