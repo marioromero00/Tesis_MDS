@@ -37,3 +37,7 @@ El contraste secundario de 8 ventanas obtuvo en test ΔAUC +0,0329 [+0,0076; +0,
 Las AUC absolutas de los tres modelos en test tienen intervalos que incluyen 0,50. Por tanto, la diferencia pareada favorable de 8 ventanas no demuestra por sí sola capacidad predictiva robusta ni validez psicológica. No hay evidencia consistente suficiente para afirmar superioridad temporal general en activación V2.
 
 Auditoría desde disco aprobada: 30 puntuaciones internas recalculadas, 123 AUC individuales y 21 comprobaciones de predicción tras recarga. No se ampliará la búsqueda a partir de esta evaluación.
+
+### Historial realmente disponible
+
+El contexto 32 significa **hasta** 32 ventanas, no 32 ventanas completas. Por la retención de etiquetas V2 y el reinicio en discontinuidades, ninguna ventana de validation/test tuvo las 32 disponibles. El promedio por persona de longitud efectiva en test fue 8,75 ventanas para ctx32 y 5,06 para ctx8; ctx8 estuvo completo en 40,84% de las ventanas, promediando personas. En train ctx32 solo estuvo completo en 0,39%. Esta restricción limita la interpretación de historial largo: el estudio compara agregaciones con límites máximos distintos sobre secuencias cortas. No demuestra cómo rendiría un modelo con 32 ventanas completas. Ver cobertura_train.csv, cobertura_validation.csv y cobertura_test.csv.
