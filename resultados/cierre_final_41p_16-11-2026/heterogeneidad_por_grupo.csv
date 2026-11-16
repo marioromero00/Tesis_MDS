@@ -1,0 +1,9 @@
+task,grupo,contraste,delta,low95,high95,mejoran
+atencion,train (25),hgb_c32 − hgb_c1,0.0228,0.0139,0.0314,22/25
+atencion,train (25),gru_c32 − gru_c1,0.004,-0.0104,0.0174,15/25
+atencion,validación+test (16),hgb_c32 − hgb_c1,0.0321,0.0159,0.0481,14/16
+atencion,validación+test (16),gru_c32 − gru_c1,0.0146,-0.0096,0.0362,11/16
+activacion,train (25),hgb_c32 − hgb_c1,0.0551,0.0122,0.1005,17/25
+activacion,train (25),gru_c32 − gru_c1,0.0453,0.0065,0.0828,17/25
+activacion,validación+test (16),hgb_c32 − hgb_c1,0.0014,-0.052,0.0549,7/16
+activacion,validación+test (16),gru_c32 − gru_c1,0.0587,0.0143,0.1015,11/16

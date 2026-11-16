@@ -124,3 +124,14 @@ Atención: el resumen del historial (HGB hasta 32 − sin historial) es positivo
 Activación: AUC de train 0,50–0,53. Las mejoras de la GRU en validación (+0,091) y test (+0,084) no aparecen en train (−0,016); no se toman como señal.
 
 Hipótesis: sin ventaja consistente en ninguno de los dos resultados. Auditoría independiente de resultados: PASA en los seis puntos. Experimentación cerrada; lo pendiente es escritura y las decisiones con el profesor guía.
+
+
+## 2026-11-16 — Análisis final con 41 personas
+
+Resultados: repos/Tesis_MDS/resultados/cierre_final_41p_16-11-2026 (INFORME.md). Registrado antes de correr (commit 1bbb083); CV agrupada por persona en las 41, configuración congelada de V3, sin búsqueda; Holm, permutación de signos y equivalencia ±0,02.
+
+Atención: HGB hasta 32 − sin historial +0,026 [+0,018; +0,035], 36/41, p Holm 0,00001 → respaldo (no "relevante": límite inferior < 0,02). Se repite en las 25 de train (+0,023) y en las 16 de validación+test (+0,032). La GRU no agrega sobre el resumen (+0,008, IC 90 % dentro de ±0,02) y queda 0,040 por debajo del HGB.
+
+Activación: +0,034 [−0,001; +0,069], p Holm 0,066 → inconcluso. Secundario: GRU 32 − GRU 1 +0,051 [+0,021; +0,080], sin corrección.
+
+Hipótesis: evidencia mixta, apoyo parcial (criterio del manuscrito). Experimentación cerrada.
