@@ -47,11 +47,13 @@ HGB = dict(max_iter=300, l2_regularization=10., learning_rate=.05, min_samples_l
 LEAVES = [7, 15]
 GRU = dict(hidden=64, dropout=.3, epochs=12, batch=256, lr=1e-3, weight_decay=1e-2, seeds=[1, 2, 3])
 THRESHOLD = .5
-STRATEGIES = ['hgb_c1', 'hgb_c8', 'hgb_c32', 'hgb_c32_etiq', 'gru_c1', 'gru_c32', 'tardia_c1', 'tardia_c32']
+STRATEGIES = ['hgb_c1', 'hgb_c5', 'hgb_c8', 'hgb_c32', 'hgb_c32_etiq', 'gru_c1', 'gru_c32', 'tardia_c1', 'tardia_c32']
 CONTRASTS = [  # (nombre, con historial, sin historial, rol)
     ('gru_orden', 'gru_c32', 'gru_c1', 'principal A'),
     ('hgb_resumen', 'hgb_c32', 'hgb_c1', 'principal B'),
     ('hgb_c8', 'hgb_c8', 'hgb_c1', 'secundario'),
+    ('hgb_c5_soporte', 'hgb_c5', 'hgb_c1', 'control: iguala el soporte de 6 s de la etiqueta de activación'),
+    ('hgb_c32_vs_c5', 'hgb_c32', 'hgb_c5', 'secundario: historial más allá del soporte de la etiqueta'),
     ('historial_completo', 'hgb_c32', 'hgb_c32_etiq', 'secundario'),
     ('tardia_vs_temprana_c1', 'tardia_c1', 'hgb_c1', 'secundario'),
     ('tardia_vs_temprana_c32', 'tardia_c32', 'hgb_c32', 'secundario'),
@@ -64,7 +66,9 @@ def plan():
 
 def inputs():
     paths = [SOURCE, PARTS, LABELS_ACT, TEACHER, FOLDS, *SPATIAL, Path(__file__),
-             ROOT / 'scripts/temporales_core.py', ROOT / 'scripts/evaluar_test_temporalidad_eeg_v2.py']
+             ROOT / 'scripts/temporales_core.py', ROOT / 'scripts/evaluar_test_temporalidad_eeg_v2.py',
+             ROOT / 'scripts/reconstruir_profesor_atencion_binaria.py', ROOT / 'scripts/evaluar_temporalidad_eeg_v2.py',
+             ROOT / 'scripts/baselines_estaticos.py', ROOT / 'scripts/eeg_por_canal_v2.py', ROOT / 'scripts/atencion_binaria.py']
     return {str(p.relative_to(ROOT)): digest(p) for p in paths}
 
 
@@ -105,7 +109,7 @@ class Task:
         assert not set(self.cols) & set(FORBIDDEN[task])
         self.all = data[KEYS + ['split', 'source_row'] + self.cols].copy().reset_index(drop=True)
         self.all['y'] = data[f'y_{task}'].to_numpy()
-        self.hist = {c: history_indices(self.all, c) for c in [8, 32]}
+        self.hist = {c: history_indices(self.all, c) for c in [5, 8, 32]}
         lab = self.all[self.all.y.notna()].copy()
         self.lab_pos = lab.index.to_numpy()  # posición de cada fila etiquetada en self.all
         lab = lab.reset_index(drop=True)
@@ -228,7 +232,23 @@ def prepare():
                   'del fold. Nada se elige con validación ni test.',
         metrics='AUC macro por persona; BA, macro-F1 y recall por clase con umbral 0,5; IC 95 % bootstrap por persona '
                 '(20000), diferencias pareadas por persona. Exploratorio: validación y test ya consultados.',
-        decision='Ventaja consistente = IC de la diferencia sobre 0 en validación y en test (criterios del manuscrito).'))
+        decision='Métrica de decisión: AUC macro por persona. Ventaja consistente = IC 95 % de la diferencia pareada sobre 0 '
+                 'en validación y en test (criterios del manuscrito); se reporta además cuántas personas mejoran. '
+                 'BA, macro-F1 y recall son descriptivos.',
+        amendment='Versión 2 del protocolo (16-11-2026), registrada antes de cualquier evaluación externa. La versión 1 '
+                  '(resultados/cierre_v3_16-11-2026_abortado_fusion) se detuvo durante el fold 1 de train por una auditoría '
+                  'de código: la fusión tardía no recibía los indicadores de faltantes que sí recibía la temprana. Se corrige y '
+                  'se agrega el control hgb_c5, que iguala el soporte de 6 s de la etiqueta de activación.',
+        limitations=['Variables transductivas por persona: z de GSR y pupila normalizadas con la sesión completa y componente '
+                     'tónica GSR con filtro bidireccional; el historial es causal a nivel de ventana, no de muestra.',
+                     'La etiqueta de activación integra 5 ventanas (6 s): parte de la ventaja de c8/c32 puede deberse a igualar '
+                     'ese soporte; por eso el control hgb_c5.',
+                     'El PCA del Modelo Profesor de atención se ajustó con las 25 personas de train: el OOF de atención tiene '
+                     'una fuga leve de etiquetas entre folds; validación y test no se ven afectados.',
+                     'En atención casi todas las ventanas tienen etiqueta: el contraste historial_completo solo es informativo '
+                     'en activación. Los segmentos son cortos, así que c32 rara vez se completa.',
+                     'Validación y test (8 personas cada uno) ya se consultaron en V2; todo es exploratorio y el bootstrap '
+                     'percentil con 8 personas puede tener cobertura menor al 95 %.']))
     print('Protocolo registrado', OUT / 'protocolo.json')
 
 
@@ -239,16 +259,27 @@ def run_task(task, final=False, external=None):
     folds = plan()['folds']
     train_people = sorted(T.lab[T.lab.split.eq('train')].participant.unique())
     preds, trials, sel = [], [], []
-    mods = {k: [T.cols.index(c) for c in v] for k, v in GROUPS[task].items()}
 
     def zfit(fit_rows):
         prep = preprocessor().fit(T.lab.iloc[fit_rows][T.cols])
         return prep, prep.transform(T.all[T.cols]).astype('float32'), prep.transform(T.lab[T.cols]).astype('float32')
 
-    def strategies(fit_rows, ev_rows, leaves, Z_all, Z_lab, tag, save=None):
-        y, w = T.lab.y.to_numpy()[fit_rows], weights(T.lab.iloc[fit_rows])
+    def modality_columns(prep):
+        """Columnas de salida de cada señal: sus variables y sus propios indicadores de faltantes."""
+        ind = prep.named_steps['imputer'].indicator_.features_
+        n = len(T.cols)
         out = {}
-        for name, kind in [('hgb_c1', 1), ('hgb_c8', 8), ('hgb_c32', 32), ('hgb_c32_etiq', 'etiq')]:
+        for k, v in GROUPS[task].items():
+            own = [T.cols.index(c) for c in v]
+            out[k] = own + [n + j for j, f in enumerate(ind) if f in set(own)]
+        assert sorted(sum(out.values(), [])) == list(range(n + len(ind)))
+        return out
+
+    def strategies(fit_rows, ev_rows, leaves, Z_all, Z_lab, tag, prep, save=None):
+        y, w = T.lab.y.to_numpy()[fit_rows], weights(T.lab.iloc[fit_rows])
+        mods = modality_columns(prep)
+        out = {}
+        for name, kind in [('hgb_c1', 1), ('hgb_c5', 5), ('hgb_c8', 8), ('hgb_c32', 32), ('hgb_c32_etiq', 'etiq')]:
             m = fit_hgb(hgb_matrix(T, Z_all, Z_lab, fit_rows, kind), y, w, leaves)
             out[name] = m.predict_proba(hgb_matrix(T, Z_all, Z_lab, ev_rows, kind))[:, 1]
             if save: joblib.dump(m, save / f'{name}.joblib', compress=3)
@@ -282,7 +313,6 @@ def run_task(task, final=False, external=None):
             local = []
             for c in [1, 8, 32]:
                 for leaves in LEAVES:
-                    yv = T.lab.y.to_numpy()[iv]
                     m = fit_hgb(hgb_matrix(T, Za, Zl, inner, c), T.lab.y.to_numpy()[inner], weights(T.lab.iloc[inner]), leaves)
                     p = m.predict_proba(hgb_matrix(T, Za, Zl, iv, c))[:, 1]
                     auc = macro_auc(T.lab.iloc[iv], p)
@@ -290,8 +320,8 @@ def run_task(task, final=False, external=None):
             trials += local
             leaves = int(pd.DataFrame(local).groupby('leaves').auc.mean().sort_index().idxmax())
             sel.append(dict(fold=fold['fold'], leaves=leaves))
-            _, Za, Zl = zfit(fit)
-            out = strategies(fit, ev, leaves, Za, Zl, f'fold{fold["fold"]}')
+            prep, Za, Zl = zfit(fit)
+            out = strategies(fit, ev, leaves, Za, Zl, f'fold{fold["fold"]}', prep)
             base = T.lab.iloc[ev][['source_row', 'participant', 'y']]
             for name, p in out.items():
                 preds.append(base.assign(prob=p, strategy=name, fold=fold['fold'], split='oof_train', task=task))
@@ -303,12 +333,12 @@ def run_task(task, final=False, external=None):
     trials = pd.read_csv(OUT / f'busqueda_interna_{task}.csv')
     leaves = int(trials.groupby('leaves').auc.mean().sort_index().idxmax())
     fit = T.rows(train_people)
-    _, Za, Zl = zfit(fit)
+    prep, Za, Zl = zfit(fit)
     ev_rows = np.flatnonzero(T.lab.split.isin(external).to_numpy())
     assert set(T.lab.iloc[ev_rows].participant).isdisjoint(train_people)
     save = OUT / 'modelos' / task
     save.mkdir(exist_ok=True)
-    out = strategies(fit, ev_rows, leaves, Za, Zl, 'final', save=save)
+    out = strategies(fit, ev_rows, leaves, Za, Zl, 'final', prep, save=save)
     base = T.lab.iloc[ev_rows][['source_row', 'participant', 'y', 'split']]
     return leaves, pd.concat([base.assign(prob=p, strategy=n, task=task) for n, p in out.items()])
 
@@ -337,6 +367,7 @@ def evaluate(task):
     write(OUT / f'congelacion_previa_{task}.json', dict(
         created_utc=pd.Timestamp.now(tz='UTC').isoformat(), protocol_sha256=digest(OUT / 'protocolo.json'),
         search_sha256=digest(OUT / f'busqueda_interna_{task}.csv'), oof_sha256=digest(OUT / f'oof_{task}.csv.gz'),
+        selections_sha256=digest(OUT / f'selecciones_{task}.csv'),
         note='Decisiones cerradas antes de mirar validación/test; el modelo final se entrena con todo train.'))
     leaves, pred = run_task(task, final=True, external=['validation', 'test'])
     pred.to_csv(dest, index=False)

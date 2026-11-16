@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-16T13:49:42.273945+00:00",
+  "created_utc": "2026-11-16T13:55:30.835266+00:00",
   "approval": "Mario solicita cerrar la experimentación con las mejoras A-D, 16-11-2026",
   "inputs": {
     "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
@@ -10,9 +10,14 @@
     "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
     "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
     "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6",
-    "scripts/cierre_experimental_v3.py": "992603387653cc06944c654126474fd7112a4d4dd18eecc69161c6e651889841",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
     "scripts/temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
-    "scripts/evaluar_test_temporalidad_eeg_v2.py": "c0e229ec16455993c180aea5815778870a21bf1b8c77e67047770a18d4fd7c07"
+    "scripts/evaluar_test_temporalidad_eeg_v2.py": "c0e229ec16455993c180aea5815778870a21bf1b8c77e67047770a18d4fd7c07",
+    "scripts/reconstruir_profesor_atencion_binaria.py": "0b8f08dd083e52bd22ebe727391b0e20495b49ce34efcdcbb13e4268784e4894",
+    "scripts/evaluar_temporalidad_eeg_v2.py": "2005c77c0703834c089b6ad7a057e8afc08c6d67183586d8ec16586585e4b67e",
+    "scripts/baselines_estaticos.py": "abcad957cd11f87c17fab5549c55144a32889b60c34f59d668ff13d93cf1b910",
+    "scripts/eeg_por_canal_v2.py": "ab9a47c6b2230b55b5361d2446ea755cfd6b07b9082365d8a4d3cedb3b79a489",
+    "scripts/atencion_binaria.py": "4a013a727f170f369fbeb74623b1891611fd89bdb0127a130961c0245c73c073"
   },
   "groups": {
     "atencion": {
@@ -785,6 +790,7 @@
   "threshold": 0.5,
   "strategies": [
     "hgb_c1",
+    "hgb_c5",
     "hgb_c8",
     "hgb_c32",
     "hgb_c32_etiq",
@@ -811,6 +817,18 @@
       "hgb_c8",
       "hgb_c1",
       "secundario"
+    ],
+    [
+      "hgb_c5_soporte",
+      "hgb_c5",
+      "hgb_c1",
+      "control: iguala el soporte de 6 s de la etiqueta de activación"
+    ],
+    [
+      "hgb_c32_vs_c5",
+      "hgb_c32",
+      "hgb_c5",
+      "secundario: historial más allá del soporte de la etiqueta"
     ],
     [
       "historial_completo",
@@ -1129,5 +1147,13 @@
   },
   "selection": "Hojas HGB [7,15] elegidas en validación interna de train por fold (compartidas entre contextos 1/8/32 con historial completo) y para el final con la media de todos los folds. GRU sin búsqueda: configuración fija; 3 semillas promediadas. Fusión tardía: promedio simple de HGB por señal con las hojas del fold. Nada se elige con validación ni test.",
   "metrics": "AUC macro por persona; BA, macro-F1 y recall por clase con umbral 0,5; IC 95 % bootstrap por persona (20000), diferencias pareadas por persona. Exploratorio: validación y test ya consultados.",
-  "decision": "Ventaja consistente = IC de la diferencia sobre 0 en validación y en test (criterios del manuscrito)."
+  "decision": "Métrica de decisión: AUC macro por persona. Ventaja consistente = IC 95 % de la diferencia pareada sobre 0 en validación y en test (criterios del manuscrito); se reporta además cuántas personas mejoran. BA, macro-F1 y recall son descriptivos.",
+  "amendment": "Versión 2 del protocolo (16-11-2026), registrada antes de cualquier evaluación externa. La versión 1 (resultados/cierre_v3_16-11-2026_abortado_fusion) se detuvo durante el fold 1 de train por una auditoría de código: la fusión tardía no recibía los indicadores de faltantes que sí recibía la temprana. Se corrige y se agrega el control hgb_c5, que iguala el soporte de 6 s de la etiqueta de activación.",
+  "limitations": [
+    "Variables transductivas por persona: z de GSR y pupila normalizadas con la sesión completa y componente tónica GSR con filtro bidireccional; el historial es causal a nivel de ventana, no de muestra.",
+    "La etiqueta de activación integra 5 ventanas (6 s): parte de la ventaja de c8/c32 puede deberse a igualar ese soporte; por eso el control hgb_c5.",
+    "El PCA del Modelo Profesor de atención se ajustó con las 25 personas de train: el OOF de atención tiene una fuga leve de etiquetas entre folds; validación y test no se ven afectados.",
+    "En atención casi todas las ventanas tienen etiqueta: el contraste historial_completo solo es informativo en activación. Los segmentos son cortos, así que c32 rara vez se completa.",
+    "Validación y test (8 personas cada uno) ya se consultaron en V2; todo es exploratorio y el bootstrap percentil con 8 personas puede tener cobertura menor al 95 %."
+  ]
 }
