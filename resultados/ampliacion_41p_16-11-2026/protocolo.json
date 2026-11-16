@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-11-16T17:21:14.110955+00:00",
+  "approval": "Mario elige E1-E6, 16-11-2026. Registrado antes de correr.",
+  "inputs": {
+    "scripts/ampliacion_41p.py": "2dec73729bb4db2af6f36b37468bf04fedee11106ad6c733e7f4ecbc1cebd193",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "resultados/cierre_final_41p_16-11-2026/protocolo.json": "7fb76d6b2b2b0fb73e50db01ee8f8b0109f31181f2b8adb4107a412d2b5906d7",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_atencion.csv.gz": "49ee7f032e0139cda07de86e3d1471a3a6bda9c6d47dc91e65e7a0fea5179567",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_activacion.csv.gz": "5935717ff71a6e45fc59d860713bd69677301e5d049afce566c5d05a63fcf84c"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds": [
+    [
+      "P19",
+      "P34",
+      "P4",
+      "P41",
+      "P46",
+      "P9"
+    ],
+    [
+      "P12",
+      "P15",
+      "P26",
+      "P28",
+      "P43"
+    ],
+    [
+      "P18",
+      "P31",
+      "P36",
+      "P45",
+      "P6"
+    ],
+    [
+      "P16",
+      "P2",
+      "P24",
+      "P3",
+      "P32"
+    ],
+    [
+      "P21",
+      "P39",
+      "P40",
+      "P47",
+      "P8"
+    ],
+    [
+      "P10",
+      "P13",
+      "P27",
+      "P33",
+      "P5"
+    ],
+    [
+      "P22",
+      "P35",
+      "P37",
+      "P44",
+      "P48"
+    ],
+    [
+      "P11",
+      "P20",
+      "P23",
+      "P30",
+      "P38"
+    ]
+  ],
+  "lag": 5,
+  "calib_seconds": {
+    "calib_30s": 30,
+    "calib_1min": 60,
+    "calib_2min": 120,
+    "calib_5min": 300,
+    "calib_sesion": 1000000000.0
+  },
+  "mlp": {
+    "hidden": 64,
+    "enc": 32,
+    "dropout": 0.3,
+    "epochs": 15,
+    "batch": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "placebo_seed": 20261118,
+  "perm_repeats": 3,
+  "primary": "E1 lag real − lag placebo, ambas tareas, Holm; respaldo si p Holm < 0,05 e IC95 inferior > 0",
+  "secondary": "E1 lag real − sin historial; E2 cada M − sin historial; E3 intermedia − temprana, intermedia − tardía, tardía − temprana. IC 95 % y permutación de signos sin corregir; descriptivos.",
+  "descriptive": "E4, E5, E6 sin pruebas de hipótesis.",
+  "note": "Sin historial (hgb_c1) se reutiliza del análisis final (mismos folds, configuración e hiperparámetros)."
+}
