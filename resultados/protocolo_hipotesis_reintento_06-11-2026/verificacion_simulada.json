@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "replications": 100000,
+  "assumption": "iid normal participant differences; does not validate this assumption empirically",
+  "checks": [
+    {
+      "task": "activacion",
+      "pilot": "oof_train",
+      "n": 767,
+      "analytic": 0.9000858601716951,
+      "simulated": 0.90128
+    },
+    {
+      "task": "activacion",
+      "pilot": "test",
+      "n": 101,
+      "analytic": 0.9028678086226262,
+      "simulated": 0.90314
+    },
+    {
+      "task": "activacion",
+      "pilot": "validation",
+      "n": 72,
+      "analytic": 0.9002687761245908,
+      "simulated": 0.90194
+    },
+    {
+      "task": "atencion",
+      "pilot": "test_historico",
+      "n": 62,
+      "analytic": 0.903539391290457,
+      "simulated": 0.90346
+    }
+  ]
+}

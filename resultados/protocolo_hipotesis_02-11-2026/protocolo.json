@@ -1,0 +1,29 @@
+{
+  "status": "propuesta prospectiva; margen y N aún no definitivos",
+  "margin_candidate": 0.02,
+  "claim": "Delta AUC > margen en atención Y activación; restringida a modelos y pseudoetiquetas especificados",
+  "original_claim": "superioridad >0; el margen práctico >0 es una reformulación explícita, no reemplazo retrospectivo",
+  "primary_context": 32,
+  "secondary_context": 8,
+  "unit": "participante independiente",
+  "familywise_alpha": 0.05,
+  "ci_each": 0.975,
+  "tail_alpha": 0.0125,
+  "target_power_each": 0.9,
+  "joint_power_lower_bound": 0.8,
+  "dropout_scenario": 0.2,
+  "decision": {
+    "support": "ambos límites inferiores > margen",
+    "refute": "al menos un límite superior < margen",
+    "inconclusive": "cualquier otro caso"
+  },
+  "sources": {
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas_personas.csv": "1d8cebf8488c31b359e76e8177ab43906104627a471972d74efed9b2f517f054",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/metricas_participantes.csv": "8f35c96989855bf40fb55d54f942b3f6cb2a951c4b8db023d0653e495709a4de",
+    "scripts/planificar_contraste_hipotesis.py": "f12236a213e7e513d5836cdb9bbb7c20a58eb765cd3ffd6613d880601c539f3e"
+  },
+  "references": [
+    "https://www.stat.math.ethz.ch/R-manual/R-patched/RHOME/library/stats/html/power.t.test.html",
+    "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm"
+  ]
+}

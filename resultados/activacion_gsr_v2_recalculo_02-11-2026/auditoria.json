@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "internal_fits": 30,
+  "outer_models": 15,
+  "final_models": 3,
+  "same_rows_labels": true,
+  "inputs_unchanged": true,
+  "freeze_sha256": "008a1973de994e00c67287c09647159d7ef8cf6815276801bc56e089e19e05ee",
+  "train_windows": 7028,
+  "validation_windows": 2584,
+  "test_windows": 2184
+}

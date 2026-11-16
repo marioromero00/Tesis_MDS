@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "legacy_scores_reproduced": true,
+  "legacy_max_absolute_error": {
+    "arousal_score_2s": 4.819895274010833e-07,
+    "arousal_score_6s": 2.917149188874646e-07
+  },
+  "legacy_displaced_component_rows": 25498,
+  "legacy_total_rows": 25992,
+  "v2_reproduced": true,
+  "independent_normalization_verified": true,
+  "temporal_support_verified": true,
+  "source_and_partition_unchanged": true,
+  "labelled": 11796,
+  "audit_script_sha256": "50b09ac090fb4d610f791eae597fb27c02e9a64c3d9fe92da9f70e6bae2defe2",
+  "label_file_sha256": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d"
+}

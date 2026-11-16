@@ -1,0 +1,55 @@
+{
+  "source_sha256": {
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/metricas.csv": "26e2ec73c0b633e545956349c5df3867f72a7d24bd3ae9677b1ce6d72cfd193d",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/predicciones_test.csv.gz": "bdbb8442a12ea30c8eaa2a3779278535c03595708194adcc5b654b604a312990",
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas.csv": "14e23c488ec3cd0c235bde0ee27e44af5503d25e9089c0b904627e748507eda8",
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/predicciones_externas.csv.gz": "cbfb60ef6fd9c25718784f84456de8d56a2e84f34b494ba4ea227c2e751066f5",
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/contrastes.csv": "63cdc4779849f5fe3b4b2f60776c94f7f2813213f5cc59543fc0964a04684bf3",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/contrastes.csv": "78e128797b4227c0de58b71f85ee80df28926261c5704dbc6976b44d609cf6e1",
+    "resultados/comparacion_comun_binaria_30-10-2026/contrastes.csv": "1388bab190881249313d81e7eb4845d7f94041aaf6fbde687449ddea50901e4d",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/resumen_personas.csv": "25d8ccb8bd97d610b226c8f845e943eef0a674dbd9531e636ff06890d496f5c3",
+    "resultados/ablacion_modalidades_v2_01-11-2026/metricas.csv": "d9140cffe70881a057970f0bf821db7a13b6a0123b6c90a46ae0e9442d31dd6f",
+    "resultados/ablacion_modalidades_v2_01-11-2026/contrastes_fusion.csv": "792c005ee837405114c75cddc501adcec66d20a97f0105a2dead67c1ad851452",
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/cobertura_test.csv": "d2cfb1022ddda82ac6cf3203dfa6c58c6c47fe4cc88d594cd6a1c7fcddca54d4"
+  },
+  "roc_auc_checks": [
+    {
+      "chart": "roc_atencion",
+      "model": "inductivo_ctx1",
+      "auc": 0.674398748042504,
+      "participants": 8
+    },
+    {
+      "chart": "roc_atencion",
+      "model": "inductivo_estatico_pareado",
+      "auc": 0.6601793808162765,
+      "participants": 8
+    },
+    {
+      "chart": "roc_atencion",
+      "model": "inductivo_ctx32",
+      "auc": 0.6879008917539595,
+      "participants": 8
+    },
+    {
+      "chart": "roc_activacion",
+      "model": "1",
+      "auc": 0.5140866231607639,
+      "participants": 8
+    },
+    {
+      "chart": "roc_activacion",
+      "model": "8",
+      "auc": 0.5469644310051817,
+      "participants": 8
+    },
+    {
+      "chart": "roc_activacion",
+      "model": "32",
+      "auc": 0.5363195467356733,
+      "participants": 8
+    }
+  ],
+  "confidence_intervals": "from archived participant bootstrap; no new inference",
+  "rendering": "Matplotlib; SVG editable and embedded PNG for offline HTML"
+}

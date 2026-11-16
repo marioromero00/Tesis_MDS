@@ -1,0 +1,8 @@
+{
+  "busqueda_interna.csv": "exact_match",
+  "metricas.csv": "exact_match",
+  "contrastes.csv": "exact_match",
+  "metricas_personas.csv": "exact_match",
+  "predicciones_externas.csv.gz": "exact_match",
+  "predicciones_oof.csv.gz": "exact_match"
+}

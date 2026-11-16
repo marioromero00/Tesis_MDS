@@ -59,3 +59,55 @@ Mario solicitó ejecutar la comparación EEG/mirada/pupila frente a fusión y ce
 54 modelos nuevos (45 OOF y nueve finales), con hiperparámetros heredados de selección interna del modelo completo. Mismas etiquetas V2, participantes y filas. Auditoría aprobada: 63 recargas, 492 AUC y 27 contrastes. Test: EEG 0,4982/0,5123/0,5173; mirada 0,5151/0,5129/0,5215; pupila 0,5172/0,5461/0,5386; fusión 0,5141/0,5470/0,5363 (contextos1/8/32). Los nueve intervalos pareados de fusión en test incluyen cero; no hay ventaja clara sobre las modalidades individuales. Solo validation contexto32 frente a mirada tiene intervalo de diferencia positivo, sin reproducirse en test. No elegir un ganador ni ajustar de nuevo usando test.
 
 Cierre conjunto: ../repos/Tesis_MDS/documentacion/Cierre_Experimental_V2_01-11-2026.md. Cierre temporal: Cierre_Temporalidad_V2_01-11-2026.md en la misma carpeta. No se obtiene apoyo conjunto suficiente a superioridad temporal multimodal; resultados exploratorios, sin validar constructos psicológicos. Subida GitHub pendiente por DNS; commits locales conservados.
+
+
+## 2026-11-02 — Reintento y auditoría GSR V2
+
+
+## Auditoría independiente del 2 de noviembre de 2026
+
+Se confirmó un error de alineación en el generador histórico `scripts/preparar_modelado.py`: `groupby(..., group_keys=False).apply(...).reset_index(level=0, drop=True)` sustituye los índices originales por posiciones en el orden de los grupos. En estas entradas, 25.498 de 25.992 posiciones de componentes quedan desplazadas. Este denominador corresponde al archivo completo, incluyendo personas fuera de las particiones principales; no equivale al número de etiquetas binarias que cambian.
+
+El generador histórico reprodujo los scores archivados de activación con errores máximos absolutos de 4,82e-7 (2 s) y 2,92e-7 (6 s), compatibles con la precisión de exportación. Por tanto, el problema afecta efectivamente a esos resultados guardados. Los AUC anteriores de activación basados en esas etiquetas no permiten respaldar ni rechazar la hipótesis; deben recalcularse con el profesor corregido. El patrón también aparece en el profesor histórico de atención, pero esta auditoría no certifica ni invalida las reconstrucciones posteriores de atención.
+
+La V2 conserva la identidad de las ventanas mediante asignación por índice. Se reprodujeron sus scores y etiquetas guardadas a tolerancia 1e-12, se verificó la normalización con un cálculo independiente y se comprobó el soporte temporal de cada etiqueta. Se preservaron hashes de la fuente y partición. Evidencia: `auditoria_independiente_02-11-2026.json`; ejecución reproducible: `.venv/bin/python scripts/auditar_etiquetas_gsr_v2.py`. El generador histórico se conserva como evidencia y no debe utilizarse para nuevas etiquetas de activación; usar `reconstruir_etiquetas_gsr_calidad_v2.py`.
+
+Quedan 11.796 etiquetas de 22.211 ventanas (53,1%). Las otras 10.415 corresponden a 9.995 con historial insuficiente, 401 con cobertura/flag inválido y 19 empates. La mayor pérdida proviene de exigir cinco ventanas consecutivas dentro del mismo estímulo/segmento, no de mala calidad GSR. P4 conserva 26 de 459 ventanas. Las 41 personas conservan ambas clases. Las clases aproximadamente equilibradas son consecuencia del umbral por mediana y no demuestran validez psicológica.
+
+Siguiente evaluación: entrenar desde cero los modelos estático y temporal sobre las mismas filas V2 y particiones, sin cruzar huecos, y comparar AUC y diferencias con incertidumbre por participante. No se calcularon nuevos AUC en esta reconstrucción; el test previamente consultado continúa siendo exploratorio.
+
+
+## 2026-11-02 — Recálculo solicitado de AUC con GSR V2
+Resultados: resultados/activacion_gsr_v2_recalculo_02-11-2026
+
+
+## Interpretación de la hipótesis y cierre de auditoría (02-11-2026)
+
+Reentrenamiento completo: 30 ajustes internos, 15 modelos OOF y tres finales, con las mismas etiquetas GSR V2, filas y particiones. La auditoría independiente recalculó 123 AUC por participante, verificó 30 scores internos y realizó 21 comprobaciones de predicciones desde modelos guardados. Búsqueda, predicciones y métricas reproducen exactamente la ejecución V2 previa; ver `reproducibilidad.json` y `auditoria_desde_disco.json`.
+
+La comparación principal (hasta 32 ventanas frente a actual) obtiene ΔAUC test +0,02223, IC descriptivo 95% [-0,01300; +0,05852]. No permite afirmar superioridad temporal ni demostrar ausencia de efecto. La secundaria (hasta 8 ventanas) obtiene +0,03288 [+0,00763; +0,05916], con mejora en 7/8 personas, pero no se confirma en validación: +0,00269 [-0,02600; +0,03325], ni en OOF train. Es una señal exploratoria, no validación robusta de la hipótesis general. Los AUC absolutos siguen próximos a 0,5 y sus intervalos incluyen 0,5. Los intervalos de diferencias son pareados por participante; no se infieren de la superposición de los intervalos individuales.
+
+Las etiquetas son pseudoetiquetas GSR relativas a la sesión y normalizadas offline; este resultado no valida una medida psicológica externa. La reutilización histórica de test impide presentarlo como confirmación independiente. No se alteró el protocolo según estos resultados.
+
+### Historial efectivo en test
+
+- Contexto 1: historial medio 1.00 ventanas; 100.0% con contexto completo.
+- Contexto 8: historial medio 5.06 ventanas; 40.8% con contexto completo.
+- Contexto 32: historial medio 8.73 ventanas; 0.0% con contexto completo.
+
+Ninguna fila de test dispone de 32 ventanas completas: la comparación principal prueba agregación sobre el historial disponible, no secuencias completas de 32. El historial usa solo filas etiquetadas consecutivas, por lo que omite ventanas iniciales válidas sin etiqueta. Mantener esta limitación explícita en la tesis. Las medias y desviaciones temporales tampoco prueban una arquitectura sensible al orden.
+
+
+## 2026-11-06 — Protocolo de hipótesis reproducido
+/Users/mario/Proyectos/tesis-mds/repos/Tesis_MDS/resultados/protocolo_hipotesis_reintento_06-11-2026
+
+
+## Cierre del reintento — 6 de noviembre de 2026
+
+Los cálculos se reprodujeron y se contrastaron mediante 100.000 simulaciones por escenario de varianza bajo el supuesto normal del diseño. Los cuatro modelos seleccionados conservan sus hashes. No se adquirieron participantes ni se ejecutó una evaluación confirmatoria nueva.
+
+El N de activación es muy sensible a la fuente de dispersión: 72 con la varianza de validación, 101 con la de test y 767 con la de OOF train. No son límites de un intervalo ni opciones para escoger por conveniencia. OOF mezcla modelos entrenados en distintos folds, mientras que la cohorte futura evalúa un par fijo; por tanto, 767 debe tratarse como escenario conservador de sensibilidad, no como requerimiento de reclutamiento demostrado. Las estimaciones externas se basan en solo ocho personas cada una. El diseño final necesita una estimación de variabilidad más defendible y factibilidad de adquisición antes de fijar N.
+
+La referencia al AUC 0,67 corresponde provisionalmente al CatBoost de atención con 0,6744 en test. Su buen desempeño relativo al azar y la superioridad de un modelo temporal son afirmaciones distintas. El resultado de atención no desapareció al corregir GSR: el recálculo de activación trabaja sobre otra variable objetivo y otras entradas. Esta revisión verifica la procedencia de las métricas, no constituye una nueva auditoría completa del profesor de atención.
+
+El margen práctico 0,02 sigue siendo una propuesta, no un umbral aprobado ni deducido de los resultados. Rechazar una mejora de al menos ese tamaño no equivale a rechazar cualquier mejora positiva. Si se mantiene la hipótesis original de superioridad >0, la frontera debe ser 0 y la potencia se calcula para un efecto verdadero separado de 0, sin cambiarla después de observar el test.

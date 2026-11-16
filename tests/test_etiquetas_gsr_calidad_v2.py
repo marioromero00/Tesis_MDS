@@ -20,4 +20,12 @@ class QualityLabels(unittest.TestCase):
   f=self.data();f.loc[10:,'window_start_utc']+=pd.Timedelta(seconds=4);r,_,_=rebuild(f);self.assertTrue(r.loc[10:13,'score6s_quality'].isna().all())
  def test_constant_has_no_labels(self):
   f=self.data();f[COLS]=0;r,_,_=rebuild(f);self.assertTrue(r.activation_binary_v2.isna().all())
+ def test_participant_alignment_independent_of_input_order(self):
+  first=self.data();first['participant']='P2'
+  second=self.data();second['participant']='P10'
+  second[COLS]=second[COLS].pow(2)+7
+  f=pd.concat([first,second],ignore_index=True);f['source_row']=np.arange(len(f))
+  original,_,_=rebuild(f);shuffled,_,_=rebuild(f.sample(frac=1,random_state=42))
+  columns=['participant','score2s_quality','score6s_quality','activation_binary_v2']
+  pd.testing.assert_frame_equal(original.set_index('source_row')[columns].sort_index(),shuffled.set_index('source_row')[columns].sort_index())
 if __name__=='__main__':unittest.main()

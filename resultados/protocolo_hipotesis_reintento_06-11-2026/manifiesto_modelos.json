@@ -1,0 +1,38 @@
+[
+  {
+    "id": "inductivo_estatico_pareado",
+    "path": "resultados/temporalidad_eeg_v2_test_29-10-2026/modelos_controles/inductivo.joblib",
+    "sha256": "7735f153999eafcc6039db6dfcf2dd75ac0bd3cb72c13479ddc081aaad82905e"
+  },
+  {
+    "id": "inductivo_ctx32",
+    "path": "resultados/temporalidad_eeg_v2_validacion_29-10-2026/modelos/espacial_c015.joblib",
+    "sha256": "b36dda0a625eda606caea9f39d7663f14b569b827dcfb9390308d1e4cd6867f9"
+  },
+  {
+    "id": "1",
+    "path": "resultados/activacion_gsr_v2_recalculo_02-11-2026/modelos/final_ctx1.joblib",
+    "sha256": "2e6838088636431f68a6e42964c58270622d8765839f836ec390863199b370aa"
+  },
+  {
+    "id": "32",
+    "path": "resultados/activacion_gsr_v2_recalculo_02-11-2026/modelos/final_ctx32.joblib",
+    "sha256": "bdc2e9fc2a91df87bbf375421d098e5b2cb4d2f651439ba652ec184abfe191a3"
+  },
+  {
+    "path": "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib",
+    "sha256": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6"
+  },
+  {
+    "path": "scripts/reconstruir_etiquetas_gsr_calidad_v2.py",
+    "sha256": "7a275906bcb4e33a2c5bdc0e147c44f928c179471a36cee79421d5c18bdd16e2"
+  },
+  {
+    "path": "scripts/temporales_core.py",
+    "sha256": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c"
+  },
+  {
+    "path": "scripts/comparacion_comun_binaria.py",
+    "sha256": "1f7ca5ca82a4e8ba5dd67293de396eed4333f91482282f15fa8c7a4459b63233"
+  }
+]
