@@ -1,0 +1,137 @@
+{
+  "created_utc": "2026-11-16T14:39:06.211998+00:00",
+  "approval": "Mario pide resultados concluyentes, 16-11-2026. Análisis registrado antes de correr; se ejecuta una vez.",
+  "inputs": {
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "resultados/cierre_v3_16-11-2026/congelacion_atencion.json": "3cfa87e63560a67b3b98d559cae49aff4f570b9da6ccfec8fc15563dab616c69",
+    "resultados/cierre_v3_16-11-2026/congelacion_activacion.json": "ec6a338f62d0c9ce34f5fea5470ded81280e80176839e4f833da76fb6296062c",
+    "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+    "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "gru": {
+    "hidden": 64,
+    "dropout": 0.3,
+    "epochs": 12,
+    "batch": 256,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "hgb": {
+    "max_iter": 300,
+    "l2_regularization": 10.0,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 30,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "folds": [
+    [
+      "P19",
+      "P34",
+      "P4",
+      "P41",
+      "P46",
+      "P9"
+    ],
+    [
+      "P12",
+      "P15",
+      "P26",
+      "P28",
+      "P43"
+    ],
+    [
+      "P18",
+      "P31",
+      "P36",
+      "P45",
+      "P6"
+    ],
+    [
+      "P16",
+      "P2",
+      "P24",
+      "P3",
+      "P32"
+    ],
+    [
+      "P21",
+      "P39",
+      "P40",
+      "P47",
+      "P8"
+    ],
+    [
+      "P10",
+      "P13",
+      "P27",
+      "P33",
+      "P5"
+    ],
+    [
+      "P22",
+      "P35",
+      "P37",
+      "P44",
+      "P48"
+    ],
+    [
+      "P11",
+      "P20",
+      "P23",
+      "P30",
+      "P38"
+    ]
+  ],
+  "n_folds": 8,
+  "seed": 20261116,
+  "primary": {
+    "atencion": [
+      "hgb_c32",
+      "hgb_c1"
+    ],
+    "activacion": [
+      "hgb_c32",
+      "hgb_c1"
+    ]
+  },
+  "secondary": [
+    [
+      "hgb_c5",
+      "hgb_c1"
+    ],
+    [
+      "gru_c32",
+      "gru_c1"
+    ],
+    [
+      "gru_c32",
+      "hgb_c32"
+    ]
+  ],
+  "margin": 0.02,
+  "inference": "Diferencia de AUC por persona (41). IC 95 % y 90 % bootstrap por persona (20000, semilla 20261029). Permutación de signos bilateral (200000, semilla 20261116). Holm sobre los dos principales; secundarios descriptivos con p sin ajustar.",
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Las 16 personas de validación y test ya se consultaron; la configuración se eligió solo con train y no se cambia. Etiquetas offline. Variables transductivas por persona (ver protocolo V3)."
+}
