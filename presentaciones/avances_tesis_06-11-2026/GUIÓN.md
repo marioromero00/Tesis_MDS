@@ -1,157 +1,117 @@
 # Avances de tesis · guion editable
 
-## 01. ¿El historial de señales mejora la predicción de atención y activación?
+## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Hoy quiero mostrar qué pasó desde la última reunión: en atención hay una señal favorable, pero en activación encontré un error en la etiqueta, la corregí y al rehacer los modelos el resultado quedó cerca del azar. Al final traigo cuatro preguntas para decidir cómo cerrar.
+Le cuento qué pasó desde la última reunión. En atención hay una mejora con historial, pero chica. En activación encontré un error en la etiqueta; ya antes el modelo andaba cerca del azar y con la etiqueta corregida sigue igual. Al final hay cuatro cosas que necesito decidir con usted.
 
-Fuente: ../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md
+## 02. De qué voy a hablar
 
-## 02. La hipótesis
+Son ocho partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.
 
-Esta es la hipótesis tal como está en el manuscrito. Dice «emociones», pero lo que puedo medir con GSR es activación; eso lo dejo como pregunta al final. Para aislar el aporte del historial comparo siempre pares de modelos que solo difieren en eso. El tipo de fusión es el otro factor del diseño; hoy solo traigo una ablación parcial.
+## 03. La hipótesis
 
-Fuente: ../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md
+Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre el mismo modelo, con la misma etiqueta, y lo único que cambia es si ve las ventanas anteriores. Dice emociones, pero con GSR lo que mido es activación; eso lo vemos al final.
 
-## 03. Las etiquetas salen de unas señales y se predicen con otras
+## 04. Los datos: Toma de Muestra 2, navegación web en laboratorio
 
-Los registros no traen una etiqueta directa. El Modelo Profesor la construye a partir de unas señales y el Modelo Estudiante la predice con las demás, para no usar la misma información en ambos lados. Como la mediana y la normalización usan la sesión completa, la etiqueta no sirve tal cual para predecir en línea.
+Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este set, y la ubicación de los electrodos no está documentada.
 
-Fuente: resultados/profesor_binario_reconstruido_29-10-2026/INFORME.md; resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md
+## 05. Unas señales arman la etiqueta y otras la predicen
 
-## 04. Cada persona queda en una sola partición
+No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
 
-De las 48 personas registradas, 41 entran al análisis principal: excluí 4 por EEG no utilizable y 2 sin GSR, y P29 queda solo para un análisis de sensibilidad por un desfase de sincronización. Como las ventanas se solapan, la unidad de análisis es la persona: promedio la AUC por persona y las diferencias entre modelos las calculo dentro de cada persona.
+## 06. 48 personas registradas, 41 en el análisis
 
-Fuente: resultados/modelado/particion_participantes.csv; documentacion/Modelos_Temporales_07-09-2026.md
+Registré 48 personas. Entrenamiento tiene 25 y validación y test, 8 cada uno. P29 la dejo para un análisis de sensibilidad por un desfase de sincronización. Como las ventanas se solapan, la unidad es la persona: promedio la AUC por persona.
 
-## 05. Septiembre: armé el pipeline y las comparaciones base
+## 07. Qué señales combinan los trabajos recientes
 
-En la primera comparación temporal entrené 104 redes. No traigo esas cifras porque las etiquetas cambiaron después; además, la auditoría de noviembre encontró que el generador de la etiqueta de activación de esa época tenía un error.
+La tendencia es fusionar varias señales con modelos de atención tipo Transformer. Lo más cercano en contexto web es la tesis de Saavedra en el mismo grupo, con EEG y GSR, que no encontró mejora clara con fusión tardía. Ninguno de los que revisé combina estas cuatro señales navegando la web; esa búsqueda la tengo que volver a revisar antes de afirmarlo en la defensa.
 
-Fuente: documentacion/Modelos_Temporales_07-09-2026.md; documentacion/Fusiones_10-09-2026.md
+## 08. Lo que falta en la literatura y lo que intento aportar
 
-## 06. Octubre: nueva etiqueta de atención y EEG por canal
+Las tres brechas salen de mi revisión. Cada una tiene su respuesta en el diseño. Lo que todavía no hago es comparar fusión temprana, intermedia y tardía con la etiqueta nueva; está en los pendientes.
 
-Los crudos los recuperé y verifiqué su integridad; las muestras y la selección temporal coinciden con el procesamiento anterior. No atribuyo localización anatómica a los canales porque no tengo el mapa de electrodos.
+## 09. Sigo KDD, adaptado en cinco etapas
 
-Fuente: documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md; resultados/profesor_binario_reconstruido_29-10-2026/INFORME.md
+Uso KDD como marco. Es un proceso iterativo: cuando encontré el error en la etiqueta volví de la evaluación a la transformación, y eso es justamente lo que muestro más adelante.
 
-## 07. En atención, el historial suma +0,028 de AUC, pero el intervalo incluye cero
+## 10. Qué hago con cada señal
 
-Creo que el 0,67 que comentamos antes es este CatBoost, el mejor sin historial de este análisis (0,674 en test); si se refería a otro, lo reviso. La comparación justa es la del HGB con y sin historial, con los mismos parámetros: sube 0,028 y mejora en 7 de las 8 personas, pero el intervalo toca el cero. Frente al CatBoost la diferencia es la mitad. Este contraste lo fijé como principal antes de mirar test. Me falta revisar cuánto historial tuvo realmente cada ventana en atención, como hice para activación en la lámina 16.
+El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 40 Hz con notch en 50, saco artefactos y desde octubre lo uso por canal. La pupila todavía no la corrijo por el brillo de cada página; eso está en las limitaciones.
 
-Fuente: resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md
+## 11. Cómo comparo un modelo con y sin historial
 
-## 08. Con otra representación del historial la mejora sube a +0,033, pero la elegí después de ver test
+Elijo los hiperparámetros solo dentro de entrenamiento, con folds que no mezclan personas. Después comparo en personas que el modelo no vio. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
 
-El 29 de octubre el historial resumía el panel EEG/GSR anterior y las potencias relativas por canal; el 30 pasé a media y desviación de todas las variables. En atención el intervalo ya no toca el cero. Lo tomo con cuidado: elegí esa representación después de ver el primer resultado, y en esa misma corrida la activación, todavía con la etiqueta antigua, bajó 0,079 [−0,129; −0,030].
+## 12. Con PCA, la etiqueta de atención se predice mejor
 
-Fuente: resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md; resultados/comparacion_comun_binaria_30-10-2026/INFORME.md
+Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Con PCA todos los modelos la predicen mejor y seguí con esa. Las dos coinciden en dos tercios de las ventanas.
 
-## 09. Antes de la auditoría ya había señales de alerta en la etiqueta de activación
+## 13. En atención, el historial suma +0,028
 
-Los resultados de activación que tenía se podían reproducir, pero eso no me decía nada sobre cómo estaba construida la etiqueta. Por eso la audité.
+Cada línea es una persona. Siete suben y una baja. Con otra representación del historial, que probé después, llegó a +0,033 y ahí el intervalo no toca el cero; está en la síntesis. La etiqueta de atención la rehice desde cero en octubre, así que en principio no tiene el error de activación. Comparo contra el HGB sin historial porque es el mismo modelo. Contra el CatBoost la ganancia baja a la mitad; ¿ese era el 0,67 que habíamos comentado?
 
-Fuente: resultados/activacion_diagnostico_nested_30-10-2026/INFORME.md; ../../notas/bitacora.md
+## 14. Con la etiqueta antigua había tres personas raras
 
-## 10. La auditoría encontró un error de índices en el generador de la etiqueta
+Esto fue lo que me hizo dudar. P4 casi no tenía señal y aun así todas sus ventanas tenían etiqueta. P34 y P46 tenían muchos puntajes repetidos, o sea empates, y P34 quedaba con 8,6 % de clase alta. Ahí paré de ajustar modelos y revisé la etiqueta.
 
-Al reagrupar por persona se perdía el índice original de cada ventana. Ojo, eso no es cuántas etiquetas cambiaron de clase; ese número no lo tengo separado del cambio de reglas de V2. Las diferencias al reproducir fueron del orden de 10⁻⁷, que es la precisión con que se exportó. El mismo patrón aparece en el Modelo Profesor histórico de atención; esta auditoría no revisó la etiqueta de atención de octubre; eso lo tengo pendiente.
+## 15. El generador mezclaba las ventanas
 
-Fuente: resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md; resultados/etiquetas_gsr_calidad_v2_01-11-2026/auditoria_independiente_02-11-2026.json
+Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guardados, así que las AUC de activación de antes no sirven. El 25.992 es el archivo completo, incluidas personas fuera del análisis.
 
-## 11. Reconstruí la etiqueta de activación (GSR V2)
+## 16. "Alta" es estar más activado que su propia mediana: así se ve en P22
 
-Cinco ventanas de dos segundos con paso de uno cubren seis segundos. Si un componente es constante aporta cero; si falta, la ventana queda sin puntaje. Todo esto lo calculo sobre las variables que ya tenía extraídas.
+Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si P22 está más activada que de costumbre en ese momento.
 
-Fuente: resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md
+## 17. La etiqueta antigua y la nueva coinciden solo en la mitad de las ventanas
 
-## 12. La etiqueta GSR V2 deja 11.796 ventanas (53 %)
+Comparé la etiqueta antigua con la nueva en las mismas ventanas: cambia casi la mitad. Con clases balanceadas, eso es lo que esperaría si no tuvieran relación.
 
-Las 22.211 filas originales se conservan con su motivo de exclusión. Casi toda la pérdida viene de exigir cinco ventanas seguidas dentro del mismo estímulo; por calidad de señal se pierden solo 401. El caso extremo es P4, que conserva 26 de 459 ventanas.
+## 18. La etiqueta nueva (V2) deja 11.796 de 22.211 ventanas
 
-Fuente: resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md
+Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas válidas seguidas dentro del mismo estímulo; si hay un hueco o cambia el estímulo, parte de cero. Por calidad se van 401, todas de P4. Las 41 personas mantienen las dos clases.
 
-## 13. Volví a entrenar desde cero con la etiqueta GSR V2
+## 19. "Hasta 32" fueron, en promedio, 8,7 ventanas
 
-Lo repetí después de auditar la etiqueta, para asegurarme de que los números salían del código corregido. El modelo con historial recibe la ventana actual más la media y la desviación del historial disponible. Hasta 8 quedó definido como secundario desde el protocolo.
+Entrené el mismo modelo con tres largos de historial. El principal es hasta 32 contra solo la ventana actual. Pero como la etiqueta pide cinco ventanas válidas seguidas, los tramos son cortos: hasta 32 usó 8,7 ventanas en promedio y ninguna llegó a 32. Hasta 8 tuvo el historial completo en el 41 % de las ventanas.
 
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json; resultados/activacion_gsr_v2_recalculo_02-11-2026/auditoria_desde_disco.json
+## 20. La activación queda en el azar
 
-## 14. Con la etiqueta GSR V2, la activación queda cerca del azar (AUC 0,51–0,55)
+Ninguno de los tres se separa del azar. Con un modelo que casi no discrimina, comparar contextos sirve poco, pero lo muestro igual porque era el contraste que había fijado.
 
-Test son 8 personas y 2.184 ventanas. Ninguno de los tres modelos se separa del azar en test. Esto no lo leo como que el historial no sirve: con un modelo que casi no discrimina, una diferencia entre contextos es difícil de interpretar.
+## 21. Con historial, 4 personas suben y 4 bajan
 
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/INFORME.md
+Mismo gráfico que en atención, ahora para activación. Acá no hay patrón: cuatro suben y cuatro bajan. Las personas van de 0,36 a 0,68 y la media pasa de 0,514 a 0,536. Hasta 8 sube 0,033 en test, pero en validación y entrenamiento no, así que no lo tomo como resultado.
 
-## 15. En activación, el contraste principal (+0,022) incluye cero; «hasta 8» sube solo en test
+## 22. En activación, fusionar señales tampoco se distingue de usar una sola
 
-El contraste principal es positivo en las tres particiones, pero en ninguna se distingue de cero y en test mejora en 4 de 8 personas. Hasta 8 mejora en 7 de 8 personas en test; como es el secundario y no aparece en validación ni en entrenamiento, no lo tomo como resultado. Las diferencias las calculo dentro de cada persona.
+Con AUC cerca de 0,5, esta comparación dice poco. En atención, que sí predice, EEG solo y EEG con GSR quedaron casi iguales: −0,004 [−0,018; +0,010]. Además solo es fusión temprana; temprana contra intermedia y tardía con la etiqueta nueva está pendiente.
 
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/contrastes.csv
+## 23. Hoy la hipótesis queda sin una ventaja consistente
 
-## 16. «Hasta 32 ventanas» tuvo en promedio 8,7: ninguna ventana de test llegó a 32
+Según los criterios del manuscrito, hoy no hay una ventaja consistente en ninguno de los dos resultados. Si la mejora en atención se confirmara, la hipótesis tendría apoyo parcial. En activación el modelo no predice, así que no puedo decir nada del historial.
 
-Esto viene de la etiqueta: como V2 exige cinco ventanas válidas seguidas y el historial solo usa filas etiquetadas, se pierden las ventanas iniciales. Entonces lo que evalué es un resumen de un historial corto; en la tesis tengo que describirlo así.
+## 24. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
 
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/INFORME.md
+El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.
 
-## 17. En activación, la fusión no se distingue de cada señal sola; con AUC cercanas a 0,5, esto dice poco
+## 25. Necesito decidir cuatro cosas con usted
 
-Son 54 modelos nuevos con los mismos parámetros, personas y filas. Como casi todas las AUC están cerca de 0,5, esta comparación sirve poco para decidir sobre la fusión; hay un par de intervalos aislados que excluyen 0,5, como pupila con hasta 8 en test, pero sin corregir por comparaciones múltiples. Además solo compara fusión temprana con cada señal sola; temprana, intermedia y tardía con GSR V2 está pendiente.
+El error de la etiqueta y el reentrenamiento ya están. Lo que más me urge es la primera pregunta.
 
-Fuente: resultados/ablacion_modalidades_v2_01-11-2026/INFORME.md
+## 26. Atención: curvas ROC en test
 
-## 18. Atención muestra una mejora sin confirmar; activación no se separa del azar
+La AUC de la leyenda es la media de las AUC por persona.
 
-En atención el modelo predice la etiqueta y el historial ayuda un poco, pero no lo puedo confirmar. En activación el modelo no predice, así que no puedo decir nada del historial. Me falta revisar si el error de índices toca la etiqueta de atención.
+## 27. Activación: curvas ROC en test
 
-Fuente: documentacion/Cierre_Experimental_V2_01-11-2026.md; resultados/activacion_gsr_v2_recalculo_02-11-2026/INFORME.md
+Las tres curvas van pegadas a la diagonal.
 
-## 19. Si planifico una cohorte nueva, ¿cuántas personas harían falta?
+## 28. Señales
 
-El N de activación depende mucho de qué variabilidad uso. Las estimaciones de validación y test salen de solo 8 personas; la de entrenamiento sale de 25, pero mezcla modelos de distintos folds, así que el 767 lo tomo como escenario pesimista. Los cálculos los comprobé simulando 100.000 veces cada escenario. El +0,02 es una propuesta mía, todavía sin justificación independiente.
+La EEG la uso por canal desde octubre; antes promediaba los canales.
 
-Fuente: resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md; resultados/protocolo_hipotesis_reintento_06-11-2026/verificacion_simulada.json
+## 29. Configuración del entrenamiento de activación
 
-## 20. Cuatro decisiones para cerrar la evaluación
-
-Lo que está resuelto: el error de la etiqueta de activación, el reentrenamiento con la etiqueta corregida y la comparación en igualdad de condiciones. Lo que necesito de usted son estas cuatro decisiones; la primera define cómo sigue el resto del trabajo.
-
-Fuente: resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md; ../../notas/pautas-escritura-recuperadas.md
-
-## 21. Atención: curvas ROC en test
-
-La AUC de la leyenda es la media de las AUC por persona; coincide con la de las tablas.
-
-Fuente: resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md; resultados/temporalidad_eeg_v2_test_29-10-2026/predicciones_test.csv.gz
-
-## 22. Activación GSR V2: curvas ROC en test
-
-Las tres curvas quedan pegadas a la diagonal, que es lo mismo que muestran las AUC.
-
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/predicciones_externas.csv.gz; resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas.csv
-
-## 23. Señales disponibles
-
-Son medidas fisiológicas y de mirada; ninguna es un autorreporte.
-
-Fuente: ../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md; ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md
-
-## 24. Configuración del entrenamiento de activación
-
-La misma configuración se comparte entre los tres contextos para que la única diferencia sea el historial.
-
-Fuente: resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json
-
-## 25. Regla de decisión propuesta para una cohorte nueva
-
-La regla la dejo escrita antes de tener datos, sabiendo que puede terminar en inconcluso. Si rechazo +0,02, igual puede haber una mejora más chica.
-
-Fuente: resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md
-
-## 26. De dónde sale cada cifra
-
-Si quiere revisar alguna cifra en detalle, le puedo mostrar el informe correspondiente.
-
-Fuente: FUENTES.md
+La misma configuración para los tres largos de historial.

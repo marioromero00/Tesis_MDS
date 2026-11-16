@@ -1,182 +1,217 @@
 from estilo_tecnico import img,table
 
-# Versión 4 (15-11-2026): relato reescrito tras auditoría de estilo y cifras.
-# Cada diapositiva define aquí su capítulo, título, cuerpo, notas del orador y fuentes.
-# Las cifras provienen de los informes citados en `source`; los gráficos, de estilo_tecnico.py.
+# Versión 5 (15-11-2026): más gráficos y diagramas, menos texto.
+# Cada diapositiva define capítulo, título, cuerpo, notas del orador y fuentes.
 
 R='resultados/'
-T29=R+'temporalidad_eeg_v2_test_29-10-2026/INFORME.md'
+T29=R+'temporalidad_eeg_v2_test_29-10-2026/'
 C30=R+'comparacion_comun_binaria_30-10-2026/INFORME.md'
-GSR=R+'etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md'
+GSR=R+'etiquetas_gsr_calidad_v2_01-11-2026/'
 ACT=R+'activacion_gsr_v2_recalculo_02-11-2026/'
-ABL=R+'ablacion_modalidades_v2_01-11-2026/INFORME.md'
+ABL=R+'ablacion_modalidades_v2_01-11-2026/'
 PROT=R+'protocolo_hipotesis_reintento_06-11-2026/'
+PROF=R+'profesor_binario_reconstruido_29-10-2026/'
 HIP='../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md'
 
 def para(t):return '<p class="prose">'+t+'</p>'
 def caption(t):return '<p class="caption">'+t+'</p>'
 def pair(left,right):return '<div class="editorial-pair"><div>'+left+'</div><div>'+right+'</div></div>'
 
+def strip(n_hist,label,total=32,real=None):
+ real=n_hist if real is None else real
+ cells=''.join('<i class="w %s"></i>'%('now' if k==total-1 else ('hist' if k>=total-1-real else ('nom' if k>=total-1-n_hist else ''))) for k in range(total))
+ return '<div class="strip"><span class="strip-label">'+label+'</span><div class="cells">'+cells+'</div></div>'
+
+def flow(boxes):
+ out=[]
+ for k,(cls,txt) in enumerate(boxes):
+  out.append('<div class="box %s">%s</div>'%(cls,txt))
+  if k<len(boxes)-1:out.append('<div class="arrow">→</div>')
+ return '<div class="flow">'+''.join(out)+'</div>'
+
 def apply(old):
  out=[]
  def S(chapter,title,body,notes,source,kind=''):
   out.append(dict(chapter=chapter,title=title,body=body,notes=notes,source=source,kind=kind))
- D1='01 / HIPÓTESIS Y DISEÑO';D2='02 / ETAPAS PREVIAS';D3='03 / ATENCIÓN'
- D4='04 / CORRECCIÓN DE LA ETIQUETA DE ACTIVACIÓN';D5='05 / ACTIVACIÓN CON LA ETIQUETA GSR V2';D6='06 / SÍNTESIS Y DECISIONES'
+ D1='LA PREGUNTA';D2='CÓMO LLEGUÉ HASTA AQUÍ';D3='ATENCIÓN'
+ D4='EL PROBLEMA CON LA ETIQUETA DE ACTIVACIÓN';D5='ACTIVACIÓN CON LA ETIQUETA NUEVA';D6='DÓNDE QUEDO'
 
  S('UNIVERSIDAD DE CHILE · MAGÍSTER EN CIENCIA DE DATOS',
-   '¿El historial de señales mejora<br>la predicción de atención<br>y activación?',
-   '<p class="cover-sub">Modelos multimodales con EEG, GSR, mirada y pupila<br>durante la navegación web</p>'
-   '<div class="byline"><b>Mario Romero</b><span>Profesor guía: Dr. Juan D. Velásquez<br>Avance de tesis · resultados al 6 de noviembre de 2026</span></div>',
-   'Hoy quiero mostrar qué pasó desde la última reunión: en atención hay una señal favorable, pero en activación encontré un error en la etiqueta, la corregí y al rehacer los modelos el resultado quedó cerca del azar. Al final traigo cuatro preguntas para decidir cómo cerrar.',
+   '¿Sirve el historial de señales<br>para predecir atención y activación?',
+   '<p class="cover-sub">EEG, GSR, mirada y pupila durante la navegación web</p>'
+   +'<div class="byline"><b>Mario Romero</b><span>Profesor guía: Dr. Juan D. Velásquez<br>Avance de tesis · noviembre de 2026</span></div>',
+   'Le cuento qué pasó desde la última reunión. En atención hay una mejora con historial, pero chica. En activación encontré un error en la etiqueta; ya antes el modelo andaba cerca del azar y con la etiqueta corregida sigue igual. Al final hay cuatro cosas que necesito decidir con usted.',
    HIP,'story-cover')
 
+ S('ÍNDICE','De qué voy a hablar',
+   '<ol class="agenda">'
+   '<li><b>La pregunta</b><span>Hipótesis y cómo la contrasto</span></li>'
+   '<li><b>Los datos</b><span>De dónde vienen y cómo se etiquetan</span></li>'
+   '<li><b>Estado del arte</b><span>Qué se ha hecho y qué falta</span></li>'
+   '<li><b>Metodología</b><span>KDD, señales y cómo evalúo</span></li>'
+   '<li><b>Atención</b><span>El historial suma un poco</span></li>'
+   '<li><b>El problema con la etiqueta de activación</b><span>Un error y cómo lo corregí</span></li>'
+   '<li><b>Activación con la etiqueta nueva</b><span>Queda en el azar</span></li>'
+   '<li><b>Dónde quedo</b><span>Estado de la hipótesis y cuatro decisiones</span></li>'
+   '</ol>',
+   'Son ocho partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.',
+   'FUENTES.md','roomy')
  S(D1,'La hipótesis',
-   '<blockquote>«Los modelos temporales multimodales obtienen un mejor desempeño fuera de muestra que los modelos estáticos comparables en la detección de emociones y atención durante la navegación web.»</blockquote>'
-   +pair('<h3>Cómo la contrasto</h3>'+para('Mismo modelo, misma etiqueta y mismas ventanas. Lo único que cambia es si el modelo recibe el historial de ventanas anteriores.'),
-         '<h3>En qué resultados</h3>'+para('En dos resultados: atención y activación (GSR). La hipótesis pide la mejora en ambos.')),
-   'Esta es la hipótesis tal como está en el manuscrito. Dice «emociones», pero lo que puedo medir con GSR es activación; eso lo dejo como pregunta al final. Para aislar el aporte del historial comparo siempre pares de modelos que solo difieren en eso. El tipo de fusión es el otro factor del diseño; hoy solo traigo una ablación parcial.',
-   HIP)
+   '<blockquote>“Los modelos temporales multimodales obtienen un mejor desempeño fuera de muestra que los modelos estáticos comparables en la detección de emociones y atención durante la navegación web.”</blockquote>'
+   +'<div class="strips">'+strip(0,'Sin historial')+strip(31,'Con historial (hasta 32)')+'</div>'
+   +caption('Cada cuadro es una ventana de 2 s; avanzan de a 1 s, así que se solapan.'),
+   'Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre el mismo modelo, con la misma etiqueta, y lo único que cambia es si ve las ventanas anteriores. Dice emociones, pero con GSR lo que mido es activación; eso lo vemos al final.',
+   HIP,'roomy')
 
- S(D1,'Las etiquetas salen de unas señales y se predicen con otras',
-   table(['Resultado','Modelo Profesor: construye la etiqueta','Modelo Estudiante: la predice'],[['Atención','<i>Attention Score</i> con mirada + pupila','EEG + GSR'],['Activación','<i>Arousal Score</i> con GSR','EEG + mirada + pupila']])
-   +caption('Son pseudoetiquetas: cada ventana es «alta» o «baja» respecto de la mediana de su persona, calculada con la sesión completa. La AUC (área bajo la curva ROC) mide qué tan bien se predice esa regla.'),
-   'Los registros no traen una etiqueta directa. El Modelo Profesor la construye a partir de unas señales y el Modelo Estudiante la predice con las demás, para no usar la misma información en ambos lados. Como la mediana y la normalización usan la sesión completa, la etiqueta no sirve tal cual para predecir en línea.',
-   R+'profesor_binario_reconstruido_29-10-2026/INFORME.md; '+GSR)
+ S('LOS DATOS','Los datos: Toma de Muestra 2, navegación web en laboratorio',
+   flow([('sig','<b>Tobii Pro Lab</b><br><small>mirada, pupila y GSR</small>'),('sig','<b>OpenBCI Cyton + Daisy</b><br><small>EEG, 16 canales, 125 Hz</small>'),('prof','Sincronización<br><small>por persona y hora UTC</small>'),('stud','Ventanas de 2 s<br><small>avanzan de a 1 s</small>')])
+   +'<div class="facts"><div><b>48</b><span>personas registradas</span></div><div><b>4</b><span>secuencias de páginas (SlowWeb G1–G4)</span></div><div><b>116</b><span>estímulos: sitios como Diario Financiero, Temu o Despegar, textos y diseños</span></div><div><b>ago 2025</b><span>adquisición, proyecto Fondecyt 1231122</span></div></div>',
+   'Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este set, y la ubicación de los electrodos no está documentada.',
+   '../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md; ../../documentos/01 Tesis MDS/Analisis de Datos/SINCRONIZACION_SENALES.md; resultados/modelado/particion_participantes.csv; resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz','roomy')
+ S('LOS DATOS','Unas señales arman la etiqueta y otras la predicen',
+   '<div class="flows">'
+   +'<h3>Atención</h3>'+flow([('sig','Mirada + pupila'),('prof','Modelo Profesor<br><small>Attention Score</small>'),('lab','Etiqueta<br>alta / baja'),('stud','Modelo Estudiante<br><small>EEG + GSR</small>')])
+   +'<h3>Activación</h3>'+flow([('sig','GSR'),('prof','Modelo Profesor<br><small>Arousal Score</small>'),('lab','Etiqueta<br>alta / baja'),('stud','Modelo Estudiante<br><small>EEG + mirada + pupila</small>')])
+   +'</div>'+caption('"Alta" es sobre la mediana de cada persona en su sesión.'),
+   'No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.',
+   PROF+'INFORME.md; '+GSR+'INFORME.md')
 
- S(D1,'Cada persona queda en una sola partición',
-   '<div class="split-counts"><div><b>25</b><span>personas en entrenamiento</span></div><div><b>8</b><span>en validación</span></div><div><b>8</b><span>en test</span></div></div>'
-   '<div class="method-line"><span><b>41</b> de 48 personas (6 excluidas por EEG o GSR; P29 en sensibilidad)</span><span>Ventanas de <b>2 s</b> con paso de <b>1 s</b></span><span>AUC media <b>por persona</b>, IC 95 % bootstrap por persona</span></div>'
-   +caption('Validación y test ya se consultaron en etapas anteriores, así que todos los resultados que siguen son exploratorios.'),
-   'De las 48 personas registradas, 41 entran al análisis principal: excluí 4 por EEG no utilizable y 2 sin GSR, y P29 queda solo para un análisis de sensibilidad por un desfase de sincronización. Como las ventanas se solapan, la unidad de análisis es la persona: promedio la AUC por persona y las diferencias entre modelos las calculo dentro de cada persona.',
-   R+'modelado/particion_participantes.csv; documentacion/Modelos_Temporales_07-09-2026.md')
+ S('LOS DATOS','48 personas registradas, 41 en el análisis',
+   img('particiones','')
+   +caption('Fuera: 4 por EEG no utilizable y 2 sin GSR. Validación y test ya los había mirado, así que todo es exploratorio.'),
+   'Registré 48 personas. Entrenamiento tiene 25 y validación y test, 8 cada uno. P29 la dejo para un análisis de sensibilidad por un desfase de sincronización. Como las ventanas se solapan, la unidad es la persona: promedio la AUC por persona.',
+   R+'modelado/particion_participantes.csv')
 
- S(D2,'Septiembre: armé el pipeline y las comparaciones base',
-   table(['Etapa','Qué probé','Para qué'],[['Modelos sin historial','Logística, Random Forest, CatBoost y HGB (Histogram Gradient Boosting)','Tener una referencia con solo la ventana actual'],['Redes temporales','Redes convolucionales temporales (TCN), LSTM y BiLSTM','Separar el aporte del historial del de la arquitectura'],['Fusión','Temprana y tardía, señales por separado','Ver si combinar señales supera a cada una']])
-   +caption('Esa etapa usó etiquetas anteriores, así que sus métricas no se comparan con las de ahora. Lo que me sirvió de esa etapa fue el pipeline y la forma de comparar.'),
-   'En la primera comparación temporal entrené 104 redes. No traigo esas cifras porque las etiquetas cambiaron después; además, la auditoría de noviembre encontró que el generador de la etiqueta de activación de esa época tenía un error.',
-   'documentacion/Modelos_Temporales_07-09-2026.md; documentacion/Fusiones_10-09-2026.md')
+ S('ESTADO DEL ARTE','Qué señales combinan los trabajos recientes',
+   '<table class="matrix"><thead><tr><th>Trabajo</th><th>EEG</th><th>GSR</th><th>Mirada</th><th>Pupila</th><th>Facial</th><th>ECG</th><th>Enfoque</th></tr></thead><tbody><tr class=""><td>TACOformer (2023)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="n">Transformer con atención cruzada</td></tr><tr class=""><td>Feng et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Autoatención multicabeza</td></tr><tr class=""><td>Milmer (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Swin Transformer</td></tr><tr class=""><td>Wang et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Atención entre modalidades</td></tr><tr class=""><td>MuMTAffect (2025)</td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="n">Transformer por modalidad</td></tr><tr class=""><td>GBV-Net (2025)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="n">Fusión jerárquica</td></tr><tr class=""><td>Saavedra (grupo, web)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Fusión tardía sin mejora clara</td></tr><tr class="me"><td>Esta tesis (web)</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="n">Historial + fusión, contra modelo sin historial</td></tr></tbody></table>'
+   +caption('Varios reportan sus resultados en bases como DEAP, SEED-IV o DREAMER; no son comparables con los míos.'),
+   'La tendencia es fusionar varias señales con modelos de atención tipo Transformer. Lo más cercano en contexto web es la tesis de Saavedra en el mismo grupo, con EEG y GSR, que no encontró mejora clara con fusión tardía. Ninguno de los que revisé combina estas cuatro señales navegando la web; esa búsqueda la tengo que volver a revisar antes de afirmarlo en la defensa.',
+   '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy')
+ S('ESTADO DEL ARTE','Lo que falta en la literatura y lo que intento aportar',
+   '<div class="gaps">'
+   '<div><h3>Lo que falta</h3><ol><li>Las señales se tratan como vectores estáticos, sin su evolución en el tiempo.</li><li>No encontré EEG + GSR + mirada + pupila en navegación web.</li><li>Pocas ablaciones sistemáticas por señal.</li></ol></div>'
+   '<div><h3>Lo que hago</h3><ol><li>Mismo modelo con y sin historial, sobre las mismas ventanas.</li><li>Las cuatro señales en un contexto web real.</li><li>Ablación por señal y por largo de historial.</li></ol></div>'
+   '</div>'+caption('También uso el esquema Modelo Profesor → Modelo Estudiante del grupo, pero sin el clasificador facial, porque este set no tiene video.'),
+   'Las tres brechas salen de mi revisión. Cada una tiene su respuesta en el diseño. Lo que todavía no hago es comparar fusión temprana, intermedia y tardía con la etiqueta nueva; está en los pendientes.',
+   '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy')
+ S('METODOLOGÍA','Sigo KDD, adaptado en cinco etapas',
+   flow([('step','<b>1</b> Selección<br><small>Toma de Muestra 2: personas, sesiones y cuatro señales</small>'),('step','<b>2</b> Preprocesamiento<br><small>calidad, datos faltantes y sincronización</small>'),('step','<b>3</b> Transformación<br><small>variables y etiquetas por ventana de 2 s</small>'),('step','<b>4</b> Minería<br><small>modelos sin y con historial, fusión de señales</small>'),('step','<b>5</b> Evaluación<br><small>AUC por persona, diferencias e intervalos</small>')])
+   +caption('Fayyad, Piatetsky-Shapiro y Smyth (1996). El artículo describe nueve pasos; los agrupé en cinco.'),
+   'Uso KDD como marco. Es un proceso iterativo: cuando encontré el error en la etiqueta volví de la evaluación a la transformación, y eso es justamente lo que muestro más adelante.',
+   '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy kdd')
+ S('METODOLOGÍA','Qué hago con cada señal',
+   '<div class="cards4">'
+   '<div><h3>EEG</h3><p>Filtro 1–40 Hz y notch de 50 Hz. Descarto muestras sobre ±150 µV y canales planos o ruidosos.</p><b>342</b><span>variables por ventana, 16 canales</span></div>'
+   '<div><h3>GSR</h3><p>Separo el nivel tónico y la parte fásica, y cuento las respuestas de conductancia (SCR).</p><b>4</b><span>componentes que forman el Arousal Score</span></div>'
+   '<div><h3>Mirada</h3><p>Fijaciones, su duración, sacadas y dispersión de la mirada en la página.</p><span class="foot">Con la pupila forma el Attention Score</span></div>'
+   '<div><h3>Pupila</h3><p>Diámetro por ojo y dilatación respecto de la línea base de cada persona.</p><span class="foot">Pendiente: corregir por el brillo de cada página</span></div>'
+   '</div>'+caption('Todo se calcula en ventanas de 2 s que avanzan de a 1 s.'),
+   'El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 40 Hz con notch en 50, saco artefactos y desde octubre lo uso por canal. La pupila todavía no la corrijo por el brillo de cada página; eso está en las limitaciones.',
+   '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md; documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md; resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md')
+ S('METODOLOGÍA','Cómo comparo un modelo con y sin historial',
+   flow([('sig','<b>Entrenamiento</b><br><small>25 personas</small>'),('prof','Selección interna<br><small>5 folds agrupados por persona</small>'),('lab','Modelo congelado<br><small>misma configuración con y sin historial</small>'),('stud','Validación y test<br><small>8 + 8 personas que no vio</small>')])
+   +'<div class="eval3"><div><b>AUC por persona</b><span>y luego el promedio, para que ninguna persona pese más por tener más ventanas</span></div><div><b>Diferencia pareada</b><span>con historial menos sin historial, dentro de cada persona</span></div><div><b>IC 95 % bootstrap</b><span>remuestreando personas, no ventanas</span></div></div>',
+   'Elijo los hiperparámetros solo dentro de entrenamiento, con folds que no mezclan personas. Después comparo en personas que el modelo no vio. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.',
+   'resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json; resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md; ../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy')
+ S(D3,'Con PCA, la etiqueta de atención se predice mejor',
+   img('profesores','Entrenamiento, 25 personas (OOF). Las dos versiones coinciden en el 66 % de las ventanas.'),
+   'Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Con PCA todos los modelos la predicen mejor y seguí con esa. Las dos coinciden en dos tercios de las ventanas.',
+   PROF+'comparacion_profesores_modelos.csv; '+PROF+'INFORME.md')
 
- S(D2,'Octubre: nueva etiqueta de atención y EEG por canal',
-   pair('<h3>La etiqueta de atención</h3>'+para('Recalculé el Modelo Profesor desde mirada y pupila y comparé dos formas de combinarlas: pesos iguales y PCA ajustado dentro de cada fold.')+para('Seguí con PCA, que los Modelos Estudiante predecían mejor; eso no prueba que mida mejor la atención. Las dos versiones coinciden en el 66 % de las ventanas (kappa 0,33), así que la elección pesa.'),
-        '<h3>Los predictores EEG</h3><p class="feature-count">16 <span>canales por separado</span></p>'+para('Antes promediaba los canales. Recuperé los archivos crudos y extraje 342 variables EEG nuevas.')),
-   'Los crudos los recuperé y verifiqué su integridad; las muestras y la selección temporal coinciden con el procesamiento anterior. No atribuyo localización anatómica a los canales porque no tengo el mapa de electrodos.',
-   'documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md; '+R+'profesor_binario_reconstruido_29-10-2026/INFORME.md')
+ S(D3,'En atención, el historial suma +0,028',
+   img('atencion_personas','Test, 8 personas. Línea gruesa: media (0,660 → 0,688). IC 95 % de la diferencia: [−0,004; +0,051].')
+   ,'Cada línea es una persona. Siete suben y una baja. Con otra representación del historial, que probé después, llegó a +0,033 y ahí el intervalo no toca el cero; está en la síntesis. La etiqueta de atención la rehice desde cero en octubre, así que en principio no tiene el error de activación. Comparo contra el HGB sin historial porque es el mismo modelo. Contra el CatBoost la ganancia baja a la mitad; ¿ese era el 0,67 que habíamos comentado?',
+   T29+'metricas_participantes.csv; '+T29+'INFORME.md')
 
- S(D3,'En atención, el historial suma +0,028 de AUC,<br>pero el intervalo incluye cero',
-   table(['Atención · test · 8 personas','AUC','IC 95 %'],[['HGB · solo ventana actual','0,660','[0,614; 0,704]'],['HGB · hasta 32 ventanas','<b>0,688</b>','[0,643; 0,730]'],['<span class="ref">Referencia: CatBoost · solo ventana actual</span>','<span class="ref">0,674</span>','<span class="ref">[0,635; 0,712]</span>']])
-   +'<div class="contrast-line"><strong>+0,028</strong><span>HGB con historial − sin historial<br>IC 95 % [−0,004; +0,051]</span><p>Mejora en 7 de 8 personas.<br>Frente al CatBoost: +0,014 [−0,015; +0,034]</p></div>',
-   'Creo que el 0,67 que comentamos antes es este CatBoost, el mejor sin historial de este análisis (0,674 en test); si se refería a otro, lo reviso. La comparación justa es la del HGB con y sin historial, con los mismos parámetros: sube 0,028 y mejora en 7 de las 8 personas, pero el intervalo toca el cero. Frente al CatBoost la diferencia es la mitad. Este contraste lo fijé como principal antes de mirar test. Me falta revisar cuánto historial tuvo realmente cada ventana en atención, como hice para activación en la lámina 16.',
-   T29)
+ S(D4,'Con la etiqueta antigua había tres personas raras',
+   img('calidad_gsr','Etiqueta antigua, 25 personas de entrenamiento.'),
+   'Esto fue lo que me hizo dudar. P4 casi no tenía señal y aun así todas sus ventanas tenían etiqueta. P34 y P46 tenían muchos puntajes repetidos, o sea empates, y P34 quedaba con 8,6 % de clase alta. Ahí paré de ajustar modelos y revisé la etiqueta.',
+   R+'activacion_diagnostico_nested_30-10-2026/diagnostico_personas.csv; '+R+'activacion_diagnostico_nested_30-10-2026/INFORME.md')
 
- S(D3,'Con otra representación del historial la mejora<br>sube a +0,033, pero la elegí después de ver test',
-   img('contrastes_atencion','Atención · test · diferencia de AUC por persona con IC 95 % bootstrap. Ambas filas usan el mismo test.'),
-   'El 29 de octubre el historial resumía el panel EEG/GSR anterior y las potencias relativas por canal; el 30 pasé a media y desviación de todas las variables. En atención el intervalo ya no toca el cero. Lo tomo con cuidado: elegí esa representación después de ver el primer resultado, y en esa misma corrida la activación, todavía con la etiqueta antigua, bajó 0,079 [−0,129; −0,030].',
-   T29+'; '+C30)
+ S(D4,'El generador mezclaba las ventanas',
+   '<div class="shift"><div class="col"><h3>Lo que debía pasar</h3>'
+   +''.join('<div class="row"><span class="win">Ventana %d</span><span class="gsr g%d">GSR %d</span></div>'%(k,k,k) for k in range(1,6))
+   +'</div><div class="col"><h3>Lo que pasaba</h3>'
+   +''.join('<div class="row"><span class="win">Ventana %d</span><span class="gsr g%d bad">GSR %d</span></div>'%(k,j,j) for k,j in zip(range(1,6),[3,1,5,2,4]))
+   +'</div><div class="col big"><b>98 %</b><span>de los valores GSR del archivo<br>quedaron en otra ventana<br>(25.498 de 25.992)</span></div></div>'
+   +caption('Al agrupar por persona y reiniciar el índice, cada valor perdía su ventana.'),
+   'Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guardados, así que las AUC de activación de antes no sirven. El 25.992 es el archivo completo, incluidas personas fuera del análisis.',
+   GSR+'INFORME.md; '+GSR+'auditoria_independiente_02-11-2026.json')
 
- S(D4,'Antes de la auditoría ya había señales de alerta<br>en la etiqueta de activación',
-   pair('<p class="opening">P4: solo el <b>12,6 %</b><br>de sus ventanas<br>tenía GSR válido.</p><p class="opening-sub">Pero todas sus ventanas recibían etiqueta.</p>',
-        '<h3>Otras señales de alerta</h3>'+para('Empates, personas con clases muy desbalanceadas (P34 tenía 8,6 % de positivos) y poco historial completo.')+para('Por eso dejé de ajustar modelos y revisé primero cómo se construía la etiqueta.')),
-   'Los resultados de activación que tenía se podían reproducir, pero eso no me decía nada sobre cómo estaba construida la etiqueta. Por eso la audité.',
-   R+'activacion_diagnostico_nested_30-10-2026/INFORME.md; ../../notas/bitacora.md')
+ S(D4,'"Alta" es estar más activado que su propia mediana: así se ve en P22',
+   img('ejemplo_etiqueta','P22, un estímulo. Cada punto es una ventana.'),
+   'Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si P22 está más activada que de costumbre en ese momento.',
+   GSR+'etiquetas.csv.gz; '+GSR+'umbrales.csv')
 
- S(D4,'La auditoría encontró un error de índices<br>en el generador de la etiqueta',
-   '<p class="intro">Al agrupar por persona y reiniciar el índice, los componentes GSR quedaban asignados a ventanas que no les correspondían.</p>'
-   '<div class="audit-layout"><div><b>25.498</b><span>de 25.992 posiciones del archivo completo (98 %;<br>incluye personas fuera del análisis) quedaron desplazadas</span></div><div><p>Si reproduzco el cálculo con el error, obtengo los mismos puntajes que tenía guardados (diferencias menores que 10⁻⁶).</p><p>Las AUC de activación anteriores dejan de servir como evidencia.</p></div></div>',
-   'Al reagrupar por persona se perdía el índice original de cada ventana. Ojo, eso no es cuántas etiquetas cambiaron de clase; ese número no lo tengo separado del cambio de reglas de V2. Las diferencias al reproducir fueron del orden de 10⁻⁷, que es la precisión con que se exportó. El mismo patrón aparece en el Modelo Profesor histórico de atención; esta auditoría no revisó la etiqueta de atención de octubre; eso lo tengo pendiente.',
-   GSR+'; '+R+'etiquetas_gsr_calidad_v2_01-11-2026/auditoria_independiente_02-11-2026.json')
+ S(D4,'La etiqueta antigua y la nueva coinciden solo en la mitad de las ventanas',
+   img('cambio_etiquetas','Ventanas con etiqueta en ambas versiones.'),
+   'Comparé la etiqueta antigua con la nueva en las mismas ventanas: cambia casi la mitad. Con clases balanceadas, eso es lo que esperaría si no tuvieran relación.',
+   GSR+'resumen_personas.csv')
 
- S(D4,'Reconstruí la etiqueta de activación (GSR V2)',
-   table(['Paso','Regla'],[['1 · Calidad','Cobertura de al menos 50 %, cuatro componentes válidos y respuestas de conductancia (SCR) no negativas'],['2 · Normalización','Solo con ventanas válidas, sin perder a qué ventana pertenece cada valor'],['3 · Contexto','Cinco ventanas válidas seguidas para calcular el puntaje de 6 s'],['4 · Clase','Mediana de cada persona; los empates quedan sin etiqueta']])
-   +caption('El contexto se reinicia si hay un hueco o cambia el estímulo.'),
-   'Cinco ventanas de dos segundos con paso de uno cubren seis segundos. Si un componente es constante aporta cero; si falta, la ventana queda sin puntaje. Todo esto lo calculo sobre las variables que ya tenía extraídas.',
-   GSR)
+ S(D4,'La etiqueta nueva (V2) deja 11.796 de 22.211 ventanas',
+   img('cascada','El paso 2 corrige el error y no saca ventanas.'),
+   'Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas válidas seguidas dentro del mismo estímulo; si hay un hueco o cambia el estímulo, parte de cero. Por calidad se van 401, todas de P4. Las 41 personas mantienen las dos clases.',
+   GSR+'motivos.csv; '+GSR+'INFORME.md')
+ S(D5,'"Hasta 32" fueron, en promedio, 8,7 ventanas',
+   '<div class="strips">'+strip(0,'Solo ventana actual')+strip(7,'Hasta 8 ventanas',real=4)+strip(31,'Hasta 32 (principal)',real=8)+'</div>'
+   +caption('Azul: ventanas que hubo en promedio en test. Punteado: lo que faltó. Mismo modelo (HGB) en los tres.'),
+   'Entrené el mismo modelo con tres largos de historial. El principal es hasta 32 contra solo la ventana actual. Pero como la etiqueta pide cinco ventanas válidas seguidas, los tramos son cortos: hasta 32 usó 8,7 ventanas en promedio y ninguna llegó a 32. Hasta 8 tuvo el historial completo en el 41 % de las ventanas.',
+   ACT+'protocolo.json; '+ACT+'reproducibilidad.json','roomy')
 
- S(D4,'La etiqueta GSR V2 deja 11.796 ventanas (53 %)',
-   img('retencion','De las 10.415 ventanas sin etiqueta, 9.995 no completan cinco ventanas válidas seguidas (la actual y las cuatro anteriores), 401 no cumplen la calidad GSR y 19 son empates. Las 41 personas conservan ambas clases.'),
-   'Las 22.211 filas originales se conservan con su motivo de exclusión. Casi toda la pérdida viene de exigir cinco ventanas seguidas dentro del mismo estímulo; por calidad de señal se pierden solo 401. El caso extremo es P4, que conserva 26 de 459 ventanas.',
-   GSR)
+ S(D5,'La activación queda en el azar',
+   img('auc_activacion','Media por persona con IC 95 %.'),
+   'Ninguno de los tres se separa del azar. Con un modelo que casi no discrimina, comparar contextos sirve poco, pero lo muestro igual porque era el contraste que había fijado.',
+   ACT+'INFORME.md; '+ACT+'metricas.csv')
 
- S(D5,'Volví a entrenar desde cero con la etiqueta GSR V2',
-   table(['Decisión','Cómo'],[['Modelo','HGB con tres contextos: solo ventana actual, hasta 8 y hasta 32'],['Contraste principal','Hasta 32 frente a solo ventana actual, fijado en el protocolo de la primera corrida V2'],['Selección','5 folds por persona dentro de entrenamiento; una configuración común'],['Comprobación','Repetí todo y obtuve exactamente los mismos números que el 1 de noviembre']])
-   +caption('Mismas filas, personas y etiquetas en todos los contextos. Detalle de la configuración en el anexo D.'),
-   'Lo repetí después de auditar la etiqueta, para asegurarme de que los números salían del código corregido. El modelo con historial recibe la ventana actual más la media y la desviación del historial disponible. Hasta 8 quedó definido como secundario desde el protocolo.',
-   ACT+'protocolo.json; '+ACT+'auditoria_desde_disco.json')
+ S(D5,'Con historial, 4 personas suben y 4 bajan',
+   img('activacion_personas','Activación, test. Línea gruesa: media (0,514 → 0,536). IC 95 % de la diferencia: [−0,013; +0,059].'),
+   'Mismo gráfico que en atención, ahora para activación. Acá no hay patrón: cuatro suben y cuatro bajan. Las personas van de 0,36 a 0,68 y la media pasa de 0,514 a 0,536. Hasta 8 sube 0,033 en test, pero en validación y entrenamiento no, así que no lo tomo como resultado.',
+   ACT+'metricas_personas.csv; '+ACT+'contrastes.csv')
+ S(D5,'En activación, fusionar señales tampoco se distingue de usar una sola',
+   img('ablaciones','Test. Los nueve intervalos incluyen cero.'),
+   'Con AUC cerca de 0,5, esta comparación dice poco. En atención, que sí predice, EEG solo y EEG con GSR quedaron casi iguales: −0,004 [−0,018; +0,010]. Además solo es fusión temprana; temprana contra intermedia y tardía con la etiqueta nueva está pendiente.',
+   ABL+'INFORME.md; '+ABL+'contrastes_fusion.csv')
 
- S(D5,'Con la etiqueta GSR V2, la activación queda cerca del azar (AUC 0,51–0,55)',
-   img('auc_activacion','HGB con EEG, mirada y pupila · AUC media por persona e IC 95 % bootstrap. En test, los tres intervalos incluyen 0,50.'),
-   'Test son 8 personas y 2.184 ventanas. Ninguno de los tres modelos se separa del azar en test. Esto no lo leo como que el historial no sirve: con un modelo que casi no discrimina, una diferencia entre contextos es difícil de interpretar.',
-   ACT+'INFORME.md')
+ S(D6,'Hoy la hipótesis queda sin una ventaja consistente',
+   img('sintesis','IC 95 % por persona. Oscuro: contraste principal.'),
+   'Según los criterios del manuscrito, hoy no hay una ventaja consistente en ninguno de los dos resultados. Si la mejora en atención se confirmara, la hipótesis tendría apoyo parcial. En activación el modelo no predice, así que no puedo decir nada del historial.',
+   'documentacion/Cierre_Experimental_V2_01-11-2026.md; '+HIP)
 
- S(D5,'En activación, el contraste principal (+0,022) incluye cero;<br>«hasta 8» sube solo en test',
-   img('contrastes_activacion','Diferencias por persona con IC 95 % bootstrap. OOF: entrenamiento evaluado fuera de fold.'),
-   'El contraste principal es positivo en las tres particiones, pero en ninguna se distingue de cero y en test mejora en 4 de 8 personas. Hasta 8 mejora en 7 de 8 personas en test; como es el secundario y no aparece en validación ni en entrenamiento, no lo tomo como resultado. Las diferencias las calculo dentro de cada persona.',
-   ACT+'contrastes.csv')
-
- S(D5,'«Hasta 32 ventanas» tuvo en promedio 8,7:<br>ninguna ventana de test llegó a 32',
-   img('historial','Activación GSR V2 · test, ponderado por ventanas. El historial se corta en huecos, cambios de estímulo y ventanas sin etiqueta. El modelo recibe la media y la desviación del historial.'),
-   'Esto viene de la etiqueta: como V2 exige cinco ventanas válidas seguidas y el historial solo usa filas etiquetadas, se pierden las ventanas iniciales. Entonces lo que evalué es un resumen de un historial corto; en la tesis tengo que describirlo así.',
-   ACT+'INFORME.md')
-
- S(D5,'En activación, la fusión no se distingue de cada señal sola;<br>con AUC cercanas a 0,5, esto dice poco',
-   img('ablaciones','Activación GSR V2 · test · 8 personas · diferencia de AUC por persona entre la fusión y cada señal sola, con IC 95 % bootstrap. Los nueve intervalos incluyen cero.'),
-   'Son 54 modelos nuevos con los mismos parámetros, personas y filas. Como casi todas las AUC están cerca de 0,5, esta comparación sirve poco para decidir sobre la fusión; hay un par de intervalos aislados que excluyen 0,5, como pupila con hasta 8 en test, pero sin corregir por comparaciones múltiples. Además solo compara fusión temprana con cada señal sola; temprana, intermedia y tardía con GSR V2 está pendiente.',
-   ABL)
-
- S(D6,'Atención muestra una mejora sin confirmar;<br>activación no se separa del azar',
-   table(['','Atención','Activación (GSR V2)'],[['AUC en test','0,66–0,69','0,51–0,55'],['Aporte del historial','+0,028 (IC incluye cero)<br>+0,033 con otra representación elegida después','+0,022 en test; el IC incluye cero en test, validación y entrenamiento<br>hasta 8: +0,033 solo en test'],['Cómo lo leo','Mejora sin confirmar','El modelo multimodal no se distingue de 0,5']])
-   +caption('Con los criterios del manuscrito, hoy no hay una ventaja consistente en ninguno de los dos resultados. Si la señal de atención se confirmara, la hipótesis tendría apoyo parcial.'),
-   'En atención el modelo predice la etiqueta y el historial ayuda un poco, pero no lo puedo confirmar. En activación el modelo no predice, así que no puedo decir nada del historial. Me falta revisar si el error de índices toca la etiqueta de atención.',
-   'documentacion/Cierre_Experimental_V2_01-11-2026.md; '+ACT+'INFORME.md')
-
- S(D6,'Si planifico una cohorte nueva,<br>¿cuántas personas harían falta?',
-   table(['Resultado','Variabilidad que uso para el cálculo','Personas evaluables'],[['Atención','La del test','62'],['Activación','La de validación','72'],['Activación','La del test','101'],['Activación','La de entrenamiento (OOF)','767']])
-   +caption('Supuestos: mejora mínima relevante +0,02 AUC, efecto real +0,04, potencia 90 % e IC de 97,5 % por resultado. Si las mismas personas aportan a ambos resultados, manda el N mayor. Con 20 % de pérdidas habría que reclutar 78 (atención) y hasta 959 (activación). En activación el cálculo supone un modelo que predice la etiqueta; con AUC ≈ 0,5 lo tomo solo como referencia.'),
-   'El N de activación depende mucho de qué variabilidad uso. Las estimaciones de validación y test salen de solo 8 personas; la de entrenamiento sale de 25, pero mezcla modelos de distintos folds, así que el 767 lo tomo como escenario pesimista. Los cálculos los comprobé simulando 100.000 veces cada escenario. El +0,02 es una propuesta mía, todavía sin justificación independiente.',
+ S(D6,'Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use',
+   img('muestra','Gris: atención. Azul: activación. Mejora relevante +0,02; efecto real +0,04.'),
+   'El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.',
    PROT+'INFORME.md; '+PROT+'verificacion_simulada.json')
 
- S(D6,'Cuatro decisiones para cerrar la evaluación',
+ S(D6,'Necesito decidir cuatro cosas con usted',
    '<ol class="questions">'
-   '<li><b>¿Cierro con los datos actuales o planifico una cohorte nueva?</b><span>Con los datos actuales el resultado queda inconcluso. Una cohorte nueva permitiría un contraste definido de antemano, si es factible reclutar.</span></li>'
-   '<li><b>¿Qué cuenta como «mejor»?</b><span>Cualquier mejora mayor que 0, como dice la hipótesis, o una mejora mínima relevante, por ejemplo +0,02 AUC.</span></li>'
-   '<li><b>¿Acepto etiquetas normalizadas con la sesión completa?</b><span>El manuscrito pide normalizar solo con entrenamiento; habría que ajustar esa redacción.</span></li>'
-   '<li><b>¿Escribo «activación (GSR)» en lugar de «emociones»?</b><span>La GSR por sí sola no sostiene afirmaciones sobre emoción en sentido amplio.</span></li>'
-   '</ol><p class="next-step">Mientras tanto: reviso si el error de índices afecta la etiqueta de atención y comparo fusión temprana, intermedia y tardía con GSR V2.</p>',
-   'Lo que está resuelto: el error de la etiqueta de activación, el reentrenamiento con la etiqueta corregida y la comparación en igualdad de condiciones. Lo que necesito de usted son estas cuatro decisiones; la primera define cómo sigue el resto del trabajo.',
+   '<li><b>¿Cierro con los datos actuales o planifico una cohorte nueva?</b><span>Con lo que tengo, el resultado queda inconcluso.</span></li>'
+   '<li><b>¿Qué cuenta como "mejor"?</b><span>Cualquier mejora sobre 0, como dice la hipótesis, o un mínimo como +0,02 AUC.</span></li>'
+   '<li><b>¿Acepto etiquetas normalizadas con la sesión completa?</b><span>El manuscrito pide normalizar solo con entrenamiento.</span></li>'
+   '<li><b>¿Escribo "activación (GSR)" en vez de "emociones"?</b><span>Con GSR no puedo hablar de emociones en general.</span></li>'
+   '</ol><p class="next-step">Mientras tanto: reviso si el error también afecta la etiqueta de atención y comparo fusión temprana, intermedia y tardía.</p>',
+   'El error de la etiqueta y el reentrenamiento ya están. Lo que más me urge es la primera pregunta.',
    PROT+'INFORME.md; ../../notas/pautas-escritura-recuperadas.md','closing-questions')
 
  AX='ANEXO'
- S(AX+' A · CURVAS ROC','Atención: curvas ROC en test',
-   img('roc_atencion','Curvas por persona interpoladas sobre una malla común y promediadas (8 personas). La AUC de la leyenda es la media de las AUC por persona.'),
-   'La AUC de la leyenda es la media de las AUC por persona; coincide con la de las tablas.',
-   T29+'; '+R+'temporalidad_eeg_v2_test_29-10-2026/predicciones_test.csv.gz')
- S(AX+' B · CURVAS ROC','Activación GSR V2: curvas ROC en test',
-   img('roc_activacion','8 personas · 2.184 ventanas. Misma construcción que el anexo A.'),
-   'Las tres curvas quedan pegadas a la diagonal, que es lo mismo que muestran las AUC.',
+ S(AX+' A','Atención: curvas ROC en test',
+   img('roc_atencion','Test, 8 personas. Curva promedio de las curvas por persona.'),
+   'La AUC de la leyenda es la media de las AUC por persona.',
+   T29+'INFORME.md; '+T29+'predicciones_test.csv.gz')
+ S(AX+' B','Activación: curvas ROC en test',
+   img('roc_activacion','Test, 8 personas (2.184 ventanas). Curva promedio de las curvas por persona.'),
+   'Las tres curvas van pegadas a la diagonal.',
    ACT+'predicciones_externas.csv.gz; '+ACT+'metricas.csv')
- S(AX+' C · DATOS','Señales disponibles',
-   table(['Señal','Qué uso'],[['EEG','Potencia por banda, descriptores espectrales y temporales por canal'],['GSR','Componentes tónico y fásico, respuestas SCR'],['Mirada','Fijaciones, dispersión y trayectoria'],['Pupila','Cambios en el diámetro pupilar']])
-   +caption('Toma de Muestra 2: registros de navegación web de 2025. No incluye expresión facial.'),
-   'Son medidas fisiológicas y de mirada; ninguna es un autorreporte.',
+ S(AX+' C','Señales',
+   table(['Señal','Qué uso'],[['EEG','Potencia por banda y descriptores espectrales y temporales, 16 canales'],['GSR','Componentes tónico y fásico, respuestas de conductancia (SCR)'],['Mirada','Fijaciones, dispersión y trayectoria'],['Pupila','Cambios en el diámetro']])
+   +caption('Toma de Muestra 2: navegación web, agosto de 2025. Sin expresión facial.'),
+   'La EEG la uso por canal desde octubre; antes promediaba los canales.',
    HIP+'; ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md')
- S(AX+' D · CONFIGURACIÓN','Configuración del entrenamiento de activación',
-   table(['Componente','Valor'],[['Estimador','HistGradientBoostingClassifier (HGB)'],['Búsqueda interna','7 o 15 hojas · 5 folds por persona · solo ventana actual, hasta 8 y hasta 32'],['Configuración final','15 hojas · 300 iteraciones · tasa de aprendizaje 0,05 · L2 = 10'],['Preprocesamiento','Mediana, indicadores de ausencia y estandarización, ajustados solo en entrenamiento'],['Volumen','30 ajustes internos · 15 modelos OOF · 3 modelos finales']])
-   +caption('min_samples_leaf = 30 · sin early stopping · semilla 20261101 · ponderación por persona y clase.'),
-   'La misma configuración se comparte entre los tres contextos para que la única diferencia sea el historial.',
+ S(AX+' D','Configuración del entrenamiento de activación',
+   table(['',''],[['Modelo','HistGradientBoostingClassifier (HGB)'],['Búsqueda','7 o 15 hojas · 5 folds agrupados por persona'],['Final','15 hojas · 300 iteraciones · tasa 0,05 · L2 = 10'],['Preprocesamiento','Mediana, indicadores de ausencia y estandarización, solo con entrenamiento'],['Modelos','30 ajustes internos · 15 OOF · 3 finales']]),
+   'La misma configuración para los tres largos de historial.',
    ACT+'protocolo.json')
- S(AX+' E · PROTOCOLO','Regla de decisión propuesta para una cohorte nueva',
-   table(['Si…','Entonces'],[['Ambos límites inferiores superan el margen','Respaldo la mejora en ambos resultados'],['Algún límite superior queda bajo el margen','Rechazo esa mejora para estos modelos'],['Los intervalos cruzan el margen','El resultado queda inconcluso']])
-   +caption('Intervalos de 97,5 % por resultado para controlar ambos a la vez. Modelos, etiquetas y contexto principal se fijan antes de evaluar.'),
-   'La regla la dejo escrita antes de tener datos, sabiendo que puede terminar en inconcluso. Si rechazo +0,02, igual puede haber una mejora más chica.',
-   PROT+'INFORME.md')
- S(AX+' F · FUENTES','De dónde sale cada cifra',
-   '<ol class="sources"><li>Hipótesis · manuscrito (vault del 24-09-2026)</li><li>Primeras redes y fusión · septiembre de 2026</li><li>Modelo Profesor de atención y EEG por canal · 29 de octubre</li><li>Historial en atención · 29 y 30 de octubre</li><li>Auditoría y etiqueta GSR V2 · 1 y 2 de noviembre</li><li>Ablación (1 de noviembre), reentrenamiento y protocolo (2 al 6 de noviembre)</li></ol>'
-   +caption('Las rutas exactas de cada informe están en FUENTES.md y en las notas de cada lámina.'),
-   'Si quiere revisar alguna cifra en detalle, le puedo mostrar el informe correspondiente.',
-   'FUENTES.md')
  for x in out:
-  for k in ('title','body'):x[k]=x[k].replace(' %','\u00a0%')
- for i in [1,2,3,5,8,22]:out[i]['kind']=(out[i]['kind']+' roomy').strip()
+  for k in ('title','body'):x[k]=x[k].replace(' %',' %')
  return out
 
 CSS='''
@@ -191,4 +226,21 @@ blockquote{font-family:Cambria,Georgia,serif;font-size:34px;line-height:1.3;colo
 .sources{font-size:23px;line-height:1.5}.ref{color:#7b8b9b;font-weight:400}.next-step{font-size:20px;color:#145ac7;margin-top:22px}.roomy td{font-size:26px;padding-top:26px;padding-bottom:26px}.roomy th{font-size:15px}.roomy .prose{font-size:28px}.roomy .caption{font-size:21px;margin-top:34px}.roomy h3{font-size:20px}.roomy blockquote{font-size:37px;margin-bottom:50px}.roomy .split-counts{margin:50px 0 60px}.roomy .opening{font-size:46px}.roomy .opening-sub{font-size:27px}.data-figure img{height:372px}
 td{font-size:23px}
 @media(max-width:650px){.reading blockquote{font-size:22px}.reading .questions b{font-size:19px}.reading .questions span{font-size:16px}.reading .questions li{padding-left:40px}.reading h1{font-size:30px}}
+
+.strips{margin:8px 0 6px}.strip{display:flex;align-items:center;gap:22px;margin:16px 0}.strip-label{width:230px;font-size:20px;color:#34516f;text-align:right}.cells{display:flex;gap:4px}.w{display:block;width:22px;height:40px;border:1.5px solid #c3cfdc;border-radius:3px;background:#fff}.w.hist{background:#9fc1e6;border-color:#9fc1e6}.w.nom{border:1.5px dashed #5e9bd6;background:#eef3f9}.w.now{background:#145ac7;border-color:#145ac7}
+.flows h3{margin:18px 0 10px}.flow{display:flex;align-items:stretch;gap:12px}.box{flex:1;border-radius:6px;padding:16px 14px;font-size:21px;line-height:1.3;text-align:center;display:flex;flex-direction:column;justify-content:center}.box small{font-size:16px;color:inherit;opacity:.8;margin-top:4px}.box.sig{background:#eef3f9;color:#34516f}.box.prof{background:#145ac7;color:#fff}.box.lab{background:#fff;border:2px solid #145ac7;color:#145ac7;font-weight:600}.box.stud{background:#142a44;color:#fff}.box.step{background:#eef3f9;color:#142a44;text-align:left;justify-content:flex-start;padding:26px 20px;font-size:25px;min-height:250px;margin-top:20px}.box.step small{font-size:19px;line-height:1.4;margin-top:10px}.box.step em{font-style:normal;margin-top:auto;padding-top:18px;font-size:22px;color:#145ac7;font-weight:600}.box.step b{font-family:Cambria,Georgia,serif;color:#145ac7;font-size:34px;font-weight:400;display:block;margin-bottom:6px}.arrow{align-self:center;font-size:30px;color:#9aa8b8}
+.shift{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:46px;margin-top:6px}.shift h3{margin-bottom:12px}.shift .row{display:flex;gap:10px;margin:7px 0}.win{width:130px;font-size:19px;padding:8px 10px;background:#eef3f9;border-radius:4px;color:#34516f}.gsr{width:100px;font-size:19px;padding:8px 10px;border-radius:4px;color:#fff;text-align:center}.g1{background:#145ac7}.g2{background:#2f74d0}.g3{background:#5e9bd6}.g4{background:#88b4e2}.g5{background:#a9c8ec}.gsr.bad{outline:2px dashed #142a44}.shift .big b{display:block;font-family:Cambria,Georgia,serif;font-size:110px;font-weight:400;color:#142a44;line-height:1;margin-top:28px}.shift .big span{font-size:21px;line-height:1.45;color:#536b85}
+.timeline3{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:20px}.timeline3 div{border-top:4px solid #145ac7;padding-top:20px}.timeline3 b{font-family:Cambria,Georgia,serif;font-size:32px;font-weight:400;color:#145ac7;display:block}.timeline3 span{display:block;font-size:19px;color:#536b85;margin:6px 0 16px;letter-spacing:.3px;text-transform:uppercase}.timeline3 p{font-size:23px;line-height:1.45}
+@media(max-width:650px){.reading .strip-label{width:110px;font-size:13px}.reading .w{width:16px;height:22px}.reading .flow{flex-direction:column}.reading .arrow{transform:rotate(90deg)}.reading .shift,.reading .timeline3{grid-template-columns:1fr}}
+
+.agenda{list-style:none;counter-reset:a;padding:0;margin:4px 0 0;columns:1}.agenda li{counter-increment:a;display:flex;align-items:baseline;gap:22px;padding:7px 0;border-bottom:1px solid #dce4ee}.agenda li:before{content:counter(a);font-family:Cambria,Georgia,serif;font-size:34px;color:#145ac7;width:34px}.agenda b{font-size:26px;font-weight:500;min-width:470px}.agenda span{font-size:20px;color:#536b85}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:44px;border-top:1px solid #dce4ee;padding-top:26px}.facts b{display:block;font-family:Cambria,Georgia,serif;font-size:52px;font-weight:400;color:#145ac7;line-height:1}.facts span{display:block;font-size:18px;line-height:1.4;color:#536b85;margin-top:10px}
+table.matrix{font-size:19px}table.matrix th{text-align:center}table.matrix th:first-child,table.matrix th:last-child{text-align:left}table.matrix td{padding:9px 10px;font-size:19px}table.matrix td:first-child{width:auto;font-weight:500}.matrix td.m{text-align:center;color:#145ac7;font-size:20px;width:70px}.matrix td.n{color:#536b85;font-size:17px}.matrix tr.me{background:#eef3f9!important}.matrix tr.me td{font-weight:600;color:#142a44}.matrix tr.me td.m{color:#142a44}
+.gaps{display:grid;grid-template-columns:1fr 1fr;gap:56px}.gaps ol{padding-left:24px;margin:0}.gaps li{font-size:23px;line-height:1.4;margin-bottom:16px}
+@media(max-width:650px){.reading .facts,.reading .gaps{grid-template-columns:1fr}.reading .agenda b{min-width:0;font-size:19px}.reading table.matrix td{font-size:12px;padding:5px}}
+
+.kdd .box.step{min-height:230px;font-size:22px;padding:22px 16px}.kdd .box.step small{font-size:17px}.kdd .arrow{font-size:24px}
+.cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.cards4>div{background:#eef3f9;border-radius:6px;padding:20px 18px;display:flex;flex-direction:column}.cards4 h3{margin:0 0 10px;font-size:22px}.cards4 p{font-size:18px;line-height:1.4;margin:0 0 14px}.cards4 b{margin-top:auto;font-family:Cambria,Georgia,serif;font-size:44px;font-weight:400;color:#145ac7;line-height:1}.cards4 span{font-size:16px;color:#536b85;margin-top:6px}.cards4 span.foot{margin-top:auto;font-size:17px;color:#145ac7;font-weight:600}
+.eval3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:40px;border-top:1px solid #dce4ee;padding-top:24px}.eval3 b{display:block;font-size:24px;font-weight:600;color:#145ac7;margin-bottom:8px}.eval3 span{font-size:19px;line-height:1.45;color:#536b85}
+@media(max-width:650px){.reading .cards4,.reading .eval3{grid-template-columns:1fr}}
 '''

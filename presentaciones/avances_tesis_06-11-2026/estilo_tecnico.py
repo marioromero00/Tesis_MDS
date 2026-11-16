@@ -10,7 +10,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 ASSETS=HERE/'graficos';ASSETS.mkdir(exist_ok=True)
 BLUE='#1559a6';LIGHT='#5e9bd6';DARK='#163550';GRAY='#65758a';ORANGE='#c46a1b'
-plt.rcParams.update({'font.family':'Arial','font.size':14,'axes.labelcolor':DARK,'text.color':DARK,'xtick.color':GRAY,'ytick.color':GRAY,'xtick.labelsize':13,'ytick.labelsize':13,'axes.spines.top':False,'axes.spines.right':False,'axes.edgecolor':'#cbd5e1','grid.color':'#e5ebf2','axes.titlesize':14,'figure.facecolor':'white','axes.facecolor':'white','savefig.facecolor':'white'})
+plt.rcParams.update({'font.family':'Arial','font.size':14,'axes.labelcolor':DARK,'text.color':DARK,'xtick.color':'#3e5268','ytick.color':'#3e5268','xtick.labelsize':13,'ytick.labelsize':13,'axes.spines.top':False,'axes.spines.right':False,'axes.edgecolor':'#cbd5e1','grid.color':'#e5ebf2','axes.titlesize':14,'figure.facecolor':'white','axes.facecolor':'white','savefig.facecolor':'white'})
 from matplotlib.ticker import FuncFormatter
 def c(x,d=3,sign=False):
  s=(f'{x:+.{d}f}' if sign else f'{x:.{d}f}').replace('-','−').replace('.',',')
@@ -88,7 +88,7 @@ def apply(slides):
  for i,(v,lo,hi) in enumerate(values):
   ax.errorbar(v,i,xerr=[[v-lo],[hi-v]],fmt='o',color=BLUE,capsize=6,lw=2,ms=9)
   ax.text(.064,i,f'{c(v,3,True)}\n[{c(lo,3,True)}; {c(hi,3,True)}]',va='center',fontsize=14)
- ax.axvline(0,ls='--',color=ORANGE,lw=1.2);ax.set(yticks=[0,1],yticklabels=['29 oct · contraste principal fijado','30 oct · media y desviación de todas las variables'],xlim=(-.02,.09),ylim=(1.7,-.7),xlabel='Diferencia de AUC en test: HGB con historial − HGB solo ventana actual');ax.set_xticks([-.02,0,.02,.04,.06]);comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'contrastes_atencion')
+ ax.axvline(0,ls='--',color=ORANGE,lw=1.2);ax.set(yticks=[0,1],yticklabels=['Comparación fijada','Media y desviación de todo (después)'],xlim=(-.02,.09),ylim=(1.7,-.7),xlabel='Diferencia de AUC en test: HGB con historial − HGB solo ventana actual');ax.set_xticks([-.02,0,.02,.04,.06]);comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'contrastes_atencion')
  # Label retention with absolute counts.
  q=read('resultados/etiquetas_gsr_calidad_v2_01-11-2026/resumen_personas.csv').groupby('split')[['total','new_labelled']].sum().loc[['train','validation','test']]
  f,ax=fig(11,3.8);ys=np.arange(3)
@@ -107,7 +107,7 @@ def apply(slides):
    r=cf[cf.split.eq('test')&cf.context.eq(c_)&cf.contrast.eq('full_minus_'+m)].iloc[0]
    x=k+(j-1)*.24
    ax.errorbar(x,r.delta,yerr=[[r.delta-r.low],[r.high-r.delta]],fmt='o',color=[GRAY,LIGHT,BLUE][j],capsize=5,ms=8,lw=1.8,zorder=3)
-   ax.text(x+.06,r.delta,c(r.delta,3,True),va='center',ha='left',fontsize=12,color=DARK,bbox=dict(boxstyle='square,pad=.1',fc='white',ec='none',alpha=.85))
+  
  for j,lab in enumerate(['Solo ventana actual','Hasta 8','Hasta 32 (principal)']):ax.plot([],[],'o',ms=8,color=[GRAY,LIGHT,BLUE][j],label=lab)
  ax.axhline(0,ls='--',color=ORANGE,lw=1.2)
  ax.set(xticks=range(3),xticklabels=['Fusión − EEG','Fusión − mirada','Fusión − pupila'],xlim=(-.5,2.6),ylabel='Diferencia de AUC en test');comma_axis(ax,'y',2);ax.legend(frameon=False,loc='lower center',bbox_to_anchor=(.5,1.0),ncol=3);ax.grid(axis='y',zorder=0);save(f,'ablaciones')
@@ -126,6 +126,142 @@ def apply(slides):
   ax.set(xticks=range(3),xticklabels=['Solo ventana actual','Hasta 8','Hasta 32'],title=title,ylim=(0,limit));ax.grid(axis='y');ax.set_axisbelow(True)
  axes[1].yaxis.set_major_formatter(FuncFormatter(lambda v,_:f'{v:.0f} %'))
  save(f,'historial')
+ # ---- Gráficos nuevos v5 ----
+ E=read('resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz')
+ U=read('resultados/etiquetas_gsr_calidad_v2_01-11-2026/umbrales.csv').set_index('participant')
+ # 1) Ejemplo de pseudoetiqueta: P22, segmento más largo.
+ seg=E[(E.participant.eq('P22'))&(E.segment_id.eq(185))].copy()
+ t0=pd.to_datetime(seg.window_start_utc).min();seg['t']=(pd.to_datetime(seg.window_start_utc)-t0).dt.total_seconds()
+ med=U.loc['P22','median'];f,ax=fig(11,3.6)
+ ax.plot(seg.t,seg.score6s_quality,color='#c3cfdc',lw=1.5,zorder=1)
+ hi=seg[seg.activation_binary_v2.eq(1)];lo=seg[seg.activation_binary_v2.eq(0)]
+ ax.scatter(hi.t,hi.score6s_quality,color=BLUE,s=34,zorder=3,label='Alta (sobre la mediana)')
+ ax.scatter(lo.t,lo.score6s_quality,color='#9aa8b8',s=34,zorder=3,label='Baja')
+ ax.axhline(med,color=DARK,ls='--',lw=1.4);ax.text(seg.t.max()+1,med+.12,'mediana de P22',color=DARK,va='bottom',fontsize=12)
+ ax.set(xlabel='Segundos desde el inicio del estímulo',ylabel='Puntaje GSR de 6 s');comma_axis(ax,'y',1)
+ ax.set_xlim(seg.t.min()-1,seg.t.max()+9);ax.legend(frameon=False,loc='upper left',ncol=2);ax.grid(axis='y');save(f,'ejemplo_etiqueta')
+ # 2) Participantes por partición.
+ P=read('resultados/modelado/particion_participantes.csv')
+ order=['train','validation','test','sensitivity','excluded'];names={'train':'Entrenamiento','validation':'Validación','test':'Test','sensitivity':'Sensibilidad (P29)','excluded':'Excluidas'}
+ colors={'train':BLUE,'validation':LIGHT,'test':DARK,'sensitivity':'#7b8b9b','excluded':'#d5dde7'}
+ f,ax=fig(11,3.4);x0=0
+ for sp in order:
+  ids=P[P.split.eq(sp)].participant.tolist();ncol=5
+  for k,pid in enumerate(ids):
+   ax.scatter(x0+k%ncol,-(k//ncol),s=420,color=colors[sp],zorder=3,edgecolor='white')
+  w=min(len(ids),ncol)
+  ax.text(x0+(w-1)/2,1.0,names[sp],ha='center',va='bottom',fontsize=14,color=DARK,weight='bold')
+  ax.text(x0+(w-1)/2,.62,f'{len(ids)} persona'+('s' if len(ids)>1 else '')+({'train':' · 13.524 ventanas','validation':' · 4.662','test':' · 4.025'}.get(sp,'')),ha='center',va='bottom',fontsize=12,color=GRAY)
+  x0+=w+2.2
+ ax.set(xlim=(-.8,x0-1.2),ylim=(-4.6,1.6));ax.axis('off');save(f,'particiones')
+ # 3) Profesor igualitario vs PCA (AUC OOF train, modelos sin historial).
+ Q=read('resultados/profesor_binario_reconstruido_29-10-2026/comparacion_profesores_modelos.csv')
+ fams=[('Logistica','current','Logística'),('RandomForest','current','Random Forest'),('TCN','repeat_current','TCN'),('LSTM','repeat_current','LSTM')]
+ f,ax=fig(11,3.7)
+ for j,(prof,col,lab) in enumerate([('igualitario','#9aa8b8','Pesos iguales'),('pca',BLUE,'PCA')]):
+  vals=[Q[Q.profesor.eq(prof)&Q.family.eq(fa)&Q['mode'].eq(mo)].iloc[0] for fa,mo,_ in fams]
+  xs=np.arange(4)+(j-.5)*.36
+  ax.bar(xs,[v.auc_macro-.5 for v in vals],.34,bottom=.5,color=col,label=lab,zorder=2)
+  for xx,v in zip(xs,vals):ax.text(xx,v.auc_macro+.004,c(v.auc_macro),ha='center',fontsize=12)
+ ax.axhline(.5,color=ORANGE,ls='--',lw=1.2);ax.set(xticks=range(4),xticklabels=[l for *_,l in fams],ylim=(.48,.66),yticks=[.50,.55,.60,.65],ylabel='AUC en entrenamiento (OOF)');comma_axis(ax,'y',2)
+ ax.legend(frameon=False,loc='upper left',ncol=2);ax.grid(axis='y',zorder=0);save(f,'profesores')
+ # 4) Atención por persona: HGB sin historial vs hasta 32.
+ M=read('resultados/temporalidad_eeg_v2_test_29-10-2026/metricas_participantes.csv')
+ a0=M[M.strategy.eq('inductivo_estatico_pareado')].set_index('participant').auc;a1=M[M.strategy.eq('inductivo_ctx32')].set_index('participant').auc
+ f,ax=fig(11,3.9)
+ ys={}
+ last=-9
+ order_=list(a1.sort_values().index);pos=[a1[q] for q in order_]
+ for _ in range(200):
+  for q in range(1,len(pos)):
+   if pos[q]-pos[q-1]<.026:
+    m=(pos[q]+pos[q-1])/2;pos[q-1]=m-.026/2;pos[q]=m+.026/2
+ ys=dict(zip(order_,pos))
+ for pid in a0.index:
+  up=a1[pid]>a0[pid];col=BLUE if up else '#7b8b9b'
+  ax.plot([0,1],[a0[pid],a1[pid]],color=col,lw=2,marker='o',ms=7,alpha=.9)
+  ax.plot([1.005,1.06],[a1[pid],ys[pid]],color=col,lw=.8)
+  ax.text(1.07,ys[pid],pid,va='center',fontsize=12,color=col)
+ ax.plot([0,1],[a0.mean(),a1.mean()],color=DARK,lw=4,marker='o',ms=10,zorder=4)
+ ax.text(-.04,a0.mean(),'media',ha='right',va='center',fontsize=13,color=DARK,weight='bold')
+ ax.axhline(.5,color='#c3cfdc',ls='--',lw=1)
+ ax.set(xticks=[0,1],xticklabels=['HGB · solo ventana actual','HGB · hasta 32 ventanas'],xlim=(-.3,1.25),ylabel='AUC por persona (test)');comma_axis(ax,'y',2);ax.grid(axis='y');save(f,'atencion_personas')
+ # 5) Diagnóstico de la etiqueta antigua (25 personas de entrenamiento): dos paneles.
+ Dg=read('resultados/activacion_diagnostico_nested_30-10-2026/diagnostico_personas.csv');Dg['u']=Dg.score6s_unique/Dg.windows*100;Dg['pos']=Dg.positive_rate*100
+ f,(a1_,a2_)=plt.subplots(1,2,figsize=(11,3.9),layout='constrained',gridspec_kw=dict(width_ratios=[1,1]))
+ cv=Dg.sort_values('gsr_window_valid_mean')
+ a1_.bar(range(len(cv)),cv.gsr_window_valid_mean*100,color=[DARK if p_=='P4' else '#b9cde3' for p_ in cv.participant],width=.8)
+ i4_=list(cv.participant).index('P4');a1_.annotate('P4: solo 12,6 %',(i4_,12.6),xytext=(4,112),fontsize=13,color=DARK,weight='bold',arrowprops=dict(arrowstyle='-',color=DARK,lw=1))
+ a1_.set(xticks=[],ylim=(0,125),yticks=[0,25,50,75,100],title='GSR válido por persona');a1_.yaxis.set_major_formatter(FuncFormatter(lambda v,_:f'{v:.0f} %'));a1_.grid(axis='y');a1_.set_axisbelow(True)
+ sc=Dg.sort_values('pos')
+ a2_.bar(range(len(sc)),sc.pos,color=[DARK if p_ in ('P34','P46') else '#b9cde3' for p_ in sc.participant],width=.8)
+ a2_.axhline(50,color=ORANGE,ls='--',lw=1.2)
+ for k_,p_ in enumerate(sc.participant):
+  if p_=='P34':a2_.text(k_-.6,sc.pos.iloc[k_]+1,'P34',ha='right',fontsize=13,color=DARK,weight='bold')
+  if p_=='P46':a2_.text(k_-.6,sc.pos.iloc[k_]+1,'P46',ha='right',fontsize=13,color=DARK,weight='bold')
+ a2_.set(xticks=[],xlim=(-4,len(sc)),ylim=(0,60),title='Ventanas con clase "alta" por persona');a2_.yaxis.set_major_formatter(FuncFormatter(lambda v,_:f'{v:.0f} %'));a2_.grid(axis='y');a2_.set_axisbelow(True)
+ save(f,'calidad_gsr')
+ # 6) Cambio de clase entre etiqueta antigua y V2.
+ Rp=read('resultados/etiquetas_gsr_calidad_v2_01-11-2026/resumen_personas.csv')
+ Rp['ch']=Rp.changed_on_common/Rp.common*100;Rc=Rp[Rp.common>0].sort_values('ch')
+ f,ax=fig(11,3.6);ax.bar(range(len(Rc)),Rc.ch,color=BLUE,width=.75)
+ tot=Rp.changed_on_common.sum()/Rp.common.sum()*100
+ ax.axhline(50,color=ORANGE,ls='--',lw=1.2);ax.text(0,52,'50 %',ha='left',color=ORANGE,fontsize=12,bbox=dict(fc='white',ec='none',pad=2),zorder=5)
+ ax.set(xticks=[],ylim=(0,80),xlabel=f'{len(Rc)} personas, ordenadas',ylabel='Ventanas que cambian de clase');ax.yaxis.set_major_formatter(FuncFormatter(lambda v,_:f'{v:.0f} %'))
+ ax.text(0,76,f'En total: {miles(Rp.changed_on_common.sum())} de {miles(Rp.common.sum())} ventanas ({c(tot,1)} %)',fontsize=14,color=DARK,weight='bold',va='top')
+ ax.grid(axis='y');ax.set_axisbelow(True);save(f,'cambio_etiquetas')
+ # 7) Síntesis: contrastes clave en un solo gráfico.
+ rows=[('Atención · comparación fijada',r1.delta_auc,r1.ci_low,r1.ci_high,BLUE),('Atención · media y desviación de todo (después)',r2.delta,r2.low,r2.high,LIGHT)]
+ for split,cc_,lab,col in [('test',32,'Activación · principal · test',BLUE),('validation',32,'Activación · principal · validación',BLUE),('test',8,'Activación · hasta 8 · test',LIGHT),('validation',8,'Activación · hasta 8 · validación',LIGHT)]:
+  r=con[con.split.eq(split)&con.context.eq(cc_)].iloc[0];rows.append((lab,r.delta,r.low,r.high,col))
+ f,ax=fig(11,3.9)
+ for j,(lab,d,lo,hi,col) in enumerate(rows):
+  ax.errorbar(d,j,xerr=[[d-lo],[hi-d]],fmt='o',color=col,capsize=5,ms=9,lw=2)
+  ax.text(.085,j,c(d,3,True),va='center',fontsize=14,color=DARK)
+ ax.axhspan(1.5,5.5,color='#f1f5fa',zorder=0)
+ ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(yticks=range(len(rows)),yticklabels=[r[0] for r in rows],ylim=(len(rows)-.5,-.5),xlim=(-.04,.1),xlabel='Diferencia de AUC: con historial − sin historial');ax.set_xticks([-.025,0,.025,.05,.075]);comma_axis(ax,'x',3);ax.grid(axis='x');save(f,'sintesis')
+ # 8) Tamaño de muestra.
+ f,ax=fig(11,3.2);labs=['Atención · variabilidad de test','Activación · variabilidad de validación','Activación · variabilidad de test','Activación · variabilidad de entrenamiento (OOF)'];ns=[62,72,101,767]
+ ax.barh(range(4),ns,color=[GRAY,BLUE,BLUE,BLUE],height=.55)
+ for i,n in enumerate(ns):ax.text(n+12,i,str(n),va='center',fontsize=15,color=DARK,weight='bold')
+ ax.set(yticks=range(4),yticklabels=labs,xlim=(0,880),ylim=(3.6,-.6),xlabel='Personas nuevas evaluables');ax.grid(axis='x');ax.set_axisbelow(True);save(f,'muestra')
+ # 9) Cascada de ventanas GSR V2.
+ Mo=read('resultados/etiquetas_gsr_calidad_v2_01-11-2026/motivos.csv').groupby('label_reason').windows.sum()
+ total=int(Mo.sum());steps=[('Ventanas\noriginales',total,None),('1 · Calidad GSR\n(cobertura ≥ 50 %)',-int(Mo.get('cobertura_o_flag_invalido',0)),None),('3 · Contexto: 5 ventanas\nválidas seguidas',-int(Mo.get('historial_insuficiente',0)),None),('4 · Empates con\nla mediana',-int(Mo.get('empate_mediana',0)),None)]
+ f,ax=fig(11,3.9);level=0
+ for k,(lab,v,_) in enumerate(steps):
+  if k==0:ax.bar(k,v,color='#b9cde3',width=.6);level=v;ax.text(k,v+250,miles(v),ha='center',fontsize=14,color=DARK)
+  else:
+   ax.bar(k,max(-v,180),bottom=level+v,color='#9aa8b8',width=.6);ax.text(k,level+400,'−'+miles(-v)+(' (P4)' if k==1 else ''),ha='center',fontsize=14,color=DARK);level+=v
+ ax.bar(len(steps),level,color=BLUE,width=.6);ax.text(len(steps),level+250,miles(level),ha='center',fontsize=15,color=DARK,weight='bold')
+ assert level==int(Mo.get('etiquetada'))
+ ax.set(xticks=range(len(steps)+1),xticklabels=[s_[0] for s_ in steps]+['Con etiqueta\nV2'],ylim=(0,26000));ax.yaxis.set_major_formatter(FuncFormatter(miles));ax.grid(axis='y');ax.set_axisbelow(True);save(f,'cascada')
+ # 10) Activación por persona: solo ventana actual vs hasta 32 (test).
+ Mp=read('resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas_personas.csv');Mt=Mp[Mp.split.eq('test')]
+ b0=Mt[Mt.context.eq(1)].set_index('participant').auc;b1=Mt[Mt.context.eq(32)].set_index('participant').auc
+ f,ax=fig(11,3.9);ys={};last=-9
+ order_=list(b1.sort_values().index);pos=[b1[q] for q in order_]
+ for _ in range(200):
+  for q in range(1,len(pos)):
+   if pos[q]-pos[q-1]<.034:
+    m=(pos[q]+pos[q-1])/2;pos[q-1]=m-.034/2;pos[q]=m+.034/2
+ ys=dict(zip(order_,pos))
+ for pid in b0.index:
+  up=b1[pid]>b0[pid];col=BLUE if up else '#7b8b9b'
+  ax.plot([0,1],[b0[pid],b1[pid]],color=col,lw=2,marker='o',ms=7,alpha=.9)
+  ax.plot([1.005,1.06],[b1[pid],ys[pid]],color=col,lw=.8);ax.text(1.07,ys[pid],pid,va='center',fontsize=12,color=col)
+ ax.plot([0,1],[b0.mean(),b1.mean()],color=DARK,lw=4,marker='o',ms=10,zorder=4)
+ ax.text(-.04,b0.mean(),'media',ha='right',va='center',fontsize=13,color=DARK,weight='bold')
+ ax.axhline(.5,color=ORANGE,ls='--',lw=1.2)
+ ax.set(xticks=[0,1],xticklabels=['Solo ventana actual','Hasta 32 ventanas'],xlim=(-.3,1.25),ylabel='AUC por persona (test)');comma_axis(ax,'y',2);ax.grid(axis='y');save(f,'activacion_personas')
+ # 11) Historial real por persona (test).
+ Cv=read('resultados/activacion_gsr_v2_recalculo_02-11-2026/cobertura_test.csv')
+ f,ax=fig(11,3.9)
+ for j,(ctx,col) in enumerate([(8,LIGHT),(32,BLUE)]):
+  g=Cv[Cv.context.eq(ctx)].sort_values('participant');xs=np.arange(len(g))+(j-.5)*.3
+  ax.bar(xs,g.mean_history,.28,color=col,label=f'Hasta {ctx}',zorder=2)
+  ax.axhline(ctx,color=col,ls=':',lw=1.5);ax.text(-.45,ctx+.6,f'máximo {ctx}',ha='left',color=col,fontsize=12)
+ ax.set(xticks=range(len(g)),xticklabels=g.participant,ylim=(0,35),ylabel='Ventanas usadas en promedio\n(incluida la actual)');ax.legend(frameon=False,loc='upper right',bbox_to_anchor=(1,.86),ncol=2);ax.grid(axis='y',zorder=0);save(f,'historial_personas')
  # Editorial changes: direct technical titles, no repeating promotional conclusions.
  titles={0:'Predicción multimodal de<br>atención y activación',1:'Problema y objetivo de investigación',2:'Hipótesis y variables objetivo',3:'Modalidades y características',4:'Arquitectura profesor–estudiante',5:'Particiones y unidad de evaluación',6:'Etapas del desarrollo experimental',7:'Modelos y controles evaluados',8:'Pseudoetiquetas binarias de atención',9:'Extracción EEG por canal',10:'Atención: curvas ROC en test',11:'Atención: comparación controlada',12:'Atención: sensibilidad a la representación',13:'Diagnóstico de las etiquetas GSR originales',14:'Error de alineación en el generador histórico',15:'Criterios de calidad de GSR V2',16:'GSR V2: retención de ventanas',17:'Activación V2: AUC e intervalos de confianza',18:'Activación V2: contrastes temporales pareados',19:'Activación V2: ablación de modalidades',20:'Cobertura efectiva del historial',21:'Interpretación de la hipótesis',22:'Protocolo de evaluación prospectiva',23:'Conclusiones y trabajo pendiente',24:'Definición de la métrica ROC-AUC',25:'Sensibilidad del tamaño de muestra',26:'Referencias y trazabilidad'}
  for i,s in enumerate(slides):

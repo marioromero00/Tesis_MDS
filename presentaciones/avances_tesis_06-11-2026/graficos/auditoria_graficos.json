@@ -10,7 +10,15 @@
     "resultados/etiquetas_gsr_calidad_v2_01-11-2026/resumen_personas.csv": "25d8ccb8bd97d610b226c8f845e943eef0a674dbd9531e636ff06890d496f5c3",
     "resultados/ablacion_modalidades_v2_01-11-2026/metricas.csv": "d9140cffe70881a057970f0bf821db7a13b6a0123b6c90a46ae0e9442d31dd6f",
     "resultados/ablacion_modalidades_v2_01-11-2026/contrastes_fusion.csv": "792c005ee837405114c75cddc501adcec66d20a97f0105a2dead67c1ad851452",
-    "resultados/activacion_gsr_v2_recalculo_02-11-2026/cobertura_test.csv": "d2cfb1022ddda82ac6cf3203dfa6c58c6c47fe4cc88d594cd6a1c7fcddca54d4"
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/cobertura_test.csv": "d2cfb1022ddda82ac6cf3203dfa6c58c6c47fe4cc88d594cd6a1c7fcddca54d4",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/umbrales.csv": "b293293d44e86ecbe6a983998ee032ce787be390f0efc6084163185b1b589bf8",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/profesor_binario_reconstruido_29-10-2026/comparacion_profesores_modelos.csv": "b739e3c26a4402c42d24029c207beb4c4d6d61cd4c8319261524962564a104f2",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/metricas_participantes.csv": "8f35c96989855bf40fb55d54f942b3f6cb2a951c4b8db023d0653e495709a4de",
+    "resultados/activacion_diagnostico_nested_30-10-2026/diagnostico_personas.csv": "12d3fae317d86c4306526fff0881979bc7d166f6287a7d202375357b365711e7",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/motivos.csv": "3c481ce34e7d94f91f1bb4c9026e16818e56a6dba72d6ed8232a33f4d86d0185",
+    "resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas_personas.csv": "1d8cebf8488c31b359e76e8177ab43906104627a471972d74efed9b2f517f054"
   },
   "roc_auc_checks": [
     {
