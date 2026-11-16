@@ -1,0 +1,263 @@
+{
+  "created_utc": "2026-11-16T15:47:23.741489+00:00",
+  "approval": "Mario pide resultados más concluyentes, 16-11-2026. Pruebas de robustez registradas antes de correr.",
+  "inputs": {
+    "scripts/cierre_robustez_41p.py": "eb9f769b58dc7795d188eb40a5888eef45cd92ae9522bcb769a16564d3e44077",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "scripts/reconstruir_profesor_atencion_binaria.py": "0b8f08dd083e52bd22ebe727391b0e20495b49ce34efcdcbb13e4268784e4894",
+    "resultados/cierre_final_41p_16-11-2026/protocolo.json": "7fb76d6b2b2b0fb73e50db01ee8f8b0109f31181f2b8adb4107a412d2b5906d7",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_atencion.csv.gz": "49ee7f032e0139cda07de86e3d1471a3a6bda9c6d47dc91e65e7a0fea5179567",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_activacion.csv.gz": "5935717ff71a6e45fc59d860713bd69677301e5d049afce566c5d05a63fcf84c"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds_main": [
+    [
+      "P19",
+      "P34",
+      "P4",
+      "P41",
+      "P46",
+      "P9"
+    ],
+    [
+      "P12",
+      "P15",
+      "P26",
+      "P28",
+      "P43"
+    ],
+    [
+      "P18",
+      "P31",
+      "P36",
+      "P45",
+      "P6"
+    ],
+    [
+      "P16",
+      "P2",
+      "P24",
+      "P3",
+      "P32"
+    ],
+    [
+      "P21",
+      "P39",
+      "P40",
+      "P47",
+      "P8"
+    ],
+    [
+      "P10",
+      "P13",
+      "P27",
+      "P33",
+      "P5"
+    ],
+    [
+      "P22",
+      "P35",
+      "P37",
+      "P44",
+      "P48"
+    ],
+    [
+      "P11",
+      "P20",
+      "P23",
+      "P30",
+      "P38"
+    ]
+  ],
+  "folds_r3": {
+    "101": [
+      [
+        "P16",
+        "P18",
+        "P2",
+        "P21",
+        "P41",
+        "P6"
+      ],
+      [
+        "P19",
+        "P20",
+        "P24",
+        "P4",
+        "P48"
+      ],
+      [
+        "P33",
+        "P37",
+        "P45",
+        "P46",
+        "P5"
+      ],
+      [
+        "P11",
+        "P31",
+        "P35",
+        "P36",
+        "P9"
+      ],
+      [
+        "P22",
+        "P3",
+        "P30",
+        "P32",
+        "P47"
+      ],
+      [
+        "P12",
+        "P15",
+        "P26",
+        "P28",
+        "P43"
+      ],
+      [
+        "P10",
+        "P13",
+        "P27",
+        "P38",
+        "P40"
+      ],
+      [
+        "P23",
+        "P34",
+        "P39",
+        "P44",
+        "P8"
+      ]
+    ],
+    "202": [
+      [
+        "P10",
+        "P21",
+        "P24",
+        "P3",
+        "P38",
+        "P40"
+      ],
+      [
+        "P26",
+        "P27",
+        "P30",
+        "P31",
+        "P5"
+      ],
+      [
+        "P2",
+        "P20",
+        "P4",
+        "P46",
+        "P9"
+      ],
+      [
+        "P11",
+        "P18",
+        "P39",
+        "P47",
+        "P6"
+      ],
+      [
+        "P34",
+        "P35",
+        "P36",
+        "P41",
+        "P48"
+      ],
+      [
+        "P12",
+        "P16",
+        "P32",
+        "P33",
+        "P44"
+      ],
+      [
+        "P13",
+        "P15",
+        "P22",
+        "P23",
+        "P43"
+      ],
+      [
+        "P19",
+        "P28",
+        "P37",
+        "P45",
+        "P8"
+      ]
+    ],
+    "303": [
+      [
+        "P13",
+        "P21",
+        "P3",
+        "P35",
+        "P38",
+        "P44"
+      ],
+      [
+        "P23",
+        "P30",
+        "P32",
+        "P41",
+        "P43"
+      ],
+      [
+        "P16",
+        "P2",
+        "P27",
+        "P28",
+        "P4"
+      ],
+      [
+        "P12",
+        "P22",
+        "P40",
+        "P5",
+        "P6"
+      ],
+      [
+        "P20",
+        "P39",
+        "P45",
+        "P47",
+        "P9"
+      ],
+      [
+        "P11",
+        "P15",
+        "P19",
+        "P31",
+        "P34"
+      ],
+      [
+        "P10",
+        "P18",
+        "P36",
+        "P37",
+        "P8"
+      ],
+      [
+        "P24",
+        "P26",
+        "P33",
+        "P46",
+        "P48"
+      ]
+    ]
+  },
+  "placebo_seed": 20261117,
+  "rules": {
+    "R1": "p Holm (2 tareas) < 0,05 e IC95 inferior > 0",
+    "R2": "IC95 inferior > 0",
+    "R3": "las 3 particiones con IC95 inferior > 0",
+    "robusta": "R1 y R2 y R3 en atención"
+  },
+  "note": "Las predicciones reales hasta 32 y sin historial se reutilizan del análisis final (mismos folds y configuración, verificado por hash); solo se entrenan los modelos nuevos."
+}
