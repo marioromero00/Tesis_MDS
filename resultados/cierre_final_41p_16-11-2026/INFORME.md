@@ -52,3 +52,7 @@ Con los criterios de interpretación del manuscrito: **evidencia mixta, apoyo pa
 - Variables transductivas por persona y etiquetas offline (ver protocolo V3).
 - Bootstrap percentil; con 41 personas la cobertura puede ser algo menor al nominal.
 - Las reglas de decisión tienen precedencia fija en el código (respaldo, inferior, nulo); los indicadores de equivalencia e inferioridad están en `contrastes.csv` para cada contraste.
+
+## Actualización tras las pruebas de robustez
+
+Ver `../cierre_robustez_41p_16-11-2026/INFORME.md`. La mejora en atención es estable y no depende de la fuga de etiquetas, pero un historial placebo de la misma persona la reproduce entera: no es un efecto temporal (nulo concluyente, IC 90 % [−0,003; +0,003]). En activación, el historial real supera al placebo (+0,038, p Holm 0,043) y el contraste principal es positivo en las tres particiones alternativas.

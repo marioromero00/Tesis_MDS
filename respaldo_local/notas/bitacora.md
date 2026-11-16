@@ -135,3 +135,14 @@ Atención: HGB hasta 32 − sin historial +0,026 [+0,018; +0,035], 36/41, p Holm
 Activación: +0,034 [−0,001; +0,069], p Holm 0,066 → inconcluso. Secundario: GRU 32 − GRU 1 +0,051 [+0,021; +0,080], sin corrección.
 
 Hipótesis: evidencia mixta, apoyo parcial (criterio del manuscrito). Experimentación cerrada.
+
+
+## 2026-11-16 — Pruebas de robustez (placebo temporal)
+
+Resultados: repos/Tesis_MDS/resultados/cierre_robustez_41p_16-11-2026 (registrado antes, commit 6447236).
+
+Atención: la mejora (+0,026) se mantiene sin fuga de etiquetas (+0,024) y en tres particiones (+0,026 a +0,030), pero un historial placebo de la misma persona la reproduce entera: real − placebo −0,000 [−0,003; +0,003]. Nulo concluyente para la información temporal; la ganancia es contexto de la persona.
+
+Activación: real − placebo +0,038 [+0,006; +0,068], p Holm 0,043; placebo − sin historial −0,004. Contraste principal positivo en las tres particiones alternativas (+0,042). Información temporal real, ligada al soporte de 6 s de la etiqueta.
+
+Conclusión: evidencia mixta; el apoyo temporal viene de activación, no de atención. Esto corrige la lectura del análisis de 41 personas.
