@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-16T17:25:57.270727+00:00",
+  "lag": 6,
+  "inputs": {
+    "scripts/ampliacion_e1_lag6.py": "29f2cec44bf122912a6bc66a830ab8f62ce2fdaef9508f02f13ac569f883fd0a",
+    "scripts/ampliacion_41p.py": "2dec73729bb4db2af6f36b37468bf04fedee11106ad6c733e7f4ecbc1cebd193",
+    "resultados/ampliacion_41p_16-11-2026/protocolo.json": "9e4a9add48b4123ee0f22e2d6fab007b0273f73eae003b6314e63c91bca04620"
+  },
+  "reason": "Auditoría: con LAG=5 hay 1 s de solapamiento con la etiqueta de activación (ventanas de 2 s, paso 1 s).",
+  "primary": "E1 lag6 real − lag6 placebo, Holm sobre 2 tareas",
+  "secondary_from_original": "E1 lag5",
+  "declared": [
+    "E2: rel_time se ancla en una primera ventana aislada seguida de 42-89 s sin ventanas; calib_30s equivale a las primeras 5 ventanas (respaldo) y calib_1min a ~15 ventanas.",
+    "E2 es transductivo: con M >= 2 min el contexto puede incluir la ventana evaluada y posteriores; calib_sesion usa toda la sesión (offline, no causal). Solo variables, nunca etiquetas.",
+    "E5 permuta filas entre personas del fold (no dentro de cada persona) y los bloques de banda no incluyen sus indicadores de faltantes; es descriptivo.",
+    "E3: la arquitectura intermedia es más profunda que la temprana; compara tipo de fusión y capacidad."
+  ]
+}
