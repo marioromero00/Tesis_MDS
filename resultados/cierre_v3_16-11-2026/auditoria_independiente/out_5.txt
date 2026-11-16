@@ -1,0 +1,12 @@
+atencion y ext == T.lab y True n ev 8678 n test 4024 cols 360
+atencion hgb_c32 cargado: maxdiff test 0.0 val 0.0 leaves 7
+atencion hgb_c32 reentrenado: maxdiff test 0.0
+atencion gru_c32 3 semillas cargadas: maxdiff test 0.0 val 1.1920928955078125e-07
+atencion gru_c32 s1 reentrenado vs s1 cargado: maxdiff test 0.0
+atencion busqueda fold1 recalculada maxdiff 0.0
+activacion y ext == T.lab y True n ev 4768 n test 2184 cols 367
+activacion hgb_c32 cargado: maxdiff test 0.0 val 0.0 leaves 15
+activacion hgb_c32 reentrenado: maxdiff test 0.0
+activacion gru_c32 3 semillas cargadas: maxdiff test 0.0 val 0.0
+activacion gru_c32 s1 reentrenado vs s1 cargado: maxdiff test 0.0
+activacion busqueda fold1 recalculada maxdiff 0.0

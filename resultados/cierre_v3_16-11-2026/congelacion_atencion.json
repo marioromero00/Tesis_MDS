@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-11-16T14:27:34.039450+00:00",
+  "leaves": 7,
+  "models": {
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c1_s1.pt": "e6289380edbdf557283ebd6fad8a1593e5507ee78f68c0211e86458ea417f086",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c1_s2.pt": "f0ecfef5659e898f4e253b0c0f14efe8ef3e4563275c4b75aa65e0fd98475005",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c1_s3.pt": "20d066d02b1af365a334bf884db382b78199119a7e40465e526d92f6528180f5",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c32_s1.pt": "37128d968ed0b1899c5278d4a75511dd4ec5f9669cc89fbfb64a71ea328dbca4",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c32_s2.pt": "7c3bdb08bb73994202d867f9e6721c1519d64bd74b60224886b5472fc6372b2d",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/gru_c32_s3.pt": "db0fd162a488579ac4683779aab0f844c78916acd62d875bf88a4470ae70186e",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/hgb_c1.joblib": "ed961d5ecca602db8c4f53906fc176ba06160b967121bb9c3adcb7446e49c9f9",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/hgb_c32.joblib": "0470d0c470f0838933720dbdac57fb8a9d760ea03f37d20a45c88a2d261446e0",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/hgb_c32_etiq.joblib": "25fa9a26c915273c81ee5d78abe8eb450be2fc8e503cb6943da7e7f332809cc3",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/hgb_c5.joblib": "932c2edcf6d9c5f980309c4b30939cebd00fcd5f06fa4d407da22cb1a99c9f8e",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/hgb_c8.joblib": "7b1abf7ee90119aac1c0d8c13c3f5035f03255c9e05e66a2d9e034da5f0d8610",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/tardia_c1_EEG.joblib": "c1d5118e354195c7243f832282e8247f637730ee25bd7d896b8b6352af7827e7",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/tardia_c1_GSR.joblib": "cc8f4de7f9349c93fafc70649ea3b537aa257be817433d53586a9157b97c91e9",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/tardia_c32_EEG.joblib": "07614373388e4057bffef9658bed18e346ab681198efdddccb4f1b34d27deaff",
+    "resultados/cierre_v3_16-11-2026/modelos/atencion/tardia_c32_GSR.joblib": "cca84bd8ca950174322c5aaab37621e9efeb05bdf4c464abb3cec3be05aa6165"
+  },
+  "external_sha256": "7c3b8fd4c9a277f2058f8bd0ef7b55c0c32a3d78be428dfb479db2883f207855"
+}

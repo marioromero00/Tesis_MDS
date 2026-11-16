@@ -111,3 +111,16 @@ El N de activación es muy sensible a la fuente de dispersión: 72 con la varian
 La referencia al AUC 0,67 corresponde provisionalmente al CatBoost de atención con 0,6744 en test. Su buen desempeño relativo al azar y la superioridad de un modelo temporal son afirmaciones distintas. El resultado de atención no desapareció al corregir GSR: el recálculo de activación trabaja sobre otra variable objetivo y otras entradas. Esta revisión verifica la procedencia de las métricas, no constituye una nueva auditoría completa del profesor de atención.
 
 El margen práctico 0,02 sigue siendo una propuesta, no un umbral aprobado ni deducido de los resultados. Rechazar una mejora de al menos ese tamaño no equivale a rechazar cualquier mejora positiva. Si se mantiene la hipótesis original de superioridad >0, la frontera debe ser 0 y la potencia se calcula para un efecto verdadero separado de 0, sin cambiarla después de observar el test.
+
+
+## 2026-11-16 — Cierre experimental V3
+
+Resultados: repos/Tesis_MDS/resultados/cierre_v3_16-11-2026 (INFORME.md). Protocolo registrado y publicado antes de entrenar (v2, commit 82affdb; v1 abortada en el fold 1 de train por auditoría de código). Etiqueta de atención verificada sin el error de índices: todas las corridas actuales leen caracteristicas_multimodales.csv, y las etiquetas coinciden 100 % con las del 30-10.
+
+Mejoras: historial armado con todas las ventanas válidas, GRU sensible al orden contra GRU de una ventana, fusión tardía contra temprana, BA/macro-F1/recall con umbral 0,5 y control de 5 ventanas.
+
+Atención: el resumen del historial (HGB hasta 32 − sin historial) es positivo en train (+0,018 [+0,009; +0,027]), validación (+0,020 [−0,003; +0,042]) y test (+0,029 [+0,004; +0,052]); no alcanza el criterio del manuscrito por validación. La ganancia aparece casi entera con 5 ventanas. La GRU no mejora sobre su control y queda 0,04–0,05 bajo el HGB en las tres particiones. Fusión tardía ≤ temprana.
+
+Activación: AUC de train 0,50–0,53. Las mejoras de la GRU en validación (+0,091) y test (+0,084) no aparecen en train (−0,016); no se toman como señal.
+
+Hipótesis: sin ventaja consistente en ninguno de los dos resultados. Auditoría independiente de resultados: PASA en los seis puntos. Experimentación cerrada; lo pendiente es escritura y las decisiones con el profesor guía.

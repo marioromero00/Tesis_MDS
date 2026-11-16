@@ -1,0 +1,74 @@
+== 1 integridad
+inputs 16 mismatch []
+atencion models 15 mismatch [] set_equal_disk True externas True
+atencion previa {'protocol_sha256': True, 'search_sha256': True, 'oof_sha256': True, 'selections_sha256': True} oof_listo True
+activacion models 17 mismatch [] set_equal_disk True externas True
+activacion previa {'protocol_sha256': True, 'search_sha256': True, 'oof_sha256': True, 'selections_sha256': True} oof_listo True
+== 2 orden temporal / busqueda
+n train/val/test 25 8 8
+atencion previa 2026-11-16 14:23:54.730618+00:00 mtime 2026-11-16 14:23:54.731374979+00:00 | externas mtime 2026-11-16 14:27:34.033174038+00:00 | primer modelo mtime 2026-11-16 14:24:07.600302458+00:00 | congel 2026-11-16 14:27:34.039450+00:00 | oof_listo 2026-11-16T14:23:18.402536+00:00 ok True
+activacion previa 2026-11-16 14:23:54.730618+00:00 mtime 2026-11-16 14:23:54.731146336+00:00 | externas mtime 2026-11-16 14:27:04.568230867+00:00 | primer modelo mtime 2026-11-16 14:24:05.948480606+00:00 | congel 2026-11-16 14:27:04.576726+00:00 | oof_listo 2026-11-16T14:19:01.686647+00:00 ok True
+folds: union eval == train True eval disjoint True
+atencion busqueda filas 30 folds [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5)] contexts [np.int64(1), np.int64(8), np.int64(32)] leaves [np.int64(7), np.int64(15)]
+atencion selecciones reproducen True final leaves 7 congel 7
+activacion busqueda filas 30 folds [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5)] contexts [np.int64(1), np.int64(8), np.int64(32)] leaves [np.int64(7), np.int64(15)]
+activacion selecciones reproducen True final leaves 15 congel 15
+== 3 solapamiento
+atencion oof people subset train True n 25 oof ∩ val/test set()
+atencion cada persona 1 fold True
+atencion fold coincide con protocolo True
+atencion oof dup (strategy,source_row) 0 estrategias 9 filas por estrategia [13498]
+atencion ext split por persona correcto True ext ∩ train set() dup 0 filas/estr [8678] personas val/test 8 8
+atencion source_row oof ∩ ext 0
+activacion oof people subset train True n 25 oof ∩ val/test set()
+activacion cada persona 1 fold True
+activacion fold coincide con protocolo True
+activacion oof dup (strategy,source_row) 0 estrategias 9 filas por estrategia [7028]
+activacion ext split por persona correcto True ext ∩ train set() dup 0 filas/estr [4768] personas val/test 8 8
+activacion source_row oof ∩ ext 0
+== 6 etiquetas
+atencion filas 22176 sin ref 0 y distinto 0 persona distinta 0
+atencion ref etiquetadas (train/val/test) 22176 no usadas 0
+activacion filas 11796 sin ref 0 y distinto 0 persona distinta 0
+activacion ref etiquetadas (train/val/test) 11796 no usadas 0
+== 4 metricas
+personas filas 738 738 no emparejadas 0 maxdiff {'windows': 0.0, 'auc': 0.0, 'ba': 0.0, 'f1_macro': 0.0, 'recall_alta': 0.0, 'recall_baja': 0.0}
+metricas filas 54 54 no emparejadas 0 maxdiff 0.0
+contrastes filas 54 54 no emparejadas 0 role eq True maxdiff {'delta': 0.0, 'low': 0.0, 'high': 0.0, 'improved': 0.0, 'people': 0.0}
+          task       split                contrast     delta       low      high  improved  people
+9   activacion        test               gru_orden  0.084313 -0.010991  0.164959         7       8
+10  activacion        test             hgb_resumen  0.032919 -0.021315  0.094032         4       8
+11  activacion        test                  hgb_c8  0.029432 -0.010223  0.074874         4       8
+12  activacion        test          hgb_c5_soporte  0.039314 -0.001086  0.077890         6       8
+13  activacion        test           hgb_c32_vs_c5 -0.006395 -0.057034  0.038520         5       8
+14  activacion        test      historial_completo  0.019733 -0.000659  0.040166         5       8
+15  activacion        test   tardia_vs_temprana_c1 -0.002701 -0.028524  0.024388         4       8
+16  activacion        test  tardia_vs_temprana_c32 -0.001237 -0.064816  0.066486         3       8
+17  activacion        test          gru_vs_hgb_c32  0.036049 -0.043936  0.110522         6       8
+18  activacion  validation               gru_orden  0.090693  0.018211  0.188169         6       8
+19  activacion  validation             hgb_resumen  0.058722 -0.003992  0.131299         5       8
+20  activacion  validation                  hgb_c8 -0.027421 -0.076999  0.017986         3       8
+21  activacion  validation          hgb_c5_soporte -0.018639 -0.083564  0.040331         5       8
+22  activacion  validation           hgb_c32_vs_c5  0.077361 -0.022504  0.190490         4       8
+23  activacion  validation      historial_completo  0.067735  0.004080  0.140701         5       8
+24  activacion  validation   tardia_vs_temprana_c1 -0.017617 -0.060484  0.021318         3       8
+25  activacion  validation  tardia_vs_temprana_c32 -0.106583 -0.223050 -0.010678         2       8
+26  activacion  validation          gru_vs_hgb_c32  0.051003 -0.057744  0.168181         4       8
+36    atencion        test               gru_orden  0.009513 -0.018615  0.034801         5       8
+37    atencion        test             hgb_resumen  0.028707  0.004442  0.051663         7       8
+38    atencion        test                  hgb_c8  0.025168  0.002449  0.049363         7       8
+39    atencion        test          hgb_c5_soporte  0.025708  0.015600  0.037967         8       8
+40    atencion        test           hgb_c32_vs_c5  0.002999 -0.016526  0.018294         5       8
+41    atencion        test      historial_completo -0.002463 -0.008407  0.004199         4       8
+42    atencion        test   tardia_vs_temprana_c1 -0.001035 -0.013841  0.009542         3       8
+43    atencion        test  tardia_vs_temprana_c32 -0.002168 -0.014688  0.008133         3       8
+44    atencion        test          gru_vs_hgb_c32 -0.050002 -0.088285 -0.019000         0       8
+45    atencion  validation               gru_orden -0.003505 -0.036254  0.027718         4       8
+46    atencion  validation             hgb_resumen  0.020417 -0.002673  0.041976         6       8
+47    atencion  validation                  hgb_c8  0.016511 -0.006549  0.037561         6       8
+48    atencion  validation          hgb_c5_soporte  0.011849 -0.007378  0.029369         5       8
+49    atencion  validation           hgb_c32_vs_c5  0.008568  0.001377  0.017365         6       8
+50    atencion  validation      historial_completo -0.001188 -0.005116  0.002954         4       8
+51    atencion  validation   tardia_vs_temprana_c1 -0.006849 -0.016507  0.004996         2       8
+52    atencion  validation  tardia_vs_temprana_c32 -0.007531 -0.020447  0.005305         3       8
+53    atencion  validation          gru_vs_hgb_c32 -0.044332 -0.091942 -0.006837         2       8

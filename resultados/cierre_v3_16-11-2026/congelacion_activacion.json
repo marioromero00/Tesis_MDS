@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-16T14:27:04.576726+00:00",
+  "leaves": 15,
+  "models": {
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c1_s1.pt": "4a89c86cbd176ff8cdc642329797ae6141fa3e3514bea014bea710221b28dc1e",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c1_s2.pt": "96a1d612198b0fc0252c5ca6856eb481c1778ebd46934af7ee80a97c720d6fe9",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c1_s3.pt": "e93fb64064725ed9f18a8de3d7aa534fda56f611a2fa6ec563c2db0c13af9288",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c32_s1.pt": "5071690a00289f7fca264dc3cbca6b5e02edf0682343da0e553192855b7b8af3",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c32_s2.pt": "f4fdc982a7bcd2cc054bf0bfa182c1ff40fa95052e244ad61a23613567fafbd7",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/gru_c32_s3.pt": "c25fe49f50f785e437118885d1d5c60040f620c3f95c37701ffecca9ef2545a3",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/hgb_c1.joblib": "4401e4b2598bce8fa2a2884e97f91cf31330d049e966940f314112b141021384",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/hgb_c32.joblib": "bb0c08c7d3cd72f513fb24a0f6e2a9beae55d526be0299ef5969cccee9161daf",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/hgb_c32_etiq.joblib": "312dd9eb7d7db06097e91b33953c59f92151778857c159a72520dc843bfad5ec",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/hgb_c5.joblib": "311b82ec97379bbf540ad9bece160393dfcc59a647ce9300de72e81c3ce7bb7e",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/hgb_c8.joblib": "4c4bfa85700b7bb30d07d941ac3d12676ae63cefaba08ece9e3ba5af0e136f50",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c1_EEG.joblib": "72c6810a95efdb2f6f634575e220b93eeb82dd3018055f5a6c4e8298130f345c",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c1_Eye.joblib": "df7494c101624c9dd79530ef986a6952e4b5cb81667aa15f67d7ab144871cc2c",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c1_Pupil.joblib": "cabb0efb5a10a9dfe4ef011f256f43f745dc35e8c3cb0c395980e944469131b1",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c32_EEG.joblib": "c4d7419ba1f416b3610ae2e144292fda14fccf10caf12a46b41c59b40c39594b",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c32_Eye.joblib": "4236775803202ddb7e7c3bfcdd4bd9c8ebb1d4f97c10a91ffc42b4031ad4c431",
+    "resultados/cierre_v3_16-11-2026/modelos/activacion/tardia_c32_Pupil.joblib": "babf4f12709365c8d4006844ab3be816f7470bdce453200de76f25a5a43b8be4"
+  },
+  "external_sha256": "ff4484d74bfc07e862319278e3cbdaa13ad15aa24cd900a4ec080fcb7b952710"
+}
