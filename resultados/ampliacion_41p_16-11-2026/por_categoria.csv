@@ -1,0 +1,27 @@
+task,strategy,categoria,ventanas,auc,people
+atencion,hgb_c1,diseño,4082,0.6486488407987343,41
+atencion,hgb_c1,imagen blur,891,0.6955259512417408,25
+atencion,hgb_c1,imagen emotion,1792,0.6680426085990222,30
+atencion,hgb_c1,instrucciones,96,,0
+atencion,hgb_c1,numerado,6637,0.6810317901075447,41
+atencion,hgb_c1,sitio web,6423,0.7066969013316976,41
+atencion,hgb_c1,texto,2255,0.6044353686262264,41
+atencion,hgb_c32,diseño,4082,0.6370126402145244,41
+atencion,hgb_c32,imagen blur,891,0.5989655493085061,25
+atencion,hgb_c32,imagen emotion,1792,0.6672377469583829,30
+atencion,hgb_c32,instrucciones,96,,0
+atencion,hgb_c32,numerado,6637,0.6978310286344331,41
+atencion,hgb_c32,sitio web,6423,0.7095852510780306,41
+atencion,hgb_c32,texto,2255,0.6328293548928506,41
+activacion,hgb_c1,diseño,1316,0.5061461416864165,20
+activacion,hgb_c1,imagen emotion,401,0.5940757220852098,5
+activacion,hgb_c1,instrucciones,46,,0
+activacion,hgb_c1,numerado,3291,0.5884194044381912,34
+activacion,hgb_c1,sitio web,5457,0.5250154838466567,40
+activacion,hgb_c1,texto,1285,0.5057736505013877,30
+activacion,hgb_c32,diseño,1316,0.5060238256487026,20
+activacion,hgb_c32,imagen emotion,401,0.48736343268791094,5
+activacion,hgb_c32,instrucciones,46,,0
+activacion,hgb_c32,numerado,3291,0.5913040398350516,34
+activacion,hgb_c32,sitio web,5457,0.5878792537481221,40
+activacion,hgb_c32,texto,1285,0.5237448127407643,30

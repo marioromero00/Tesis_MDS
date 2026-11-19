@@ -146,3 +146,16 @@ Atención: la mejora (+0,026) se mantiene sin fuga de etiquetas (+0,024) y en tr
 Activación: real − placebo +0,038 [+0,006; +0,068], p Holm 0,043; placebo − sin historial −0,004. Contraste principal positivo en las tres particiones alternativas (+0,042). Información temporal real, ligada al soporte de 6 s de la etiqueta.
 
 Conclusión: evidencia mixta; el apoyo temporal viene de activación, no de atención. Esto corrige la lectura del análisis de 41 personas.
+
+
+## 2026-11-18 — Ampliación E1–E6 y explicativo de posición
+
+Resultados: resultados/ampliacion_41p_16-11-2026 (con enmienda_e1_lag6) y resultados/explicativo_posicion_41p_18-11-2026.
+
+Activación: el historial que excluye por completo los 6 s de la etiqueta supera al placebo: +0,046 [+0,018; +0,073], 28/41, p Holm 0,004. La posición dentro del estímulo no aporta (−0,004) y el historial agrega +0,038 sobre ella. Información temporal real en las señales, con AUC absolutas bajas (0,56–0,57).
+
+Atención: el historial no tiene información temporal (E1 real − placebo −0,003). Toda su mejora (+0,026) se reproduce con una sola variable, los segundos transcurridos en el estímulo (+0,028); controlando posición, el historial agrega −0,002 [−0,006; +0,002]. La calibración personal no explica nada (+0,001 a +0,004); corrige la lectura del 16-11.
+
+Fusión (MLP): en atención la tardía supera a la temprana (+0,012) y a la intermedia; en activación sin diferencias. Fatiga: AUC de atención sube a lo largo de la sesión; prevalencia de activación cae al final (habituación compatible). Importancia: atención depende del EEG actual (theta, delta); activación del EEG y la media del historial. Por página: atención mejor en sitios web y peor en textos.
+
+Nota: el comando de espera de la enmienda quedó en espera indefinida (se emparejaba consigo mismo); se detectó el 18-11 y se corrió la enmienda ese día.
