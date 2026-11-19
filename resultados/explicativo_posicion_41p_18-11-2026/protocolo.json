@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-11-19T00:40:45.208919+00:00",
+  "post_hoc": true,
+  "inputs": {
+    "scripts/explicativo_posicion_41p.py": "db4bf4f60282eb33afa8a0f33c7f51fd5b2e148bdaeee8b385f357c0f22d6e40",
+    "scripts/ampliacion_41p.py": "2dec73729bb4db2af6f36b37468bf04fedee11106ad6c733e7f4ecbc1cebd193",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_atencion.csv.gz": "49ee7f032e0139cda07de86e3d1471a3a6bda9c6d47dc91e65e7a0fea5179567",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_activacion.csv.gz": "5935717ff71a6e45fc59d860713bd69677301e5d049afce566c5d05a63fcf84c"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds": [
+    [
+      "P19",
+      "P34",
+      "P4",
+      "P41",
+      "P46",
+      "P9"
+    ],
+    [
+      "P12",
+      "P15",
+      "P26",
+      "P28",
+      "P43"
+    ],
+    [
+      "P18",
+      "P31",
+      "P36",
+      "P45",
+      "P6"
+    ],
+    [
+      "P16",
+      "P2",
+      "P24",
+      "P3",
+      "P32"
+    ],
+    [
+      "P21",
+      "P39",
+      "P40",
+      "P47",
+      "P8"
+    ],
+    [
+      "P10",
+      "P13",
+      "P27",
+      "P33",
+      "P5"
+    ],
+    [
+      "P22",
+      "P35",
+      "P37",
+      "P44",
+      "P48"
+    ],
+    [
+      "P11",
+      "P20",
+      "P23",
+      "P30",
+      "P38"
+    ]
+  ],
+  "contrasts": [
+    "pos_c1 − hgb_c1",
+    "hgb_c32 − pos_c1",
+    "hgb_c32pos − pos_c1"
+  ]
+}
