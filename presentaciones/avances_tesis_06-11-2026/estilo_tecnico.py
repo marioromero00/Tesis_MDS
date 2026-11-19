@@ -262,6 +262,76 @@ def apply(slides):
   ax.bar(xs,g.mean_history,.28,color=col,label=f'Hasta {ctx}',zorder=2)
   ax.axhline(ctx,color=col,ls=':',lw=1.5);ax.text(-.45,ctx+.6,f'máximo {ctx}',ha='left',color=col,fontsize=12)
  ax.set(xticks=range(len(g)),xticklabels=g.participant,ylim=(0,35),ylabel='Ventanas usadas en promedio\n(incluida la actual)');ax.legend(frameon=False,loc='upper right',bbox_to_anchor=(1,.86),ncol=2);ax.grid(axis='y',zorder=0);save(f,'historial_personas')
+ # ---- Gráficos de resultados finales (v6, 18-11-2026) ----
+ import sys as _sys
+ _sys.path.insert(0,str(ROOT/'scripts'))
+ RF=ROOT/'resultados'
+ fin=read('resultados/cierre_final_41p_16-11-2026/contrastes.csv');rob=read('resultados/cierre_robustez_41p_16-11-2026/resultados.csv')
+ lag6=read('resultados/ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv');pos=read('resultados/explicativo_posicion_41p_18-11-2026/contrastes.csv')
+ amp=read('resultados/ampliacion_41p_16-11-2026/contrastes.csv')
+ def row(df,task,col,val):
+  r=df[df.task.eq(task)&df[col].eq(val)].iloc[0];return r.delta,r.low95,r.high95
+ # A) Resultado principal y robustez de la partición
+ f,ax=fig(11,3.6);items=[]
+ for task,lab in [('atencion','Atención'),('activacion','Activación')]:
+  items.append((f'{lab} · partición registrada',*row(fin[fin.role.eq('principal')],task,'contrast','hgb_c32 − hgb_c1'),BLUE))
+  for s_ in ['101','202','303']:
+   r=rob[rob.task.eq(task)&rob.prueba.eq(f'R3 partición {s_}')].iloc[0];items.append((f'{lab} · otra partición',r.delta,r.low95,r.high95,LIGHT))
+ for j,(lab,d_,lo,hi,col) in enumerate(items):
+  ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=8,lw=2);ax.text(.095,j,c(d_,3,True),va='center',fontsize=13)
+ ax.axhspan(3.5,7.5,color='#f1f5fa',zorder=0);ax.axvline(0,color=ORANGE,ls='--',lw=1.2)
+ ax.set(yticks=range(len(items)),yticklabels=[i[0] for i in items],ylim=(len(items)-.5,-.5),xlim=(-.02,.105),xlabel='Diferencia de AUC por persona: hasta 32 ventanas − sin historial (41 personas)');comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'final_principal')
+ # B) ¿De dónde viene la mejora?
+ f,axes=plt.subplots(1,2,figsize=(11,3.9),sharex=True,layout='constrained')
+ for ax,(task,lab) in zip(axes,[('atencion','Atención'),('activacion','Activación')]):
+  its=[('Historial real',*row(fin,task,'contrast','hgb_c32 − hgb_c1'),BLUE),
+       ('Historial placebo',*row(rob,task,'prueba','R1 referencia'),GRAY),
+       ('Solo segundos en la página',*row(pos,task,'contrast','pos_c1 − hgb_c1'),ORANGE if False else DARK),
+       ('Historial sin los 6 s de la etiqueta',*row(lag6,task,'contrast','lag6_real − hgb_c1'),LIGHT)]
+  for j,(l_,d_,lo,hi,col) in enumerate(its):
+   ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(d_,j-.3,c(d_,3,True),ha='center',fontsize=12)
+  ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(title=lab,yticks=range(4),yticklabels=[i[0] for i in its],ylim=(3.6,-.7));ax.grid(axis='x');comma_axis(ax,'x',2)
+ axes[1].tick_params(labelleft=False);fig_=f;f.supxlabel('Mejora de AUC frente al modelo sin historial (41 personas)',fontsize=12);save(f,'origen_mejora')
+ # C) Etiqueta según segundos en la página
+ import cierre_experimental_v3 as V3m
+ d0=V3m.load_data();f,ax=fig(11,3.6)
+ for task,lab,col in [('atencion','Atención',BLUE),('activacion','Activación',GRAY)]:
+  T=V3m.Task(d0,task);l=np.minimum(T.hist[32][1][T.lab_pos],12)
+  g=pd.DataFrame(dict(p=T.lab.participant,y=T.lab.y,pos=l)).groupby(['p','pos']).y.mean().groupby('pos').mean()
+  ax.plot(g.index,g.values*100,marker='o',color=col,lw=2.4,ms=7,label=lab)
+ ax.axhline(50,color='#c3cfdc',ls='--',lw=1);ax.set(xlabel='Segundos transcurridos en la página (12 = 12 o más)',ylabel='Ventanas con clase "alta"',xticks=range(1,13),ylim=(30,68))
+ ax.yaxis.set_major_formatter(FuncFormatter(lambda v,_:f'{v:.0f} %'));ax.legend(frameon=False,loc='lower right');ax.grid(axis='y');save(f,'posicion_etiqueta')
+ # D) Activación: real vs placebo sin solapamiento
+ f,ax=fig(11,3.2);its=[]
+ for task,lab in [('activacion','Activación'),('atencion','Atención')]:
+  its.append((f'{lab} · historial real − placebo',*row(lag6,task,'contrast','lag6_real − lag6_placebo'),BLUE if task=='activacion' else GRAY))
+ its.append(('Activación · historial − solo segundos en la página',*row(pos,'activacion','contrast','hgb_c32 − pos_c1'),LIGHT))
+ its.append(('Atención · historial − solo segundos en la página',*row(pos,'atencion','contrast','hgb_c32 − pos_c1'),GRAY))
+ for j,(l_,d_,lo,hi,col) in enumerate(its):
+  ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(.085,j,f'{c(d_,3,True)}  [{c(lo,3,True)}; {c(hi,3,True)}]',va='center',fontsize=12)
+ ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(yticks=range(4),yticklabels=[i[0] for i in its],ylim=(3.5,-.5),xlim=(-.02,.12),xlabel='Diferencia de AUC por persona (41 personas)');comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'activacion_temporal')
+ # E) Fusión con la misma familia
+ f,ax=fig(11,3.2);its=[]
+ for task,lab in [('atencion','Atención'),('activacion','Activación')]:
+  for a_,b_,txt in [('mlp_tardia','mlp_temprana','tardía − temprana'),('mlp_intermedia','mlp_temprana','intermedia − temprana')]:
+   r=amp[amp.task.eq(task)&amp.contrast.eq(f'{a_} − {b_}')].iloc[0];its.append((f'{lab} · {txt}',r.delta,r.low95,r.high95,BLUE if task=='atencion' else GRAY))
+ for j,(l_,d_,lo,hi,col) in enumerate(its):
+  ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(.05,j,c(d_,3,True),va='center',fontsize=13)
+ ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(yticks=range(4),yticklabels=[i[0] for i in its],ylim=(3.5,-.5),xlim=(-.045,.06),xlabel='Diferencia de AUC por persona (MLP, 41 personas)');comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'fusion_final')
+ # F) Sesión y tipo de página
+ fq=read('resultados/ampliacion_41p_16-11-2026/fatiga_por_quintil.csv');pc=read('resultados/ampliacion_41p_16-11-2026/por_categoria.csv')
+ f,(a1_,a2_)=plt.subplots(1,2,figsize=(11,3.9),layout='constrained')
+ for task,lab,col in [('atencion','Atención',BLUE),('activacion','Activación',GRAY)]:
+  g=fq[fq.task.eq(task)&fq.strategy.eq('hgb_c32')];a1_.plot(g.quintil,g.auc,marker='o',color=col,lw=2.4,ms=7,label=lab)
+  a1_.text(5.12,g.auc.iloc[-1],lab,va='center',fontsize=12,color=col)
+ a1_.axhline(.5,color=ORANGE,ls='--',lw=1.2);a1_.set(title='AUC a lo largo de la sesión',xlabel='Quinto de la sesión',xticks=range(1,6),xlim=(.8,6.1),ylim=(.45,.78));comma_axis(a1_,'y',2);a1_.grid(axis='y')
+ cats=['sitio web','numerado','diseño','texto'];g=pc[pc.task.eq('atencion')&pc.categoria.isin(cats)]
+ xs=np.arange(len(cats))
+ for j,(s_,col,lab) in enumerate([('hgb_c1',GRAY,'Sin historial'),('hgb_c32',BLUE,'Con historial')]):
+  v=[g[g.strategy.eq(s_)&g.categoria.eq(k)].auc.item() for k in cats];a2_.bar(xs+(j-.5)*.36,v,.34,color=col,label=lab)
+  for x_,y_ in zip(xs+(j-.5)*.36,v):a2_.text(x_,y_+.005,c(y_,2),ha='center',fontsize=11)
+ a2_.set(title='Atención por tipo de página',xticks=xs,xticklabels=cats,ylim=(.5,.76));comma_axis(a2_,'y',2);a2_.legend(frameon=False,loc='upper right',ncol=2);a2_.grid(axis='y');a2_.set_axisbelow(True)
+ save(f,'sesion_pagina')
  # Editorial changes: direct technical titles, no repeating promotional conclusions.
  titles={0:'Predicción multimodal de<br>atención y activación',1:'Problema y objetivo de investigación',2:'Hipótesis y variables objetivo',3:'Modalidades y características',4:'Arquitectura profesor–estudiante',5:'Particiones y unidad de evaluación',6:'Etapas del desarrollo experimental',7:'Modelos y controles evaluados',8:'Pseudoetiquetas binarias de atención',9:'Extracción EEG por canal',10:'Atención: curvas ROC en test',11:'Atención: comparación controlada',12:'Atención: sensibilidad a la representación',13:'Diagnóstico de las etiquetas GSR originales',14:'Error de alineación en el generador histórico',15:'Criterios de calidad de GSR V2',16:'GSR V2: retención de ventanas',17:'Activación V2: AUC e intervalos de confianza',18:'Activación V2: contrastes temporales pareados',19:'Activación V2: ablación de modalidades',20:'Cobertura efectiva del historial',21:'Interpretación de la hipótesis',22:'Protocolo de evaluación prospectiva',23:'Conclusiones y trabajo pendiente',24:'Definición de la métrica ROC-AUC',25:'Sensibilidad del tamaño de muestra',26:'Referencias y trazabilidad'}
  for i,s in enumerate(slides):

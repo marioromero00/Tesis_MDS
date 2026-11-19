@@ -42,63 +42,63 @@ El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 40 Hz con notch en 50, s
 
 ## 11. Cómo comparo un modelo con y sin historial
 
-Elijo los hiperparámetros solo dentro de entrenamiento, con folds que no mezclan personas. Después comparo en personas que el modelo no vio. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
+Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Cada análisis lo registré en GitHub antes de correrlo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
 
 ## 12. Con PCA, la etiqueta de atención se predice mejor
 
 Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Con PCA todos los modelos la predicen mejor y seguí con esa. Las dos coinciden en dos tercios de las ventanas.
 
-## 13. En atención, el historial suma +0,028
-
-Cada línea es una persona. Siete suben y una baja. Con otra representación del historial, que probé después, llegó a +0,033 y ahí el intervalo no toca el cero; está en la síntesis. La etiqueta de atención la rehice desde cero en octubre, así que en principio no tiene el error de activación. Comparo contra el HGB sin historial porque es el mismo modelo. Contra el CatBoost la ganancia baja a la mitad; ¿ese era el 0,67 que habíamos comentado?
-
-## 14. Con la etiqueta antigua había tres personas raras
+## 13. Con la etiqueta antigua había tres personas raras
 
 Esto fue lo que me hizo dudar. P4 casi no tenía señal y aun así todas sus ventanas tenían etiqueta. P34 y P46 tenían muchos puntajes repetidos, o sea empates, y P34 quedaba con 8,6 % de clase alta. Ahí paré de ajustar modelos y revisé la etiqueta.
 
-## 15. El generador mezclaba las ventanas
+## 14. El generador mezclaba las ventanas
 
 Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guardados, así que las AUC de activación de antes no sirven. El 25.992 es el archivo completo, incluidas personas fuera del análisis.
 
-## 16. "Alta" es estar más activado que su propia mediana: así se ve en P22
+## 15. "Alta" es estar más activado que su propia mediana: así se ve en P22
 
 Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si P22 está más activada que de costumbre en ese momento.
 
-## 17. La etiqueta antigua y la nueva coinciden solo en la mitad de las ventanas
+## 16. La etiqueta antigua y la nueva coinciden solo en la mitad de las ventanas
 
 Comparé la etiqueta antigua con la nueva en las mismas ventanas: cambia casi la mitad. Con clases balanceadas, eso es lo que esperaría si no tuvieran relación.
 
-## 18. La etiqueta nueva (V2) deja 11.796 de 22.211 ventanas
+## 17. La etiqueta nueva (V2) deja 11.796 de 22.211 ventanas
 
 Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas válidas seguidas dentro del mismo estímulo; si hay un hueco o cambia el estímulo, parte de cero. Por calidad se van 401, todas de P4. Las 41 personas mantienen las dos clases.
 
-## 19. "Hasta 32" fueron, en promedio, 8,7 ventanas
+## 18. Con 41 personas, el historial mejora atención; en activación no alcanza
 
-Entrené el mismo modelo con tres largos de historial. El principal es hasta 32 contra solo la ventana actual. Pero como la etiqueta pide cinco ventanas válidas seguidas, los tramos son cortos: hasta 32 usó 8,7 ventanas en promedio y ninguna llegó a 32. Hasta 8 tuvo el historial completo en el 41 % de las ventanas.
+Para tener más potencia usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
 
-## 20. La activación queda en el azar
+## 19. ¿De dónde viene la mejora?
 
-Ninguno de los tres se separa del azar. Con un modelo que casi no discrimina, comparar contextos sirve poco, pero lo muestro igual porque era el contraste que había fijado.
+Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, el placebo y los segundos no aportan, y el historial sí, incluso sin los 6 s que usa la etiqueta.
 
-## 21. Con historial, 4 personas suben y 4 bajan
+## 20. En atención, la etiqueta depende de cuánto lleva la persona en la página
 
-Mismo gráfico que en atención, ahora para activación. Acá no hay patrón: cuatro suben y cuatro bajan. Las personas van de 0,36 a 0,68 y la media pasa de 0,514 a 0,536. Hasta 8 sube 0,033 en test, pero en validación y entrenamiento no, así que no lo tomo como resultado.
+Al entrar a una página, la etiqueta de atención cae a 0,37 entre el segundo 2 y 3 y después sube hasta 0,62. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y pupila al cambiar de página. Este análisis lo hice después de ver el placebo, así que es explicativo.
 
-## 22. En activación, fusionar señales tampoco se distingue de usar una sola
+## 21. En activación, los segundos previos sí aportan
 
-Con AUC cerca de 0,5, esta comparación dice poco. En atención, que sí predice, EEG solo y EEG con GSR quedaron casi iguales: −0,004 [−0,018; +0,010]. Además solo es fusión temprana; temprana contra intermedia y tardía con la etiqueta nueva está pendiente.
+Excluí del historial los 6 s que definen la etiqueta, para que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Y controlando los segundos en la página, el historial sigue sumando +0,038. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.
 
-## 23. Hoy la hipótesis queda sin una ventaja consistente
+## 22. En atención, la fusión tardía rinde mejor
 
-Según los criterios del manuscrito, hoy no hay una ventaja consistente en ninguno de los dos resultados. Si la mejora en atención se confirmara, la hipótesis tendría apoyo parcial. En activación el modelo no predice, así que no puedo decir nada del historial.
+Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad.
 
-## 24. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
+## 23. El modelo de atención rinde mejor al final de la sesión y en sitios web
 
-El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.
+En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.
+
+## 24. Qué responde la tesis
+
+La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
 ## 25. Necesito decidir cuatro cosas con usted
 
-El error de la etiqueta y el reentrenamiento ya están. Lo que más me urge es la primera pregunta.
+La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto.
 
 ## 26. Atención: curvas ROC en test
 
@@ -115,3 +115,7 @@ La EEG la uso por canal desde octubre; antes promediaba los canales.
 ## 29. Configuración del entrenamiento de activación
 
 La misma configuración para los tres largos de historial.
+
+## 30. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
+
+El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.

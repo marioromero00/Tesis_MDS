@@ -49,10 +49,10 @@ def apply(old):
    '<li><b>Los datos</b><span>De dónde vienen y cómo se etiquetan</span></li>'
    '<li><b>Estado del arte</b><span>Qué se ha hecho y qué falta</span></li>'
    '<li><b>Metodología</b><span>KDD, señales y cómo evalúo</span></li>'
-   '<li><b>Atención</b><span>El historial suma un poco</span></li>'
-   '<li><b>El problema con la etiqueta de activación</b><span>Un error y cómo lo corregí</span></li>'
-   '<li><b>Activación con la etiqueta nueva</b><span>Queda en el azar</span></li>'
-   '<li><b>Dónde quedo</b><span>Estado de la hipótesis y cuatro decisiones</span></li>'
+   '<li><b>Las etiquetas</b><span>Atención con PCA y un error en activación</span></li>'
+   '<li><b>Resultados con 41 personas</b><span>Mejora en atención; en activación no alcanza</span></li>'
+   '<li><b>Qué explica la mejora</b><span>Placebo, segundos en la página y activación</span></li>'
+   '<li><b>Dónde quedo</b><span>Qué responde la tesis y cuatro decisiones</span></li>'
    '</ol>',
    'Son ocho partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.',
    'FUENTES.md','roomy')
@@ -109,19 +109,14 @@ def apply(old):
    'El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 40 Hz con notch en 50, saco artefactos y desde octubre lo uso por canal. La pupila todavía no la corrijo por el brillo de cada página; eso está en las limitaciones.',
    '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md; documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md; resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md')
  S('METODOLOGÍA','Cómo comparo un modelo con y sin historial',
-   flow([('sig','<b>Entrenamiento</b><br><small>25 personas</small>'),('prof','Selección interna<br><small>5 folds agrupados por persona</small>'),('lab','Modelo congelado<br><small>misma configuración con y sin historial</small>'),('stud','Validación y test<br><small>8 + 8 personas que no vio</small>')])
+   flow([('sig','<b>Selección</b><br><small>solo con 25 personas de entrenamiento</small>'),('prof','Configuración congelada<br><small>misma con y sin historial</small>'),('lab','Validación cruzada<br><small>41 personas en 8 grupos</small>'),('stud','Controles<br><small>placebo y posición, registrados antes</small>')])
    +'<div class="eval3"><div><b>AUC por persona</b><span>y luego el promedio, para que ninguna persona pese más por tener más ventanas</span></div><div><b>Diferencia pareada</b><span>con historial menos sin historial, dentro de cada persona</span></div><div><b>IC 95 % bootstrap</b><span>remuestreando personas, no ventanas</span></div></div>',
-   'Elijo los hiperparámetros solo dentro de entrenamiento, con folds que no mezclan personas. Después comparo en personas que el modelo no vio. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.',
+   'Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Cada análisis lo registré en GitHub antes de correrlo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.',
    'resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json; resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md; ../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy')
- S(D3,'Con PCA, la etiqueta de atención se predice mejor',
+ S('LAS ETIQUETAS','Con PCA, la etiqueta de atención se predice mejor',
    img('profesores','Entrenamiento, 25 personas (OOF). Las dos versiones coinciden en el 66 % de las ventanas.'),
    'Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Con PCA todos los modelos la predicen mejor y seguí con esa. Las dos coinciden en dos tercios de las ventanas.',
    PROF+'comparacion_profesores_modelos.csv; '+PROF+'INFORME.md')
-
- S(D3,'En atención, el historial suma +0,028',
-   img('atencion_personas','Test, 8 personas. Línea gruesa: media (0,660 → 0,688). IC 95 % de la diferencia: [−0,004; +0,051].')
-   ,'Cada línea es una persona. Siete suben y una baja. Con otra representación del historial, que probé después, llegó a +0,033 y ahí el intervalo no toca el cero; está en la síntesis. La etiqueta de atención la rehice desde cero en octubre, así que en principio no tiene el error de activación. Comparo contra el HGB sin historial porque es el mismo modelo. Contra el CatBoost la ganancia baja a la mitad; ¿ese era el 0,67 que habíamos comentado?',
-   T29+'metricas_participantes.csv; '+T29+'INFORME.md')
 
  S(D4,'Con la etiqueta antigua había tres personas raras',
    img('calidad_gsr','Etiqueta antigua, 25 personas de entrenamiento.'),
@@ -152,44 +147,42 @@ def apply(old):
    img('cascada','El paso 2 corrige el error y no saca ventanas.'),
    'Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas válidas seguidas dentro del mismo estímulo; si hay un hueco o cambia el estímulo, parte de cero. Por calidad se van 401, todas de P4. Las 41 personas mantienen las dos clases.',
    GSR+'motivos.csv; '+GSR+'INFORME.md')
- S(D5,'"Hasta 32" fueron, en promedio, 8,7 ventanas',
-   '<div class="strips">'+strip(0,'Solo ventana actual')+strip(7,'Hasta 8 ventanas',real=4)+strip(31,'Hasta 32 (principal)',real=8)+'</div>'
-   +caption('Azul: ventanas que hubo en promedio en test. Punteado: lo que faltó. Mismo modelo (HGB) en los tres.'),
-   'Entrené el mismo modelo con tres largos de historial. El principal es hasta 32 contra solo la ventana actual. Pero como la etiqueta pide cinco ventanas válidas seguidas, los tramos son cortos: hasta 32 usó 8,7 ventanas en promedio y ninguna llegó a 32. Hasta 8 tuvo el historial completo en el 41 % de las ventanas.',
-   ACT+'protocolo.json; '+ACT+'reproducibilidad.json','roomy')
-
- S(D5,'La activación queda en el azar',
-   img('auc_activacion','Media por persona con IC 95 %.'),
-   'Ninguno de los tres se separa del azar. Con un modelo que casi no discrimina, comparar contextos sirve poco, pero lo muestro igual porque era el contraste que había fijado.',
-   ACT+'INFORME.md; '+ACT+'metricas.csv')
-
- S(D5,'Con historial, 4 personas suben y 4 bajan',
-   img('activacion_personas','Activación, test. Línea gruesa: media (0,514 → 0,536). IC 95 % de la diferencia: [−0,013; +0,059].'),
-   'Mismo gráfico que en atención, ahora para activación. Acá no hay patrón: cuatro suben y cuatro bajan. Las personas van de 0,36 a 0,68 y la media pasa de 0,514 a 0,536. Hasta 8 sube 0,033 en test, pero en validación y entrenamiento no, así que no lo tomo como resultado.',
-   ACT+'metricas_personas.csv; '+ACT+'contrastes.csv')
- S(D5,'En activación, fusionar señales tampoco se distingue de usar una sola',
-   img('ablaciones','Test. Los nueve intervalos incluyen cero.'),
-   'Con AUC cerca de 0,5, esta comparación dice poco. En atención, que sí predice, EEG solo y EEG con GSR quedaron casi iguales: −0,004 [−0,018; +0,010]. Además solo es fusión temprana; temprana contra intermedia y tardía con la etiqueta nueva está pendiente.',
-   ABL+'INFORME.md; '+ABL+'contrastes_fusion.csv')
-
- S(D6,'Hoy la hipótesis queda sin una ventaja consistente',
-   img('sintesis','IC 95 % por persona. Oscuro: contraste principal.'),
-   'Según los criterios del manuscrito, hoy no hay una ventaja consistente en ninguno de los dos resultados. Si la mejora en atención se confirmara, la hipótesis tendría apoyo parcial. En activación el modelo no predice, así que no puedo decir nada del historial.',
-   'documentacion/Cierre_Experimental_V2_01-11-2026.md; '+HIP)
-
- S(D6,'Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use',
-   img('muestra','Gris: atención. Azul: activación. Mejora relevante +0,02; efecto real +0,04.'),
-   'El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.',
-   PROT+'INFORME.md; '+PROT+'verificacion_simulada.json')
-
+ S('RESULTADOS CON 41 PERSONAS','Con 41 personas, el historial mejora atención; en activación no alcanza',
+   img('final_principal','Cada punto es una partición de las 41 personas en 8 grupos; la oscura es la registrada de antemano.'),
+   'Para tener más potencia usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.',
+   'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/cierre_robustez_41p_16-11-2026/INFORME.md')
+ S('QUÉ EXPLICA LA MEJORA','¿De dónde viene la mejora?',
+   img('origen_mejora','Mejora frente al modelo sin historial. Placebo: mismas cantidad de ventanas, de la misma persona, en otras páginas.'),
+   'Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, el placebo y los segundos no aportan, y el historial sí, incluso sin los 6 s que usa la etiqueta.',
+   'resultados/cierre_robustez_41p_16-11-2026/INFORME.md; resultados/explicativo_posicion_41p_18-11-2026/INFORME.md; resultados/ampliacion_41p_16-11-2026/INFORME.md')
+ S('QUÉ EXPLICA LA MEJORA','En atención, la etiqueta depende de cuánto lleva la persona en la página',
+   img('posicion_etiqueta','Promedio de las 41 personas.'),
+   'Al entrar a una página, la etiqueta de atención cae a 0,37 entre el segundo 2 y 3 y después sube hasta 0,62. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y pupila al cambiar de página. Este análisis lo hice después de ver el placebo, así que es explicativo.',
+   'resultados/explicativo_posicion_41p_18-11-2026/INFORME.md')
+ S('QUÉ EXPLICA LA MEJORA','En activación, los segundos previos sí aportan',
+   img('activacion_temporal','Historial sin las 6 ventanas que usa la etiqueta, contra un placebo con la misma cantidad de ventanas.'),
+   'Excluí del historial los 6 s que definen la etiqueta, para que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Y controlando los segundos en la página, el historial sigue sumando +0,038. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.',
+   'resultados/ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv; resultados/explicativo_posicion_41p_18-11-2026/contrastes.csv')
+ S('RESULTADOS CON 41 PERSONAS','En atención, la fusión tardía rinde mejor',
+   img('fusion_final','Misma familia de modelo (MLP) y misma entrada en las tres fusiones.'),
+   'Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad.',
+   'resultados/ampliacion_41p_16-11-2026/INFORME.md')
+ S('RESULTADOS CON 41 PERSONAS','El modelo de atención rinde mejor al final de la sesión y en sitios web',
+   img('sesion_pagina','Modelo con historial. Izquierda: quintos del tiempo de sesión. Derecha: AUC por tipo de página.'),
+   'En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.',
+   'resultados/ampliacion_41p_16-11-2026/INFORME.md')
+ S('DÓNDE QUEDO','Qué responde la tesis',
+   table(['','Atención','Activación'],[['Mejora con historial','+0,026 [+0,018; +0,035]','+0,034 [−0,001; +0,069]'],['¿Es información temporal?','No: el placebo da lo mismo; la explican los segundos en la página','Sí: +0,046 sobre el placebo, sin tocar la etiqueta'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor (+0,012)','Sin diferencias']])+caption('Con los criterios del manuscrito: apoyo parcial, y viene de activación.'),
+   'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
+   'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/explicativo_posicion_41p_18-11-2026/INFORME.md','roomy')
  S(D6,'Necesito decidir cuatro cosas con usted',
    '<ol class="questions">'
-   '<li><b>¿Cierro con los datos actuales o planifico una cohorte nueva?</b><span>Con lo que tengo, el resultado queda inconcluso.</span></li>'
+   '<li><b>¿Escribo con estos resultados o planifico una cohorte para confirmar activación?</b><span>Las 41 personas ya se habían consultado: lo de activación es exploratorio.</span></li>'
    '<li><b>¿Qué cuenta como "mejor"?</b><span>Cualquier mejora sobre 0, como dice la hipótesis, o un mínimo como +0,02 AUC.</span></li>'
    '<li><b>¿Acepto etiquetas normalizadas con la sesión completa?</b><span>El manuscrito pide normalizar solo con entrenamiento.</span></li>'
    '<li><b>¿Escribo "activación (GSR)" en vez de "emociones"?</b><span>Con GSR no puedo hablar de emociones en general.</span></li>'
-   '</ol><p class="next-step">Mientras tanto: reviso si el error también afecta la etiqueta de atención y comparo fusión temprana, intermedia y tardía.</p>',
-   'El error de la etiqueta y el reentrenamiento ya están. Lo que más me urge es la primera pregunta.',
+   '</ol><p class="next-step">Mientras tanto: escribo resultados y discusión con lo que muestro hoy.</p>',
+   'La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto.',
    PROT+'INFORME.md; ../../notas/pautas-escritura-recuperadas.md','closing-questions')
 
  AX='ANEXO'
@@ -210,6 +203,11 @@ def apply(old):
    table(['',''],[['Modelo','HistGradientBoostingClassifier (HGB)'],['Búsqueda','7 o 15 hojas · 5 folds agrupados por persona'],['Final','15 hojas · 300 iteraciones · tasa 0,05 · L2 = 10'],['Preprocesamiento','Mediana, indicadores de ausencia y estandarización, solo con entrenamiento'],['Modelos','30 ajustes internos · 15 OOF · 3 finales']]),
    'La misma configuración para los tres largos de historial.',
    ACT+'protocolo.json')
+ S(AX+' E','Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use',
+   img('muestra','Gris: atención. Azul: activación. Mejora relevante +0,02; efecto real +0,04.'),
+   'El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.',
+   PROT+'INFORME.md; '+PROT+'verificacion_simulada.json')
+
  for x in out:
   for k in ('title','body'):x[k]=x[k].replace(' %',' %')
  return out
