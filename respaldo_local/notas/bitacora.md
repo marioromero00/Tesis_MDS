@@ -159,3 +159,8 @@ Atención: el historial no tiene información temporal (E1 real − placebo −0
 Fusión (MLP): en atención la tardía supera a la temprana (+0,012) y a la intermedia; en activación sin diferencias. Fatiga: AUC de atención sube a lo largo de la sesión; prevalencia de activación cae al final (habituación compatible). Importancia: atención depende del EEG actual (theta, delta); activación del EEG y la media del historial. Por página: atención mejor en sitios web y peor en textos.
 
 Nota: el comando de espera de la enmienda quedó en espera indefinida (se emparejaba consigo mismo); se detectó el 18-11 y se corrió la enmienda ese día.
+
+
+## 2026-11-22 — Cierre formal de la experimentación
+
+Mario decidió cerrar la fase experimental. Documento de cierre: repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_22-11-2026.md (síntesis de los informes del 16 al 18-11, sin resultados nuevos ni entrenamientos). Verificado antes de cerrar: las cinco carpetas de resultados finales están completas en Git, no había procesos activos y HEAD coincidía con origin/main. Etiquetas, particiones y configuración quedan congeladas; reabrir requiere decisión explícita y protocolo registrado antes de correr. Sin aprobación registrada del profesor guía. Pendiente: escritura, margen práctico 0,02 y revisión de la presentación v6.

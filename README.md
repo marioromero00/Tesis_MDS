@@ -6,6 +6,10 @@ Detección temporal multimodal de atención y activación durante navegación we
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
+## Experimentación cerrada — 22-11-2026
+
+[Cierre de la experimentación](documentacion/Cierre_Experimental_Final_22-11-2026.md): resultados finales con 41 personas, trazabilidad de protocolos y límites. Evidencia mixta con apoyo parcial: información temporal real en activación; en atención la mejora del historial se explica por el tiempo transcurrido en el estímulo. Todo lo que sigue en este README es historial anterior al cierre.
+
 ## Cierre experimental V2 — 01-11-2026
 
 [Cierre de temporalidad y ablación de modalidades](documentacion/Cierre_Experimental_V2_01-11-2026.md): resultados V2, alcance y auditorías. Las secciones anteriores de octubre que siguen conservan su contexto histórico y sus etiquetas.
