@@ -1,0 +1,438 @@
+{
+  "created_utc": "2026-11-22T22:59:57.424029+00:00",
+  "approval": "Mario reabre la experimentación el 22-11-2026 y pide conclusiones más firmes. Registrado antes de correr; se ejecuta una vez.",
+  "inputs": {
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "scripts/temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "resultados/cierre_final_41p_16-11-2026/protocolo.json": "7fb76d6b2b2b0fb73e50db01ee8f8b0109f31181f2b8adb4107a412d2b5906d7",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_atencion.csv.gz": "49ee7f032e0139cda07de86e3d1471a3a6bda9c6d47dc91e65e7a0fea5179567",
+    "resultados/cierre_final_41p_16-11-2026/predicciones_activacion.csv.gz": "5935717ff71a6e45fc59d860713bd69677301e5d049afce566c5d05a63fcf84c",
+    "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+    "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "hgb": {
+    "max_iter": 300,
+    "l2_regularization": 10.0,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 30,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "folds_rep": {
+    "1101": [
+      [
+        "P15",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P9"
+      ],
+      [
+        "P10",
+        "P30",
+        "P32",
+        "P33",
+        "P48"
+      ],
+      [
+        "P11",
+        "P18",
+        "P19",
+        "P27",
+        "P38"
+      ],
+      [
+        "P12",
+        "P31",
+        "P36",
+        "P40",
+        "P41"
+      ],
+      [
+        "P16",
+        "P3",
+        "P37",
+        "P4",
+        "P5"
+      ],
+      [
+        "P21",
+        "P26",
+        "P43",
+        "P6",
+        "P8"
+      ],
+      [
+        "P13",
+        "P20",
+        "P28",
+        "P39",
+        "P45"
+      ],
+      [
+        "P2",
+        "P23",
+        "P44",
+        "P46",
+        "P47"
+      ]
+    ],
+    "1102": [
+      [
+        "P22",
+        "P31",
+        "P38",
+        "P39",
+        "P43",
+        "P6"
+      ],
+      [
+        "P16",
+        "P19",
+        "P26",
+        "P28",
+        "P48"
+      ],
+      [
+        "P18",
+        "P2",
+        "P23",
+        "P33",
+        "P8"
+      ],
+      [
+        "P15",
+        "P35",
+        "P41",
+        "P47",
+        "P5"
+      ],
+      [
+        "P11",
+        "P24",
+        "P3",
+        "P37",
+        "P40"
+      ],
+      [
+        "P30",
+        "P32",
+        "P36",
+        "P4",
+        "P44"
+      ],
+      [
+        "P10",
+        "P13",
+        "P20",
+        "P34",
+        "P46"
+      ],
+      [
+        "P12",
+        "P21",
+        "P27",
+        "P45",
+        "P9"
+      ]
+    ],
+    "1103": [
+      [
+        "P11",
+        "P15",
+        "P23",
+        "P32",
+        "P37",
+        "P46"
+      ],
+      [
+        "P24",
+        "P26",
+        "P3",
+        "P35",
+        "P9"
+      ],
+      [
+        "P21",
+        "P27",
+        "P34",
+        "P43",
+        "P48"
+      ],
+      [
+        "P10",
+        "P2",
+        "P4",
+        "P47",
+        "P6"
+      ],
+      [
+        "P18",
+        "P19",
+        "P22",
+        "P40",
+        "P44"
+      ],
+      [
+        "P12",
+        "P20",
+        "P33",
+        "P41",
+        "P5"
+      ],
+      [
+        "P16",
+        "P28",
+        "P36",
+        "P38",
+        "P39"
+      ],
+      [
+        "P13",
+        "P30",
+        "P31",
+        "P45",
+        "P8"
+      ]
+    ],
+    "1104": [
+      [
+        "P2",
+        "P21",
+        "P39",
+        "P44",
+        "P45",
+        "P5"
+      ],
+      [
+        "P12",
+        "P37",
+        "P47",
+        "P48",
+        "P6"
+      ],
+      [
+        "P23",
+        "P38",
+        "P40",
+        "P43",
+        "P9"
+      ],
+      [
+        "P24",
+        "P3",
+        "P36",
+        "P4",
+        "P41"
+      ],
+      [
+        "P10",
+        "P20",
+        "P32",
+        "P33",
+        "P8"
+      ],
+      [
+        "P30",
+        "P31",
+        "P34",
+        "P35",
+        "P46"
+      ],
+      [
+        "P13",
+        "P16",
+        "P18",
+        "P19",
+        "P26"
+      ],
+      [
+        "P11",
+        "P15",
+        "P22",
+        "P27",
+        "P28"
+      ]
+    ],
+    "1105": [
+      [
+        "P19",
+        "P22",
+        "P31",
+        "P41",
+        "P44",
+        "P8"
+      ],
+      [
+        "P16",
+        "P21",
+        "P43",
+        "P47",
+        "P48"
+      ],
+      [
+        "P12",
+        "P23",
+        "P24",
+        "P3",
+        "P35"
+      ],
+      [
+        "P11",
+        "P15",
+        "P27",
+        "P34",
+        "P6"
+      ],
+      [
+        "P18",
+        "P2",
+        "P36",
+        "P38",
+        "P9"
+      ],
+      [
+        "P10",
+        "P32",
+        "P33",
+        "P40",
+        "P5"
+      ],
+      [
+        "P30",
+        "P37",
+        "P39",
+        "P4",
+        "P46"
+      ],
+      [
+        "P13",
+        "P20",
+        "P26",
+        "P28",
+        "P45"
+      ]
+    ]
+  },
+  "folds_main": [
+    [
+      "P19",
+      "P34",
+      "P4",
+      "P41",
+      "P46",
+      "P9"
+    ],
+    [
+      "P12",
+      "P15",
+      "P26",
+      "P28",
+      "P43"
+    ],
+    [
+      "P18",
+      "P31",
+      "P36",
+      "P45",
+      "P6"
+    ],
+    [
+      "P16",
+      "P2",
+      "P24",
+      "P3",
+      "P32"
+    ],
+    [
+      "P21",
+      "P39",
+      "P40",
+      "P47",
+      "P8"
+    ],
+    [
+      "P10",
+      "P13",
+      "P27",
+      "P33",
+      "P5"
+    ],
+    [
+      "P22",
+      "P35",
+      "P37",
+      "P44",
+      "P48"
+    ],
+    [
+      "P11",
+      "P20",
+      "P23",
+      "P30",
+      "P38"
+    ]
+  ],
+  "lags": [
+    6,
+    12,
+    24,
+    48,
+    96
+  ],
+  "band": 6,
+  "min_band": 3,
+  "placebo_gap": 150,
+  "placebo_seed": 20261122,
+  "label_lag": 6,
+  "margin": 0.02,
+  "confirmatory": {
+    "tests": [
+      "P1: hgb_c32 − hgb_c1",
+      "P2: c32_ts − c1_ts"
+    ],
+    "tasks": [
+      "atencion",
+      "activacion"
+    ],
+    "holm": "sobre las 4 pruebas (2 contrastes × 2 tareas)",
+    "unit": "AUC por persona promediada sobre las 5 particiones; diferencia pareada por persona (41)"
+  },
+  "secondary": {
+    "tests": [
+      "lag6 − placebo",
+      "lag12 − placebo",
+      "lag24 − placebo",
+      "lag48 − placebo",
+      "lag96 − placebo"
+    ],
+    "holm": "sobre los 5 desfases dentro de cada tarea",
+    "trend": "pendiente por persona de (lagL − placebo) contra log2(L); prueba de signos bilateral sobre la pendiente media, sin ajuste",
+    "rows": "filas etiquetadas con al menos MIN_BAND ventanas en las 5 bandas; todos los modelos se entrenan y evalúan en esas mismas filas"
+  },
+  "descriptive": [
+    "D1 posición sola y AUC sin historial estratificada por posición",
+    "D2 autocorrelación de la etiqueta a 6 s"
+  ],
+  "inference": "IC 95 % y 90 % bootstrap por persona (20000, semilla 20261029). Permutación de signos bilateral (200000, semilla 20261116).",
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Las 41 personas ya se consultaron: no es confirmación independiente. P1 repite el contraste principal con otras particiones para ganar precisión; tres particiones alternativas ya se habían visto en la prueba de robustez R3 (+0,042 en activación). Etiquetas offline y variables transductivas por persona (ver protocolo V3). La etiqueta de activación integra 6 s de GSR; el GSR no es entrada en activación. La curva temporal usa las personas con filas comunes (40 en activación: una persona con 26 filas etiquetadas no tiene ninguna; 41 en atención), contado antes de correr y sin mirar resultados."
+}
