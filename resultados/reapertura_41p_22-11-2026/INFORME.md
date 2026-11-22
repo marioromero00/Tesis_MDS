@@ -77,6 +77,19 @@ En activación, la ventana actual sola no distingue nada dentro de un mismo est�
 
 Solo el 2–3 % de los pares de una persona cae dentro de un mismo estímulo y el 7 % dentro de un mismo minuto: estas AUC usan una fracción pequeña de las comparaciones.
 
+## Sensibilidad a personas individuales (activación)
+
+Pedida por la auditoría de resultados; no estaba registrada.
+
+| Contraste | Media | Mediana | Mejoran | Sin la persona más influyente |
+|---|---|---|---|---|
+| P1 historial − sin historial | +0,036 | +0,014 | 23/41 | +0,028 [+0,006; +0,050] |
+| Desfase 6 s − placebo | +0,047 | +0,042 | 30/40 | +0,039 [+0,012; +0,065] |
+| Desfase 6 s − placebo de bloque | +0,053 | +0,056 | 31/40 | +0,046 [+0,021; +0,070] |
+| Mismo minuto | +0,058 | +0,042 | 24/41 | +0,050 [+0,021; +0,081] |
+
+Ningún resultado depende de una sola persona. El efecto promedio de P1 es desigual: una persona (P4) aporta 0,009 de los 0,036 y poco más de la mitad mejora. El contraste del desfase de 6 s es más parejo.
+
 ## Descriptivos
 
 - **Posición sola (D1).** Un modelo que solo recibe los segundos transcurridos en el estímulo, sin fisiología, llega a AUC 0,598 [0,581; 0,614] en atención y 0,543 [0,492; 0,595] en activación.
@@ -103,7 +116,7 @@ X2 dio una ganancia del historial en atención al estratificar por posición (+0
 2. La información es de corto alcance: está en los 6 a 12 s anteriores y desaparece a partir de 24 s. No es deriva lenta de la persona: el pasado lejano no ayuda y la ganancia se mantiene dentro del mismo minuto.
 3. Lo que el historial aporta es una mejor estimación de un estado que dura segundos (la propia etiqueta se parece a la de 6 s antes, AUC 0,68).
 4. No queda demostrado que sea más que eso. Dos controles quedan inconclusos (tiempo de sesión como variable, +0,026; misma posición, +0,027) y, dentro de un mismo estímulo, el tiempo transcurrido rinde tanto como el historial.
-5. La AUC absoluta sigue baja (0,55–0,58).
+5. La AUC absoluta sigue baja (0,55–0,58) y el efecto es desigual entre personas (en P1 mejoran 23 de 41).
 
 **Atención.**
 1. El pasado no contiene información: nulo concluyente a 6 y 12 s frente a dos placebos distintos, y de 24 a 96 s rinde igual o peor que ventanas tomadas al azar.
@@ -128,4 +141,4 @@ X2 dio una ganancia del historial en atención al estratificar por posición (+0
 ## Auditorías
 
 - Código de la fase 1, por un agente independiente, antes de ver resultados: sin hallazgos bloqueantes (sin fuga entre personas; bandas, placebo y resúmenes verificados numéricamente). Sus hallazgos de interpretación originaron la fase 2 y la sección de límites.
-- Resultados: ver `AUDITORIA_RESULTADOS.md` en esta carpeta.
+- Resultados, por otro agente independiente con código propio: pasa los seis puntos (cifras reproducidas, integridad, hashes y cronología del registro). Detalle en `AUDITORIA_RESULTADOS.md`. La comprobación no registrada no fue auditada.
