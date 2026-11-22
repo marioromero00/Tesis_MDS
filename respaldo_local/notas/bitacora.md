@@ -164,3 +164,18 @@ Nota: el comando de espera de la enmienda quedó en espera indefinida (se empare
 ## 2026-11-22 — Cierre formal de la experimentación
 
 Mario decidió cerrar la fase experimental. Documento de cierre: repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_22-11-2026.md (síntesis de los informes del 16 al 18-11, sin resultados nuevos ni entrenamientos). Verificado antes de cerrar: las cinco carpetas de resultados finales están completas en Git, no había procesos activos y HEAD coincidía con origin/main. Etiquetas, particiones y configuración quedan congeladas; reabrir requiere decisión explícita y protocolo registrado antes de correr. Sin aprobación registrada del profesor guía. Pendiente: escritura, margen práctico 0,02 y revisión de la presentación v6.
+
+
+## 2026-11-22 — Reapertura: conclusiones más firmes
+
+Mario reabrió la experimentación el mismo día del cierre. Resultados: repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026 (INFORME.md) y reapertura_fase2_41p_22-11-2026. Fase 1 registrada antes de correr (commit 5076307); fase 2, controles post hoc pedidos por la auditoría de código, registrada con la fase 1 aún corriendo (commit e3d9c71). Sin cambios de etiquetas ni de configuración.
+
+Activación: el contraste principal con 5 particiones pasa a respaldo, +0,036 [+0,010; +0,065], p Holm 0,021. Con el tiempo de sesión como variable queda inconcluso (+0,026 [−0,006; +0,056]). Curva temporal: solo el desfase de 6 s supera al placebo (+0,047, p Holm 0,017; +0,053 contra placebo de bloque); a 12 s inconcluso y desde 24 s nada; el contraste cae 0,010 por duplicación del desfase (p 0,009). Dentro del mismo minuto de sesión la ganancia se mantiene (+0,058 [+0,027; +0,092]); dentro de la misma posición queda inconclusa (+0,027). Etiqueta de 6 s antes predice la actual con AUC 0,68.
+
+Atención: P1 +0,029 [+0,021; +0,037]. El pasado a 6–96 s no aporta: nulo concluyente a 6 y 12 s, igual o peor que el placebo después. Posición sola AUC 0,598; detección sin historial entre ventanas de la misma posición 0,677 (0,684 sin estratificar). Comprobación no registrada: también con AUC estratificada la posición como variable reproduce la ganancia del historial.
+
+Advertencia de la comprobación no registrada (una partición): en activación, dentro de un mismo estímulo, la posición sola mejora (+0,040) y el historial no la supera.
+
+Lectura: apoyo parcial, mejor delimitado. Activación: efecto del historial confirmado, de corto alcance (6–12 s), no deriva lenta. Atención: sin información temporal. Pendiente: decidir con el profesor guía cómo presentar los controles inconclusos de activación.
+
+Nota de cómputo: el ajuste de HGB con pesos está dominado por el cálculo de los cortes (unos 40 ms por variable, en Python y sin paralelizar); 12 procesos en paralelo tardaron 55 min.

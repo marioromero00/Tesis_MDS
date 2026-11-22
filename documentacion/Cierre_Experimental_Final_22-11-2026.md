@@ -1,5 +1,7 @@
 # Cierre de la experimentación — 22-11-2026
 
+> **Actualización del mismo 22-11-2026.** Horas después de este cierre Mario reabrió la experimentación para obtener conclusiones más firmes. Se corrieron dos fases registradas antes de ejecutar: [informe de la reapertura](../resultados/reapertura_41p_22-11-2026/INFORME.md). Cambios principales: el contraste principal de activación pasa de inconcluso a respaldo (+0,036 [+0,010; +0,065], p Holm 0,021, cinco particiones); la información temporal de activación está en los 6 a 12 s anteriores y desaparece desde 24 s; en atención el pasado no aporta a ningún desfase (nulo concluyente) y la detección desde EEG se mantiene al controlar la posición (0,677). La conclusión general sigue siendo apoyo parcial. Lo que sigue es el texto original del cierre.
+
 Este documento declara cerrada la fase experimental de la tesis y reúne en un solo lugar los resultados finales, su trazabilidad y lo que queda abierto. No contiene resultados nuevos: sintetiza los informes ya versionados entre el 16 y el 18 de noviembre de 2026. Ante cualquier diferencia, mandan los `INFORME.md` y `contrastes.csv` de cada carpeta de resultados.
 
 Decisión de cierre: Mario Romero, 22-11-2026. No hay aprobación del profesor guía registrada sobre estos resultados ni sobre el margen práctico de 0,02.

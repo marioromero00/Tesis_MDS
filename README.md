@@ -6,6 +6,10 @@ Detección temporal multimodal de atención y activación durante navegación we
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
+## Reapertura — 22-11-2026
+
+[Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Es el estado más reciente de los resultados.
+
 ## Experimentación cerrada — 22-11-2026
 
 [Cierre de la experimentación](documentacion/Cierre_Experimental_Final_22-11-2026.md): resultados finales con 41 personas, trazabilidad de protocolos y límites. Evidencia mixta con apoyo parcial: información temporal real en activación; en atención la mejora del historial se explica por el tiempo transcurrido en el estímulo. Todo lo que sigue en este README es historial anterior al cierre.

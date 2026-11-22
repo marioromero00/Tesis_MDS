@@ -20,6 +20,8 @@ La ubicación principal del vault es `documentos/01 Tesis MDS`. El enlace en `re
 
 ## Último cierre experimental
 
+**Reapertura del 22-11-2026 (estado más reciente):** [informe](repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026/INFORME.md). Activación: efecto del historial confirmado (+0,036, respaldo) y de corto alcance (6–12 s). Atención: sin información temporal a ningún desfase.
+
 **Experimentación cerrada el 22-11-2026.** [Cierre final](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_22-11-2026.md): análisis con 41 personas, evidencia mixta con apoyo parcial (información temporal real en activación; en atención la mejora se explica por el tiempo transcurrido en el estímulo). Respaldado en GitHub. Lo pendiente es escritura y decisiones con el profesor guía.
 
 Histórico: [Cierre V2 del 01-11-2026](repos/Tesis_MDS/documentacion/Cierre_Experimental_V2_01-11-2026.md).
