@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-22T23:08:13.599895+00:00",
+  "post_hoc": true,
+  "motive": "Auditoría independiente de código de la fase 1 (hallazgos A, B y C), recibida con la fase 1 en ejecución y sin resultados vistos.",
+  "inputs": {
+    "scripts/reapertura_fase2_41p.py": "445779b1309bbb7a487095b37d0d556ba6af23b48389eb0023bcb7147fb263f8",
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "resultados/reapertura_41p_22-11-2026/protocolo.json": "500c6efbbcc5a6a0faa6a4cd7379599f0abfde12fa5e95c4162ba20e1fbe645f"
+  },
+  "phase1_files_present": [],
+  "block_seed": 20261123,
+  "session_block": 60,
+  "strata": [
+    "estimulo",
+    "bloque60",
+    "posicion"
+  ],
+  "x1": {
+    "tests": [
+      "lag6 − placebo_bloque",
+      "lag12 − placebo_bloque",
+      "lag24 − placebo_bloque",
+      "lag48 − placebo_bloque",
+      "lag96 − placebo_bloque"
+    ],
+    "holm": "5 desfases dentro de cada tarea"
+  },
+  "x2": {
+    "tests": [
+      "hgb_c32 − hgb_c1 estratificada por estimulo",
+      "hgb_c32 − hgb_c1 estratificada por bloque60",
+      "hgb_c32 − hgb_c1 estratificada por posicion"
+    ],
+    "holm": "6 pruebas (3 × 2 tareas)",
+    "unit": "AUC estratificada por persona, promediada sobre las 5 particiones de la fase 1"
+  },
+  "decision": "Reglas del análisis final con margen 0,02, como lectura exploratoria."
+}
