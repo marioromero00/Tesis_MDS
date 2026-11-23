@@ -214,3 +214,13 @@ Mario pide continuar. Se aborda el pendiente 2 de los cuatro enfoques.
 - **Limpieza ocular** (`resultados/limpieza_ocular_41p_23-11-2026/`, registrado antes de correr en `06547f5`, enmienda `441bae9`, auditorías de código y de resultados sin hallazgos bloqueantes): quitar 3 componentes oculares por ICA (3,5 % de la varianza) baja la AUC de atención por EEG de 0,681 a 0,621 (+0,060 [+0,045; +0,075], 39/41); quitar 3 componentes no oculares (72 % de la varianza) la deja en 0,674. Alfa y beta baja de 0,593 a 0,547; posteriores de 0,602 a 0,562.
 - Lectura: al menos 0,06 de AUC viene de componentes oculares (cota inferior); la parte defendible como no ocular baja a 0,55–0,56; no se puede afirmar detección cerebral de atención.
 - Crudos por persona en caché local `datos/locales/v2_2025/cache_ocular/`; variables recalculadas en `datos/locales/v2_2025/limpieza_ocular_variables/` (fuera de Git, con hashes).
+
+## 23-11-2026 — Red convolucional sobre el EEG crudo
+
+Mario pide probar modelos más complejos. Los modelos complejos sobre variables calculadas ya se habían probado sin superar al HGB; se prueba una red tipo EEGNet (1.217 parámetros) sobre la señal cruda.
+
+- `resultados/red_cruda_41p_23-11-2026/`, registrado antes de correr en `0074c60`, enmienda `7e1f1e0` antes de ver resultados de las redes, auditorías de código y de resultados sin hallazgos bloqueantes.
+- Atención: red 0,716 frente a HGB 0,681 (R1 +0,035 [+0,023; +0,047], efecto relevante con holgura mínima). Con EEG limpio: red 0,649 frente a HGB 0,621 (R2 +0,028, respaldo). Red original − red limpia: +0,067 [+0,053; +0,082] (R3, efecto relevante, sin control propio).
+- Activación: red 0,499, HGB solo EEG 0,524; R4 −0,025 [−0,055; +0,003], inconcluso.
+- Lectura: la red aprovecha mejor la huella ocular en el EEG; no cambia la conclusión de la limpieza ni el resultado de activación. Vale para una sola arquitectura sin búsqueda.
+- Tensores en `datos/locales/v2_2025/red_cruda_tensores/` (fuera de Git, con hashes).
