@@ -1,9 +1,9 @@
 {
-  "created_utc": "2026-11-23T01:04:21.297317+00:00",
+  "created_utc": "2026-11-23T01:15:08.247852+00:00",
   "approval": "Mario pide los enfoques 1 a 4 el 22-11-2026 (etiqueta de atención corregida, detección cruzada, activación a nivel de estímulo, diferencias entre personas). Registrado antes de correr.",
   "directed": true,
   "inputs": {
-    "scripts/enfoques_41p.py": "35256781187a294fe90d0d1c75a0b2a5faea6dc04df3300d1da8a850c6384378",
+    "scripts/enfoques_41p.py": "ef9119ef6e53103e3487c032176b78fb83fa065ebdc32f136c6471402de67f3b",
     "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
     "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
     "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
@@ -370,6 +370,12 @@
       "hgb_c1 − eeg_c1",
       "eeg_c1 − gsr_c1"
     ],
+    "E2b": [
+      "eeg_alfa_beta − 0,5",
+      "eeg_posterior − 0,5",
+      "eeg_lento_amp − eeg_alfa_beta",
+      "eeg_frontal − eeg_posterior"
+    ],
     "E3": [
       "seg − 0,5",
       "seg − agg_c32",
@@ -379,6 +385,31 @@
       "pers_c1 − hgb_c1 y pers_c32 − hgb_c32, en atención y activación"
     ]
   },
+  "amendment": "Versión 2, antes de ejecutar: cambios pedidos por dos auditorías de código sobre la versión 1 (commit cd25134), sin resultados existentes. Ver ENMIENDA en el docstring del script.",
+  "eeg_sets": {
+    "eeg_alfa_beta": 32,
+    "eeg_lento_amp": 67,
+    "eeg_posterior": 126,
+    "eeg_frontal": 126
+  },
+  "frontal": [
+    0,
+    1,
+    8,
+    9,
+    10,
+    11
+  ],
+  "posterior": [
+    4,
+    5,
+    6,
+    7,
+    14,
+    15
+  ],
+  "montage_verified": false,
+  "min_labelled": 3,
   "holm": "dentro de cada familia",
   "unit": "AUC por persona promediada sobre las 5 particiones; diferencia pareada",
   "descriptive": [
@@ -395,5 +426,5 @@
     "inferior": "IC95 superior < 0",
     "resto": "inconcluso"
   },
-  "limits": "Análisis dirigidos sobre personas y resultados ya vistos. Etiquetas offline y variables transductivas por persona. E1: la etiqueta corregida usa medianas por persona y tramo calculadas con toda la sesión (offline, como la original). E3: usa todas las ventanas del segmento, incluidas las posteriores a cada etiqueta; no es causal. E4c: el modelo adaptado ve un 6 % más de datos; la evaluación es sobre la parte final de la sesión, distinta de la de los análisis anteriores."
+  "limits": "Análisis dirigidos sobre personas y resultados ya vistos. Etiquetas offline y variables transductivas por persona. E1: la etiqueta corregida usa medianas por persona y tramo calculadas con toda la sesión (offline, como la original). E3: usa todas las ventanas del segmento, incluidas las posteriores a cada etiqueta; no es causal; sus variables codifican en parte la duración; configuración HGB no reajustada para ~1.400 segmentos de entrenamiento. E4c: las personas evaluadas aportan ~5 % de las filas y ~15 % del peso; sus etiquetas de calibración dependen de toda la sesión (adaptación offline); la evaluación es sobre la parte final de la sesión. E2: EEG sin limpieza de artefactos oculares. En E3 el comparador agg_c32 (0,567) se conoció al probar el informe antes de correr."
 }

@@ -47,6 +47,24 @@ E4 Diferencias entre personas.
        que empiezan después de ese punto más 10 s, y se compara con el modelo general en esas mismas ventanas.
        Pruebas (Holm sobre 4): adaptado − general, sin historial y con historial, en atención y activación.
 
+ENMIENDA (versión 2, 22-11-2026, antes de ejecutar nada). Dos auditorías independientes de código, hechas sobre
+la versión 1 (commit cd25134) sin que existiera ningún resultado, no hallaron errores bloqueantes y pidieron:
+  E2  El EEG no tiene limpieza de artefactos oculares y sus variables más predictivas son de firma ocular (potencia
+      lenta y amplitud). Se agregan modelos sin historial con subconjuntos del EEG y una segunda familia (Holm
+      sobre 4): solo alfa y beta − 0,5; canales posteriores − 0,5; (lento y amplitud) − (alfa y beta);
+      frontales − posteriores. La zona usa el montaje por defecto de OpenBCI de 16 canales (frontales: canales
+      0, 1, 8, 9, 10, 11; posteriores: 4, 5, 6, 7, 14, 15), que NO está verificado en la documentación del
+      experimento: esa comparación es un supuesto. Además se reportan los contrastes contra 0,5 a igual posición
+      y el control barajado recalcula los pesos con las etiquetas barajadas.
+  E3  Se agrega como descriptivo la sensibilidad con segmentos de 3 o más ventanas etiquetadas. C1 se interpreta
+      junto con C3 y con la duración sola, porque las variables codifican en parte la duración.
+  E4a Las mitades se alternan dentro de cada tipo de estímulo (blur y resto), porque la sesión alterna tipos.
+  E4b Se quita la covariable de EEG utilizable (constante).
+  E4c La franja de 10 s se mide desde la última ventana de calibración de la persona (o desde el corte, lo que
+      ocurra después). Se declara que cada persona evaluada pesa como una persona completa de entrenamiento
+      (cerca del 15 % del peso con el 5 % de las filas) y que las etiquetas de calibración dependen de toda la
+      sesión: es adaptación offline, no calibración desplegable en línea.
+
 Reglas de decisión: respaldo: p Holm < 0,05 e IC 95 % inferior > 0; efecto relevante: además IC 95 % inferior
 > 0,02; nulo concluyente: IC 90 % dentro de (−0,02; +0,02); inferior: IC 95 % superior < 0; resto: inconcluso.
 """
@@ -71,7 +89,19 @@ POS_EDGES = [1, 2, 3, 4, 5, 8, 12, 20]   # tramos: 1, 2, 3, 4, 5, 6-8, 9-12, 13-
 SHUFFLE_SEED = 20261124
 CAL_FRACTION, CAL_GAP = .4, 10
 SEG = ['participant', 'recording', 'segment_id', 'stimulus']
-COVARIATES = ['ventanas_etiquetadas', 'eeg_utilizable', 'cobertura_eeg', 'cobertura_pupila', 'cobertura_mirada',
+FRONTAL, POSTERIOR = {0, 1, 8, 9, 10, 11}, {4, 5, 6, 7, 14, 15}   # montaje por defecto OpenBCI 16 canales, NO verificado
+MIN_LABELLED = 3
+
+
+def eeg_sets():
+    ch = [c for c in V3.CHANNELS if c.startswith('eegch')]
+    pick = lambda sufs: [c for c in ch if c.split('_', 1)[1] in sufs]
+    zone = lambda idx: [c for c in ch if int(c[5:7]) in idx]
+    return {'eeg_alfa_beta': pick({'logpower_alpha', 'logpower_beta'}),
+            'eeg_lento_amp': pick({'logpower_delta', 'logpower_theta', 'log_variance', 'log_peak_to_peak'})
+                             + ['eeg_rms_uv', 'eeg_std_uv', 'eeg_peak_to_peak_uv'],
+            'eeg_posterior': zone(POSTERIOR), 'eeg_frontal': zone(FRONTAL)}
+COVARIATES = ['ventanas_etiquetadas', 'cobertura_eeg', 'cobertura_pupila', 'cobertura_mirada',
               'deriva_sesion', 'largo_medio_segmento', 'duracion_sesion']
 
 
@@ -99,8 +129,13 @@ def prepare():
         families=dict(
             E1=['A1 c1 corregida − c1 original', 'A2 c32 − c1 (corregida)', 'A3 c32_pos − pos_c1 (corregida)'],
             E2=['eeg_c1 − 0,5', 'gsr_c1 − 0,5', 'hgb_c1 − eeg_c1', 'eeg_c1 − gsr_c1'],
+            E2b=['eeg_alfa_beta − 0,5', 'eeg_posterior − 0,5', 'eeg_lento_amp − eeg_alfa_beta', 'eeg_frontal − eeg_posterior'],
             E3=['seg − 0,5', 'seg − agg_c32', 'seg_dur − dur_only'],
             E4c=['pers_c1 − hgb_c1 y pers_c32 − hgb_c32, en atención y activación']),
+        amendment='Versión 2, antes de ejecutar: cambios pedidos por dos auditorías de código sobre la versión 1 '
+                  '(commit cd25134), sin resultados existentes. Ver ENMIENDA en el docstring del script.',
+        eeg_sets={k: len(v) for k, v in eeg_sets().items()}, frontal=sorted(FRONTAL), posterior=sorted(POSTERIOR),
+        montage_verified=False, min_labelled=MIN_LABELLED,
         holm='dentro de cada familia', unit='AUC por persona promediada sobre las 5 particiones; diferencia pareada',
         descriptive=['E1 posición sola, concordancia, prevalencias', 'E2 control barajado, Spearman con puntaje y '
                      'componentes, AUC a igual posición', 'E3 duración sola, agg_c1', 'E4a fiabilidad por mitades',
@@ -110,8 +145,11 @@ def prepare():
         limits='Análisis dirigidos sobre personas y resultados ya vistos. Etiquetas offline y variables '
                'transductivas por persona. E1: la etiqueta corregida usa medianas por persona y tramo calculadas con '
                'toda la sesión (offline, como la original). E3: usa todas las ventanas del segmento, incluidas las '
-               'posteriores a cada etiqueta; no es causal. E4c: el modelo adaptado ve un 6 % más de datos; la '
-               'evaluación es sobre la parte final de la sesión, distinta de la de los análisis anteriores.'))
+               'posteriores a cada etiqueta; no es causal; sus variables codifican en parte la duración; configuración HGB '
+               'no reajustada para ~1.400 segmentos de entrenamiento. E4c: las personas evaluadas aportan ~5 % de las '
+               'filas y ~15 % del peso; sus etiquetas de calibración dependen de toda la sesión (adaptación offline); '
+               'la evaluación es sobre la parte final de la sesión. E2: EEG sin limpieza de artefactos oculares. '
+               'En E3 el comparador agg_c32 (0,567) se conoció al probar el informe antes de correr.'))
     print('Registrado', OUT / 'protocolo.json')
 
 
@@ -189,7 +227,7 @@ def run_e2(seed):
     dest = OUT / f'e2_{seed}.csv.gz'
     assert not dest.exists()
     T = V3.Task(V3.load_data(), 'atencion')
-    groups = {'eeg_c1': V3.GROUPS['atencion']['EEG'], 'gsr_c1': V3.GROUPS['atencion']['GSR']}
+    groups = {'eeg_c1': V3.GROUPS['atencion']['EEG'], 'gsr_c1': V3.GROUPS['atencion']['GSR'], **eeg_sets()}
     rng = np.random.default_rng(SHUFFLE_SEED)
     preds = []
     for k, test_people in enumerate(folds_of(p, seed)):
@@ -206,7 +244,8 @@ def run_e2(seed):
             for q in np.unique(person):
                 ix = np.flatnonzero(person == q)
                 ys[ix] = rng.permutation(ys[ix])
-            m = V3.fit_hgb(Zl[fit], ys, w, p['leaves']['atencion'])
+            ws = V3.weights(T.lab.iloc[fit].assign(y=ys))
+            m = V3.fit_hgb(Zl[fit], ys, ws, p['leaves']['atencion'])
             preds.append(base_of(T, ev).assign(prob=m.predict_proba(Zl[ev])[:, 1], strategy='control_barajado', fold=k, seed=seed))
         print('e2', seed, 'fold', k, flush=True)
     pd.concat(preds).to_csv(dest, index=False)
@@ -252,7 +291,9 @@ def calibration_split(T):
     start = pd.Series(ts).groupby(seg).transform('min').to_numpy()
     dur = pd.Series(ts).groupby(T.all.participant.to_numpy()).transform('max').to_numpy()
     cut = CAL_FRACTION * dur
-    role = np.where(start <= cut, 'cal', np.where(start > cut + CAL_GAP, 'eval', ''))
+    cal = start <= cut
+    last = pd.Series(np.where(cal, ts, -np.inf)).groupby(T.all.participant.to_numpy()).transform('max').to_numpy()
+    role = np.where(cal, 'cal', np.where(start > np.maximum(cut, last) + CAL_GAP, 'eval', ''))
     return role[T.lab_pos]
 
 
@@ -350,7 +391,15 @@ def report_e2(d):
                    dict(test='B2', contrast='gsr_c1 − 0,5', **R.contrast(w, 'gsr_c1', 'azar')),
                    dict(test='B3', contrast='hgb_c1 − eeg_c1', **R.contrast(w, 'hgb_c1', 'eeg_c1')),
                    dict(test='B4', contrast='eeg_c1 − gsr_c1', **R.contrast(w, 'eeg_c1', 'gsr_c1'))])
-    desc = absolute(w, ['eeg_c1', 'gsr_c1', 'hgb_c1'])
+    conf2 = family([dict(test='B5', contrast='eeg_alfa_beta − 0,5', **R.contrast(w, 'eeg_alfa_beta', 'azar')),
+                    dict(test='B6', contrast='eeg_posterior − 0,5 (montaje supuesto)', **R.contrast(w, 'eeg_posterior', 'azar')),
+                    dict(test='B7', contrast='eeg_lento_amp − eeg_alfa_beta', **R.contrast(w, 'eeg_lento_amp', 'eeg_alfa_beta')),
+                    dict(test='B8', contrast='eeg_frontal − eeg_posterior (montaje supuesto)', **R.contrast(w, 'eeg_frontal', 'eeg_posterior'))])
+    conf = pd.concat([conf.assign(family='E2'), conf2.assign(family='E2b')], ignore_index=True)
+    models = ['eeg_c1', 'gsr_c1', 'hgb_c1'] + list(eeg_sets())
+    desc = absolute(w, models)
+    for a, b in [('eeg_c1', 'eeg_lento_amp'), ('eeg_c1', 'eeg_alfa_beta'), ('eeg_c1', 'eeg_frontal'), ('eeg_c1', 'eeg_posterior')]:
+        desc.append(dict(item=f'{a} − {b}', **R.contrast(w, a, b)))
     wc = mean_auc(ctrl)
     wc['azar'] = .5
     desc.append(dict(item='control barajado − 0,5 (una partición)', **R.contrast(wc, 'control_barajado', 'azar')))
@@ -359,11 +408,14 @@ def report_e2(d):
     pp = pred.assign(pos=pred.source_row.map(pos))
     st = pp.groupby(['seed', 'strategy', 'participant']).apply(lambda g: R.stratified_auc(g, 'pos')).rename('auc').reset_index()
     ws = st.groupby(['participant', 'strategy']).auc.mean().unstack()
-    desc += absolute(ws, ['eeg_c1', 'gsr_c1', 'hgb_c1'], label='a igual posición')
+    ws['azar'] = .5
+    desc += absolute(ws, models, label='a igual posición')
+    for s in ['eeg_c1', 'gsr_c1', 'eeg_alfa_beta', 'eeg_posterior']:
+        desc.append(dict(label='a igual posición', item=f'{s} − 0,5', **R.contrast(ws, s, 'azar')))
     # Spearman por persona entre probabilidad media y puntaje ocular / componentes
     score, z = ocular(d)
     ref = z.assign(puntaje=score, source_row=d.source_row.to_numpy(), participant=d.participant.to_numpy())
-    for strat in ['eeg_c1', 'hgb_c1']:
+    for strat in ['eeg_c1', 'eeg_alfa_beta', 'eeg_lento_amp']:
         m = pred[pred.strategy.eq(strat)].groupby('source_row').prob.mean().rename('prob').reset_index().merge(ref, on='source_row')
         for c in ['puntaje'] + COLUMNS:
             rho = m.groupby('participant').apply(lambda g: spearmanr(g.prob, g[c]).statistic).dropna()
@@ -390,6 +442,13 @@ def report_e3(d):
     desc = absolute(w, ['seg', 'seg_dur', 'dur_only', 'agg_c1', 'agg_c32'])
     for a, b in [('seg', 'agg_c1'), ('agg_c32', 'agg_c1'), ('seg_dur', 'seg'), ('agg_c32', 'azar'), ('dur_only', 'azar')]:
         desc.append(dict(item=f'{a} − {b}', **R.contrast(w, a, b)))
+    keep = set(tab.seg[tab.labelled >= MIN_LABELLED])
+    both = pd.concat([new, agg])
+    w3 = mean_auc(both[both.seg.isin(keep)])
+    w3['azar'] = .5
+    for a, b in [('seg', 'azar'), ('seg', 'agg_c32'), ('seg_dur', 'dur_only')]:
+        desc.append(dict(item=f'{a} − {b} (segmentos con {MIN_LABELLED}+ etiquetas)', **R.contrast(w3, a, b)))
+    desc.append(dict(item=f'segmentos con {MIN_LABELLED}+ etiquetas', delta=float(len(keep)), people=len(w3)))
     per = tab.groupby('participant').size()
     desc.append(dict(item='segmentos por persona (mediana)', delta=float(per.median()), low95=float(per.min()), high95=float(per.max()), people=len(per)))
     desc.append(dict(item='segmentos con etiqueta unánime (fracción)', delta=float(tab['mean'].isin([0, 1]).mean())))
@@ -402,7 +461,9 @@ def halves(T):
     ts, seg = R.session_time(T), segment_ids(T)
     start = pd.DataFrame(dict(p=T.all.participant.to_numpy(), seg=seg, t=ts)).groupby(['p', 'seg']).t.min().reset_index()
     start = start[start.seg.isin(np.unique(seg[T.lab_pos]))].copy()   # solo segmentos con ventanas etiquetadas
-    start['half'] = start.groupby('p').t.rank(method='first').astype(int) % 2
+    blur = pd.Series(T.all.stimulus.astype(str).str.lower().str.contains('blur').to_numpy()).groupby(seg).first()
+    start['blur'] = start.seg.map(blur).to_numpy()
+    start['half'] = start.groupby(['p', 'blur']).t.rank(method='first').astype(int) % 2
     return pd.Series(start.set_index('seg').half.reindex(seg[T.lab_pos]).to_numpy(), index=T.lab.source_row.to_numpy())
 
 
@@ -448,7 +509,7 @@ def report_e4(d):
             j = pd.concat([f(w0).rename('a'), f(w1).rename('b')], axis=1).dropna()
             s = spearman_ci(j.a, j.b)
             desc.append(dict(task=task, part='E4a', item=f'fiabilidad por mitades: {name}', **s,
-                             spearman_brown=2 * s['delta'] / (1 + s['delta'])))
+                             spearman_brown=2 * s['delta'] / (1 + s['delta']) if s['delta'] > 0 else np.nan))
         # (b) correlatos
         cov = covariates(d, T)
         for outcome, v in [('AUC sin historial', w.hgb_c1), ('ganancia del historial', gain)]:
