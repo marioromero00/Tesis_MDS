@@ -1,0 +1,472 @@
+{
+  "created_utc": "2026-11-23T13:25:14.219269+00:00",
+  "approval": "Mario pide probar modelos más complejos, 23-11-2026. Registrado antes de correr.",
+  "directed": true,
+  "inputs": {
+    "scripts/red_cruda_41p.py": "1173b3b22d53f90da5c7309ee483e60cada8da2fd7400eb09659064eceda5843",
+    "scripts/limpieza_ocular_41p.py": "67b4250cf5d7fb593174f8f238fe26dabb5a76aba65da52bebbe6eb11d1e4e45",
+    "scripts/montaje_ocular_41p.py": "d35d16f50ac5e4d69ca7599de51520d73b12d216010b11e48be1953dccbd8bed",
+    "scripts/eeg_por_canal_v2.py": "ab9a47c6b2230b55b5361d2446ea755cfd6b07b9082365d8a4d3cedb3b79a489",
+    "scripts/enfoques_41p.py": "ef9119ef6e53103e3487c032176b78fb83fa065ebdc32f136c6471402de67f3b",
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "resultados/reapertura_41p_22-11-2026/protocolo.json": "500c6efbbcc5a6a0faa6a4cd7379599f0abfde12fa5e95c4162ba20e1fbe645f",
+    "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+    "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6",
+    "resultados/enfoques_41p_22-11-2026/e2_1101.csv.gz": "dc57e16c71bf4a618eccf6a6964f0010a199499f31f9adeeb9e8ecfaf538c9b1",
+    "resultados/enfoques_41p_22-11-2026/e2_1102.csv.gz": "27f59dcb1775885acaf8939fc75e18046f21d2abac8ac4b29df6e575f9fed249",
+    "resultados/enfoques_41p_22-11-2026/e2_1103.csv.gz": "6120bcb2d77cc55e76da5ec2789b57584a458b602b086bbc0539fc7ccee0a9e8",
+    "resultados/enfoques_41p_22-11-2026/e2_1104.csv.gz": "59622bd7870ab72c4c617375e9456a3150f522f84414957dcabb2c7803e02ac5",
+    "resultados/enfoques_41p_22-11-2026/e2_1105.csv.gz": "7e54725c47902233b3f03cd3a18456da52a8c83a93db5211532fee7798cffa63",
+    "resultados/limpieza_ocular_41p_23-11-2026/pred_1101.csv.gz": "f240a07154a5cb0f826145fe6df37ad661ab73fe8591bc92f86c1637de7112f1",
+    "resultados/limpieza_ocular_41p_23-11-2026/pred_1102.csv.gz": "aac60fd6b54564efd5bd888f4c5eeedfc315f87b86e90a55dbe0b0d16c4be623",
+    "resultados/limpieza_ocular_41p_23-11-2026/pred_1103.csv.gz": "6d5e9475cd20b5360a7a22581b6dbb4fc7e358990201e57d9d0109be457e733f",
+    "resultados/limpieza_ocular_41p_23-11-2026/pred_1104.csv.gz": "a23f572b7ad1cbe5c50355c77ecd1c12676959362e5fa7563c6b7d48ce66f584",
+    "resultados/limpieza_ocular_41p_23-11-2026/pred_1105.csv.gz": "07248330033f2e94f9ec0c8e66e72e52f60d16c947e8e509c8848989d4674840",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1101.csv.gz": "bbc70abea64d0b54a56ef36ea92d1799418e0635e8705683eb9d693e2a841a1c",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1102.csv.gz": "a13501ab0b9341074535c78cb628515e0afa25cff06d864e38dbb74cb4a6841e",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1103.csv.gz": "fff6f8d737ba9624ba855ad071980a51127c23d1752eac2dc7bbb1495fe04201",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1104.csv.gz": "2f1d11438de5d54bb391cc7e8ee75175d8a43f601850e643f0f652dcaa148c9f",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1105.csv.gz": "be5d1d68db1bdb4339a16a76df6152ce82305ab7f48d02b4a039a7cbbbaf2a80",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P10.npz": "e0e253a378b5f309ebf1b6ac211fe0a3c6ace92eef04f4048b501cdf90306ced",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P11.npz": "734b67400825bdb59f6e4a9afa8fc8d743251cfebafe2d083f34785643d98921",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P12.npz": "950312eeee434483778a8b796346c10ad0b6bafc3bab076c906d013b0e7757c1",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P13.npz": "39bf3469fb303a0449c70b42debee9520f47cfcf9dee39e0fa1937bb6884fca4",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P15.npz": "24954dc5fdec0fe2a7537e1baac30202467e8024f11d36860f43c31b372cb5f2",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P16.npz": "afafc36da9b2dff10d680ef11ce993635e6e87d339ea1023b9c455e8e7da6e94",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P18.npz": "7247407726fe572dcb92a6df110965188db8787a246a550c0cb261cf6c72469f",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P19.npz": "a5cd4a5391c159f0de52af4664afc47fcb9d1bcde2b35e250079cd2f13b8af8a",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P2.npz": "579dc27e93309de0476fdadc34ce9bd7ea3f5e4335808a3d311df92a7475c0e3",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P20.npz": "714175a903b6a9ff042865e241387ddba98cd107d5bced5a2ce5423cf44cd35f",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P21.npz": "7a5faef5de726b8f8d4cadef3cf8fad640bdd5e3ce6c0f41a4e33f3738d509f1",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P22.npz": "ffcbf030aa965e4e2b3fcab485b9da98a84098f957dcc935e31fb4dde1ba76ee",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P23.npz": "ac5c99d120517f8110d5c3675c699b00aa625aeb24920f61653d7689cc295156",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P24.npz": "2523f7e69b5d750e9d14a375c5ae2136f69a30f00ca87d3859e728cbab4ef2ce",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P26.npz": "cd908855207d9f4955a2ebdcabac852880e798e8fea1e72ac5c86af47ac10fa5",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P27.npz": "0e33b8f020172590047a3a877837c1e0aa2a4fb55a96fb0ee6ef2d97fe3f039a",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P28.npz": "d783947e907445156309ec832bf4521f9cd2cd69de3f2802a56ecd9337994b31",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P3.npz": "fc2d896b9193e1c074753b06da5a6fbbb85ae2088bf633df6d323c1dbe5ab6ce",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P30.npz": "1df2db4076553a721a1431f9df7a3e6347c86587eeb25412d0a12b174566f97f",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P31.npz": "9ac905c54b106a7b13b7c0c40271f2cf8982bef9854b2322423811c9e9bb263a",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P32.npz": "55201b3656e8a2c27233daf6f07bfd966858a69b9426b764185a33f3979ed3ef",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P33.npz": "0009253828895813db239d14888e760dddb76817f5ce4a50f972bd78154d0977",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P34.npz": "48dd40a14dea586cef976ecfcf5d4cfb66b3cb257be9eabe11d72a9c4901c2b3",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P35.npz": "54e77c975ac5b9780fb49d45bf0b26bb49362c0e7478d5dd3d8bbfc84d9f3acf",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P36.npz": "50c9bbd3fde843e5857fd72fda1907a67983c1d2e73c777d6070943666213927",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P37.npz": "e09f8637bb6d2c9200eaa85694bd5e396bdf2dae8b8eb290f819ec6d30e660e6",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P38.npz": "1f7026db90325eca81cf90d0381b610cbae34b42852861b6d9ae9a6bdf3d8606",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P39.npz": "110c651a10d4f7f20bd8edb12d55a5dff95f145ca824be564eeb310c60d0ba0a",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P4.npz": "1e3464f11dda4779109f3d98b0423b1b48c126367b06d2f91f50aa6e7b80082e",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P40.npz": "fa9de5b3e8e33dfe1372269b2c972af554b5b96e1d29474f52b9eea5e28f33c6",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P41.npz": "c301fe209cca798b9f56af7e53f7fc5fe7cb68df126a61665713af491f557a51",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P43.npz": "fe24c76ce5f8669221ff8dedf164b2f6f30ef59f8f5df7c762c2ad7cfb8c2fac",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P44.npz": "7915893d2719df6ecc247d80eca07ab9cf0ae2cd41eda06920f67b56496b8cf0",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P45.npz": "9d603530f0364e085ccb5df762dc2a1be9c05bcc5cc61e22dad2051b34126d6d",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P46.npz": "9c8eebe2079016aac61600289d355e487f6d8d52114180e0f8dc88aecd563bfa",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P47.npz": "65d054180dafaa2dd376d5da6b69fffff54fa2b8e53b49213d365e963fd77857",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P48.npz": "106a6716cc049511db6bd2e92c8cead3a27852bca6fbbbd957ed87e4eed40735",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P5.npz": "c8b8a36801157eef61d85b273239726d24530539233c8a195e8487e8fd8e6dd4",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P6.npz": "52a777dc261b033be04e93c4cda00b2b588e5f428e3c282a8c6fffde09e3f03f",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P8.npz": "db647d8e826ec58b0ff6c700aaee5cf6397290ef9650417e72d35d52f551e048",
+    "resultados/limpieza_ocular_41p_23-11-2026/filtros/P9.npz": "c51cada03b56b05817e73e11cad575b76973618a6a12a2e0f166fe2a290e7395"
+  },
+  "raw": {
+    "P10.npz": "5b75342955d541feaf048f424a9f5021de6c8545913d8e2e78b34b2830731de6",
+    "P11.npz": "44d51f18baf28db2aae0955a539f7a8328c2bb57a28977a9bfd974930f3086aa",
+    "P12.npz": "4fcb66ae4d652e311ea0e5657f9cab90a59c8c938abf6c57f1ffdb95c8997d67",
+    "P13.npz": "7591cae00224f3ac5f7c179f0e694f5498cc695c599377354e399a2064561078",
+    "P15.npz": "41903febe7837d074d36ee61a7d1666ca486b6d7831e09d99420bf1f4e500554",
+    "P16.npz": "00657dfb6573c40dbc1d969c67985c83d37a6cfea1c519ef80bae1f4c846d899",
+    "P18.npz": "69fd4f0674dc2ecc9d1bd31a6a69210205470d29324248de0a5db81189508c52",
+    "P19.npz": "057f0d51bdac85c39af4f2aaab773cec6c69d3103e235c660af151e889dba3f3",
+    "P2.npz": "e748b964f17f4649555a74c6b2915f9227bb3bc2c7c9aaf9c882e77411573dd5",
+    "P20.npz": "5c6284fc15ec8fe3bc11fe03c05c6db3fc1a08ca95671537fed2a846a4bdb39b",
+    "P21.npz": "e9777043bfa2605cb4092709770f459c5c60b71326020ef41cf268f1cefa2ab7",
+    "P22.npz": "fddf53a4ceb2e728ef051c20dd9c17443182cc7a3619e19ded0e8d1e56b8b827",
+    "P23.npz": "d5a42af816b404a775e46a946275f3caef54acdb86ded96767d962d187630f1b",
+    "P24.npz": "4a28a811fb893c09f5fed9d7bdc64c3e3205399e3eceb123326c1dc786b6e5f8",
+    "P26.npz": "dcc7c0220145b27a244c323eec287e7b58fa418db2d21fd700473225bc691542",
+    "P27.npz": "ef0590dcc60331b75cb8ac062ea4ed16f863e2838fc6bd6ec7479c7885c9a3ef",
+    "P28.npz": "b14cbc74238a7a0e924832501e5308742076ca323a03aa0da3061252b35493de",
+    "P3.npz": "67b56b78debd0874a41e20963c9b74f0984c492d43548db57877e5d99ab1dd84",
+    "P30.npz": "b2e8467dfe7c2a6c45656c3740c89f1b507cf97d0a6f24293b1899765b7e1808",
+    "P31.npz": "732a36969a38cc7e6bd5f169efc03d38b3b4c7e83a44b8f786b57a0904597d7d",
+    "P32.npz": "b9f773e909fa63d72865988516ea58a1b23ef0f3f97a3dc6cfa551aeaebaebbd",
+    "P33.npz": "0c50819045b5e9947bdcea20da5fa02e2c0ca9bc7d91a4c2b7b156ca61fb8e0b",
+    "P34.npz": "be77f5802cdd082b4aa0771fbfc755a12c8eac8d82fc6be18ba301c94a377a7c",
+    "P35.npz": "cf265487a4eff7e51b25f23a04f2eefd89bb8e4f81091c1e652727a14c2e01ea",
+    "P36.npz": "afd75c5bd2640c196c8276c465afec11783c8d20fe01a019048543430e98467b",
+    "P37.npz": "dcd8cea3e9228d185dc9bb3adb1b549c4b6381daa55acf2d92135b4a071043d1",
+    "P38.npz": "826969c024243747811fd5086f87c822f287a11a304e3c2e3e84764d8d8fce3e",
+    "P39.npz": "c9e7feaa780b5e8cc237039fb3148fb49f5fc57b83b446e98cfb64f69a8a5bac",
+    "P4.npz": "545eafb77bc8329622e32cdaab53ee0c2f434200e4ac1bbab2f252c051117a29",
+    "P40.npz": "2dc255206721f84aa011a085f1df1953c4c70a36ba859878badb86db35372a7c",
+    "P41.npz": "e1caab769bd505b9143bd2ef78ad8a10f8edb7558cf2b48ab975007cd16bbd56",
+    "P43.npz": "d083609b0cfeb7e8285b3e3a26a009923a30c61f84b71ff5b3c6f1a6ec271f6d",
+    "P44.npz": "13b37f5db93d4050a83239cfcb84be0fbea199553fcc256edd92f4d9f9889b40",
+    "P45.npz": "e49815921589def4015065354aff193d9951d61745b72bc7377b362d14e55e55",
+    "P46.npz": "ab8dc1747b60a7b571ac7334bb9e94707af96394e7a0860ca247e6f1354e20df",
+    "P47.npz": "9eefa4ea8ad74a6e9424961354613bd3a20f6894938e211f5143200683764886",
+    "P48.npz": "d5742e376543dbb8770b2a722f13089cc4a06d4983ca839a70e4f3908a4fee73",
+    "P5.npz": "c98604192735054e07216a6ca7ca5e3de34e1e0f9d57803f2604db2b0cc1521c",
+    "P6.npz": "97570abdf13b2819f64eb0600848fc547a7bba7df5d60176f5cda64aa719ba4b",
+    "P8.npz": "7ca117658712d24ecc909a2c4840945b56b2859f9020c1b31a2dcccebab79d47",
+    "P9.npz": "08e0ab9d9f79aa2fa9747eb07e3b103aadf1376474edf643641c9c2fc8e78d97"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds_rep": {
+    "1101": [
+      [
+        "P15",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P9"
+      ],
+      [
+        "P10",
+        "P30",
+        "P32",
+        "P33",
+        "P48"
+      ],
+      [
+        "P11",
+        "P18",
+        "P19",
+        "P27",
+        "P38"
+      ],
+      [
+        "P12",
+        "P31",
+        "P36",
+        "P40",
+        "P41"
+      ],
+      [
+        "P16",
+        "P3",
+        "P37",
+        "P4",
+        "P5"
+      ],
+      [
+        "P21",
+        "P26",
+        "P43",
+        "P6",
+        "P8"
+      ],
+      [
+        "P13",
+        "P20",
+        "P28",
+        "P39",
+        "P45"
+      ],
+      [
+        "P2",
+        "P23",
+        "P44",
+        "P46",
+        "P47"
+      ]
+    ],
+    "1102": [
+      [
+        "P22",
+        "P31",
+        "P38",
+        "P39",
+        "P43",
+        "P6"
+      ],
+      [
+        "P16",
+        "P19",
+        "P26",
+        "P28",
+        "P48"
+      ],
+      [
+        "P18",
+        "P2",
+        "P23",
+        "P33",
+        "P8"
+      ],
+      [
+        "P15",
+        "P35",
+        "P41",
+        "P47",
+        "P5"
+      ],
+      [
+        "P11",
+        "P24",
+        "P3",
+        "P37",
+        "P40"
+      ],
+      [
+        "P30",
+        "P32",
+        "P36",
+        "P4",
+        "P44"
+      ],
+      [
+        "P10",
+        "P13",
+        "P20",
+        "P34",
+        "P46"
+      ],
+      [
+        "P12",
+        "P21",
+        "P27",
+        "P45",
+        "P9"
+      ]
+    ],
+    "1103": [
+      [
+        "P11",
+        "P15",
+        "P23",
+        "P32",
+        "P37",
+        "P46"
+      ],
+      [
+        "P24",
+        "P26",
+        "P3",
+        "P35",
+        "P9"
+      ],
+      [
+        "P21",
+        "P27",
+        "P34",
+        "P43",
+        "P48"
+      ],
+      [
+        "P10",
+        "P2",
+        "P4",
+        "P47",
+        "P6"
+      ],
+      [
+        "P18",
+        "P19",
+        "P22",
+        "P40",
+        "P44"
+      ],
+      [
+        "P12",
+        "P20",
+        "P33",
+        "P41",
+        "P5"
+      ],
+      [
+        "P16",
+        "P28",
+        "P36",
+        "P38",
+        "P39"
+      ],
+      [
+        "P13",
+        "P30",
+        "P31",
+        "P45",
+        "P8"
+      ]
+    ],
+    "1104": [
+      [
+        "P2",
+        "P21",
+        "P39",
+        "P44",
+        "P45",
+        "P5"
+      ],
+      [
+        "P12",
+        "P37",
+        "P47",
+        "P48",
+        "P6"
+      ],
+      [
+        "P23",
+        "P38",
+        "P40",
+        "P43",
+        "P9"
+      ],
+      [
+        "P24",
+        "P3",
+        "P36",
+        "P4",
+        "P41"
+      ],
+      [
+        "P10",
+        "P20",
+        "P32",
+        "P33",
+        "P8"
+      ],
+      [
+        "P30",
+        "P31",
+        "P34",
+        "P35",
+        "P46"
+      ],
+      [
+        "P13",
+        "P16",
+        "P18",
+        "P19",
+        "P26"
+      ],
+      [
+        "P11",
+        "P15",
+        "P22",
+        "P27",
+        "P28"
+      ]
+    ],
+    "1105": [
+      [
+        "P19",
+        "P22",
+        "P31",
+        "P41",
+        "P44",
+        "P8"
+      ],
+      [
+        "P16",
+        "P21",
+        "P43",
+        "P47",
+        "P48"
+      ],
+      [
+        "P12",
+        "P23",
+        "P24",
+        "P3",
+        "P35"
+      ],
+      [
+        "P11",
+        "P15",
+        "P27",
+        "P34",
+        "P6"
+      ],
+      [
+        "P18",
+        "P2",
+        "P36",
+        "P38",
+        "P9"
+      ],
+      [
+        "P10",
+        "P32",
+        "P33",
+        "P40",
+        "P5"
+      ],
+      [
+        "P30",
+        "P37",
+        "P39",
+        "P4",
+        "P46"
+      ],
+      [
+        "P13",
+        "P20",
+        "P26",
+        "P28",
+        "P45"
+      ]
+    ]
+  },
+  "margin": 0.02,
+  "net": {
+    "f1": 8,
+    "depth": 2,
+    "f2": 16,
+    "k1": 32,
+    "k2": 16,
+    "dropout": 0.5,
+    "epochs": 30,
+    "batch": 128,
+    "lr": 0.001,
+    "weight_decay": 0.01
+  },
+  "samples": 240,
+  "clip": 8.0,
+  "models": {
+    "red_orig": [
+      "atencion",
+      "orig"
+    ],
+    "red_ica3": [
+      "atencion",
+      "ica3"
+    ],
+    "red_act": [
+      "activacion",
+      "orig"
+    ],
+    "hgb_eeg_act": [
+      "activacion",
+      "variables EEG"
+    ]
+  },
+  "init_seed": "semilla de partición * 100 + grupo",
+  "confirmatory": [
+    "R1 red_orig − eeg_c1",
+    "R2 red_ica3 − ica3_full",
+    "R3 red_orig − red_ica3",
+    "R4 red_act − hgb_eeg_act"
+  ],
+  "holm": "sobre las 4 pruebas",
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Análisis dirigido. Una sola arquitectura y una sola configuración, sin búsqueda: un resultado nulo no descarta que otra red rinda más. Una inicialización por grupo. La escala por persona usa toda su sesión. La red ve 1,92 s de los 2 s. Las variables del HGB incluyen indicadores de calidad de canal que la red no recibe de forma explícita."
+}
