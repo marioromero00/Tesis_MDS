@@ -1,0 +1,352 @@
+{
+  "created_utc": "2026-11-23T00:02:30.485362+00:00",
+  "approval": "Mario pide el experimento para separar historial y posición, 22-11-2026. Registrado antes de correr.",
+  "directed": true,
+  "inputs": {
+    "scripts/reapertura_fase3_41p.py": "f9bd85aaaf8d03acf8bbf7b963644bdc8d5ceb9976ea1d6f3286054e303c2471",
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "scripts/reapertura_fase2_41p.py": "445779b1309bbb7a487095b37d0d556ba6af23b48389eb0023bcb7147fb263f8",
+    "resultados/reapertura_41p_22-11-2026/protocolo.json": "500c6efbbcc5a6a0faa6a4cd7379599f0abfde12fa5e95c4162ba20e1fbe645f",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1101.csv.gz": "75122d599dde6b5addb57f64fbcf5b387bc923e5aee053957bb97441607d9304",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1102.csv.gz": "a31ee5bbeb0ffed4006ccbe7f817b10867f70adc2d41309a5457fdad7bdd93b7",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1103.csv.gz": "95ffa695be1ebab52aea55588ab1d7199975a249eb3adfbf2abe9e6af3a34af9",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1104.csv.gz": "469e75704c6682f4ff3cc4d4253d6f7332b23a0c8f59083b1ea866f5d7025aa1",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1105.csv.gz": "87434e0012702450da128fb10febf9ced59628b8c2eb83575ba4f5211b13737d",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1101.csv.gz": "bbc70abea64d0b54a56ef36ea92d1799418e0635e8705683eb9d693e2a841a1c",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1102.csv.gz": "a13501ab0b9341074535c78cb628515e0afa25cff06d864e38dbb74cb4a6841e",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1103.csv.gz": "fff6f8d737ba9624ba855ad071980a51127c23d1752eac2dc7bbb1495fe04201",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1104.csv.gz": "2f1d11438de5d54bb391cc7e8ee75175d8a43f601850e643f0f652dcaa148c9f",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1105.csv.gz": "be5d1d68db1bdb4339a16a76df6152ce82305ab7f48d02b4a039a7cbbbaf2a80"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds_rep": {
+    "1101": [
+      [
+        "P15",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P9"
+      ],
+      [
+        "P10",
+        "P30",
+        "P32",
+        "P33",
+        "P48"
+      ],
+      [
+        "P11",
+        "P18",
+        "P19",
+        "P27",
+        "P38"
+      ],
+      [
+        "P12",
+        "P31",
+        "P36",
+        "P40",
+        "P41"
+      ],
+      [
+        "P16",
+        "P3",
+        "P37",
+        "P4",
+        "P5"
+      ],
+      [
+        "P21",
+        "P26",
+        "P43",
+        "P6",
+        "P8"
+      ],
+      [
+        "P13",
+        "P20",
+        "P28",
+        "P39",
+        "P45"
+      ],
+      [
+        "P2",
+        "P23",
+        "P44",
+        "P46",
+        "P47"
+      ]
+    ],
+    "1102": [
+      [
+        "P22",
+        "P31",
+        "P38",
+        "P39",
+        "P43",
+        "P6"
+      ],
+      [
+        "P16",
+        "P19",
+        "P26",
+        "P28",
+        "P48"
+      ],
+      [
+        "P18",
+        "P2",
+        "P23",
+        "P33",
+        "P8"
+      ],
+      [
+        "P15",
+        "P35",
+        "P41",
+        "P47",
+        "P5"
+      ],
+      [
+        "P11",
+        "P24",
+        "P3",
+        "P37",
+        "P40"
+      ],
+      [
+        "P30",
+        "P32",
+        "P36",
+        "P4",
+        "P44"
+      ],
+      [
+        "P10",
+        "P13",
+        "P20",
+        "P34",
+        "P46"
+      ],
+      [
+        "P12",
+        "P21",
+        "P27",
+        "P45",
+        "P9"
+      ]
+    ],
+    "1103": [
+      [
+        "P11",
+        "P15",
+        "P23",
+        "P32",
+        "P37",
+        "P46"
+      ],
+      [
+        "P24",
+        "P26",
+        "P3",
+        "P35",
+        "P9"
+      ],
+      [
+        "P21",
+        "P27",
+        "P34",
+        "P43",
+        "P48"
+      ],
+      [
+        "P10",
+        "P2",
+        "P4",
+        "P47",
+        "P6"
+      ],
+      [
+        "P18",
+        "P19",
+        "P22",
+        "P40",
+        "P44"
+      ],
+      [
+        "P12",
+        "P20",
+        "P33",
+        "P41",
+        "P5"
+      ],
+      [
+        "P16",
+        "P28",
+        "P36",
+        "P38",
+        "P39"
+      ],
+      [
+        "P13",
+        "P30",
+        "P31",
+        "P45",
+        "P8"
+      ]
+    ],
+    "1104": [
+      [
+        "P2",
+        "P21",
+        "P39",
+        "P44",
+        "P45",
+        "P5"
+      ],
+      [
+        "P12",
+        "P37",
+        "P47",
+        "P48",
+        "P6"
+      ],
+      [
+        "P23",
+        "P38",
+        "P40",
+        "P43",
+        "P9"
+      ],
+      [
+        "P24",
+        "P3",
+        "P36",
+        "P4",
+        "P41"
+      ],
+      [
+        "P10",
+        "P20",
+        "P32",
+        "P33",
+        "P8"
+      ],
+      [
+        "P30",
+        "P31",
+        "P34",
+        "P35",
+        "P46"
+      ],
+      [
+        "P13",
+        "P16",
+        "P18",
+        "P19",
+        "P26"
+      ],
+      [
+        "P11",
+        "P15",
+        "P22",
+        "P27",
+        "P28"
+      ]
+    ],
+    "1105": [
+      [
+        "P19",
+        "P22",
+        "P31",
+        "P41",
+        "P44",
+        "P8"
+      ],
+      [
+        "P16",
+        "P21",
+        "P43",
+        "P47",
+        "P48"
+      ],
+      [
+        "P12",
+        "P23",
+        "P24",
+        "P3",
+        "P35"
+      ],
+      [
+        "P11",
+        "P15",
+        "P27",
+        "P34",
+        "P6"
+      ],
+      [
+        "P18",
+        "P2",
+        "P36",
+        "P38",
+        "P9"
+      ],
+      [
+        "P10",
+        "P32",
+        "P33",
+        "P40",
+        "P5"
+      ],
+      [
+        "P30",
+        "P37",
+        "P39",
+        "P4",
+        "P46"
+      ],
+      [
+        "P13",
+        "P20",
+        "P26",
+        "P28",
+        "P45"
+      ]
+    ]
+  },
+  "margin": 0.02,
+  "confirmatory": {
+    "contrast": "c32_pos − pos_c1",
+    "tests": [
+      "Q1 AUC habitual",
+      "Q2 AUC dentro del mismo estímulo"
+    ],
+    "tasks": [
+      "atencion",
+      "activacion"
+    ],
+    "holm": "sobre las 4 pruebas",
+    "unit": "AUC por persona promediada sobre las 5 particiones; diferencia pareada por persona"
+  },
+  "descriptive": [
+    "pos_c1 − hgb_c1",
+    "hgb_c32 − pos_c1",
+    "c32_pos − hgb_c32",
+    "hgb_c32 − hgb_c1",
+    "estratos: estímulo, minuto, posición",
+    "sensibilidad sin la persona más influyente"
+  ],
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Las 41 personas y resultados previos ya se vieron; análisis dirigido. La posición es min(largo del segmento previo, 32) s, como el 18-11. La posición como variable permite al modelo usar su efecto principal y sus interacciones con la fisiología."
+}
