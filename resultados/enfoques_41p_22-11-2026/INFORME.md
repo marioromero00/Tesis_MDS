@@ -131,4 +131,4 @@ Lectura:
 ## Auditorías
 
 - Código, antes de ejecutar, por dos agentes independientes: sin hallazgos bloqueantes. Verificaron la etiqueta corregida, la alineación de filas, la ausencia de fuga entre personas y que los informes corren. Sus observaciones originaron la versión 2 del protocolo y la sección de límites.
-- Resultados: ver `AUDITORIA_RESULTADOS.md` en esta carpeta.
+- Resultados, por otro agente independiente con código propio: pasa los cinco puntos (las 18 filas confirmatorias reproducidas, integridad, hashes y registro previo, influencia, controles negativos). Tres decisiones están pegadas al umbral: A1 y A3 de E1 (p Holm 0,055) y la adaptación de activación sin historial (p Holm 0,049). Detalle en `AUDITORIA_RESULTADOS.md`.
