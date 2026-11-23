@@ -71,4 +71,4 @@ Lo que el historial aporta en activación más allá de la posición es, entonce
 ## Auditorías
 
 - Código, por un agente independiente con las corridas en marcha y sin ver resultados: sin hallazgos bloqueantes. Los modelos nuevos difieren de los de la fase 1 solo en la columna de posición; sin fuga entre personas ni entradas prohibidas. Sus advertencias de interpretación están en la sección de límites. Se verificó aparte que los datos de origen de la fase 1 no cambiaron.
-- Resultados: ver `AUDITORIA_RESULTADOS.md` en esta carpeta.
+- Resultados, por otro agente independiente con código propio: pasa los cuatro puntos (cifras reproducidas exactamente, integridad, hashes y cronología del registro). Detalle en `AUDITORIA_RESULTADOS.md`. Una persona (P4) tiene solo 4 pares dentro del mismo estímulo en activación; pesa igual que las demás en Q2.
