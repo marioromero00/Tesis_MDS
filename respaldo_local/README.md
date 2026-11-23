@@ -20,6 +20,8 @@ La ubicación principal del vault es `documentos/01 Tesis MDS`. El enlace en `re
 
 ## Último cierre experimental
 
+**Montaje EEG y limpieza de artefactos oculares del 23-11-2026 (lo más reciente):** [montaje](repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621 y la parte defendible como no ocular queda en 0,55–0,56.
+
 **Cuatro enfoques nuevos del 22-11-2026 (lo más reciente):** [informe](repos/Tesis_MDS/resultados/enfoques_41p_22-11-2026/INFORME.md). [Resumen del último mes](notas/resumen-ultimo-mes-22-11-2026.md).
 
 **Reapertura del 22-11-2026:** [informe](repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026/INFORME.md). Activación: efecto del historial confirmado (+0,036, respaldo) y de corto alcance (6–12 s). Atención: sin información temporal a ningún desfase. [Fase 3](repos/Tesis_MDS/resultados/reapertura_fase3_41p_22-11-2026/INFORME.md): con la posición como variable, el historial no agrega nada en atención (nulo concluyente) y en activación agrega +0,032, inconcluso tras Holm.

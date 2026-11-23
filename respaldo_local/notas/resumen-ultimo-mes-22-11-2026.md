@@ -76,3 +76,9 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 3. Decidir si la etiqueta de atención corregida por posición reemplaza a la original en la tesis.
 4. Margen práctico de 0,02: sigue como propuesta.
 5. Escritura del manuscrito a partir del borrador del 18-11, y actualizar la presentación v6 con los resultados del 22-11.
+
+## Actualización del 23-11-2026
+
+- **Montaje EEG:** los datos son compatibles con el montaje por defecto de OpenBCI (los parpadeos pegan en Fp1/Fp2 y decrecen hacia atrás). El EEG va 0,25–0,5 s desfasado respecto del seguidor ocular.
+- **Limpieza ocular:** al quitar 3 componentes oculares (3,5 % de la varianza) la AUC de atención por EEG baja de 0,681 a 0,621; un control que quita 3 componentes no oculares (72 % de la varianza) la deja en 0,674. Alfa y beta baja de 0,593 a 0,547. La parte defendible como no ocular queda en 0,55–0,56.
+- El pendiente 2 queda resuelto en lo que permiten los datos: no se puede afirmar detección cerebral de atención. Informes en `repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md` y `repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md`.

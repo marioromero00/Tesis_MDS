@@ -205,3 +205,12 @@ E3 activación por estímulo (1.589 segmentos): AUC 0,587 [0,550; 0,622]; frente
 E4: fiabilidad por mitades de la AUC 0,76 (atención) y 0,66 (activación); de la ganancia del historial 0,30 y 0,25 (no fiable). Sin correlatos tras Holm. Adaptación a la persona (primer 40 % de la sesión): activación +0,028 sin historial y +0,045 [+0,023; +0,069] con historial; atención nulo concluyente. Es adaptación offline.
 
 Pendiente nuevo: verificar el montaje de electrodos y evaluar limpieza de artefactos oculares; decidir si la etiqueta corregida reemplaza a la original. Resumen del mes en notas/resumen-ultimo-mes-22-11-2026.md.
+
+## 23-11-2026 — Montaje EEG y limpieza de artefactos oculares
+
+Mario pide continuar. Se aborda el pendiente 2 de los cuatro enfoques.
+
+- **Montaje** (`resultados/montaje_ocular_41p_23-11-2026/`, descriptivo, sin etiquetas): la respuesta a parpadeos por canal (Fp1/Fp2 ≈150 µV, F7/F8 ≈75, F3/F4 ≈57, posteriores ≈19) y el signo opuesto de la mirada horizontal en F7 y F8 (31 de 37 personas) son compatibles con el montaje por defecto de OpenBCI. El EEG va 0,18–0,53 s atrasado respecto del seguidor ocular (mediana 0,45 s); no se corrigió.
+- **Limpieza ocular** (`resultados/limpieza_ocular_41p_23-11-2026/`, registrado antes de correr en `06547f5`, enmienda `441bae9`, auditorías de código y de resultados sin hallazgos bloqueantes): quitar 3 componentes oculares por ICA (3,5 % de la varianza) baja la AUC de atención por EEG de 0,681 a 0,621 (+0,060 [+0,045; +0,075], 39/41); quitar 3 componentes no oculares (72 % de la varianza) la deja en 0,674. Alfa y beta baja de 0,593 a 0,547; posteriores de 0,602 a 0,562.
+- Lectura: al menos 0,06 de AUC viene de componentes oculares (cota inferior); la parte defendible como no ocular baja a 0,55–0,56; no se puede afirmar detección cerebral de atención.
+- Crudos por persona en caché local `datos/locales/v2_2025/cache_ocular/`; variables recalculadas en `datos/locales/v2_2025/limpieza_ocular_variables/` (fuera de Git, con hashes).
