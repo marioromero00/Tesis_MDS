@@ -1,0 +1,103 @@
+stage,file,fila,columna,valor,correcto,doble,informe_contiene_doble,informe_contiene_correcto
+ampliacion_41p_16-11-2026,contrastes.csv,atencion E3 mlp_intermedia − mlp_tardia,delta,-0.007453259900360498,"0,007","0,008",True,True
+ampliacion_41p_16-11-2026,contrastes.csv,activacion E3 mlp_tardia − mlp_temprana,delta,0.006461952140597039,"0,006","0,007",True,True
+ampliacion_41p_16-11-2026,contrastes.csv,activacion E1 principal lag_real − lag_placebo,low95,0.012484399105207175,"0,012","0,013",True,True
+ampliacion_41p_16-11-2026,contrastes.csv,activacion E2 calib_5min − hgb_c1,low95,-0.006487234583781162,"0,006","0,007",True,True
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1,prob_media,0.5054649127254148,"0,505","0,506",True,False
+ampliacion_41p_16-11-2026,importancia_activacion.csv,señal Pupil,drop,0.03945729298172029,"0,039","0,040",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,parte actual,drop,-0.0004936887971489501,"0,000","0,001",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,parte actual,drop,-0.00746756267181814,"0,007","0,008",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda gamma,drop,-0.001484793410101548,"0,001","0,002",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,parte actual,drop,0.0004513116766760028,"0,000","0,001",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda alpha,drop,-0.0184822154659382,"0,018","0,019",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda beta,drop,0.013479493364746187,"0,013","0,014",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda beta,drop,0.013467849146448718,"0,013","0,014",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,señal Eye,drop,0.004459549370455784,"0,004","0,005",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,señal Eye,drop,-0.002461421740232783,"0,002","0,003",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda theta,drop,-0.004474644763892921,"0,004","0,005",True,True
+ampliacion_41p_16-11-2026,importancia_activacion.csv,banda beta,drop,-0.03145982467618125,"0,031","0,032",True,False
+ampliacion_41p_16-11-2026,importancia_atencion.csv,banda beta,drop,0.011498563923998395,"0,011","0,012",True,True
+ampliacion_41p_16-11-2026,importancia_atencion.csv,parte media historial,drop,0.01647619458313021,"0,016","0,017",True,True
+ampliacion_41p_16-11-2026,importancia_atencion.csv,parte media historial,drop,0.01046970366800426,"0,010","0,011",True,False
+ampliacion_41p_16-11-2026,importancia_atencion.csv,señal GSR,drop,0.0024898927289950246,"0,002","0,003",True,True
+ampliacion_41p_16-11-2026,importancia_atencion.csv,banda beta,drop,0.008487263062102013,"0,008","0,009",True,True
+ampliacion_41p_16-11-2026,importancia_atencion.csv,banda beta,drop,0.007492368064197508,"0,007","0,008",True,True
+ampliacion_41p_16-11-2026,importancia_resumen.csv,parte actual,mean,-0.0014745429821551442,"0,001","0,002",True,True
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,contrastes.csv,atencion lag6_real − lag6_placebo,delta,-0.0024930852673194543,"0,002","0,003",True,True
+cierre_final_41p_16-11-2026,contrastes.csv,atencion secundario gru_c32 − gru_c1,low95,-0.00446521289891539,"0,004","0,005",True,True
+cierre_final_41p_16-11-2026,contrastes.csv,activacion secundario gru_c32 − hgb_c32,high90,0.0514733322741645,"0,051","0,052",True,True
+cierre_final_41p_16-11-2026,metricas_personas.csv,atencion hgb_c1 P39 test,auc,0.6014993026499302,"0,601","0,602",True,False
+cierre_final_41p_16-11-2026,metricas_personas.csv,atencion hgb_c1 P40 train,auc,0.6834520290244558,"0,683","0,684",True,False
+cierre_final_41p_16-11-2026,metricas_personas.csv,atencion hgb_c32 P22 train,auc,0.7174666407565747,"0,717","0,718",True,False
+cierre_final_41p_16-11-2026,metricas_personas.csv,atencion gru_c1 P11 test,ba,0.5284712458420493,"0,528","0,529",True,False
+cierre_v3_16-11-2026,contrastes.csv,atencion oof_train hgb_resumen principal B,delta,0.01845302195624716,"0,018","0,019",True,True
+cierre_v3_16-11-2026,contrastes.csv,atencion test historial_completo secundario,delta,-0.002462506915533985,"0,002","0,003",True,True
+cierre_v3_16-11-2026,metricas_personas.csv,atencion oof_train hgb_c8 P40,auc,0.6954615694705725,"0,695","0,696",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,atencion oof_train tardia_c32 P34,ba,0.6434540779249818,"0,643","0,644",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,activacion oof_train hgb_c32_etiq P18,f1_macro,0.5464503042596349,"0,546","0,547",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,activacion oof_train hgb_c5 P2,f1_macro,0.4874749162274006,"0,487","0,488",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,atencion validation hgb_c8 P28,f1_macro,0.5824812468924966,"0,582","0,583",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,activacion validation hgb_c5 P47,recall_alta,0.09047619047619047,"0,090","0,091",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,activacion validation hgb_c5 P28,recall_baja,0.14049586776859505,"0,140","0,141",True,False
+cierre_v3_16-11-2026,metricas_personas.csv,atencion oof_train hgb_c32_etiq P4,recall_baja,0.6434782608695652,"0,643","0,644",True,False
+enfoques_41p_22-11-2026,e1_descriptivos.csv,hgb_c32 − hgb_c1 (original),low90,0.022455894479309898,"0,022","0,023",True,False
+enfoques_41p_22-11-2026,e2_confirmatorio.csv,"B1 eeg_c1 − 0,5",low95,0.1644516847704279,"0,164","0,165",True,False
+enfoques_41p_22-11-2026,e3_descriptivos.csv,agg_c32 − azar,high90,0.09745510152634466,"0,097","0,098",True,False
+enfoques_41p_22-11-2026,e3_descriptivos.csv,seg − agg_c1,p,0.013464932675336624,"0,013","0,014",True,True
+enfoques_41p_22-11-2026,e3_descriptivos.csv,agg_c32 − agg_c1,p,0.09246953765231174,"0,092","0,093",True,True
+enfoques_41p_22-11-2026,e4_confirmatorio.csv,activacion D pers_c1 − hgb_c1,p_holm,0.04945475272623637,"0,049","0,050",True,True
+enfoques_41p_22-11-2026,e4_descriptivos.csv,atencion E4b AUC sin historial ~ duracion_sesion,delta,-0.02247386759581882,"0,022","0,023",True,False
+enfoques_41p_22-11-2026,e4_descriptivos.csv,activacion E4b ganancia del historial ~ deriva_sesion,delta,-0.16445993031358888,"0,164","0,165",True,False
+enfoques_41p_22-11-2026,e4_descriptivos.csv,activacion E4c hgb_c32 − hgb_c1 (mismas filas),low95,0.013462621398276038,"0,013","0,014",True,True
+enfoques_41p_22-11-2026,e4_descriptivos.csv,activacion E4b ganancia del historial ~ ventanas_etiquetadas,p,0.04746528318569139,"0,047","0,048",True,False
+explicativo_posicion_41p_18-11-2026,contrastes.csv,activacion pos_c1 − hgb_c1,low95,-0.023483422576458596,"0,023","0,024",True,False
+limpieza_ocular_41p_23-11-2026,calidad_limpieza.csv,P18 ica2,r_vertical,0.04446986739035435,"0,044","0,045",True,False
+limpieza_ocular_41p_23-11-2026,calidad_limpieza.csv,P19 reg12,r_parpadeo,0.06948420683598655,"0,069","0,070",True,False
+limpieza_ocular_41p_23-11-2026,calidad_limpieza.csv,P2 ica3,r_parpadeo,0.05348043169737922,"0,053","0,054",True,False
+limpieza_ocular_41p_23-11-2026,calidad_limpieza.csv,P22 ica2,r_parpadeo,0.06747179348988412,"0,067","0,068",True,False
+limpieza_ocular_41p_23-11-2026,calidad_limpieza.csv,P44 ica2,r_parpadeo,0.06749070178460598,"0,067","0,068",True,False
+limpieza_ocular_41p_23-11-2026,confirmatorio.csv,L1 eeg_c1 − ica3_full,low95,0.044496697383185166,"0,044","0,045",True,False
+limpieza_ocular_41p_23-11-2026,confirmatorio.csv,L4 ica3_alfa_beta − eeg_alfa_beta,high95,-0.03247619822620331,"0,032","0,033",True,False
+limpieza_ocular_41p_23-11-2026,confirmatorio.csv,L2 ctrl3_full − ica3_full,low90,0.03949067453797201,"0,039","0,040",True,False
+limpieza_ocular_41p_23-11-2026,descriptivos.csv,AUC ica3_lento_amp,delta,0.6024864146219344,"0,602","0,603",True,True
+limpieza_ocular_41p_23-11-2026,descriptivos.csv,eeg_c1 − ica3_full,low95,0.044496697383185166,"0,044","0,045",True,False
+limpieza_ocular_41p_23-11-2026,descriptivos.csv,eeg_c1 − ica1_full,low90,0.010490133954092774,"0,010","0,011",True,False
+limpieza_ocular_41p_23-11-2026,descriptivos.csv,"L4 sin P23, P39 ni identificación ocular débil",low90,-0.058473354370262465,"0,058","0,059",True,False
+limpieza_ocular_41p_23-11-2026,descriptivos.csv,eeg_c1 − orig12,high90,0.044451915323535,"0,044","0,045",True,False
+limpieza_ocular_41p_23-11-2026,personas_limpieza.csv,P21,score_control_max,0.07445371352251431,"0,074","0,075",True,False
+reapertura_41p_22-11-2026,confirmatorio.csv,atencion P1 hgb_c32 − hgb_c1,low90,0.022455894479309898,"0,022","0,023",True,True
+reapertura_41p_22-11-2026,curva_temporal.csv,atencion lag48 − placebo,delta,-0.01246071164002733,"0,012","0,013",True,True
+reapertura_41p_22-11-2026,curva_temporal.csv,activacion lag6 − placebo,low95,0.017473853576034065,"0,017","0,018",True,True
+reapertura_41p_22-11-2026,curva_temporal.csv,atencion lag96 − placebo,high95,-0.0034504698533173823,"0,003","0,004",True,True
+reapertura_41p_22-11-2026,descriptivos.csv,atencion P2 partición 1101,delta,0.03149557972950652,"0,031","0,032",True,False
+reapertura_41p_22-11-2026,descriptivos.csv,activacion lag12 − c1_common,delta,0.03346374570375636,"0,033","0,034",True,True
+reapertura_41p_22-11-2026,descriptivos.csv,atencion placebo − c1_common,low95,-0.00047160123265421527,"0,000","0,001",True,True
+reapertura_41p_22-11-2026,descriptivos.csv,"atencion D1 AUC sin historial, estratificada por posición",low95,0.6544986995582338,"0,654","0,655",True,False
+reapertura_41p_22-11-2026,descriptivos.csv,activacion D1 AUC solo posición en el estímulo,low95,0.49149911651531,"0,491","0,492",True,False
+reapertura_41p_22-11-2026,descriptivos.csv,atencion lag48 − c1_common,high95,-0.0014544291255944493,"0,001","0,002",True,True
+reapertura_fase2_41p_22-11-2026,descriptivos.csv,atencion posicion: c32_ts − c1_ts,high95,0.0334834582911052,"0,033","0,034",True,True
+reapertura_fase2_41p_22-11-2026,descriptivos.csv,activacion posicion: c32_ts − c1_ts,low90,-0.011451390196499605,"0,011","0,012",True,True
+reapertura_fase2_41p_22-11-2026,descriptivos.csv,activacion placebo_bloque − c1_common,high90,0.024480693386969194,"0,024","0,025",True,True
+reapertura_fase2_41p_22-11-2026,posthoc_no_registrado_estratos_con_posicion.csv,atencion bloque60 hgb_c32pos − pos_c1,delta,-0.0024570000129088493,"0,002","0,003",True,True
+reapertura_fase2_41p_22-11-2026,posthoc_no_registrado_estratos_con_posicion.csv,activacion posicion hgb_c32 − hgb_c1,delta,0.019487896264100673,"0,019","0,020",True,True
+reapertura_fase2_41p_22-11-2026,posthoc_no_registrado_estratos_con_posicion.csv,activacion posicion hgb_c32 − pos_c1,delta,0.027477013673753957,"0,027","0,028",True,True
+reapertura_fase2_41p_22-11-2026,posthoc_no_registrado_estratos_con_posicion.csv,atencion posicion hgb_c32 − pos_c1,high90,0.00849236375765053,"0,008","0,009",True,True
+reapertura_fase2_41p_22-11-2026,x1_placebo_bloque.csv,activacion lag24 − placebo_bloque,delta,0.009467457048794838,"0,009","0,010",True,True
+reapertura_fase2_41p_22-11-2026,x1_placebo_bloque.csv,atencion lag96 − placebo_bloque,high95,-0.0024687742993948743,"0,002","0,003",True,True
+reapertura_fase2_41p_22-11-2026,x1_placebo_bloque.csv,atencion lag96 − placebo_bloque,p,0.012464937675311623,"0,012","0,013",True,True
+reapertura_fase2_41p_22-11-2026,x1_placebo_bloque.csv,activacion lag24 − placebo_bloque,p,0.613476932615337,"0,613","0,614",True,False
+reapertura_fase2_41p_22-11-2026,x1_placebo_bloque.csv,activacion lag24 − placebo_bloque,p_holm,0.613476932615337,"0,613","0,614",True,False
+reapertura_fase2_41p_22-11-2026,x2_estratificada.csv,atencion estimulo hgb_c32 − hgb_c1,low95,0.006459840179053466,"0,006","0,007",True,True
+reapertura_fase2_41p_22-11-2026,x2_estratificada.csv,atencion estimulo hgb_c32 − hgb_c1,low90,0.007482866761523071,"0,007","0,008",True,True
+reapertura_fase2_41p_22-11-2026,x2_estratificada.csv,atencion estimulo hgb_c32 − hgb_c1,high90,0.019476618653312357,"0,019","0,020",True,True
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,atencion estimulo hgb_c32 − pos_c1,delta,-0.0004609157553646036,"0,000","0,001",True,True
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,activacion bloque60 c32_pos − hgb_c32,delta,0.003479023414849217,"0,003","0,004",True,True
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,atencion bloque60 hgb_c32 − pos_c1,low95,-0.0044999573255771665,"0,004","0,005",True,True
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,activacion estimulo hgb_c32 − pos_c1,low95,-0.02549058158842337,"0,025","0,026",True,False
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,activacion posicion c32_pos − pos_c1,high95,0.051468362443674746,"0,051","0,052",True,False
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,activacion posicion c32_pos − pos_c1,low90,0.00448410143455298,"0,004","0,005",True,True
+reapertura_fase3_41p_22-11-2026,descriptivos.csv,atencion estimulo hgb_c32 − hgb_c1,high90,0.019476618653312357,"0,019","0,020",True,False
+red_cruda_41p_23-11-2026,auc_por_persona.csv,P24,red_orig,0.6804996943993082,"0,680","0,681",True,False
+red_cruda_41p_23-11-2026,auc_por_persona.csv,P8,hgb_eeg_act,0.49048437500000003,"0,490","0,491",True,False
+red_cruda_41p_23-11-2026,descriptivos.csv,atención AUC eeg_c1,low95,0.6644516847704278,"0,664","0,665",True,False
+red_cruda_41p_23-11-2026,descriptivos.csv,activación AUC hgb_eeg_act,high95,0.5504934839745781,"0,550","0,551",True,False

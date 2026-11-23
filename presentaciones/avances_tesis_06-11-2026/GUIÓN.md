@@ -2,7 +2,7 @@
 
 ## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no es temporal, y lo que detecta el EEG es sobre todo la huella de los ojos. Al final hay cinco decisiones que necesito tomar con usted.
+Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no es temporal, y al menos un tercio de lo que detecta el EEG es la huella de los ojos. Al final hay cinco decisiones que necesito tomar con usted.
 
 ## 02. De qué voy a hablar
 
@@ -42,7 +42,7 @@ El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 45 Hz con notch en 50, m
 
 ## 11. Cómo comparo un modelo con y sin historial
 
-Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Cada análisis confirmatorio lo registré en GitHub antes de correrlo; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
+Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Cada análisis principal lo registré en GitHub antes de correrlo, aunque siempre sobre personas ya consultadas; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
 
 ## 12. Con PCA, la etiqueta de atención se predice mejor
 
@@ -72,9 +72,9 @@ Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas vá
 
 Para tener más potencia usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
 
-## 19. En atención, la fusión tardía rinde mejor con el mismo modelo (MLP)
+## 19. En atención, la fusión tardía rinde mejor entre redes MLP; con HGB, no
 
-Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad. Vale para esta familia (MLP): con HGB, en el cierre V3, la tardía no superó a la temprana.
+Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad. Es un contraste secundario y vale para esta familia (MLP): con HGB, en el cierre V3, el signo fue el contrario (−0,010 en entrenamiento).
 
 ## 20. El modelo de atención rinde mejor al final de la sesión y peor en textos
 
@@ -100,13 +100,13 @@ La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de in
 
 Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que 0,06 es una cota inferior. Registrado antes de correr y auditado.
 
-## 26. Una red sobre la señal cruda rinde más, y su ventaja también depende de la huella ocular
+## 26. Una red sobre la señal cruda rinde más, y también depende de la huella ocular
 
-Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
+Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
 
 ## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
 
-La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es sobre todo lo observado, no lo atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
+La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es en buena parte lo observado, y no puedo afirmar que sea lo atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
 
 ## 28. Por qué puede costar detectar la activación desde el EEG
 
@@ -114,11 +114,11 @@ La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas baj
 
 ## 29. Qué responde la tesis
 
-La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, el EEG detecta sobre todo la huella de los ojos. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, al menos un tercio de lo que el EEG tiene sobre el azar es la huella de los ojos, y no puedo descartar que el resto también lo sea. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
 ## 30. Conclusiones: la hipótesis tiene apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.
+Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.
 
 ## 31. Conclusiones: qué detecta el EEG
 

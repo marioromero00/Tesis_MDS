@@ -262,3 +262,10 @@ A pedido de Mario ("haz todo eso y revisa con mucho detalle la presentación y e
 - **Conclusiones**: fusión acotada al MLP (con HGB el cierre V3 no mostró ventaja de la tardía) y alcance temporal precisado (6 s con respaldo; 12 s inconcluso).
 
 Informes en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`. Pendiente: auditoría de resultados del experimento.
+
+## 23-11-2026 — Auditoría final: cierre
+
+- **Auditoría de resultados** (agente independiente, código propio; `documentacion/auditoria_final_23-11-2026/AUDITORIA_EXPERIMENTO.md`): 2.638 valores recalculados desde las predicciones sin discrepancias con los CSV; integridad correcta; sin hallazgos bloqueantes. Seis hallazgos importantes, todos de lectura: (1) la red depende de lo ocular en su detección, no en su ventaja; (2) la limpieza quita cerca de un tercio de la detección sobre el azar, no "la mayor parte"; (3) el efecto temporal de activación no está confirmado (nueve estimaciones sobre las mismas personas, +0,028 a +0,047, 3 de 9 intervalos incluyen el cero); (4) solo hay respaldo a 6 s, el resto es inconcluso y no nulo; (5) la ventaja de la fusión tardía vale entre MLP y con HGB el signo es contrario; (6) el aporte por señal en activación es descriptivo.
+- **Incorporado** en el cierre consolidado (sección nueva), Conclusiones (reescritas), borradores de Resultados y Discusión y de Discusión fisiológica, minuta, presentación (láminas 1, 19, 26, 27, 29–31, 33, 39) y ENSAYO.md. Los INFORME.md de cada etapa no se modificaron.
+- **Queda sin hacer**: redondeo de dos rótulos de gráficos, advertencia de "análisis anterior" en anexos A, B, D y E, otros redondeos dobles menores en tablas, volumen y páginas de las 18 referencias, y leer a mano Boucsein 2012, Critchley 2002, Yuval-Greenberg 2008 e Iwasaki 2005. En E1 las predicciones con historial y posición son idénticas a las de historial: no se descarta un error sin reentrenar un fold; la cifra no cambia.
+- La etiqueta Git `cierre-experimental-2026-11-23` es anterior a esta auditoría; no se movió.

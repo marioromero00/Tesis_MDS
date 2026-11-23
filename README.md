@@ -189,3 +189,5 @@ El inventario registra SHA256 y tamaño de cada archivo para verificar la copia.
 Los modelos y predicciones de la ejecución final se versionan por solicitud expresa del
 06-09-2026. Datos crudos, credenciales y cachés permanecen excluidos. Los incidentes de
 ejecuciones documentadas se conservan para mantener la trazabilidad de los intentos.
+
+**Auditoría final (23-11-2026).** Un agente independiente recalculó las 12 etapas desde las predicciones: cifras reproducidas, sin hallazgos bloqueantes, y seis lecturas moderadas que ya están en `documentacion/Cierre_Experimental_Final_23-11-2026.md`. Informes en `documentacion/auditoria_final_23-11-2026/` (experimento, presentación y verificación de las 18 referencias).

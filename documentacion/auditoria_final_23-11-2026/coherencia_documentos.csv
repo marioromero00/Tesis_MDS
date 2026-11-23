@@ -1,0 +1,123 @@
+documento,lugar,cifra,informada,fuente,fuente_redondeada,veredicto,archivo_fuente
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 atención,0.029,0.02901323759706655,0.029,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 atención,0.021,0.02118487485771944,0.021,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 atención,0.037,0.03679270485186906,0.037,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 activación,0.036,0.03644920235739793,0.036,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 activación,0.01,0.010266731886115025,0.01,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 1,P1 activación,0.065,0.06474579073467832,0.065,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 atención,0.001,0.0014174099540517477,0.001,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 atención,-0.002,-0.0017956800323991678,-0.002,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 atención,0.005,0.004695310909134653,0.005,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / curva,lag6 activación,0.047,0.04712366170254597,0.047,coincide,reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / curva,lag6 activación,0.018,0.017473853576034065,0.017,redondeo doble (se redondeó dos veces),reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / curva,lag6 activación,0.078,0.07763903705982064,0.078,coincide,reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 activación,0.032,0.032253327520560954,0.032,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 activación,0.004,0.004426822326025553,0.004,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / fase 3,Q1 activación,0.059,0.05879093779767707,0.059,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (GRU),GRU atención,0.008,0.008125004289442937,0.008,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención gru_c32 − gru_c1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (GRU),GRU atención,-0.004,-0.00446521289891539,-0.004,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención gru_c32 − gru_c1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (GRU),GRU atención,0.02,0.019935679953835578,0.02,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención gru_c32 − gru_c1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (GRU bajo HGB),GRU−HGB atención,-0.04,-0.0401972084154098,-0.04,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención gru_c32 − hgb_c32
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (fusión),tardía−temprana atención,0.012,0.012369931314161049,0.012,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (fusión),tardía−temprana atención,0.005,0.00506660962063239,0.005,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general (fusión),tardía−temprana atención,0.021,0.020753222564792558,0.021,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / limpieza,AUC eeg_c1,0.681,0.6808945625853305,0.681,coincide,enfoques_41p_22-11-2026/e2_descriptivos.csv AUC eeg_c1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / limpieza,AUC ica3_full,0.621,0.6207791472235197,0.621,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv AUC ica3_full
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,AUC hgb_eeg_act,0.524,0.523695689888081,0.524,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC hgb_eeg_act
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,AUC red_orig,0.716,0.7159158584069619,0.716,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC red_orig
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,R1 red,0.035,0.03502129582163133,0.035,coincide,red_cruda_41p_23-11-2026/confirmatorio.csv R1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,R1 red,0.023,0.023262978153260717,0.023,coincide,red_cruda_41p_23-11-2026/confirmatorio.csv R1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,R1 red,0.047,0.04679252794581892,0.047,coincide,red_cruda_41p_23-11-2026/confirmatorio.csv R1
+Cierre_Experimental_Final_23-11-2026.md,Conclusión general / red,AUC red_act,0.498,0.49849127736062954,0.498,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC red_act
+Cierre_Experimental_Final_23-11-2026.md,Red,AUC red_ica3,0.649,0.6486186334498366,0.649,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC red_ica3
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final atención,0.026,0.02640989443999721,0.026,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final atención,0.018,0.017960937905938182,0.018,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final atención,0.035,0.03478864000848072,0.035,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final activación,0.034,0.03418601709593775,0.034,coincide,cierre_final_41p_16-11-2026/contrastes.csv activación principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final activación,-0.001,-0.000920153803613339,-0.001,coincide,cierre_final_41p_16-11-2026/contrastes.csv activación principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: análisis final,final activación,0.069,0.06901756679453956,0.069,coincide,cierre_final_41p_16-11-2026/contrastes.csv activación principal
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo atención,-0.0,-0.0001415233253255224,-0.0,coincide,cierre_robustez_41p_16-11-2026/resultados.csv atención R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo atención,-0.003,-0.0033505186100568473,-0.003,coincide,cierre_robustez_41p_16-11-2026/resultados.csv atención R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo atención,0.003,0.0031590982582568312,0.003,coincide,cierre_robustez_41p_16-11-2026/resultados.csv atención R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo activación,0.038,0.03787258133865754,0.038,coincide,cierre_robustez_41p_16-11-2026/resultados.csv activación R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo activación,0.006,0.006493389666287952,0.006,coincide,cierre_robustez_41p_16-11-2026/resultados.csv activación R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: robustez,R1 placebo activación,0.068,0.06806181179758217,0.068,coincide,cierre_robustez_41p_16-11-2026/resultados.csv activación R1 placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: ampliación,lag6 enmienda,0.046,0.04603771464184399,0.046,coincide,ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv activación lag6_real − lag6_placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: ampliación,lag6 enmienda,0.018,0.018439298618926767,0.018,coincide,ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv activación lag6_real − lag6_placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: ampliación,lag6 enmienda,0.073,0.0731474253952074,0.073,coincide,ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv activación lag6_real − lag6_placebo
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: explicativo,posición atención,0.028,0.028141846235386295,0.028,coincide,explicativo_posicion_41p_18-11-2026/contrastes.csv atención pos_c1 − hgb_c1
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: explicativo,posición atención,0.021,0.02079120408341165,0.021,coincide,explicativo_posicion_41p_18-11-2026/contrastes.csv atención pos_c1 − hgb_c1
+Cierre_Experimental_Final_23-11-2026.md,16 al 18-11: explicativo,posición atención,0.035,0.03529779971302899,0.035,coincide,explicativo_posicion_41p_18-11-2026/contrastes.csv atención pos_c1 − hgb_c1
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 1,P2 activación,0.026,0.02626923935848736,0.026,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P2
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 1,P2 activación,-0.006,-0.00561490626161512,-0.006,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P2
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 1,P2 activación,0.056,0.05640823780405628,0.056,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P2
+Cierre_Experimental_Final_23-11-2026.md,22-11: curva,lag12 activación,0.024,0.024066114045737268,0.024,coincide,reapertura_41p_22-11-2026/curva_temporal.csv activación lag 12
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 2,mismo minuto activación,0.058,0.05840053241782337,0.058,coincide,reapertura_fase2_41p_22-11-2026/x2_estratificada.csv activación bloque60
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 2,mismo minuto activación,0.027,0.02698652776431368,0.027,coincide,reapertura_fase2_41p_22-11-2026/x2_estratificada.csv activación bloque60
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 2,mismo minuto activación,0.092,0.09173652032342144,0.092,coincide,reapertura_fase2_41p_22-11-2026/x2_estratificada.csv activación bloque60
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 3,Q2 atención,-0.0,-6.11759441580932e-05,-0.0,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q2
+Cierre_Experimental_Final_23-11-2026.md,22-11: fase 3,Q2 activación,0.009,0.00853747676173573,0.009,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q2
+Cierre_Experimental_Final_23-11-2026.md,E1,E1 pos_only,0.504,0.5044226964968556,0.504,coincide,enfoques_41p_22-11-2026/e1_descriptivos.csv AUC pos_only
+Cierre_Experimental_Final_23-11-2026.md,E1,E1 hgb_c1 corregida,0.675,0.6750299689488136,0.675,coincide,enfoques_41p_22-11-2026/e1_descriptivos.csv AUC hgb_c1 (corregida)
+Cierre_Experimental_Final_23-11-2026.md,E1,E1 hgb_c1 original,0.683,0.6829713462923324,0.683,coincide,enfoques_41p_22-11-2026/e1_descriptivos.csv AUC hgb_c1 (original)
+Cierre_Experimental_Final_23-11-2026.md,E2,B3 GSR sobre EEG,0.002,0.0020767837070017328,0.002,coincide,enfoques_41p_22-11-2026/e2_confirmatorio.csv B3
+Cierre_Experimental_Final_23-11-2026.md,E2,AUC eeg_lento_amp,0.673,0.6725968393128409,0.673,coincide,enfoques_41p_22-11-2026/e2_descriptivos.csv AUC eeg_lento_amp
+Cierre_Experimental_Final_23-11-2026.md,E2,AUC eeg_alfa_beta,0.593,0.5926796985708186,0.593,coincide,enfoques_41p_22-11-2026/e2_descriptivos.csv AUC eeg_alfa_beta
+Cierre_Experimental_Final_23-11-2026.md,E3,E3 seg,0.587,0.5865803916494968,0.587,coincide,enfoques_41p_22-11-2026/e3_descriptivos.csv AUC seg
+Cierre_Experimental_Final_23-11-2026.md,E3,E3 C2,0.02,0.01954339006917199,0.02,coincide,enfoques_41p_22-11-2026/e3_confirmatorio.csv C2
+Cierre_Experimental_Final_23-11-2026.md,E4,E4 fiabilidad atención,0.76,0.7560975609756099,0.76,coincide,enfoques_41p_22-11-2026/e4_descriptivos.csv
+Cierre_Experimental_Final_23-11-2026.md,E4,E4 fiabilidad activación,0.66,0.6602251407129457,0.66,coincide,enfoques_41p_22-11-2026/e4_descriptivos.csv
+Cierre_Experimental_Final_23-11-2026.md,E4,E4 adaptación activación,0.045,0.04475802227104909,0.045,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Cierre_Experimental_Final_23-11-2026.md,E4,E4 adaptación activación,0.023,0.023415931833583058,0.023,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Cierre_Experimental_Final_23-11-2026.md,E4,E4 adaptación activación,0.069,0.06857318995768276,0.069,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Cierre_Experimental_Final_23-11-2026.md,Montaje,desfase,0.18,0.184,0.18,coincide,montaje_ocular_41p_23-11-2026/personas.csv lag_parpadeo_s mín y máx
+Cierre_Experimental_Final_23-11-2026.md,Montaje,desfase,0.53,0.528,0.53,coincide,montaje_ocular_41p_23-11-2026/personas.csv lag_parpadeo_s mín y máx
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,L1,0.06,0.060115415361810864,0.06,coincide,limpieza_ocular_41p_23-11-2026/confirmatorio.csv L1
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,L1,0.045,0.044496697383185166,0.044,redondeo doble (se redondeó dos veces),limpieza_ocular_41p_23-11-2026/confirmatorio.csv L1
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,L1,0.075,0.07503700687049454,0.075,coincide,limpieza_ocular_41p_23-11-2026/confirmatorio.csv L1
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,var ica3,0.035,0.034965968102985315,0.035,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv mediana var_share_ica3
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,var ctrl3,0.72,0.7207016577442674,0.72,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv mediana var_share_ctrl3
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,AUC ctrl3_full,0.674,0.674300491173732,0.674,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv AUC ctrl3_full
+Cierre_Experimental_Final_23-11-2026.md,Limpieza,AUC ica3_alfa_beta,0.547,0.5474119583790354,0.547,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv AUC ica3_alfa_beta
+Cierre_Experimental_Final_23-11-2026.md,Límites,AUC activación mín y máx,0.52,0.5176299961383577,0.52,coincide,reapertura hgb_c1 y enfoques E3 seg
+Cierre_Experimental_Final_23-11-2026.md,Límites,AUC activación mín y máx,0.59,0.5865803916494968,0.59,coincide,reapertura hgb_c1 y enfoques E3 seg
+Borrador Conclusiones 23-11-2026.md,9.1,P1 activación,0.036,0.03644920235739793,0.036,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Borrador Conclusiones 23-11-2026.md,9.1,P1 activación,0.01,0.010266731886115025,0.01,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Borrador Conclusiones 23-11-2026.md,9.1,P1 activación,0.065,0.06474579073467832,0.065,coincide,reapertura_41p_22-11-2026/confirmatorio.csv activación P1
+Borrador Conclusiones 23-11-2026.md,9.1,lag6 activación,0.047,0.04712366170254597,0.047,coincide,reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Borrador Conclusiones 23-11-2026.md,9.1,lag6 activación,0.018,0.017473853576034065,0.017,redondeo doble (se redondeó dos veces),reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Borrador Conclusiones 23-11-2026.md,9.1,lag6 activación,0.078,0.07763903705982064,0.078,coincide,reapertura_41p_22-11-2026/curva_temporal.csv activación lag 6
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 activación,0.032,0.032253327520560954,0.032,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 activación,0.004,0.004426822326025553,0.004,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 activación,0.059,0.05879093779767707,0.059,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv activación Q1
+Borrador Conclusiones 23-11-2026.md,9.1,P1 atención,0.029,0.02901323759706655,0.029,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Borrador Conclusiones 23-11-2026.md,9.1,P1 atención,0.021,0.02118487485771944,0.021,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Borrador Conclusiones 23-11-2026.md,9.1,P1 atención,0.037,0.03679270485186906,0.037,coincide,reapertura_41p_22-11-2026/confirmatorio.csv atención P1
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 atención,0.001,0.0014174099540517477,0.001,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 atención,-0.002,-0.0017956800323991678,-0.002,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Borrador Conclusiones 23-11-2026.md,9.1,Q1 atención,0.005,0.004695310909134653,0.005,coincide,reapertura_fase3_41p_22-11-2026/confirmatorio.csv atención Q1
+Borrador Conclusiones 23-11-2026.md,9.1,GRU−HGB atención,-0.04,-0.0401972084154098,-0.04,coincide,cierre_final_41p_16-11-2026/contrastes.csv atención gru_c32 − hgb_c32
+Borrador Conclusiones 23-11-2026.md,9.2,tardía−temprana atención,0.012,0.012369931314161049,0.012,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Borrador Conclusiones 23-11-2026.md,9.2,tardía−temprana atención,0.005,0.00506660962063239,0.005,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Borrador Conclusiones 23-11-2026.md,9.2,tardía−temprana atención,0.021,0.020753222564792558,0.021,coincide,ampliacion_41p_16-11-2026/contrastes.csv atención mlp_tardia − mlp_temprana
+Borrador Conclusiones 23-11-2026.md,9.2,B3 GSR sobre EEG,0.002,0.0020767837070017328,0.002,coincide,enfoques_41p_22-11-2026/e2_confirmatorio.csv B3
+Borrador Conclusiones 23-11-2026.md,9.3,AUC eeg_c1,0.681,0.6808945625853305,0.681,coincide,enfoques_41p_22-11-2026/e2_descriptivos.csv AUC eeg_c1
+Borrador Conclusiones 23-11-2026.md,9.3,AUC red_orig,0.716,0.7159158584069619,0.716,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC red_orig
+Borrador Conclusiones 23-11-2026.md,9.3,var ica3,0.035,0.034965968102985315,0.035,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv mediana var_share_ica3
+Borrador Conclusiones 23-11-2026.md,9.3,AUC ica3_full,0.621,0.6207791472235197,0.621,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv AUC ica3_full
+Borrador Conclusiones 23-11-2026.md,9.3,var ctrl3,0.72,0.7207016577442674,0.72,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv mediana var_share_ctrl3
+Borrador Conclusiones 23-11-2026.md,9.3,AUC ctrl3_full,0.674,0.674300491173732,0.674,coincide,limpieza_ocular_41p_23-11-2026/descriptivos.csv AUC ctrl3_full
+Borrador Conclusiones 23-11-2026.md,9.3,AUC hgb_eeg_act,0.524,0.523695689888081,0.524,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC hgb_eeg_act
+Borrador Conclusiones 23-11-2026.md,9.3,AUC red_act,0.498,0.49849127736062954,0.498,coincide,red_cruda_41p_23-11-2026/descriptivos.csv AUC red_act
+Borrador Conclusiones 23-11-2026.md,9.3,E4 adaptación activación,0.045,0.04475802227104909,0.045,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Borrador Conclusiones 23-11-2026.md,9.3,E4 adaptación activación,0.023,0.023415931833583058,0.023,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Borrador Conclusiones 23-11-2026.md,9.3,E4 adaptación activación,0.069,0.06857318995768276,0.069,coincide,enfoques_41p_22-11-2026/e4_confirmatorio.csv activación pers_c32 − hgb_c32
+Borrador Conclusiones 23-11-2026.md,9.3,E3 seg,0.587,0.5865803916494968,0.587,coincide,enfoques_41p_22-11-2026/e3_descriptivos.csv AUC seg
+Borrador Conclusiones 23-11-2026.md,9.4,prevalencia último quintil,0.37,0.36928934010152287,0.37,coincide,ampliacion_41p_16-11-2026/fatiga_por_quintil.csv
+Borrador Conclusiones 23-11-2026.md,9.4,AUC atención quintil 1 y 5,0.65,0.6528417316093341,0.65,coincide,ampliacion_41p_16-11-2026/fatiga_por_quintil.csv
+Borrador Conclusiones 23-11-2026.md,9.4,AUC atención quintil 1 y 5,0.71,0.7127217521114521,0.71,coincide,ampliacion_41p_16-11-2026/fatiga_por_quintil.csv
+Borrador Conclusiones 23-11-2026.md,9.5,L1,0.06,0.060115415361810864,0.06,coincide,limpieza_ocular_41p_23-11-2026/confirmatorio.csv L1
+Borrador Conclusiones 23-11-2026.md,9.5,desfase,0.18,0.184,0.18,coincide,montaje_ocular_41p_23-11-2026/personas.csv lag_parpadeo_s mín y máx
+Borrador Conclusiones 23-11-2026.md,9.5,desfase,0.53,0.528,0.53,coincide,montaje_ocular_41p_23-11-2026/personas.csv lag_parpadeo_s mín y máx
+Borrador Conclusiones 23-11-2026.md,9.5,AUC activación mín y máx,0.52,0.5176299961383577,0.52,coincide,reapertura hgb_c1 y enfoques E3 seg
+Borrador Conclusiones 23-11-2026.md,9.5,AUC activación mín y máx,0.59,0.5865803916494968,0.59,coincide,reapertura hgb_c1 y enfoques E3 seg

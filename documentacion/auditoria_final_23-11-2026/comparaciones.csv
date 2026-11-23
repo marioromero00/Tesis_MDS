@@ -717,24 +717,24 @@ ampliacion_41p_16-11-2026,contrastes.csv,atencion E3 mlp_tardia − mlp_temprana
 ampliacion_41p_16-11-2026,contrastes.csv,atencion E3 mlp_tardia − mlp_temprana,people,41.0,41,,0.0,int,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 1,prevalencia_alta,0.5489887640449438,0.5489887640449438,,0.0,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 1,auc,0.6528417316093341,0.6528417316093341,,0.0,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 2,prevalencia_alta,0.5914124293785311,0.5920252309078621,,0.0006128015293309641,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 2,auc,0.6578902135378145,0.657792273339384,,9.794019843056834e-05,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 3,prevalencia_alta,0.3176895306859206,0.3160270880361174,,0.0016624426498031974,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 3,auc,0.6585733027545312,0.657994766276313,,0.0005785364782181501,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 4,prevalencia_alta,0.5236158192090395,0.524892993917549,,0.0012771747085094098,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 4,auc,0.7040460869367674,0.7040932489822288,,4.71620454614019e-05,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 5,prevalencia_alta,0.5157515751575158,0.5151652331371661,,0.0005863420203496839,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 5,auc,0.7127217521114521,0.7123654303049317,,0.0003563218065203433,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 2,prevalencia_alta,0.5914124293785311,0.5914124293785311,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 2,auc,0.6578902135378145,0.6578902135378144,,1.1102230246251565e-16,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 3,prevalencia_alta,0.3176895306859206,0.3176895306859206,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 3,auc,0.6585733027545312,0.6585733027545313,,1.1102230246251565e-16,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 4,prevalencia_alta,0.5236158192090395,0.5236158192090395,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 4,auc,0.7040460869367674,0.7040460869367674,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 5,prevalencia_alta,0.5157515751575158,0.5157515751575158,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c1 quintil 5,auc,0.7127217521114521,0.7127217521114522,,1.1102230246251565e-16,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 1,prevalencia_alta,0.5489887640449438,0.5489887640449438,,0.0,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 1,auc,0.6886770749897824,0.6886770749897824,,0.0,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 2,prevalencia_alta,0.5914124293785311,0.5920252309078621,,0.0006128015293309641,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 2,auc,0.6939551205315919,0.6935294347285,,0.00042568580309187976,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 3,prevalencia_alta,0.3176895306859206,0.3160270880361174,,0.0016624426498031974,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 3,auc,0.6583526101208147,0.6566182451371776,,0.0017343649836371045,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 4,prevalencia_alta,0.5236158192090395,0.524892993917549,,0.0012771747085094098,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 4,auc,0.7106701725889082,0.7108690382596433,,0.00019886567073512662,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 5,prevalencia_alta,0.5157515751575158,0.5151652331371661,,0.0005863420203496839,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 5,auc,0.744833440851264,0.7446434001061693,,0.0001900407450947661,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 2,prevalencia_alta,0.5914124293785311,0.5914124293785311,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 2,auc,0.6939551205315919,0.6939551205315919,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 3,prevalencia_alta,0.3176895306859206,0.3176895306859206,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 3,auc,0.6583526101208147,0.6583526101208147,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 4,prevalencia_alta,0.5236158192090395,0.5236158192090395,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 4,auc,0.7106701725889082,0.7106701725889083,,1.1102230246251565e-16,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 5,prevalencia_alta,0.5157515751575158,0.5157515751575158,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,atencion hgb_c32 quintil 5,auc,0.744833440851264,0.744833440851264,,0.0,loose,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,atencion banda alpha,mean,0.006906175470097272,0.006906175470097272,,0.0,exact,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,atencion banda beta,mean,0.008708227855825087,0.008708227855825087,,0.0,exact,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,atencion banda delta,mean,0.016869366927116245,0.016869366927116245,,0.0,exact,coincide
@@ -825,24 +825,24 @@ ampliacion_41p_16-11-2026,contrastes.csv,activacion E3 mlp_tardia − mlp_tempra
 ampliacion_41p_16-11-2026,contrastes.csv,activacion E3 mlp_tardia − mlp_temprana,people,41.0,41,,0.0,int,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 1,prevalencia_alta,0.5574736842105263,0.5574736842105263,,0.0,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 1,auc,0.5708047537127581,0.570804753712758,,1.1102230246251565e-16,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 2,prevalencia_alta,0.44491705657167163,0.44510385756676557,,0.00018680099509393866,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 2,auc,0.5266983110493417,0.5263470501732865,,0.00035126087605519274,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 3,prevalencia_alta,0.6101910828025477,0.6099320882852292,,0.00025899451731858925,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 3,auc,0.4770397175919313,0.4759636733149053,,0.0010760442770260115,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 4,prevalencia_alta,0.5180774138664398,0.5175922000847817,,0.00048521378165811146,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 4,auc,0.5050264698472992,0.5038935856792355,,0.0011328841680636748,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 5,prevalencia_alta,0.36928934010152287,0.3689816787388155,,0.00030766136270737876,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 5,auc,0.5251032966824036,0.5256852774588995,,0.0005819807764958496,loose,DISCREPA
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 2,prevalencia_alta,0.44491705657167163,0.44491705657167163,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 2,auc,0.5266983110493417,0.5266983110493415,,2.220446049250313e-16,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 3,prevalencia_alta,0.6101910828025477,0.6101910828025477,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 3,auc,0.4770397175919313,0.4770397175919313,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 4,prevalencia_alta,0.5180774138664398,0.5180774138664398,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 4,auc,0.5050264698472992,0.505026469847299,,1.1102230246251565e-16,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 5,prevalencia_alta,0.36928934010152287,0.36928934010152287,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c1 quintil 5,auc,0.5251032966824036,0.5251032966824035,,1.1102230246251565e-16,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 1,prevalencia_alta,0.5574736842105263,0.5574736842105263,,0.0,loose,coincide
 ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 1,auc,0.554386525073231,0.554386525073231,,0.0,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 2,prevalencia_alta,0.44491705657167163,0.44510385756676557,,0.00018680099509393866,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 2,auc,0.5450459414693016,0.545767406899349,,0.0007214654300473633,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 3,prevalencia_alta,0.6101910828025477,0.6099320882852292,,0.00025899451731858925,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 3,auc,0.4804678332256842,0.4798638423246731,,0.0006039909010110978,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 4,prevalencia_alta,0.5180774138664398,0.5175922000847817,,0.00048521378165811146,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 4,auc,0.522169401437513,0.5212205435285363,,0.0009488579089766969,loose,DISCREPA
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 5,prevalencia_alta,0.36928934010152287,0.3689816787388155,,0.00030766136270737876,loose,coincide
-ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 5,auc,0.6404068037596077,0.6413771457677844,,0.0009703420081766945,loose,DISCREPA
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 2,prevalencia_alta,0.44491705657167163,0.44491705657167163,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 2,auc,0.5450459414693016,0.5450459414693016,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 3,prevalencia_alta,0.6101910828025477,0.6101910828025477,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 3,auc,0.4804678332256842,0.4804678332256842,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 4,prevalencia_alta,0.5180774138664398,0.5180774138664398,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 4,auc,0.522169401437513,0.522169401437513,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 5,prevalencia_alta,0.36928934010152287,0.36928934010152287,,0.0,loose,coincide
+ampliacion_41p_16-11-2026,fatiga_por_quintil.csv,activacion hgb_c32 quintil 5,auc,0.6404068037596077,0.6404068037596076,,1.1102230246251565e-16,loose,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,activacion banda alpha,mean,0.0026674124027724158,0.0026674124027724158,,0.0,exact,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,activacion banda beta,mean,0.0058780314645180114,0.0058780314645180114,,0.0,exact,coincide
 ampliacion_41p_16-11-2026,importancia_resumen.csv,activacion banda delta,mean,-0.000396466908301823,-0.000396466908301823,,0.0,exact,coincide
@@ -2280,6 +2280,9 @@ enfoques_41p_22-11-2026,e4_confirmatorio.csv,E4c activacion pers_c1 − hgb_c1,d
 enfoques_41p_22-11-2026,e4_confirmatorio.csv,E4c activacion pers_c32 − hgb_c32,p_holm,0.00039999800000999996,0.00031999840000799997,0.00039999800000999996,7.999960000199999e-05,perm,coincide (difiere solo por semilla de remuestreo)
 enfoques_41p_22-11-2026,e4_confirmatorio.csv,E4c activacion pers_c32 − hgb_c32,decision,efecto relevante,efecto relevante,,,text,coincide
 montaje_ocular_41p_23-11-2026,comprobaciones.json,mediana del desfase (parpadeo),lag,0.448,0.448,,0.0,loose,coincide
+montaje_ocular_41p_23-11-2026,comprobaciones.json,personas cuyo canal de mayor parpadeo es 0 o 1,n,27.0,27,,0.0,int,coincide
+montaje_ocular_41p_23-11-2026,comprobaciones.json,F7 y F8 utilizables,n,37.0,37,,0.0,int,coincide
+montaje_ocular_41p_23-11-2026,comprobaciones.json,F7 y F8 con signo opuesto,n,31.0,31,,0.0,int,coincide
 limpieza_ocular_41p_23-11-2026,auc_por_persona.csv,"AUC por persona (máxima diferencia, 656 valores)",auc,0.0,2.220446049250313e-16,,2.220446049250313e-16,exact,coincide
 limpieza_ocular_41p_23-11-2026,confirmatorio.csv,L1,delta,0.060115415361810864,0.06011541536181088,,1.3877787807814457e-17,exact,coincide
 limpieza_ocular_41p_23-11-2026,confirmatorio.csv,L1,low95,0.044496697383185166,0.044731251494379655,0.04449669738318519,0.00023455411119448905,boot,coincide (difiere solo por semilla de remuestreo)

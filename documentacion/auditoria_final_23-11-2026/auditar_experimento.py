@@ -904,6 +904,14 @@ def stage_montaje():
                blink_uv={r.name_default: round(r.blink_ptp_uv_median, 1) for r in ch.itertuples()})
     add(st, 'comprobaciones.json', 'mediana del desfase (parpadeo)', 'lag', cj['lag_parpadeo_median_s'], out['lag_mediana'], kind='loose')
     cp = read(RES / st / 'canales_por_persona.csv')
+    u = cp[cp.usable.astype(bool)]
+    top = u.loc[u.groupby('participant').blink_ptp_uv.idxmax()]
+    add(st, 'comprobaciones.json', 'personas cuyo canal de mayor parpadeo es 0 o 1', 'n', cj['people_top_blink_is_fp'], int(top.channel.isin([0, 1]).sum()), kind='int')
+    rh = cp.pivot(index='participant', columns='channel', values='r_horizontal')
+    us = cp.pivot(index='participant', columns='channel', values='usable').astype(bool)
+    both = us[8] & us[9]
+    add(st, 'comprobaciones.json', 'F7 y F8 utilizables', 'n', cj['f7_f8_both_usable'], int(both.sum()), kind='int')
+    add(st, 'comprobaciones.json', 'F7 y F8 con signo opuesto', 'n', cj['f7_f8_opposite_sign'], int(((np.sign(rh[8]) != np.sign(rh[9])) & both).sum()), kind='int')
     keep('montaje|columnas canales_por_persona', list(cp.columns))
     keep('montaje', out)
 
@@ -1049,6 +1057,10 @@ def extras():
     keep('extra|red: (red_orig − eeg_c1) − (red_ica3 − ica3_full)', s3(stats(((w.red_orig - w.eeg_c1) - (w.red_ica3 - w.ica3_full)).to_numpy())))
     # (b) fracción de la detección sobre el azar que desaparece con la limpieza
     l = LIMP[0]
+    wa_ = AMPL['atencion']
+    # los MLP de E3 usan la representación hasta 32: su comparador con fusión temprana HGB es hgb_c32
+    keep('extra|ampliación atención: mlp_tardia − hgb_c32 (HGB, fusión temprana, misma representación)', s3(stats((wa_.mlp_tardia - wa_.hgb_c32).to_numpy())))
+    keep('extra|ampliación atención: mlp_temprana − hgb_c32', s3(stats((wa_.mlp_temprana - wa_.hgb_c32).to_numpy())))
     keep('extra|limpieza: caída / (AUC original − 0,5)', round(float((l.eeg_c1 - l.ica3_full).mean() / (l.eeg_c1 - .5).mean()), 3))
     keep('extra|limpieza: alfa-beta caída / (AUC − 0,5)', round(float((l.eeg_alfa_beta - l.ica3_alfa_beta).mean() / (l.eeg_alfa_beta - .5).mean()), 3))
     # (c) ¿c32_pos difiere de hgb_c32 en la fase 3 (etiqueta original)? contraste con E1, donde son idénticas
@@ -1229,6 +1241,8 @@ def documents():
     for st in sorted({r['stage'] for r in COMP}):
         folder = RES / st
         inf = folder / 'INFORME.md' if (folder / 'INFORME.md').exists() else folder.parent / 'INFORME.md'
+        if st.startswith('reapertura_fase2'):
+            inf = RES / 'reapertura_41p_22-11-2026' / 'INFORME.md'   # la fase 2 se informa en el INFORME de la fase 1
         text = inf.read_text().replace('−', '-') if inf.exists() else ''
         for f in sorted(folder.glob('*.csv')):
             df = read(f)
@@ -1243,7 +1257,7 @@ def documents():
                         cand.append(dict(stage=st, file=f.name, fila=label, columna=col, valor=v, correcto=sr, doble=sd,
                                          informe_contiene_doble=sd in text, informe_contiene_correcto=sr in text))
     cd = pd.DataFrame(cand)
-    cd.to_csv(HERE / 'redondeos_candidatos.csv', index=False)
+    cd[cd.informe_contiene_doble].to_csv(HERE / 'redondeos_candidatos.csv', index=False)
     print('\nREDONDEOS DOBLES CANDIDATOS presentes en el INFORME de su etapa:')
     print(cd[cd.informe_contiene_doble].to_string(index=False))
 

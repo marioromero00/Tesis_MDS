@@ -424,3 +424,7 @@ limpieza_ocular_41p_23-11-2026,Git: el protocolo entró al repositorio antes o j
 limpieza_ocular_41p_23-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,False,21 hashes; distintos: ['scripts/limpieza_ocular_41p.py']; sin archivo: []
 red_cruda_41p_23-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 0074c60 2026-11-23T10:25:14-03:00; predicciones 4789942 2026-11-23T12:12:56-03:00
 red_cruda_41p_23-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,72 hashes; distintos: []; sin archivo: []
+limpieza_ocular_41p_23-11-2026,hashes de crudos en caché (41) coinciden con datos/locales,True,[]
+red_cruda_41p_23-11-2026,hashes de crudos en caché (41) coinciden con datos/locales,True,[]
+red_cruda_41p_23-11-2026,hashes de tensores (3) coinciden con datos/locales,True,[]
+limpieza_ocular_41p_23-11-2026,hashes de variables recalculadas (8) coinciden con datos/locales,True,[]

@@ -3472,5 +3472,169 @@
    "hashes_distintos": [],
    "hashes_sin_archivo": []
   }
- ]
+ ],
+ "extra|red: (red_orig − eeg_c1) − (red_ica3 − ica3_full)": {
+  "delta": 0.00718,
+  "low95": -0.00526,
+  "high95": 0.02013,
+  "low90": -0.00338,
+  "high90": 0.01798,
+  "p": 0.2851,
+  "improved": 20,
+  "people": 41,
+  "median": -0.00142
+ },
+ "extra|ampliación atención: mlp_tardia − hgb_c32 (HGB, fusión temprana, misma representación)": {
+  "delta": -0.02407,
+  "low95": -0.03785,
+  "high95": -0.01227,
+  "low90": -0.0354,
+  "high90": -0.0139,
+  "p": 6e-05,
+  "improved": 9,
+  "people": 41,
+  "median": -0.01879
+ },
+ "extra|ampliación atención: mlp_temprana − hgb_c32": {
+  "delta": -0.03644,
+  "low95": -0.05501,
+  "high95": -0.02018,
+  "low90": -0.05183,
+  "high90": -0.02254,
+  "p": 2e-05,
+  "improved": 12,
+  "people": 41,
+  "median": -0.02595
+ },
+ "extra|limpieza: caída / (AUC original − 0,5)": 0.332,
+ "extra|limpieza: alfa-beta caída / (AUC − 0,5)": 0.488,
+ "extra|fase3 atencion: fracción de predicciones c32_pos idénticas a hgb_c32": 0.0,
+ "extra|fase3 activacion: fracción de predicciones c32_pos idénticas a hgb_c32": 0.7776,
+ "extra|E1: fracción de predicciones c32_pos idénticas a hgb_c32": {
+  "fraccion": 1.0,
+  "n": 110880
+ },
+ "extra|E1: fracción de predicciones pos_c1 idénticas a hgb_c1": {
+  "fraccion": 0.0,
+  "n": 110880
+ },
+ "extra|reapertura atención P1: rango del IC95 inferior": [
+  0.02114,
+  0.02136
+ ],
+ "extra|reapertura activación P1: rango del IC95 inferior": [
+  0.01015,
+  0.01086
+ ],
+ "extra|reapertura activación lag6 − placebo: rango del IC95 inferior": [
+  0.01712,
+  0.0182
+ ],
+ "extra|limpieza L1: rango del IC95 inferior": [
+  0.04418,
+  0.04478
+ ],
+ "extra|final activación principal: rango del IC95 inferior": [
+  -0.00115,
+  0.00055
+ ],
+ "extra|Holm del auditor sobre final secundarios (6)": {
+  "final|atencion|hgb_c5 − hgb_c1": 0.0,
+  "final|atencion|gru_c32 − gru_c1": 0.4504,
+  "final|atencion|gru_c32 − hgb_c32": 0.0,
+  "final|activacion|hgb_c5 − hgb_c1": 0.4504,
+  "final|activacion|gru_c32 − gru_c1": 0.0075,
+  "final|activacion|gru_c32 − hgb_c32": 0.4504
+ },
+ "extra|Holm del auditor sobre ampliacion E3 (6)": {
+  "ampliacion|atencion|E3|mlp_intermedia − mlp_temprana": 0.8876,
+  "ampliacion|atencion|E3|mlp_intermedia − mlp_tardia": 0.1374,
+  "ampliacion|atencion|E3|mlp_tardia − mlp_temprana": 0.0073,
+  "ampliacion|activacion|E3|mlp_intermedia − mlp_temprana": 1.0,
+  "ampliacion|activacion|E3|mlp_intermedia − mlp_tardia": 1.0,
+  "ampliacion|activacion|E3|mlp_tardia − mlp_temprana": 1.0
+ },
+ "extra|Holm del auditor sobre explicativo (6)": {
+  "explicativo|atencion|pos_c1 − hgb_c1": 0.0,
+  "explicativo|atencion|hgb_c32 − pos_c1": 1.0,
+  "explicativo|atencion|hgb_c32pos − pos_c1": 1.0,
+  "explicativo|activacion|pos_c1 − hgb_c1": 1.0,
+  "explicativo|activacion|hgb_c32 − pos_c1": 0.1729,
+  "explicativo|activacion|hgb_c32pos − pos_c1": 0.1562
+ },
+ "extra|activación principal por partición": {
+  "16-11 partición registrada": [
+   0.03419,
+   -0.0007,
+   0.06953,
+   0.06529
+  ],
+  "16-11 R3 101": [
+   0.04324,
+   0.01041,
+   0.07769,
+   0.01618
+  ],
+  "16-11 R3 202": [
+   0.04159,
+   0.00591,
+   0.07686,
+   0.02754
+  ],
+  "16-11 R3 303": [
+   0.0416,
+   0.01271,
+   0.07027,
+   0.00754
+  ],
+  "22-11 partición 1101": [
+   0.03394,
+   -0.00088,
+   0.0719,
+   0.07776
+  ],
+  "22-11 partición 1102": [
+   0.04132,
+   0.01106,
+   0.0715,
+   0.01265
+  ],
+  "22-11 partición 1103": [
+   0.04691,
+   0.01256,
+   0.08527,
+   0.01307
+  ],
+  "22-11 partición 1104": [
+   0.03193,
+   0.00296,
+   0.06181,
+   0.04154
+  ],
+  "22-11 partición 1105": [
+   0.02814,
+   -0.00099,
+   0.06096,
+   0.08475
+  ]
+ },
+ "extra|atención P1 por partición: IC95 inferior": {
+  "1101": 0.019193068832576172,
+  "1102": 0.0209843021204276,
+  "1103": 0.02140386348485994,
+  "1104": 0.02052250589976187,
+  "1105": 0.0209695244159845
+ },
+ "extra|activación: (EEG + mirada + pupila) − solo EEG, ventana actual": {
+  "delta": -0.00607,
+  "low95": -0.02161,
+  "high95": 0.00874,
+  "low90": -0.01902,
+  "high90": 0.00642,
+  "p": 0.44351,
+  "improved": 19,
+  "people": 41,
+  "median": -0.00131,
+  "decision": "nulo concluyente"
+ }
 }

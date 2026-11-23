@@ -5,7 +5,7 @@
 
 ## Lo que se presenta en una frase
 
-Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales aporta información temporal para la activación (+0,047 [+0,018; +0,078] sobre un placebo, solo en los 6 a 12 s anteriores), no para la atención; y la detección de atención por EEG (0,681) es sobre todo la huella de los ojos (0,621 al quitar los componentes oculares).
+Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales ayuda a predecir la activación (+0,047 [+0,017; +0,078] sobre un placebo, con respaldo solo para los 6 s anteriores), no la atención; y al menos un tercio de la detección de atención por EEG (0,681) es la huella de los ojos (0,621 al quitar los componentes oculares).
 
 ## Decisiones
 
@@ -50,7 +50,7 @@ Fuente: `resultados/enfoques_41p_22-11-2026/INFORME.md`.
 
 | Opción | Qué implica |
 |---|---|
-| A. Apoyo parcial más advertencia metodológica | Aporte doble: evidencia acotada de la activación como proceso dinámico, y la demostración de que separar señales no asegura independencia fisiológica (la etiqueta ocular y el EEG comparten la conducta de los ojos). |
+| A. Apoyo parcial más advertencia metodológica | Aporte doble: evidencia acotada de que el historial reciente ayuda a predecir la activación, y la demostración de que separar señales no asegura independencia fisiológica (la etiqueta ocular y el EEG comparten la conducta de los ojos). |
 | B. Solo la hipótesis de temporalidad | Más simple, pero deja fuera el hallazgo sobre el EEG y expone la detección de atención a la crítica de circularidad. |
 
 ### 6. ¿Se aceptan etiquetas normalizadas con la sesión completa?
