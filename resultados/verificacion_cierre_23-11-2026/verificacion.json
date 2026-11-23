@@ -1,0 +1,159 @@
+{
+  "head": "6635d266a75526938fdb6255d4880b29554f5af5",
+  "origin_main": "6635d266a75526938fdb6255d4880b29554f5af5",
+  "training_processes": [],
+  "stages": [
+    {
+      "stage": "cierre_v3_16-11-2026",
+      "protocol_commit": "dfbd93d",
+      "report_commit": "005a499",
+      "protocol_before_report": true,
+      "tracked_files": 61,
+      "dirty": [],
+      "counts": {
+        "coincide": 16
+      },
+      "problems": []
+    },
+    {
+      "stage": "cierre_final_41p_16-11-2026",
+      "protocol_commit": "1bbb083",
+      "report_commit": "7435fec",
+      "protocol_before_report": true,
+      "tracked_files": 8,
+      "dirty": [],
+      "counts": {
+        "coincide": 11
+      },
+      "problems": []
+    },
+    {
+      "stage": "cierre_robustez_41p_16-11-2026",
+      "protocol_commit": "6447236",
+      "report_commit": "550f924",
+      "protocol_before_report": true,
+      "tracked_files": 8,
+      "dirty": [],
+      "counts": {
+        "coincide": 7
+      },
+      "problems": []
+    },
+    {
+      "stage": "ampliacion_41p_16-11-2026",
+      "protocol_commit": "d2d5530",
+      "report_commit": "8c7a6d4",
+      "protocol_before_report": true,
+      "tracked_files": 17,
+      "dirty": [],
+      "counts": {
+        "coincide": 6
+      },
+      "problems": []
+    },
+    {
+      "stage": "ampliacion_41p_16-11-2026/enmienda_e1_lag6",
+      "protocol_commit": "8beb675",
+      "report_commit": null,
+      "protocol_before_report": null,
+      "tracked_files": 6,
+      "dirty": [],
+      "counts": {
+        "coincide": 3
+      },
+      "problems": []
+    },
+    {
+      "stage": "explicativo_posicion_41p_18-11-2026",
+      "protocol_commit": "b3eacdc",
+      "report_commit": "8c7a6d4",
+      "protocol_before_report": true,
+      "tracked_files": 5,
+      "dirty": [],
+      "counts": {
+        "coincide": 5
+      },
+      "problems": []
+    },
+    {
+      "stage": "reapertura_41p_22-11-2026",
+      "protocol_commit": "5076307",
+      "report_commit": "99630ed",
+      "protocol_before_report": true,
+      "tracked_files": 21,
+      "dirty": [],
+      "counts": {
+        "coincide": 14
+      },
+      "problems": []
+    },
+    {
+      "stage": "reapertura_fase2_41p_22-11-2026",
+      "protocol_commit": "e3d9c71",
+      "report_commit": null,
+      "protocol_before_report": null,
+      "tracked_files": 7,
+      "dirty": [],
+      "counts": {
+        "coincide": 3
+      },
+      "problems": []
+    },
+    {
+      "stage": "reapertura_fase3_41p_22-11-2026",
+      "protocol_commit": "7046d92",
+      "report_commit": "9ce5745",
+      "protocol_before_report": true,
+      "tracked_files": 15,
+      "dirty": [],
+      "counts": {
+        "coincide": 14
+      },
+      "problems": []
+    },
+    {
+      "stage": "enfoques_41p_22-11-2026",
+      "protocol_commit": "cd25134",
+      "report_commit": "5f806df",
+      "protocol_before_report": true,
+      "tracked_files": 36,
+      "dirty": [],
+      "counts": {
+        "coincide": 24
+      },
+      "problems": []
+    },
+    {
+      "stage": "limpieza_ocular_41p_23-11-2026",
+      "protocol_commit": "06547f5",
+      "report_commit": "afe7e98",
+      "protocol_before_report": true,
+      "tracked_files": 56,
+      "dirty": [],
+      "counts": {
+        "cambió después del registro": 1,
+        "coincide": 69
+      },
+      "problems": [
+        {
+          "source": "protocolo.json",
+          "group": "inputs",
+          "file": "scripts/limpieza_ocular_41p.py",
+          "status": "cambió después del registro"
+        }
+      ]
+    },
+    {
+      "stage": "red_cruda_41p_23-11-2026",
+      "protocol_commit": "0074c60",
+      "report_commit": "4789942",
+      "protocol_before_report": true,
+      "tracked_files": 28,
+      "dirty": [],
+      "counts": {
+        "coincide": 116
+      },
+      "problems": []
+    }
+  ]
+}

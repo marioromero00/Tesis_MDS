@@ -232,3 +232,7 @@ A pedido de Mario: `notas/sustento-fisiologico-23-11-2026.md` (18 referencias ve
 ## 23-11-2026 — Presentación versión 7 (estilo tipo Beamer)
 
 A pedido de Mario. `repos/Tesis_MDS/presentaciones/avances_tesis_06-11-2026/`: la versión 6 quedó archivada en `version_6/`. Cambios: capítulo nuevo «Qué detecta el EEG» (5 diapositivas: huella ocular, limpieza, red sobre la señal cruda y explicación fisiológica de atención y activación), fila nueva en «Qué responde la tesis», diapositiva «Qué falta para cerrar la experimentación» y anexo F con referencias. 37 diapositivas. Tema visual nuevo en `tema_beamer.py` (barra lateral y franja superior azules, portada con título en recuadro); los gráficos se regeneraron con el mismo azul. Sin resultados nuevos. Corrección: la AUC de la red en activación es 0,498 (0,4985), no 0,499; corregida en informe, READMEs y notas.
+
+## 23-11-2026 — Cierre consolidado y comprobación de reproducibilidad
+
+A pedido de Mario. `repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md` reemplaza como referencia al cierre del 22-11: reúne las 12 etapas del 16 al 23-11 con sus decisiones y commits. `scripts/verificar_cierre.py` (salida en `resultados/verificacion_cierre_23-11-2026/`): 288 de 289 archivos con hash coinciden con lo registrado; la diferencia es el script de limpieza ocular, por la enmienda v2 documentada (`441bae9`). Protocolo anterior al informe en las 10 etapas con informe propio; carpetas sin cambios pendientes; HEAD igual a origin/main. No se reentrenó nada. Etiqueta `cierre-experimental-2026-11-23`.
