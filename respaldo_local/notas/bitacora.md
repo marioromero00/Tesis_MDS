@@ -244,3 +244,7 @@ A pedido de Mario se redactó `documentos/01 Tesis MDS/Escritura/Borrador Conclu
 ## 23-11-2026 — Conclusiones en la presentación
 
 A pedido de Mario se agregaron dos láminas de conclusiones (30 y 31) a `presentaciones/avances_tesis_06-11-2026`, tomadas del borrador de Conclusiones. La presentación queda en 39 láminas (33 principales y 6 anexos), versión 7. Verificadas con captura.
+
+## 23-11-2026 — Lámina 29 al día
+
+A pedido de Mario, la lámina "Qué responde la tesis" pasó a las cifras de la reapertura del 22-11 (+0,029 y +0,036; +0,001 con posición; +0,047 sobre el placebo), para coincidir con las conclusiones. El pie indica las cifras del 16-11.

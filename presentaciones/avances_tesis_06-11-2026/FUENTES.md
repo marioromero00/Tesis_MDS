@@ -36,6 +36,8 @@ Rutas relativas al repositorio, salvo indicación explícita. Los resultados ant
 - resultados/profesor_binario_reconstruido_29-10-2026/comparacion_profesores_modelos.csv
 - resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md
 - resultados/protocolo_hipotesis_reintento_06-11-2026/verificacion_simulada.json
+- resultados/reapertura_41p_22-11-2026/INFORME.md
+- resultados/reapertura_fase3_41p_22-11-2026/INFORME.md
 - resultados/red_cruda_41p_23-11-2026/INFORME.md
 - resultados/temporalidad_eeg_v2_test_29-10-2026/INFORME.md
 - resultados/temporalidad_eeg_v2_test_29-10-2026/predicciones_test.csv.gz
