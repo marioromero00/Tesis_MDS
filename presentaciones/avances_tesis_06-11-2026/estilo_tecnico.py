@@ -9,7 +9,7 @@ from sklearn.metrics import roc_curve,roc_auc_score
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 ASSETS=HERE/'graficos';ASSETS.mkdir(exist_ok=True)
-BLUE='#1559a6';LIGHT='#5e9bd6';DARK='#163550';GRAY='#65758a';ORANGE='#c46a1b'
+BLUE='#3333b3';LIGHT='#8c8cd9';DARK='#163550';GRAY='#65758a';ORANGE='#c46a1b'
 plt.rcParams.update({'font.family':'Arial','font.size':14,'axes.labelcolor':DARK,'text.color':DARK,'xtick.color':'#3e5268','ytick.color':'#3e5268','xtick.labelsize':13,'ytick.labelsize':13,'axes.spines.top':False,'axes.spines.right':False,'axes.edgecolor':'#cbd5e1','grid.color':'#e5ebf2','axes.titlesize':14,'figure.facecolor':'white','axes.facecolor':'white','savefig.facecolor':'white'})
 from matplotlib.ticker import FuncFormatter
 def c(x,d=3,sign=False):
@@ -355,6 +355,29 @@ def apply(slides):
  methods=dict(chapter='06 · RESULTADOS CORREGIDOS',title='Activación V2: protocolo de entrenamiento',body=table(['Componente','Configuración'],[['Estimador','HistGradientBoostingClassifier'],['Búsqueda interna','7 / 15 hojas; 5 folds por participante; contextos 1 / 8 / 32'],['Parámetros finales','15 hojas · 300 iteraciones · learning rate 0,05 · L2 = 10'],['Selección','Promedio de AUC interna; configuración compartida entre contextos'],['Verificación','30 ajustes internos · 15 modelos OOF · 3 modelos finales']])+'<p class="technical-note">Ponderación por participante y clase. Imputación y escalado ajustados solo con train. Modelos finales congelados antes de la evaluación externa de esta corrida.</p>',notes='min_samples_leaf=30; early_stopping=False; random_state=20261101. Preprocesamiento: mediana, indicadores de ausencia y StandardScaler. La representación temporal concatena ventana actual, media y desviación del historial disponible. Exposición histórica de test: esta congelación no restaura independencia.',source='resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json',kind='')
  rocslide=dict(chapter='06 · RESULTADOS CORREGIDOS',title='Activación V2: curvas ROC en test',body=img('roc_activacion','ROC promedio de 8 participantes · 2.184 ventanas. AUC por persona verificada contra las métricas guardadas. Rendimiento próximo a la referencia aleatoria.'),notes='Curvas individuales interpoladas sobre una malla FPR común y promediadas. La leyenda presenta media de AUC calculadas directamente por participante, no el área aproximada bajo la curva interpolada. Los IC de los tres AUC absolutos incluyen 0,50.',source='resultados/activacion_gsr_v2_recalculo_02-11-2026/predicciones_externas.csv.gz; resultados/activacion_gsr_v2_recalculo_02-11-2026/metricas.csv',kind='')
  slides.insert(17,methods);slides.insert(19,rocslide)
+ # G) Huella ocular en el EEG, limpieza y red sobre la señal cruda (23-11-2026)
+ mo=read('resultados/montaje_ocular_41p_23-11-2026/resumen_canales.csv').set_index('name_default')
+ orden=['Fp1','Fp2','F7','F8','F3','F4','C3','C4','T7','T8','P7','P8','P3','P4','O1','O2']
+ f,ax=fig(11,3.6);v=mo.loc[orden,'blink_ptp_uv_median'].to_numpy()
+ ax.bar(range(16),v,color=BLUE,width=.72)
+ for j,x in enumerate(v):ax.text(j,x+3,c(x,0),ha='center',fontsize=12)
+ for x0,x1,t in [(-.5,5.5,'Frontales'),(5.5,9.5,'Centrales y temporales'),(9.5,15.5,'Parietales y occipitales')]:
+  ax.text((x0+x1)/2,172,t,ha='center',fontsize=13,color=GRAY)
+ for x0 in (5.5,9.5):ax.axvline(x0,color='#cbd5e1',lw=1)
+ ax.set(xticks=range(16),xticklabels=orden,ylim=(0,185),ylabel='Amplitud del parpadeo (µV)');ax.grid(axis='y');ax.set_axisbelow(True);save(f,'ocular_parpadeo')
+ li=read('resultados/limpieza_ocular_41p_23-11-2026/descriptivos.csv').set_index('item')
+ f,ax=fig(11,3.4)
+ its=[('EEG original','AUC eeg_c1',GRAY),('Sin 1 componente ocular','AUC ica1_full',BLUE),('Sin 2 componentes oculares','AUC ica2_full',BLUE),('Sin 3 componentes oculares','AUC ica3_full',BLUE),('Sin 4 componentes oculares','AUC ica4_full',BLUE),('Control: sin 3 componentes no oculares','AUC ctrl3_full',LIGHT)]
+ for j,(l_,k_,col) in enumerate(its):
+  r=li.loc[k_];ax.errorbar(r.delta,j,xerr=[[r.delta-r.low95],[r.high95-r.delta]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(.722,j,c(r.delta,3),va='center',fontsize=13)
+ ax.set(yticks=range(6),yticklabels=[i[0] for i in its],ylim=(5.5,-.5),xlim=(.58,.74),xlabel='AUC de atención por persona, solo EEG (41 personas)');comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'limpieza_ocular')
+ rd=read('resultados/red_cruda_41p_23-11-2026/descriptivos.csv').set_index('item')
+ f,ax=fig(11,3.4)
+ its=[('Atención · red, EEG original','AUC red_orig',BLUE),('Atención · HGB, EEG original','AUC eeg_c1',GRAY),('Atención · red, EEG sin componentes oculares','AUC red_ica3',BLUE),('Atención · HGB, EEG sin componentes oculares','AUC ica3_full',GRAY),('Activación · red, EEG original','AUC red_act',BLUE),('Activación · HGB, solo EEG','AUC hgb_eeg_act',GRAY)]
+ for j,(l_,k_,col) in enumerate(its):
+  r=rd.loc[k_];ax.errorbar(r.delta,j,xerr=[[r.delta-r.low95],[r.high95-r.delta]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(.757,j,c(r.delta,3),va='center',fontsize=13)
+ ax.axvline(.5,color=ORANGE,ls='--',lw=1.2);ax.axhline(3.5,color='#cbd5e1',lw=1)
+ ax.set(yticks=range(6),yticklabels=[i[0] for i in its],ylim=(5.5,-.5),xlim=(.46,.78),xlabel='AUC por persona (41 personas). Línea punteada: azar');comma_axis(ax,'x',2);ax.grid(axis='x');save(f,'red_cruda')
  (ASSETS/'auditoria_graficos.json').write_text(json.dumps(dict(source_sha256=inputs,roc_auc_checks=metrics_checks,confidence_intervals='from archived participant bootstrap; no new inference',rendering='Matplotlib; SVG editable and embedded PNG for offline HTML'),indent=2))
  return slides
 

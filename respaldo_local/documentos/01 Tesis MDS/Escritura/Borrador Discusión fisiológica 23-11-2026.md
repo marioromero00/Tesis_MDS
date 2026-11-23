@@ -46,7 +46,7 @@ Fuente: `resultados/red_cruda_41p_23-11-2026/INFORME.md`.
 
 ## 8.y Por qué el Arousal Score no se detecta desde el EEG
 
-Con la ventana actual, ningún modelo queda claramente por sobre el azar en activación: 0,524 con el EEG, 0,518 al agregar mirada y pupila, y 0,499 con la red convolucional sobre la señal cruda. La fisiología de la respuesta electrodérmica ofrece tres explicaciones compatibles con este resultado.
+Con la ventana actual, ningún modelo queda claramente por sobre el azar en activación: 0,524 con el EEG, 0,518 al agregar mirada y pupila, y 0,498 con la red convolucional sobre la señal cruda. La fisiología de la respuesta electrodérmica ofrece tres explicaciones compatibles con este resultado.
 
 **Origen de la señal.** La conductancia de la piel refleja la actividad de las glándulas sudoríparas ecrinas, bajo control del sistema nervioso simpático (Boucsein et al., 2012). Su regulación central involucra a la corteza prefrontal ventromedial, el cíngulo anterior, la amígdala, el hipotálamo y el tronco encefálico (Critchley, 2002). Se trata de estructuras mediales y profundas, cuya actividad contribuye poco a un EEG de superficie de 16 canales.
 

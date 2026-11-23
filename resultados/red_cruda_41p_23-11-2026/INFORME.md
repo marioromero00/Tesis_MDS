@@ -4,7 +4,7 @@ Script `scripts/red_cruda_41p.py`. Protocolo registrado y publicado antes de cor
 
 **Pregunta:** ¿un modelo que aprende directamente de la señal cruda del EEG detecta mejor que el modelo de referencia (HGB sobre variables calculadas)? ¿Y esa detección también depende de los componentes oculares?
 
-**Respuesta corta:** en atención sí supera al modelo de referencia (0,716 frente a 0,681), pero la ventaja está ligada a la señal ocular: al quitar los componentes oculares la red cae a 0,649. En activación la red queda en el azar (0,499).
+**Respuesta corta:** en atención sí supera al modelo de referencia (0,716 frente a 0,681), pero la ventaja está ligada a la señal ocular: al quitar los componentes oculares la red cae a 0,649. En activación la red queda en el azar (0,498).
 
 ## Método
 
@@ -30,7 +30,7 @@ AUC por persona (media e IC 95 %):
 | Atención | HGB, EEG original | 0,681 [0,665; 0,697] | 41/41 |
 | Atención | Red, EEG limpio | 0,649 [0,630; 0,667] | 41/41 |
 | Atención | HGB, EEG limpio | 0,621 [0,607; 0,635] | 41/41 |
-| Activación | Red, EEG original | 0,499 [0,478; 0,518] | 20/41 |
+| Activación | Red, EEG original | 0,498 [0,478; 0,518] | 20/41 |
 | Activación | HGB, solo EEG | 0,524 [0,497; 0,551] | 26/41 |
 | Activación | HGB, EEG + mirada + pupila (22-11) | 0,518 [0,491; 0,545] | 22/41 |
 
@@ -39,7 +39,7 @@ AUC por persona (media e IC 95 %):
 1. **En atención, la red sobre la señal cruda supera al modelo de referencia en unos 0,035 de AUC.** Es el primer modelo más complejo que lo logra. El signo se mantiene en las 5 particiones. Supera el margen de relevancia por poco (ver límites).
 2. **La ventaja de la red está ligada a la señal ocular.** Al quitar los 3 componentes oculares pierde 0,067, algo más que el HGB (0,060). Su probabilidad se asocia con el recorrido de la mirada más que la del HGB (Spearman 0,48 frente a 0,41) y, tras la limpieza, esa asociación sigue en 0,33. La red aprovecha mejor la huella de los ojos en el EEG; no hay base para leerla como detección cerebral.
 3. **La ventaja persiste, menor, con el EEG limpio (+0,028).** No prueba información neuronal: la limpieza es parcial, y la red puede estar aprovechando mejor el residuo ocular.
-4. **En activación la red no detecta nada** (0,499). Tampoco el HGB con solo EEG queda claramente sobre el azar (0,524; p = 0,09). La comparación entre ambos es inconclusa: los datos descartan que la red supere al HGB por 0,02 o más, y apuntan a igual o peor.
+4. **En activación la red no detecta nada** (0,498). Tampoco el HGB con solo EEG queda claramente sobre el azar (0,524; p = 0,09). La comparación entre ambos es inconclusa: los datos descartan que la red supere al HGB por 0,02 o más, y apuntan a igual o peor.
 
 Para la tesis: un modelo más complejo sube la detección de atención por EEG, pero refuerza la conclusión del experimento de limpieza —lo que se detecta es sobre todo la conducta ocular— y no cambia el resultado de activación.
 

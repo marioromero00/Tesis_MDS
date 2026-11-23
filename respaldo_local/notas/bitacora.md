@@ -221,10 +221,14 @@ Mario pide probar modelos más complejos. Los modelos complejos sobre variables 
 
 - `resultados/red_cruda_41p_23-11-2026/`, registrado antes de correr en `0074c60`, enmienda `7e1f1e0` antes de ver resultados de las redes, auditorías de código y de resultados sin hallazgos bloqueantes.
 - Atención: red 0,716 frente a HGB 0,681 (R1 +0,035 [+0,023; +0,047], efecto relevante con holgura mínima). Con EEG limpio: red 0,649 frente a HGB 0,621 (R2 +0,028, respaldo). Red original − red limpia: +0,067 [+0,053; +0,082] (R3, efecto relevante, sin control propio).
-- Activación: red 0,499, HGB solo EEG 0,524; R4 −0,025 [−0,055; +0,003], inconcluso.
+- Activación: red 0,498, HGB solo EEG 0,524; R4 −0,025 [−0,055; +0,003], inconcluso.
 - Lectura: la red aprovecha mejor la huella ocular en el EEG; no cambia la conclusión de la limpieza ni el resultado de activación. Vale para una sola arquitectura sin búsqueda.
 - Tensores en `datos/locales/v2_2025/red_cruda_tensores/` (fuera de Git, con hashes).
 
 ## 23-11-2026 — Sustento fisiológico y borrador de discusión
 
 A pedido de Mario: `notas/sustento-fisiologico-23-11-2026.md` (18 referencias verificadas en OpenAlex, textos completos no leídos) y `documentos/01 Tesis MDS/Escritura/Borrador Discusión fisiológica 23-11-2026.md` (borrador para el Capítulo 8; no reemplaza el del 18-11 ni cierra decisiones abiertas).
+
+## 23-11-2026 — Presentación versión 7 (estilo tipo Beamer)
+
+A pedido de Mario. `repos/Tesis_MDS/presentaciones/avances_tesis_06-11-2026/`: la versión 6 quedó archivada en `version_6/`. Cambios: capítulo nuevo «Qué detecta el EEG» (5 diapositivas: huella ocular, limpieza, red sobre la señal cruda y explicación fisiológica de atención y activación), fila nueva en «Qué responde la tesis», diapositiva «Qué falta para cerrar la experimentación» y anexo F con referencias. 37 diapositivas. Tema visual nuevo en `tema_beamer.py` (barra lateral y franja superior azules, portada con título en recuadro); los gráficos se regeneraron con el mismo azul. Sin resultados nuevos. Corrección: la AUC de la red en activación es 0,498 (0,4985), no 0,499; corregida en informe, READMEs y notas.

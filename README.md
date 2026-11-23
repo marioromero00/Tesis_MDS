@@ -8,7 +8,7 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Cuatro enfoques nuevos — 22-11-2026
 
-**Red convolucional sobre el EEG crudo del 23-11-2026 (lo más reciente):** [informe](resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que la ventaja está ligada a la señal ocular. En activación la red queda en el azar (0,499) y la comparación con el HGB es inconclusa.
+**Red convolucional sobre el EEG crudo del 23-11-2026 (lo más reciente):** [informe](resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que la ventaja está ligada a la señal ocular. En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
 
 **Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621 y la parte defendible como no ocular queda en 0,55–0,56.
 

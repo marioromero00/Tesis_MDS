@@ -6,7 +6,7 @@ Le cuento qué pasó desde la última reunión. En atención hay una mejora con 
 
 ## 02. De qué voy a hablar
 
-Son ocho partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.
+Son nueve partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.
 
 ## 03. La hipótesis
 
@@ -92,30 +92,58 @@ Con la misma familia de modelo, en atención la fusión tardía le gana a la tem
 
 En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.
 
-## 24. Qué responde la tesis
+## 24. Los movimientos de los ojos se ven en el EEG
 
-La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo pega 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además respalda el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.
 
-## 25. Necesito decidir cuatro cosas con usted
+## 25. Al quitar los componentes oculares, la detección de atención cae
+
+Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que 0,06 es una cota inferior. Registrado antes de correr y auditado.
+
+## 26. Una red sobre la señal cruda rinde más, pero por la misma huella ocular
+
+Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa el margen de 0,02 por poco. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
+
+## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
+
+La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es sobre todo lo observado, no lo atendido. Las referencias están verificadas en catálogo; me falta confirmarlas en el texto completo.
+
+## 28. Por qué la activación no se detecta desde el EEG
+
+La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es profunda y lenta. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: lo que ayuda en activación es el historial de los segundos previos.
+
+## 29. Qué responde la tesis
+
+La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, el EEG detecta sobre todo la huella de los ojos. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+
+## 30. Qué falta para cerrar la experimentación
+
+Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.
+
+## 31. Necesito decidir cuatro cosas con usted
 
 La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto.
 
-## 26. Atención: curvas ROC en test
+## 32. Atención: curvas ROC en test
 
 La AUC de la leyenda es la media de las AUC por persona.
 
-## 27. Activación: curvas ROC en test
+## 33. Activación: curvas ROC en test
 
 Las tres curvas van pegadas a la diagonal.
 
-## 28. Señales
+## 34. Señales
 
 La EEG la uso por canal desde octubre; antes promediaba los canales.
 
-## 29. Configuración del entrenamiento de activación
+## 35. Configuración del entrenamiento de activación
 
 La misma configuración para los tres largos de historial.
 
-## 30. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
+## 36. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
 
 El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.
+
+## 37. Referencias de la explicación fisiológica
+
+La lista completa con DOI está en la nota de sustento fisiológico. Los años de tres trabajos difieren entre la fecha en línea y la del volumen.

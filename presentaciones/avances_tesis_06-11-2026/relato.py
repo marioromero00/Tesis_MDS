@@ -52,9 +52,10 @@ def apply(old):
    '<li><b>Las etiquetas</b><span>Atención con PCA y un error en activación</span></li>'
    '<li><b>Resultados con 41 personas</b><span>Mejora en atención; en activación no alcanza</span></li>'
    '<li><b>Qué explica la mejora</b><span>Placebo, segundos en la página y activación</span></li>'
-   '<li><b>Dónde quedo</b><span>Qué responde la tesis y cuatro decisiones</span></li>'
+   '<li><b>Qué detecta el EEG</b><span>La huella de los ojos y por qué activación no sale</span></li>'
+   '<li><b>Dónde quedo</b><span>Qué responde la tesis, qué falta y cuatro decisiones</span></li>'
    '</ol>',
-   'Son ocho partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.',
+   'Son nueve partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.',
    'FUENTES.md','roomy')
  S(D1,'La hipótesis',
    '<blockquote>“Los modelos temporales multimodales obtienen un mejor desempeño fuera de muestra que los modelos estáticos comparables en la detección de emociones y atención durante la navegación web.”</blockquote>'
@@ -171,10 +172,42 @@ def apply(old):
    img('sesion_pagina','Modelo con historial. Izquierda: quintos del tiempo de sesión. Derecha: AUC por tipo de página.'),
    'En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.',
    'resultados/ampliacion_41p_16-11-2026/INFORME.md')
+ D7='QUÉ DETECTA EL EEG'
+ MON='resultados/montaje_ocular_41p_23-11-2026/INFORME.md';LIM='resultados/limpieza_ocular_41p_23-11-2026/INFORME.md';RED='resultados/red_cruda_41p_23-11-2026/INFORME.md'
+ FIS='../../notas/sustento-fisiologico-23-11-2026.md'
+ S(D7,'Los movimientos de los ojos se ven en el EEG',
+   img('ocular_parpadeo','Respuesta promedio al parpadeo por canal, mediana de las 41 personas. Nombres según el montaje por defecto del equipo.'),
+   'La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo pega 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además respalda el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.',
+   MON)
+ S(D7,'Al quitar los componentes oculares, la detección de atención cae',
+   img('limpieza_ocular','Componentes oculares: 3,5 % de la varianza del EEG. Componentes del control: 72 %.'),
+   'Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que 0,06 es una cota inferior. Registrado antes de correr y auditado.',
+   LIM)
+ S(D7,'Una red sobre la señal cruda rinde más, pero por la misma huella ocular',
+   img('red_cruda','Red convolucional tipo EEGNet sobre el EEG crudo. HGB: modelo de referencia con variables calculadas.'),
+   'Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa el margen de 0,02 por poco. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.',
+   RED)
+ S(D7,'Por qué: el ojo genera señal eléctrica que llega a los electrodos',
+   table(['Mecanismo','Qué produce en el EEG','En mis datos'],[['Dipolo córneo-retinal','Cada giro del ojo cambia el potencial frontal','Mirada horizontal con signo opuesto en F7 y F8'],['Párpado sobre la córnea','Onda grande en la frente al parpadear','150 µV adelante, 20 µV atrás'],['Músculos del ojo al iniciar una sacada','Descarga breve de banda ancha','Alfa y beta también caen al limpiar'],['Respuesta visual tras cada fijación','Actividad occipital real, pero sigue a los ojos','No se puede separar del artefacto']])
+   +caption('Croft y Barry (2000); Plöchl et al. (2012); Iwasaki et al. (2005); Keren et al. (2010); Dimigen et al. (2011).'),
+   'La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es sobre todo lo observado, no lo atendido. Las referencias están verificadas en catálogo; me falta confirmarlas en el texto completo.',
+   FIS+'; '+LIM)
+ S(D7,'Por qué la activación no se detecta desde el EEG',
+   table(['Razón','Qué dice la fisiología','En mis datos'],[['Origen','La GSR depende de estructuras profundas: amígdala, hipotálamo, tronco','EEG de 16 canales: AUC 0,52'],['Tiempos','La respuesta tarda 1 a 3 s en aparecer y varios en recuperarse','El historial de 6 a 12 s sí ayuda'],['Tipo de relación','EEG y GSR se relacionan entre condiciones, no ventana a ventana','Etiqueta relativa a la mediana de la persona'],['Pupila','Responde a la luz y al enfoque, además de la activación','Agregar pupila y mirada no mejora']])
+   +caption('Boucsein et al. (2012); Critchley (2002); Benedek y Kaernbach (2010); Barry et al. (2007); Mathôt (2018).'),
+   'La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es profunda y lenta. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: lo que ayuda en activación es el historial de los segundos previos.',
+   FIS+'; '+RED)
  S('DÓNDE QUEDO','Qué responde la tesis',
-   table(['','Atención','Activación'],[['Mejora con historial','+0,026 [+0,018; +0,035]','+0,034 [−0,001; +0,069]'],['¿Es información temporal?','No: el placebo da lo mismo; la explican los segundos en la página','Sí: +0,046 sobre el placebo, sin tocar la etiqueta'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor (+0,012)','Sin diferencias']])+caption('Con los criterios del manuscrito: apoyo parcial, y viene de activación.'),
-   'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
-   'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/explicativo_posicion_41p_18-11-2026/INFORME.md','roomy')
+   table(['','Atención','Activación'],[['Mejora con historial','+0,026 [+0,018; +0,035]','+0,034 [−0,001; +0,069]'],['¿Es información temporal?','No: el placebo da lo mismo; la explican los segundos en la página','Sí: +0,046 sobre el placebo, sin tocar la etiqueta'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor (+0,012)','Sin diferencias'],['¿Qué detecta el EEG?','Sobre todo la conducta ocular: 0,681 → 0,621 al limpiar','Nada con la ventana actual: 0,52']])+caption('Con los criterios del manuscrito: apoyo parcial, y viene de activación.'),
+   'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, el EEG detecta sobre todo la huella de los ojos. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
+   'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/explicativo_posicion_41p_18-11-2026/INFORME.md; '+LIM+'; '+RED)
+ S(D6,'Qué falta para cerrar la experimentación',
+   '<div class="timeline3"><div><b>Experimentos</b><span>Ninguno imprescindible</span><p>Las conclusiones ya no cambian con más corridas sobre estas 41 personas.</p></div>'
+   '<div><b>Decisiones</b><span>Con el profesor guía</span><p>Qué etiqueta de atención usar, el margen de 0,02, activación en vez de emociones y el encuadre.</p></div>'
+   '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Resultados y discusión al día, conclusiones y esta presentación.</p></div></div>'
+   +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, y una cohorte nueva para confirmar.'),
+   'Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.',
+   '../../notas/resumen-ultimo-mes-22-11-2026.md; '+LIM+'; '+RED)
  S(D6,'Necesito decidir cuatro cosas con usted',
    '<ol class="questions">'
    '<li><b>¿Escribo con estos resultados o planifico una cohorte para confirmar activación?</b><span>Las 41 personas ya se habían consultado: lo de activación es exploratorio.</span></li>'
@@ -208,6 +241,11 @@ def apply(old):
    'El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.',
    PROT+'INFORME.md; '+PROT+'verificacion_simulada.json')
 
+ S(AX+' F','Referencias de la explicación fisiológica',
+   table(['Tema','Referencias'],[['Artefactos oculares en el EEG','Croft y Barry (2000) · Iwasaki et al. (2005) · Plöchl, Ossandón y König (2012)'],['Sacadas y actividad muscular','Yuval-Greenberg et al. (2008) · Keren et al. (2010) · Hipp y Siegel (2013) · Goncharova et al. (2003)'],['Limpieza y potenciales de fijación','Jung et al. (2000) · Dimigen (2020) · Dimigen et al. (2011)'],['Atención y red convolucional','Klimesch (2012) · Lawhern et al. (2018)'],['Activación, GSR y pupila','Boucsein et al. (2012) · Critchley (2002) · Benedek y Kaernbach (2010) · Barry et al. (2005, 2007) · Mathôt (2018)']])
+   +caption('Verificadas en OpenAlex el 23-11-2026 (título, autores, revista y DOI). Falta confirmarlas en el texto completo.'),
+   'La lista completa con DOI está en la nota de sustento fisiológico. Los años de tres trabajos difieren entre la fecha en línea y la del volumen.',
+   FIS,'compact')
  for x in out:
   for k in ('title','body'):x[k]=x[k].replace(' %',' %')
  return out
