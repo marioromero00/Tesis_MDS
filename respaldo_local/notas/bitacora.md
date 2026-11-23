@@ -236,3 +236,7 @@ A pedido de Mario. `repos/Tesis_MDS/presentaciones/avances_tesis_06-11-2026/`: l
 ## 23-11-2026 — Cierre consolidado y comprobación de reproducibilidad
 
 A pedido de Mario. `repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md` reemplaza como referencia al cierre del 22-11: reúne las 12 etapas del 16 al 23-11 con sus decisiones y commits. `scripts/verificar_cierre.py` (salida en `resultados/verificacion_cierre_23-11-2026/`): 288 de 289 archivos con hash coinciden con lo registrado; la diferencia es el script de limpieza ocular, por la enmienda v2 documentada (`441bae9`). Protocolo anterior al informe en las 10 etapas con informe propio; carpetas sin cambios pendientes; HEAD igual a origin/main. No se reentrenó nada. Etiqueta `cierre-experimental-2026-11-23`.
+
+## 23-11-2026 — Borrador de Conclusiones
+
+A pedido de Mario se redactó `documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md` (Capítulo 9, secciones 9.1 a 9.7) a partir del cierre consolidado y los informes. No cierra las cinco decisiones abiertas con el profesor: las supone de forma provisoria y lo declara al inicio. `Estructura Tesis` conserva el capítulo como pendiente. Sin experimentos nuevos.
