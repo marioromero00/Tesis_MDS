@@ -116,34 +116,42 @@ La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas baj
 
 La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, el EEG detecta sobre todo la huella de los ojos. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
-## 30. Qué falta para cerrar la experimentación
+## 30. Conclusiones: la hipótesis tiene apoyo parcial
+
+Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto es real frente al placebo, pero pequeño y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.
+
+## 31. Conclusiones: qué detecta el EEG
+
+La conclusión metodológica más importante es la tercera. Cumplí la regla de no-circularidad entre señales, pero el EEG contiene la huella eléctrica de los ojos, así que la etiqueta y la entrada no son independientes. Estas conclusiones suponen de forma provisoria las decisiones que le consulto en la última lámina.
+
+## 32. Qué falta para cerrar la experimentación
 
 Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.
 
-## 31. Necesito decidir cuatro cosas con usted
+## 33. Necesito decidir cuatro cosas con usted
 
 La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto.
 
-## 32. Atención: curvas ROC en test
+## 34. Atención: curvas ROC en test
 
 La AUC de la leyenda es la media de las AUC por persona.
 
-## 33. Activación: curvas ROC en test
+## 35. Activación: curvas ROC en test
 
 Las tres curvas van pegadas a la diagonal.
 
-## 34. Señales
+## 36. Señales
 
 La EEG la uso por canal desde octubre; antes promediaba los canales.
 
-## 35. Configuración del entrenamiento de activación
+## 37. Configuración del entrenamiento de activación
 
 La misma configuración para los tres largos de historial.
 
-## 36. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
+## 38. Para activación, la muestra necesaria cambia de 72 a 767 según qué variabilidad use
 
 El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.
 
-## 37. Referencias de la explicación fisiológica
+## 39. Referencias de la explicación fisiológica
 
 La lista completa con DOI está en la nota de sustento fisiológico. Los años de tres trabajos difieren entre la fecha en línea y la del volumen.

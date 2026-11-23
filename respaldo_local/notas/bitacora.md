@@ -240,3 +240,7 @@ A pedido de Mario. `repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-1
 ## 23-11-2026 — Borrador de Conclusiones
 
 A pedido de Mario se redactó `documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md` (Capítulo 9, secciones 9.1 a 9.7) a partir del cierre consolidado y los informes. No cierra las cinco decisiones abiertas con el profesor: las supone de forma provisoria y lo declara al inicio. `Estructura Tesis` conserva el capítulo como pendiente. Sin experimentos nuevos.
+
+## 23-11-2026 — Conclusiones en la presentación
+
+A pedido de Mario se agregaron dos láminas de conclusiones (30 y 31) a `presentaciones/avances_tesis_06-11-2026`, tomadas del borrador de Conclusiones. La presentación queda en 39 láminas (33 principales y 6 anexos), versión 7. Verificadas con captura.

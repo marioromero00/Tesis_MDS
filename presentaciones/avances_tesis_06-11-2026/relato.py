@@ -53,7 +53,7 @@ def apply(old):
    '<li><b>Resultados con 41 personas</b><span>Mejora en atención; en activación no alcanza</span></li>'
    '<li><b>Qué explica la mejora</b><span>Placebo, segundos en la página y activación</span></li>'
    '<li><b>Qué detecta el EEG</b><span>La huella de los ojos y por qué activación no sale</span></li>'
-   '<li><b>Dónde quedo</b><span>Qué responde la tesis, qué falta y cuatro decisiones</span></li>'
+   '<li><b>Dónde quedo</b><span>Conclusiones, qué falta y cuatro decisiones</span></li>'
    '</ol>',
    'Son nueve partes. La más larga es la del error en la etiqueta de activación, porque cambió todo lo que tenía de activación.',
    'FUENTES.md','roomy')
@@ -201,10 +201,29 @@ def apply(old):
    table(['','Atención','Activación'],[['Mejora con historial','+0,026 [+0,018; +0,035]','+0,034 [−0,001; +0,069]'],['¿Es información temporal?','No: el placebo da lo mismo; la explican los segundos en la página','Sí: +0,046 sobre el placebo, sin tocar la etiqueta'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor (+0,012)','Sin diferencias'],['¿Qué detecta el EEG?','Sobre todo la conducta ocular: 0,681 → 0,621 al limpiar','Nada con la ventana actual: 0,52']])+caption('Con los criterios del manuscrito: apoyo parcial, y viene de activación.'),
    'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, el EEG detecta sobre todo la huella de los ojos. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
    'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/explicativo_posicion_41p_18-11-2026/INFORME.md; '+LIM+'; '+RED)
+ CON='../../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md; documentacion/Cierre_Experimental_Final_23-11-2026.md'
+ S(D6,'Conclusiones: la hipótesis tiene apoyo parcial',
+   '<ol class="questions">'
+   '<li><b>El apoyo viene de activación.</b><span>Con historial: +0,036 [+0,010; +0,065]. Se mantiene frente al placebo y sin el intervalo de la etiqueta: +0,047 [+0,018; +0,078].</span></li>'
+   '<li><b>En activación la información es de corto alcance.</b><span>Está en los 6 a 12 s anteriores y desaparece desde los 24 s. Las AUC son bajas: 0,52 a 0,59.</span></li>'
+   '<li><b>En atención la mejora no es temporal.</b><span>Con historial: +0,029 [+0,021; +0,037]. Si el modelo conoce la posición en la página, el historial agrega +0,001.</span></li>'
+   '<li><b>Ni el orden de las ventanas ni la fusión explican el desempeño.</b><span>La GRU rinde 0,040 menos en atención. La fusión tardía gana solo en atención: +0,012.</span></li>'
+   '</ol>',
+   'Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto es real frente al placebo, pero pequeño y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.',
+   CON+'; '+LIM)
+ S(D6,'Conclusiones: qué detecta el EEG',
+   '<ol class="questions">'
+   '<li><b>En atención, el EEG detecta sobre todo los ojos.</b><span>La AUC baja de 0,681 a 0,621 al quitar tres componentes oculares (3,5 % de la varianza). El control queda en 0,674.</span></li>'
+   '<li><b>Un modelo más complejo no cambia la lectura.</b><span>La red sobre la señal cruda llega a 0,716, pero su ventaja también es ocular. En activación queda en 0,498.</span></li>'
+   '<li><b>Separar las señales no asegura independencia fisiológica.</b><span>La etiqueta se define con lo Observado y el EEG registra esa misma conducta. No puedo afirmar que detecte lo Atendido.</span></li>'
+   '<li><b>El aporte es doble.</b><span>Evidencia acotada de que la activación es un proceso dinámico, y una advertencia sobre evaluar modelos de EEG con etiquetas oculares.</span></li>'
+   '</ol>',
+   'La conclusión metodológica más importante es la tercera. Cumplí la regla de no-circularidad entre señales, pero el EEG contiene la huella eléctrica de los ojos, así que la etiqueta y la entrada no son independientes. Estas conclusiones suponen de forma provisoria las decisiones que le consulto en la última lámina.',
+   CON+'; '+RED)
  S(D6,'Qué falta para cerrar la experimentación',
    '<div class="timeline3"><div><b>Experimentos</b><span>Ninguno imprescindible</span><p>Las conclusiones ya no cambian con más corridas sobre estas 41 personas.</p></div>'
    '<div><b>Decisiones</b><span>Con el profesor guía</span><p>Qué etiqueta de atención usar, el margen de 0,02, activación en vez de emociones y el encuadre.</p></div>'
-   '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Resultados y discusión al día, conclusiones y esta presentación.</p></div></div>'
+   '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Integrar los resultados del 22 y 23-11 al borrador y ajustar las conclusiones según lo que se decida.</p></div></div>'
    +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, y una cohorte nueva para confirmar.'),
    'Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.',
    '../../notas/resumen-ultimo-mes-22-11-2026.md; '+LIM+'; '+RED)

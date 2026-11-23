@@ -2,6 +2,7 @@
 
 Rutas relativas al repositorio, salvo indicación explícita. Los resultados antiguos son antecedentes, no resultados V2.
 
+- ../../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md
 - ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md
 - ../../documentos/01 Tesis MDS/Analisis de Datos/SINCRONIZACION_SENALES.md
 - ../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md
@@ -9,6 +10,7 @@ Rutas relativas al repositorio, salvo indicación explícita. Los resultados ant
 - ../../notas/pautas-escritura-recuperadas.md
 - ../../notas/resumen-ultimo-mes-22-11-2026.md
 - ../../notas/sustento-fisiologico-23-11-2026.md
+- documentacion/Cierre_Experimental_Final_23-11-2026.md
 - documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md
 - resultados/activacion_diagnostico_nested_30-10-2026/INFORME.md
 - resultados/activacion_diagnostico_nested_30-10-2026/diagnostico_personas.csv

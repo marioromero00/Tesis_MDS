@@ -9,4 +9,4 @@ Abrir index.html en el navegador. No necesita conexión ni librerías externas.
 
 El relato está en relato.py y el tema visual tipo Beamer en tema_beamer.py; los gráficos se generan desde CSV en estilo_tecnico.py. Ejecutar crear_presentacion.py con el Python del entorno .venv regenera el HTML, gráficos y guion. Las versiones anteriores se conservan en version_1 a version_6. Para iterar, indicar número de diapositiva y cambio deseado.
 
-37 diapositivas: 31 principales y 6 anexos. Corte de información: 23 de noviembre de 2026.
+39 diapositivas: 33 principales y 6 anexos. Corte de información: 23 de noviembre de 2026.
