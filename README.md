@@ -6,6 +6,10 @@ Detección temporal multimodal de atención y activación durante navegación we
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
+## Cuatro enfoques nuevos — 22-11-2026
+
+[Informe](resultados/enfoques_41p_22-11-2026/INFORME.md): etiqueta de atención corregida por posición, detección cruzada por señal (con control de artefacto ocular), activación a nivel de estímulo y diferencias entre personas. Es lo más reciente.
+
 ## Reapertura — 22-11-2026
 
 [Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Sigue la [fase 3: historial frente a posición](resultados/reapertura_fase3_41p_22-11-2026/INFORME.md), que es el estado más reciente de los resultados.

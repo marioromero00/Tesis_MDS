@@ -190,3 +190,18 @@ Atención: +0,001 [−0,002; +0,005] en general y −0,000 [−0,003; +0,003] de
 Activación: +0,032 [+0,004; +0,059], 28/41, p 0,027, p Holm 0,108: inconcluso por la regla registrada (mediana +0,031; sin la persona más influyente, que empuja en contra, +0,039 [+0,015; +0,063]). Dentro del mismo estímulo +0,009 [−0,020; +0,037], inconcluso; ahí la posición sola aporta +0,049 [+0,027; +0,072] y el historial no la supera.
 
 Lectura: en atención la mejora del historial es la posición (cerrado). En activación hay dos componentes: dentro del estímulo manda el tiempo transcurrido; entre estímulos el historial aporta y la posición no, pero sin alcanzar el criterio tras Holm. No hay evidencia de dinámica dentro del estímulo.
+
+
+## 2026-11-22 — Cuatro enfoques nuevos
+
+Pedidos por Mario. Resultados: repos/Tesis_MDS/resultados/enfoques_41p_22-11-2026 (INFORME.md). Protocolo v1 en el commit cd25134 y v2 en 4a4798c, ambos antes de ejecutar; la v2 incorpora dos auditorías de código hechas sin resultados. Cinco repeticiones de la CV por persona, Holm por familia.
+
+E1 etiqueta de atención corregida por posición (mediana de la persona dentro del tramo de posición; concuerda 90,6 % con la original): posición sola 0,504; detección sin historial 0,675 frente a 0,683 (−0,008 [−0,015; −0,001]); historial − sin historial +0,010 [+0,006; +0,015]; con posición como variable +0,004, nulo concluyente.
+
+E2 detección cruzada (atención, sin historial): solo EEG 0,681 (41/41), solo GSR 0,545, GSR no agrega al EEG (nulo concluyente). Firma ocular: lento y amplitud 0,673; alfa y beta 0,593; frontales 0,675 y posteriores 0,602 (montaje por defecto OpenBCI, NO verificado). Control barajado 0,496. La probabilidad del modelo se correlaciona sobre todo con el recorrido de la mirada (0,41). El EEG no tiene limpieza de artefactos oculares.
+
+E3 activación por estímulo (1.589 segmentos): AUC 0,587 [0,550; 0,622]; frente al promedio del modelo por ventana con historial +0,020 inconcluso; frente a solo duración +0,048 inconcluso.
+
+E4: fiabilidad por mitades de la AUC 0,76 (atención) y 0,66 (activación); de la ganancia del historial 0,30 y 0,25 (no fiable). Sin correlatos tras Holm. Adaptación a la persona (primer 40 % de la sesión): activación +0,028 sin historial y +0,045 [+0,023; +0,069] con historial; atención nulo concluyente. Es adaptación offline.
+
+Pendiente nuevo: verificar el montaje de electrodos y evaluar limpieza de artefactos oculares; decidir si la etiqueta corregida reemplaza a la original. Resumen del mes en notas/resumen-ultimo-mes-22-11-2026.md.
