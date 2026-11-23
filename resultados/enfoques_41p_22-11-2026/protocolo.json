@@ -1,0 +1,399 @@
+{
+  "created_utc": "2026-11-23T01:04:21.297317+00:00",
+  "approval": "Mario pide los enfoques 1 a 4 el 22-11-2026 (etiqueta de atención corregida, detección cruzada, activación a nivel de estímulo, diferencias entre personas). Registrado antes de correr.",
+  "directed": true,
+  "inputs": {
+    "scripts/enfoques_41p.py": "35256781187a294fe90d0d1c75a0b2a5faea6dc04df3300d1da8a850c6384378",
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "scripts/temporales_core.py": "c30e747eae85f7cc0153e8f456f628f1f6634d0c35da6c5916ba8b827665b12c",
+    "scripts/reconstruir_profesor_atencion_binaria.py": "0b8f08dd083e52bd22ebe727391b0e20495b49ce34efcdcbb13e4268784e4894",
+    "resultados/reapertura_41p_22-11-2026/protocolo.json": "500c6efbbcc5a6a0faa6a4cd7379599f0abfde12fa5e95c4162ba20e1fbe645f",
+    "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz": "8b40510cf8221d23489b4e8c3ff8ba5f22c76821c2c3b1a6f2b4aa105c70fd2d",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+    "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1101.csv.gz": "75122d599dde6b5addb57f64fbcf5b387bc923e5aee053957bb97441607d9304",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1102.csv.gz": "a31ee5bbeb0ffed4006ccbe7f817b10867f70adc2d41309a5457fdad7bdd93b7",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1103.csv.gz": "95ffa695be1ebab52aea55588ab1d7199975a249eb3adfbf2abe9e6af3a34af9",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1104.csv.gz": "469e75704c6682f4ff3cc4d4253d6f7332b23a0c8f59083b1ea866f5d7025aa1",
+    "resultados/reapertura_41p_22-11-2026/rep_atencion_1105.csv.gz": "87434e0012702450da128fb10febf9ced59628b8c2eb83575ba4f5211b13737d",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1101.csv.gz": "bbc70abea64d0b54a56ef36ea92d1799418e0635e8705683eb9d693e2a841a1c",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1102.csv.gz": "a13501ab0b9341074535c78cb628515e0afa25cff06d864e38dbb74cb4a6841e",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1103.csv.gz": "fff6f8d737ba9624ba855ad071980a51127c23d1752eac2dc7bbb1495fe04201",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1104.csv.gz": "2f1d11438de5d54bb391cc7e8ee75175d8a43f601850e643f0f652dcaa148c9f",
+    "resultados/reapertura_41p_22-11-2026/rep_activacion_1105.csv.gz": "be5d1d68db1bdb4339a16a76df6152ce82305ab7f48d02b4a039a7cbbbaf2a80"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "hgb": {
+    "max_iter": 300,
+    "l2_regularization": 10.0,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 30,
+    "early_stopping": false,
+    "random_state": 20261116
+  },
+  "folds_rep": {
+    "1101": [
+      [
+        "P15",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P9"
+      ],
+      [
+        "P10",
+        "P30",
+        "P32",
+        "P33",
+        "P48"
+      ],
+      [
+        "P11",
+        "P18",
+        "P19",
+        "P27",
+        "P38"
+      ],
+      [
+        "P12",
+        "P31",
+        "P36",
+        "P40",
+        "P41"
+      ],
+      [
+        "P16",
+        "P3",
+        "P37",
+        "P4",
+        "P5"
+      ],
+      [
+        "P21",
+        "P26",
+        "P43",
+        "P6",
+        "P8"
+      ],
+      [
+        "P13",
+        "P20",
+        "P28",
+        "P39",
+        "P45"
+      ],
+      [
+        "P2",
+        "P23",
+        "P44",
+        "P46",
+        "P47"
+      ]
+    ],
+    "1102": [
+      [
+        "P22",
+        "P31",
+        "P38",
+        "P39",
+        "P43",
+        "P6"
+      ],
+      [
+        "P16",
+        "P19",
+        "P26",
+        "P28",
+        "P48"
+      ],
+      [
+        "P18",
+        "P2",
+        "P23",
+        "P33",
+        "P8"
+      ],
+      [
+        "P15",
+        "P35",
+        "P41",
+        "P47",
+        "P5"
+      ],
+      [
+        "P11",
+        "P24",
+        "P3",
+        "P37",
+        "P40"
+      ],
+      [
+        "P30",
+        "P32",
+        "P36",
+        "P4",
+        "P44"
+      ],
+      [
+        "P10",
+        "P13",
+        "P20",
+        "P34",
+        "P46"
+      ],
+      [
+        "P12",
+        "P21",
+        "P27",
+        "P45",
+        "P9"
+      ]
+    ],
+    "1103": [
+      [
+        "P11",
+        "P15",
+        "P23",
+        "P32",
+        "P37",
+        "P46"
+      ],
+      [
+        "P24",
+        "P26",
+        "P3",
+        "P35",
+        "P9"
+      ],
+      [
+        "P21",
+        "P27",
+        "P34",
+        "P43",
+        "P48"
+      ],
+      [
+        "P10",
+        "P2",
+        "P4",
+        "P47",
+        "P6"
+      ],
+      [
+        "P18",
+        "P19",
+        "P22",
+        "P40",
+        "P44"
+      ],
+      [
+        "P12",
+        "P20",
+        "P33",
+        "P41",
+        "P5"
+      ],
+      [
+        "P16",
+        "P28",
+        "P36",
+        "P38",
+        "P39"
+      ],
+      [
+        "P13",
+        "P30",
+        "P31",
+        "P45",
+        "P8"
+      ]
+    ],
+    "1104": [
+      [
+        "P2",
+        "P21",
+        "P39",
+        "P44",
+        "P45",
+        "P5"
+      ],
+      [
+        "P12",
+        "P37",
+        "P47",
+        "P48",
+        "P6"
+      ],
+      [
+        "P23",
+        "P38",
+        "P40",
+        "P43",
+        "P9"
+      ],
+      [
+        "P24",
+        "P3",
+        "P36",
+        "P4",
+        "P41"
+      ],
+      [
+        "P10",
+        "P20",
+        "P32",
+        "P33",
+        "P8"
+      ],
+      [
+        "P30",
+        "P31",
+        "P34",
+        "P35",
+        "P46"
+      ],
+      [
+        "P13",
+        "P16",
+        "P18",
+        "P19",
+        "P26"
+      ],
+      [
+        "P11",
+        "P15",
+        "P22",
+        "P27",
+        "P28"
+      ]
+    ],
+    "1105": [
+      [
+        "P19",
+        "P22",
+        "P31",
+        "P41",
+        "P44",
+        "P8"
+      ],
+      [
+        "P16",
+        "P21",
+        "P43",
+        "P47",
+        "P48"
+      ],
+      [
+        "P12",
+        "P23",
+        "P24",
+        "P3",
+        "P35"
+      ],
+      [
+        "P11",
+        "P15",
+        "P27",
+        "P34",
+        "P6"
+      ],
+      [
+        "P18",
+        "P2",
+        "P36",
+        "P38",
+        "P9"
+      ],
+      [
+        "P10",
+        "P32",
+        "P33",
+        "P40",
+        "P5"
+      ],
+      [
+        "P30",
+        "P37",
+        "P39",
+        "P4",
+        "P46"
+      ],
+      [
+        "P13",
+        "P20",
+        "P26",
+        "P28",
+        "P45"
+      ]
+    ]
+  },
+  "seeds": [
+    1101,
+    1102,
+    1103,
+    1104,
+    1105
+  ],
+  "pos_edges": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    12,
+    20
+  ],
+  "shuffle_seed": 20261124,
+  "cal_fraction": 0.4,
+  "cal_gap": 10,
+  "margin": 0.02,
+  "families": {
+    "E1": [
+      "A1 c1 corregida − c1 original",
+      "A2 c32 − c1 (corregida)",
+      "A3 c32_pos − pos_c1 (corregida)"
+    ],
+    "E2": [
+      "eeg_c1 − 0,5",
+      "gsr_c1 − 0,5",
+      "hgb_c1 − eeg_c1",
+      "eeg_c1 − gsr_c1"
+    ],
+    "E3": [
+      "seg − 0,5",
+      "seg − agg_c32",
+      "seg_dur − dur_only"
+    ],
+    "E4c": [
+      "pers_c1 − hgb_c1 y pers_c32 − hgb_c32, en atención y activación"
+    ]
+  },
+  "holm": "dentro de cada familia",
+  "unit": "AUC por persona promediada sobre las 5 particiones; diferencia pareada",
+  "descriptive": [
+    "E1 posición sola, concordancia, prevalencias",
+    "E2 control barajado, Spearman con puntaje y componentes, AUC a igual posición",
+    "E3 duración sola, agg_c1",
+    "E4a fiabilidad por mitades",
+    "E4b correlatos con Holm por tarea y resultado"
+  ],
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Análisis dirigidos sobre personas y resultados ya vistos. Etiquetas offline y variables transductivas por persona. E1: la etiqueta corregida usa medianas por persona y tramo calculadas con toda la sesión (offline, como la original). E3: usa todas las ventanas del segmento, incluidas las posteriores a cada etiqueta; no es causal. E4c: el modelo adaptado ve un 6 % más de datos; la evaluación es sobre la parte final de la sesión, distinta de la de los análisis anteriores."
+}
