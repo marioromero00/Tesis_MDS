@@ -224,3 +224,7 @@ Mario pide probar modelos más complejos. Los modelos complejos sobre variables 
 - Activación: red 0,499, HGB solo EEG 0,524; R4 −0,025 [−0,055; +0,003], inconcluso.
 - Lectura: la red aprovecha mejor la huella ocular en el EEG; no cambia la conclusión de la limpieza ni el resultado de activación. Vale para una sola arquitectura sin búsqueda.
 - Tensores en `datos/locales/v2_2025/red_cruda_tensores/` (fuera de Git, con hashes).
+
+## 23-11-2026 — Sustento fisiológico y borrador de discusión
+
+A pedido de Mario: `notas/sustento-fisiologico-23-11-2026.md` (18 referencias verificadas en OpenAlex, textos completos no leídos) y `documentos/01 Tesis MDS/Escritura/Borrador Discusión fisiológica 23-11-2026.md` (borrador para el Capítulo 8; no reemplaza el del 18-11 ni cierra decisiones abiertas).
