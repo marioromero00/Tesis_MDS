@@ -73,6 +73,7 @@ SEEDS = R.REP_SEEDS
 ICA_SEED, SHUFFLE_SEED = 20261123, 20261125
 KS, K_MAIN = [1, 2, 3, 4], 3
 EOG = [0, 1, 8, 9]
+FLAT, WEAK = ['P23', 'P39'], ['P12', 'P18', 'P22', 'P35', 'P40']   # enmienda v2, definidos sin etiquetas ni resultados
 CONDS = ['identidad'] + [f'ica{k}' for k in KS] + ['ctrl3', 'reg12', 'orig12']
 BROAD = butter(4, [1, 45], btype='bandpass', fs=FS, output='sos')
 NOTCH = iirnotch(50, 30, fs=FS)
@@ -345,6 +346,14 @@ def report():
     for c, g in q.groupby('condition', sort=False):
         for col in ['r_horizontal', 'r_vertical', 'r_parpadeo', 'blink_max_uv']:
             desc.append(dict(item=f'calidad {c}: mediana {col}', delta=float(g[col].median()), people=int(g[col].notna().sum())))
+    # Enmienda v2 (auditoría de código, antes de ver resultados): sensibilidades descriptivas y varianza quitada
+    tests = [('L1', 'eeg_c1', 'ica3_full'), ('L2', 'ctrl3_full', 'ica3_full'), ('L3', 'ica3_full', 'azar'), ('L4', 'ica3_alfa_beta', 'eeg_alfa_beta')]
+    for label, out in [('sin P23 y P39 (canales planos a ratos)', FLAT), ('sin P23, P39 ni identificación ocular débil', FLAT + WEAK)]:
+        desc += [dict(item=f'{t} {label}', **R.contrast(w.drop(index=out), x, y)) for t, x, y in tests]
+    info = pd.read_csv(OUT / 'personas_limpieza.csv')
+    for col in ['var_share_ica3', 'var_share_ctrl3', 'score_1', 'score_2', 'score_3', 'score_4', 'score_control_max']:
+        desc.append(dict(item=f'limpieza: mediana {col}', delta=float(info[col].median()), low95=float(info[col].min()),
+                         high95=float(info[col].max()), people=len(info)))
     conf.to_csv(OUT / 'confirmatorio.csv', index=False)
     pd.DataFrame(desc).to_csv(OUT / 'descriptivos.csv', index=False)
     w.drop(columns='azar').to_csv(OUT / 'auc_por_persona.csv')
