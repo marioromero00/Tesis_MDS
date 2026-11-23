@@ -1,0 +1,431 @@
+{
+  "created_utc": "2026-11-23T12:40:11.676096+00:00",
+  "approval": "Mario pide continuar el 23-11-2026; se aborda el pendiente 2 de los cuatro enfoques. Registrado antes de correr.",
+  "directed": true,
+  "inputs": {
+    "scripts/limpieza_ocular_41p.py": "70049738cd32f6d5cd228773a1392f90d2df4f1f7a5f7e34ba3e8428898ae888",
+    "scripts/montaje_ocular_41p.py": "d35d16f50ac5e4d69ca7599de51520d73b12d216010b11e48be1953dccbd8bed",
+    "scripts/cache_crudos_ocular.py": "3ae66bbe36a7e10de5ee0258a491c8c6cc8620d5411acb21bfc3af153631ed0b",
+    "scripts/eeg_por_canal_v2.py": "ab9a47c6b2230b55b5361d2446ea755cfd6b07b9082365d8a4d3cedb3b79a489",
+    "scripts/preprocesamiento_secuencial.py": "4d09e89a47bb7e6f54955a5b543b8769b889e2f33fdf363a9dd56020e9ddf071",
+    "scripts/enfoques_41p.py": "ef9119ef6e53103e3487c032176b78fb83fa065ebdc32f136c6471402de67f3b",
+    "scripts/reapertura_41p.py": "80c0f28d92f19007499e3baa00ab401bc274e492be3fd55b148dc2c0939daacd",
+    "scripts/cierre_final_41p.py": "e8aefea1e2f235d7dee64e2408a8fc313f9d70660a35b841fe5ba9532b520eb5",
+    "scripts/cierre_experimental_v3.py": "36e780dbde2df7eaf4889a67dd08472ad152758de3c22227d759150503213082",
+    "resultados/reapertura_41p_22-11-2026/protocolo.json": "500c6efbbcc5a6a0faa6a4cd7379599f0abfde12fa5e95c4162ba20e1fbe645f",
+    "resultados/preprocesamiento/caracteristicas_multimodales.csv": "dc51dc19ef18cc21ae0343d042f6f37dda8e6d9bac2e34ea99dddd1d4b9cb10a",
+    "resultados/modelado/particion_participantes.csv": "e77953f9a0fdc746e8f52df868f257139d878d49127cbc683b64fc93017f714f",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/profesor_final.joblib": "24be0c10ce2602cd625ff9bdde09461f5dc6b44049b075ead97d470357de63b6",
+    "resultados/eeg_por_canal_v2_29-10-2026/caracteristicas_eeg_por_canal.csv.gz": "70bc95280b0d14012f3598ee6eb872692947dcf4b4e67c684311575bb24f069e",
+    "resultados/temporalidad_eeg_v2_validacion_29-10-2026/caracteristicas_validation.csv.gz": "26993ae57d65004eb52e8ab60c0311f958dbe025a23f6e6aeabfab0c82bb0969",
+    "resultados/temporalidad_eeg_v2_test_29-10-2026/caracteristicas_test.csv.gz": "54cf2dfa998ada47d32cdd9eb05f9840680edf79afe289f7a4afb5b4ae1792d6",
+    "resultados/enfoques_41p_22-11-2026/e2_1101.csv.gz": "dc57e16c71bf4a618eccf6a6964f0010a199499f31f9adeeb9e8ecfaf538c9b1",
+    "resultados/enfoques_41p_22-11-2026/e2_1102.csv.gz": "27f59dcb1775885acaf8939fc75e18046f21d2abac8ac4b29df6e575f9fed249",
+    "resultados/enfoques_41p_22-11-2026/e2_1103.csv.gz": "6120bcb2d77cc55e76da5ec2789b57584a458b602b086bbc0539fc7ccee0a9e8",
+    "resultados/enfoques_41p_22-11-2026/e2_1104.csv.gz": "59622bd7870ab72c4c617375e9456a3150f522f84414957dcabb2c7803e02ac5",
+    "resultados/enfoques_41p_22-11-2026/e2_1105.csv.gz": "7e54725c47902233b3f03cd3a18456da52a8c83a93db5211532fee7798cffa63"
+  },
+  "raw": {
+    "P10.npz": "5b75342955d541feaf048f424a9f5021de6c8545913d8e2e78b34b2830731de6",
+    "P11.npz": "44d51f18baf28db2aae0955a539f7a8328c2bb57a28977a9bfd974930f3086aa",
+    "P12.npz": "4fcb66ae4d652e311ea0e5657f9cab90a59c8c938abf6c57f1ffdb95c8997d67",
+    "P13.npz": "7591cae00224f3ac5f7c179f0e694f5498cc695c599377354e399a2064561078",
+    "P15.npz": "41903febe7837d074d36ee61a7d1666ca486b6d7831e09d99420bf1f4e500554",
+    "P16.npz": "00657dfb6573c40dbc1d969c67985c83d37a6cfea1c519ef80bae1f4c846d899",
+    "P18.npz": "69fd4f0674dc2ecc9d1bd31a6a69210205470d29324248de0a5db81189508c52",
+    "P19.npz": "057f0d51bdac85c39af4f2aaab773cec6c69d3103e235c660af151e889dba3f3",
+    "P2.npz": "e748b964f17f4649555a74c6b2915f9227bb3bc2c7c9aaf9c882e77411573dd5",
+    "P20.npz": "5c6284fc15ec8fe3bc11fe03c05c6db3fc1a08ca95671537fed2a846a4bdb39b",
+    "P21.npz": "e9777043bfa2605cb4092709770f459c5c60b71326020ef41cf268f1cefa2ab7",
+    "P22.npz": "fddf53a4ceb2e728ef051c20dd9c17443182cc7a3619e19ded0e8d1e56b8b827",
+    "P23.npz": "d5a42af816b404a775e46a946275f3caef54acdb86ded96767d962d187630f1b",
+    "P24.npz": "4a28a811fb893c09f5fed9d7bdc64c3e3205399e3eceb123326c1dc786b6e5f8",
+    "P26.npz": "dcc7c0220145b27a244c323eec287e7b58fa418db2d21fd700473225bc691542",
+    "P27.npz": "ef0590dcc60331b75cb8ac062ea4ed16f863e2838fc6bd6ec7479c7885c9a3ef",
+    "P28.npz": "b14cbc74238a7a0e924832501e5308742076ca323a03aa0da3061252b35493de",
+    "P3.npz": "67b56b78debd0874a41e20963c9b74f0984c492d43548db57877e5d99ab1dd84",
+    "P30.npz": "b2e8467dfe7c2a6c45656c3740c89f1b507cf97d0a6f24293b1899765b7e1808",
+    "P31.npz": "732a36969a38cc7e6bd5f169efc03d38b3b4c7e83a44b8f786b57a0904597d7d",
+    "P32.npz": "b9f773e909fa63d72865988516ea58a1b23ef0f3f97a3dc6cfa551aeaebaebbd",
+    "P33.npz": "0c50819045b5e9947bdcea20da5fa02e2c0ca9bc7d91a4c2b7b156ca61fb8e0b",
+    "P34.npz": "be77f5802cdd082b4aa0771fbfc755a12c8eac8d82fc6be18ba301c94a377a7c",
+    "P35.npz": "cf265487a4eff7e51b25f23a04f2eefd89bb8e4f81091c1e652727a14c2e01ea",
+    "P36.npz": "afd75c5bd2640c196c8276c465afec11783c8d20fe01a019048543430e98467b",
+    "P37.npz": "dcd8cea3e9228d185dc9bb3adb1b549c4b6381daa55acf2d92135b4a071043d1",
+    "P38.npz": "826969c024243747811fd5086f87c822f287a11a304e3c2e3e84764d8d8fce3e",
+    "P39.npz": "c9e7feaa780b5e8cc237039fb3148fb49f5fc57b83b446e98cfb64f69a8a5bac",
+    "P4.npz": "545eafb77bc8329622e32cdaab53ee0c2f434200e4ac1bbab2f252c051117a29",
+    "P40.npz": "2dc255206721f84aa011a085f1df1953c4c70a36ba859878badb86db35372a7c",
+    "P41.npz": "e1caab769bd505b9143bd2ef78ad8a10f8edb7558cf2b48ab975007cd16bbd56",
+    "P43.npz": "d083609b0cfeb7e8285b3e3a26a009923a30c61f84b71ff5b3c6f1a6ec271f6d",
+    "P44.npz": "13b37f5db93d4050a83239cfcb84be0fbea199553fcc256edd92f4d9f9889b40",
+    "P45.npz": "e49815921589def4015065354aff193d9951d61745b72bc7377b362d14e55e55",
+    "P46.npz": "ab8dc1747b60a7b571ac7334bb9e94707af96394e7a0860ca247e6f1354e20df",
+    "P47.npz": "9eefa4ea8ad74a6e9424961354613bd3a20f6894938e211f5143200683764886",
+    "P48.npz": "d5742e376543dbb8770b2a722f13089cc4a06d4983ca839a70e4f3908a4fee73",
+    "P5.npz": "c98604192735054e07216a6ca7ca5e3de34e1e0f9d57803f2604db2b0cc1521c",
+    "P6.npz": "97570abdf13b2819f64eb0600848fc547a7bba7df5d60176f5cda64aa719ba4b",
+    "P8.npz": "7ca117658712d24ecc909a2c4840945b56b2859f9020c1b31a2dcccebab79d47",
+    "P9.npz": "08e0ab9d9f79aa2fa9747eb07e3b103aadf1376474edf643641c9c2fc8e78d97"
+  },
+  "leaves": {
+    "atencion": 7,
+    "activacion": 15
+  },
+  "folds_rep": {
+    "1101": [
+      [
+        "P15",
+        "P22",
+        "P24",
+        "P34",
+        "P35",
+        "P9"
+      ],
+      [
+        "P10",
+        "P30",
+        "P32",
+        "P33",
+        "P48"
+      ],
+      [
+        "P11",
+        "P18",
+        "P19",
+        "P27",
+        "P38"
+      ],
+      [
+        "P12",
+        "P31",
+        "P36",
+        "P40",
+        "P41"
+      ],
+      [
+        "P16",
+        "P3",
+        "P37",
+        "P4",
+        "P5"
+      ],
+      [
+        "P21",
+        "P26",
+        "P43",
+        "P6",
+        "P8"
+      ],
+      [
+        "P13",
+        "P20",
+        "P28",
+        "P39",
+        "P45"
+      ],
+      [
+        "P2",
+        "P23",
+        "P44",
+        "P46",
+        "P47"
+      ]
+    ],
+    "1102": [
+      [
+        "P22",
+        "P31",
+        "P38",
+        "P39",
+        "P43",
+        "P6"
+      ],
+      [
+        "P16",
+        "P19",
+        "P26",
+        "P28",
+        "P48"
+      ],
+      [
+        "P18",
+        "P2",
+        "P23",
+        "P33",
+        "P8"
+      ],
+      [
+        "P15",
+        "P35",
+        "P41",
+        "P47",
+        "P5"
+      ],
+      [
+        "P11",
+        "P24",
+        "P3",
+        "P37",
+        "P40"
+      ],
+      [
+        "P30",
+        "P32",
+        "P36",
+        "P4",
+        "P44"
+      ],
+      [
+        "P10",
+        "P13",
+        "P20",
+        "P34",
+        "P46"
+      ],
+      [
+        "P12",
+        "P21",
+        "P27",
+        "P45",
+        "P9"
+      ]
+    ],
+    "1103": [
+      [
+        "P11",
+        "P15",
+        "P23",
+        "P32",
+        "P37",
+        "P46"
+      ],
+      [
+        "P24",
+        "P26",
+        "P3",
+        "P35",
+        "P9"
+      ],
+      [
+        "P21",
+        "P27",
+        "P34",
+        "P43",
+        "P48"
+      ],
+      [
+        "P10",
+        "P2",
+        "P4",
+        "P47",
+        "P6"
+      ],
+      [
+        "P18",
+        "P19",
+        "P22",
+        "P40",
+        "P44"
+      ],
+      [
+        "P12",
+        "P20",
+        "P33",
+        "P41",
+        "P5"
+      ],
+      [
+        "P16",
+        "P28",
+        "P36",
+        "P38",
+        "P39"
+      ],
+      [
+        "P13",
+        "P30",
+        "P31",
+        "P45",
+        "P8"
+      ]
+    ],
+    "1104": [
+      [
+        "P2",
+        "P21",
+        "P39",
+        "P44",
+        "P45",
+        "P5"
+      ],
+      [
+        "P12",
+        "P37",
+        "P47",
+        "P48",
+        "P6"
+      ],
+      [
+        "P23",
+        "P38",
+        "P40",
+        "P43",
+        "P9"
+      ],
+      [
+        "P24",
+        "P3",
+        "P36",
+        "P4",
+        "P41"
+      ],
+      [
+        "P10",
+        "P20",
+        "P32",
+        "P33",
+        "P8"
+      ],
+      [
+        "P30",
+        "P31",
+        "P34",
+        "P35",
+        "P46"
+      ],
+      [
+        "P13",
+        "P16",
+        "P18",
+        "P19",
+        "P26"
+      ],
+      [
+        "P11",
+        "P15",
+        "P22",
+        "P27",
+        "P28"
+      ]
+    ],
+    "1105": [
+      [
+        "P19",
+        "P22",
+        "P31",
+        "P41",
+        "P44",
+        "P8"
+      ],
+      [
+        "P16",
+        "P21",
+        "P43",
+        "P47",
+        "P48"
+      ],
+      [
+        "P12",
+        "P23",
+        "P24",
+        "P3",
+        "P35"
+      ],
+      [
+        "P11",
+        "P15",
+        "P27",
+        "P34",
+        "P6"
+      ],
+      [
+        "P18",
+        "P2",
+        "P36",
+        "P38",
+        "P9"
+      ],
+      [
+        "P10",
+        "P32",
+        "P33",
+        "P40",
+        "P5"
+      ],
+      [
+        "P30",
+        "P37",
+        "P39",
+        "P4",
+        "P46"
+      ],
+      [
+        "P13",
+        "P20",
+        "P26",
+        "P28",
+        "P45"
+      ]
+    ]
+  },
+  "margin": 0.02,
+  "cleaning": {
+    "ica": "FastICA unit-variance, max_iter 2000, tol 1e-4",
+    "ica_seed": 20261123,
+    "ks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "k_main": 3,
+    "control": "3 componentes de mayor varianza fuera de los 4 más oculares",
+    "eog_channels": [
+      0,
+      1,
+      8,
+      9
+    ],
+    "band_fit": [
+      1,
+      45
+    ],
+    "band_score": [
+      1,
+      15
+    ],
+    "rail_guard_s": 1,
+    "lag_window_samples": 5
+  },
+  "models": [
+    "ica1_full",
+    "ica2_full",
+    "ica3_full",
+    "ica4_full",
+    "ctrl3_full",
+    "ica3_alfa_beta",
+    "ica3_lento_amp",
+    "ica3_posterior",
+    "ica3_frontal",
+    "reg12",
+    "orig12",
+    "identidad_full (semilla 1101)",
+    "control_barajado (semilla 1101)"
+  ],
+  "confirmatory": [
+    "L1 eeg_c1 − ica3_full",
+    "L2 ctrl3_full − ica3_full",
+    "L3 ica3_full − 0,5",
+    "L4 ica3_alfa_beta − eeg_alfa_beta"
+  ],
+  "holm": "sobre las 4 pruebas",
+  "decision": {
+    "respaldo": "p Holm < 0,05 e IC95 inferior > 0",
+    "relevante": "además IC95 inferior > 0,02",
+    "nulo": "IC90 dentro de (−0,02; +0,02)",
+    "inferior": "IC95 superior < 0",
+    "resto": "inconcluso"
+  },
+  "limits": "Análisis dirigido. La limpieza usa toda la sesión de cada persona, también de las evaluadas, y usa la mirada para elegir qué componentes quitar; solo puede restar información ligada a la mirada. Con 16 canales la ICA separa de forma imperfecta. Las ventanas de EEG conservan el desfase de 0,25–0,5 s respecto del seguidor ocular. La zona frontal/posterior y reg12 usan el montaje por defecto, respaldado por los datos pero no documentado."
+}

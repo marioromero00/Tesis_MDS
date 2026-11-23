@@ -1,0 +1,26 @@
+{
+  "people": 41,
+  "lag_parpadeo_median_s": 0.448,
+  "lag_parpadeo_iqr_s": [
+    0.28,
+    0.48
+  ],
+  "f7_f8_both_usable": 37,
+  "f7_f8_opposite_sign": 31,
+  "top2_blink_channels_counts": {
+    "0": 29,
+    "1": 28,
+    "4": 1,
+    "5": 2,
+    "6": 1,
+    "7": 2,
+    "8": 2,
+    "9": 5,
+    "10": 2,
+    "11": 1,
+    "12": 3,
+    "14": 1,
+    "15": 5
+  },
+  "people_top_blink_is_fp": 27
+}
