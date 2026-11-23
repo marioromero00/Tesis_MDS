@@ -12,8 +12,8 @@
     },
     {
       "path": "respaldo_local/notas/bitacora.md",
-      "sha256": "2077c246ca20de600d3332a0ea521ff77ab53b70ac4183b8ffde4e5411698d0b",
-      "bytes": 32075
+      "sha256": "c519ac32855bd337e04bb9b431fec8a690d78f469b540dd3cc46a6fe55ae64c5",
+      "bytes": 34116
     },
     {
       "path": "respaldo_local/notas/pautas-escritura-recuperadas.md",
@@ -37,8 +37,8 @@
     },
     {
       "path": "respaldo_local/notas/sustento-fisiologico-23-11-2026.md",
-      "sha256": "68945b90eb840ec2fa2417dfb063653806ef63a6ae4cd92d654e3f94967ab6e9",
-      "bytes": 9367
+      "sha256": "b5d5fd5d720671307fb506b3b4bf057460d7c313e382f74a5d5125db9bd21b63",
+      "bytes": 9923
     },
     {
       "path": "respaldo_local/notas/organizacion-carpetas-01-11-2026.json",
@@ -266,6 +266,11 @@
       "bytes": 2877
     },
     {
+      "path": "respaldo_local/documentos/01 Tesis MDS/Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md",
+      "sha256": "952fd2de318602b569458846f8aa8ea6e40b077fea75735ff39976cdb6d1edee",
+      "bytes": 6052
+    },
+    {
       "path": "respaldo_local/documentos/01 Tesis MDS/CLAUDE.md",
       "sha256": "8911a955f588b798261aee8860719789d4f7f2fd371e84c2c364af9c68d4328a",
       "bytes": 4986
@@ -292,18 +297,28 @@
     },
     {
       "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md",
-      "sha256": "a022f2bc2090852fa425b199f9c52c6cf008b47893d23b7e872c2358d1de48c9",
-      "bytes": 6898
+      "sha256": "59df76f2a3342dd1e11f247526dd3da1e7c9d7c83b7dca4f3eb100e0c028141c",
+      "bytes": 7154
     },
     {
       "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Borrador Discusión fisiológica 23-11-2026.md",
-      "sha256": "f117503e43742b21781d7403d2f89cec73bbed6b1b87161763caa5d80b2de27f",
-      "bytes": 14728
+      "sha256": "29d219d7105519b94a6f1b6f97becfb18db4bf7893c4cea7a87587f37ebc7515",
+      "bytes": 15648
     },
     {
       "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Borrador Resultados y Discusión 18-11-2026.md",
-      "sha256": "27bcb05cb7c8bb71547bba7c3530257ed130b176c95f7011e7fb2ec5392e5a58",
-      "bytes": 12649
+      "sha256": "1bcd24e2f25a662ec564e950b4e8354998e6f58f8a2a00048d15818ff37caa87",
+      "bytes": 12841
+    },
+    {
+      "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Borrador Resultados y Discusión 23-11-2026.md",
+      "sha256": "7913ccedea90de972db2010e03427afbf36178a898978dd8e237e5835d133cd5",
+      "bytes": 58947
+    },
+    {
+      "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Borrador Secciones pendientes 23-11-2026.md",
+      "sha256": "8f69eb220d5c345dea1370c551b74b86b6f7ddd1b5149c0bf3531359555d63f0",
+      "bytes": 43456
     },
     {
       "path": "respaldo_local/documentos/01 Tesis MDS/Escritura/Estructura Tesis.md",

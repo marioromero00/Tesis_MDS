@@ -1,5 +1,8 @@
 # Borrador: Modelamiento, Resultados y Discusión
 
+> [!warning] Versión reemplazada
+> La versión vigente es [[Borrador Resultados y Discusión 23-11-2026]], que integra los resultados del 22 y 23-11. Este archivo se conserva como registro.
+
 > [!info] Estado
 > Borrador redactado el 18-11-2026 a partir de los informes de resultados del repositorio (rutas al final de cada sección). No reemplaza a [[Estructura Tesis]] ni cierra decisiones abiertas de [[Resumen Diseño Etiquetas y Modelos]]. Las cifras son AUC por persona salvo que se indique otra cosa. Revisar redacción, citas y numeración antes de pasar a LaTeX.
 

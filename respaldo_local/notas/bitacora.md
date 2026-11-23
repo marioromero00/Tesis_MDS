@@ -248,3 +248,17 @@ A pedido de Mario se agregaron dos láminas de conclusiones (30 y 31) a `present
 ## 23-11-2026 — Lámina 29 al día
 
 A pedido de Mario, la lámina "Qué responde la tesis" pasó a las cifras de la reapertura del 22-11 (+0,029 y +0,036; +0,001 con posición; +0,047 sobre el placebo), para coincidir con las conclusiones. El pie indica las cifras del 16-11.
+
+## 23-11-2026 — Revisión y auditoría general (en curso)
+
+A pedido de Mario ("haz todo eso y revisa con mucho detalle la presentación y experimento, audita todo"), con agentes independientes:
+
+- **Borrador integrado** `Escritura/Borrador Resultados y Discusión 23-11-2026.md` (capítulos 6 a 8 con lo del 22 y 23-11); el del 18-11 queda marcado como reemplazado.
+- **Minuta** `Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md`: siete decisiones con opciones. Nuevo punto detectado: los análisis usan el profesor PCA, mientras la nota de diseño proponía la fusión igualitaria como principal; no consta que el cambio se decidiera con el profesor.
+- **Secciones pendientes** `Escritura/Borrador Secciones pendientes 23-11-2026.md`: solo las que tienen insumo; el marco teórico sigue pendiente por falta de literatura verificada.
+- **Referencias**: 10 de 18 leídas en texto completo, 8 por resumen. Sin comprobar: Boucsein 2012 (latencias, ecrinas) y Critchley 2002 (estructuras). No respaldada: Hipp y Siegel 2013 para alfa y beta. Borradores y lámina 28 ajustados.
+- **Presentación**: auditoría con 1 hallazgo bloqueante (filtro del EEG: es 1–45 Hz, no 1–40, y no hay descarte a ±150 µV), 12 importantes y 22 menores. Corregidos el bloqueante, los importantes y la mayoría de los menores; fusión y sesión pasan a ser las láminas 19 y 20; la última lámina tiene cinco decisiones. Sin corregir: redondeo de dos rótulos de gráficos (−0,002 y +0,006 frente a −0,003 y +0,007 del informe) y la advertencia de "análisis anterior" en los anexos A, B, D y E.
+- **Ensayo** `presentaciones/avances_tesis_06-11-2026/ENSAYO.md`: plan de 20 y 10 minutos (duración supuesta), guion y 20 preguntas difíciles.
+- **Conclusiones**: fusión acotada al MLP (con HGB el cierre V3 no mostró ventaja de la tardía) y alcance temporal precisado (6 s con respaldo; 12 s inconcluso).
+
+Informes en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`. Pendiente: auditoría de resultados del experimento.

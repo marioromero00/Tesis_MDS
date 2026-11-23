@@ -1,0 +1,426 @@
+stage,check,ok,detail
+cierre_v3_16-11-2026,"partición: 25 train, 8 validación, 8 test, disjuntas",True,
+cierre_v3_16-11-2026,"protocolo: en los 5 folds ajuste y evaluación son disjuntos, cubren las 25 de train, y la validación interna sale del ajuste",True,
+cierre_v3_16-11-2026,protocolo: cada persona de train se evalúa en un solo fold,True,
+cierre_v3_16-11-2026,"oof_atencion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"oof_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.01011, max=0.9963"
+cierre_v3_16-11-2026,oof_atencion: mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [13498]"
+cierre_v3_16-11-2026,oof_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,oof_atencion: cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,oof_atencion: 25 personas,True,25
+cierre_v3_16-11-2026,oof_atencion: ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,oof_atencion: sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"oof_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_v3_16-11-2026,oof_atencion: solo personas de train,True,
+cierre_v3_16-11-2026,"externas_atencion (validation): sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"externas_atencion (validation): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.005594, max=0.9838"
+cierre_v3_16-11-2026,externas_atencion (validation): mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [4654]"
+cierre_v3_16-11-2026,externas_atencion (validation): etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,externas_atencion (validation): cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,externas_atencion (validation): 8 personas,True,8
+cierre_v3_16-11-2026,externas_atencion (validation): ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,externas_atencion (validation): sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"externas_atencion (validation): solo personas de validation, ninguna de train",True,
+cierre_v3_16-11-2026,"externas_atencion (test): sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"externas_atencion (test): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.01752, max=0.9873"
+cierre_v3_16-11-2026,externas_atencion (test): mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [4024]"
+cierre_v3_16-11-2026,externas_atencion (test): etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,externas_atencion (test): cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,externas_atencion (test): 8 personas,True,8
+cierre_v3_16-11-2026,externas_atencion (test): ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,externas_atencion (test): sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"externas_atencion (test): solo personas de test, ninguna de train",True,
+cierre_v3_16-11-2026,"oof_activacion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"oof_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.0002054, max=0.9998"
+cierre_v3_16-11-2026,oof_activacion: mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [7028]"
+cierre_v3_16-11-2026,oof_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,oof_activacion: cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,oof_activacion: 25 personas,True,25
+cierre_v3_16-11-2026,oof_activacion: ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,oof_activacion: sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"oof_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_v3_16-11-2026,oof_activacion: solo personas de train,True,
+cierre_v3_16-11-2026,"externas_activacion (validation): sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"externas_activacion (validation): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.000201, max=0.9966"
+cierre_v3_16-11-2026,externas_activacion (validation): mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [2584]"
+cierre_v3_16-11-2026,externas_activacion (validation): etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,externas_activacion (validation): cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,externas_activacion (validation): 8 personas,True,8
+cierre_v3_16-11-2026,externas_activacion (validation): ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,externas_activacion (validation): sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"externas_activacion (validation): solo personas de validation, ninguna de train",True,
+cierre_v3_16-11-2026,"externas_activacion (test): sin filas duplicadas (fila, estrategia)",True,0
+cierre_v3_16-11-2026,"externas_activacion (test): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.002628, max=0.9973"
+cierre_v3_16-11-2026,externas_activacion (test): mismas ventanas en todas las estrategias,True,"9 grupos, tamaños [2184]"
+cierre_v3_16-11-2026,externas_activacion (test): etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_v3_16-11-2026,externas_activacion (test): cada ventana pertenece a una sola persona,True,0
+cierre_v3_16-11-2026,externas_activacion (test): 8 personas,True,8
+cierre_v3_16-11-2026,externas_activacion (test): ninguna persona con una sola clase,True,0
+cierre_v3_16-11-2026,externas_activacion (test): sin predicciones constantes,True,0
+cierre_v3_16-11-2026,"externas_activacion (test): solo personas de test, ninguna de train",True,
+cierre_final_41p_16-11-2026,"predicciones_atencion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_final_41p_16-11-2026,"predicciones_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.01114, max=0.9888"
+cierre_final_41p_16-11-2026,predicciones_atencion: mismas ventanas en todas las estrategias,True,"5 grupos, tamaños [22176]"
+cierre_final_41p_16-11-2026,predicciones_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_final_41p_16-11-2026,predicciones_atencion: cada ventana pertenece a una sola persona,True,0
+cierre_final_41p_16-11-2026,predicciones_atencion: 41 personas,True,41
+cierre_final_41p_16-11-2026,predicciones_atencion: ninguna persona con una sola clase,True,0
+cierre_final_41p_16-11-2026,predicciones_atencion: sin predicciones constantes,True,0
+cierre_final_41p_16-11-2026,"predicciones_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_final_41p_16-11-2026,predicciones_atencion: persona de cada ventana coherente con las demás etapas,True,0
+cierre_final_41p_16-11-2026,predicciones_atencion: columna split coincide con la partición original,True,
+cierre_final_41p_16-11-2026,predicciones_atencion: etiquetas iguales a las del cierre V3,True,22176 ventanas en común de 22176 (final) y 22176 (V3)
+cierre_final_41p_16-11-2026,"predicciones_activacion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_final_41p_16-11-2026,"predicciones_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.000494, max=0.9991"
+cierre_final_41p_16-11-2026,predicciones_activacion: mismas ventanas en todas las estrategias,True,"5 grupos, tamaños [11796]"
+cierre_final_41p_16-11-2026,predicciones_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_final_41p_16-11-2026,predicciones_activacion: cada ventana pertenece a una sola persona,True,0
+cierre_final_41p_16-11-2026,predicciones_activacion: 41 personas,True,41
+cierre_final_41p_16-11-2026,predicciones_activacion: ninguna persona con una sola clase,True,0
+cierre_final_41p_16-11-2026,predicciones_activacion: sin predicciones constantes,True,0
+cierre_final_41p_16-11-2026,"predicciones_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_final_41p_16-11-2026,predicciones_activacion: persona de cada ventana coherente con las demás etapas,True,0
+cierre_final_41p_16-11-2026,predicciones_activacion: columna split coincide con la partición original,True,
+cierre_final_41p_16-11-2026,predicciones_activacion: etiquetas iguales a las del cierre V3,True,11796 ventanas en común de 11796 (final) y 11796 (V3)
+cierre_robustez_41p_16-11-2026,"r1_atencion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_robustez_41p_16-11-2026,"r1_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.08935, max=0.967"
+cierre_robustez_41p_16-11-2026,r1_atencion: mismas ventanas en todas las estrategias,True,"1 grupos, tamaños [22176]"
+cierre_robustez_41p_16-11-2026,r1_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_robustez_41p_16-11-2026,r1_atencion: cada ventana pertenece a una sola persona,True,0
+cierre_robustez_41p_16-11-2026,r1_atencion: 41 personas,True,41
+cierre_robustez_41p_16-11-2026,r1_atencion: ninguna persona con una sola clase,True,0
+cierre_robustez_41p_16-11-2026,r1_atencion: sin predicciones constantes,True,0
+cierre_robustez_41p_16-11-2026,"r1_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_robustez_41p_16-11-2026,r1_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+cierre_robustez_41p_16-11-2026,r1_atencion: persona de cada ventana coherente con las demás etapas,True,0
+cierre_robustez_41p_16-11-2026,"r3_atencion: sin filas duplicadas (fila, estrategia, semilla)",True,0
+cierre_robustez_41p_16-11-2026,"r3_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.09369, max=0.9662"
+cierre_robustez_41p_16-11-2026,r3_atencion: mismas ventanas en todas las estrategias y semillas,True,"6 grupos, tamaños [22176]"
+cierre_robustez_41p_16-11-2026,r3_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_robustez_41p_16-11-2026,r3_atencion: cada ventana pertenece a una sola persona,True,0
+cierre_robustez_41p_16-11-2026,r3_atencion: 41 personas,True,41
+cierre_robustez_41p_16-11-2026,r3_atencion: ninguna persona con una sola clase,True,0
+cierre_robustez_41p_16-11-2026,r3_atencion: sin predicciones constantes,True,0
+cierre_robustez_41p_16-11-2026,"r3_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_robustez_41p_16-11-2026,r3_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+cierre_robustez_41p_16-11-2026,r3_atencion: persona de cada ventana coherente con las demás etapas,True,0
+cierre_robustez_41p_16-11-2026,"r2_atencion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_robustez_41p_16-11-2026,"r2_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.08729, max=0.9702"
+cierre_robustez_41p_16-11-2026,r2_atencion: mismas ventanas en todas las estrategias,True,"2 grupos, tamaños [22176]"
+cierre_robustez_41p_16-11-2026,r2_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_robustez_41p_16-11-2026,r2_atencion: cada ventana pertenece a una sola persona,True,0
+cierre_robustez_41p_16-11-2026,r2_atencion: 41 personas,True,41
+cierre_robustez_41p_16-11-2026,r2_atencion: ninguna persona con una sola clase,True,0
+cierre_robustez_41p_16-11-2026,r2_atencion: sin predicciones constantes,True,0
+cierre_robustez_41p_16-11-2026,"r2_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_robustez_41p_16-11-2026,r2_atencion: mismas ventanas que el análisis final (las etiquetas cambian por diseño: profesor reajustado sin fuga),True,etiquetas distintas a las originales: 0.767%
+cierre_robustez_41p_16-11-2026,"r1_activacion: sin filas duplicadas (fila, estrategia)",True,0
+cierre_robustez_41p_16-11-2026,"r1_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.106, max=0.916"
+cierre_robustez_41p_16-11-2026,r1_activacion: mismas ventanas en todas las estrategias,True,"1 grupos, tamaños [11796]"
+cierre_robustez_41p_16-11-2026,r1_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_robustez_41p_16-11-2026,r1_activacion: cada ventana pertenece a una sola persona,True,0
+cierre_robustez_41p_16-11-2026,r1_activacion: 41 personas,True,41
+cierre_robustez_41p_16-11-2026,r1_activacion: ninguna persona con una sola clase,True,0
+cierre_robustez_41p_16-11-2026,r1_activacion: sin predicciones constantes,True,0
+cierre_robustez_41p_16-11-2026,"r1_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_robustez_41p_16-11-2026,r1_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+cierre_robustez_41p_16-11-2026,r1_activacion: persona de cada ventana coherente con las demás etapas,True,0
+cierre_robustez_41p_16-11-2026,"r3_activacion: sin filas duplicadas (fila, estrategia, semilla)",True,0
+cierre_robustez_41p_16-11-2026,"r3_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.05007, max=0.9821"
+cierre_robustez_41p_16-11-2026,r3_activacion: mismas ventanas en todas las estrategias y semillas,True,"6 grupos, tamaños [11796]"
+cierre_robustez_41p_16-11-2026,r3_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+cierre_robustez_41p_16-11-2026,r3_activacion: cada ventana pertenece a una sola persona,True,0
+cierre_robustez_41p_16-11-2026,r3_activacion: 41 personas,True,41
+cierre_robustez_41p_16-11-2026,r3_activacion: ninguna persona con una sola clase,True,0
+cierre_robustez_41p_16-11-2026,r3_activacion: sin predicciones constantes,True,0
+cierre_robustez_41p_16-11-2026,"r3_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+cierre_robustez_41p_16-11-2026,r3_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+cierre_robustez_41p_16-11-2026,r3_activacion: persona de cada ventana coherente con las demás etapas,True,0
+ampliacion_41p_16-11-2026,"predicciones_atencion: sin filas duplicadas (fila, estrategia)",True,0
+ampliacion_41p_16-11-2026,"predicciones_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=1.171e-22, max=0.9983"
+ampliacion_41p_16-11-2026,predicciones_atencion: mismas ventanas en todas las estrategias,True,"10 grupos, tamaños [22176]"
+ampliacion_41p_16-11-2026,predicciones_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+ampliacion_41p_16-11-2026,predicciones_atencion: cada ventana pertenece a una sola persona,True,0
+ampliacion_41p_16-11-2026,predicciones_atencion: 41 personas,True,41
+ampliacion_41p_16-11-2026,predicciones_atencion: ninguna persona con una sola clase,True,0
+ampliacion_41p_16-11-2026,predicciones_atencion: sin predicciones constantes,True,0
+ampliacion_41p_16-11-2026,"predicciones_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+ampliacion_41p_16-11-2026,predicciones_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+ampliacion_41p_16-11-2026,predicciones_atencion: persona de cada ventana coherente con las demás etapas,True,0
+ampliacion_41p_16-11-2026,"predicciones_activacion: sin filas duplicadas (fila, estrategia)",True,0
+ampliacion_41p_16-11-2026,"predicciones_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=6.494e-32, max=1"
+ampliacion_41p_16-11-2026,predicciones_activacion: mismas ventanas en todas las estrategias,True,"10 grupos, tamaños [11796]"
+ampliacion_41p_16-11-2026,predicciones_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+ampliacion_41p_16-11-2026,predicciones_activacion: cada ventana pertenece a una sola persona,True,0
+ampliacion_41p_16-11-2026,predicciones_activacion: 41 personas,True,41
+ampliacion_41p_16-11-2026,predicciones_activacion: ninguna persona con una sola clase,True,0
+ampliacion_41p_16-11-2026,predicciones_activacion: sin predicciones constantes,True,0
+ampliacion_41p_16-11-2026,"predicciones_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+ampliacion_41p_16-11-2026,predicciones_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+ampliacion_41p_16-11-2026,predicciones_activacion: persona de cada ventana coherente con las demás etapas,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_atencion: sin filas duplicadas (fila, estrategia)",True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.1242, max=0.9673"
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: mismas ventanas en todas las estrategias,True,"2 grupos, tamaños [22176]"
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: cada ventana pertenece a una sola persona,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: 41 personas,True,41
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: ninguna persona con una sola clase,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: sin predicciones constantes,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_atencion: persona de cada ventana coherente con las demás etapas,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_activacion: sin filas duplicadas (fila, estrategia)",True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.05567, max=0.9644"
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: mismas ventanas en todas las estrategias,True,"2 grupos, tamaños [11796]"
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: cada ventana pertenece a una sola persona,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: 41 personas,True,41
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: ninguna persona con una sola clase,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: sin predicciones constantes,True,0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,"predicciones_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,predicciones_activacion: persona de cada ventana coherente con las demás etapas,True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_atencion: sin filas duplicadas (fila, estrategia)",True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.08834, max=0.9715"
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: mismas ventanas en todas las estrategias,True,"2 grupos, tamaños [22176]"
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: cada ventana pertenece a una sola persona,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: 41 personas,True,41
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: ninguna persona con una sola clase,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: sin predicciones constantes,True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+explicativo_posicion_41p_18-11-2026,predicciones_atencion: persona de cada ventana coherente con las demás etapas,True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_activacion: sin filas duplicadas (fila, estrategia)",True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.05308, max=0.9801"
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: mismas ventanas en todas las estrategias,True,"2 grupos, tamaños [11796]"
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: cada ventana pertenece a una sola persona,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: 41 personas,True,41
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: ninguna persona con una sola clase,True,0
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: sin predicciones constantes,True,0
+explicativo_posicion_41p_18-11-2026,"predicciones_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+explicativo_posicion_41p_18-11-2026,predicciones_activacion: persona de cada ventana coherente con las demás etapas,True,0
+reapertura_41p_22-11-2026,"rep_atencion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+reapertura_41p_22-11-2026,"rep_atencion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.06204, max=0.9736"
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"20 grupos, tamaños [22176]"
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): cada ventana pertenece a una sola persona,True,0
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): 41 personas,True,41
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): 22176 ventanas por estrategia,True,[22176]
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): ninguna persona con una sola clase,True,0
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): sin predicciones constantes,True,0
+reapertura_41p_22-11-2026,"rep_atencion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+reapertura_41p_22-11-2026,rep_atencion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+reapertura_41p_22-11-2026,"lag_atencion: sin filas duplicadas (fila, estrategia)",True,0
+reapertura_41p_22-11-2026,"lag_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.09558, max=0.9644"
+reapertura_41p_22-11-2026,lag_atencion: mismas ventanas en todas las estrategias,True,"7 grupos, tamaños [12613]"
+reapertura_41p_22-11-2026,lag_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_41p_22-11-2026,lag_atencion: cada ventana pertenece a una sola persona,True,0
+reapertura_41p_22-11-2026,lag_atencion: 41 personas,True,41
+reapertura_41p_22-11-2026,lag_atencion: 12613 ventanas por estrategia,True,[12613]
+reapertura_41p_22-11-2026,lag_atencion: ninguna persona con una sola clase,True,0
+reapertura_41p_22-11-2026,lag_atencion: sin predicciones constantes,True,0
+reapertura_41p_22-11-2026,"lag_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_41p_22-11-2026,lag_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,12613 de 12613 ventanas en común; distintas=0
+reapertura_41p_22-11-2026,lag_atencion: persona de cada ventana coherente con las demás etapas,True,0
+reapertura_41p_22-11-2026,"rep_activacion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+reapertura_41p_22-11-2026,"rep_activacion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.04565, max=0.9899"
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"20 grupos, tamaños [11796]"
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): cada ventana pertenece a una sola persona,True,0
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): 41 personas,True,41
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): 11796 ventanas por estrategia,True,[11796]
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): ninguna persona con una sola clase,True,0
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): sin predicciones constantes,True,0
+reapertura_41p_22-11-2026,"rep_activacion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+reapertura_41p_22-11-2026,rep_activacion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+reapertura_41p_22-11-2026,"lag_activacion: sin filas duplicadas (fila, estrategia)",True,0
+reapertura_41p_22-11-2026,"lag_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.03102, max=0.9577"
+reapertura_41p_22-11-2026,lag_activacion: mismas ventanas en todas las estrategias,True,"7 grupos, tamaños [6268]"
+reapertura_41p_22-11-2026,lag_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_41p_22-11-2026,lag_activacion: cada ventana pertenece a una sola persona,True,0
+reapertura_41p_22-11-2026,lag_activacion: 40 personas,True,40
+reapertura_41p_22-11-2026,lag_activacion: 6268 ventanas por estrategia,True,[6268]
+reapertura_41p_22-11-2026,lag_activacion: ninguna persona con una sola clase,True,0
+reapertura_41p_22-11-2026,lag_activacion: sin predicciones constantes,True,0
+reapertura_41p_22-11-2026,"lag_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_41p_22-11-2026,lag_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,6268 de 6268 ventanas en común; distintas=0
+reapertura_41p_22-11-2026,lag_activacion: persona de cada ventana coherente con las demás etapas,True,0
+reapertura_fase2_41p_22-11-2026,"bloque_atencion: sin filas duplicadas (fila, estrategia)",True,0
+reapertura_fase2_41p_22-11-2026,"bloque_atencion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.1247, max=0.9578"
+reapertura_fase2_41p_22-11-2026,bloque_atencion: mismas ventanas en todas las estrategias,True,"1 grupos, tamaños [12613]"
+reapertura_fase2_41p_22-11-2026,bloque_atencion: etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_fase2_41p_22-11-2026,bloque_atencion: cada ventana pertenece a una sola persona,True,0
+reapertura_fase2_41p_22-11-2026,bloque_atencion: 41 personas,True,41
+reapertura_fase2_41p_22-11-2026,bloque_atencion: ninguna persona con una sola clase,True,0
+reapertura_fase2_41p_22-11-2026,bloque_atencion: sin predicciones constantes,True,0
+reapertura_fase2_41p_22-11-2026,"bloque_atencion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_fase2_41p_22-11-2026,bloque_atencion: etiquetas iguales a las de la etapa de referencia (atencion),True,12613 de 12613 ventanas en común; distintas=0
+reapertura_fase2_41p_22-11-2026,bloque_atencion: persona de cada ventana coherente con las demás etapas,True,0
+reapertura_fase2_41p_22-11-2026,bloque_atencion: mismas ventanas que la curva de la fase 1,True,12613
+reapertura_fase2_41p_22-11-2026,atencion: todas las ventanas tienen estrato reconstruido,True,
+reapertura_fase2_41p_22-11-2026,"bloque_activacion: sin filas duplicadas (fila, estrategia)",True,0
+reapertura_fase2_41p_22-11-2026,"bloque_activacion: sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.07397, max=0.9106"
+reapertura_fase2_41p_22-11-2026,bloque_activacion: mismas ventanas en todas las estrategias,True,"1 grupos, tamaños [6268]"
+reapertura_fase2_41p_22-11-2026,bloque_activacion: etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_fase2_41p_22-11-2026,bloque_activacion: cada ventana pertenece a una sola persona,True,0
+reapertura_fase2_41p_22-11-2026,bloque_activacion: 40 personas,True,40
+reapertura_fase2_41p_22-11-2026,bloque_activacion: ninguna persona con una sola clase,True,0
+reapertura_fase2_41p_22-11-2026,bloque_activacion: sin predicciones constantes,True,0
+reapertura_fase2_41p_22-11-2026,"bloque_activacion: cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_fase2_41p_22-11-2026,bloque_activacion: etiquetas iguales a las de la etapa de referencia (activacion),True,6268 de 6268 ventanas en común; distintas=0
+reapertura_fase2_41p_22-11-2026,bloque_activacion: persona de cada ventana coherente con las demás etapas,True,0
+reapertura_fase2_41p_22-11-2026,bloque_activacion: mismas ventanas que la curva de la fase 1,True,6268
+reapertura_fase2_41p_22-11-2026,activacion: todas las ventanas tienen estrato reconstruido,True,
+reapertura_fase3_41p_22-11-2026,"pos_atencion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+reapertura_fase3_41p_22-11-2026,"pos_atencion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.08636, max=0.9712"
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [22176]"
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): cada ventana pertenece a una sola persona,True,0
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): 41 personas,True,41
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): 22176 ventanas por estrategia,True,[22176]
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): ninguna persona con una sola clase,True,0
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): sin predicciones constantes,True,0
+reapertura_fase3_41p_22-11-2026,"pos_atencion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+reapertura_fase3_41p_22-11-2026,pos_atencion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+reapertura_fase3_41p_22-11-2026,"pos_atencion: mismas filas, etiqueta, persona y fold que la fase 1 en cada partición",True,
+reapertura_fase3_41p_22-11-2026,"pos_activacion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+reapertura_fase3_41p_22-11-2026,"pos_activacion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.04551, max=0.9819"
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [11796]"
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): cada ventana pertenece a una sola persona,True,0
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): 41 personas,True,41
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): 11796 ventanas por estrategia,True,[11796]
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): ninguna persona con una sola clase,True,0
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): sin predicciones constantes,True,0
+reapertura_fase3_41p_22-11-2026,"pos_activacion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+reapertura_fase3_41p_22-11-2026,pos_activacion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+reapertura_fase3_41p_22-11-2026,"pos_activacion: mismas filas, etiqueta, persona y fold que la fase 1 en cada partición",True,
+enfoques_41p_22-11-2026,"e1 (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+enfoques_41p_22-11-2026,"e1 (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.1315, max=0.9707"
+enfoques_41p_22-11-2026,e1 (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"25 grupos, tamaños [22176]"
+enfoques_41p_22-11-2026,e1 (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+enfoques_41p_22-11-2026,e1 (5 particiones): cada ventana pertenece a una sola persona,True,0
+enfoques_41p_22-11-2026,e1 (5 particiones): 41 personas,True,41
+enfoques_41p_22-11-2026,e1 (5 particiones): 22176 ventanas por estrategia,True,[22176]
+enfoques_41p_22-11-2026,e1 (5 particiones): ninguna persona con una sola clase,True,0
+enfoques_41p_22-11-2026,e1 (5 particiones): sin predicciones constantes,True,0
+enfoques_41p_22-11-2026,"e1 (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+enfoques_41p_22-11-2026,e1 (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+enfoques_41p_22-11-2026,e1: mismas ventanas que la etiqueta original,True,
+enfoques_41p_22-11-2026,"e2 (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+enfoques_41p_22-11-2026,"e2 (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.1366, max=0.9767"
+enfoques_41p_22-11-2026,e2 (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"30 grupos, tamaños [22176]"
+enfoques_41p_22-11-2026,e2 (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+enfoques_41p_22-11-2026,e2 (5 particiones): cada ventana pertenece a una sola persona,True,0
+enfoques_41p_22-11-2026,e2 (5 particiones): 41 personas,True,41
+enfoques_41p_22-11-2026,e2 (5 particiones): 22176 ventanas por estrategia,True,[22176]
+enfoques_41p_22-11-2026,e2 (5 particiones): ninguna persona con una sola clase,True,0
+enfoques_41p_22-11-2026,e2 (5 particiones): sin predicciones constantes,True,0
+enfoques_41p_22-11-2026,"e2 (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+enfoques_41p_22-11-2026,e2 (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+enfoques_41p_22-11-2026,e2 (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+enfoques_41p_22-11-2026,"e3 (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+enfoques_41p_22-11-2026,"e3 (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.04414, max=0.9912"
+enfoques_41p_22-11-2026,e3 (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"15 grupos, tamaños [1589]"
+enfoques_41p_22-11-2026,e3 (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+enfoques_41p_22-11-2026,e3 (5 particiones): cada ventana pertenece a una sola persona,True,0
+enfoques_41p_22-11-2026,e3 (5 particiones): 41 personas,True,41
+enfoques_41p_22-11-2026,e3 (5 particiones): ninguna persona con una sola clase,True,0
+enfoques_41p_22-11-2026,e3 (5 particiones): sin predicciones constantes,True,0
+enfoques_41p_22-11-2026,"e3 (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+enfoques_41p_22-11-2026,"e3: los segmentos, su persona y su etiqueta por mayoría se reconstruyen desde las ventanas (numeración de segmentos propia igual a la del archivo)",True,"1589 segmentos, 47 empates excluidos"
+enfoques_41p_22-11-2026,"e4_atencion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+enfoques_41p_22-11-2026,"e4_atencion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.06748, max=0.9647"
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [14071]"
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): cada ventana pertenece a una sola persona,True,0
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): 41 personas,True,41
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): ninguna persona con una sola clase,True,0
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): sin predicciones constantes,True,0
+enfoques_41p_22-11-2026,"e4_atencion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,14071 de 14071 ventanas en común; distintas=0
+enfoques_41p_22-11-2026,e4_atencion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+enfoques_41p_22-11-2026,e4_atencion: el modelo general se evalúa en las mismas filas que el adaptado,True,140710 / 140710
+enfoques_41p_22-11-2026,e4_atencion: ninguna fila de evaluación cae en el primer 40 % de la sesión,True,0.4129
+enfoques_41p_22-11-2026,"e4_activacion (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+enfoques_41p_22-11-2026,"e4_activacion (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.02445, max=0.9939"
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [7987]"
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): cada ventana pertenece a una sola persona,True,0
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): 40 personas,True,40
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): ninguna persona con una sola clase,True,0
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): sin predicciones constantes,True,0
+enfoques_41p_22-11-2026,"e4_activacion (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): etiquetas iguales a las de la etapa de referencia (activacion),True,7987 de 7987 ventanas en común; distintas=0
+enfoques_41p_22-11-2026,e4_activacion (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+enfoques_41p_22-11-2026,e4_activacion: el modelo general se evalúa en las mismas filas que el adaptado,True,79870 / 79870
+enfoques_41p_22-11-2026,e4_activacion: ninguna fila de evaluación cae en el primer 40 % de la sesión,True,0.4179
+montaje_ocular_41p_23-11-2026,personas.csv: 41 personas,True,41
+limpieza_ocular_41p_23-11-2026,"pred (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+limpieza_ocular_41p_23-11-2026,"pred (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.1245, max=0.9716"
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"55 grupos, tamaños [22176]"
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): cada ventana pertenece a una sola persona,True,0
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): 41 personas,True,41
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): 22176 ventanas por estrategia,True,[22176]
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): ninguna persona con una sola clase,True,0
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): sin predicciones constantes,True,0
+limpieza_ocular_41p_23-11-2026,"pred (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+limpieza_ocular_41p_23-11-2026,pred (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+limpieza_ocular_41p_23-11-2026,filtro identidad reproduce las probabilidades de eeg_c1 del 22-11,True,
+red_cruda_41p_23-11-2026,"redes de atención (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+red_cruda_41p_23-11-2026,"redes de atención (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.0132, max=0.9472"
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [22176]"
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): cada ventana pertenece a una sola persona,True,0
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): 41 personas,True,41
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): 22176 ventanas por estrategia,True,[22176]
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): ninguna persona con una sola clase,True,0
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): sin predicciones constantes,True,0
+red_cruda_41p_23-11-2026,"redes de atención (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): etiquetas iguales a las de la etapa de referencia (atencion),True,22176 de 22176 ventanas en común; distintas=0
+red_cruda_41p_23-11-2026,redes de atención (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+red_cruda_41p_23-11-2026,"red y HGB de activación (5 particiones): sin filas duplicadas (fila, estrategia, semilla)",True,0
+red_cruda_41p_23-11-2026,"red y HGB de activación (5 particiones): sin NaN y probabilidades en [0, 1]",True,"NaN=0, min=0.05754, max=0.9775"
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): mismas ventanas en todas las estrategias y semillas,True,"10 grupos, tamaños [11796]"
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): etiqueta idéntica entre estrategias para cada ventana,True,0
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): cada ventana pertenece a una sola persona,True,0
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): 41 personas,True,41
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): 11796 ventanas por estrategia,True,[11796]
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): ninguna persona con una sola clase,True,0
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): sin predicciones constantes,True,0
+red_cruda_41p_23-11-2026,"red y HGB de activación (5 particiones): cada persona se evalúa en un solo fold, igual al del protocolo (nunca en su propio ajuste)",True,
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): etiquetas iguales a las de la etapa de referencia (activacion),True,11796 de 11796 ventanas en común; distintas=0
+red_cruda_41p_23-11-2026,red y HGB de activación (5 particiones): persona de cada ventana coherente con las demás etapas,True,0
+cierre_v3_16-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo dfbd93d 2026-11-16T10:49:51-03:00; predicciones 005a499 2026-11-16T11:35:40-03:00
+cierre_v3_16-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,16 hashes; distintos: []; sin archivo: []
+cierre_final_41p_16-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 1bbb083 2026-11-16T11:39:06-03:00; predicciones 7435fec 2026-11-16T11:56:02-03:00
+cierre_final_41p_16-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,11 hashes; distintos: []; sin archivo: []
+cierre_robustez_41p_16-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 6447236 2026-11-16T12:47:23-03:00; predicciones 550f924 2026-11-16T13:25:45-03:00
+cierre_robustez_41p_16-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,7 hashes; distintos: []; sin archivo: []
+ampliacion_41p_16-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo d2d5530 2026-11-16T14:21:14-03:00; predicciones 8c7a6d4 2026-11-18T21:50:00-03:00
+ampliacion_41p_16-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,6 hashes; distintos: []; sin archivo: []
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 8beb675 2026-11-16T14:25:57-03:00; predicciones 8c7a6d4 2026-11-18T21:50:00-03:00
+ampliacion_41p_16-11-2026/enmienda_e1_lag6,hashes de entradas del protocolo coinciden con los archivos actuales,True,3 hashes; distintos: []; sin archivo: []
+explicativo_posicion_41p_18-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo b3eacdc 2026-11-18T21:40:45-03:00; predicciones 8c7a6d4 2026-11-18T21:50:00-03:00
+explicativo_posicion_41p_18-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,5 hashes; distintos: []; sin archivo: []
+reapertura_41p_22-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 5076307 2026-11-22T19:59:57-03:00; predicciones 99630ed 2026-11-22T20:58:31-03:00
+reapertura_41p_22-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,14 hashes; distintos: []; sin archivo: []
+reapertura_fase2_41p_22-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo e3d9c71 2026-11-22T20:08:14-03:00; predicciones 99630ed 2026-11-22T20:58:31-03:00
+reapertura_fase2_41p_22-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,3 hashes; distintos: []; sin archivo: []
+reapertura_fase3_41p_22-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 7046d92 2026-11-22T21:02:30-03:00; predicciones 9ce5745 2026-11-22T21:22:52-03:00
+reapertura_fase3_41p_22-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,14 hashes; distintos: []; sin archivo: []
+enfoques_41p_22-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo cd25134 2026-11-22T22:04:21-03:00; predicciones 5f806df 2026-11-22T22:58:04-03:00
+enfoques_41p_22-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,24 hashes; distintos: []; sin archivo: []
+limpieza_ocular_41p_23-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 06547f5 2026-11-23T09:40:12-03:00; predicciones afe7e98 2026-11-23T10:15:01-03:00
+limpieza_ocular_41p_23-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,False,21 hashes; distintos: ['scripts/limpieza_ocular_41p.py']; sin archivo: []
+red_cruda_41p_23-11-2026,Git: el protocolo entró al repositorio antes o junto con las predicciones,True,protocolo 0074c60 2026-11-23T10:25:14-03:00; predicciones 4789942 2026-11-23T12:12:56-03:00
+red_cruda_41p_23-11-2026,hashes de entradas del protocolo coinciden con los archivos actuales,True,72 hashes; distintos: []; sin archivo: []

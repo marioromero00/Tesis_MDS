@@ -2,9 +2,9 @@
 
 Rutas relativas al repositorio, salvo indicación explícita. Los resultados antiguos son antecedentes, no resultados V2.
 
-- ../../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md
 - ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md
 - ../../documentos/01 Tesis MDS/Analisis de Datos/SINCRONIZACION_SENALES.md
+- ../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md
 - ../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md
 - ../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md
 - ../../notas/pautas-escritura-recuperadas.md
@@ -20,7 +20,10 @@ Rutas relativas al repositorio, salvo indicación explícita. Los resultados ant
 - resultados/ampliacion_41p_16-11-2026/INFORME.md
 - resultados/ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv
 - resultados/cierre_final_41p_16-11-2026/INFORME.md
+- resultados/cierre_final_41p_16-11-2026/protocolo.json
 - resultados/cierre_robustez_41p_16-11-2026/INFORME.md
+- resultados/cierre_v3_16-11-2026/INFORME.md
+- resultados/enfoques_41p_22-11-2026/INFORME.md
 - resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md
 - resultados/etiquetas_gsr_calidad_v2_01-11-2026/auditoria_independiente_02-11-2026.json
 - resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz

@@ -1,5 +1,7 @@
 # Sustento fisiológico de los resultados del 22 y 23-11-2026
 
+> **Verificación del 23-11-2026.** Las 18 referencias se contrastaron con las fuentes: 10 en texto completo y 8 solo por resumen. Dos atribuciones no se pudieron comprobar (latencias y glándulas ecrinas en Boucsein et al. 2012; lista de estructuras en Critchley 2002) y una no está respaldada (Hipp y Siegel 2013 solo trata frecuencias sobre 30 Hz, no alfa ni beta). Los borradores de discusión ya están ajustados; esta nota conserva el texto original. Detalle: `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
+
 Síntesis del 23-11-2026. Referencias buscadas en OpenAlex ese día: título, autores, revista, año y DOI verificados contra el catálogo. **No se leyeron los textos completos**: lo que se atribuye a cada trabajo viene de su título, su resumen o del conocimiento general del área, y debe confirmarse en la fuente antes de citarlo en el manuscrito. Que estos mecanismos sean la causa en los datos de la tesis es interpretación, salvo donde se indica que los datos lo muestran.
 
 ## 1. Por qué los ojos aparecen en el EEG

@@ -1,7 +1,7 @@
 # Borrador: Conclusiones
 
 > [!info] Estado
-> Borrador redactado el 23-11-2026 a pedido de Mario, a partir de `documentacion/Cierre_Experimental_Final_23-11-2026.md` y de los informes del repositorio. Complementa a [[Borrador Resultados y Discusión 18-11-2026]] y a [[Borrador Discusión fisiológica 23-11-2026]]; no reemplaza a [[Estructura Tesis]], donde el Capítulo 9 sigue *(pendiente)*. Las cifras son AUC por persona con intervalo de confianza de 95 %.
+> Borrador redactado el 23-11-2026 a pedido de Mario, a partir de `documentacion/Cierre_Experimental_Final_23-11-2026.md` y de los informes del repositorio. Complementa a [[Borrador Resultados y Discusión 23-11-2026]] y a [[Borrador Discusión fisiológica 23-11-2026]]; no reemplaza a [[Estructura Tesis]], donde el Capítulo 9 sigue *(pendiente)*. Las cifras son AUC por persona con intervalo de confianza de 95 %.
 
 > [!warning] Decisiones abiertas que este texto no cierra
 > No hay aprobación registrada del profesor guía. El borrador supone, de forma provisoria: (1) que "emociones" se presenta como activación (*arousal*); (2) que el margen práctico es 0,02; (3) que la etiqueta de atención es la original y la corregida por posición se informa como análisis; (4) el encuadre de apoyo parcial; (5) que la cohorte nueva queda como trabajo futuro. Si alguna cambia, hay que revisar las secciones 9.1 y 9.5.
@@ -12,7 +12,7 @@
 
 La hipótesis planteaba que los modelos temporales multimodales obtienen un mejor desempeño fuera de muestra que los modelos estáticos comparables. Los resultados la apoyan de forma parcial: el apoyo proviene de la activación y no de la atención.
 
-En activación, agregar el historial de las señales mejora la predicción del *Arousal Score* (+0,036 [+0,010; +0,065]). La mejora corresponde a información temporal: se mantiene frente a un placebo de la misma persona y al excluir el intervalo que define la etiqueta (+0,047 [+0,018; +0,078]). Es de corto alcance: se concentra en los 6 a 12 s anteriores y desaparece desde los 24 s. Al controlar la posición dentro del estímulo el efecto conserva su tamaño (+0,032 [+0,004; +0,059]), pero queda inconcluso tras la corrección por comparaciones múltiples.
+En activación, agregar el historial de las señales mejora la predicción del *Arousal Score* (+0,036 [+0,010; +0,065]). La mejora corresponde a información temporal: se mantiene frente a un placebo de la misma persona y al excluir el intervalo que define la etiqueta (+0,047 [+0,018; +0,078]). Es de corto alcance: es clara a 6 s, a 12 s es menor e inconclusa (+0,024) y desde los 24 s no se distingue del placebo. Al controlar la posición dentro del estímulo el efecto conserva su tamaño (+0,032 [+0,004; +0,059]), pero queda inconcluso tras la corrección por comparaciones múltiples.
 
 En atención, el modelo con historial también rinde mejor (+0,029 [+0,021; +0,037]), pero esa ventaja no es información temporal. Cuando el modelo conoce la posición de la ventana dentro del estímulo, el historial no agrega nada (+0,001 [−0,002; +0,005]). Lo que el historial capturaba es que el *Attention Score* sigue un patrón sistemático al inicio de cada página.
 
@@ -20,7 +20,7 @@ En ninguna de las dos variables el orden de las ventanas aportó de forma demost
 
 ### 9.2 Fusión y aporte de cada señal
 
-La fusión tardía superó a la temprana en atención (+0,012 [+0,005; +0,021]); en activación ninguna estrategia se distinguió de las demás. La fusión no es, entonces, el factor que explica el desempeño.
+Al comparar las tres estrategias con una misma familia de modelo (perceptrón multicapa), la fusión tardía superó a la temprana en atención (+0,012 [+0,005; +0,021]); en activación ninguna se distinguió de las demás. El resultado no se generaliza a otras familias: con HistGradientBoosting, en el cierre V3, la tardía no superó a la temprana. La fusión no es, entonces, el factor que explica el desempeño.
 
 En atención la detección depende casi por completo del EEG; la GSR no agrega nada (+0,002). En activación aportan el EEG y el historial, la pupila en menor medida, y la mirada no aporta.
 
@@ -54,7 +54,7 @@ De forma descriptiva, la proporción de ventanas de activación alta disminuye h
 
 ### 9.7 Conclusión general
 
-La temporalidad aporta a la detección de la activación, en una escala de segundos y con un efecto pequeño. En atención, lo que parecía un aporte temporal es la estructura de la etiqueta dentro de cada estímulo, y lo que parecía detección cerebral es en gran parte conducta ocular registrada por el EEG. El aporte de la tesis es entonces doble: evidencia acotada a favor de tratar la activación como un proceso dinámico, y una advertencia metodológica sobre el uso de pseudoetiquetas oculares para evaluar modelos basados en EEG.
+La temporalidad aporta a la detección de la activación, en una escala de segundos y con un efecto pequeño. En atención, lo que parecía un aporte temporal es la estructura de la etiqueta dentro de cada estímulo, y lo que parecía detección cerebral es en gran parte conducta ocular registrada por el EEG. El aporte de la tesis es entonces doble: evidencia acotada de que las señales de los segundos previos ayudan a predecir la activación, y una advertencia metodológica sobre el uso de pseudoetiquetas oculares para evaluar modelos basados en EEG.
 
 Fuentes: `documentacion/Cierre_Experimental_Final_23-11-2026.md`; `resultados/reapertura_41p_22-11-2026/`, `reapertura_fase3_41p_22-11-2026/`, `enfoques_41p_22-11-2026/`, `ampliacion_41p_16-11-2026/`, `limpieza_ocular_41p_23-11-2026/` y `red_cruda_41p_23-11-2026/` (`INFORME.md` de cada una).
 
