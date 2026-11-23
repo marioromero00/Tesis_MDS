@@ -179,3 +179,14 @@ Advertencia de la comprobación no registrada (una partición): en activación, 
 Lectura: apoyo parcial, mejor delimitado. Activación: efecto del historial confirmado, de corto alcance (6–12 s), no deriva lenta. Atención: sin información temporal. Pendiente: decidir con el profesor guía cómo presentar los controles inconclusos de activación.
 
 Nota de cómputo: el ajuste de HGB con pesos está dominado por el cálculo de los cortes (unos 40 ms por variable, en Python y sin paralelizar); 12 procesos en paralelo tardaron 55 min.
+
+
+## 2026-11-22 — Reapertura, fase 3: historial frente a posición
+
+Resultados: repos/Tesis_MDS/resultados/reapertura_fase3_41p_22-11-2026 (INFORME.md). Registrado antes de correr (commit 7046d92), pedido por Mario tras ver las fases 1 y 2 (análisis dirigido). Contraste: (historial + posición) − (ventana actual + posición), 5 particiones, Holm sobre 4.
+
+Atención: +0,001 [−0,002; +0,005] en general y −0,000 [−0,003; +0,003] dentro del mismo estímulo: nulo concluyente en ambos. Ventana actual + posición rinde 0,711; historial completo 0,712.
+
+Activación: +0,032 [+0,004; +0,059], 28/41, p 0,027, p Holm 0,108: inconcluso por la regla registrada (mediana +0,031; sin la persona más influyente, que empuja en contra, +0,039 [+0,015; +0,063]). Dentro del mismo estímulo +0,009 [−0,020; +0,037], inconcluso; ahí la posición sola aporta +0,049 [+0,027; +0,072] y el historial no la supera.
+
+Lectura: en atención la mejora del historial es la posición (cerrado). En activación hay dos componentes: dentro del estímulo manda el tiempo transcurrido; entre estímulos el historial aporta y la posición no, pero sin alcanzar el criterio tras Holm. No hay evidencia de dinámica dentro del estímulo.

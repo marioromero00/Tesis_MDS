@@ -8,6 +8,8 @@ Mario reabrió la experimentación el 22-11-2026 para obtener conclusiones más 
 
 Las 41 personas ya se habían consultado en los análisis anteriores. Nada de esto es una confirmación independiente en una cohorte nueva.
 
+> **Fase 3 (misma noche).** El punto que aquí queda abierto, separar el historial de la posición en el estímulo, se abordó en [la fase 3](../reapertura_fase3_41p_22-11-2026/INFORME.md): atención, nulo concluyente (el historial no agrega nada sobre la posición); activación, +0,032 [+0,004; +0,059] sobre la posición, inconcluso tras Holm, y dentro de un mismo estímulo la ventaja del historial se explica por el tiempo transcurrido.
+
 ## Qué cambia respecto del cierre del 18-11
 
 | Tema | Antes | Ahora |

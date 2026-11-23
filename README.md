@@ -8,7 +8,7 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 ## Reapertura — 22-11-2026
 
-[Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Es el estado más reciente de los resultados.
+[Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Sigue la [fase 3: historial frente a posición](resultados/reapertura_fase3_41p_22-11-2026/INFORME.md), que es el estado más reciente de los resultados.
 
 ## Experimentación cerrada — 22-11-2026
 
