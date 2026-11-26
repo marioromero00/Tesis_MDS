@@ -17,3 +17,25 @@ Reglas del bucle: no se entrenan modelos ni se agregan análisis; no se cierran 
   - Coherencia entre cierre, conclusiones, discusión fisiológica, minuta, presentación, READMEs y notas: cifras coinciden con los CSV; 2 bloqueantes, 46 importantes, 53 menores. Los bloqueantes eran un error introducido al corregir el 23-11: el +0,047 de activación a 6 s se describía como repetición con cinco particiones; es la curva temporal en una sola partición y 40 personas (verificado en `scripts/reapertura_41p.py`).
 - **Correcciones aplicadas por agentes distintos de los auditores**, cada una comprobada en su fuente: 99 de 101 de coherencia más las dos del generador; 36 de 37 de Secciones pendientes (queda unificar "prueba"/"test", elección de estilo de Mario); todas las de Resultados y Discusión salvo dos de estilo global. La presentación se regeneró y se revisaron visualmente las láminas cambiadas. Las láminas 13 a 17 pasaron al capítulo "Las etiquetas". El cierre y las conclusiones listan ahora las siete decisiones de la minuta.
 - Informes: `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda2/`.
+- Respaldo de la ronda 1: commit `aef0f32`, `HEAD` igual a `origin/main`.
+
+### Ronda 2 — 26-11, lanzada tras el respaldo
+
+Tres revisiones con enfoques distintos de los de la ronda 1, por agentes nuevos y sin tocar archivos:
+
+1. Verificación del diff `af345a2..aef0f32`: cada cambio contra la fuente primaria, por si alguna corrección introdujo errores.
+2. Lectura crítica como miembro de comisión: argumento, validez, explicaciones alternativas, preguntas de defensa no preparadas.
+3. Auditoría transversal del código que generó las predicciones (fugas entre personas, no-circularidad columna por columna, historial y controles, evaluación).
+
+Resultados de la ronda 2:
+
+- **Verificación del diff:** ~240 cambios revisados, 13 errores (0 bloqueantes, 4 importantes), casi todos correcciones no propagadas entre documentos. Aplicadas las 20 sustituciones.
+- **Lectura crítica como comisión:** 7 bloqueantes, 24 importantes, 27 menores, 21 preguntas de defensa sin preparar. Los principales: el diseño con 41 personas se adoptó tras el resultado nulo del cierre V3 y no se decía al responder la hipótesis; la etiqueta PCA se eligió por ser más predecible; "sin los 6 s de la etiqueta" no vale para la señal porque el filtro tónico usa toda la sesión; "modelo temporal multimodal" sin operacionalización declarada; la contribución 3 del esqueleto queda refutada por la conclusión principal (va a la minuta, el esqueleto no se edita); falta información de participantes y ética.
+- **Auditoría de código:** sin fuga entre personas ni fuga directa de etiqueta a entradas; reproduce el fold 0 del análisis final con diferencia 0,00. Cuatro hallazgos que afectan lecturas:
+  - H1: las 15 hojas de activación se eligieron con el modelo con historial (contexto 32) sobre 25 de las 41 personas evaluadas; el efecto es +0,055 en esas 25 y +0,001 en las otras 16 (principal del 16-11). El contraste del historial desplazado frente al placebo es positivo en ambos grupos (+0,035 y +0,064). Sesgo posible, no demostrado.
+  - H2: la etiqueta de activación es en lo esencial el nivel tónico de la GSR (AUC 0,911 solo con la componente tónica) y su soporte temporal excede los 6 s.
+  - H3: en el profesor PCA la pupila casi no pesa (−0,052): la etiqueta de atención es conducta de mirada.
+  - H4: las fijaciones se suman con su duración completa (27,7 % de las ventanas sobre 2.000 ms).
+- **Aplicado** por un agente distinto de los auditores, verificando cada hecho en su fuente (INFORME, CSV, scripts, `git log`): los 7 bloqueantes y 24 importantes de la lectura de comisión y los hallazgos H1 a H4 del código, propagados a Resultados y Discusión, Conclusiones, Discusión fisiológica, Secciones pendientes, minuta, cierre, presentación y ensayo. El esqueleto `Estructura Tesis` no se tocó: lo que afecta a hipótesis, objetivos y contribuciones quedó en una sección nueva de la minuta (18 filas, sin decidir), junto con la información de participantes y ética que hay que pedir al proyecto. La sensibilidad con 7 hojas o selección anidada quedó listada como experimento opcional, sin correr.
+- Dato nuevo comprobado al aplicar: dentro de cada grupo experimental el orden de los estímulos comunes coincide entre personas; la validación cruzada separa personas, no grupos (declarado como límite).
+- `ENSAYO.md` quedó con 37 preguntas difíciles. Pendiente menor: el eje del gráfico de la lámina 12 dice "(OOF)".

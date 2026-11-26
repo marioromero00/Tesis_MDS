@@ -58,7 +58,7 @@ El vault restaurado corresponde al respaldo del **24 de septiembre**, no al manu
 
 Los avances experimentales posteriores están conservados en `repos/Tesis_MDS/documentacion`, `repos/Tesis_MDS/resultados` y `notas/bitacora.md`. Para el estado actual, consultar esos informes antes del índice histórico del vault o el README del código.
 
-El repositorio local está en `main`, commit `af345a2`, igual a `origin/main` (26-11-2026).
+El repositorio local está en `main`, igual a `origin/main` al 26-11-2026; el commit vigente se consulta con `git log -1`.
 
 El archivo `notas/plan.md` es una plantilla antigua con el tema por definir; no describe el avance real. Usar los objetivos del borrador recuperado y la bitácora reciente.
 

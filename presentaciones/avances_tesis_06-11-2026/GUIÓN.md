@@ -2,7 +2,7 @@
 
 ## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no es temporal, y al menos un tercio de lo que detecta el EEG es la huella de los ojos. Al final hay cinco decisiones que necesito tomar con usted.
+Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y al menos un tercio de lo que detecta el EEG depende de componentes ligados a los ojos. Al final hay cinco decisiones que necesito tomar con usted.
 
 ## 02. De qué voy a hablar
 
@@ -10,7 +10,7 @@ Son nueve partes. Lo nuevo desde la última reunión son las tres últimas: qué
 
 ## 03. La hipótesis
 
-Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre el mismo modelo, con la misma etiqueta, y lo único que cambia es si ve las ventanas anteriores. Dice emociones, pero con GSR lo que mido es activación; eso lo vemos al final.
+Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre el mismo modelo, con la misma etiqueta, y lo único que cambio es si ve las ventanas anteriores; más adelante se ve que con eso el modelo también se entera de cuánto lleva la persona en la página. Dice emociones, pero con GSR lo que mido es activación; eso lo vemos al final.
 
 ## 04. Los datos: Toma de Muestra 2, navegación web en laboratorio
 
@@ -18,7 +18,7 @@ Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en a
 
 ## 05. Unas señales arman la etiqueta y otras la predicen
 
-No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
+No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. En atención la etiqueta sale en la práctica de la mirada: en el profesor PCA la pupila pesa −0,05. En activación es, en lo esencial, el nivel tónico de la GSR. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
 
 ## 06. 48 personas registradas, 41 en el análisis
 
@@ -38,15 +38,15 @@ Uso KDD como marco. Es un proceso iterativo: cuando encontré el error en la eti
 
 ## 10. Qué hago con cada señal
 
-El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 45 Hz con notch en 50, marco los canales no utilizables y desde octubre lo uso por canal. La pupila todavía no la corrijo por el brillo de cada página; eso está en las limitaciones.
+El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 45 Hz con notch en 50, marco los canales no utilizables y desde octubre lo uso por canal. La pupila no está corregida por el brillo de cada página, porque no hay datos de luminancia; eso está en las limitaciones.
 
 ## 11. Cómo comparo un modelo con y sin historial
 
-Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Cada análisis principal lo registré en GitHub antes de correrlo, aunque siempre sobre personas ya consultadas; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
+Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. El protocolo de cada análisis principal entró al repositorio antes que sus predicciones, aunque siempre sobre personas ya consultadas y sin un registro externo: no es un prerregistro; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
 
-## 12. Con PCA, la etiqueta de atención se predice mejor
+## 12. Dos formas de armar la etiqueta de atención coinciden solo en dos tercios de las ventanas
 
-Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Con PCA todos los modelos la predicen mejor y seguí con esa. Las dos coinciden en dos tercios de las ventanas.
+Probé dos formas de armar la etiqueta de atención: pesos iguales y PCA. Los análisis siguieron con PCA, que es la que los modelos predicen mejor. Eso no es un argumento de validez: que una etiqueta sea más fácil de predecir desde el EEG no significa que mida mejor la atención. Las dos coinciden solo en dos tercios de las ventanas, y cuál queda como definición es una decisión que le traigo.
 
 ## 13. Con la etiqueta antigua, tres personas tenían datos anómalos
 
@@ -70,7 +70,7 @@ Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas vá
 
 ## 18. Primer análisis con 41 personas (16-11): mejora en atención; en activación, inconcluso
 
-Para tener más potencia usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
+Con las particiones originales, el cierre V3 no mostró una ventaja consistente en ninguna de las dos tareas. Después de ver eso, y para tener más potencia, usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda: es un cambio de diseño posterior a los datos. Otro límite: las 15 hojas del modelo de activación las elegí con las 25 personas de entrenamiento y la elección la decidió el modelo con historial; el efecto de activación se concentra en esas 25 (+0,055, frente a +0,001 en las otras 16). Ese sesgo es posible, no está demostrado. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
 
 ## 19. En atención, la fusión tardía rinde mejor entre redes MLP; con HGB, no
 
@@ -78,19 +78,19 @@ Con la misma familia de modelo, en atención la fusión tardía le gana a la tem
 
 ## 20. El modelo de atención rinde mejor al final de la sesión y peor en textos
 
-En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. La línea gris es la AUC de activación por quinto; es descriptiva y con 34 a 41 personas por punto. Todo esto es descriptivo.
+En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación y también con una deriva lenta de la señal o con el orden de las páginas. La línea gris es la AUC de activación por quinto; es descriptiva y con 34 a 41 personas por punto. Todo esto es descriptivo.
 
 ## 21. ¿De dónde viene la mejora?
 
-Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, el placebo y los segundos no aportan, y el historial sí, incluso sin los 6 s que usa la etiqueta.
+Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, el placebo y los segundos no aportan, y el historial sí, incluso sin las ventanas de 6 s que promedia la etiqueta.
 
 ## 22. En atención, la etiqueta depende de cuánto lleva la persona en la página
 
-Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 y 3 y después sube hasta 62 %. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y pupila al cambiar de página. Este análisis lo hice después de ver el placebo, así que es explicativo.
+Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 y 3 y después sube hasta 62 %. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y mirada al cambiar de página; no separé cuánto es conducta y cuánto es el cálculo de las fijaciones. Este análisis lo hice después de ver el placebo, así que es explicativo.
 
 ## 23. En activación, los segundos previos aportan frente al placebo
 
-Excluí del historial los 6 s que definen la etiqueta, para que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.
+Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Este contraste es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.
 
 ## 24. Los movimientos de los ojos se ven en el EEG
 
@@ -98,11 +98,11 @@ La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de in
 
 ## 25. Al quitar los componentes oculares, la detección de atención cae
 
-Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que 0,06 es una cota inferior. Registrado antes de correr y auditado.
+Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que leo 0,06 como una cota inferior; no es una demostración, porque elijo los componentes con la mirada, que también define la etiqueta. El protocolo entró al repositorio antes que las predicciones.
 
 ## 26. Una red sobre la señal cruda rinde más, y también depende de la huella ocular
 
-Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
+Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control. Tampoco puedo separar si la ventaja viene de la arquitectura o de la escala por persona que recibe la red.
 
 ## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
 
@@ -114,11 +114,11 @@ La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas baj
 
 ## 29. Qué responde la tesis
 
-La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, al menos un tercio de lo que el EEG tiene sobre el azar es la huella de los ojos, y no puedo descartar que el resto también lo sea. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, al menos un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
 ## 30. Conclusiones: la hipótesis tiene apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,047 es de la curva del 22-11 (una partición, 40 personas); el +0,046 de la lámina 23 es el contraste registrado el 16-11.
+Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
 
 ## 31. Conclusiones: qué detecta el EEG
 
@@ -130,7 +130,7 @@ Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la 
 
 ## 33. Necesito decidir cinco cosas con usted
 
-La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay un sexto punto, menor: las etiquetas se normalizan con la sesión completa de cada persona, y el manuscrito pide normalizar solo con entrenamiento; necesito saber si basta con declararlo como límite. El detalle de cada opción está en la minuta, que agrega un séptimo punto: confirmar el profesor PCA como definición del Attention Score.
+La experimentación sobre estas 41 personas la doy por cerrada, salvo que usted indique otra cosa. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay dos puntos más que no caben en la lámina y que pueden pesar más que los anteriores, porque si no se aceptan obligan a repetir análisis: las etiquetas se normalizan con la sesión completa de cada persona y el manuscrito pide normalizar solo con entrenamiento; y los análisis usan el profesor PCA, cuando la nota de diseño proponía la fusión igualitaria. El detalle de cada opción está en la minuta, que además lista los objetivos y contribuciones que conviene revisar, la información de participantes y ética que tengo que pedir al proyecto, y cómo declarar el uso de asistentes automáticos en las revisiones.
 
 ## 34. Atención: curvas ROC en test
 
