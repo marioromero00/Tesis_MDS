@@ -142,7 +142,7 @@ def apply(slides):
  ax.set_xlim(seg.t.min()-1,seg.t.max()+9);ax.legend(frameon=False,loc='upper left',ncol=2);ax.grid(axis='y');save(f,'ejemplo_etiqueta')
  # 2) Participantes por partición.
  P=read('resultados/modelado/particion_participantes.csv')
- order=['train','validation','test','sensitivity','excluded'];names={'train':'Entrenamiento','validation':'Validación','test':'Test','sensitivity':'Sensibilidad (P29)','excluded':'Excluidas'}
+ order=['train','validation','test','sensitivity','excluded'];names={'train':'Entrenamiento','validation':'Validación','test':'Test','sensitivity':'P29 (sensibilidad)','excluded':'Excluidas'}
  colors={'train':BLUE,'validation':LIGHT,'test':DARK,'sensitivity':'#7b8b9b','excluded':'#d5dde7'}
  f,ax=fig(11,3.4);x0=0
  for sp in order:
@@ -163,7 +163,7 @@ def apply(slides):
   xs=np.arange(4)+(j-.5)*.36
   ax.bar(xs,[v.auc_macro-.5 for v in vals],.34,bottom=.5,color=col,label=lab,zorder=2)
   for xx,v in zip(xs,vals):ax.text(xx,v.auc_macro+.004,c(v.auc_macro),ha='center',fontsize=12)
- ax.axhline(.5,color=ORANGE,ls='--',lw=1.2);ax.set(xticks=range(4),xticklabels=[l for *_,l in fams],ylim=(.48,.66),yticks=[.50,.55,.60,.65],ylabel='AUC en entrenamiento (OOF)');comma_axis(ax,'y',2)
+ ax.axhline(.5,color=ORANGE,ls='--',lw=1.2);ax.set(xticks=range(4),xticklabels=[l for *_,l in fams],ylim=(.48,.66),yticks=[.50,.55,.60,.65],ylabel='AUC en entrenamiento\n(cada persona, sin ella en el ajuste)');comma_axis(ax,'y',2)
  ax.legend(frameon=False,loc='upper left',ncol=2);ax.grid(axis='y',zorder=0);save(f,'profesores')
  # 4) Atención por persona: HGB sin historial vs hasta 32.
  M=read('resultados/temporalidad_eeg_v2_test_29-10-2026/metricas_participantes.csv')
@@ -221,7 +221,7 @@ def apply(slides):
  ax.axhspan(1.5,5.5,color='#f1f5fa',zorder=0)
  ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(yticks=range(len(rows)),yticklabels=[r[0] for r in rows],ylim=(len(rows)-.5,-.5),xlim=(-.04,.1),xlabel='Diferencia de AUC: con historial − sin historial');ax.set_xticks([-.025,0,.025,.05,.075]);comma_axis(ax,'x',3);ax.grid(axis='x');save(f,'sintesis')
  # 8) Tamaño de muestra.
- f,ax=fig(11,3.2);labs=['Atención · variabilidad de test','Activación · variabilidad de validación','Activación · variabilidad de test','Activación · variabilidad de entrenamiento (OOF)'];ns=[62,72,101,767]
+ f,ax=fig(11,3.2);labs=['Atención · variabilidad de test','Activación · variabilidad de validación','Activación · variabilidad de test','Activación · variabilidad de entrenamiento (fuera de muestra)'];ns=[62,72,101,767]
  ax.barh(range(4),ns,color=[GRAY,BLUE,BLUE,BLUE],height=.55)
  for i,n in enumerate(ns):ax.text(n+12,i,str(n),va='center',fontsize=15,color=DARK,weight='bold')
  ax.set(yticks=range(4),yticklabels=labs,xlim=(0,880),ylim=(3.6,-.6),xlabel='Personas nuevas evaluables');ax.grid(axis='x');ax.set_axisbelow(True);save(f,'muestra')
@@ -287,7 +287,7 @@ def apply(slides):
   its=[('Historial real',*row(fin,task,'contrast','hgb_c32 − hgb_c1'),BLUE),
        ('Historial placebo',*row(rob,task,'prueba','R1 referencia'),GRAY),
        ('Solo segundos en la página',*row(pos,task,'contrast','pos_c1 − hgb_c1'),ORANGE if False else DARK),
-       ('Historial sin los 6 s de la etiqueta',*row(lag6,task,'contrast','lag6_real − hgb_c1'),LIGHT)]
+       ('Historial sin las ventanas de 6 s\nque promedia la etiqueta',*row(lag6,task,'contrast','lag6_real − hgb_c1'),LIGHT)]
   for j,(l_,d_,lo,hi,col) in enumerate(its):
    ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(d_,j-.3,c(d_,3,True),ha='center',fontsize=12)
   ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(title=lab,yticks=range(4),yticklabels=[i[0] for i in its],ylim=(3.6,-.7));ax.grid(axis='x');comma_axis(ax,'x',2)

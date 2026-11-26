@@ -6,12 +6,12 @@ Estado: Mario Romero pidió este cierre el 23-11-2026. No hay aprobación del pr
 
 ## Conclusión general
 
-Evidencia mixta, con **apoyo parcial** a la hipótesis de temporalidad, que proviene de activación. Con el diseño original (entrenamiento, validación y test por separado), el cierre V3 del 16-11 no había mostrado una ventaja consistente en ninguna de las dos variables; el análisis con validación cruzada sobre 41 personas se registró cuatro minutos después de publicar ese resultado (`005a499`, 11:35, y `1bbb083`, 11:39). El apoyo parcial depende de ese cambio de diseño y se refiere al historial reciente resumido con estadísticos, no a un modelo secuencial ni a la combinación de señales.
+Evidencia mixta, con **apoyo parcial** a la hipótesis de temporalidad, que proviene de activación. Con el diseño original (entrenamiento, validación y test por separado), el cierre V3 del 16-11 no había mostrado una ventaja consistente en ninguna de las dos variables; el análisis con validación cruzada sobre 41 personas se registró menos de cuatro minutos después del commit de ese resultado (`005a499`, 11:35:40, y `1bbb083`, 11:39:06). El apoyo parcial depende de ese cambio de diseño y se refiere al historial reciente resumido con estadísticos, no a un modelo secuencial ni a la combinación de señales.
 
 | Pregunta | Atención | Activación |
 |---|---|---|
 | ¿Mejora el modelo con historial? | Sí: +0,029 [+0,021; +0,037], efecto relevante | Sí: +0,036 [+0,010; +0,065], respaldo; concentrado en las 25 personas con que se eligió la configuración (+0,046, frente a +0,021 en las otras 16) |
-| ¿La mejora es información temporal? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | En parte. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
+| ¿La mejora proviene de la fisiología de las ventanas previas? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | En parte. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
 | ¿Queda algo al controlar la posición? | No: nulo concluyente dentro de ±0,02 | +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo, +0,009, también inconcluso |
 | ¿Aporta el orden de las ventanas (GRU)? | No: +0,008 [−0,004; +0,020], y rinde 0,040 bajo el HGB | No demostrado: GRU − HGB, ambos con historial, +0,020 [−0,017; +0,057], inconcluso. La GRU con historial supera a su control de una ventana (+0,051, secundario sin corrección), lo que mide el historial y no el orden |
 | ¿Qué fusión? | Tardía sobre temprana con MLP: +0,012 [+0,005; +0,021], secundario; con HGB (cierre V3) el signo es el contrario | Sin diferencias demostradas (inconcluso: +0,006 [−0,032; +0,042]) |
@@ -115,7 +115,7 @@ Un asistente automático, a pedido del autor, recalculó con código separado la
 
 ### Auditoría de código, ronda 3 (26-11-2026)
 
-Una revisión del código del 16 al 23-11, hecha con un asistente automático a pedido del autor (`documentacion/auditoria_final_23-11-2026/ronda3/AUDITORIA_CODIGO.md`, con comprobaciones ejecutables en `comprobaciones/`), no encontró fuga entre personas ni fuga directa de la etiqueta a las entradas, y reprodujo bit a bit el fold 0 del análisis final. Ningún hallazgo cambia una cifra. Cuatro afectan lecturas y este documento los declara en "Límites":
+Una revisión del código del 16 al 23-11, hecha con un asistente automático a pedido del autor (`documentacion/auditoria_final_23-11-2026/ronda3/AUDITORIA_CODIGO.md`, con comprobaciones ejecutables en `comprobaciones/`), no encontró fuga entre personas ni fuga directa de la etiqueta a las entradas, y reprodujo bit a bit el fold 0 del análisis final. Ningún hallazgo cambia una cifra. Cuatro afectan lecturas y este documento los declara en "Límites"; se listan bajo la tabla, que separa los contrastes de activación por grupo de personas (descriptiva, no registrada):
 
 | Contraste de activación | 41 personas | 25 de la búsqueda | 16 restantes |
 |---|---|---|---|
@@ -124,13 +124,14 @@ Una revisión del código del 16 al 23-11, hecha con un asistente automático a 
 | Con tiempo de sesión | +0,026 | +0,050 [+0,013; +0,085] | −0,011 [−0,066; +0,038] |
 | Con posición (Q1) | +0,032 | +0,049 [+0,018; +0,081] | +0,006 [−0,043; +0,049] |
 | Historial − posición (18-11) | +0,038 | +0,063 [+0,021; +0,109] | −0,001 [−0,056; +0,054] |
+| Historial − placebo (16-11) | +0,038 | +0,057 [+0,023; +0,092] | +0,008 [−0,048; +0,058] |
 | Historial desplazado 6 − placebo | +0,046 | +0,035 [+0,003; +0,064] | +0,064 [+0,015; +0,115] |
-| Banda de 6 s − placebo | +0,047 | +0,058 [+0,015; +0,101] | +0,030 [−0,003; +0,068] |
-| GRU hasta 32 − GRU una ventana | +0,051 | +0,045 [+0,007; +0,083] | +0,059 [+0,014; +0,102] |
+| Banda de 6 s − placebo (40 personas: 24 y 16) | +0,047 | +0,058 [+0,015; +0,101] | +0,030 [−0,003; +0,068] |
+| GRU hasta 32 − GRU una ventana | +0,051 | +0,045 [+0,007; +0,083] | +0,059 [+0,014; +0,101] |
 
 1. **H1.** La selección de hojas de activación la decidió el modelo con historial, sobre 25 de las 41 personas evaluadas. La tabla (reproducida el 26-11 con `c07_seleccion_y_grupos.py`, desde las predicciones guardadas) muestra dónde se concentran los contrastes. Sesgo posible, no demostrado.
 2. **H2.** La etiqueta de activación es en lo esencial el nivel tónico de la GSR (AUC 0,911 del nivel tónico de la ventana contra la etiqueta) y su soporte excede los 6 s.
-3. **H3.** En el profesor PCA la pupila pesa −0,052.
+3. **H3.** En el *Modelo Profesor* con PCA la pupila pesa −0,052.
 4. **H4.** Las fijaciones se suman con su duración completa.
 
 Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción original, incluidas las palabras "confirmado" y los redondeos señalados.
@@ -144,10 +145,10 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 - El EEG y el seguidor ocular tienen un desfase de reloj de 0,18 a 0,53 s sin corregir; su efecto no se midió. Se agrupa en dos valores (cerca de 0,27 s en P2 a P21, P36 y P37; cerca de 0,47 s en el resto), lo que sugiere una causa sistemática de adquisición que no se investigó.
 - El diseño de evaluación cambió después de un resultado nulo (cierre V3).
 - **Selección de la configuración (límite destacado).** Las 15 hojas del modelo de activación se eligieron con la AUC media de los modelos con 1, 8 y 32 ventanas; la elección la decidió el de 32 (0,5311 con 15 hojas frente a 0,4994 con 7), y las 25 personas de esa búsqueda son 25 de las 41 evaluadas. Los contrastes del HGB con historial hasta 32 se concentran en ellas. El sesgo a favor del historial es posible y no está demostrado: la diferencia entre grupos no es significativa con 16 personas, y el historial desplazado frente al placebo y la GRU son positivos en ambos grupos. No se corrió una sensibilidad con 7 hojas ni con selección anidada.
-- La etiqueta de atención (profesor PCA) se siguió usando tras observar que los modelos la predecían mejor que la de pesos iguales; eso no es un argumento de validez.
-- La etiqueta de activación es en lo esencial el nivel tónico de la GSR relativo a la sesión, y su soporte real excede los 6 s nominales: el filtro tónico (pasa-bajos de 0,05 Hz aplicado en ambos sentidos sobre la sesión completa) deja el 49 % del peso en las ventanas nominales, el 25 % antes y el 25 % después. El contraste "sin las ventanas de la etiqueta" no excluye ese soporte.
+- La etiqueta de atención (*Modelo Profesor* con PCA) se siguió usando tras observar que los modelos la predecían mejor que la de pesos iguales; eso no es un argumento de validez.
+- La etiqueta de activación es en lo esencial el nivel tónico de la GSR relativo a la sesión, y su soporte real excede los 6 s nominales: el filtro tónico (pasa-bajos de 0,05 Hz aplicado en ambos sentidos sobre la sesión completa) deja el 49 % del peso de la parte tónica en las ventanas nominales, el 25 % antes y el 25 % después. El contraste "sin las ventanas de la etiqueta" no excluye ese soporte.
 - El efecto de activación no es estable entre subconjuntos de personas ni entre diseños: +0,055 en las 25 de entrenamiento y +0,001 en las otras 16 en el análisis con 41 personas, y el patrón inverso en el cierre V3 (descriptivo, no registrado).
-- La etiqueta de atención es, en la práctica, conducta de mirada: en el profesor PCA la pupila pesa −0,052. Las variables de fijación suman la duración completa de las fijaciones que tocan la ventana (más de 2.000 ms en cerca del 28 % de las ventanas etiquetadas).
+- La etiqueta de atención es, en la práctica, conducta de mirada: en el *Modelo Profesor* con PCA la pupila pesa −0,052. Las variables de fijación suman la duración completa de las fijaciones que tocan la ventana (más de 2.000 ms en cerca del 28 % de las ventanas etiquetadas).
 - Ocho filas, todas de atención, cumplen dos reglas de decisión a la vez; la precedencia del código (respaldo, inferior, nulo concluyente), que los protocolos no fijan, deja seis como "inferior" y dos como "respaldo". Los modelos de historial desplazado reciben una columna no declarada con el número de ventanas.
 - La AUC por persona pesa igual a todas las personas, sin mínimo de ventanas: P4, la más influyente del contraste principal de activación, conserva 26 ventanas con etiqueta. Los resultados de activación se refieren al 53 % de las ventanas que conserva la etiqueta.
 - La validación cruzada separa personas, no grupos experimentales; las personas de un mismo grupo vieron los estímulos en el mismo orden y no se evaluó dejando grupos completos fuera.
@@ -161,13 +162,13 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 
 Decisiones con el profesor guía:
 
-1. Si la etiqueta de atención corregida por posición reemplaza a la original.
+1. Si se planifica una cohorte nueva para confirmar activación.
 2. Si el margen práctico de 0,02 queda como criterio.
 3. Si "emociones" se presenta como activación (*arousal*).
-4. El encuadre: apoyo parcial, con la detección de atención por EEG presentada como dependiente, al menos en parte, de la huella ocular, sin atribuir el resto a un origen cerebral ni ocular.
-5. Si se planifica una cohorte nueva para confirmar activación.
+4. Si la etiqueta de atención corregida por posición reemplaza a la original.
+5. El encuadre: apoyo parcial, con la detección de atención por EEG presentada como dependiente, al menos en parte, de la huella ocular, sin atribuir el resto a un origen cerebral ni ocular.
 6. Si se aceptan las etiquetas normalizadas con la sesión completa de cada persona (el manuscrito pide normalizar solo con entrenamiento).
-7. Si el profesor PCA queda como definición del *Attention Score* (la nota de diseño proponía la fusión igualitaria como principal).
+7. Si el *Modelo Profesor* con PCA queda como definición del *Attention Score* (la nota de diseño proponía la fusión igualitaria como principal).
 
 Ninguna de las siete está tomada. Las opciones de cada una están en la minuta del 23-11 (`Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md`), que desde el 26-11 lista además las hipótesis, objetivos y contribuciones del esqueleto que conviene revisar, la información de participantes y ética que hay que pedir al proyecto, y la pregunta de cómo declarar el uso de asistentes automáticos.
 

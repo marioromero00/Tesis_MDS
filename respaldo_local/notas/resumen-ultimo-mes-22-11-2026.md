@@ -22,7 +22,7 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 
 ## 29 y 30 de octubre
 
-- Etiqueta binaria de atención reconstruida desde las variables oculares con un profesor PCA, sin usar etiquetas antiguas. Modelos nuevos y grids de atención.
+- Etiqueta binaria de atención reconstruida desde las variables oculares con un *Modelo Profesor* con PCA, sin usar etiquetas antiguas. Modelos nuevos y grids de atención.
 - Extracción de EEG por canal (16 canales por separado).
 - Temporalidad en atención: en validación, HGB con contexto 32 AUC 0,694 y CatBoost 0,704; en test, contexto 32 AUC 0,688 frente a 0,660 del estático pareado (+0,028 [−0,004; +0,051], mejora en 7 de 8). Indicios favorables, evidencia inconclusa.
 - Comparación común binaria (20 modelos) y diagnóstico de activación: AUC OOF 0,537 / 0,534 / 0,540 para contextos 1 / 8 / 32. Se detectaron problemas de calidad del GSR en algunas personas.
@@ -67,7 +67,7 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 ## Dónde queda la tesis
 
 - **Hipótesis de temporalidad: apoyo parcial.** En activación el historial ayuda, con respaldo solo para los 6 s anteriores y con AUC absolutas bajas (0,55 a 0,59). En atención no hay información temporal: la mejora era el reloj del estímulo.
-- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero al menos un tercio de lo que tiene sobre el azar es ocular (0,060 de 0,181, cota inferior); del resto no se puede afirmar origen cerebral ni ocular.
+- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero cerca de un tercio de lo que tiene sobre el azar es ocular (0,060 de 0,181, cota inferior); del resto no se puede afirmar origen cerebral ni ocular.
 - **Activación.** El modelo por estímulo rinde más (0,587), sin superar de forma demostrable al promedio por ventana. Las dos palancas que más la mejoran son trabajar a nivel de estímulo y adaptar el modelo a la persona.
 - **Método.** Desde el 16-11 todo análisis con protocolo se registra en Git antes de sus predicciones y se ejecuta una vez; desde el 22-11 cada etapa pasa además por auditoría independiente.
 

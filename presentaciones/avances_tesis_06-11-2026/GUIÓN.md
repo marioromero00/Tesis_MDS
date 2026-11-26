@@ -2,11 +2,11 @@
 
 ## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y al menos un tercio de lo que detecta el EEG depende de componentes ligados a los ojos. Al final hay cinco decisiones que necesito tomar con usted.
+Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay cinco decisiones que necesito tomar con usted.
 
 ## 02. De qué voy a hablar
 
-Son nueve partes. Lo nuevo desde la última reunión son las tres últimas: qué explica la mejora, qué detecta el EEG y las conclusiones.
+Son nueve partes. Lo nuevo desde la última reunión va desde los resultados con 41 personas: de dónde viene la mejora, qué detecta el EEG y las conclusiones.
 
 ## 03. La hipótesis
 
@@ -18,7 +18,7 @@ Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en a
 
 ## 05. Unas señales arman la etiqueta y otras la predicen
 
-No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. En atención la etiqueta sale en la práctica de la mirada: en el profesor PCA la pupila pesa −0,05. En activación es, en lo esencial, el nivel tónico de la GSR. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
+No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. En atención la etiqueta sale en la práctica de la mirada: en el Modelo Profesor con PCA la pupila pesa −0,05. En activación es, en lo esencial, el nivel tónico de la GSR. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
 
 ## 06. 48 personas registradas, 41 en el análisis
 
@@ -42,7 +42,7 @@ El EEG es lo que más trabajo tuvo: lo filtro entre 1 y 45 Hz con notch en 50, m
 
 ## 11. Cómo comparo un modelo con y sin historial
 
-Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. El protocolo de cada análisis principal entró al repositorio antes que sus predicciones, aunque siempre sobre personas ya consultadas y sin un registro externo: no es un prerregistro; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
+Elijo los hiperparámetros solo dentro de entrenamiento. Después congelo esa configuración y la evalúo con las 41 personas en validación cruzada por persona. Ojo: esas 25 personas son parte de las 41 que después evalúo, y en activación la elección la decidió el modelo con historial; el detalle va en la lámina 18. El protocolo de cada análisis principal entró al repositorio antes que sus predicciones, aunque siempre sobre personas ya consultadas y sin un registro externo: no es un prerregistro; el de posición lo registré, pero después de ver el placebo. Como las ventanas se solapan, todo lo calculo por persona. El borrador también pide BA, macro-F1 y recall por clase; en esta presentación muestro solo la AUC.
 
 ## 12. Dos formas de armar la etiqueta de atención coinciden solo en dos tercios de las ventanas
 
@@ -56,7 +56,7 @@ Esto fue lo que me hizo dudar. P4 casi no tenía señal y aun así todas sus ven
 
 Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guardados, así que las AUC de activación de antes no sirven. El 25.992 es el archivo completo, incluidas personas fuera del análisis.
 
-## 15. "Alta" es estar sobre su propia mediana de activación: así se ve en P22
+## 15. “Alta” es estar sobre su propia mediana de activación: así se ve en P22
 
 Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si P22 está más activada que de costumbre en ese momento.
 
@@ -70,7 +70,7 @@ Rehice la etiqueta en cuatro pasos. Lo que más saca es pedir cinco ventanas vá
 
 ## 18. Primer análisis con 41 personas (16-11): mejora en atención; en activación, inconcluso
 
-Con las particiones originales, el cierre V3 no mostró una ventaja consistente en ninguna de las dos tareas. Después de ver eso, y para tener más potencia, usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda: es un cambio de diseño posterior a los datos. Otro límite: las 15 hojas del modelo de activación las elegí con las 25 personas de entrenamiento y la elección la decidió el modelo con historial; el efecto de activación se concentra en esas 25 (+0,055, frente a +0,001 en las otras 16). Ese sesgo es posible, no está demostrado. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
+Con las particiones originales, el cierre V3 no mostró una ventaja consistente en ninguna de las dos tareas. Después de ver eso, y para tener más potencia, usé las 41 personas en validación cruzada, con la configuración ya congelada y sin búsqueda: es un cambio de diseño posterior a los datos. Otro límite: las 15 hojas del modelo de activación las elegí con las 25 personas de entrenamiento y la elección la decidió el modelo con historial; el efecto de activación se concentra en esas 25 (+0,055, frente a +0,001 en las otras 16); esa comparación por grupo no estaba registrada. Ese sesgo es posible, no está demostrado. En atención la mejora es +0,026 y mejoran 36 de 41; se repite con otras tres particiones. En activación da +0,034 pero el intervalo de la partición registrada toca el cero.
 
 ## 19. En atención, la fusión tardía rinde mejor entre redes MLP; con HGB, no
 
@@ -90,11 +90,11 @@ Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 
 
 ## 23. En activación, los segundos previos aportan frente al placebo
 
-Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Este contraste es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.
+Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004; es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: la AUC queda entre 0,55 y 0,58 según el análisis.
 
-## 24. Los movimientos de los ojos se ven en el EEG
+## 24. Los parpadeos y los movimientos de los ojos se ven en el EEG
 
-La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo pega 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además respalda el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.
+La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo pega 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además es compatible con el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.
 
 ## 25. Al quitar los componentes oculares, la detección de atención cae
 
@@ -106,23 +106,23 @@ Probé un modelo más complejo: una red convolucional que aprende directo de la 
 
 ## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
 
-La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es, al menos en un tercio, lo Observado, y no puedo afirmar que sea lo Atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
+La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Cerca de un tercio de lo que detecto depende de componentes ligados a lo Observado; lo leo como cota inferior, no es una demostración, y no puedo afirmar que el resto sea lo Atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
 
 ## 28. Por qué puede costar detectar la activación desde el EEG
 
-La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: lo que ayuda en activación es el historial de los segundos previos.
+La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos.
 
 ## 29. Qué responde la tesis
 
-La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, al menos un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
 ## 30. Conclusiones: la hipótesis tiene apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
+Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas (en el contraste con y sin historial mejoran 23 de 41) y de pocos segundos: a 12 s es inconcluso (+0,024). En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
 
 ## 31. Conclusiones: qué detecta el EEG
 
-La conclusión metodológica más importante es la tercera. Cumplí la regla de no-circularidad entre señales, pero el EEG contiene la huella eléctrica de los ojos, así que la etiqueta y la entrada no son independientes. Estas conclusiones suponen de forma provisoria las decisiones que le consulto en la última lámina.
+La conclusión metodológica más importante es la tercera. Cumplí la regla de no-circularidad entre señales, pero el EEG contiene la huella eléctrica de los ojos, así que la etiqueta y la entrada no son independientes. Los tres componentes oculares son el 3,5 % de la varianza, y en activación la red queda en 0,498 frente a 0,524 del modelo de referencia (inconcluso). Estas conclusiones suponen de forma provisoria las decisiones que le consulto en la última lámina.
 
 ## 32. Qué falta para cerrar la tesis
 
@@ -130,7 +130,7 @@ Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la 
 
 ## 33. Necesito decidir cinco cosas con usted
 
-La experimentación sobre estas 41 personas la doy por cerrada, salvo que usted indique otra cosa. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay dos puntos más que no caben en la lámina y que pueden pesar más que los anteriores, porque si no se aceptan obligan a repetir análisis: las etiquetas se normalizan con la sesión completa de cada persona y el manuscrito pide normalizar solo con entrenamiento; y los análisis usan el profesor PCA, cuando la nota de diseño proponía la fusión igualitaria. El detalle de cada opción está en la minuta, que además lista los objetivos y contribuciones que conviene revisar, la información de participantes y ética que tengo que pedir al proyecto, y cómo declarar el uso de asistentes automáticos en las revisiones.
+La experimentación sobre estas 41 personas la doy por cerrada, salvo que usted indique otra cosa. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay dos puntos más, al pie de la lámina, que pueden pesar más que los anteriores, porque si no se aceptan obligan a repetir análisis: las etiquetas se normalizan con la sesión completa de cada persona y el manuscrito pide normalizar solo con entrenamiento; y los análisis usan el Modelo Profesor con PCA, cuando la nota de diseño proponía la fusión igualitaria. El detalle de cada opción está en la minuta, que además lista los objetivos y contribuciones que conviene revisar, la información de participantes y ética que tengo que pedir al proyecto, y cómo declarar el uso de asistentes automáticos en las revisiones.
 
 ## 34. Atención: curvas ROC en test
 

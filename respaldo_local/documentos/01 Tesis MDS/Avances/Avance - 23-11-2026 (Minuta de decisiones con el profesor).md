@@ -5,7 +5,7 @@
 
 ## Lo que se presenta en una frase
 
-Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales ayuda a predecir la activación (+0,046 [+0,018; +0,073] sobre un placebo en el contraste registrado el 16-11; con respaldo solo para los 6 s anteriores), no la atención; y al menos un tercio de la detección de atención por EEG (0,681) depende de componentes ligados a los ojos (0,621 al quitarlos).
+Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales ayuda a predecir la activación (+0,046 [+0,018; +0,073] sobre un placebo en el contraste registrado el 16-11; con respaldo solo para los 6 s anteriores), no la atención; y cerca de un tercio de la detección de atención por EEG (0,681) depende de componentes ligados a los ojos (0,621 al quitarlos).
 
 Tres salvedades que conviene decir junto con esa frase: con el diseño original (entrenamiento, validación y test) el cierre V3 no había mostrado una ventaja consistente, y el análisis con 41 personas se registró después de verlo; el apoyo se refiere a un resumen del historial reciente, no a un modelo secuencial ni a la combinación de señales; y el contraste contra placebo excluye las ventanas de 6 s que promedia la etiqueta, pero no el soporte de su filtro tónico, que usa toda la sesión: la etiqueta es en lo esencial el nivel tónico de la GSR, y cerca de un cuarto de su peso cae antes de esas ventanas y otro cuarto después.
 
@@ -61,9 +61,9 @@ Fuente: `resultados/enfoques_41p_22-11-2026/INFORME.md`.
 
 El manuscrito pide normalizar solo con entrenamiento. Las etiquetas vigentes son relativas a la sesión completa de cada persona y se calculan offline. Aceptarlo implica declararlo como límite; no aceptarlo implica rehacer las etiquetas y todos los análisis.
 
-### 7. ¿Queda el profesor PCA como definición del *Attention Score*?
+### 7. ¿Queda el *Modelo Profesor* con PCA como definición del *Attention Score*?
 
-La nota [[Modelo Profesor - Decisiones]] proponía la fusión igualitaria como principal y el PCA como análisis de sensibilidad. Los análisis finales usan el profesor PCA reconstruido el 29-10. Ambos coinciden en 66 % de las etiquetas (kappa 0,33), y no hay registro de que el cambio se haya decidido con el profesor. Los análisis siguieron con el PCA después de observar, en las 25 personas de entrenamiento, que los modelos lo predecían mejor; eso no es un argumento de validez (el informe del 29-10 lo advierte) y puede favorecer a la versión más ligada a los movimientos oculares que el EEG registra. Dato para esta decisión: en el profesor PCA pesan el recorrido de la mirada (0,557), la dispersión (0,520), la duración media de las fijaciones (0,508) y su tiempo total (0,398), y la pupila pesa −0,052; la etiqueta usada es, en la práctica, conducta de mirada, no "mirada y pupila". Confirmarlo deja los resultados como están; no confirmarlo obliga a repetir los análisis de atención.
+La nota [[Modelo Profesor - Decisiones]] proponía la fusión igualitaria como principal y el PCA como análisis de sensibilidad. Los análisis finales usan el *Modelo Profesor* con PCA reconstruido el 29-10. Ambos coinciden en 66 % de las etiquetas (kappa 0,33), y no hay registro de que el cambio se haya decidido con el profesor. Los análisis siguieron con el PCA después de observar, en las 25 personas de entrenamiento, que los modelos lo predecían mejor; eso no es un argumento de validez (el informe del 29-10 lo advierte) y puede favorecer a la versión más ligada a los movimientos oculares que el EEG registra. Dato para esta decisión: en el *Modelo Profesor* con PCA pesan el recorrido de la mirada (0,557), la dispersión (0,520), la duración media de las fijaciones (0,508) y su tiempo total (0,398), y la pupila pesa −0,052; la etiqueta usada es, en la práctica, conducta de mirada, no "mirada y pupila". Confirmarlo deja los resultados como están; no confirmarlo obliga a repetir los análisis de atención.
 
 ## Otros puntos abiertos del diseño
 
