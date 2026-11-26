@@ -20,17 +20,19 @@ La ubicación principal del vault es `documentos/01 Tesis MDS`. El enlace en `re
 
 ## Último cierre experimental
 
-**Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23`.
+**Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23` (apunta a `aee6ab6`, anterior a la auditoría final; el texto vigente es el de `main` desde `af345a2`).
 
-**Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](repos/Tesis_MDS/resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que la ventaja está ligada a la señal ocular. En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
+**Auditoría final (23-11-2026):** un agente independiente recalculó las 12 etapas; cifras reproducidas, sin hallazgos bloqueantes y seis lecturas moderadas. Informes en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`.
 
-**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621 y la parte defendible como no ocular queda en 0,55–0,56.
+**Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](repos/Tesis_MDS/resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que su detección depende de la señal ocular; su ventaja sobre el HGB se mantiene con el EEG limpio (+0,028 frente a +0,035). En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
 
-**Cuatro enfoques nuevos del 22-11-2026 (lo más reciente):** [informe](repos/Tesis_MDS/resultados/enfoques_41p_22-11-2026/INFORME.md). [Resumen del último mes](notas/resumen-ultimo-mes-22-11-2026.md).
+**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: al menos un tercio de la detección sobre el azar es ocular (0,060 de 0,181, cota inferior), y del resto no se puede afirmar origen cerebral ni ocular.
 
-**Reapertura del 22-11-2026:** [informe](repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026/INFORME.md). Activación: efecto del historial confirmado (+0,036, respaldo) y de corto alcance (6–12 s). Atención: sin información temporal a ningún desfase. [Fase 3](repos/Tesis_MDS/resultados/reapertura_fase3_41p_22-11-2026/INFORME.md): con la posición como variable, el historial no agrega nada en atención (nulo concluyente) y en activación agrega +0,032, inconcluso tras Holm.
+**Cuatro enfoques nuevos del 22-11-2026:** [informe](repos/Tesis_MDS/resultados/enfoques_41p_22-11-2026/INFORME.md). [Resumen del último mes](notas/resumen-ultimo-mes-22-11-2026.md).
 
-**Experimentación cerrada el 22-11-2026.** [Cierre final](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_22-11-2026.md): análisis con 41 personas, evidencia mixta con apoyo parcial (información temporal real en activación; en atención la mejora se explica por el tiempo transcurrido en el estímulo). Respaldado en GitHub. Lo pendiente es escritura y decisiones con el profesor guía.
+**Reapertura del 22-11-2026:** [informe](repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026/INFORME.md). Activación: el contraste principal pasa a respaldo al promediar 5 particiones (+0,036 [+0,010; +0,065]); no es una confirmación. Solo la banda de 6 s tiene respaldo (+0,047 [+0,017; +0,078], curva temporal en una partición y con 40 personas); desde 12 s es inconcluso. Atención: nulo concluyente a 6 y 12 s. [Fase 3](repos/Tesis_MDS/resultados/reapertura_fase3_41p_22-11-2026/INFORME.md): con la posición como variable, el historial no agrega nada en atención (nulo concluyente) y en activación agrega +0,032, inconcluso tras Holm.
+
+**Experimentación cerrada el 22-11-2026.** [Cierre final](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_22-11-2026.md): análisis con 41 personas, evidencia mixta con apoyo parcial (reemplazado por el cierre del 23-11). Respaldado en GitHub. Lo pendiente es escritura y decisiones con el profesor guía.
 
 Histórico: [Cierre V2 del 01-11-2026](repos/Tesis_MDS/documentacion/Cierre_Experimental_V2_01-11-2026.md).
 
@@ -45,7 +47,7 @@ Histórico: [Cierre V2 del 01-11-2026](repos/Tesis_MDS/documentacion/Cierre_Expe
 - [Diseño de etiquetas y modelos](documentos/01%20Tesis%20MDS/Diseno%20Metodologico/).
 - [Código y documentación experimental](repos/Tesis_MDS/README.md).
 - [Presentaciones](repos/Tesis_MDS/presentaciones/).
-- [Bitácora reciente, hasta el 01-11-2026](notas/bitacora.md).
+- [Bitácora reciente, hasta el 23-11-2026](notas/bitacora.md).
 - [Informe de recuperación y hashes](notas/restauracion-vault-01-11-2026.json).
 
 Para usar las notas con sus enlaces `[[...]]`, abrir la carpeta `documentos/01 Tesis MDS` como vault en Obsidian. También se pueden editar como Markdown. Las rutas antiguas `~/tesis/Tesis_MDS` corresponden aquí a `repos/Tesis_MDS`; se conservaron intactas en los documentos históricos.
@@ -54,9 +56,9 @@ Para usar las notas con sus enlaces `[[...]]`, abrir la carpeta `documentos/01 T
 
 El vault restaurado corresponde al respaldo del **24 de septiembre**, no al manuscrito de octubre. [El registro del 24 de octubre](repos/Tesis_MDS/documentacion/Presentacion_y_Manuscrito_24-10-2026.md) describe ampliaciones de metodología y capítulos 6–8, pero esa versión del manuscrito no fue localizada como archivo suelto ni en los respaldos ZIP disponibles. Recuperarla exactamente requiere una copia del equipo anterior u otro respaldo. No se inventó el texto faltante.
 
-Los avances experimentales posteriores están conservados en `repos/Tesis_MDS/documentacion`, `repos/Tesis_MDS/resultados` y `notas/bitacora.md`. Para el estado actual, consultar esos informes antes del índice histórico del vault o el README del código (actualizado al 24-10).
+Los avances experimentales posteriores están conservados en `repos/Tesis_MDS/documentacion`, `repos/Tesis_MDS/resultados` y `notas/bitacora.md`. Para el estado actual, consultar esos informes antes del índice histórico del vault o el README del código.
 
-El repositorio local está en `main`, commit `8ace73d`, con origen `https://github.com/marioromero00/Tesis_MDS.git`. Hay scripts, documentación y resultados locales sin incorporar a Git: conservarlos. No se hicieron commits, push ni cambios a esos experimentos. No se pudo comprobar si GitHub contiene versiones posteriores porque falló la resolución de `github.com`.
+El repositorio local está en `main`, commit `af345a2`, igual a `origin/main` (26-11-2026).
 
 El archivo `notas/plan.md` es una plantilla antigua con el tema por definir; no describe el avance real. Usar los objetivos del borrador recuperado y la bitácora reciente.
 

@@ -14,7 +14,7 @@ Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales
 | Opción | Qué implica |
 |---|---|
 | A. Escribir con lo que hay | La tesis se cierra como estudio exploratorio con apoyo parcial. La cohorte queda como trabajo futuro. No requiere más experimentos. |
-| B. Cohorte nueva para confirmar activación | Daría una confirmación independiente, que hoy no existe. El tamaño necesario no está bien estimado: 72, 101 o 767 personas según la varianza usada, cada estimación externa basada en 8 personas. Requiere reclutamiento y plazo. |
+| B. Cohorte nueva para confirmar activación | Daría una confirmación independiente, que hoy no existe. El tamaño necesario no está bien estimado: 72, 101 o 767 personas según la varianza usada (las dos primeras, estimadas con 8 personas cada una; la tercera, con las 25 de entrenamiento mezclando folds). Requiere reclutamiento y plazo. |
 
 Por qué importa: las 41 personas incluyen las de validación y test ya consultadas. Es la decisión que define si se escribe o se recluta.
 Fuente: `resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md`.
@@ -41,7 +41,7 @@ Por qué importa: 0,02 es una propuesta del protocolo del 06-11 que nadie aprob�
 | Opción | Qué implica |
 |---|---|
 | A. La original, y la corregida como análisis | No cambia ningún resultado principal. Hay que explicar que la etiqueta tiene un patrón sistemático al inicio de cada página (la posición sola la predice con 0,598). |
-| B. La corregida por posición | La posición deja de predecirla (0,504) y la detección casi no cambia (0,675 frente a 0,683). Cambia el 9,4 % de las etiquetas y las comparaciones anteriores dejan de ser directas. |
+| B. La corregida por posición | La posición deja de predecirla (0,504) y la detección baja poco (0,675 frente a 0,683; −0,008 [−0,015; −0,001], decisión registrada "inferior", al filo). Cambia el 9,4 % de las etiquetas y las comparaciones anteriores dejan de ser directas. |
 
 Por qué importa: la regla del diseño es que la etiqueta se mantiene fija al comparar modelos.
 Fuente: `resultados/enfoques_41p_22-11-2026/INFORME.md`.
@@ -81,4 +81,5 @@ Siguen con casilla sin marcar en [[Resumen Diseño Etiquetas y Modelos]]: métod
 
 - Presentación: `repos/Tesis_MDS/presentaciones/avances_tesis_06-11-2026/index.html`.
 - Cierre consolidado: `repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md`.
-- [[Borrador Conclusiones 23-11-2026]] · [[Borrador Discusión fisiológica 23-11-2026]].
+- [[Borrador Resultados y Discusión 23-11-2026]] · [[Borrador Conclusiones 23-11-2026]] · [[Borrador Discusión fisiológica 23-11-2026]].
+- Auditoría final: `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`.

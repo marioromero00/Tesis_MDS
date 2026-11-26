@@ -2,7 +2,7 @@
 
 Este documento reemplaza como referencia a `Cierre_Experimental_Final_22-11-2026.md`, que es anterior a la reapertura. Reúne todas las etapas registradas entre el 16 y el 23 de noviembre de 2026, sus decisiones, su trazabilidad y la comprobación de reproducibilidad. No contiene resultados nuevos. Ante cualquier diferencia mandan los `INFORME.md` y los CSV de cada carpeta de resultados.
 
-Estado: Mario Romero pidió este cierre el 23-11-2026. No hay aprobación del profesor guía registrada sobre estos resultados, sobre el margen práctico de 0,02 ni sobre el encuadre de la tesis. Etiqueta de Git: `cierre-experimental-2026-11-23` (anterior a la auditoría final; el texto vigente es el de `main`).
+Estado: Mario Romero pidió este cierre el 23-11-2026. No hay aprobación del profesor guía registrada sobre estos resultados, sobre el margen práctico de 0,02 ni sobre el encuadre de la tesis. Etiqueta de Git: `cierre-experimental-2026-11-23` (anterior a la auditoría final; el texto vigente es el de `main`). Apunta a `aee6ab6`; la versión auditada es `af345a2` o posterior.
 
 ## Conclusión general
 
@@ -14,7 +14,7 @@ Evidencia mixta, con **apoyo parcial** a la hipótesis de temporalidad, que prov
 | ¿La mejora es información temporal? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | En parte. Hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078] frente a un placebo); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
 | ¿Queda algo al controlar la posición? | Nada | +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo, +0,009, también inconcluso |
 | ¿Aporta el orden de las ventanas (GRU)? | No: +0,008 [−0,004; +0,020], y rinde 0,040 bajo el HGB | Indicio secundario, sin corrección |
-| ¿Qué fusión? | Tardía sobre temprana con MLP: +0,012 [+0,005; +0,021], secundario; con HGB (cierre V3) el signo es el contrario | Sin diferencias |
+| ¿Qué fusión? | Tardía sobre temprana con MLP: +0,012 [+0,005; +0,021], secundario; con HGB (cierre V3) el signo es el contrario | Sin diferencias demostradas (inconcluso: +0,006 [−0,032; +0,042]) |
 | ¿Qué detecta el EEG en la ventana actual? | Al menos un tercio de la detección sobre el azar es ocular: 0,681, que baja a 0,621 al quitar los componentes oculares (cota inferior) | Nada demostrable: 0,524 |
 | ¿Ayuda un modelo más complejo? | Red sobre la señal cruda: 0,716, +0,035 sobre el HGB; pierde 0,067 al limpiar, y su ventaja se mantiene con el EEG limpio (+0,028) | No demostrado: 0,498 frente a 0,524, inconcluso |
 
@@ -36,15 +36,15 @@ Las AUC son por persona. Las decisiones siguen las reglas registradas, con marge
 | Cierre V3 | Configuración elegida solo con las 25 personas de entrenamiento y congelada |
 | Análisis final | Historial − sin historial: atención +0,026 [+0,018; +0,035]; activación +0,034 [−0,001; +0,069] |
 | Robustez | En atención un placebo de la misma persona reproduce la mejora (diferencia −0,000 [−0,003; +0,003]); en activación no (+0,038 [+0,006; +0,068]) |
-| Ampliación E1–E6 y enmienda | Activación, historial sin los 6 s de la etiqueta frente a placebo: +0,046 [+0,018; +0,073]. Fusión tardía mejor en atención |
+| Ampliación E1–E6 y enmienda | Activación, historial sin los 6 s de la etiqueta frente a placebo: +0,046 [+0,018; +0,073]. Fusión tardía sobre temprana en atención solo entre redes MLP (+0,012, secundario sin corrección) |
 | Explicativo de posición (post hoc) | En atención los segundos en el estímulo reproducen la mejora: +0,028 [+0,021; +0,035] |
 
 ### 22-11 — Reapertura
 
 | Etapa | Resultado principal |
 |---|---|
-| Fase 1, registrada (5 particiones; tres ya vistas el 16-11) | Atención +0,029 [+0,021; +0,037], efecto relevante. Activación +0,036 [+0,010; +0,065], respaldo; con tiempo de sesión en ambos modelos +0,026 [−0,006; +0,056], inconcluso |
-| Fase 1, curva temporal | Activación: 6 s +0,047 [+0,017; +0,078], respaldo; 12 s +0,024, inconcluso; desde 24 s inconcluso (no se distingue del placebo ni se demuestra ausencia). Atención: nulo concluyente a 6 y 12 s |
+| Fase 1, registrada (5 particiones nuevas; el contraste ya se había visto el 16-11 en la partición registrada y en otras tres alternativas) | Atención +0,029 [+0,021; +0,037], efecto relevante. Activación +0,036 [+0,010; +0,065], respaldo; con tiempo de sesión en ambos modelos +0,026 [−0,006; +0,056], inconcluso |
+| Fase 1, curva temporal (una partición, la registrada el 16-11; 40 personas en activación) | Activación: 6 s +0,047 [+0,017; +0,078], respaldo; 12 s +0,024, inconcluso; desde 24 s inconcluso (no se distingue del placebo ni se demuestra ausencia). Atención: nulo concluyente a 6 y 12 s |
 | Fase 2, controles post hoc | El resultado no depende del tipo de placebo. Dentro del mismo minuto de sesión, activación +0,058 [+0,027; +0,092] |
 | Fase 3, historial frente a posición | Atención: nulo concluyente (+0,001; dentro del estímulo −0,000). Activación: +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro del estímulo +0,009, inconcluso |
 
@@ -55,7 +55,7 @@ Las AUC son por persona. Las decisiones siguen las reglas registradas, con marge
 | E1 Etiqueta de atención corregida por posición | La posición sola deja de predecir (0,504). La detección baja poco (0,675 frente a 0,683; decisión registrada "inferior", al filo). El historial queda en nulo concluyente con la posición como variable |
 | E2 Detección cruzada | El EEG solo detecta la etiqueta ocular con 0,681; el GSR no le agrega nada (+0,002, nulo concluyente). Potencia lenta y amplitud 0,673; alfa y beta 0,593 |
 | E3 Activación por estímulo | AUC 0,587, la más alta en activación; no supera de forma demostrable a promediar el modelo por ventana (+0,020, inconcluso) |
-| E4 Diferencias entre personas | La detectabilidad de cada persona es estable (fiabilidad 0,76 y 0,66); la ganancia del historial no lo es. Adaptar el modelo a la persona mejora activación en +0,045 [+0,023; +0,069] |
+| E4 Diferencias entre personas | La detectabilidad de cada persona es estable dentro de la sesión (fiabilidad por mitades 0,76 y 0,66); la ganancia del historial no lo es. Adaptar el modelo a la persona mejora activación en +0,045 [+0,023; +0,069] |
 
 ### 23-11 — Qué detecta el EEG
 
@@ -67,7 +67,7 @@ Las AUC son por persona. Las decisiones siguen las reglas registradas, con marge
 
 ## Trazabilidad
 
-Cada etapa confirmatoria se registró y publicó antes de correr y se ejecutó una vez.
+Cada etapa con protocolo entró a Git antes que sus predicciones (orden de commits verificado; que se publicara antes de correr no es verificable desde el repositorio) y se ejecutó una vez. Salvedades: la versión 1 del cierre V3 se detuvo en el primer fold de entrenamiento por una auditoría de código y se conserva en `cierre_v3_16-11-2026_abortado_fusion`; la enmienda E1 se registró el 16-11 y se corrió el 18-11; la fase 2 se registró con la fase 1 en marcha y es post hoc.
 
 | Etapa | Carpeta en `resultados/` | Registro | Enmienda previa a resultados | Resultados | Auditoría de resultados |
 |---|---|---|---|---|---|
@@ -80,7 +80,7 @@ Cada etapa confirmatoria se registró y publicó antes de correr y se ejecutó u
 | Reapertura, fase 2 | `reapertura_fase2_41p_22-11-2026` | `e3d9c71` | — | `99630ed` | `617afb1` |
 | Reapertura, fase 3 | `reapertura_fase3_41p_22-11-2026` | `7046d92` | — | `9ce5745` | `9ec22b0` |
 | Cuatro enfoques | `enfoques_41p_22-11-2026` | `cd25134` | `4a4798c` | `5f806df` | `e8d6add` |
-| Montaje | `montaje_ocular_41p_23-11-2026` | descriptivo | — | `441bae9` | — |
+| Montaje | `montaje_ocular_41p_23-11-2026` | descriptivo | — | `06547f5` (CSV), `441bae9` (informe) | — |
 | Limpieza ocular | `limpieza_ocular_41p_23-11-2026` | `06547f5` | `441bae9` | `afe7e98` | `afe7e98` |
 | Red sobre la señal cruda | `red_cruda_41p_23-11-2026` | `0074c60` | `7e1f1e0` | `4789942` | `4789942` |
 
@@ -110,8 +110,8 @@ Un agente independiente recalculó con código propio las 12 etapas desde las pr
   4. Solo la banda de 6 s tiene respaldo; de 12 s en adelante los resultados son inconclusos, no nulos.
   5. La ventaja de la fusión tardía es un secundario entre redes MLP; con HGB el signo es el contrario.
   6. El aporte por señal en activación descansa en importancias descriptivas y ruidosas.
-- **Menores.** Algunos informes redondean dos veces (a 4 y luego a 3 decimales); aquí se corrigieron dos límites de intervalo (+0,017 y +0,044). En el enfoque E1 las predicciones del modelo con historial y posición son idénticas a las del modelo con historial: lo más probable es que el modelo no use la columna de posición; no se puede descartar un error sin reentrenar, y la cifra no cambia. La enmienda E1 del 16-11 se registró antes de sus predicciones, pero se corrió el 18-11.
-- **No verificable sin reentrenar.** Que las predicciones provengan de la configuración declarada, qué personas entraron al ajuste de cada modelo y las importancias por permutación.
+- **Menores.** Algunos informes redondean dos veces (a 4 y luego a 3 decimales); aquí se corrigieron dos límites de intervalo (+0,017 y +0,044). En el enfoque E1 las predicciones del modelo con historial y posición son idénticas a las del modelo con historial: un diagnóstico del 26-11 (`documentacion/auditoria_final_23-11-2026/ronda2/DIAGNOSTICO_E1_POSICION.md`) mostró que el modelo recibe la columna de posición y no la usa en ninguna división; no es un error y la cifra no cambia. La enmienda E1 del 16-11 se registró antes de sus predicciones, pero se corrió el 18-11.
+- **No verificable sin reentrenar.** Que las predicciones provengan de la configuración declarada (comprobado para un fold del enfoque E1 el 26-11), qué personas entraron al ajuste de cada modelo y las importancias por permutación.
 
 Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción original, incluidas las palabras "confirmado" y los redondeos señalados.
 
@@ -135,12 +135,16 @@ Decisiones con el profesor guía:
 3. Si "emociones" se presenta como activación (*arousal*).
 4. El encuadre: apoyo parcial, con la atención por EEG presentada como huella ocular.
 5. Si se planifica una cohorte nueva para confirmar activación.
+6. Si se aceptan las etiquetas normalizadas con la sesión completa de cada persona (el manuscrito pide normalizar solo con entrenamiento).
+7. Si el profesor PCA queda como definición del *Attention Score* (la nota de diseño proponía la fusión igualitaria como principal).
+
+Ninguna de las siete está tomada. Las opciones de cada una están en la minuta del 23-11 (`Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md`).
 
 Trabajo de cierre:
 
-1. Integrar los resultados del 22 y 23-11 al borrador de Resultados y Discusión del 18-11 (`Escritura/Borrador Discusión fisiológica 23-11-2026.md` ya cubre la parte fisiológica).
-2. Escribir Conclusiones, que depende de las decisiones anteriores.
-3. Confirmar en el texto completo las 18 referencias de `notas/sustento-fisiologico-23-11-2026.md`.
+1. Revisar el borrador integrado `Escritura/Borrador Resultados y Discusión 23-11-2026.md` (reemplaza al del 18-11) y pasarlo a LaTeX.
+2. Ajustar `Escritura/Borrador Conclusiones 23-11-2026.md` según las decisiones anteriores.
+3. Leer en texto completo las 8 referencias contrastadas solo por resumen (Barry 2005 y 2007, Boucsein 2012, Critchley 2002, Croft y Barry 2000, Iwasaki 2005, Keren 2010 y Yuval-Greenberg 2008); detalle en `documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
 
 Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, y cohorte nueva.
 

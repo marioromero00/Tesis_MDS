@@ -1,28 +1,30 @@
 # Tesis MDS — Baselines multimodales
 
-Estado experimental actualizado al 24-10-2026. Esta entrada reemplaza la descripción anterior del repositorio.
+Estado experimental actualizado al 23-11-2026 (cierre consolidado y auditoría final). Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
 se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y etiquetas.
 
-## Cuatro enfoques nuevos — 22-11-2026
+## Cierre consolidado y análisis del 22 y 23-11-2026
 
-**Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23`.
+**Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23` (apunta a `aee6ab6`, anterior a la auditoría final; el texto vigente es el de `main` desde `af345a2`).
 
-**Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que la ventaja está ligada a la señal ocular. En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
+**Auditoría final (23-11-2026).** Un agente independiente recalculó las 12 etapas desde las predicciones: cifras reproducidas, sin hallazgos bloqueantes, y seis lecturas moderadas que ya están en `documentacion/Cierre_Experimental_Final_23-11-2026.md`. Informes en `documentacion/auditoria_final_23-11-2026/` (experimento, presentación y verificación de las 18 referencias).
 
-**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621 y la parte defendible como no ocular queda en 0,55–0,56.
+**Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que su detección depende de la señal ocular; su ventaja sobre el HGB se mantiene con el EEG limpio (+0,028 frente a +0,035). En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
 
-[Informe](resultados/enfoques_41p_22-11-2026/INFORME.md): etiqueta de atención corregida por posición, detección cruzada por señal (con control de artefacto ocular), activación a nivel de estímulo y diferencias entre personas. Es lo más reciente.
+**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: al menos un tercio de la detección sobre el azar es ocular (0,060 de 0,181, cota inferior), y del resto no se puede afirmar origen cerebral ni ocular.
+
+[Informe](resultados/enfoques_41p_22-11-2026/INFORME.md): etiqueta de atención corregida por posición, detección cruzada por señal (con control de artefacto ocular), activación a nivel de estímulo y diferencias entre personas. Es anterior a los análisis del 23-11 de arriba.
 
 ## Reapertura — 22-11-2026
 
-[Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Sigue la [fase 3: historial frente a posición](resultados/reapertura_fase3_41p_22-11-2026/INFORME.md), que es el estado más reciente de los resultados.
+[Informe de la reapertura](resultados/reapertura_41p_22-11-2026/INFORME.md): contraste principal con validación cruzada repetida, control del tiempo de sesión, curva temporal por desfase y controles post hoc (placebo de bloque, AUC estratificada). Sigue la [fase 3: historial frente a posición](resultados/reapertura_fase3_41p_22-11-2026/INFORME.md), que cierra la reapertura del 22-11.
 
 ## Experimentación cerrada — 22-11-2026
 
-[Cierre de la experimentación](documentacion/Cierre_Experimental_Final_22-11-2026.md): resultados finales con 41 personas, trazabilidad de protocolos y límites. Evidencia mixta con apoyo parcial: información temporal real en activación; en atención la mejora del historial se explica por el tiempo transcurrido en el estímulo. Todo lo que sigue en este README es historial anterior al cierre.
+[Cierre de la experimentación](documentacion/Cierre_Experimental_Final_22-11-2026.md): resultados finales con 41 personas, trazabilidad de protocolos y límites. Documento reemplazado por el cierre del 23-11. Decía: evidencia mixta con apoyo parcial, información temporal en activación (lectura moderada después); en atención la mejora del historial se explica por el tiempo transcurrido en el estímulo. Todo lo que sigue en este README es historial anterior al cierre.
 
 ## Cierre experimental V2 — 01-11-2026
 
@@ -189,5 +191,3 @@ El inventario registra SHA256 y tamaño de cada archivo para verificar la copia.
 Los modelos y predicciones de la ejecución final se versionan por solicitud expresa del
 06-09-2026. Datos crudos, credenciales y cachés permanecen excluidos. Los incidentes de
 ejecuciones documentadas se conservan para mantener la trazabilidad de los intentos.
-
-**Auditoría final (23-11-2026).** Un agente independiente recalculó las 12 etapas desde las predicciones: cifras reproducidas, sin hallazgos bloqueantes, y seis lecturas moderadas que ya están en `documentacion/Cierre_Experimental_Final_23-11-2026.md`. Informes en `documentacion/auditoria_final_23-11-2026/` (experimento, presentación y verificación de las 18 referencias).

@@ -34,7 +34,7 @@ def apply(old):
  def S(chapter,title,body,notes,source,kind=''):
   out.append(dict(chapter=chapter,title=title,body=body,notes=notes,source=source,kind=kind))
  D1='LA PREGUNTA';D2='CÓMO LLEGUÉ HASTA AQUÍ';D3='ATENCIÓN'
- D4='EL PROBLEMA CON LA ETIQUETA DE ACTIVACIÓN';D5='ACTIVACIÓN CON LA ETIQUETA NUEVA';D6='DÓNDE QUEDO'
+ D4='LAS ETIQUETAS';D5='ACTIVACIÓN CON LA ETIQUETA NUEVA';D6='DÓNDE QUEDO'
 
  S('UNIVERSIDAD DE CHILE · MAGÍSTER EN CIENCIA DE DATOS',
    '¿Sirve el historial de señales<br>para predecir atención y activación?',
@@ -67,7 +67,7 @@ def apply(old):
  S('LOS DATOS','Los datos: Toma de Muestra 2, navegación web en laboratorio',
    flow([('sig','<b>Tobii Pro Lab</b><br><small>mirada, pupila y GSR</small>'),('sig','<b>OpenBCI Cyton + Daisy</b><br><small>EEG, 16 canales, 125 Hz</small>'),('prof','Sincronización<br><small>por persona y hora UTC</small>'),('stud','Ventanas de 2 s<br><small>avanzan de a 1 s</small>')])
    +'<div class="facts"><div><b>48</b><span>personas registradas</span></div><div><b>4</b><span>secuencias de páginas (SlowWeb G1–G4)</span></div><div><b>116</b><span>estímulos: sitios como Diario Financiero, Temu o Despegar, textos y diseños</span></div><div><b>ago 2025</b><span>adquisición, proyecto Fondecyt 1231122</span></div></div>',
-   'Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este set, y la ubicación de los electrodos no está documentada.',
+   'Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este conjunto de datos, y la ubicación de los electrodos no está documentada.',
    '../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md; ../../documentos/01 Tesis MDS/Analisis de Datos/SINCRONIZACION_SENALES.md; resultados/modelado/particion_participantes.csv; resultados/etiquetas_gsr_calidad_v2_01-11-2026/etiquetas.csv.gz','roomy')
  S('LOS DATOS','Unas señales arman la etiqueta y otras la predicen',
    '<div class="flows">'
@@ -84,7 +84,7 @@ def apply(old):
    R+'modelado/particion_participantes.csv')
 
  S('ESTADO DEL ARTE','Qué señales combinan los trabajos recientes',
-   '<table class="matrix"><thead><tr><th>Trabajo</th><th>EEG</th><th>GSR</th><th>Mirada</th><th>Pupila</th><th>Facial</th><th>ECG</th><th>Enfoque</th></tr></thead><tbody><tr class=""><td>TACOformer (2023)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="n">Transformer con atención cruzada</td></tr><tr class=""><td>Feng et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Autoatención multicabeza</td></tr><tr class=""><td>Milmer (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Swin Transformer</td></tr><tr class=""><td>Wang et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Atención entre modalidades</td></tr><tr class=""><td>MuMTAffect (2025)</td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="n">Transformer por modalidad</td></tr><tr class=""><td>GBV-Net (2025)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="n">Fusión jerárquica</td></tr><tr class=""><td>Saavedra (grupo, web)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Fusión tardía sin mejora clara</td></tr><tr class="me"><td>Esta tesis (web)</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="n">Historial + fusión, contra modelo sin historial</td></tr></tbody></table>'
+   '<table class="matrix"><thead><tr><th>Trabajo</th><th>EEG</th><th>GSR</th><th>Mirada</th><th>Pupila</th><th>Facial</th><th>ECG</th><th>Enfoque</th></tr></thead><tbody><tr class=""><td>TACOformer (2023)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="n">Transformer con atención cruzada</td></tr><tr class=""><td>Feng et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Autoatención multicabeza</td></tr><tr class=""><td>Milmer (2025)</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="n">Swin Transformer</td></tr><tr class=""><td>Wang et al. (2025)</td><td class="m">●</td><td class="m"></td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Atención entre modalidades</td></tr><tr class=""><td>MuMTAffect (2025)</td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="n">Transformer por modalidad</td></tr><tr class=""><td>GBV-Net (2025)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m">●</td><td class="m">●</td><td class="n">Fusión jerárquica</td></tr><tr class=""><td>Saavedra (2024, grupo, web)</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="m"></td><td class="m"></td><td class="n">Fusión tardía sin mejora clara</td></tr><tr class="me"><td>Esta tesis (web)</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m">●</td><td class="m"></td><td class="m"></td><td class="n">Historial + fusión, contra modelo sin historial</td></tr></tbody></table>'
    +caption('Varios reportan sus resultados en bases como DEAP, SEED-IV o DREAMER; no son comparables con los míos.'),
    'La tendencia es fusionar varias señales con modelos de atención tipo Transformer. Lo más cercano en contexto web es la tesis de Saavedra en el mismo grupo, con EEG y GSR, que no encontró mejora clara con fusión tardía. Ninguno de los que revisé combina estas cuatro señales navegando la web; esa búsqueda la tengo que volver a revisar antes de afirmarlo en la defensa.',
    '../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md','roomy')
@@ -154,11 +154,11 @@ def apply(old):
    'resultados/cierre_final_41p_16-11-2026/INFORME.md; resultados/cierre_robustez_41p_16-11-2026/INFORME.md')
  S('RESULTADOS CON 41 PERSONAS','En atención, la fusión tardía rinde mejor entre redes MLP; con HGB, no',
    img('fusion_final','Misma familia de modelo (MLP) y misma entrada en las tres fusiones.'),
-   'Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad. Es un contraste secundario y vale para esta familia (MLP): con HGB, en el cierre V3, el signo fue el contrario (−0,010 en entrenamiento).',
+   'Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no se demostraron diferencias (inconcluso). La intermedia que probé es más profunda, así que compara también capacidad. Es un contraste secundario y vale para esta familia (MLP): con HGB, en el cierre V3, el signo fue el contrario (−0,010 en entrenamiento).',
    'resultados/ampliacion_41p_16-11-2026/INFORME.md')
  S('RESULTADOS CON 41 PERSONAS','El modelo de atención rinde mejor al final de la sesión y peor en textos',
    img('sesion_pagina','Modelo con historial. Izquierda: quintos del tiempo de sesión. Derecha: AUC por tipo de página, sin las categorías con pocas personas (blur, emotion). Descriptivo.'),
-   'En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.',
+   'En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. La línea gris es la AUC de activación por quinto; es descriptiva y con 34 a 41 personas por punto. Todo esto es descriptivo.',
    'resultados/ampliacion_41p_16-11-2026/INFORME.md')
  S('QUÉ EXPLICA LA MEJORA','¿De dónde viene la mejora?',
    img('origen_mejora','Mejora frente al modelo sin historial. Placebo: misma cantidad de ventanas, de la misma persona, en otras páginas.'),
@@ -168,7 +168,7 @@ def apply(old):
    img('posicion_etiqueta','Promedio de las 41 personas. Activación empieza en 5 s porque su etiqueta exige cinco ventanas seguidas.'),
    'Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 y 3 y después sube hasta 62 %. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y pupila al cambiar de página. Este análisis lo hice después de ver el placebo, así que es explicativo.',
    'resultados/explicativo_posicion_41p_18-11-2026/INFORME.md')
- S('QUÉ EXPLICA LA MEJORA','En activación, los segundos previos sí aportan',
+ S('QUÉ EXPLICA LA MEJORA','En activación, los segundos previos aportan frente al placebo',
    img('activacion_temporal','Historial sin las 6 ventanas que usa la etiqueta, contra un placebo con la misma cantidad de ventanas. Filas 3 y 4: historial completo contra un modelo que solo conoce los segundos en la página. Repetido con 5 particiones (22-11): frente a la posición, +0,032 [+0,004; +0,059], inconcluso tras Holm.'),
    'Excluí del historial los 6 s que definen la etiqueta, para que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.',
    'resultados/ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv; resultados/explicativo_posicion_41p_18-11-2026/contrastes.csv')
@@ -184,38 +184,38 @@ def apply(old):
    'Por persona separé el EEG en componentes independientes y quité los más ligados a la mirada y a los parpadeos. Con tres, la AUC baja de 0,681 a 0,621, en 39 de 41 personas. El control quita tres componentes no oculares, con veinte veces más varianza, y casi no cambia. Alfa y beta, que parecía lo más limpio, también cae: de 0,593 a 0,547. La limpieza es parcial, así que 0,06 es una cota inferior. Registrado antes de correr y auditado.',
    LIM)
  S(D7,'Una red sobre la señal cruda rinde más, y también depende de la huella ocular',
-   img('red_cruda','Red convolucional tipo EEGNet sobre el EEG crudo. HGB: modelo de referencia con variables calculadas.'),
-   'Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.',
+   img('red_cruda','Red convolucional tipo EEGNet sobre el EEG crudo. HGB: modelo de referencia con variables calculadas. En activación, 0,498 frente a 0,524: inconcluso.'),
+   'Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.',
    RED)
  S(D7,'Por qué: el ojo genera señal eléctrica que llega a los electrodos',
-   table(['Mecanismo','Qué produce en el EEG','En mis datos'],[['Dipolo córneo-retinal','Cada giro del ojo cambia el potencial frontal','Mirada horizontal con signo opuesto en F7 y F8'],['Párpado sobre la córnea','Onda grande en la frente al parpadear','150 µV adelante, 20 µV atrás'],['Músculos del ojo al iniciar una sacada','Descarga breve de banda ancha','Compatible con que alfa y beta también caigan al limpiar'],['Respuesta visual tras cada fijación','Actividad occipital real, pero sigue a los ojos','No se puede separar del artefacto']])
+   table(['Mecanismo','Qué produce en el EEG','En mis datos'],[['Dipolo córneo-retinal','Cada giro del ojo cambia el potencial frontal','Mirada horizontal con signo opuesto en F7 y F8'],['Párpado sobre la córnea','Onda grande en la frente al parpadear','150 µV adelante, 20 µV atrás'],['Músculos del ojo al iniciar una sacada','Descarga breve de banda ancha','Llega a beta alta (20 a 90 Hz); no explica por sí sola la caída en alfa'],['Respuesta visual tras cada fijación','Actividad occipital real, pero sigue a los ojos','No se puede separar del artefacto']])
    +caption('Croft y Barry (2000); Plöchl et al. (2012); Iwasaki et al. (2005); Keren et al. (2010); Dimigen et al. (2011). Interpretación propia; 8 de las 18 referencias, contrastadas solo con el resumen.'),
-   'La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es en buena parte lo observado, y no puedo afirmar que sea lo atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.',
+   'La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es, al menos en un tercio, lo Observado, y no puedo afirmar que sea lo Atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.',
    FIS+'; '+LIM)
  S(D7,'Por qué puede costar detectar la activación desde el EEG',
-   table(['Razón','Qué dice la fisiología','En mis datos'],[['Origen','La GSR depende del sistema simpático y de regiones de emoción y atención','EEG de 16 canales: AUC 0,52'],['Tiempos','La respuesta empieza 1 a 5 s después del evento y decae lento','El historial de los 6 s previos sí ayuda'],['Tipo de relación','La relación conocida entre EEG y GSR es tónica, entre condiciones o personas','Etiqueta relativa a la mediana de la persona'],['Pupila','Responde a la luz y al enfoque, además de la activación','Agregar pupila y mirada no mejora']])
-   +caption('Boucsein et al. (2012); Critchley (2002); Benedek y Kaernbach (2010); Barry et al. (2007); Mathôt (2018). Interpretación propia; 8 de las 18 referencias, contrastadas solo con el resumen.'),
+   table(['Razón','Qué dice la fisiología','En mis datos'],[['Origen','La GSR depende del sistema simpático y de regiones de emoción y atención','EEG de 16 canales: AUC 0,52'],['Tiempos','La respuesta empieza 1 a 5 s después del evento y decae lento','El historial de los 6 s previos sí ayuda'],['Tipo de relación','La relación que documenta Barry es tónica, al comparar condiciones','Etiqueta relativa a la mediana de la persona'],['Pupila','Responde a la luz y al enfoque, además de la activación','Agregar pupila y mirada no mejora']])
+   +caption('Critchley (2002); Benedek y Kaernbach (2010); Barry et al. (2005, 2007); Mathôt (2018). Interpretación propia; 8 de las 18 referencias, contrastadas solo con el resumen.'),
    'La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: lo que ayuda en activación es el historial de los segundos previos.',
    FIS+'; '+RED)
  S('DÓNDE QUEDO','Qué responde la tesis',
-   table(['','Atención','Activación'],[['Mejora con historial','+0,029 [+0,021; +0,037]','+0,036 [+0,010; +0,065]'],['¿Es información temporal?','No: con la posición, el historial agrega +0,001','En parte: +0,047 sobre el placebo a 6 s; desde 12 s, inconcluso'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor con MLP (+0,012)','Sin diferencias'],['¿Qué detecta el EEG?','Al menos un tercio son los ojos: 0,681 → 0,621 al limpiar','Nada demostrable: 0,52']])+caption('Apoyo parcial, y viene de activación. Filas 1 y 2: repetición del 22-11 (el 16-11 dio +0,026 y +0,034). GRU y fusión: 16-11. EEG: 23-11.'),
+   table(['','Atención','Activación'],[['Mejora con historial','+0,029 [+0,021; +0,037]','+0,036 [+0,010; +0,065]'],['¿Es información temporal?','No: con la posición, el historial agrega +0,001','En parte: +0,047 sobre el placebo a 6 s; desde 12 s, inconcluso'],['Modelo con orden (GRU)','No agrega y rinde peor','Señal secundaria'],['Fusión','Tardía mejor con MLP (+0,012)','Sin diferencias demostradas'],['¿Qué detecta el EEG?','Al menos un tercio son los ojos: 0,681 → 0,621 al limpiar','Nada demostrable: 0,52']])+caption('Apoyo parcial, y viene de activación. Fila 1 y el +0,001: 5 particiones, 22-11 (el 16-11 dio +0,026 y +0,034). El +0,047: curva del 22-11, una partición, 40 personas. GRU y fusión: 16-11. EEG: 23-11.'),
    'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no es temporal. Lo nuevo es la última fila: en atención, al menos un tercio de lo que el EEG tiene sobre el azar es la huella de los ojos, y no puedo descartar que el resto también lo sea. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
    'resultados/reapertura_41p_22-11-2026/INFORME.md; resultados/reapertura_fase3_41p_22-11-2026/INFORME.md; resultados/cierre_final_41p_16-11-2026/INFORME.md; '+LIM+'; '+RED,'compact')
  CON='../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md; documentacion/Cierre_Experimental_Final_23-11-2026.md'
  S(D6,'Conclusiones: la hipótesis tiene apoyo parcial',
    '<ol class="questions">'
-   '<li><b>El apoyo viene de activación.</b><span>Con historial: +0,036 [+0,010; +0,065], y mejoran 23 de 41 personas. Frente al placebo y sin el intervalo de la etiqueta: +0,047 [+0,017; +0,078]. Al controlar la posición queda en +0,032, inconcluso.</span></li>'
-   '<li><b>En activación solo hay respaldo para los 6 s anteriores.</b><span>A 12 s es inconclusa (+0,024) y desde los 24 s no se distingue del placebo, sin demostrar que desaparezca. AUC bajas: 0,52 a 0,59.</span></li>'
+   '<li><b>El apoyo viene de activación.</b><span>Con historial: +0,036 [+0,010; +0,065], y mejoran 23 de 41 personas. Frente al placebo y sin el intervalo de la etiqueta: +0,046 [+0,018; +0,073], registrado antes. Al controlar la posición queda en +0,032, inconcluso.</span></li>'
+   '<li><b>En activación solo hay respaldo para los 6 s anteriores.</b><span>A 12 s es inconcluso (+0,024) y desde los 24 s no se distingue del placebo, sin demostrar que desaparezca. AUC bajas: 0,52 a 0,59.</span></li>'
    '<li><b>En atención la mejora no es temporal.</b><span>Con historial: +0,029 [+0,021; +0,037]. Si el modelo conoce la posición en la página, el historial agrega +0,001.</span></li>'
    '<li><b>El orden de las ventanas no aportó de forma demostrable.</b><span>La GRU rinde 0,040 menos en atención. La fusión tardía solo gana en atención y con MLP: +0,012.</span></li>'
    '</ol>',
-   'Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.',
+   'Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,047 es de la curva del 22-11 (una partición, 40 personas); el +0,046 de la lámina 23 es el contraste registrado el 16-11.',
    CON+'; '+LIM)
  S(D6,'Conclusiones: qué detecta el EEG',
    '<ol class="questions">'
    '<li><b>En atención, al menos un tercio de lo que detecta el EEG son los ojos.</b><span>La AUC baja de 0,681 a 0,621 al quitar tres componentes oculares (3,5 % de la varianza); el control queda en 0,674. Es una cota inferior.</span></li>'
-   '<li><b>Un modelo más complejo no cambia la lectura.</b><span>La red sobre la señal cruda llega a 0,716, pero pierde 0,067 al quitar los componentes oculares. En activación queda en 0,498.</span></li>'
-   '<li><b>Separar las señales no asegura independencia fisiológica.</b><span>La etiqueta se define con lo observado (mirar) y el EEG registra esa misma conducta. No puedo afirmar que detecte lo atendido.</span></li>'
+   '<li><b>Un modelo más complejo no cambia la lectura.</b><span>La red sobre la señal cruda llega a 0,716, pero pierde 0,067 al quitar los componentes oculares. En activación queda en 0,498, frente a 0,524 del modelo de referencia: inconcluso.</span></li>'
+   '<li><b>Separar las señales no asegura independencia fisiológica.</b><span>La etiqueta se define con lo Observado (mirar) y el EEG registra esa misma conducta. No puedo afirmar que detecte lo Atendido.</span></li>'
    '<li><b>El aporte es doble.</b><span>Evidencia acotada de que el historial de los segundos previos ayuda a predecir la activación, y una advertencia sobre evaluar modelos de EEG con etiquetas oculares.</span></li>'
    '</ol>',
    'La conclusión metodológica más importante es la tercera. Cumplí la regla de no-circularidad entre señales, pero el EEG contiene la huella eléctrica de los ojos, así que la etiqueta y la entrada no son independientes. Estas conclusiones suponen de forma provisoria las decisiones que le consulto en la última lámina.',
@@ -223,28 +223,28 @@ def apply(old):
  S(D6,'Qué falta para cerrar la tesis',
    '<div class="timeline3"><div><b>Experimentos</b><span>Ninguno imprescindible</span><p>No espero que más corridas sobre estas 41 personas cambien las conclusiones; ya se habían consultado todas.</p></div>'
    '<div><b>Decisiones</b><span>Con el profesor guía</span><p>Cohorte nueva o no, el margen de 0,02, activación en vez de emociones, qué etiqueta de atención usar y el encuadre.</p></div>'
-   '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Integrar los resultados del 22 y 23-11 al borrador y ajustar las conclusiones según lo que se decida.</p></div></div>'
+   '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Revisar el borrador integrado del 23-11 y ajustar las conclusiones según lo que se decida.</p></div></div>'
    +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, y una cohorte nueva para confirmar.'),
    'Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.',
-   '../../notas/resumen-ultimo-mes-22-11-2026.md; '+LIM+'; '+RED)
+   'documentacion/Cierre_Experimental_Final_23-11-2026.md; '+LIM+'; '+RED)
  S(D6,'Necesito decidir cinco cosas con usted',
    '<ol class="questions five">'
    '<li><b>¿Escribo con estos resultados o planifico una cohorte para confirmar activación?</b><span>Las 41 personas ya se habían consultado: nada es una confirmación independiente.</span></li>'
    '<li><b>¿Qué cuenta como "mejor"?</b><span>Cualquier mejora sobre 0, como dice la hipótesis, o un mínimo como +0,02 de AUC.</span></li>'
    '<li><b>¿Escribo "activación (GSR)" en vez de "emociones"?</b><span>Con GSR no puedo hablar de emociones en general.</span></li>'
-   '<li><b>¿Uso la etiqueta de atención original o la corregida por posición?</b><span>La corregida ya no se predice con la posición (0,504) y la detección baja poco: 0,675 frente a 0,683.</span></li>'
+   '<li><b>¿Uso la etiqueta de atención original o la corregida por posición?</b><span>La corregida ya no se predice con la posición (0,504) y la detección baja poco: 0,675 frente a 0,683 (decisión registrada: "inferior").</span></li>'
    '<li><b>¿Encuadro la tesis como apoyo parcial más una advertencia metodológica?</b><span>La atención por EEG se presentaría como ligada, al menos en parte, a la huella ocular.</span></li>'
    '</ol>',
    'La experimentación está cerrada y auditada. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay un sexto punto, menor: las etiquetas se normalizan con la sesión completa de cada persona, y el manuscrito pide normalizar solo con entrenamiento; necesito saber si basta con declararlo como límite. El detalle de cada opción está en la minuta, que agrega un séptimo punto: confirmar el profesor PCA como definición del Attention Score.',
-   'documentacion/Cierre_Experimental_Final_23-11-2026.md; resultados/enfoques_41p_22-11-2026/INFORME.md; '+PROT+'INFORME.md; ../../notas/pautas-escritura-recuperadas.md','closing-questions')
+   'documentacion/Cierre_Experimental_Final_23-11-2026.md; resultados/enfoques_41p_22-11-2026/INFORME.md; '+PROT+'INFORME.md; ../../notas/pautas-escritura-recuperadas.md; ../../documentos/01 Tesis MDS/Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md','closing-questions')
 
  AX='ANEXO'
  S(AX+' A','Atención: curvas ROC en test',
-   img('roc_atencion','Test, 8 personas. Curva promedio de las curvas por persona.'),
+   img('roc_atencion','Test, 8 personas. Curva promedio de las curvas por persona. Análisis anterior al de 41 personas; se conserva como antecedente.'),
    'La AUC de la leyenda es la media de las AUC por persona.',
    T29+'INFORME.md; '+T29+'predicciones_test.csv.gz')
  S(AX+' B','Activación: curvas ROC en test',
-   img('roc_activacion','Test, 8 personas (2.184 ventanas). Curva promedio de las curvas por persona.'),
+   img('roc_activacion','Test, 8 personas (2.184 ventanas). Curva promedio de las curvas por persona. Análisis anterior al de 41 personas; se conserva como antecedente.'),
    'Las tres curvas van pegadas a la diagonal.',
    ACT+'predicciones_externas.csv.gz; '+ACT+'metricas.csv')
  S(AX+' C','Señales',
@@ -253,11 +253,12 @@ def apply(old):
    'El EEG lo uso por canal desde octubre; antes promediaba los canales.',
    HIP+'; ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md')
  S(AX+' D','Configuración del entrenamiento de activación',
-   table(['Componente','Configuración'],[['Modelo','HistGradientBoostingClassifier (HGB)'],['Búsqueda','7 o 15 hojas · 5 folds agrupados por persona'],['Final','15 hojas · 300 iteraciones · tasa 0,05 · L2 = 10'],['Preprocesamiento','Mediana, indicadores de ausencia y estandarización, solo con entrenamiento'],['Modelos','30 ajustes internos · 15 OOF · 3 finales']]),
+   table(['Componente','Configuración'],[['Modelo','HistGradientBoostingClassifier (HGB)'],['Búsqueda','7 o 15 hojas · 5 folds agrupados por persona'],['Final','15 hojas · 300 iteraciones · tasa 0,05 · L2 = 10'],['Preprocesamiento','Mediana, indicadores de ausencia y estandarización, solo con entrenamiento'],['Modelos','30 ajustes internos · 15 OOF · 3 finales']])
+   +caption('Análisis anterior al de 41 personas; se conserva como antecedente.'),
    'La misma configuración para los tres largos de historial.',
    ACT+'protocolo.json')
  S(AX+' E','Activación: la muestra necesaria va de 72 a 767 según la variabilidad',
-   img('muestra','Gris: atención. Azul: activación. Mejora relevante +0,02; efecto real +0,04.'),
+   img('muestra','Gris: atención. Azul: activación. Mejora relevante +0,02; efecto real +0,04. Análisis anterior al de 41 personas; se conserva como antecedente.'),
    'El número depende mucho de qué variabilidad uso. Las de validación y test salen de 8 personas; la de entrenamiento, de 25 pero mezclando folds, así que 767 es el escenario pesimista. Para las dos tareas manda la de activación; con 20 % de pérdidas serían 90 a 959 a reclutar. Y el +0,02 es una propuesta mía.',
    PROT+'INFORME.md; '+PROT+'verificacion_simulada.json')
 

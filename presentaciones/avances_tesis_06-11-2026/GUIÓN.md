@@ -14,7 +14,7 @@ Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre 
 
 ## 04. Los datos: Toma de Muestra 2, navegación web en laboratorio
 
-Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este set, y la ubicación de los electrodos no está documentada.
+Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este conjunto de datos, y la ubicación de los electrodos no está documentada.
 
 ## 05. Unas señales arman la etiqueta y otras la predicen
 
@@ -74,11 +74,11 @@ Para tener más potencia usé las 41 personas en validación cruzada, con la con
 
 ## 19. En atención, la fusión tardía rinde mejor entre redes MLP; con HGB, no
 
-Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no hay diferencias. La intermedia que probé es más profunda, así que compara también capacidad. Es un contraste secundario y vale para esta familia (MLP): con HGB, en el cierre V3, el signo fue el contrario (−0,010 en entrenamiento).
+Con la misma familia de modelo, en atención la fusión tardía le gana a la temprana por +0,012 y también a la intermedia. En activación no se demostraron diferencias (inconcluso). La intermedia que probé es más profunda, así que compara también capacidad. Es un contraste secundario y vale para esta familia (MLP): con HGB, en el cierre V3, el signo fue el contrario (−0,010 en entrenamiento).
 
 ## 20. El modelo de atención rinde mejor al final de la sesión y peor en textos
 
-En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. Todo esto es descriptivo.
+En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación. La línea gris es la AUC de activación por quinto; es descriptiva y con 34 a 41 personas por punto. Todo esto es descriptivo.
 
 ## 21. ¿De dónde viene la mejora?
 
@@ -88,7 +88,7 @@ Comparé el historial real con un placebo y con una sola variable: los segundos 
 
 Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 y 3 y después sube hasta 62 %. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y pupila al cambiar de página. Este análisis lo hice después de ver el placebo, así que es explicativo.
 
-## 23. En activación, los segundos previos sí aportan
+## 23. En activación, los segundos previos aportan frente al placebo
 
 Excluí del historial los 6 s que definen la etiqueta, para que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: AUC alrededor de 0,57.
 
@@ -102,11 +102,11 @@ Por persona separé el EEG en componentes independientes y quité los más ligad
 
 ## 26. Una red sobre la señal cruda rinde más, y también depende de la huella ocular
 
-Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar. Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
+Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control.
 
 ## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
 
-La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es en buena parte lo observado, y no puedo afirmar que sea lo atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
+La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina negativa. Como la etiqueta se define con los ojos, todo lo que los ojos dejan en el EEG la predice. La regla de no usar las mismas señales se cumple, pero no asegura independencia fisiológica. Lo que detecto es, al menos en un tercio, lo Observado, y no puedo afirmar que sea lo Atendido. De las 18 referencias, 10 las contrasté con el texto completo y 8 solo con el resumen.
 
 ## 28. Por qué puede costar detectar la activación desde el EEG
 
@@ -118,7 +118,7 @@ La respuesta corta: el historial de las señales sí ayuda a predecir activació
 
 ## 30. Conclusiones: la hipótesis tiene apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso.
+Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas y de pocos segundos. En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,047 es de la curva del 22-11 (una partición, 40 personas); el +0,046 de la lámina 23 es el contraste registrado el 16-11.
 
 ## 31. Conclusiones: qué detecta el EEG
 

@@ -2,6 +2,8 @@
 
 Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y los informes de cada carpeta de resultados. Ante cualquier diferencia mandan los `INFORME.md` de `repos/Tesis_MDS/resultados/`. No hay aprobación registrada del profesor guía sobre los resultados de noviembre ni sobre el margen práctico de 0,02; lo único registrado es que Mario comunicó el 01-11 que el profesor aprobó usar las etiquetas GSR V2.
 
+> **Aviso (26-11-2026).** Esta síntesis es anterior a la auditoría final del 23-11, que reprodujo las cifras y pidió moderar varias lecturas. La referencia vigente es `repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md`.
+
 ## En una mirada
 
 | Semana | Qué se hizo | Qué salió |
@@ -10,7 +12,7 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 | 29–30 oct | Atención binaria con profesor PCA reconstruido, EEG por canal, evaluación en validación y test | Atención AUC cercana a 0,69; mejora temporal +0,028 con intervalo que toca cero |
 | 1–6 nov | Recuperación del vault, etiquetas GSR V2, comparación no lineal, ablación de modalidades, cierre V2, protocolo de potencia | Sin ventaja consistente de temporalidad ni de fusión en activación |
 | 15–18 nov | Cierre V3, análisis final con 41 personas, placebo temporal, ampliación E1–E6, explicativo de posición, presentaciones v4–v6, borrador de resultados | Apoyo parcial: en atención la mejora es la posición en el estímulo; en activación hay información temporal |
-| 22 nov | Cierre formal, reapertura en tres fases y cuatro enfoques nuevos | Activación confirmada y de corto alcance; atención sin información temporal; la detección por EEG tiene firma ocular |
+| 22 nov | Cierre formal, reapertura en tres fases y cuatro enfoques nuevos | Activación con respaldo, solo para los 6 s anteriores; atención sin información temporal demostrable; parte de la detección por EEG es ocular |
 
 ## 22 al 24 de octubre
 
@@ -42,7 +44,7 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 - Cierre V3 (16-11): historial con todas las ventanas, GRU sensible al orden, fusión tardía y métricas del manuscrito. Sin ventaja temporal consistente; la GRU rinde peor que el HGB.
 - Análisis final con 41 personas (16-11), registrado antes de correr: atención +0,026 [+0,018; +0,035], respaldo; activación +0,034 [−0,001; +0,069], inconcluso.
 - Pruebas de robustez con placebo temporal (16-11): en atención el placebo reproduce toda la mejora; en activación no.
-- Ampliación E1–E6 y explicativo de posición (18-11): en atención toda la mejora del historial se explica por los segundos transcurridos en el estímulo; en activación el historial sin solapamiento con la etiqueta supera al placebo (+0,046 [+0,018; +0,073]). Fusión tardía mejor en atención (+0,012).
+- Ampliación E1–E6 y explicativo de posición (18-11): en atención toda la mejora del historial se explica por los segundos transcurridos en el estímulo; en activación el historial sin solapamiento con la etiqueta supera al placebo (+0,046 [+0,018; +0,073]). Fusión tardía sobre temprana en atención entre redes MLP (+0,012, secundario); con HGB el signo es el contrario.
 - Presentación v6 y borrador de Resultados y Discusión en el vault.
 
 ## 22 de noviembre
@@ -51,23 +53,23 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 
 **Reapertura, pedida por Mario el mismo día.** Tres fases, cada una registrada antes de correr y con auditoría independiente de código y de resultados.
 
-- Fase 1 (validación cruzada repetida, tiempo de sesión, curva temporal): el contraste principal de activación pasa a respaldo, +0,036 [+0,010; +0,065]. La información está en los 6 a 12 s anteriores y desaparece desde 24 s. En atención el pasado no aporta a ningún desfase.
+- Fase 1 (validación cruzada repetida, tiempo de sesión, curva temporal): el contraste principal de activación pasa a respaldo, +0,036 [+0,010; +0,065]. Solo la banda de 6 s tiene respaldo (+0,047 [+0,017; +0,078]; curva en una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia. En atención el pasado no aporta a ningún desfase.
 - Fase 2 (placebo de bloque, AUC estratificada): el resultado de activación no depende del tipo de placebo y se mantiene dentro del mismo minuto de sesión (+0,058).
-- Fase 3 (historial frente a posición): en atención el historial no agrega nada sobre la posición (nulo concluyente). En activación agrega +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo manda el tiempo transcurrido.
+- Fase 3 (historial frente a posición): en atención el historial no agrega nada sobre la posición (nulo concluyente). En activación agrega +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo agrega +0,009, también inconcluso.
 
 **Cuatro enfoques nuevos**, registrados antes de correr (informe en `resultados/enfoques_41p_22-11-2026/INFORME.md`).
 
-- E1, etiqueta de atención corregida por posición: elimina el efecto del reloj (posición sola 0,504) y conserva la detección (0,675 frente a 0,683). La mejora del historial cae a +0,010 y con la posición como variable queda en nulo concluyente.
-- E2, detección cruzada: el EEG solo predice la etiqueta ocular con AUC 0,681 en las 41 personas. La mayor parte tiene firma de movimiento ocular (potencia lenta y amplitud 0,673; alfa y beta 0,593; canales posteriores 0,602 con montaje supuesto). El EEG no tiene limpieza de artefactos oculares.
+- E1, etiqueta de atención corregida por posición: elimina el efecto del reloj (posición sola 0,504) y la detección baja poco (0,675 frente a 0,683; decisión registrada "inferior", al filo). La mejora del historial cae a +0,010 y con la posición como variable queda en nulo concluyente.
+- E2, detección cruzada: el EEG solo predice la etiqueta ocular con AUC 0,681 en las 41 personas. Una parte tiene firma de movimiento ocular (potencia lenta y amplitud 0,673; alfa y beta 0,593; canales posteriores 0,602 con montaje supuesto). El EEG no tiene limpieza de artefactos oculares.
 - E3, activación por estímulo: AUC 0,587, la más alta en activación; no supera de forma demostrable a promediar el modelo por ventana.
-- E4, diferencias entre personas: la detectabilidad es un rasgo estable (fiabilidad 0,76 y 0,66); la ganancia del historial por persona no es fiable; adaptar el modelo a la persona mejora activación en +0,045 [+0,023; +0,069] y no cambia atención.
+- E4, diferencias entre personas: la detectabilidad es estable dentro de la sesión (fiabilidad por mitades 0,76 y 0,66); la ganancia del historial por persona no es fiable; adaptar el modelo a la persona mejora activación en +0,045 [+0,023; +0,069] y no cambia atención.
 
 ## Dónde queda la tesis
 
-- **Hipótesis de temporalidad: apoyo parcial.** En activación el historial ayuda, de forma local (6 a 12 s) y con AUC absolutas bajas (0,55 a 0,59). En atención no hay información temporal: la mejora era el reloj del estímulo.
-- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero en su mayor parte coincide con artefactos oculares; la parte más defendible como no ocular ronda 0,59–0,60.
-- **Activación.** Se comporta como un estado del estímulo completo. Las dos palancas que más la mejoran son trabajar a nivel de estímulo y adaptar el modelo a la persona.
-- **Método.** Desde el 16-11 todo análisis se registra y publica antes de correr, se ejecuta una vez y pasa por auditoría independiente.
+- **Hipótesis de temporalidad: apoyo parcial.** En activación el historial ayuda, con respaldo solo para los 6 s anteriores y con AUC absolutas bajas (0,55 a 0,59). En atención no hay información temporal: la mejora era el reloj del estímulo.
+- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero al menos un tercio de lo que tiene sobre el azar es ocular (0,060 de 0,181, cota inferior); del resto no se puede afirmar origen cerebral ni ocular.
+- **Activación.** El modelo por estímulo rinde más (0,587), sin superar de forma demostrable al promedio por ventana. Las dos palancas que más la mejoran son trabajar a nivel de estímulo y adaptar el modelo a la persona.
+- **Método.** Desde el 16-11 todo análisis con protocolo se registra en Git antes de sus predicciones y se ejecuta una vez; desde el 22-11 cada etapa pasa además por auditoría independiente.
 
 ## Pendiente
 
@@ -77,9 +79,11 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 4. Margen práctico de 0,02: sigue como propuesta.
 5. Escritura del manuscrito a partir del borrador del 18-11, y actualizar la presentación v6 con los resultados del 22-11.
 
+Lista superada: las decisiones vigentes son las siete de la minuta del 23-11.
+
 ## Actualización del 23-11-2026
 
-- **Montaje EEG:** los datos son compatibles con el montaje por defecto de OpenBCI (los parpadeos pegan en Fp1/Fp2 y decrecen hacia atrás). El EEG va 0,25–0,5 s desfasado respecto del seguidor ocular.
-- **Limpieza ocular:** al quitar 3 componentes oculares (3,5 % de la varianza) la AUC de atención por EEG baja de 0,681 a 0,621; un control que quita 3 componentes no oculares (72 % de la varianza) la deja en 0,674. Alfa y beta baja de 0,593 a 0,547. La parte defendible como no ocular queda en 0,55–0,56.
+- **Montaje EEG:** los datos son compatibles con el montaje por defecto de OpenBCI (los parpadeos pegan en Fp1/Fp2 y decrecen hacia atrás). El EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular.
+- **Limpieza ocular:** al quitar 3 componentes oculares (3,5 % de la varianza) la AUC de atención por EEG baja de 0,681 a 0,621; un control que quita 3 componentes no oculares (72 % de la varianza) la deja en 0,674. Alfa y beta baja de 0,593 a 0,547. El modelo limpio sigue sobre el azar en las 41 personas; el diseño no separa si ese resto es ocular o cerebral.
 - El pendiente 2 queda resuelto en lo que permiten los datos: no se puede afirmar detección cerebral de atención. Informes en `repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md` y `repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md`.
-- **Red sobre el EEG crudo (modelo más complejo):** una red convolucional tipo EEGNet supera al modelo de referencia en atención (AUC 0,716 frente a 0,681; +0,035 [+0,023; +0,047]), pero al quitar los componentes oculares cae a 0,649: la ventaja está ligada a la señal ocular. En activación queda en el azar (0,498; comparación con el HGB inconclusa). Informe en `repos/Tesis_MDS/resultados/red_cruda_41p_23-11-2026/INFORME.md`.
+- **Red sobre el EEG crudo (modelo más complejo):** una red convolucional tipo EEGNet supera al modelo de referencia en atención (AUC 0,716 frente a 0,681; +0,035 [+0,023; +0,047]), pero al quitar los componentes oculares cae a 0,649: su detección depende de lo ocular, pero su ventaja sobre el HGB se mantiene con el EEG limpio (+0,028). En activación queda en el azar (0,498; comparación con el HGB inconclusa). Informe en `repos/Tesis_MDS/resultados/red_cruda_41p_23-11-2026/INFORME.md`.

@@ -13,11 +13,11 @@
 Se usan dos pseudoetiquetas binarias por ventana de 2 s (paso de 1 s), construidas por un **Modelo Profesor** y predichas por un **Modelo Estudiante** con señales distintas, de acuerdo con la regla de no-circularidad.
 
 - **Atención.** El *Attention Score* se obtiene como la primera componente principal de cinco variables de mirada y pupila (tiempo y duración de fijaciones, dispersión y recorrido de la mirada, pupila normalizada), ajustada con las 25 personas de entrenamiento. Cada ventana se clasifica como alta si supera la mediana de su persona. El *Modelo Estudiante* usa electroencefalograma (EEG) y respuesta galvánica de la piel (GSR). En el puntaje pesan las fijaciones, la dispersión y el recorrido de la mirada (pesos 0,40 a 0,56) y la pupila casi no pesa (−0,05): la etiqueta mide sobre todo quietud de la mirada.
-- **Activación.** El *Arousal Score* se calcula a partir de cuatro componentes de GSR promediados sobre cinco ventanas consecutivas válidas (6 s). La versión utilizada (GSR V2) corrige un error de alineación de índices de la versión anterior, exige cobertura de al menos 50 % y deja sin etiqueta los empates con la mediana personal. Conserva 11.796 de 22.211 ventanas. El *Modelo Estudiante* usa EEG, mirada y pupila.
+- **Activación.** El *Arousal Score* se calcula a partir de cuatro componentes de GSR promediados sobre cinco ventanas consecutivas válidas (6 s). La versión utilizada (GSR V2, la segunda versión de estas etiquetas) corrige un error de alineación de índices de la versión anterior, exige cobertura de al menos 50 % y deja sin etiqueta los empates con la mediana personal. Conserva 11.796 de 22.211 ventanas. El *Modelo Estudiante* usa EEG, mirada y pupila.
 
 Ambas etiquetas son relativas a la sesión de cada persona y se calculan offline; describen el *Attention Score* y el *Arousal Score* definidos, no una medida externa de atención o activación. En el caso de atención, la etiqueta se apoya en lo **Observado** (mirada y pupila) como aproximación a lo **Atendido**, sin validarlo.
 
-El 22-11 se construyó además una **etiqueta de atención corregida por posición**: en lugar de la mediana de la persona en toda la sesión, usa la mediana de la persona dentro del mismo tramo de posición en el estímulo (1, 2, 3, 4, 5, 6–8, 9–12, 13–20 y 21–32 s). Coincide con la original en el 90,6 % de las ventanas (kappa por persona 0,81). Existe como análisis (sección 7.2); si reemplaza a la original es una decisión abierta.
+El 22-11 se construyó además una **etiqueta de atención corregida por posición**: en lugar de la mediana de la persona en toda la sesión, usa la mediana de la persona dentro del mismo tramo de posición en el estímulo (1, 2, 3, 4, 5, 6–8, 9–12, 13–20 y 21–32 s). Coincide con la original en el 90,6 % de las ventanas (kappa de Cohen por persona 0,81). Existe como análisis (sección 7.2); si reemplaza a la original es una decisión abierta.
 
 Fuentes: `resultados/profesor_binario_reconstruido_29-10-2026/INFORME.md`, `resultados/etiquetas_gsr_calidad_v2_01-11-2026/INFORME.md`, `resultados/enfoques_41p_22-11-2026/INFORME.md`.
 
@@ -33,9 +33,9 @@ Fuentes: `resultados/profesor_binario_reconstruido_29-10-2026/INFORME.md`, `resu
 - la *posición en el estímulo*: los segundos transcurridos desde el inicio del segmento, como única variable adicional;
 - un *historial desplazado*, que excluye las ventanas más recientes para no coincidir en el tiempo con los 6 s que definen el *Arousal Score*;
 - una *curva temporal* (22-11): la ventana actual más la media y la desviación de las ventanas cuyo inicio cae entre L y L+6 s antes, con L de 6, 12, 24, 48 y 96 s, sin importar el estímulo, frente a un placebo de la misma persona a 150 s o más;
-- la *AUC estratificada*: la AUC de cada persona calculada solo con pares de ventanas del mismo estímulo, del mismo minuto de sesión o de la misma posición.
+- la *AUC estratificada*: la AUC (área bajo la curva ROC, o característica operativa del receptor) de cada persona calculada solo con pares de ventanas del mismo estímulo, del mismo minuto de sesión o de la misma posición.
 
-**Análisis del EEG (22 y 23-11).** Para estudiar qué detecta el *Modelo Estudiante* de atención se entrenaron modelos sin historial con subconjuntos de variables (solo EEG, solo GSR, bandas alfa y beta, potencia lenta y amplitud, canales frontales y posteriores). El EEG original no tiene limpieza de artefactos oculares: solo se le quita la tendencia lineal y se aplican un filtro de red y un pasabanda de 1 a 45 Hz. La limpieza ocular se hizo por persona con análisis de componentes independientes (ICA): cada componente recibe un puntaje ocular (su correlación máxima con la mirada horizontal, la mirada vertical o los parpadeos del seguidor ocular) y se quitan los tres de mayor puntaje. Como control se quitan los tres componentes de mayor varianza entre los no oculares. Por último, se entrenó una red convolucional compacta del tipo EEGNet (1.217 parámetros) sobre la señal cruda de 16 canales y 2 s, con una sola arquitectura y configuración fijadas de antemano, sin búsqueda.
+**Análisis del EEG (22 y 23-11).** Para estudiar qué detecta el *Modelo Estudiante* de atención se entrenaron modelos sin historial con subconjuntos de variables (solo EEG, solo GSR, bandas alfa y beta, potencia lenta y amplitud, canales frontales y posteriores). El EEG original no tiene limpieza de artefactos oculares: solo se le quita la tendencia lineal y se aplican un filtro de red y un pasabanda de 1 a 45 Hz. La limpieza ocular se hizo por persona con análisis de componentes independientes (ICA): cada componente recibe un puntaje ocular (su correlación máxima con la mirada horizontal, la mirada vertical o los parpadeos del seguidor ocular) y se quitan los tres de mayor puntaje. Como control se quitan los tres componentes de mayor varianza entre los no oculares. Por último, se entrenó una red convolucional compacta del tipo EEGNet (1.217 parámetros) sobre la señal de 16 canales y 2 s, filtrada como en la extracción de variables y sin variables calculadas a mano (en adelante, "señal cruda"), con una sola arquitectura y configuración fijadas de antemano, sin búsqueda.
 
 **Otros modelos (22-11).** Un modelo de activación por estímulo, que usa la media y la desviación de las señales en todas las ventanas del segmento, y un modelo adaptado a la persona, que agrega al entrenamiento las ventanas etiquetadas del primer 40 % de la sesión de la persona evaluada.
 
@@ -54,12 +54,12 @@ Las reglas de decisión se registraron antes de correr, con un margen práctico 
 | Respaldo | p de Holm < 0,05 y límite inferior del intervalo de 95 % sobre cero |
 | Efecto relevante | además, límite inferior del intervalo de 95 % sobre 0,02 |
 | Nulo concluyente | intervalo de 90 % dentro de (−0,02; +0,02) |
-| Inferior | límite superior del intervalo de 95 % bajo cero |
+| Inferior | límite superior del intervalo de 95 % bajo cero; no exige Holm y tiene precedencia sobre "nulo concluyente" |
 | Inconcluso | cualquier otro caso |
 
 El margen de 0,02 no está aprobado por el profesor guía. Varias decisiones dependen de él y quedan cerca del umbral; se indican en cada caso.
 
-Cada análisis se registró en el repositorio antes de ejecutarse y se ejecutó una sola vez. Las auditorías de código detectaron problemas antes de evaluar (por ejemplo, indicadores de faltantes ausentes en la fusión tardía y 1 s de solapamiento entre el historial desplazado y la etiqueta de activación), que se corrigieron con enmiendas registradas antes de ver resultados. Desde el 22-11, cada etapa con modelos tuvo además una auditoría independiente de código antes de ver resultados y una auditoría de resultados; la comprobación no registrada de la fase 2 no fue auditada.
+Cada etapa con modelos se registró en el repositorio antes de ejecutarse y se ejecutó una sola vez; las excepciones (la heterogeneidad por grupo del 16-11, las sensibilidades a personas individuales y la comprobación estratificada del 22-11) se rotulan como no registradas donde aparecen. Las auditorías de código detectaron problemas antes de evaluar (por ejemplo, indicadores de faltantes ausentes en la fusión tardía y 1 s de solapamiento entre el historial desplazado y la etiqueta de activación), que se corrigieron con enmiendas registradas antes de ver resultados. Desde el 22-11, cada etapa con modelos tuvo además una auditoría independiente de código antes de ver resultados y una auditoría de resultados; la comprobación no registrada de la fase 2 no fue auditada.
 
 **Alcance de la evidencia.** Las 16 personas de validación y test habían sido consultadas en etapas anteriores, y los análisis del 22 y 23-11 se pidieron después de ver los resultados del 16 al 18-11. "Confirmatorio" designa aquí la familia de contrastes fijada antes de correr dentro de un análisis dirigido; no designa una confirmación independiente. Ningún resultado de este capítulo se obtuvo en personas nuevas.
 
@@ -69,12 +69,12 @@ Fuentes: `resultados/cierre_v3_16-11-2026/`, `resultados/cierre_final_41p_16-11-
 
 | Etapa | Fecha | Estatus | Carpeta en `resultados/` |
 |---|---|---|---|
-| Cierre V3: elección y congelación de la configuración | 16-11 | Registrado; exploratorio | `cierre_v3_16-11-2026` |
+| Cierre V3 (tercera versión del cierre experimental): elección y congelación de la configuración | 16-11 | Registrado; exploratorio | `cierre_v3_16-11-2026` |
 | Análisis final con 41 personas | 16-11 | Registrado; contraste principal fijado de antemano | `cierre_final_41p_16-11-2026` |
 | Robustez (placebo, sin fuga, particiones) | 16-11 | Registrado | `cierre_robustez_41p_16-11-2026` |
 | Ampliación E1–E6 y enmienda del historial desplazado | 16 al 18-11 | Registrado; E1 principal, E2–E3 secundarios, E4–E6 descriptivos | `ampliacion_41p_16-11-2026` |
 | Explicativo de posición | 18-11 | Registrado, pero motivado por resultados vistos: post hoc | `explicativo_posicion_41p_18-11-2026` |
-| Reapertura, fase 1: 5 particiones y curva temporal | 22-11 | Registrado; familia fijada antes de correr (P1, P2) y curva secundaria. Se hizo sobre personas ya consultadas y tres de las particiones del contraste de activación ya se habían visto: no es una confirmación independiente | `reapertura_41p_22-11-2026` |
+| Reapertura, fase 1: 5 particiones y curva temporal | 22-11 | Registrado; familia fijada antes de correr (P1, P2) y curva secundaria. Se hizo sobre personas ya consultadas y con el contraste de activación ya visto en tres particiones alternativas el 16-11 (las cinco particiones del 22-11 son nuevas y no comparten ningún grupo con aquellas): no es una confirmación independiente | `reapertura_41p_22-11-2026` |
 | Reapertura, fase 2: placebo de bloque y AUC estratificada | 22-11 | Post hoc, registrado sin resultados a la vista | `reapertura_fase2_41p_22-11-2026` |
 | Comprobación estratificada con la posición | 22-11 | No registrada, hecha después de ver resultados | `reapertura_fase2_41p_22-11-2026` |
 | Reapertura, fase 3: historial frente a posición | 22-11 | Registrado; dirigido | `reapertura_fase3_41p_22-11-2026` |
@@ -112,18 +112,18 @@ Por partición, la diferencia del 22-11 va de +0,028 a +0,030 en atención y de 
 **Lecturas descriptivas.**
 
 - En activación el efecto es desigual entre personas: la mediana es +0,014, mejoran 23 de 41 y una persona aporta 0,009 de los 0,036. Sin la persona más influyente la diferencia es +0,028 [+0,006; +0,050] (sensibilidad no registrada, pedida por la auditoría de resultados).
-- Por grupo de origen (16-11), el efecto de atención se repite en las 25 personas de entrenamiento (+0,023 [+0,014; +0,031]) y en las 16 de validación y test (+0,032 [+0,016; +0,048]). El de activación aparece en las primeras (+0,055 [+0,012; +0,101]) y no en las segundas (+0,001 [−0,052; +0,055]).
+- Por grupo de origen (16-11; análisis no registrado en el protocolo y sin código versionado), el efecto de atención se repite en las 25 personas de entrenamiento (+0,023 [+0,014; +0,031]) y en las 16 de validación y test (+0,032 [+0,016; +0,048]). El de activación aparece en las primeras (+0,055 [+0,012; +0,101]) y no en las segundas (+0,001 [−0,052; +0,055]).
 - En el cierre V3, con las particiones originales, el contraste de atención fue +0,018 [+0,009; +0,027] en entrenamiento (25 personas), +0,020 [−0,003; +0,042] en validación (8) y +0,029 [+0,004; +0,052] en test (8). El de activación incluyó el cero en las tres: +0,016 [−0,036; +0,070], +0,059 [−0,004; +0,131] y +0,033 [−0,021; +0,094].
 
 "Efecto relevante" en atención describe el tamaño de la mejora, no su origen. El origen se analiza en la sección siguiente y no es temporal.
 
-Fuentes: `resultados/cierre_v3_16-11-2026/INFORME.md`, `resultados/cierre_final_41p_16-11-2026/INFORME.md`, `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md`.
+Fuentes: `resultados/cierre_v3_16-11-2026/INFORME.md`, `resultados/cierre_final_41p_16-11-2026/INFORME.md`, `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md`, `documentacion/auditoria_final_23-11-2026/recalculo.json` (recálculo de la auditoría final).
 
 ### 7.2 Atención: origen de la mejora
 
 **Placebo (16-11, registrado).** Un historial armado con ventanas de la misma persona tomadas de otros momentos y estímulos mejora tanto como el historial real: placebo menos sin historial, +0,027 [+0,018; +0,035]; real menos placebo, −0,000 [−0,003; +0,003], con intervalo de 90 % [−0,003; +0,003] (nulo concluyente). El informe del 16-11 atribuyó esa mejora al contexto de la persona. Esa lectura no se sostuvo: la calibración con los primeros minutos de sesión de la persona agrega entre +0,001 y +0,004 en atención.
 
-**Posición en el estímulo.** El placebo conserva el largo del historial real, que indica cuántos segundos lleva la persona en el estímulo. La prevalencia de la clase alta de atención depende de ese tiempo: 0,51 en el primer segundo, 0,37 entre el segundo y el tercero y 0,62 hacia los 12 s.
+**Posición en el estímulo.** El placebo conserva el largo del historial real, que indica cuántos segundos lleva la persona en el estímulo. La prevalencia de la clase alta de atención depende de ese tiempo: 0,51 en el primer segundo, 0,37–0,38 en el segundo y el tercero, 0,53 entre los 9 y los 12 s y 0,62 desde los 12 s en adelante.
 
 | Contraste | 18-11 (post hoc, una partición) | 22-11, fase 3 (registrado, 5 particiones) |
 |---|---|---|
@@ -134,21 +134,21 @@ Fuentes: `resultados/cierre_v3_16-11-2026/INFORME.md`, `resultados/cierre_final_
 
 El análisis del 18-11 se motivó tras observar el placebo y se reporta como post hoc. La fase 3 repitió la pregunta con el contraste fijado antes de correr; sus dos pruebas de atención son las dos últimas filas. Con la posición como variable, el historial no agrega nada. Un modelo con la ventana actual y un solo número, los segundos en el estímulo, rinde lo mismo que el modelo con todo el historial (0,711 frente a 0,712; con ambos, 0,713).
 
-**Curva temporal (22-11, secundaria).** Las ventanas de los segundos anteriores no contienen información sobre la etiqueta de atención.
+**Curva temporal (22-11, secundaria).** Las ventanas de los segundos anteriores no aportan sobre la etiqueta de atención más que un placebo de la misma persona.
 
 | Desfase | Desfase − placebo disperso (fase 1) | Desfase − placebo de bloque (fase 2, post hoc) |
 |---|---|---|
 | 6 s | −0,004 [−0,010; +0,002] · nulo concluyente | −0,003 [−0,010; +0,004] · nulo concluyente |
 | 12 s | −0,004 [−0,012; +0,004] · nulo concluyente | −0,003 [−0,011; +0,004] · nulo concluyente |
 | 24 s | −0,007 [−0,013; −0,000] · inferior | −0,006 [−0,013; +0,001] · nulo concluyente |
-| 48 s | −0,013 [−0,020; −0,005] · inferior | −0,012 [−0,020; −0,004] · inferior |
-| 96 s | −0,010 [−0,016; −0,004] · inferior | −0,009 [−0,016; −0,003] · inferior |
+| 48 s | −0,012 [−0,020; −0,005] · inferior | −0,012 [−0,020; −0,004] · inferior |
+| 96 s | −0,010 [−0,016; −0,003] · inferior | −0,009 [−0,016; −0,002] · inferior |
 
-A 24 s las dos variantes dan decisiones distintas con cifras casi iguales, porque el límite superior del intervalo queda en el borde del cero. Las diferencias "inferiores" son pequeñas (hasta −0,013). En esta curva y en la fase 2 las reglas de decisión se usan como lectura descriptiva. No hay tendencia clara con el desfase (−0,002 por duplicación; p 0,071). El análisis del 16-11 con historial desplazado seis ventanas va en el mismo sentido: real menos placebo −0,003 [−0,005; +0,000] según el informe (−0,0025 en el CSV).
+A 24 s las dos variantes dan decisiones distintas con cifras casi iguales, porque el límite superior del intervalo queda en el borde del cero. Las diferencias "inferiores" son pequeñas (hasta −0,012). En esta curva y en la fase 2 las reglas de decisión se usan como lectura descriptiva. No hay tendencia clara con el desfase (−0,002 por duplicación; p 0,071). El análisis del 16-11 con historial desplazado seis ventanas va en el mismo sentido: real menos placebo −0,002 [−0,005; +0,000] (−0,0025 en el CSV; el INFORME muestra −0,003 por un redondeo doble).
 
-**AUC estratificada (22-11, fase 2, post hoc).** Con el contraste historial menos sin historial, la ganancia en atención se mantiene dentro del mismo estímulo (+0,013 [+0,007; +0,021]), dentro del mismo minuto (+0,023 [+0,016; +0,030]) y a igual posición (+0,017 [+0,010; +0,024]); las tres con decisión de respaldo. La ganancia a igual posición parecía contradecir el análisis del 18-11. Una comprobación no registrada, hecha después de ver los resultados y con una sola partición, mostró que no: al comparar con el modelo que ya recibe la posición, el historial agrega +0,004 [−0,001; +0,009] a igual posición, −0,003 [−0,007; +0,002] dentro del mismo estímulo y −0,004 [−0,008; +0,001] dentro del mismo minuto. En la fase 3, el contraste registrado calculado a igual posición da +0,005 [+0,001; +0,010] (estrato descriptivo).
+**AUC estratificada (22-11, fase 2, post hoc).** Con el contraste historial menos sin historial, la ganancia en atención se mantiene dentro del mismo estímulo (+0,013 [+0,006; +0,021]), dentro del mismo minuto (+0,023 [+0,016; +0,030]) y a igual posición (+0,017 [+0,010; +0,024]); las tres con decisión de respaldo. La ganancia a igual posición parecía contradecir el análisis del 18-11. Una comprobación no registrada, hecha después de ver los resultados y con una sola partición, mostró que no: al comparar con el modelo que ya recibe la posición, el historial agrega +0,004 [−0,001; +0,009] a igual posición, −0,003 [−0,007; +0,002] dentro del mismo estímulo y −0,004 [−0,008; +0,001] dentro del mismo minuto. En la fase 3, el contraste registrado calculado a igual posición da +0,005 [+0,001; +0,010] (estrato descriptivo).
 
-**Cuánto depende la etiqueta del reloj (descriptivo).** Un modelo que recibe solo los segundos transcurridos en el estímulo, sin fisiología, llega a 0,598 [0,581; 0,614]. El tiempo de sesión como única variable adicional agrega +0,025 [+0,019; +0,032]. La detección no es un artefacto de la posición: comparando solo ventanas de la misma posición, la AUC sin historial es 0,677 [0,655; 0,699], frente a 0,684 sin estratificar en la misma partición.
+**Cuánto depende la etiqueta del reloj (descriptivo).** Un modelo que recibe solo los segundos transcurridos en el estímulo, sin fisiología, llega a 0,598 [0,581; 0,614]. El tiempo de sesión como única variable adicional agrega +0,025 [+0,019; +0,032]. La detección no es un artefacto de la posición: comparando solo ventanas de la misma posición, la AUC sin historial es 0,677 [0,654; 0,699], frente a 0,684 sin estratificar en la misma partición.
 
 **Etiqueta corregida por posición (22-11, enfoque E1, registrado).**
 
@@ -158,13 +158,13 @@ A 24 s las dos variantes dan decisiones distintas con cifras casi iguales, porqu
 | A2 Historial − sin historial, etiqueta corregida | +0,010 [+0,006; +0,015] | 31/41 | 0,0003 | Respaldo |
 | A3 (Historial + posición) − (actual + posición), corregida | +0,004 [+0,000; +0,009] | 24/41 | 0,055 | Nulo concluyente |
 
-Con la etiqueta corregida la posición sola deja de predecir (0,504 [0,498; 0,510]; con la original, 0,598) y la detección baja poco (0,675 frente a 0,683), aunque la decisión registrada de ese contraste (A1) fue "inferior", por −0,008 y al filo (p Holm 0,055). La mejora del historial baja de +0,029 a +0,010 y, con la posición como variable, queda en +0,004. A1 compara AUC frente a dos objetivos distintos (cambia el 9,4 % de las etiquetas), por lo que no implica que la detección original fuera espuria. Las decisiones de A1 y A3 están pegadas al umbral (p Holm 0,055).
+Con la etiqueta corregida la posición sola deja de predecir (0,504 [0,498; 0,510]; con la original, 0,598) y la detección baja poco (0,675 frente a 0,683), aunque la decisión registrada de ese contraste (A1) fue "inferior", por −0,008 y al filo (límite superior del intervalo, −0,001). La mejora del historial baja de +0,029 a +0,010 y, con la posición como variable, queda en +0,004. A1 compara AUC frente a dos objetivos distintos (cambia el 9,4 % de las etiquetas), por lo que no implica que la detección original fuera espuria. Las decisiones de A1 y A3 están al filo: A1 es "inferior" porque el límite superior de su intervalo es −0,001 (la regla no exige Holm para "inferior"), y A3 sería "respaldo" con un p de Holm bajo 0,05 (es 0,055). En este análisis las predicciones del modelo con historial y posición son idénticas a las del modelo con historial, de modo que A3 equivale a comparar el modelo con historial con el de la ventana actual con posición. Un diagnóstico del 26-11, que reajustó un solo grupo de una partición, indica que no es un error: el modelo recibe la columna de posición y no la usa en ninguna de sus 1.800 divisiones, lo que es coherente con que la posición sola no prediga la etiqueta corregida.
 
-Fuentes: `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md` (y `enmienda_e1_lag6/contrastes.csv`), `resultados/explicativo_posicion_41p_18-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md` (y `curva_temporal.csv`), `resultados/reapertura_fase2_41p_22-11-2026/` (`x1_placebo_bloque.csv`, `x2_estratificada.csv`, `posthoc_no_registrado_estratos_con_posicion.csv`), `resultados/reapertura_fase3_41p_22-11-2026/INFORME.md`, `resultados/enfoques_41p_22-11-2026/INFORME.md`.
+Fuentes: `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md` (y `enmienda_e1_lag6/contrastes.csv`), `resultados/explicativo_posicion_41p_18-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md` (y `curva_temporal.csv`), `resultados/reapertura_fase2_41p_22-11-2026/` (`x1_placebo_bloque.csv`, `x2_estratificada.csv`, `posthoc_no_registrado_estratos_con_posicion.csv`), `resultados/reapertura_fase3_41p_22-11-2026/INFORME.md`, `resultados/enfoques_41p_22-11-2026/INFORME.md` (y `e1_confirmatorio.csv`), `documentacion/auditoria_final_23-11-2026/ronda2/DIAGNOSTICO_E1_POSICION.md`.
 
 ### 7.3 Activación: alcance temporal y controles
 
-**Placebo e historial desplazado (16-11, registrados).** El historial real supera al placebo en +0,038 [+0,006; +0,068] (26/41; p Holm 0,043) y el placebo no aporta sobre el modelo sin historial (−0,004 [−0,030; +0,024]). El historial que excluye las seis ventanas más recientes, sin solapamiento temporal con el *Arousal Score*, supera a un placebo equivalente en +0,046 [+0,018; +0,073] (28/41; p Holm 0,004; respaldo, no efecto relevante: el límite inferior es 0,018) y al modelo sin historial en +0,053 [+0,022; +0,083]. Con cinco ventanas de desplazamiento, que dejan 1 s de solapamiento, la diferencia frente al placebo es +0,040 [+0,013; +0,066]. La calibración con los primeros minutos de la persona agrega entre +0,001 y +0,009.
+**Placebo e historial desplazado (16-11, registrados).** El historial real supera al placebo en +0,038 [+0,006; +0,068] (26/41; p Holm 0,043) y el placebo no aporta sobre el modelo sin historial (−0,004 [−0,030; +0,024]). El historial que excluye las seis ventanas más recientes, sin solapamiento temporal con el *Arousal Score*, supera a un placebo equivalente en +0,046 [+0,018; +0,073] (28/41; p Holm 0,004; respaldo, no efecto relevante: el límite inferior es 0,018) y al modelo sin historial en +0,053 [+0,022; +0,083]. Con cinco ventanas de desplazamiento, que dejan 1 s de solapamiento, la diferencia frente al placebo es +0,040 [+0,012; +0,066]. La calibración con los primeros minutos de la persona agrega entre +0,001 y +0,009.
 
 **Curva temporal (22-11).**
 
@@ -172,13 +172,13 @@ Fuentes: `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/amp
 |---|---|---|
 | 6 s | +0,047 [+0,017; +0,078] · p Holm 0,017 · respaldo | +0,053 [+0,026; +0,081] · p Holm 0,003 · efecto relevante |
 | 12 s | +0,024 [−0,011; +0,060] · inconcluso | +0,030 [−0,005; +0,064] · inconcluso |
-| 24 s | +0,004 [−0,033; +0,042] · inconcluso | +0,010 [−0,027; +0,045] · inconcluso |
+| 24 s | +0,004 [−0,033; +0,042] · inconcluso | +0,009 [−0,027; +0,045] · inconcluso |
 | 48 s | −0,023 [−0,053; +0,010] · inconcluso | −0,017 [−0,041; +0,009] · inconcluso |
 | 96 s | +0,019 [−0,016; +0,053] · inconcluso | +0,024 [−0,011; +0,059] · inconcluso |
 
-Solo el desfase de 6 s alcanza respaldo. Su límite inferior es +0,017 (0,017474 en `curva_temporal.csv`); el INFORME muestra +0,018 por un redondeo doble. A 12 s el resultado es inconcluso, y desde 24 s también: inconcluso, no nulo. Ningún intervalo de 90 % cabe en ±0,02, de modo que la curva no demuestra que el efecto desaparezca; desde 24 s el contraste no se distingue del placebo, sin que eso demuestre ausencia. El contraste cae 0,010 por cada duplicación del desfase [−0,018; −0,003] (p 0,009; 27 de 40 personas); es una sola prueba, sin ajuste. El placebo no aporta sobre la ventana actual (+0,009 [−0,024; +0,043]) y los dos placebos rinden igual (bloque menos disperso, −0,006). Los resultados no dependen de una sola persona: sin la más influyente, el contraste de 6 s queda en +0,039 [+0,012; +0,065] frente al placebo disperso y en +0,046 [+0,021; +0,070] frente al de bloque.
+Solo el desfase de 6 s alcanza respaldo. Su límite inferior es +0,017 (0,017474 en `curva_temporal.csv`); el INFORME muestra +0,018 por un redondeo doble. A 12 s el resultado es inconcluso, y desde 24 s también: inconcluso, no nulo. Ningún intervalo de 90 % cabe en ±0,02, de modo que la curva no demuestra que el efecto desaparezca; desde 24 s el contraste no se distingue del placebo, sin que eso demuestre ausencia. El contraste cae 0,010 por cada duplicación del desfase [−0,018; −0,003] (p 0,009; 27 de 40 personas); es una sola prueba, sin ajuste. El placebo no aporta sobre la ventana actual (+0,009 [−0,024; +0,043]) y los dos placebos rinden igual (bloque menos disperso, −0,006). Los resultados no dependen de una sola persona (sensibilidad no registrada, pedida por la auditoría de resultados): sin la más influyente, el contraste de 6 s queda en +0,039 [+0,012; +0,065] frente al placebo disperso y en +0,046 [+0,021; +0,070] frente al de bloque.
 
-El +0,047 del 22-11 y el +0,046 del 16-11 se parecen, pero no son el mismo contraste. El del 16-11 usa el historial del mismo estímulo sin sus seis ventanas más recientes, un placebo de otros estímulos, una partición y 41 personas. El del 22-11 usa una banda de 6 s situada 6 s antes, sin importar el estímulo, un placebo a 150 s o más, 5 particiones y las filas con cobertura completa hasta 102 s atrás (6.268 filas de 40 personas, el 53 % de las de activación).
+El +0,047 del 22-11 y el +0,046 del 16-11 se parecen, pero no son el mismo contraste. El del 16-11 usa el historial del mismo estímulo sin sus seis ventanas más recientes, un placebo de otros estímulos, una partición y 41 personas. El del 22-11 usa una banda de 6 s situada 6 s antes, sin importar el estímulo, un placebo a 150 s o más, también una sola partición (la registrada el 16-11) y las filas con cobertura completa hasta 102 s atrás (6.268 filas de 40 personas, el 53 % de las de activación).
 
 **AUC estratificada (22-11, fase 2, post hoc).** Contraste: historial menos sin historial.
 
@@ -188,7 +188,7 @@ El +0,047 del 22-11 y el +0,046 del 16-11 se parecen, pero no son el mismo contr
 | Mismo minuto de sesión | +0,058 [+0,027; +0,092] | 0,003 | Efecto relevante |
 | Misma posición en el estímulo | +0,027 [−0,003; +0,059] | 0,092 | Inconcluso |
 
-La ganancia se mantiene dentro del mismo minuto, lo que descarta que sea solo una deriva lenta de la sesión. Dentro de un mismo estímulo o de un mismo minuto, la ventana actual sola no distingue nada (AUC 0,501 en ambos); con historial sube a 0,555 y 0,560. Estas AUC usan una fracción pequeña de las comparaciones: el 2–3 % de los pares de una persona cae dentro de un mismo estímulo y el 7 % dentro de un mismo minuto.
+La ganancia se mantiene dentro del mismo minuto, lo que habla contra una deriva lenta de la sesión como única explicación; es un análisis post hoc, y el control registrado del tiempo de sesión quedó inconcluso (sección 7.1). Dentro de un mismo estímulo o de un mismo minuto, la ventana actual sola no distingue nada (AUC 0,501 en ambos); con historial sube a 0,555 y 0,560. Estas AUC usan una fracción pequeña de las comparaciones: el 2–3 % de los pares de una persona cae dentro de un mismo estímulo y el 7 % dentro de un mismo minuto.
 
 **Historial frente a posición (22-11, fase 3, registrado).** Contraste: (historial + posición) − (ventana actual + posición).
 
@@ -206,13 +206,13 @@ En Q1 el intervalo sin ajustar queda sobre cero, pero no pasa la corrección de 
 | Historial hasta 32 | 0,554 | 0,555 |
 | Historial + posición | 0,555 | 0,559 |
 
-La posición actúa de forma distinta según la comparación. Entre todas las ventanas no se observa aporte de la posición (+0,006 [−0,015; +0,026]) y sí del historial (+0,031 [+0,004; +0,057] sobre el modelo con posición; descriptivo, sin ajuste). Dentro de un mismo estímulo el tiempo transcurrido mejora la predicción por sí solo (+0,049 [+0,027; +0,072]) y no se demostró que el historial lo supere (+0,005 [−0,026; +0,035]). Esta comparación es descriptiva y Q2 es inconcluso y de poca potencia: no demuestran que, dentro de un mismo estímulo, el aporte del historial se explique por el tiempo transcurrido, ni que no exista. El análisis post hoc del 18-11, con una partición, había dado historial menos posición +0,038 [+0,002; +0,074] y posición menos sin historial −0,004 [−0,024; +0,017]. La comprobación no registrada del 22-11 (una partición) coincide con la fase 3 en el sentido: dentro de un mismo estímulo, posición menos sin historial +0,040 [+0,014; +0,067] e historial menos posición −0,015 [−0,056; +0,024].
+La posición actúa de forma distinta según la comparación. Entre todas las ventanas no se observa aporte de la posición (+0,006 [−0,015; +0,026]) y sí del historial (+0,031 [+0,004; +0,057] sobre el modelo con posición; descriptivo, sin ajuste). Dentro de un mismo estímulo el tiempo transcurrido mejora la predicción por sí solo (+0,049 [+0,027; +0,072]) y no se demostró que el historial lo supere (+0,005 [−0,025; +0,035]). Esta comparación es descriptiva y Q2 es inconcluso y de poca potencia: no demuestran que, dentro de un mismo estímulo, el aporte del historial se explique por el tiempo transcurrido, ni que no exista. El análisis post hoc del 18-11, con una partición, había dado historial menos posición +0,038 [+0,002; +0,074] y posición menos sin historial −0,004 [−0,023; +0,017]. La comprobación no registrada del 22-11 (una partición) coincide con la fase 3 en el signo del aporte de la posición dentro de un mismo estímulo (posición menos sin historial, +0,040 [+0,014; +0,067]); en historial menos posición el signo difiere (−0,015 [−0,056; +0,024], frente a +0,005 en la fase 3), con intervalos que incluyen el cero en ambos casos.
 
 **Persistencia de la etiqueta (descriptivo).** La etiqueta de activación de 6 s antes en el mismo estímulo predice la actual con AUC 0,680 [0,634; 0,724] (5.035 pares, 40 personas). En atención esa AUC es 0,535 [0,519; 0,552] (8.818 pares). El estado de activación, tal como lo define la etiqueta, persiste varios segundos; el de atención casi no.
 
 **Límites de la curva.** En el desfase de 6 s el 73 % de las ventanas pertenece al mismo estímulo que la actual (48 % a 12 s, 13 % a 24 s y 0 % desde 48 s): la curva mezcla cercanía temporal con pertenecer al mismo estímulo. La etiqueta de activación integra GSR en [t−4, t+2) s y la banda de 6 s usa fisiología hasta t−4: son contiguas, sin solapamiento ni holgura. No se verificó si los filtros del GSR aguas arriba tienen un soporte más largo.
 
-Fuentes: `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/explicativo_posicion_41p_18-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md`, `resultados/reapertura_fase2_41p_22-11-2026/` (`x1_placebo_bloque.csv`, `x2_estratificada.csv`, `posthoc_no_registrado_estratos_con_posicion.csv`), `resultados/reapertura_fase3_41p_22-11-2026/INFORME.md`.
+Fuentes: `resultados/cierre_robustez_41p_16-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/explicativo_posicion_41p_18-11-2026/INFORME.md`, `resultados/reapertura_41p_22-11-2026/INFORME.md`, `resultados/reapertura_fase2_41p_22-11-2026/` (`x1_placebo_bloque.csv`, `x2_estratificada.csv`, `descriptivos.csv`, `posthoc_no_registrado_estratos_con_posicion.csv`), `resultados/reapertura_fase3_41p_22-11-2026/INFORME.md`.
 
 ### 7.4 Orden de las ventanas
 
@@ -223,7 +223,7 @@ La red GRU es el único modelo que usa el orden de las ventanas. Se evaluó el 1
 | Atención | +0,008 [−0,004; +0,020] · 26/41 · intervalo de 90 % dentro de ±0,02 | −0,040 [−0,055; −0,027] · 9/41 |
 | Activación | +0,051 [+0,021; +0,080] · 28/41 · p 0,002 sin corregir | +0,020 [−0,017; +0,057] · 22/41 |
 
-En atención el orden no agrega un efecto relevante y la GRU rinde 0,040 menos que el resumen estadístico. En activación la GRU con historial supera a su control de una ventana, pero no supera de forma demostrable al HGB con historial. En el cierre V3 esa mejora apareció en validación (+0,091) y en test (+0,084) y no en entrenamiento (−0,016). Es un indicio secundario, no un resultado.
+En atención el orden no agrega un efecto relevante y la GRU rinde 0,040 menos que el resumen estadístico. En activación la GRU con historial supera a su control de una ventana, pero no supera de forma demostrable al HGB con historial. En el cierre V3 esa mejora apareció en validación (+0,091) y en test (+0,084) y no en entrenamiento (−0,016). Ese contraste mide el aporte del historial dentro de la GRU, no el del orden; el contraste propio del orden (GRU menos HGB, ambos con historial) es inconcluso. Es un indicio secundario, no un resultado.
 
 Fuentes: `resultados/cierre_final_41p_16-11-2026/INFORME.md`, `resultados/cierre_v3_16-11-2026/INFORME.md`.
 
@@ -233,14 +233,14 @@ Con una misma familia (MLP), 41 personas y una partición (16-11, secundario):
 
 | Tarea | Tardía − temprana | Intermedia − temprana | Intermedia − tardía |
 |---|---|---|---|
-| Atención | +0,012 [+0,005; +0,021] | +0,005 [−0,003; +0,013] | −0,008 [−0,014; −0,001] |
-| Activación | +0,007 [−0,032; +0,042] | +0,002 [−0,019; +0,023] | −0,004 [−0,042; +0,039] |
+| Atención | +0,012 [+0,005; +0,021] | +0,005 [−0,003; +0,013] | −0,007 [−0,014; −0,001] |
+| Activación | +0,006 [−0,032; +0,042] | +0,002 [−0,019; +0,023] | −0,004 [−0,042; +0,039] |
 
 En atención, entre redes MLP, la fusión tardía supera a la temprana (+0,012 [+0,005; +0,021]) y a la intermedia; son contrastes secundarios, sin corrección. En activación no se demostraron diferencias. La arquitectura intermedia evaluada es más profunda que la temprana, por lo que la comparación incluye también una diferencia de capacidad.
 
 El resultado depende de la familia de modelos. En el cierre V3, con HGB y las particiones originales, la fusión tardía no superó a la temprana: en atención la diferencia fue −0,010 [−0,018; −0,003] en entrenamiento, −0,008 [−0,020; +0,005] en validación y −0,002 [−0,015; +0,008] en test; en activación, +0,009 [−0,025; +0,042], −0,107 [−0,223; −0,011] y −0,001 [−0,065; +0,066]. La ventaja de la fusión tardía en atención vale para el MLP y no puede generalizarse: con HGB el signo fue el contrario. Además, la red MLP con fusión tardía rinde 0,024 menos que el HGB con fusión temprana sobre la misma representación (0,686 frente a 0,710; [−0,038; −0,012], recálculo de la auditoría final). No puede concluirse que la fusión tardía sea mejor en general. La fusión no se volvió a evaluar el 22 ni el 23-11.
 
-Fuentes: `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/cierre_v3_16-11-2026/INFORME.md`.
+Fuentes: `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/cierre_v3_16-11-2026/INFORME.md`, `documentacion/auditoria_final_23-11-2026/recalculo.json` (recálculo de la auditoría final).
 
 ### 7.6 Qué detecta el Modelo Estudiante de atención
 
@@ -248,7 +248,7 @@ Fuentes: `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/cierre_v
 
 | Prueba | Diferencia | Mejoran | Decisión |
 |---|---|---|---|
-| B1 Solo EEG − 0,5 | +0,181 [+0,165; +0,197] | 41/41 | Efecto relevante |
+| B1 Solo EEG − 0,5 | +0,181 [+0,164; +0,197] | 41/41 | Efecto relevante |
 | B2 Solo GSR − 0,5 | +0,045 [+0,030; +0,062] | 36/41 | Efecto relevante |
 | B3 (EEG + GSR) − solo EEG | +0,002 [−0,001; +0,005] | 24/41 | Nulo concluyente |
 | B4 Solo EEG − solo GSR | +0,136 [+0,113; +0,158] | 40/41 | Efecto relevante |
@@ -262,7 +262,7 @@ Las pruebas B5 a B8 forman una segunda familia, agregada por la auditoría de c�
 | Variables de EEG | AUC original | AUC a igual posición | AUC sin 3 componentes oculares | Caída |
 |---|---|---|---|---|
 | Todo el EEG | 0,681 | 0,675 | 0,621 | 0,060 |
-| Potencia lenta (delta, theta) y amplitud | 0,673 | 0,659 | 0,603 | 0,070 |
+| Potencia lenta (delta, theta) y amplitud | 0,673 | 0,659 | 0,602 | 0,070 |
 | Canales frontales | 0,675 | 0,667 | 0,621 | 0,054 |
 | Canales posteriores | 0,602 | 0,600 | 0,562 | 0,040 |
 | Solo alfa y beta | 0,593 | 0,593 | 0,547 | 0,045 |
@@ -271,7 +271,7 @@ Las variables que más detectan son las que suelen llevar la firma de los movimi
 
 **Montaje y sincronía (23-11, descriptivo).** El montaje de los electrodos no estaba documentado y la división entre canales frontales y posteriores del 22-11 era un supuesto. La respuesta promedio al parpadeo es de 148 y 151 µV en los dos canales frontopolares, 74 y 77 µV en los frontales laterales, 57 y 56 µV en los frontales, y de 18 a 29 µV en los centrales, temporales, parietales y occipitales. La mirada horizontal entra con signo opuesto en los dos canales frontales laterales en 31 de las 37 personas con ambos canales utilizables. El patrón es compatible con el montaje por defecto del equipo (OpenBCI Cyton+Daisy); esto respalda la división usada, pero no reemplaza la documentación del experimento.
 
-El mismo análisis mostró que el EEG va entre 0,18 y 0,53 s atrasado respecto del reloj del seguidor ocular en las 41 personas (mediana 0,45 s; cuartiles 0,28 y 0,48 s). Las ventanas de 2 s del EEG están corridas entre un 12 % y un 25 % respecto de las de mirada, pupila y GSR. El desfase no se corrigió, porque las ventanas vigentes están congeladas; atenúa cualquier relación entre el EEG y las demás señales, incluidas las etiquetas.
+El mismo análisis mostró que el EEG va entre 0,18 y 0,53 s atrasado respecto del reloj del seguidor ocular en las 41 personas (mediana 0,45 s; cuartiles 0,28 y 0,48 s). Las ventanas de 2 s del EEG están corridas entre un 9 % y un 26 % (mediana 22 %) respecto de las de mirada, pupila y GSR. El desfase no se corrigió, porque las ventanas vigentes están congeladas; atenúa cualquier relación entre el EEG y las demás señales, incluidas las etiquetas.
 
 **Limpieza ocular (23-11, registrado).** Modelos de atención solo con EEG, ventana actual, las mismas 5 particiones.
 
@@ -280,7 +280,9 @@ El mismo análisis mostró que el EEG va entre 0,18 y 0,53 s atrasado respecto d
 | L1 | EEG original − EEG limpio | +0,060 [+0,044; +0,075] | 39/41 | Efecto relevante |
 | L2 | Control − EEG limpio | +0,054 [+0,037; +0,070] | 37/41 | Efecto relevante |
 | L3 | EEG limpio − 0,5 | +0,121 [+0,107; +0,135] | 41/41 | Efecto relevante |
-| L4 | Alfa y beta limpio − alfa y beta original | −0,045 [−0,059; −0,033] | 6/41 | Inferior |
+| L4 | Alfa y beta limpio − alfa y beta original | −0,045 [−0,059; −0,032] | 6/41 | Inferior |
+
+La columna "A favor" cuenta las personas con diferencia positiva. En L4 son las 6 personas en que la limpieza sube la AUC de alfa y beta.
 
 Quitar tres componentes oculares, que representan una mediana de 3,5 % de la varianza, baja la AUC de 0,681 a 0,621. Quitar tres componentes no oculares, con una mediana de 72 % de la varianza, la deja en 0,674 (caída de 0,007 [−0,001; +0,015]). La caída es propia de los componentes oculares. Equivale a cerca de un tercio de lo que el modelo tiene sobre el azar (0,060 de 0,181), y el modelo limpio sigue sobre el azar en las 41 personas (0,621; L3). El límite inferior de L1 es +0,044 (0,044497 en el CSV); el INFORME muestra +0,045 por un redondeo doble. La detección por alfa y beta, que el 22-11 parecía la parte menos expuesta al artefacto, también cae (de 0,593 a 0,547); la lectura fijada de antemano solo contemplaba que no cambiara.
 
@@ -300,7 +302,7 @@ La limpieza es parcial. La correlación máxima entre algún canal y los parpade
 | Modelo de atención | AUC |
 |---|---|
 | Red, EEG original | 0,716 [0,697; 0,735] |
-| HGB, EEG original | 0,681 [0,665; 0,697] |
+| HGB, EEG original | 0,681 [0,664; 0,697] |
 | Red, EEG limpio | 0,649 [0,630; 0,667] |
 | HGB, EEG limpio | 0,621 [0,607; 0,635] |
 
@@ -308,7 +310,7 @@ En atención la red supera al modelo de referencia, y es el primer modelo más c
 
 Tres límites acotan esta lectura. R1 es efecto relevante con holgura mínima: el límite inferior es 0,023 y, sin las dos personas más favorables, queda en 0,0199. R3 no tiene control propio: no se entrenó una red con el filtro de control, de modo que la especificidad ocular de su pérdida descansa en el control del modelo de referencia (L2). Y es una sola arquitectura, sin búsqueda, con una inicialización por grupo y sin curva de convergencia.
 
-Fuentes: `resultados/enfoques_41p_22-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/montaje_ocular_41p_23-11-2026/INFORME.md`, `resultados/limpieza_ocular_41p_23-11-2026/INFORME.md`, `resultados/red_cruda_41p_23-11-2026/INFORME.md`.
+Fuentes: `resultados/enfoques_41p_22-11-2026/INFORME.md`, `resultados/ampliacion_41p_16-11-2026/INFORME.md`, `resultados/montaje_ocular_41p_23-11-2026/INFORME.md`, `resultados/limpieza_ocular_41p_23-11-2026/INFORME.md`, `resultados/red_cruda_41p_23-11-2026/INFORME.md`, `documentacion/auditoria_final_23-11-2026/recalculo.json` (recálculo de la auditoría final).
 
 ### 7.7 Activación: ventana actual, estímulo y persona
 
@@ -316,11 +318,11 @@ Fuentes: `resultados/enfoques_41p_22-11-2026/INFORME.md`, `resultados/ampliacion
 
 | Modelo | AUC | Personas sobre 0,5 |
 |---|---|---|
-| HGB, solo EEG | 0,524 [0,497; 0,551] | 26/41 |
+| HGB, solo EEG | 0,524 [0,497; 0,550] | 26/41 |
 | HGB, EEG + mirada + pupila | 0,518 [0,491; 0,545] | 22/41 |
 | Red convolucional, EEG crudo | 0,498 [0,478; 0,518] | 20/41 |
 
-La comparación entre la red y el HGB (R4) es inconclusa e inestable: el signo cambia en una de las cinco particiones y la decisión pasa a "inferior" al quitar una de cinco personas. Compara dos modelos sin señal demostrada. No se demostró que un modelo más complejo ayude en activación, ni tampoco que perjudique.
+La comparación entre la red y el HGB (R4) es inconclusa e inestable: el signo cambia en una de las cinco particiones y la decisión pasa a "inferior" al quitar una sola persona, si es cualquiera de cinco personas concretas. Compara dos modelos sin señal demostrada. No se demostró que un modelo más complejo ayude en activación, ni tampoco que perjudique.
 
 **Predicción por estímulo (22-11, enfoque E3, registrado).** La unidad es el segmento y el objetivo, la mayoría de las etiquetas de sus ventanas (1.589 segmentos).
 
@@ -340,22 +342,22 @@ El modelo de estímulo llega a 0,587 [0,550; 0,622], la AUC más alta obtenida e
 |---|---|---|---|---|---|
 | Atención | Adaptado − general, sin historial | +0,006 [+0,000; +0,011] | 25/41 | 0,098 | Nulo concluyente |
 | Atención | Adaptado − general, con historial | +0,000 [−0,007; +0,008] | 19/41 | 0,97 | Nulo concluyente |
-| Activación | Adaptado − general, sin historial | +0,028 [+0,007; +0,049] | 29/40 | 0,050 | Respaldo |
+| Activación | Adaptado − general, sin historial | +0,028 [+0,007; +0,049] | 29/40 | 0,049 | Respaldo |
 | Activación | Adaptado − general, con historial | +0,045 [+0,023; +0,069] | 30/40 | 0,0004 | Efecto relevante |
 
-En activación la adaptación se suma al historial: en la parte final de la sesión la AUC pasa de 0,502 (general, sin historial) a 0,587 (adaptado, con historial), y en el modelo adaptado el historial aporta +0,058 [+0,032; +0,084]. La decisión de la adaptación sin historial está pegada al umbral (p Holm 0,0495 en el CSV). La adaptación es offline: las etiquetas de calibración se definen con la normalización de toda la sesión, por lo que no equivale a una calibración utilizable en línea. Se evalúa sobre la parte final de la sesión, que es una muestra distinta de la de los demás análisis.
+En activación la adaptación se suma al historial: en la parte final de la sesión la AUC pasa de 0,502 (general, sin historial) a 0,587 (adaptado, con historial), y en el modelo adaptado el historial aporta +0,058 [+0,032; +0,084] (descriptivo que no figura en la lista registrada del protocolo). La decisión de la adaptación sin historial está pegada al umbral (p Holm 0,049; 0,0495 en el CSV, que el INFORME muestra como 0,050 por un redondeo doble). La adaptación es offline: las etiquetas de calibración se definen con la normalización de toda la sesión, por lo que no equivale a una calibración utilizable en línea. Se evalúa sobre la parte final de la sesión, que es una muestra distinta de la de los demás análisis.
 
-Fuentes: `resultados/red_cruda_41p_23-11-2026/INFORME.md`, `resultados/enfoques_41p_22-11-2026/INFORME.md` (y `e4_confirmatorio.csv`).
+Fuentes: `resultados/red_cruda_41p_23-11-2026/INFORME.md`, `resultados/enfoques_41p_22-11-2026/INFORME.md` (y `e4_confirmatorio.csv`), `resultados/reapertura_41p_22-11-2026/auc_absolutas.csv`.
 
 ### 7.8 Análisis descriptivos
 
 Ninguno de estos patrones se sometió a contraste. Provienen del análisis del 16-11, con una partición.
 
 - **Evolución en la sesión.** En atención, la AUC sube del primer al último quinto de la sesión: de 0,65 a 0,71 sin historial y de 0,69 a 0,74 con historial. En activación, la proporción de ventanas de clase alta cae a 0,37 en el último quinto, un patrón compatible con habituación.
-- **Importancia por bloques.** En atención, la caída de AUC al permutar el EEG es 0,207 y al permutar la GSR 0,004; la ventana actual pesa más que el historial, y las bandas theta y delta más que las restantes. En activación las caídas son 0,053 para el EEG, 0,050 para la media del historial y 0,021 para la pupila, y no se observa caída para la mirada. La desviación entre los 8 folds supera a la media en los tres casos (±0,075, ±0,053 y ±0,027, según la auditoría final). Es un descriptivo ruidoso y no demuestra que el EEG aporte: no se demostró aporte del EEG de la ventana actual (0,524; sección 7.7).
-- **Tipo de página.** La atención se predice mejor en sitios web (0,71) y peor en textos (0,60 sin historial; 0,63 con historial). En activación, el historial mejora sobre todo en sitios web (de 0,525 a 0,588).
+- **Importancia por bloques.** En atención, la caída de AUC al permutar el EEG es 0,207 y al permutar la GSR 0,004; la ventana actual pesa más que el historial, y las bandas theta y delta más que las restantes. En activación las caídas son 0,053 para el EEG, 0,050 para la media del historial y 0,021 para la pupila, y no se observa caída para la mirada. La desviación entre los 8 grupos de la validación cruzada supera a la media en los tres casos (±0,075, ±0,053 y ±0,027, según la auditoría final). Es un descriptivo ruidoso y no demuestra que el EEG aporte: no se demostró aporte del EEG de la ventana actual (0,524; sección 7.7).
+- **Tipo de página.** La atención se predice mejor en sitios web (0,71) y peor en textos (0,60 sin historial; 0,63 con historial, donde solo queda por debajo una categoría con 25 personas). En activación, el historial mejora sobre todo en sitios web (de 0,525 a 0,588).
 
-Fuente: `resultados/ampliacion_41p_16-11-2026/INFORME.md`.
+Fuentes: `resultados/ampliacion_41p_16-11-2026/INFORME.md` (y `por_categoria.csv`), `documentacion/auditoria_final_23-11-2026/recalculo.json` (recálculo de la auditoría final).
 
 ## Capítulo 8: Discusión
 
@@ -367,18 +369,18 @@ La hipótesis central plantea que los modelos temporales multimodales rinden mej
 |---|---|---|
 | ¿Mejora el modelo con historial? | Sí: +0,029 [+0,021; +0,037], efecto relevante | Sí, con respaldo al promediar 5 particiones: +0,036 [+0,010; +0,065]. Por partición, de +0,028 a +0,047, y no todos los intervalos excluyen el cero. Desigual entre personas: mediana +0,014; 23 de 41 |
 | ¿La mejora es información temporal? | No: con la posición como variable, +0,001 [−0,002; +0,005], nulo concluyente | Apoyo acotado. El más sólido: el historial sin los 6 s de la etiqueta supera a un placebo en +0,046 (p Holm 0,004; registrado antes de correr). En la curva, +0,047 [+0,017; +0,078] a 6 s; a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin que eso demuestre ausencia. Los controles de tiempo de sesión, posición y mismo estímulo quedaron inconclusos |
-| ¿Queda algo al controlar la posición? | Nada | +0,032 [+0,004; +0,059], inconcluso tras Holm |
-| ¿Aporta el orden de las ventanas? | No: +0,008 [−0,004; +0,020] | Indicio secundario, sin corrección |
+| ¿Queda algo al controlar la posición? | No: nulo concluyente dentro de ±0,02 | +0,032 [+0,004; +0,059], inconcluso tras Holm |
+| ¿Aporta el orden de las ventanas? | No: la GRU con historial no supera a su control (+0,008 [−0,004; +0,020]) y rinde 0,040 menos que el HGB | No demostrado: el contraste propio del orden (GRU − HGB, ambos con historial) es inconcluso, +0,020 [−0,017; +0,057]. La GRU con historial supera a su control de una ventana (+0,051 [+0,021; +0,080], secundario sin corrección), lo que mide el historial y no el orden |
 
 Este encuadre es provisorio. Todos los análisis se hicieron sobre las mismas 41 personas, que incluyen las de validación y test ya consultadas, y los del 22 y 23-11 se diseñaron después de ver los anteriores. El apoyo en activación es evidencia acotada, no una confirmación.
 
 ### 8.2 Atención: una ventaja que no es temporal
 
-El modelo con historial rinde mejor en atención, de forma estable y en casi todas las personas. Esa ventaja no proviene de lo que ocurrió antes. La reproduce un historial de otros momentos, la reproduce un solo número (los segundos transcurridos en el estímulo) y desaparece cuando el modelo conoce ese número, tanto en el análisis post hoc del 18-11 como en el contraste registrado de la fase 3. Las ventanas de 6 a 96 s antes no contienen información sobre la etiqueta.
+El modelo con historial rinde mejor en atención, de forma estable y en casi todas las personas. Esa ventaja no proviene de lo que ocurrió antes. La reproduce un historial de otros momentos, la reproduce un solo número (los segundos transcurridos en el estímulo) y desaparece cuando el modelo conoce ese número, tanto en el análisis post hoc del 18-11 como en el contraste registrado de la fase 3. Las ventanas de 6 a 96 s antes no aportan más que un placebo de la misma persona.
 
 La lectura más coherente es que el *Attention Score* tiene una estructura sistemática al inicio de cada página: una caída a los 2–3 s seguida de un aumento. El modelo con historial la capturaba a través del largo del historial. La etiqueta depende mucho del reloj: la posición sola predice con AUC 0,598. Dado que la etiqueta se construye con fijaciones y mirada, este patrón podría reflejar la reorientación de la mirada al cambiar de página, es decir, lo **Observado** más que lo **Atendido**.
 
-La etiqueta corregida por posición elimina ese efecto y la detección baja poco (0,675 frente a 0,683), aunque la decisión registrada de ese contraste (A1) fue "inferior", por −0,008 y al filo (p Holm 0,055). Es un resultado útil para decidir cómo definir la etiqueta, pero la decisión de reemplazar la original corresponde al profesor guía. La corrección no resuelve el problema de fondo de la sección siguiente, porque la etiqueta corregida también se define con los ojos.
+La etiqueta corregida por posición elimina ese efecto y la detección baja poco (0,675 frente a 0,683), aunque la decisión registrada de ese contraste (A1) fue "inferior", por −0,008 y al filo (límite superior del intervalo, −0,001). Es un resultado útil para decidir cómo definir la etiqueta, pero la decisión de reemplazar la original corresponde al profesor guía. La corrección no resuelve el problema de fondo de la sección siguiente, porque la etiqueta corregida también se define con los ojos.
 
 El modelo secuencial (GRU) no agregó información sobre el resumen estadístico y rindió peor. Con 41 personas y estímulos breves (mediana de tres ventanas por segmento), la información disponible para aprender dependencias de orden es limitada.
 
@@ -386,11 +388,11 @@ El modelo secuencial (GRU) no agregó información sobre el resumen estadístico
 
 Esta sección resume [[Borrador Discusión fisiológica 23-11-2026]], donde está el detalle y la lista de referencias. Las referencias se verificaron en un catálogo bibliográfico (título, autores, revista y DOI), y el 23-11-2026 se contrastaron con las fuentes: 10 en texto completo y 8 solo por resumen. Las frases se ajustaron a lo verificado; el detalle está en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
 
-**La huella de los ojos en el EEG.** La regla de no-circularidad se cumple en el nivel de las señales de entrada, pero no garantiza que el EEG sea independiente de los ojos. El ojo se comporta como un dipolo eléctrico, de modo que cada rotación del globo ocular modifica el potencial de los electrodos cercanos (Croft y Barry, 2000; Plöchl, Ossandón y König, 2012). Los parpadeos agregan una deflexión de gran amplitud y máximo frontopolar (Iwasaki et al., 2005). A esto se suma el potencial de espiga sacádica, una descarga breve y de banda ancha de los músculos extraoculares al inicio de cada sacada, que contamina las frecuencias altas (Yuval-Greenberg et al., 2008; Keren, Yuval-Greenberg y Deouell, 2010; Hipp y Siegel, 2013). Los registros de esta tesis muestran ese patrón: el gradiente de amplitud del parpadeo desde los canales frontopolares hacia los posteriores (sección 7.6).
+**La huella de los ojos en el EEG.** La regla de no-circularidad se cumple en el nivel de las señales de entrada, pero no garantiza que el EEG sea independiente de los ojos. El ojo se comporta como un dipolo eléctrico, de modo que cada rotación del globo ocular modifica el potencial de los electrodos cercanos (Croft y Barry, 2000; Plöchl, Ossandón y König, 2012). Los parpadeos agregan una deflexión de gran amplitud y máximo frontopolar (Iwasaki et al., 2005; Plöchl, Ossandón y König, 2012). A esto se suma el potencial de espiga sacádica, una descarga breve y de banda ancha de los músculos extraoculares al inicio de cada sacada, que contamina las frecuencias altas (Yuval-Greenberg et al., 2008; Keren, Yuval-Greenberg y Deouell, 2010; Hipp y Siegel, 2013). Los registros de esta tesis muestran ese patrón: el gradiente de amplitud del parpadeo desde los canales frontopolares hacia los posteriores (sección 7.6).
 
-**Cuánto depende la detección de los componentes oculares.** Al retirar tres componentes oculares la AUC baja de 0,681 a 0,621, y un control que retira mucha más varianza casi no la cambia. La caída es de 0,060 sobre los 0,181 que el modelo tiene sobre el azar, cerca de un tercio. La detección por alfa y beta también disminuye, lo que es coherente con la literatura: el dipolo córneo-retinal se concentra en frecuencias bajas, pero el potencial de espiga sacádica abarca aproximadamente de 20 a 90 Hz, con lo que alcanza la parte alta de beta (Keren, Yuval-Greenberg y Deouell, 2010), y la actividad de los músculos frontal y temporal puede ocultar o imitar los ritmos beta y alfa (Goncharova et al., 2003). La cifra de 0,060 es una cota inferior. La separación por componentes independientes, propuesta para este fin por Jung et al. (2000), es imperfecta en exploración visual libre: puede dejar artefacto residual o retirar actividad cerebral (Dimigen, 2020). Con 16 canales la separación es gruesa, y en estos datos la limpieza fue parcial.
+**Cuánto depende la detección de los componentes oculares.** Al retirar tres componentes oculares la AUC baja de 0,681 a 0,621, y un control que retira mucha más varianza casi no la cambia. La caída es de 0,060 sobre los 0,181 que el modelo tiene sobre el azar, cerca de un tercio. La detección por alfa y beta también disminuye, lo que es coherente con la literatura: el dipolo córneo-retinal se concentra en frecuencias bajas (Plöchl, Ossandón y König, 2012), pero el potencial de espiga sacádica abarca aproximadamente de 20 a 90 Hz, con lo que alcanza la parte alta de beta (Keren, Yuval-Greenberg y Deouell, 2010), y la actividad de los músculos frontal y temporal puede ocultar o imitar los ritmos beta y alfa (Goncharova et al., 2003). La cifra de 0,060 es una cota inferior. La separación por componentes independientes, propuesta para este fin por Jung et al. (2000), es imperfecta en exploración visual libre cuando se aplica con la configuración habitual: puede dejar artefacto residual o retirar actividad cerebral (Dimigen, 2020). Con 16 canales la separación es gruesa, y en estos datos la limpieza fue parcial.
 
-**Qué puede explicar la detección que permanece.** Tras la limpieza el modelo sigue sobre el azar (0,621 con todas las variables, en las 41 personas; 0,55–0,56 con alfa y beta o con canales posteriores). El diseño no permite atribuir ese remanente a una sola fuente. Hay al menos cuatro candidatos: artefacto ocular residual, cuyo patrón espacial y espectral se conserva; actividad muscular de la frente y las sienes asociada a los movimientos de los ojos (Goncharova et al., 2003); la respuesta visual ligada a cada fijación, o respuesta lambda, que es actividad cerebral pero cuya ocurrencia depende de los movimientos oculares (Dimigen et al., 2011); y la modulación de alfa posterior, relacionada con la atención (Klimesch, 2012), que es el candidato más cercano a un correlato cerebral y el más débil en estos datos. El informe de limpieza agrega una quinta posibilidad, no fisiológica: las variables de calidad de canal que la limpieza no altera. Como la etiqueta se define con la conducta ocular, todas las fuentes covarían con ella y no pueden separarse.
+**Qué puede explicar la detección que permanece.** Tras la limpieza el modelo sigue sobre el azar (0,621 con todas las variables, en las 41 personas; 0,55–0,56 con alfa y beta o con canales posteriores). El diseño no permite atribuir ese remanente a una sola fuente. Hay al menos cuatro candidatos: artefacto ocular residual, cuyo patrón espacial y espectral se conserva; actividad muscular de la frente y las sienes, que contamina el EEG en un rango amplio de frecuencias (Goncharova et al., 2003) y que podría acompañar a los movimientos de los ojos, asociación que no se midió; la respuesta visual ligada a cada fijación, o respuesta lambda, que es actividad cerebral pero cuya ocurrencia depende de los movimientos oculares (Dimigen et al., 2011); y la modulación de alfa posterior, relacionada con la atención (Klimesch, 2012), que es el candidato más cercano a un correlato cerebral y el más débil en estos datos. El informe de limpieza agrega una quinta posibilidad, no fisiológica: las variables de calidad de canal que la limpieza no altera. Como la etiqueta se define con la conducta ocular, todas las fuentes covarían con ella y no pueden separarse.
 
 **Un modelo más complejo detecta mejor y también depende de lo ocular.** La red convolucional del tipo EEGNet (Lawhern et al., 2018) supera al modelo de referencia. Al limpiar la señal pierde 0,067 (R3, sin control propio) y su salida se asocia más con el recorrido de la mirada: su detección depende de lo ocular. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio (+0,028, frente a +0,035 con el original), de modo que los datos no permiten decir que esa ventaja sea ocular. Una explicación plausible de la dependencia, que este trabajo no puso a prueba, es que los artefactos oculares tienen formas de onda características que las variables de potencia por banda promedian y que una red convolucional puede aprender. La mayor capacidad del modelo no cambia la interpretación de qué se detecta.
 
@@ -398,13 +400,13 @@ En términos del diseño, al menos un tercio de lo que el *Modelo Estudiante* de
 
 ### 8.4 Activación: indicio de información temporal de corto alcance
 
-En activación el modelo con historial rinde mejor, y hay apoyo acotado a que esa mejora no se explique solo por la persona. El apoyo más sólido es el contraste registrado antes de correr en la enmienda del 16-11: el historial sin los 6 s que definen la etiqueta supera a un placebo en +0,046 (p Holm 0,004). El contraste principal se estimó varias veces sobre las mismas 41 personas, con diferencias de AUC entre +0,028 y +0,047, y no todos los intervalos excluyen el cero. El respaldo de la fase 1 del 22-11 sale de un análisis registrado sobre personas ya consultadas, que promedia cinco particiones cuando tres ya se habían visto: es una estimación más precisa de lo ya observado, no una confirmación. El efecto es desigual entre personas (mediana +0,014; mejoran 23 de 41).
+En activación el modelo con historial rinde mejor, y hay apoyo acotado a que esa mejora no se explique solo por la persona. El apoyo más sólido es el contraste registrado antes de correr en la enmienda del 16-11: el historial sin los 6 s que definen la etiqueta supera a un placebo en +0,046 (p Holm 0,004). El contraste principal se estimó varias veces sobre las mismas 41 personas, con diferencias de AUC entre +0,028 y +0,047, y no todos los intervalos excluyen el cero. El respaldo de la fase 1 del 22-11 sale de un análisis registrado sobre personas ya consultadas, que promedia cinco particiones nuevas cuando el mismo contraste ya se había visto positivo en otras tres particiones el 16-11: es una estimación más precisa de lo ya observado, no una confirmación. El efecto es desigual entre personas (mediana +0,014; mejoran 23 de 41).
 
 En cuanto al alcance, solo la banda de 6 s tiene respaldo. A 12 s el resultado es inconcluso, y desde 24 s el contraste no se distingue del placebo, sin que eso demuestre ausencia: ningún intervalo de 90 % cabe en ±0,02. La ganancia se mantiene dentro del mismo minuto (análisis post hoc), lo que habla contra una deriva lenta de la sesión como única explicación; el control registrado del tiempo de sesión quedó inconcluso.
 
 Lo que el historial aportaría es, con mayor probabilidad, una mejor estimación de un estado que dura segundos: la propia etiqueta se parece a la de 6 s antes. Los resultados no demuestran más que eso. Tres controles quedan inconclusos (el tiempo de sesión como variable, la comparación a igual posición y el contraste con la posición como variable tras la corrección de Holm). Dentro de un mismo estímulo no se demostró que el historial supere al tiempo transcurrido; ese resultado es inconcluso y de poca potencia, y no demuestra ausencia de efecto ni que el aporte se explique por el tiempo transcurrido. Por eso corresponde hablar de un resumen del historial reciente y no de dinámica dentro del estímulo. El resultado por estímulo y la persistencia de la etiqueta son compatibles con que la activación, tal como la define el *Arousal Score*, se comporte como un estado del estímulo completo más que de cada ventana; es una lectura sin contraste propio (C2 es inconcluso).
 
-El efecto es pequeño y su utilidad práctica es baja con las variables actuales: las AUC absolutas van de 0,52 a 0,59, y la ganancia es desigual entre personas.
+El efecto es pequeño y su utilidad práctica es baja con las variables actuales: las AUC absolutas van de 0,50 a 0,59, y la ganancia es desigual entre personas.
 
 ### 8.5 Activación: por qué el Arousal Score no se detecta desde la ventana actual
 
@@ -412,7 +414,7 @@ Con la ventana actual ningún modelo queda claramente sobre el azar. La fisiolog
 
 - **Origen de la señal.** La conductancia de la piel refleja la actividad de las glándulas sudoríparas, inervadas exclusivamente por el sistema nervioso simpático (Benedek y Kaernbach, 2010). Su regulación central depende de regiones implicadas en la emoción, la atención y la cognición (Critchley, 2002). Si varias de ellas son mediales o profundas, su actividad contribuiría poco a un EEG de superficie de 16 canales; es una hipótesis que este trabajo no puso a prueba y cuya base anatómica falta confirmar en el texto completo.
 - **Escala temporal.** Una respuesta de conductancia se atribuye a un evento cuando comienza típicamente entre 1 y 3 s, o entre 1 y 5 s, después de él; sube con rapidez y decae lentamente, de modo que las respuestas sucesivas se superponen (Benedek y Kaernbach, 2010). Una ventana de EEG de 2 s no coincide con la respuesta que define la etiqueta. Esto es coherente con que el historial de los segundos previos mejore la predicción (con respaldo a 6 s).
-- **Tipo de relación.** La relación documentada entre el EEG y la conductancia de la piel es tónica: en reposo, mayor conductancia se asocia con menor potencia alfa global (Barry et al., 2005, 2007). Esa relación se observó al comparar condiciones (cafeína frente a placebo, ojos abiertos frente a cerrados) y no implica que el estado pueda distinguirse ventana a ventana dentro de una sesión. Además, el *Arousal Score* es relativo a la mediana de cada persona y la navegación web produce un rango de activación estrecho.
+- **Tipo de relación.** La relación documentada entre el EEG y la conductancia de la piel es tónica: en reposo, mayor conductancia se asocia con menor potencia alfa global (Barry et al., 2005, 2007). Esa relación se observó al comparar condiciones (cafeína frente a placebo, ojos abiertos frente a cerrados) y no implica que el estado pueda distinguirse ventana a ventana dentro de una sesión. Además, el *Arousal Score* es relativo a la mediana de cada persona, y es plausible que la navegación web produzca un rango de activación estrecho; este trabajo no lo midió.
 
 En cuanto a la pupila, su diámetro responde a la luz, al enfoque cercano y a la activación o el esfuerzo mental (Mathôt, 2018). Frente a una pantalla cuyo brillo cambia con el contenido, las dos primeras respuestas pueden dominar sobre la tercera.
 
@@ -437,11 +439,12 @@ Dos modelos más complejos dieron resultados opuestos. La GRU, que usa el orden 
 - Las etiquetas son pseudoetiquetas offline, normalizadas con la sesión completa de cada persona, y no se validaron contra una medida externa. La normalización por sesión difiere de la redacción actual del manuscrito, que pide normalizar solo con entrenamiento.
 - Varias variables (GSR y pupila normalizadas por sesión; componente tónica con filtro bidireccional) usan información de toda la sesión: el historial es causal por ventana, no por muestra.
 - El explicativo de posición del 18-11 y la fase 2 son post hoc; la comprobación estratificada con la posición no fue registrada ni auditada. En la curva temporal y en la fase 2 las reglas de decisión se usan como lectura descriptiva.
+- El procesamiento congelado tiene dos imprecisiones conocidas que no se corrigieron: la fracción de muestras con ambos ojos válidos, que es una entrada del *Modelo Estudiante* de activación, se calcula sobre todas las filas de la exportación y queda bajo la validez real; y los eventos oculares se deduplican solo por índice, con lo que se pierde cerca del 0,2 % de las fijaciones (medido en una muestra de 11 personas). Detalle en `documentacion/auditoria_final_23-11-2026/ronda2/AUDITORIA_SECCIONES_PENDIENTES.md`.
 - Los contrastes secundarios no llevan corrección por multiplicidad. Varias decisiones están pegadas al umbral: A1 y A3 de la etiqueta corregida, la adaptación de activación sin historial y la ventaja de la red (R1).
 - La limpieza ocular es parcial, usa la sesión completa de cada persona y elige los componentes con la mirada; su calidad se mide en los mismos datos. Con 11 a 16 canales utilizables, tres componentes son entre el 19 % y el 27 % de las dimensiones y arrastran actividad frontal no ocular.
 - El desfase de reloj entre el EEG y el seguidor ocular no se corrigió.
 - La GRU y los MLP no tuvieron búsqueda de hiperparámetros. La red convolucional es una sola arquitectura sin búsqueda, y su pérdida al limpiar no tiene control propio.
-- En activación las AUC absolutas son bajas (0,52 a 0,59). El modelo por estímulo no es causal y la adaptación a la persona no es utilizable en línea.
+- En activación las AUC absolutas son bajas (0,50 a 0,59). El modelo por estímulo no es causal y la adaptación a la persona no es utilizable en línea.
 - Las AUC estratificadas dentro de un mismo estímulo usan el 2–3 % de los pares y tienen poca potencia en activación: un resultado inconcluso no demuestra ausencia de efecto.
 - La comprobación de reproducibilidad del cierre verifica hashes y el orden del registro; no vuelve a entrenar los modelos.
 

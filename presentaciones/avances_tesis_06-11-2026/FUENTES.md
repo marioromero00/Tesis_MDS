@@ -1,14 +1,14 @@
 # Fuentes de la presentación
 
-Rutas relativas al repositorio, salvo indicación explícita. Los resultados antiguos son antecedentes, no resultados V2.
+Rutas relativas al repositorio, salvo indicación explícita. Los resultados anteriores al 16-11-2026 son antecedentes.
 
 - ../../documentos/01 Tesis MDS/Analisis de Datos/DOCUMENTACION_DATOS_MDS.md
 - ../../documentos/01 Tesis MDS/Analisis de Datos/SINCRONIZACION_SENALES.md
+- ../../documentos/01 Tesis MDS/Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md
 - ../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md
 - ../../documentos/01 Tesis MDS/Escritura/Estructura Tesis.md
 - ../../documentos/01 Tesis MDS/Marco Teorico/Problema e hipótesis.md
 - ../../notas/pautas-escritura-recuperadas.md
-- ../../notas/resumen-ultimo-mes-22-11-2026.md
 - ../../notas/sustento-fisiologico-23-11-2026.md
 - documentacion/Cierre_Experimental_Final_23-11-2026.md
 - documentacion/Crudos_V2_y_EEG_Por_Canal_29-10-2026.md
