@@ -22,11 +22,11 @@ La ubicación principal del vault es `documentos/01 Tesis MDS`. El enlace en `re
 
 **Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](repos/Tesis_MDS/documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23` (apunta a `aee6ab6`, anterior a la auditoría final; el texto vigente es el de `main` desde `af345a2`).
 
-**Auditoría final (23-11-2026):** un agente independiente recalculó las 12 etapas; cifras reproducidas, sin hallazgos bloqueantes y seis lecturas moderadas. Informes en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`.
+**Auditoría final (23-11-2026):** un asistente automático, a pedido del autor y con código separado, recalculó las 12 etapas (no es la revisión de un tercero); cifras reproducidas, sin hallazgos bloqueantes y seis lecturas moderadas. Informes en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/`.
 
 **Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](repos/Tesis_MDS/resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que su detección depende de la señal ocular; su ventaja sobre el HGB se mantiene con el EEG limpio (+0,028 frente a +0,035). En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
 
-**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: cerca de un tercio de la detección sobre el azar es ocular (0,060 de 0,181, cota inferior), y del resto no se puede afirmar origen cerebral ni ocular.
+**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](repos/Tesis_MDS/resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). Los datos son compatibles con el montaje por defecto; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: cerca de un tercio de la detección sobre el azar depende de componentes ligados a los ojos (0,060 de 0,181; se lee como cota inferior y no es una demostración), y del resto no se puede afirmar origen cerebral ni ocular.
 
 **Cuatro enfoques nuevos del 22-11-2026:** [informe](repos/Tesis_MDS/resultados/enfoques_41p_22-11-2026/INFORME.md). [Resumen del último mes](notas/resumen-ultimo-mes-22-11-2026.md).
 
@@ -39,7 +39,9 @@ Histórico: [Cierre V2 del 01-11-2026](repos/Tesis_MDS/documentacion/Cierre_Expe
 ## Para continuar
 
 - [Índice original de la tesis](documentos/01%20Tesis%20MDS/Tesis_MDS.md).
-- [Borrador recuperado](documentos/01%20Tesis%20MDS/Escritura/Estructura%20Tesis.md).
+- [Borrador recuperado](documentos/01%20Tesis%20MDS/Escritura/Estructura%20Tesis.md) (esqueleto; no se edita).
+- Borradores vigentes del 23-11-2026, en `documentos/01 Tesis MDS/Escritura/`: Resultados y Discusión (capítulos 6 a 8), Conclusiones y Secciones pendientes. El de Discusión fisiológica y el de Resultados y Discusión del 18-11 se conservan como registro.
+- Minuta de decisiones para el profesor guía: `documentos/01 Tesis MDS/Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md` (siete decisiones, ninguna tomada).
 - [Reglas originales de trabajo](documentos/01%20Tesis%20MDS/CLAUDE.md).
 - [Pautas de escritura recuperadas](notas/pautas-escritura-recuperadas.md).
 - [Avances históricos](documentos/01%20Tesis%20MDS/Avances/).
@@ -47,7 +49,8 @@ Histórico: [Cierre V2 del 01-11-2026](repos/Tesis_MDS/documentacion/Cierre_Expe
 - [Diseño de etiquetas y modelos](documentos/01%20Tesis%20MDS/Diseno%20Metodologico/).
 - [Código y documentación experimental](repos/Tesis_MDS/README.md).
 - [Presentaciones](repos/Tesis_MDS/presentaciones/).
-- [Bitácora reciente, hasta el 23-11-2026](notas/bitacora.md).
+- [Bitácora reciente, hasta el 26-11-2026](notas/bitacora.md) y [registro del bucle de revisión del 26-11-2026](notas/loop-revision-26-11-2026.md).
+- [Lista única de pendientes para cerrar la tesis, armada el 26-11-2026](notas/pendientes-cierre-26-11-2026.md): ninguna decisión está tomada.
 - [Informe de recuperación y hashes](notas/restauracion-vault-01-11-2026.json).
 
 Para usar las notas con sus enlaces `[[...]]`, abrir la carpeta `documentos/01 Tesis MDS` como vault en Obsidian. También se pueden editar como Markdown. Las rutas antiguas `~/tesis/Tesis_MDS` corresponden aquí a `repos/Tesis_MDS`; se conservaron intactas en los documentos históricos.

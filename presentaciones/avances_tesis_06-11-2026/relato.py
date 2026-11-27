@@ -40,7 +40,7 @@ def apply(old):
    '¿Sirve el historial de señales<br>para predecir atención y activación?',
    '<p class="cover-sub">EEG, GSR, mirada y pupila durante la navegación web</p>'
    +'<div class="byline"><b>Mario Romero</b><span>Profesor guía: Dr. Juan D. Velásquez<br>Avance de tesis · noviembre de 2026</span></div>',
-   'Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay cinco decisiones que necesito tomar con usted.',
+   'Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay siete decisiones que necesito tomar con usted: cinco en la última lámina y dos al pie.',
    HIP,'story-cover')
 
  S('ÍNDICE','De qué voy a hablar',
@@ -53,7 +53,7 @@ def apply(old):
    '<li><b>Resultados con 41 personas</b><span>Con historial mejoran las dos; en activación, primero inconcluso</span></li>'
    '<li><b>Qué explica la mejora</b><span>Placebo, segundos en la página y activación</span></li>'
    '<li><b>Qué detecta el EEG</b><span>La huella de los ojos y por qué cuesta detectar activación</span></li>'
-   '<li><b>Dónde quedo</b><span>Conclusiones, qué falta y cinco decisiones</span></li>'
+   '<li><b>Dónde quedo</b><span>Conclusiones, qué falta y las decisiones abiertas</span></li>'
    '</ol>',
    'Son nueve partes. Lo nuevo desde la última reunión va desde los resultados con 41 personas: de dónde viene la mejora, qué detecta el EEG y las conclusiones.',
    'FUENTES.md','roomy')
@@ -198,8 +198,8 @@ def apply(old):
    'La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos.',
    FIS+'; '+RED)
  S('DÓNDE QUEDO','Qué responde la tesis',
-   table(['','Atención','Activación'],[['Mejora con historial','+0,029 [+0,021; +0,037]','+0,036 [+0,010; +0,065]'],['¿Viene de las ventanas previas?','No: con la posición, el historial agrega +0,001','En parte: +0,046 sobre el placebo; solo hay respaldo para los 6 s previos'],['Modelo con orden (GRU)','No agrega y rinde peor','No demostrado'],['Fusión','Tardía mejor con MLP (+0,012)','Sin diferencias demostradas'],['¿Qué detecta el EEG?','Cerca de un tercio depende de componentes oculares (cota inferior): 0,681 → 0,621 al limpiar','Nada demostrable: 0,52']])+caption('Apoyo parcial, y viene de activación. Fila 1 y el +0,001: 22-11, 5 particiones. El +0,046, GRU y fusión: 16-11. EEG: 23-11.'),
-   'La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
+   table(['','Atención','Activación'],[['Mejora con historial','+0,029 [+0,021; +0,037]','+0,036 [+0,010; +0,065]'],['¿Viene de las ventanas previas?','No: con la posición, el historial agrega +0,001','Evidencia acotada: +0,046 sobre el placebo; respaldo solo para los 6 s previos'],['Modelo con orden (GRU)','No agrega y rinde peor','No demostrado'],['Fusión','Tardía mejor con MLP (+0,012)','Sin diferencias demostradas'],['¿Qué detecta el EEG?','Cerca de un tercio depende de componentes oculares (cota inferior): 0,681 → 0,621 al limpiar','Nada demostrable: 0,52']])+caption('Apoyo parcial, y viene de activación. Fila 1 y el +0,001: 22-11, 5 particiones. El +0,046, GRU y fusión: 16-11. EEG: 23-11.'),
+   'La respuesta corta: hay evidencia acotada de que el historial reciente ayuda a predecir activación, con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.',
    'resultados/reapertura_41p_22-11-2026/INFORME.md; resultados/reapertura_fase3_41p_22-11-2026/INFORME.md; resultados/cierre_final_41p_16-11-2026/INFORME.md; '+LIM+'; '+RED,'compact')
  CON='../../documentos/01 Tesis MDS/Escritura/Borrador Conclusiones 23-11-2026.md; documentacion/Cierre_Experimental_Final_23-11-2026.md'
  S(D6,'Conclusiones: la hipótesis tiene apoyo parcial',
@@ -224,7 +224,7 @@ def apply(old):
    '<div class="timeline3"><div><b>Experimentos</b><span>Ninguno imprescindible</span><p>No espero que más corridas sobre estas 41 personas cambien las conclusiones; ya se habían consultado todas.</p></div>'
    '<div><b>Decisiones</b><span>Con el profesor guía</span><p>Cohorte nueva o no, el margen de 0,02, activación en vez de emociones, qué etiqueta de atención usar y el encuadre.</p></div>'
    '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Revisar el borrador integrado del 23-11 y ajustar las conclusiones según lo que se decida.</p></div></div>'
-   +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, y una cohorte nueva para confirmar.'),
+   +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, una sensibilidad con 7 hojas o selección anidada, y una cohorte nueva para confirmar.'),
    'Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.',
    'documentacion/Cierre_Experimental_Final_23-11-2026.md; '+LIM+'; '+RED)
  S(D6,'Necesito decidir cinco cosas con usted',
@@ -233,7 +233,7 @@ def apply(old):
    '<li><b>¿Qué cuenta como “mejor”?</b><span>Cualquier mejora sobre 0, como dice la hipótesis, o un mínimo como +0,02 de AUC.</span></li>'
    '<li><b>¿Escribo “activación (GSR)” en vez de “emociones”?</b><span>Con GSR no puedo hablar de emociones en general.</span></li>'
    '<li><b>¿Uso la etiqueta de atención original o la corregida por posición?</b><span>La corregida ya no se predice con la posición (0,504) y la detección baja poco: 0,675 frente a 0,683 (decisión registrada: “inferior”).</span></li>'
-   '<li><b>¿Encuadro la tesis como apoyo parcial más una advertencia metodológica?</b><span>La atención por EEG se presentaría como ligada, al menos en parte, a la huella ocular.</span></li>'
+   '<li><b>¿Encuadro la tesis como apoyo parcial más una advertencia metodológica?</b><span>La atención por EEG se presentaría como ligada, en cerca de un tercio, a la huella ocular.</span></li>'
    '</ol>'
    +caption('En la minuta van dos puntos más: normalizar las etiquetas con la sesión completa y usar el Modelo Profesor con PCA como definición del Attention Score.'),
    'La experimentación sobre estas 41 personas la doy por cerrada, salvo que usted indique otra cosa. Lo que más me urge es la primera pregunta, porque define si escribo o recluto. Hay dos puntos más, al pie de la lámina, que pueden pesar más que los anteriores, porque si no se aceptan obligan a repetir análisis: las etiquetas se normalizan con la sesión completa de cada persona y el manuscrito pide normalizar solo con entrenamiento; y los análisis usan el Modelo Profesor con PCA, cuando la nota de diseño proponía la fusión igualitaria. El detalle de cada opción está en la minuta, que además lista los objetivos y contribuciones que conviene revisar, la información de participantes y ética que tengo que pedir al proyecto, y cómo declarar el uso de asistentes automáticos en las revisiones.',

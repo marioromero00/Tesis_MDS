@@ -11,11 +11,11 @@ Evidencia mixta, con **apoyo parcial** a la hipótesis de temporalidad, que prov
 | Pregunta | Atención | Activación |
 |---|---|---|
 | ¿Mejora el modelo con historial? | Sí: +0,029 [+0,021; +0,037], efecto relevante | Sí: +0,036 [+0,010; +0,065], respaldo; concentrado en las 25 personas con que se eligió la configuración (+0,046, frente a +0,021 en las otras 16) |
-| ¿La mejora proviene de la fisiología de las ventanas previas? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | En parte. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
+| ¿La mejora proviene de la fisiología de las ventanas previas? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | Evidencia acotada. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
 | ¿Queda algo al controlar la posición? | No: nulo concluyente dentro de ±0,02 | +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo, +0,009, también inconcluso |
 | ¿Aporta el orden de las ventanas (GRU)? | No: +0,008 [−0,004; +0,020], y rinde 0,040 bajo el HGB | No demostrado: GRU − HGB, ambos con historial, +0,020 [−0,017; +0,057], inconcluso. La GRU con historial supera a su control de una ventana (+0,051, secundario sin corrección), lo que mide el historial y no el orden |
 | ¿Qué fusión? | Tardía sobre temprana con MLP: +0,012 [+0,005; +0,021], secundario; con HGB (cierre V3) el signo es el contrario | Sin diferencias demostradas (inconcluso: +0,006 [−0,032; +0,042]) |
-| ¿Qué detecta el EEG en la ventana actual? | Al menos un tercio de la detección sobre el azar depende de componentes ligados a los ojos: 0,681, que baja a 0,621 al quitarlos (se lee como cota inferior; no es una demostración) | Nada demostrable: 0,524 |
+| ¿Qué detecta el EEG en la ventana actual? | Cerca de un tercio de la detección sobre el azar depende de componentes ligados a los ojos: 0,681, que baja a 0,621 al quitarlos (0,060 de 0,181; se lee como cota inferior; no es una demostración) | Nada demostrable: 0,524 |
 | ¿Ayuda un modelo más complejo? | Red sobre la señal cruda: 0,716, +0,035 sobre el HGB; pierde 0,067 al limpiar, y su ventaja se mantiene con el EEG limpio (+0,028) | No demostrado: 0,498 frente a 0,524, inconcluso |
 
 Las AUC son por persona. Las decisiones siguen las reglas registradas, con margen de 0,02.
@@ -113,7 +113,7 @@ Un asistente automático, a pedido del autor, recalculó con código separado la
 - **Menores.** Algunos informes redondean dos veces (a 4 y luego a 3 decimales); aquí se corrigieron dos límites de intervalo (+0,017 y +0,044). En el enfoque E1 las predicciones del modelo con historial y posición son idénticas a las del modelo con historial: un diagnóstico del 26-11 (`documentacion/auditoria_final_23-11-2026/ronda2/DIAGNOSTICO_E1_POSICION.md`) mostró, al reajustar un fold (partición 1101, fold 0), que el modelo recibe la columna de posición y no la usa en ninguna de sus 1.800 divisiones; no es un error y la cifra no cambia. La enmienda E1 del 16-11 se registró antes de sus predicciones, pero se corrió el 18-11.
 - **No verificable sin reentrenar.** Que las predicciones provengan de la configuración declarada (comprobado para un fold del enfoque E1 el 26-11), qué personas entraron al ajuste de cada modelo y las importancias por permutación.
 
-### Auditoría de código, ronda 3 (26-11-2026)
+### Auditoría de código (26-11-2026; ronda 2 del bucle de revisión, carpeta `ronda3`)
 
 Una revisión del código del 16 al 23-11, hecha con un asistente automático a pedido del autor (`documentacion/auditoria_final_23-11-2026/ronda3/AUDITORIA_CODIGO.md`, con comprobaciones ejecutables en `comprobaciones/`), no encontró fuga entre personas ni fuga directa de la etiqueta a las entradas, y reprodujo bit a bit el fold 0 del análisis final. Ningún hallazgo cambia una cifra. Cuatro afectan lecturas y este documento los declara en "Límites"; se listan bajo la tabla, que separa los contrastes de activación por grupo de personas (descriptiva, no registrada):
 
@@ -166,7 +166,7 @@ Decisiones con el profesor guía:
 2. Si el margen práctico de 0,02 queda como criterio.
 3. Si "emociones" se presenta como activación (*arousal*).
 4. Si la etiqueta de atención corregida por posición reemplaza a la original.
-5. El encuadre: apoyo parcial, con la detección de atención por EEG presentada como dependiente, al menos en parte, de la huella ocular, sin atribuir el resto a un origen cerebral ni ocular.
+5. El encuadre: apoyo parcial, con la detección de atención por EEG presentada como dependiente, en cerca de un tercio, de la huella ocular, sin atribuir el resto a un origen cerebral ni ocular. Incluye con qué lectura del criterio de la hipótesis se llega a "apoyo parcial" (sección 8.1 del borrador integrado).
 6. Si se aceptan las etiquetas normalizadas con la sesión completa de cada persona (el manuscrito pide normalizar solo con entrenamiento).
 7. Si el *Modelo Profesor* con PCA queda como definición del *Attention Score* (la nota de diseño proponía la fusión igualitaria como principal).
 
@@ -178,6 +178,6 @@ Trabajo de cierre:
 2. Ajustar `Escritura/Borrador Conclusiones 23-11-2026.md` según las decisiones anteriores.
 3. Leer en texto completo las 8 referencias contrastadas solo por resumen (Barry 2005 y 2007, Boucsein 2012, Critchley 2002, Croft y Barry 2000, Iwasaki 2005, Keren 2010 y Yuval-Greenberg 2008); detalle en `documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
 
-Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, y cohorte nueva.
+Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, sensibilidad del modelo de activación con 7 hojas o con selección anidada, y cohorte nueva.
 
 Presentación vigente: `presentaciones/avances_tesis_06-11-2026` (versión 7).

@@ -9,10 +9,10 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 | Semana | Qué se hizo | Qué salió |
 |---|---|---|
 | 22–24 oct | Contraste de temporalidad y fusión, control negativo temporal, robustez, presentación de avances | Resultados exploratorios; activación apenas sobre el control negativo |
-| 29–30 oct | Atención binaria con profesor PCA reconstruido, EEG por canal, evaluación en validación y test | Atención AUC cercana a 0,69; mejora temporal +0,028 con intervalo que toca cero |
+| 29–30 oct | Atención binaria con *Modelo Profesor* con PCA reconstruido, EEG por canal, evaluación en validación y test | Atención AUC cercana a 0,69; mejora temporal +0,028 con intervalo que toca cero |
 | 1–6 nov | Recuperación del vault, etiquetas GSR V2, comparación no lineal, ablación de modalidades, cierre V2, protocolo de potencia | Sin ventaja consistente de temporalidad ni de fusión en activación |
 | 15–18 nov | Cierre V3, análisis final con 41 personas, placebo temporal, ampliación E1–E6, explicativo de posición, presentaciones v4–v6, borrador de resultados | Apoyo parcial: en atención la mejora es la posición en el estímulo; en activación hay información temporal |
-| 22 nov | Cierre formal, reapertura en tres fases y cuatro enfoques nuevos | Activación con respaldo, solo para los 6 s anteriores; atención sin información temporal demostrable; parte de la detección por EEG es ocular |
+| 22 nov | Cierre formal, reapertura en tres fases y cuatro enfoques nuevos | Activación con respaldo, solo para los 6 s anteriores; atención sin información temporal demostrable; parte de la detección por EEG depende de componentes oculares |
 
 ## 22 al 24 de octubre
 
@@ -44,14 +44,14 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 - Cierre V3 (16-11): historial con todas las ventanas, GRU sensible al orden, fusión tardía y métricas del manuscrito. Sin ventaja temporal consistente; la GRU rinde peor que el HGB.
 - Análisis final con 41 personas (16-11), registrado antes de correr: atención +0,026 [+0,018; +0,035], respaldo; activación +0,034 [−0,001; +0,069], inconcluso.
 - Pruebas de robustez con placebo temporal (16-11): en atención el placebo reproduce toda la mejora; en activación no.
-- Ampliación E1–E6 y explicativo de posición (18-11): en atención toda la mejora del historial se explica por los segundos transcurridos en el estímulo; en activación el historial sin solapamiento con la etiqueta supera al placebo (+0,046 [+0,018; +0,073]). Fusión tardía sobre temprana en atención entre redes MLP (+0,012, secundario); con HGB el signo es el contrario.
+- Ampliación E1–E6 y explicativo de posición (18-11): en atención toda la mejora del historial se explica por los segundos transcurridos en el estímulo; en activación el historial sin las ventanas de 6 s que promedia la etiqueta supera al placebo (+0,046 [+0,018; +0,073]). Fusión tardía sobre temprana en atención entre redes MLP (+0,012, secundario); con HGB el signo es el contrario.
 - Presentación v6 y borrador de Resultados y Discusión en el vault.
 
 ## 22 de noviembre
 
 **Cierre formal** de la experimentación, con documento de cierre y etiqueta Git `cierre-experimental-2026-11-22`.
 
-**Reapertura, pedida por Mario el mismo día.** Tres fases, cada una registrada antes de correr y con auditoría independiente de código y de resultados.
+**Reapertura, pedida por Mario el mismo día.** Tres fases, cada una registrada antes de correr y con una revisión de código y un recálculo de resultados hechos con un asistente automático (no es la revisión de un tercero).
 
 - Fase 1 (validación cruzada repetida, tiempo de sesión, curva temporal): el contraste principal de activación pasa a respaldo, +0,036 [+0,010; +0,065]. Solo la banda de 6 s tiene respaldo (+0,047 [+0,017; +0,078]; curva en una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia. En atención el pasado no aporta a ningún desfase.
 - Fase 2 (placebo de bloque, AUC estratificada): el resultado de activación no depende del tipo de placebo y se mantiene dentro del mismo minuto de sesión (+0,058).
@@ -66,10 +66,10 @@ Síntesis escrita el 22-11-2026 a partir de la bitácora, el historial de Git y 
 
 ## Dónde queda la tesis
 
-- **Hipótesis de temporalidad: apoyo parcial.** En activación el historial ayuda, con respaldo solo para los 6 s anteriores y con AUC absolutas bajas (0,55 a 0,59). En atención no hay información temporal: la mejora era el reloj del estímulo.
-- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero cerca de un tercio de lo que tiene sobre el azar es ocular (0,060 de 0,181, cota inferior); del resto no se puede afirmar origen cerebral ni ocular.
+- **Hipótesis de temporalidad: apoyo parcial.** En activación el historial ayuda, con respaldo solo para los 6 s anteriores y con AUC absolutas bajas (0,55 a 0,59). En atención la mejora no proviene de la fisiología de las ventanas previas: era el reloj del estímulo.
+- **Atención.** La etiqueta mide quietud de la mirada y depende de la posición en el estímulo. La detección desde EEG es clara, pero cerca de un tercio de lo que tiene sobre el azar depende de componentes ligados a los ojos (0,060 de 0,181; se lee como cota inferior); del resto no se puede afirmar origen cerebral ni ocular.
 - **Activación.** El modelo por estímulo rinde más (0,587), sin superar de forma demostrable al promedio por ventana. Las dos palancas que más la mejoran son trabajar a nivel de estímulo y adaptar el modelo a la persona.
-- **Método.** Desde el 16-11 todo análisis con protocolo se registra en Git antes de sus predicciones y se ejecuta una vez; desde el 22-11 cada etapa pasa además por auditoría independiente.
+- **Método.** Desde el 16-11 todo análisis con protocolo se registra en Git antes de sus predicciones y se ejecuta una vez; desde el 22-11 cada etapa pasa además por una revisión de código y un recálculo hechos con un asistente automático.
 
 ## Pendiente
 

@@ -2,7 +2,7 @@
 
 ## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay cinco decisiones que necesito tomar con usted.
+Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay siete decisiones que necesito tomar con usted: cinco en la última lámina y dos al pie.
 
 ## 02. De qué voy a hablar
 
@@ -114,7 +114,7 @@ La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas baj
 
 ## 29. Qué responde la tesis
 
-La respuesta corta: el historial de las señales sí ayuda a predecir activación, aunque con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
+La respuesta corta: hay evidencia acotada de que el historial reciente ayuda a predecir activación, con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
 ## 30. Conclusiones: la hipótesis tiene apoyo parcial
 

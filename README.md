@@ -1,6 +1,6 @@
 # Tesis MDS — Baselines multimodales
 
-Estado experimental actualizado al 23-11-2026 (cierre consolidado y auditoría final). Esta entrada reemplaza la descripción anterior del repositorio.
+Estado experimental actualizado al 23-11-2026 (cierre consolidado y auditoría final); textos revisados el 26-11-2026, sin resultados nuevos (informes en `documentacion/auditoria_final_23-11-2026/ronda2` a `ronda5`). Esta entrada reemplaza la descripción anterior del repositorio.
 
 Detección temporal multimodal de atención y activación durante navegación web, con EEG,
 GSR, eye tracking y pupilometría. Los baselines estáticos están entrenados y guardados;
@@ -10,11 +10,11 @@ se completó el primer contraste con TCN, LSTM y BiLSTM sobre el mismo split y e
 
 **Cierre consolidado de la experimentación (23-11-2026):** [documento de cierre](documentacion/Cierre_Experimental_Final_23-11-2026.md), con todas las etapas, su trazabilidad y la comprobación de reproducibilidad. Etiqueta de Git `cierre-experimental-2026-11-23` (apunta a `aee6ab6`, anterior a la auditoría final; el texto vigente es el de `main` desde `af345a2`).
 
-**Auditoría final (23-11-2026).** Un agente independiente recalculó las 12 etapas desde las predicciones: cifras reproducidas, sin hallazgos bloqueantes, y seis lecturas moderadas que ya están en `documentacion/Cierre_Experimental_Final_23-11-2026.md`. Informes en `documentacion/auditoria_final_23-11-2026/` (experimento, presentación y verificación de las 18 referencias).
+**Auditoría final (23-11-2026).** Un asistente automático, a pedido del autor y con código separado, recalculó las 12 etapas desde las predicciones (no es la revisión de un tercero): cifras reproducidas, sin hallazgos bloqueantes, y seis lecturas moderadas que ya están en `documentacion/Cierre_Experimental_Final_23-11-2026.md`. Informes en `documentacion/auditoria_final_23-11-2026/` (experimento, presentación y verificación de las 18 referencias).
 
 **Red convolucional sobre el EEG crudo del 23-11-2026:** [informe](resultados/red_cruda_41p_23-11-2026/INFORME.md). Una red tipo EEGNet sobre la señal cruda supera al modelo de referencia en atención (AUC 0,716 frente a 0,681), pero quitar los componentes oculares la baja a 0,649 (el HGB baja de 0,681 a 0,621), así que su detección depende de la señal ocular; su ventaja sobre el HGB se mantiene con el EEG limpio (+0,028 frente a +0,035). En activación la red queda en el azar (0,498) y la comparación con el HGB es inconclusa.
 
-**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). El montaje por defecto queda respaldado por los datos; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: cerca de un tercio de la detección sobre el azar es ocular (0,060 de 0,181, cota inferior), y del resto no se puede afirmar origen cerebral ni ocular.
+**Montaje EEG y limpieza de artefactos oculares del 23-11-2026:** [montaje](resultados/montaje_ocular_41p_23-11-2026/INFORME.md) y [limpieza ocular](resultados/limpieza_ocular_41p_23-11-2026/INFORME.md). Los datos son compatibles con el montaje por defecto; quitar los componentes oculares baja la AUC de atención por EEG de 0,681 a 0,621: cerca de un tercio de la detección sobre el azar depende de componentes ligados a los ojos (0,060 de 0,181; se lee como cota inferior y no es una demostración), y del resto no se puede afirmar origen cerebral ni ocular.
 
 [Informe](resultados/enfoques_41p_22-11-2026/INFORME.md): etiqueta de atención corregida por posición, detección cruzada por señal (con control de artefacto ocular), activación a nivel de estímulo y diferencias entre personas. Es anterior a los análisis del 23-11 de arriba.
 
