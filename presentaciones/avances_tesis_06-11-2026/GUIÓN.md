@@ -2,7 +2,7 @@
 
 ## 01. ¿Sirve el historial de señales para predecir atención y activación?
 
-Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y de pocos segundos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay siete decisiones que necesito tomar con usted: cinco en la última lámina y dos al pie.
+Le cuento qué pasó desde la última reunión. Corregí un error en la etiqueta de activación y repetí todo con 41 personas. El historial ayuda a predecir activación, con un efecto pequeño y con respaldo solo para los 6 s previos. En atención la mejora existe pero no viene de las ventanas previas, y cerca de un tercio de lo que detecta el EEG depende de componentes ligados a los ojos, leído como cota inferior. Al final hay siete decisiones que necesito tomar con usted: cinco en la última lámina y dos al pie.
 
 ## 02. De qué voy a hablar
 
@@ -26,7 +26,7 @@ Se registraron 48 personas. Entrenamiento tiene 25 y validación y test, 8 cada 
 
 ## 07. Qué señales combinan los trabajos recientes
 
-La tendencia es fusionar varias señales con modelos de atención tipo Transformer. Lo más cercano en contexto web es la tesis de Saavedra en el mismo grupo, con EEG y GSR, que no encontró mejora clara con fusión tardía. Ninguno de los que revisé combina estas cuatro señales navegando la web; esa búsqueda la tengo que volver a revisar antes de afirmarlo en la defensa.
+La tendencia es fusionar varias señales con modelos tipo Transformer. Lo más cercano en contexto web es la tesis de Saavedra en el mismo grupo, con EEG y GSR, que no encontró mejora clara con fusión tardía. Ninguno de los que revisé combina estas cuatro señales navegando la web; esa búsqueda la tengo que volver a revisar antes de afirmarlo en la defensa.
 
 ## 08. Lo que falta en la literatura y lo que intento aportar
 
@@ -82,7 +82,7 @@ En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona
 
 ## 21. ¿De dónde viene la mejora?
 
-Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, el placebo y los segundos no aportan, y el historial sí, incluso sin las ventanas de 6 s que promedia la etiqueta.
+Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, al comparar entre todas las ventanas, el placebo y los segundos no aportan, y el historial sí, incluso sin las ventanas de 6 s que promedia la etiqueta. Ojo: el placebo viene de otras páginas, y dentro de una misma página los segundos sí aportan y no demostré que el historial los supere.
 
 ## 22. En atención, la etiqueta depende de cuánto lleva la persona en la página
 
@@ -90,7 +90,7 @@ Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 
 
 ## 23. En activación, los segundos previos aportan frente al placebo
 
-Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004; es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: la AUC queda entre 0,55 y 0,58 según el análisis.
+Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004; es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Ojo: fijé ese contraste antes de tener sus predicciones, pero después de ver que el historial completo le ganaba al placebo, y el placebo viene de otras páginas. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: la AUC queda entre 0,55 y 0,58 según el análisis.
 
 ## 24. Los parpadeos y los movimientos de los ojos se ven en el EEG
 
@@ -110,15 +110,15 @@ La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina nega
 
 ## 28. Por qué puede costar detectar la activación desde el EEG
 
-La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Una ventana de EEG de 2 s no calza con una respuesta que tarda segundos. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos.
+La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Ojo: esa latencia vale para la parte fásica, y mi etiqueta es en lo esencial el nivel tónico, que es más lento aún. Una ventana de EEG de 2 s no calza con un nivel que cambia tan lento. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos.
 
 ## 29. Qué responde la tesis
 
 La respuesta corta: hay evidencia acotada de que el historial reciente ayuda a predecir activación, con modelos débiles. En atención la mejora existe pero no viene de las ventanas previas. Lo nuevo es la última fila: en atención, cerca de un tercio de lo que el EEG tiene sobre el azar depende de componentes ligados a los ojos, leído como cota inferior, y no puedo descartar que el resto también. Todo esto con datos que ya había consultado antes, así que confirmarlo requiere personas nuevas.
 
-## 30. Conclusiones: la hipótesis tiene apoyo parcial
+## 30. Conclusiones provisorias: apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. La hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, pero es pequeño, desigual entre personas (en el contraste con y sin historial mejoran 23 de 41) y de pocos segundos: a 12 s es inconcluso (+0,024). En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
+Son las conclusiones del borrador del capítulo 9. Con el encuadre provisorio, que es una de las decisiones abiertas, la hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, que viene de otras páginas, pero es pequeño, desigual entre personas (en el contraste con y sin historial mejoran 23 de 41) y con respaldo solo para los 6 s previos: a 12 s es inconcluso (+0,024). En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11, después de ver que el historial completo le ganaba al placebo; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
 
 ## 31. Conclusiones: qué detecta el EEG
 

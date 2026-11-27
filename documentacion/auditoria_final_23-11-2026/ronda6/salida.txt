@@ -1,0 +1,961 @@
+ventanas 22211 personas 41 0s
+
+===== etiquetas
+[8 Etiquetas] Ventanas de las 41 personas: informado 22211 | recalculado 22211 | guardado None | coincide 
+[8 Etiquetas] Ventanas en train: informado 13524 | recalculado 13524 | guardado None | coincide 
+[8 Etiquetas] Ventanas en validation: informado 4662 | recalculado 4662 | guardado None | coincide 
+[8 Etiquetas] Ventanas en test: informado 4025 | recalculado 4025 | guardado None | coincide 
+[8 Etiquetas] Ventanas con etiqueta de activación (tabla guardada): informado 11796 | recalculado 11796 | guardado None | coincide 
+[8 Etiquetas] Ventanas con etiqueta de activación (reconstrucción propia desde las variables): informado 11796 | recalculado 11796 | guardado None | coincide 
+[8 Etiquetas] Etiquetas de activación reconstruidas idénticas a las guardadas (ventanas distintas): informado 0 | recalculado 0 | guardado None | coincide 
+[8 Etiquetas] % de ventanas que conserva la etiqueta de activación: informado 53.1 | recalculado np.float64(0.5310881995407681) | guardado None | coincide 
+[8 Etiquetas] % de ventanas que conserva la etiqueta (cierre: "53 %"): informado 53 | recalculado np.float64(0.5310881995407681) | guardado None | coincide 
+[8 Etiquetas] Ventanas sin etiqueta: informado 10415 | recalculado 10415 | guardado None | coincide 
+[8 Etiquetas] Sin etiqueta por cobertura/flag inválido: informado 401 | recalculado 401 | guardado None | coincide 
+[8 Etiquetas] Sin etiqueta por empate con la mediana: informado 19 | recalculado 19 | guardado None | coincide 
+[8 Etiquetas] Sin etiqueta por historial insuficiente: informado 9995 | recalculado 9995 | guardado None | coincide 
+[8 Etiquetas] Etiquetas de activación en train: informado 7028 | recalculado 7028 | guardado None | coincide 
+[8 Etiquetas] Etiquetas de activación en validation: informado 2584 | recalculado 2584 | guardado None | coincide 
+[8 Etiquetas] Etiquetas de activación en test: informado 2184 | recalculado 2184 | guardado None | coincide 
+[8 Etiquetas] P4: ventanas con etiqueta de activación: informado 26 | recalculado 26 | guardado None | coincide 
+[8 Etiquetas] P4: ventanas totales: informado 459 | recalculado 459 | guardado None | coincide 
+[8 Etiquetas] Personas con ambas clases de activación: informado 41 | recalculado 41 | guardado None | coincide 
+[8 Etiquetas] Ventanas con etiqueta de atención (reconstrucción propia del puntaje): informado 22176 | recalculado 22176 | guardado None | coincide 
+[8 Etiquetas] Ventanas de atención en las predicciones guardadas: informado 22176 | recalculado 22176 | guardado None | coincide 
+[8 Etiquetas] Etiquetas de atención de las predicciones distintas de las reconstruidas: informado 0 | recalculado 0 | guardado None | coincide 
+[8 Etiquetas] Ventanas válidas de entrenamiento del Modelo Profesor: informado 13498 | recalculado 13498 | guardado None | coincide 
+[8 Etiquetas] Ventanas de entrenamiento omitidas por componentes incompletos: informado 26 | recalculado 26 | guardado None | coincide 
+[8 Etiquetas] % de varianza de la primera componente: informado 51.5 | recalculado np.float64(0.5151527696982168) | guardado 0.5151527696982166 | coincide 
+[8 Etiquetas] Peso PCA: duración total de fijaciones: informado 0.398 | recalculado np.float64(0.3976040720368326) | guardado 0.3976040720368328 | coincide 
+[8 Etiquetas] Peso PCA: duración media de fijación: informado None | recalculado np.float64(0.5084861787631813) | guardado 0.5084861787631806 | sin cifra informada 
+[8 Etiquetas] Peso PCA: dispersión de la mirada: informado None | recalculado np.float64(0.5204410927027577) | guardado 0.5204410927027584 | sin cifra informada 
+[8 Etiquetas] Peso PCA: recorrido de la mirada: informado None | recalculado np.float64(0.5566036942658185) | guardado 0.5566036942658186 | sin cifra informada 
+[8 Etiquetas] Peso PCA: pupila: informado -0.052 | recalculado np.float64(-0.05182860660437075) | guardado -0.05182860660437087 | coincide 
+[8 Etiquetas] Peso mínimo de las cuatro variables de mirada: informado 0.4 | recalculado 0.3976040720368326 | guardado None | coincide 
+[8 Etiquetas] Peso máximo de las cuatro variables de mirada: informado 0.56 | recalculado 0.5566036942658185 | guardado None | coincide 
+[8 Etiquetas] % de concordancia entre profesor igualitario y PCA: informado 66.28 | recalculado 0.6627648540524522 | guardado 0.6627648540524522 | coincide 
+[8 Etiquetas] Kappa entre profesor igualitario y PCA: informado 0.3255 | recalculado 0.3255289825329022 | guardado 0.3255289825329022 | coincide 
+[8 Etiquetas] Ventanas comparadas entre profesores: informado 13498 | recalculado 13498 | guardado None | coincide 
+[8 Etiquetas] % de ventanas con etiqueta de atención y fijaciones > 2.000 ms: informado 28 | recalculado 0.2774170274170274 | guardado None | coincide 
+[8 Etiquetas] AUC del nivel tónico de la ventana contra la etiqueta de activación (media por persona): informado 0.911 | recalculado 0.9106046945669846 | guardado None | coincide 
+[8 Etiquetas] Ídem, juntando todas las ventanas: informado None | recalculado 0.8819931775644301 | guardado None | sin cifra informada 
+[8 Etiquetas] AUC de la componente fásica de la ventana contra la etiqueta de activación (media de las personas en que la variable varía): informado 0.595 | recalculado 0.594618708079131 | guardado None | coincide 41 personas; con las 41 (constante = 0,5): 0.594619
+[8 Etiquetas] AUC de la número de respuestas de la ventana contra la etiqueta de activación (media de las personas en que la variable varía): informado 0.522 | recalculado 0.5224410963360919 | guardado None | coincide 32 personas; con las 41 (constante = 0,5): 0.517515
+[8 Etiquetas] AUC de la prominencia de las respuestas de la ventana contra la etiqueta de activación (media de las personas en que la variable varía): informado 0.522 | recalculado 0.5224628251999743 | guardado None | coincide 32 personas; con las 41 (constante = 0,5): 0.517532
+[8 Etiquetas] Ventanas de activación de clase alta: informado 5898 | recalculado 5898 | guardado None | coincide 
+[8 Etiquetas] Ventanas de activación de clase baja: informado 5898 | recalculado 5898 | guardado None | coincide 
+[8 Etiquetas] P4: ventanas con GSR válida: informado 58 | recalculado 58 | guardado None | coincide 
+[8 Etiquetas] Ventanas del archivo completo: informado 25992 | recalculado 25992 | guardado None | coincide 
+[8 Etiquetas] % de ventanas del archivo con fijaciones > 2.000 ms: informado 27.8 | recalculado 0.27750846414281316 | guardado None | coincide 
+[8 Etiquetas] % de ventanas de las 41 personas con fijaciones > 2.000 ms: informado 27.7 | recalculado 0.2769798748367926 | guardado None | coincide 
+[8 Etiquetas] % de ventanas de las 41 personas con fijaciones > 3.000 ms: informado 4 | recalculado 0.040160280941875647 | guardado None | coincide 
+[8 Etiquetas] Duración total máxima de fijaciones en una ventana, ms: informado 11365 | recalculado 11365.0 | guardado None | coincide 
+    (1s)
+
+===== ampliacion
+[1 Ampliación] E4: diferencia máxima con fatiga_por_quintil.csv (20 filas × prevalencia, prob. media, AUC, personas): informado 0 | recalculado np.float64(1.1102230246251565e-16) | guardado None | coincide 
+[1 Ampliación] E6: diferencia máxima con por_categoria.csv (26 filas × ventanas, AUC, personas): informado 0 | recalculado np.float64(1.1102230246251565e-16) | guardado None | coincide 
+[1 Ampliación] E4 atención, AUC sin historial, quintil 1: informado 0.65 | recalculado 0.6528417316093341 | guardado 0.6528417316093341 | coincide 
+[1 Ampliación] E4 atención, AUC sin historial, quintil 5: informado 0.71 | recalculado 0.7127217521114521 | guardado 0.7127217521114521 | coincide 
+[1 Ampliación] E4 atención, AUC con historial, quintil 1: informado 0.69 | recalculado 0.6886770749897824 | guardado 0.6886770749897824 | coincide 
+[1 Ampliación] E4 atención, AUC con historial, quintil 5: informado 0.74 | recalculado 0.744833440851264 | guardado 0.744833440851264 | coincide 
+[1 Ampliación] E4 atención, prevalencia de alta, quintil 3: informado 0.32 | recalculado np.float64(0.3176895306859206) | guardado 0.3176895306859206 | coincide 
+[1 Ampliación] E4 activación, prevalencia de alta, quintil 5: informado 0.37 | recalculado np.float64(0.36928934010152287) | guardado 0.36928934010152287 | coincide 
+[1 Ampliación] E4 activación, AUC con historial, quintil 5: informado 0.64 | recalculado 0.6404068037596077 | guardado 0.6404068037596077 | coincide 
+[1 Ampliación] E4 atencion hgb_c1 quintil 1: prevalencia / AUC / personas: informado None | recalculado 0.6528417316093341 | guardado 0.6528417316093341 | coincide prevalencia np.float64(0.5489887640449438); personas 41
+[1 Ampliación] E4 atencion hgb_c1 quintil 2: prevalencia / AUC / personas: informado None | recalculado 0.6578902135378145 | guardado 0.6578902135378145 | coincide prevalencia np.float64(0.5914124293785311); personas 40
+[1 Ampliación] E4 atencion hgb_c1 quintil 3: prevalencia / AUC / personas: informado None | recalculado 0.6585733027545313 | guardado 0.6585733027545312 | coincide prevalencia np.float64(0.3176895306859206); personas 41
+[1 Ampliación] E4 atencion hgb_c1 quintil 4: prevalencia / AUC / personas: informado None | recalculado 0.7040460869367674 | guardado 0.7040460869367674 | coincide prevalencia np.float64(0.5236158192090395); personas 41
+[1 Ampliación] E4 atencion hgb_c1 quintil 5: prevalencia / AUC / personas: informado None | recalculado 0.7127217521114521 | guardado 0.7127217521114521 | coincide prevalencia np.float64(0.5157515751575158); personas 41
+[1 Ampliación] E4 atencion hgb_c32 quintil 1: prevalencia / AUC / personas: informado None | recalculado 0.6886770749897824 | guardado 0.6886770749897824 | coincide prevalencia np.float64(0.5489887640449438); personas 41
+[1 Ampliación] E4 atencion hgb_c32 quintil 2: prevalencia / AUC / personas: informado None | recalculado 0.6939551205315919 | guardado 0.6939551205315919 | coincide prevalencia np.float64(0.5914124293785311); personas 40
+[1 Ampliación] E4 atencion hgb_c32 quintil 3: prevalencia / AUC / personas: informado None | recalculado 0.6583526101208147 | guardado 0.6583526101208147 | coincide prevalencia np.float64(0.3176895306859206); personas 41
+[1 Ampliación] E4 atencion hgb_c32 quintil 4: prevalencia / AUC / personas: informado None | recalculado 0.7106701725889082 | guardado 0.7106701725889082 | coincide prevalencia np.float64(0.5236158192090395); personas 41
+[1 Ampliación] E4 atencion hgb_c32 quintil 5: prevalencia / AUC / personas: informado None | recalculado 0.744833440851264 | guardado 0.744833440851264 | coincide prevalencia np.float64(0.5157515751575158); personas 41
+[1 Ampliación] E4 activacion hgb_c1 quintil 1: prevalencia / AUC / personas: informado None | recalculado 0.5708047537127581 | guardado 0.5708047537127581 | coincide prevalencia np.float64(0.5574736842105263); personas 34
+[1 Ampliación] E4 activacion hgb_c1 quintil 2: prevalencia / AUC / personas: informado None | recalculado 0.5266983110493417 | guardado 0.5266983110493417 | coincide prevalencia np.float64(0.44491705657167163); personas 36
+[1 Ampliación] E4 activacion hgb_c1 quintil 3: prevalencia / AUC / personas: informado None | recalculado 0.4770397175919313 | guardado 0.4770397175919313 | coincide prevalencia np.float64(0.6101910828025477); personas 41
+[1 Ampliación] E4 activacion hgb_c1 quintil 4: prevalencia / AUC / personas: informado None | recalculado 0.5050264698472992 | guardado 0.5050264698472992 | coincide prevalencia np.float64(0.5180774138664398); personas 35
+[1 Ampliación] E4 activacion hgb_c1 quintil 5: prevalencia / AUC / personas: informado None | recalculado 0.5251032966824036 | guardado 0.5251032966824036 | coincide prevalencia np.float64(0.36928934010152287); personas 34
+[1 Ampliación] E4 activacion hgb_c32 quintil 1: prevalencia / AUC / personas: informado None | recalculado 0.554386525073231 | guardado 0.554386525073231 | coincide prevalencia np.float64(0.5574736842105263); personas 34
+[1 Ampliación] E4 activacion hgb_c32 quintil 2: prevalencia / AUC / personas: informado None | recalculado 0.5450459414693016 | guardado 0.5450459414693016 | coincide prevalencia np.float64(0.44491705657167163); personas 36
+[1 Ampliación] E4 activacion hgb_c32 quintil 3: prevalencia / AUC / personas: informado None | recalculado 0.4804678332256842 | guardado 0.4804678332256842 | coincide prevalencia np.float64(0.6101910828025477); personas 41
+[1 Ampliación] E4 activacion hgb_c32 quintil 4: prevalencia / AUC / personas: informado None | recalculado 0.522169401437513 | guardado 0.522169401437513 | coincide prevalencia np.float64(0.5180774138664398); personas 35
+[1 Ampliación] E4 activacion hgb_c32 quintil 5: prevalencia / AUC / personas: informado None | recalculado 0.6404068037596077 | guardado 0.6404068037596077 | coincide prevalencia np.float64(0.36928934010152287); personas 34
+[1 Ampliación] E6 atencion hgb_c1 sitio web: AUC: informado 0.707 | recalculado 0.7066969013316976 | guardado 0.7066969013316976 | coincide 41 personas; 6423 ventanas
+[1 Ampliación] E6 atencion hgb_c1 numerado: AUC: informado 0.681 | recalculado 0.6810317901075447 | guardado 0.6810317901075447 | coincide 41 personas; 6637 ventanas
+[1 Ampliación] E6 atencion hgb_c1 diseño: AUC: informado 0.649 | recalculado 0.6486488407987343 | guardado 0.6486488407987343 | coincide 41 personas; 4082 ventanas
+[1 Ampliación] E6 atencion hgb_c1 imagen emotion: AUC: informado 0.668 | recalculado 0.6680426085990222 | guardado 0.6680426085990222 | coincide 30 personas; 1792 ventanas
+[1 Ampliación] E6 atencion hgb_c1 imagen blur: AUC: informado 0.696 | recalculado 0.6955259512417408 | guardado 0.6955259512417408 | coincide 25 personas; 891 ventanas
+[1 Ampliación] E6 atencion hgb_c1 texto: AUC: informado 0.604 | recalculado 0.6044353686262264 | guardado 0.6044353686262264 | coincide 41 personas; 2255 ventanas
+[1 Ampliación] E6 atencion hgb_c32 sitio web: AUC: informado 0.71 | recalculado 0.7095852510780306 | guardado 0.7095852510780306 | coincide 41 personas; 6423 ventanas
+[1 Ampliación] E6 atencion hgb_c32 numerado: AUC: informado 0.698 | recalculado 0.6978310286344331 | guardado 0.6978310286344331 | coincide 41 personas; 6637 ventanas
+[1 Ampliación] E6 atencion hgb_c32 diseño: AUC: informado 0.637 | recalculado 0.6370126402145245 | guardado 0.6370126402145244 | coincide 41 personas; 4082 ventanas
+[1 Ampliación] E6 atencion hgb_c32 imagen emotion: AUC: informado 0.667 | recalculado 0.6672377469583829 | guardado 0.6672377469583829 | coincide 30 personas; 1792 ventanas
+[1 Ampliación] E6 atencion hgb_c32 imagen blur: AUC: informado 0.599 | recalculado 0.5989655493085061 | guardado 0.5989655493085061 | coincide 25 personas; 891 ventanas
+[1 Ampliación] E6 atencion hgb_c32 texto: AUC: informado 0.633 | recalculado 0.6328293548928506 | guardado 0.6328293548928506 | coincide 41 personas; 2255 ventanas
+[1 Ampliación] E6 activacion hgb_c1 sitio web: AUC: informado 0.525 | recalculado 0.5250154838466567 | guardado 0.5250154838466567 | coincide 40 personas; 5457 ventanas
+[1 Ampliación] E6 activacion hgb_c1 numerado: AUC: informado 0.588 | recalculado 0.5884194044381912 | guardado 0.5884194044381912 | coincide 34 personas; 3291 ventanas
+[1 Ampliación] E6 activacion hgb_c1 diseño: AUC: informado 0.506 | recalculado 0.5061461416864165 | guardado 0.5061461416864165 | coincide 20 personas; 1316 ventanas
+[1 Ampliación] E6 activacion hgb_c1 texto: AUC: informado 0.506 | recalculado 0.5057736505013877 | guardado 0.5057736505013877 | coincide 30 personas; 1285 ventanas
+[1 Ampliación] E6 activacion hgb_c32 sitio web: AUC: informado 0.588 | recalculado 0.5878792537481221 | guardado 0.5878792537481221 | coincide 40 personas; 5457 ventanas
+[1 Ampliación] E6 activacion hgb_c32 numerado: AUC: informado 0.591 | recalculado 0.5913040398350516 | guardado 0.5913040398350516 | coincide 34 personas; 3291 ventanas
+[1 Ampliación] E6 activacion hgb_c32 diseño: AUC: informado 0.506 | recalculado 0.5060238256487027 | guardado 0.5060238256487026 | coincide 20 personas; 1316 ventanas
+[1 Ampliación] E6 activacion hgb_c32 texto: AUC: informado 0.524 | recalculado 0.5237448127407643 | guardado 0.5237448127407643 | coincide 30 personas; 1285 ventanas
+[1 Ampliación] E6 activacion hgb_c1 imagen emotion: AUC (el informe pone "—"): informado None | recalculado 0.5940757220852098 | guardado 0.5940757220852098 | coincide 5 personas; 401 ventanas; el informe la omite
+[1 Ampliación] E6 activacion hgb_c32 imagen emotion: AUC (el informe pone "—"): informado None | recalculado 0.48736343268791094 | guardado 0.48736343268791094 | coincide 5 personas; 401 ventanas; el informe la omite
+[1 Ampliación] E1: % de filas de activacion con historial desplazado 6 ventanas: informado 73 | recalculado 0.7344862665310274 | guardado 0.7344862665310274 | coincide 
+[1 Ampliación] E1: % de filas de atencion con historial desplazado 6 ventanas: informado 40 | recalculado 0.3981782106782107 | guardado 0.3981782106782107 | coincide 
+    (1s)
+
+===== enfoques
+[2 Enfoques] E1: etiquetas corregidas de las predicciones distintas de mi reconstrucción: informado 0 | recalculado 0 | guardado None | coincide 
+[2 Enfoques] E1: kappa por persona entre etiqueta original y corregida: informado 0.81 | recalculado 0.8083485936205715 | guardado np.float64(0.8083485936205713) | coincide 
+[2 Enfoques] E1: % de ventanas en que coinciden ambas etiquetas: informado 90.6 | recalculado 0.9063852813852814 | guardado 0.9063852813852814 | coincide 
+[2 Enfoques] E1: % de etiquetas que cambian: informado 9.4 | recalculado 0.0936147186147186 | guardado None | coincide 
+[2 Enfoques] E1: % de etiquetas que cambian (auditorías: 9,36 %): informado 9.36 | recalculado 0.0936147186147186 | guardado None | coincide 
+[2 Enfoques] E1: personas con algún cambio de etiqueta: informado 41 | recalculado 41 | guardado None | coincide 
+[2 Enfoques] E1/posición: prevalencia de atención alta, primer segundo: informado 0.51 | recalculado 0.5086346465191581 | guardado None | coincide 
+[2 Enfoques] E1/posición: prevalencia de atención alta, segundo 2: informado 0.37 | recalculado 0.3740488586303564 | guardado None | coincide 
+[2 Enfoques] E1/posición: prevalencia de atención alta, segundo 3: informado 0.38 | recalculado 0.38106565176022833 | guardado None | coincide 
+[2 Enfoques] E1/posición: prevalencia de atención alta, 9 a 12 s: informado 0.53 | recalculado 0.5347560975609756 | guardado None | coincide 
+[2 Enfoques] E1/posición: prevalencia de atención alta, 12 s o más: informado 0.62 | recalculado 0.6198658843252305 | guardado None | coincide 
+[2 Enfoques] Posición: prevalencia de atención alta, 13 s o más (tramos 13–20 y 21–32 juntos): informado None | recalculado 0.6255913494030187 | guardado None | sin cifra informada 
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 1 s: informado None | recalculado np.float64(0.5086346465191581) | guardado 0.5086346465191581 | coincide corregida np.float64(0.4970318402590394); n=3706
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 2 s: informado None | recalculado np.float64(0.3740488586303564) | guardado 0.3740488586303564 | coincide corregida np.float64(0.49539447336804165); n=2497
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 3 s: informado None | recalculado np.float64(0.38106565176022833) | guardado 0.38106565176022833 | coincide corregida np.float64(0.4933396764985728); n=2102
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 4 s: informado None | recalculado np.float64(0.42587601078167114) | guardado 0.42587601078167114 | coincide corregida np.float64(0.4948787061994609); n=1855
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 5 s: informado None | recalculado np.float64(0.46630565583634176) | guardado 0.46630565583634176 | coincide corregida np.float64(0.49458483754512633); n=1662
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 6–8 s: informado None | recalculado np.float64(0.5235087719298246) | guardado 0.5235087719298246 | coincide corregida np.float64(0.49777777777777776); n=4275
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 9–12 s: informado None | recalculado np.float64(0.5347560975609756) | guardado 0.5347560975609756 | coincide corregida np.float64(0.49390243902439024); n=1640
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 13–20 s: informado None | recalculado np.float64(0.5905550146056475) | guardado 0.5905550146056475 | coincide corregida np.float64(0.4961051606621227); n=2054
+[2 Enfoques] E1: prevalencia de atención alta, etiqueta original, tramo 21–32 s: informado None | recalculado np.float64(0.6557651991614256) | guardado 0.6557651991614256 | coincide corregida np.float64(0.4964360587002096); n=2385
+[2 Enfoques] E1: AUC hgb_c1 con etiqueta corregida: informado 0.675 | recalculado 0.6750299689488136 | guardado np.float64(0.6750299689488136) | coincide 
+[2 Enfoques] E1: AUC hgb_c32 con etiqueta corregida: informado 0.685 | recalculado 0.6852286928565908 | guardado np.float64(0.6852286928565909) | coincide 
+[2 Enfoques] E1: AUC pos_c1 con etiqueta corregida: informado 0.681 | recalculado 0.680792199837675 | guardado np.float64(0.680792199837675) | coincide 
+[2 Enfoques] E1: AUC pos_only con etiqueta corregida: informado 0.504 | recalculado 0.5044226964968556 | guardado np.float64(0.5044226964968556) | coincide 
+[2 Enfoques] E1: AUC pos_only con etiqueta corregida · IC 95 % inferior: informado 0.498 | recalculado 0.4983318928077776 | guardado np.float64(0.4983318928077776) | coincide 
+[2 Enfoques] E1: AUC pos_only con etiqueta corregida · IC 95 % superior: informado 0.51 | recalculado 0.5101151585412522 | guardado np.float64(0.5101151585412522) | coincide 
+[2 Enfoques] E1: AUC hgb_c1 con etiqueta original: informado 0.683 | recalculado 0.6829713462923324 | guardado 0.6829713462923324 | coincide 
+[2 Enfoques] E1: mejora del historial con etiqueta original: informado 0.029 | recalculado 0.02901323759706655 | guardado None | coincide 
+[2 Enfoques] E1: mejora del historial con etiqueta corregida (A2): informado 0.01 | recalculado 0.010198723907777329 | guardado None | coincide 
+[2 Enfoques] E1: A1 detección corregida − original: informado -0.008 | recalculado -0.00794137734351867 | guardado None | coincide 
+[2 Enfoques] E2: AUC Todo el EEG: informado 0.681 | recalculado 0.6808945625853307 | guardado 0.6808945625853305 | coincide 41/41 sobre 0,5
+[2 Enfoques] E2: AUC Todo el EEG, a igual posición: informado 0.675 | recalculado 0.6745486646020634 | guardado 0.6745486646020634 | coincide 
+[2 Enfoques] E2: AUC Potencia lenta y amplitud: informado 0.673 | recalculado 0.6725968393128409 | guardado 0.6725968393128409 | coincide 41/41 sobre 0,5
+[2 Enfoques] E2: AUC Potencia lenta y amplitud, a igual posición: informado 0.659 | recalculado 0.6585690422481217 | guardado 0.6585690422481217 | coincide 
+[2 Enfoques] E2: AUC Canales frontales: informado 0.675 | recalculado 0.6748354351478008 | guardado 0.6748354351478008 | coincide 41/41 sobre 0,5
+[2 Enfoques] E2: AUC Canales frontales, a igual posición: informado 0.667 | recalculado 0.6666439788957631 | guardado 0.6666439788957631 | coincide 
+[2 Enfoques] E2: AUC Canales posteriores: informado 0.602 | recalculado 0.6021934922346417 | guardado 0.6021934922346417 | coincide 38/41 sobre 0,5
+[2 Enfoques] E2: AUC Canales posteriores, a igual posición: informado 0.6 | recalculado 0.5999396373305933 | guardado 0.5999396373305933 | coincide 
+[2 Enfoques] E2: AUC Solo alfa y beta: informado 0.593 | recalculado 0.5926796985708186 | guardado 0.5926796985708186 | coincide 40/41 sobre 0,5
+[2 Enfoques] E2: AUC Solo alfa y beta, a igual posición: informado 0.593 | recalculado 0.5925391455932579 | guardado 0.5925391455932579 | coincide 
+[2 Enfoques] E2: AUC Solo GSR: informado 0.545 | recalculado 0.5452262437164975 | guardado 0.5452262437164975 | coincide 36/41 sobre 0,5
+[2 Enfoques] E2: AUC Solo GSR, a igual posición: informado 0.547 | recalculado 0.5470615645348915 | guardado 0.5470615645348915 | coincide 
+[2 Enfoques] E2: B7 (lento y amplitud) − (alfa y beta): informado 0.08 | recalculado 0.07991714074202225 | guardado None | coincide 40/41
+[2 Enfoques] E2: B8 frontales − posteriores: informado 0.073 | recalculado 0.07264194291315906 | guardado None | coincide 38/41
+[2 Enfoques] E2: B3 (EEG + GSR) − solo EEG: informado 0.002 | recalculado 0.00207678370700173 | guardado None | coincide 24/41
+[2 Enfoques] E2: B4 solo EEG − solo GSR: informado 0.136 | recalculado 0.13566831886883296 | guardado None | coincide 40/41
+[2 Enfoques] E2: control con etiquetas barajadas, AUC: informado 0.496 | recalculado 0.4964033939539211 | guardado np.float64(0.4964033939539212) | coincide 
+[2 Enfoques] E2: control con etiquetas barajadas, AUC · IC 95 % inferior: informado 0.482 | recalculado 0.4818271220587159 | guardado np.float64(0.4818271220587159) | coincide 
+[2 Enfoques] E2: control con etiquetas barajadas, AUC · IC 95 % superior: informado 0.51 | recalculado 0.5097799701575444 | guardado np.float64(0.5097799701575444) | coincide 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_c1 con recorrido de la mirada (invertido): informado 0.41 | recalculado 0.4143053664414025 | guardado 0.41430536644140237 | coincide 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_c1 con dispersión (invertida): informado 0.3 | recalculado 0.29893964015353 | guardado 0.29893964015353 | coincide 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_c1 con duración total de fijaciones: informado 0.29 | recalculado 0.2924019573971859 | guardado 0.2924019573971859 | coincide 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_c1 con pupila: informado -0.09 | recalculado -0.09193806007903467 | guardado -0.09193806007903467 | coincide 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_c1 con puntaje ocular: informado None | recalculado 0.3795172919438137 | guardado 0.3795172919438137 | sin cifra informada 
+[2 Enfoques] E2: Spearman medio por persona, prob. eeg_alfa_beta con recorrido (invertido): informado None | recalculado 0.22439418724873142 | guardado 0.22439418724873136 | sin cifra informada 
+[2 Enfoques] E3: segmentos con objetivo (sin empates): informado 1589 | recalculado 1589 | guardado None | coincide 
+[2 Enfoques] E3: segmentos excluidos por empate: informado 47 | recalculado 47 | guardado None | coincide 
+[2 Enfoques] E3: % de segmentos con etiqueta unánime: informado 79 | recalculado 0.7948395217117684 | guardado 0.7948395217117684 | coincide 
+[2 Enfoques] E3: mediana de segmentos por persona: informado 36 | recalculado 36.0 | guardado None | coincide 
+[2 Enfoques] E3: segmentos con 3 o más ventanas etiquetadas: informado 1348 | recalculado 1348 | guardado None | coincide 
+[2 Enfoques] E3: segmentos con dos o menos ventanas etiquetadas: informado 241 | recalculado 241 | guardado None | coincide 
+[2 Enfoques] E3: filas por estrategia y partición en las predicciones: informado 1589 | recalculado 1589 | guardado None | coincide 
+[2 Enfoques] E3: AUC seg: informado 0.587 | recalculado 0.5865803916494968 | guardado np.float64(0.5865803916494968) | coincide 
+[2 Enfoques] E3: AUC seg · IC 95 % inferior: informado 0.55 | recalculado 0.5504193044515391 | guardado np.float64(0.5504193044515391) | coincide 
+[2 Enfoques] E3: AUC seg · IC 95 % superior: informado 0.622 | recalculado 0.6215595594329504 | guardado np.float64(0.6215595594329504) | coincide 
+[2 Enfoques] E3: AUC agg_c32: informado 0.567 | recalculado 0.5670370015803248 | guardado np.float64(0.5670370015803248) | coincide 
+[2 Enfoques] E3: AUC agg_c1: informado 0.532 | recalculado 0.532443972415375 | guardado np.float64(0.532443972415375) | coincide 
+[2 Enfoques] E3: AUC dur_only: informado 0.535 | recalculado 0.5354112818374832 | guardado np.float64(0.5354112818374832) | coincide 
+[2 Enfoques] E3: AUC dur_only · IC 95 % inferior: informado 0.488 | recalculado 0.48769266535449163 | guardado np.float64(0.48769266535449163) | coincide 
+[2 Enfoques] E3: AUC dur_only · IC 95 % superior: informado 0.583 | recalculado 0.5826360491796257 | guardado np.float64(0.5826360491796257) | coincide 
+[2 Enfoques] E3: personas con AUC del modelo de estímulo sobre 0,5: informado 32 | recalculado 32 | guardado None | coincide 
+[2 Enfoques] E3: C2 modelo de estímulo − promedio por ventana con historial: informado 0.02 | recalculado 0.019543390069171995 | guardado None | coincide 23/41; p 0.1606
+[2 Enfoques] E3: C2 modelo de estímulo − promedio por ventana con historial · IC 95 % inferior: informado -0.007 | recalculado -0.007322656217593825 | guardado None | coincide 
+[2 Enfoques] E3: C2 modelo de estímulo − promedio por ventana con historial · IC 95 % superior: informado 0.046 | recalculado 0.04567974657050325 | guardado None | coincide 
+[2 Enfoques] E3: modelo de estímulo − promedio por ventana sin historial: informado 0.054 | recalculado 0.05413641923412178 | guardado np.float64(0.05413641923412177) | coincide 27/41; p 0.0135
+[2 Enfoques] E3: modelo de estímulo − promedio por ventana sin historial · IC 95 % inferior: informado 0.013 | recalculado 0.01339847772708679 | guardado np.float64(0.01339847772708676) | coincide 
+[2 Enfoques] E3: modelo de estímulo − promedio por ventana sin historial · IC 95 % superior: informado 0.095 | recalculado 0.09499374974415452 | guardado np.float64(0.0949937497441545) | coincide 
+[2 Enfoques] E3: C3 (estímulo + duración) − solo duración: informado 0.048 | recalculado 0.04836905666398221 | guardado None | coincide 25/41; p 0.1332
+[2 Enfoques] E3: C3 (estímulo + duración) − solo duración · IC 95 % inferior: informado -0.014 | recalculado -0.014117590494212698 | guardado None | coincide 
+[2 Enfoques] E3: C3 (estímulo + duración) − solo duración · IC 95 % superior: informado 0.109 | recalculado 0.10923743477732165 | guardado None | coincide 
+[2 Enfoques] E3: C1 modelo de estímulo − 0,5: informado 0.087 | recalculado 0.08658039164949678 | guardado None | coincide p 0.00004
+[2 Enfoques] E3: C1 modelo de estímulo − 0,5 · IC 95 % inferior: informado 0.05 | recalculado 0.05041930445153898 | guardado None | coincide 
+[2 Enfoques] E3: C1 modelo de estímulo − 0,5 · IC 95 % superior: informado 0.122 | recalculado 0.12155955943295033 | guardado None | coincide 
+[2 Enfoques] E3: la numeración de segmentos del archivo coincide con mi reconstrucción (0 = sí): informado 0 | recalculado 0 | guardado None | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − 0,5: informado 0.099 | recalculado 0.09850653734642988 | guardado np.float64(0.09850653734642989) | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − 0,5 · IC 95 % inferior: informado 0.062 | recalculado 0.061706659529627284 | guardado np.float64(0.061706659529627284) | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − 0,5 · IC 95 % superior: informado 0.134 | recalculado 0.13409570806400845 | guardado np.float64(0.13409570806400847) | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − promedio por ventana: informado 0.02 | recalculado 0.020217692059068783 | guardado np.float64(0.020217692059068787) | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − promedio por ventana · IC 95 % inferior: informado -0.006 | recalculado -0.006413588479768658 | guardado np.float64(-0.006413588479768652) | coincide 
+[2 Enfoques] E3 (3+ ventanas): estímulo − promedio por ventana · IC 95 % superior: informado 0.046 | recalculado 0.04616600764777498 | guardado np.float64(0.046166007647774995) | coincide 
+[2 Enfoques] E3 (3+ ventanas): (estímulo + duración) − solo duración: informado 0.054 | recalculado 0.05361275193211536 | guardado np.float64(0.05361275193211536) | coincide 
+[2 Enfoques] E3 (3+ ventanas): (estímulo + duración) − solo duración · IC 95 % inferior: informado -0.005 | recalculado -0.004911792599305744 | guardado np.float64(-0.004911792599305745) | coincide 
+[2 Enfoques] E3 (3+ ventanas): (estímulo + duración) − solo duración · IC 95 % superior: informado 0.108 | recalculado 0.10778978727228816 | guardado np.float64(0.10778978727228816) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC sin historial: informado 0.76 | recalculado 0.7560975609756098 | guardado np.float64(0.7560975609756099) | coincide n=41
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC sin historial · IC 95 % inferior: informado 0.58 | recalculado 0.5807001974908039 | guardado np.float64(0.580700197490804) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC sin historial · IC 95 % superior: informado 0.86 | recalculado 0.8561226502714888 | guardado np.float64(0.8561226502714888) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC con historial: informado 0.64 | recalculado 0.6428571428571429 | guardado np.float64(0.6428571428571429) | coincide n=41
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC con historial · IC 95 % inferior: informado 0.4 | recalculado 0.4012001674975391 | guardado np.float64(0.4012001674975391) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, AUC con historial · IC 95 % superior: informado 0.8 | recalculado 0.8035666030741211 | guardado np.float64(0.8035666030741211) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, ganancia del historial: informado 0.3 | recalculado 0.29982578397212545 | guardado np.float64(0.2998257839721255) | coincide n=41
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, ganancia del historial · IC 95 % inferior: informado -0.05 | recalculado -0.05170435185592913 | guardado np.float64(-0.05170435185592912) | coincide 
+[2 Enfoques] E4a atencion: fiabilidad entre mitades, ganancia del historial · IC 95 % superior: informado 0.61 | recalculado 0.6095412362531183 | guardado np.float64(0.6095412362531184) | coincide 
+[2 Enfoques] E4b atencion: diferencia máxima con e4_descriptivos.csv (14 correlaciones, p y p Holm): informado 0 | recalculado np.float64(8.881784197001252e-16) | guardado None | coincide 
+[2 Enfoques] E4c atención: pers_c1 − hgb_c1: informado 0.006 | recalculado 0.005734126654411946 | guardado None | coincide 25/41
+[2 Enfoques] E4c atención: pers_c1 − hgb_c1 · IC 95 % inferior: informado 0.0 | recalculado 0.00016495894388947438 | guardado None | coincide 
+[2 Enfoques] E4c atención: pers_c1 − hgb_c1 · IC 95 % superior: informado 0.011 | recalculado 0.011149915427627556 | guardado None | coincide 
+[2 Enfoques] E4c atención: pers_c32 − hgb_c32: informado 0.0 | recalculado 0.0001400109883343338 | guardado None | coincide 19/41
+[2 Enfoques] E4c atención: pers_c32 − hgb_c32 · IC 95 % inferior: informado -0.007 | recalculado -0.006658254456375551 | guardado None | coincide 
+[2 Enfoques] E4c atención: pers_c32 − hgb_c32 · IC 95 % superior: informado 0.008 | recalculado 0.007642495419186786 | guardado None | coincide 
+[2 Enfoques] E4c atencion: fracción mínima de sesión de una fila de evaluación: informado 0.4 | recalculado 0.4128593602170455 | guardado None | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC sin historial: informado 0.66 | recalculado 0.6602251407129456 | guardado np.float64(0.6602251407129457) | coincide n=40
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC sin historial · IC 95 % inferior: informado 0.44 | recalculado 0.44446534888943806 | guardado np.float64(0.444465348889438) | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC sin historial · IC 95 % superior: informado 0.8 | recalculado 0.8017654484289651 | guardado np.float64(0.8017654484289652) | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC con historial: informado 0.58 | recalculado 0.575797373358349 | guardado np.float64(0.575797373358349) | coincide n=40
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC con historial · IC 95 % inferior: informado 0.3 | recalculado 0.30426305172061513 | guardado np.float64(0.3042630517206152) | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, AUC con historial · IC 95 % superior: informado 0.78 | recalculado 0.7802270232233068 | guardado np.float64(0.7802270232233067) | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, ganancia del historial: informado 0.25 | recalculado 0.2523452157598499 | guardado np.float64(0.25234521575985) | coincide n=40
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, ganancia del historial · IC 95 % inferior: informado -0.04 | recalculado -0.04461701016796918 | guardado np.float64(-0.04461701016796917) | coincide 
+[2 Enfoques] E4a activacion: fiabilidad entre mitades, ganancia del historial · IC 95 % superior: informado 0.51 | recalculado 0.5083469237707415 | guardado np.float64(0.5083469237707415) | coincide 
+[2 Enfoques] E4b activacion: diferencia máxima con e4_descriptivos.csv (14 correlaciones, p y p Holm): informado 0 | recalculado np.float64(6.661338147750939e-16) | guardado None | coincide 
+[2 Enfoques] E4c activación: personas con evaluación: informado 40 | recalculado 40 | guardado None | coincide 
+[2 Enfoques] E4c activación: AUC general sin historial en la parte final de la sesión: informado 0.502 | recalculado 0.5017159361079804 | guardado 0.5017159361079804 | coincide 
+[2 Enfoques] E4c activación: AUC adaptado sin historial en la parte final de la sesión: informado 0.53 | recalculado 0.5295339230051603 | guardado 0.5295339230051603 | coincide 
+[2 Enfoques] E4c activación: AUC general con historial en la parte final de la sesión: informado 0.543 | recalculado 0.5426499606443176 | guardado 0.5426499606443176 | coincide 
+[2 Enfoques] E4c activación: AUC adaptado con historial en la parte final de la sesión: informado 0.587 | recalculado 0.5874079829153667 | guardado 0.5874079829153667 | coincide 
+[2 Enfoques] E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin): informado 0.058 | recalculado 0.05787405991020624 | guardado np.float64(0.05787405991020626) | coincide 33/40
+[2 Enfoques] E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin) · IC 95 % inferior: informado 0.032 | recalculado 0.032232391771304214 | guardado np.float64(0.03223239177130422) | coincide 
+[2 Enfoques] E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin) · IC 95 % superior: informado 0.084 | recalculado 0.08385466145830714 | guardado np.float64(0.08385466145830714) | coincide 
+[2 Enfoques] E4c activación: pers_c1 − hgb_c1: informado 0.028 | recalculado 0.027817986897180076 | guardado None | coincide 29/40; p sin ajuste 0.016485
+[2 Enfoques] E4c activación: pers_c1 − hgb_c1 · IC 95 % inferior: informado 0.007 | recalculado 0.006528992413714719 | guardado None | coincide 
+[2 Enfoques] E4c activación: pers_c1 − hgb_c1 · IC 95 % superior: informado 0.049 | recalculado 0.04922501074609301 | guardado None | coincide 
+[2 Enfoques] E4c activación: pers_c32 − hgb_c32: informado 0.045 | recalculado 0.044758022271049094 | guardado None | coincide 30/40; p sin ajuste 0.000100
+[2 Enfoques] E4c activación: pers_c32 − hgb_c32 · IC 95 % inferior: informado 0.023 | recalculado 0.023415931833583054 | guardado None | coincide 
+[2 Enfoques] E4c activación: pers_c32 − hgb_c32 · IC 95 % superior: informado 0.069 | recalculado 0.06857318995768277 | guardado None | coincide 
+[2 Enfoques] E4c activación: historial en el modelo general, mismas filas: informado None | recalculado 0.040934024536337245 | guardado np.float64(0.040934024536337245) | sin cifra informada 
+[2 Enfoques] E4c activación: AUC "de 0,50 a 0,59" (extremos): informado 0.59 | recalculado 0.5874079829153667 | guardado None | coincide 
+[2 Enfoques] E4c activacion: fracción mínima de sesión de una fila de evaluación: informado 0.4 | recalculado 0.41787387534029036 | guardado None | coincide 
+[2 Enfoques] E4b: p Holm mínimo entre todos los correlatos: informado 0.23 | recalculado 0.23084368206587624 | guardado None | coincide 
+    (6s)
+
+===== reapertura
+[3 Reapertura] D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo: informado 0.535 | recalculado 0.5350671960352767 | guardado np.float64(0.5350671960352769) | coincide 
+[3 Reapertura] D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % inferior: informado 0.519 | recalculado 0.5189156805006839 | guardado np.float64(0.5189156805006839) | coincide 
+[3 Reapertura] D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % superior: informado 0.552 | recalculado 0.5515129730707776 | guardado np.float64(0.5515129730707776) | coincide 
+[3 Reapertura] D2 atencion: pares: informado 8818 | recalculado 8818 | guardado 8818.0 | coincide 
+[3 Reapertura] D2 atencion: personas: informado 41 | recalculado 41 | guardado None | coincide 
+[3 Reapertura] atencion: AUC absoluta hgb_c1 (5 particiones): informado 0.683 | recalculado 0.6829713462923324 | guardado 0.6829713462923324 | coincide 
+[3 Reapertura] atencion: AUC absoluta hgb_c32 (5 particiones): informado 0.712 | recalculado 0.7119845838893988 | guardado 0.7119845838893988 | coincide 
+[3 Reapertura] atencion: AUC absoluta c1_ts: informado None | recalculado 0.7083641155911562 | guardado 0.7083641155911562 | coincide 
+[3 Reapertura] atencion: AUC absoluta c32_ts: informado None | recalculado 0.7403076324074825 | guardado 0.7403076324074825 | coincide 
+[3 Reapertura] atencion: P1 por partición, mínimo: informado 0.028 | recalculado 0.027908643039280534 | guardado None | coincide por partición: 0.027909; 0.029764; 0.029379; 0.028322; 0.029692
+[3 Reapertura] atencion: P1 por partición, máximo: informado 0.03 | recalculado 0.029764354950152918 | guardado None | coincide 
+[3 Reapertura] atencion: tiempo de sesión solo (c1_ts − hgb_c1): informado 0.025 | recalculado 0.025392769298823847 | guardado np.float64(0.025392769298823847) | coincide 
+[3 Reapertura] atencion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % inferior: informado 0.019 | recalculado 0.019200584673180407 | guardado np.float64(0.019200584673180397) | coincide 
+[3 Reapertura] atencion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % superior: informado 0.032 | recalculado 0.03216380609369973 | guardado np.float64(0.03216380609369972) | coincide 
+[3 Reapertura] Curva atencion: filas con cobertura completa (reconstrucción propia): informado 12613 | recalculado 12613 | guardado None | coincide 
+[3 Reapertura] Curva atencion: filas reconstruidas que no están en las predicciones guardadas, o al revés: informado 0 | recalculado 0 | guardado None | coincide 
+[3 Reapertura] Curva atencion: personas con filas comunes: informado 41 | recalculado 41 | guardado None | coincide 
+[3 Reapertura] Curva atencion: % de las filas etiquetadas: informado 57 | recalculado 0.5687680375180375 | guardado None | coincide 
+[3 Reapertura] Curva atencion: mínimo de filas comunes por persona: informado 149 | recalculado 149 | guardado None | coincide 
+[3 Reapertura] Curva atencion: % de las ventanas de la banda de 6 s que son del mismo estímulo: informado None | recalculado 0.37465145347905515 | guardado None | sin cifra informada 
+[3 Reapertura] Curva atencion: % de las ventanas de la banda de 12 s que son del mismo estímulo: informado None | recalculado 0.26124816206502205 | guardado None | sin cifra informada 
+[3 Reapertura] Curva atencion: % de las ventanas de la banda de 24 s que son del mismo estímulo: informado None | recalculado 0.06564087860977047 | guardado None | sin cifra informada 
+[3 Reapertura] Curva atencion: % de las ventanas de la banda de 48 s que son del mismo estímulo: informado None | recalculado 0.0011589276056555666 | guardado None | sin cifra informada 
+[3 Reapertura] Curva atencion: % de las ventanas de la banda de 96 s que son del mismo estímulo: informado None | recalculado 0.0 | guardado None | sin cifra informada 
+[3 Reapertura] Curva atencion: pendiente del contraste por duplicación del desfase: informado -0.002 | recalculado -0.0020468705449745036 | guardado np.float64(-0.002046870544974503) | coincide 
+[3 Reapertura] Curva atencion: p de la pendiente: informado 0.071 | recalculado 0.07062464687676562 | guardado 0.07062464687676562 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta c1_common: informado None | recalculado 0.6886754589577798 | guardado 0.6886754589577798 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta lag12: informado None | recalculado 0.6893231374088047 | guardado 0.6893231374088047 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta lag24: informado None | recalculado 0.6866057854703198 | guardado 0.6866057854703198 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta lag48: informado None | recalculado 0.6808736855029116 | guardado 0.6808736855029116 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta lag6: informado None | recalculado 0.6895993654355734 | guardado 0.6895993654355733 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta lag96: informado None | recalculado 0.6835897386636476 | guardado 0.6835897386636475 | coincide 
+[3 Reapertura] Curva atencion: AUC absoluta placebo: informado None | recalculado 0.693334397142939 | guardado 0.6933343971429391 | coincide 
+[3 Reapertura] X1 atencion: placebo de bloque − placebo disperso: informado -0.001 | recalculado -0.000577444228596356 | guardado -0.0005774442285963399 | coincide 
+[3 Reapertura] X2 atencion: historial − sin historial, mismo estímulo: informado 0.013 | recalculado 0.013449234637274687 | guardado np.float64(0.013449234637274687) | coincide 27/41; p 0.000670
+[3 Reapertura] X2 atencion: historial − sin historial, mismo estímulo · IC 95 % inferior: informado 0.007 | recalculado 0.006459840179053466 | guardado np.float64(0.006459840179053466) | coincide con redondeo 
+[3 Reapertura] X2 atencion: historial − sin historial, mismo estímulo · IC 95 % superior: informado 0.021 | recalculado 0.020632664073833108 | guardado np.float64(0.020632664073833108) | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c1, mismo estímulo: informado None | recalculado 0.683557710476468 | guardado 0.683557710476468 | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c32, mismo estímulo: informado None | recalculado 0.6970069451137427 | guardado 0.6970069451137427 | coincide 
+[3 Reapertura] X2 atencion: % de pares dentro de mismo estímulo: informado 2 | recalculado 0.021994607509982545 | guardado 0.021994607509982545 | coincide 
+[3 Reapertura] X2 atencion: historial − sin historial, mismo minuto: informado 0.023 | recalculado 0.023053228990862092 | guardado np.float64(0.023053228990862092) | coincide 34/41; p 0.000005
+[3 Reapertura] X2 atencion: historial − sin historial, mismo minuto · IC 95 % inferior: informado 0.016 | recalculado 0.015947838378363867 | guardado np.float64(0.015947838378363867) | coincide 
+[3 Reapertura] X2 atencion: historial − sin historial, mismo minuto · IC 95 % superior: informado 0.03 | recalculado 0.02990156056523251 | guardado np.float64(0.02990156056523251) | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c1, mismo minuto: informado None | recalculado 0.6747970841147519 | guardado 0.6747970841147519 | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c32, mismo minuto: informado None | recalculado 0.697850313105614 | guardado 0.697850313105614 | coincide 
+[3 Reapertura] X2 atencion: % de pares dentro de mismo minuto: informado 7 | recalculado 0.07516201430191749 | guardado 0.07516201430191749 | coincide con redondeo 
+[3 Reapertura] X2 atencion: historial − sin historial, misma posición: informado 0.017 | recalculado 0.017162973202093347 | guardado np.float64(0.01716297320209335) | coincide 35/41; p 0.000010
+[3 Reapertura] X2 atencion: historial − sin historial, misma posición · IC 95 % inferior: informado 0.01 | recalculado 0.010369055154526874 | guardado np.float64(0.010369055154526874) | coincide 
+[3 Reapertura] X2 atencion: historial − sin historial, misma posición · IC 95 % superior: informado 0.024 | recalculado 0.02419501387176967 | guardado np.float64(0.02419501387176969) | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c1, misma posición: informado None | recalculado 0.6781070395562433 | guardado 0.6781070395562433 | coincide 
+[3 Reapertura] X2 atencion: AUC estratificada hgb_c32, misma posición: informado None | recalculado 0.6952700127583366 | guardado 0.6952700127583366 | coincide 
+[3 Reapertura] X2 atencion: % de pares dentro de misma posición: informado None | recalculado 0.07477098237882343 | guardado 0.07477098237882343 | sin cifra informada 
+[3 Reapertura] D1 atencion: AUC de la posición sola: informado 0.598 | recalculado 0.5978209195017994 | guardado np.float64(0.5978209195017993) | coincide 
+[3 Reapertura] D1 atencion: AUC de la posición sola · IC 95 % inferior: informado 0.581 | recalculado 0.5808446752702403 | guardado np.float64(0.5808446752702403) | coincide 
+[3 Reapertura] D1 atencion: AUC de la posición sola · IC 95 % superior: informado 0.614 | recalculado 0.613845794509317 | guardado np.float64(0.6138457945093171) | coincide 
+[3 Reapertura] D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101): informado 0.677 | recalculado 0.6771289458106284 | guardado np.float64(0.6771289458106284) | coincide 
+[3 Reapertura] D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101) · IC 95 % inferior: informado 0.655 | recalculado 0.6544986995582338 | guardado np.float64(0.6544986995582338) | coincide con redondeo 
+[3 Reapertura] D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101) · IC 95 % superior: informado 0.699 | recalculado 0.6989586613177726 | guardado np.float64(0.6989586613177726) | coincide 
+[3 Reapertura] D1 atención: AUC sin historial sin estratificar (partición 1101): informado 0.684 | recalculado 0.6836387291586963 | guardado None | coincide 
+[3 Reapertura] Fase 3 atencion: AUC hgb_c1: informado 0.683 | recalculado 0.6829713462923324 | guardado 0.6829713462923324 | coincide 
+[3 Reapertura] Fase 3 atencion: AUC pos_c1: informado 0.711 | recalculado 0.7112863505168137 | guardado 0.7112863505168137 | coincide 
+[3 Reapertura] Fase 3 atencion: AUC hgb_c32: informado 0.712 | recalculado 0.7119845838893988 | guardado 0.7119845838893988 | coincide 
+[3 Reapertura] Fase 3 atencion: AUC c32_pos: informado 0.713 | recalculado 0.7127037604708655 | guardado 0.7127037604708655 | coincide 
+[3 Reapertura] Fase 3 atencion: pos_c1 − hgb_c1 (todas): informado 0.028 | recalculado 0.02831500422448132 | guardado np.float64(0.02831500422448132) | coincide 
+[3 Reapertura] Fase 3 atencion: pos_c1 − hgb_c1 (todas) · IC 95 % inferior: informado 0.021 | recalculado 0.020544295907934208 | guardado np.float64(0.020544295907934197) | coincide 
+[3 Reapertura] Fase 3 atencion: pos_c1 − hgb_c1 (todas) · IC 95 % superior: informado 0.036 | recalculado 0.03593394009624632 | guardado np.float64(0.03593394009624632) | coincide 
+[3 Reapertura] Fase 3 atencion: hgb_c32 − pos_c1 (todas): informado 0.001 | recalculado 0.0006982333725852249 | guardado np.float64(0.0006982333725852357) | coincide 
+[3 Reapertura] Fase 3 atencion: hgb_c32 − pos_c1 (todas) · IC 95 % inferior: informado -0.003 | recalculado -0.002505591232783281 | guardado np.float64(-0.002505591232783251) | coincide 
+[3 Reapertura] Fase 3 atencion: hgb_c32 − pos_c1 (todas) · IC 95 % superior: informado 0.004 | recalculado 0.003976661417925676 | guardado np.float64(0.003976661417925671) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (bloque60): informado -0.0 | recalculado -0.0004102049021751998 | guardado np.float64(-0.0004102049021751998) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (bloque60) · IC 95 % inferior: informado -0.004 | recalculado -0.00371031026549489 | guardado np.float64(-0.00371031026549489) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (bloque60) · IC 95 % superior: informado 0.003 | recalculado 0.002841426950563821 | guardado np.float64(0.002841426950563821) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (posicion): informado 0.005 | recalculado 0.0053870457539483135 | guardado np.float64(0.005387045753948311) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (posicion) · IC 95 % inferior: informado 0.001 | recalculado 0.0007934406371139272 | guardado np.float64(0.0007934406371139245) | coincide 
+[3 Reapertura] Fase 3 atencion: c32_pos − pos_c1 (posicion) · IC 95 % superior: informado 0.01 | recalculado 0.010222408258856685 | guardado np.float64(0.010222408258856678) | coincide 
+[3 Reapertura] Fase 3 atencion Q1: delta: informado 0.001 | recalculado 0.0014174099540517396 | guardado 0.0014174099540517477 | coincide 
+[3 Reapertura] Fase 3 atencion Q1: mediana: informado 0.001 | recalculado 0.0009441707717570136 | guardado 0.0009441707717569026 | coincide 
+[3 Reapertura] Fase 3 atencion Q1: persona más influyente es P36 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide P36 (+0.038)
+[3 Reapertura] Fase 3 atencion Q1: sin la persona más influyente: informado 0.001 | recalculado 0.0005015308002742275 | guardado np.float64(0.0005015308002742358) | coincide p 0.7272
+[3 Reapertura] Fase 3 atencion Q1: sin la persona más influyente · IC 95 % inferior: informado -0.002 | recalculado -0.002309596813643012 | guardado np.float64(-0.0023095968136429895) | coincide 
+[3 Reapertura] Fase 3 atencion Q1: sin la persona más influyente · IC 95 % superior: informado 0.003 | recalculado 0.003244165902898939 | guardado np.float64(0.0032441659028989473) | coincide 
+[3 Reapertura] Fase 3 atencion Q2: delta: informado -0.0 | recalculado -6.11759441580932e-05 | guardado -6.11759441580932e-05 | coincide 
+[3 Reapertura] Fase 3 atencion Q2: mediana: informado 0.001 | recalculado 0.001161946259985558 | guardado 0.001161946259985558 | coincide 
+[3 Reapertura] Fase 3 atencion Q2: persona más influyente es P46 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide P46 (-0.024)
+[3 Reapertura] Fase 3 atencion Q2: sin la persona más influyente: informado 0.001 | recalculado 0.0005368150409309991 | guardado np.float64(0.0005368150409309991) | coincide p 0.7243
+[3 Reapertura] Fase 3 atencion Q2: sin la persona más influyente · IC 95 % inferior: informado -0.002 | recalculado -0.002442497140298898 | guardado np.float64(-0.002442497140298898) | coincide 
+[3 Reapertura] Fase 3 atencion Q2: sin la persona más influyente · IC 95 % superior: informado 0.003 | recalculado 0.003436279145221835 | guardado np.float64(0.003436279145221835) | coincide 
+[3 Reapertura] D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo: informado 0.68 | recalculado 0.6798620269981583 | guardado np.float64(0.6798620269981583) | coincide 
+[3 Reapertura] D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % inferior: informado 0.634 | recalculado 0.6343587994447537 | guardado np.float64(0.6343587994447537) | coincide 
+[3 Reapertura] D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % superior: informado 0.724 | recalculado 0.7243301486335648 | guardado np.float64(0.7243301486335648) | coincide 
+[3 Reapertura] D2 activacion: pares: informado 5035 | recalculado 5035 | guardado 5035.0 | coincide 
+[3 Reapertura] D2 activacion: personas: informado 40 | recalculado 40 | guardado None | coincide 
+[3 Reapertura] activacion: AUC absoluta hgb_c1 (5 particiones): informado 0.518 | recalculado 0.5176299961383577 | guardado 0.5176299961383577 | coincide 
+[3 Reapertura] activacion: AUC absoluta hgb_c32 (5 particiones): informado 0.554 | recalculado 0.5540791984957557 | guardado 0.5540791984957557 | coincide 
+[3 Reapertura] activacion: AUC absoluta c1_ts: informado None | recalculado 0.5364019314450075 | guardado 0.5364019314450075 | coincide 
+[3 Reapertura] activacion: AUC absoluta c32_ts: informado None | recalculado 0.5626711708034949 | guardado 0.5626711708034949 | coincide 
+[3 Reapertura] activacion: P1 por partición, mínimo: informado 0.028 | recalculado 0.028140049786471336 | guardado None | coincide por partición: 0.033944; 0.041318; 0.046914; 0.031930; 0.028140
+[3 Reapertura] activacion: P1 por partición, máximo: informado 0.047 | recalculado 0.0469140871202082 | guardado None | coincide 
+[3 Reapertura] activacion: tiempo de sesión solo (c1_ts − hgb_c1): informado 0.019 | recalculado 0.018771935306649796 | guardado np.float64(0.01877193530664979) | coincide 
+[3 Reapertura] activacion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % inferior: informado -0.023 | recalculado -0.023392881252779243 | guardado np.float64(-0.02339288125277927) | coincide 
+[3 Reapertura] activacion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % superior: informado 0.061 | recalculado 0.06077126840627631 | guardado np.float64(0.0607712684062763) | coincide 
+[3 Reapertura] Curva activacion: filas con cobertura completa (reconstrucción propia): informado 6268 | recalculado 6268 | guardado None | coincide 
+[3 Reapertura] Curva activacion: filas reconstruidas que no están en las predicciones guardadas, o al revés: informado 0 | recalculado 0 | guardado None | coincide 
+[3 Reapertura] Curva activacion: personas con filas comunes: informado 40 | recalculado 40 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las filas etiquetadas: informado 53 | recalculado 0.5313665649372669 | guardado None | coincide 
+[3 Reapertura] Curva activacion: mínimo de filas comunes por persona: informado 62 | recalculado 62 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las ventanas de la banda de 6 s que son del mismo estímulo: informado 73 | recalculado 0.7303766167892468 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las ventanas de la banda de 12 s que son del mismo estímulo: informado 48 | recalculado 0.4840104246512341 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las ventanas de la banda de 24 s que son del mismo estímulo: informado 13 | recalculado 0.12778501830819836 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las ventanas de la banda de 48 s que son del mismo estímulo: informado 0 | recalculado 0.00272539314579287 | guardado None | coincide 
+[3 Reapertura] Curva activacion: % de las ventanas de la banda de 96 s que son del mismo estímulo: informado 0 | recalculado 0.0 | guardado None | coincide 
+[3 Reapertura] Curva activacion: pendiente del contraste por duplicación del desfase: informado -0.01 | recalculado -0.010353935640732564 | guardado np.float64(-0.010353935640732564) | coincide 
+[3 Reapertura] Curva activacion: pendiente del contraste por duplicación del desfase · IC 95 % inferior: informado -0.018 | recalculado -0.01751560209795427 | guardado np.float64(-0.01751560209795427) | coincide 
+[3 Reapertura] Curva activacion: pendiente del contraste por duplicación del desfase · IC 95 % superior: informado -0.003 | recalculado -0.00279534269163705 | guardado np.float64(-0.0027953426916370516) | coincide 
+[3 Reapertura] Curva activacion: p de la pendiente: informado 0.009 | recalculado 0.00930995345023275 | guardado 0.00930995345023275 | coincide 
+[3 Reapertura] Curva activacion: personas con pendiente negativa: informado 27 | recalculado 27 | guardado None | coincide de 40
+[3 Reapertura] Curva activacion: AUC absoluta c1_common: informado None | recalculado 0.525327078850512 | guardado 0.525327078850512 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta lag12: informado None | recalculado 0.5587908245542683 | guardado 0.5587908245542683 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta lag24: informado None | recalculado 0.538546791961431 | guardado 0.538546791961431 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta lag48: informado None | recalculado 0.5122053971887024 | guardado 0.5122053971887024 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta lag6: informado None | recalculado 0.581848372211077 | guardado 0.581848372211077 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta lag96: informado None | recalculado 0.5533714076901972 | guardado 0.5533714076901972 | coincide 
+[3 Reapertura] Curva activacion: AUC absoluta placebo: informado None | recalculado 0.5347247105085311 | guardado 0.5347247105085311 | coincide 
+[3 Reapertura] Curva activación: placebo − ventana actual: informado 0.009 | recalculado 0.0093976316580191 | guardado None | coincide 
+[3 Reapertura] Curva activación: placebo − ventana actual · IC 95 % inferior: informado -0.024 | recalculado -0.023612902312114183 | guardado None | coincide 
+[3 Reapertura] Curva activación: placebo − ventana actual · IC 95 % superior: informado 0.043 | recalculado 0.043312742903214525 | guardado None | coincide 
+[3 Reapertura] Curva activación: 6 s − placebo: informado 0.047 | recalculado 0.04712366170254597 | guardado None | coincide 30/40; mediana 0.0416
+[3 Reapertura] Curva activación: 6 s − placebo · IC 95 % inferior: informado 0.017 | recalculado 0.017473853576034072 | guardado None | coincide 
+[3 Reapertura] Curva activación: 6 s − placebo · IC 95 % superior: informado 0.078 | recalculado 0.07763903705982063 | guardado None | coincide 
+[3 Reapertura] Curva activación: 6 s − placebo, mediana: informado 0.042 | recalculado 0.041590917592488674 | guardado None | coincide 
+[3 Reapertura] Curva activación: 6 s − placebo, personas a favor: informado 30 | recalculado 30 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: 6 s − placebo, sin la persona más influyente: informado 0.039 | recalculado 0.03936561456671382 | guardado None | coincide persona P24 (+0.350); p 0.0063
+[3 Reapertura] Sensibilidad activación: 6 s − placebo, sin la persona más influyente · IC 95 % inferior: informado 0.012 | recalculado 0.012406255627881127 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: 6 s − placebo, sin la persona más influyente · IC 95 % superior: informado 0.065 | recalculado 0.06532654260154742 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente: informado 0.046 | recalculado 0.04579676902404194 | guardado None | coincide persona P24 (+0.325); p 0.0011
+[3 Reapertura] Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente · IC 95 % inferior: informado 0.021 | recalculado 0.021225389670877823 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente · IC 95 % superior: informado 0.07 | recalculado 0.07018296044070206 | guardado None | coincide 
+[3 Reapertura] X1 activación: 6 s − placebo de bloque, mediana: informado 0.056 | recalculado 0.05551299351857533 | guardado None | coincide media 0.052769; 31/40
+[3 Reapertura] X1 activacion: placebo de bloque − placebo disperso: informado -0.006 | recalculado -0.0056453755958949265 | guardado -0.005645375595894916 | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, mismo estímulo: informado 0.054 | recalculado 0.05403269007648613 | guardado np.float64(0.05403269007648613) | coincide 26/41; p 0.011180
+[3 Reapertura] X2 activacion: historial − sin historial, mismo estímulo · IC 95 % inferior: informado 0.015 | recalculado 0.014731580297360077 | guardado np.float64(0.014731580297360077) | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, mismo estímulo · IC 95 % superior: informado 0.094 | recalculado 0.09442762526288197 | guardado np.float64(0.09442762526288197) | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c1, mismo estímulo: informado 0.501 | recalculado 0.5010082789934509 | guardado 0.5010082789934509 | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c32, mismo estímulo: informado 0.555 | recalculado 0.555040969069937 | guardado 0.555040969069937 | coincide 
+[3 Reapertura] X2 activacion: % de pares dentro de mismo estímulo: informado 3 | recalculado 0.025689146064515694 | guardado 0.025689146064515694 | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, mismo minuto: informado 0.058 | recalculado 0.05840053241782335 | guardado np.float64(0.05840053241782337) | coincide 24/41; p 0.001005
+[3 Reapertura] X2 activacion: historial − sin historial, mismo minuto · IC 95 % inferior: informado 0.027 | recalculado 0.02698652776431368 | guardado np.float64(0.02698652776431368) | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, mismo minuto · IC 95 % superior: informado 0.092 | recalculado 0.09173652032342143 | guardado np.float64(0.09173652032342144) | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c1, mismo minuto: informado 0.501 | recalculado 0.5011518379209468 | guardado 0.5011518379209468 | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c32, mismo minuto: informado 0.56 | recalculado 0.5595523703387703 | guardado 0.5595523703387703 | coincide 
+[3 Reapertura] X2 activacion: % de pares dentro de mismo minuto: informado 7 | recalculado 0.07182597634667977 | guardado 0.07182597634667977 | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, misma posición: informado 0.027 | recalculado 0.02736569296619534 | guardado np.float64(0.027365692966195343) | coincide 24/41; p 0.092470
+[3 Reapertura] X2 activacion: historial − sin historial, misma posición · IC 95 % inferior: informado -0.003 | recalculado -0.003342511336106964 | guardado np.float64(-0.0033425113361069693) | coincide 
+[3 Reapertura] X2 activacion: historial − sin historial, misma posición · IC 95 % superior: informado 0.059 | recalculado 0.0585079773183864 | guardado np.float64(0.0585079773183864) | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c1, misma posición: informado None | recalculado 0.5244789997156949 | guardado 0.5244789997156949 | coincide 
+[3 Reapertura] X2 activacion: AUC estratificada hgb_c32, misma posición: informado None | recalculado 0.5518446926818903 | guardado 0.5518446926818903 | coincide 
+[3 Reapertura] X2 activacion: % de pares dentro de misma posición: informado None | recalculado 0.06560450492733176 | guardado 0.06560450492733176 | sin cifra informada 
+[3 Reapertura] D1 activacion: AUC de la posición sola: informado 0.543 | recalculado 0.5430527891643068 | guardado np.float64(0.5430527891643068) | coincide 
+[3 Reapertura] D1 activacion: AUC de la posición sola · IC 95 % inferior: informado 0.492 | recalculado 0.49149911651531 | guardado np.float64(0.49149911651531) | coincide con redondeo 
+[3 Reapertura] D1 activacion: AUC de la posición sola · IC 95 % superior: informado 0.595 | recalculado 0.5947341200642481 | guardado np.float64(0.594734120064248) | coincide 
+[3 Reapertura] Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente: informado 0.028 | recalculado 0.027745047800948275 | guardado None | coincide persona P4 (+0.385); p 0.0196
+[3 Reapertura] Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente · IC 95 % inferior: informado 0.006 | recalculado 0.005643373438932689 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente · IC 95 % superior: informado 0.05 | recalculado 0.05002081875459628 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: P1 historial − sin historial, mediana: informado 0.014 | recalculado 0.014296653303905282 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: P1 historial − sin historial, personas a favor: informado 23 | recalculado 23 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo minuto, sin la persona más influyente: informado 0.05 | recalculado 0.050377787107579286 | guardado None | coincide persona P4 (+0.379); p 0.0018
+[3 Reapertura] Sensibilidad activación: mismo minuto, sin la persona más influyente · IC 95 % inferior: informado 0.021 | recalculado 0.02091403520279265 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo minuto, sin la persona más influyente · IC 95 % superior: informado 0.081 | recalculado 0.08091843348732568 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo minuto, mediana: informado 0.042 | recalculado 0.04152191894127377 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo minuto, personas a favor: informado 24 | recalculado 24 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo estímulo, sin la persona más influyente: informado 0.044 | recalculado 0.04413350732839828 | guardado None | coincide persona P4 (+0.450); p 0.0215
+[3 Reapertura] Sensibilidad activación: mismo estímulo, sin la persona más influyente · IC 95 % inferior: informado 0.009 | recalculado 0.008456453488786514 | guardado None | coincide con redondeo 
+[3 Reapertura] Sensibilidad activación: mismo estímulo, sin la persona más influyente · IC 95 % superior: informado 0.08 | recalculado 0.08021316535762296 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo estímulo, mediana: informado 0.052 | recalculado 0.052314814814814814 | guardado None | coincide 
+[3 Reapertura] Sensibilidad activación: mismo estímulo, personas a favor: informado 26 | recalculado 26 | guardado None | coincide 
+[3 Reapertura] P1 activación: aporte de P4 a la media (0,009 de 0,036): informado 0.009 | recalculado 0.009380863039399624 | guardado None | coincide delta de P4 +0.3846
+[3 Reapertura] P1 activación: media: informado 0.036 | recalculado 0.03644920235739794 | guardado None | coincide 
+[3 Reapertura] Fase 3 activacion: AUC hgb_c1: informado 0.518 | recalculado 0.5176299961383577 | guardado 0.5176299961383577 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC hgb_c1, mismo estímulo: informado 0.501 | recalculado 0.5010082789934509 | guardado 0.5010082789934509 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC pos_c1: informado 0.523 | recalculado 0.5231801615192998 | guardado 0.5231801615192998 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC pos_c1, mismo estímulo: informado 0.55 | recalculado 0.5504381836728891 | guardado 0.5504381836728891 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC hgb_c32: informado 0.554 | recalculado 0.5540791984957557 | guardado 0.5540791984957557 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC hgb_c32, mismo estímulo: informado 0.555 | recalculado 0.555040969069937 | guardado 0.555040969069937 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC c32_pos: informado 0.555 | recalculado 0.5554334890398607 | guardado 0.5554334890398607 | coincide 
+[3 Reapertura] Fase 3 activacion: AUC c32_pos, mismo estímulo: informado 0.559 | recalculado 0.558975660434625 | guardado 0.558975660434625 | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (todas): informado 0.006 | recalculado 0.005550165380941951 | guardado np.float64(0.00555016538094193) | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (todas) · IC 95 % inferior: informado -0.015 | recalculado -0.014577803105330592 | guardado np.float64(-0.01457780310533061) | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (todas) · IC 95 % superior: informado 0.026 | recalculado 0.025754664454956628 | guardado np.float64(0.025754664454956614) | coincide 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (todas): informado 0.031 | recalculado 0.030899036976455994 | guardado np.float64(0.030899036976456004) | coincide 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (todas) · IC 95 % inferior: informado 0.004 | recalculado 0.003760753948134914 | guardado np.float64(0.0037607539481349242) | coincide 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (todas) · IC 95 % superior: informado 0.057 | recalculado 0.05691685847278941 | guardado np.float64(0.05691685847278941) | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (estimulo): informado 0.049 | recalculado 0.049429904679438225 | guardado np.float64(0.04942990467943821) | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (estimulo) · IC 95 % inferior: informado 0.027 | recalculado 0.027327632198098393 | guardado np.float64(0.027327632198098393) | coincide 
+[3 Reapertura] Fase 3 activacion: pos_c1 − hgb_c1 (estimulo) · IC 95 % superior: informado 0.072 | recalculado 0.07234875737074442 | guardado np.float64(0.07234875737074442) | coincide 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (estimulo): informado 0.005 | recalculado 0.0046027853970479 | guardado np.float64(0.0046027853970479) | coincide 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (estimulo) · IC 95 % inferior: informado -0.026 | recalculado -0.02549058158842337 | guardado np.float64(-0.02549058158842337) | coincide con redondeo 
+[3 Reapertura] Fase 3 activacion: hgb_c32 − pos_c1 (estimulo) · IC 95 % superior: informado 0.035 | recalculado 0.03513873413526645 | guardado np.float64(0.03513873413526645) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (bloque60): informado 0.033 | recalculado 0.03303073361202794 | guardado np.float64(0.03303073361202794) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (bloque60) · IC 95 % inferior: informado 0.005 | recalculado 0.005225342943121612 | guardado np.float64(0.005225342943121611) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (bloque60) · IC 95 % superior: informado 0.062 | recalculado 0.062381431653516804 | guardado np.float64(0.062381431653516804) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (posicion): informado 0.026 | recalculado 0.026033198338895915 | guardado np.float64(0.026033198338895905) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (posicion) · IC 95 % inferior: informado -0.0 | recalculado -0.00030315795987968824 | guardado np.float64(-0.0003031579598796937) | coincide 
+[3 Reapertura] Fase 3 activacion: c32_pos − pos_c1 (posicion) · IC 95 % superior: informado 0.052 | recalculado 0.051468362443674746 | guardado np.float64(0.051468362443674746) | coincide con redondeo 
+[3 Reapertura] Fase 3 activacion Q1: delta: informado 0.032 | recalculado 0.032253327520560954 | guardado 0.032253327520560954 | coincide 
+[3 Reapertura] Fase 3 activacion Q1: mediana: informado 0.031 | recalculado 0.03087831892759174 | guardado 0.03087831892759174 | coincide 
+[3 Reapertura] Fase 3 activacion Q1: persona más influyente es P10 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide P10 (-0.241)
+[3 Reapertura] Fase 3 activacion Q1: sin la persona más influyente: informado 0.039 | recalculado 0.039074456626942325 | guardado np.float64(0.039074456626942325) | coincide p 0.0036
+[3 Reapertura] Fase 3 activacion Q1: sin la persona más influyente · IC 95 % inferior: informado 0.015 | recalculado 0.014720286616907888 | guardado np.float64(0.014720286616907888) | coincide 
+[3 Reapertura] Fase 3 activacion Q1: sin la persona más influyente · IC 95 % superior: informado 0.063 | recalculado 0.06321537811108573 | guardado np.float64(0.06321537811108573) | coincide 
+[3 Reapertura] Fase 3 activacion Q2: delta: informado 0.009 | recalculado 0.008537476761735727 | guardado 0.00853747676173573 | coincide 
+[3 Reapertura] Fase 3 activacion Q2: mediana: informado -0.001 | recalculado -0.0009259259259258856 | guardado -0.0009259259259258856 | coincide 
+[3 Reapertura] Fase 3 activacion Q2: persona más influyente es P44 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide P44 (-0.231)
+[3 Reapertura] Fase 3 activacion Q2: sin la persona más influyente: informado 0.015 | recalculado 0.014520144450009886 | guardado np.float64(0.014520144450009893) | coincide p 0.3034
+[3 Reapertura] Fase 3 activacion Q2: sin la persona más influyente · IC 95 % inferior: informado -0.012 | recalculado -0.012006322704143134 | guardado np.float64(-0.012006322704143136) | coincide 
+[3 Reapertura] Fase 3 activacion Q2: sin la persona más influyente · IC 95 % superior: informado 0.042 | recalculado 0.04155409570255641 | guardado np.float64(0.0415540957025564) | coincide 
+[3 Reapertura] Curva: % de filas en que el placebo iguala el nº de ventanas de la banda, mínimo (bandas 12–96 s, ambas tareas): informado 30 | recalculado 0.30064219456116703 | guardado None | coincide atencion 12 s 0.3846; atencion 24 s 0.3164; atencion 48 s 0.3394; atencion 96 s 0.3006; activacion 12 s 0.4407; activacion 24 s 0.3409; activacion 48 s 0.4118; activacion 96 s 0.3330
+[3 Reapertura] Curva: ídem, máximo: informado 44 | recalculado 0.4406509253350351 | guardado None | coincide 
+[3 Reapertura] P4: pares positivo-negativo dentro del mismo estímulo en activación: informado 4 | recalculado 4 | guardado None | coincide 
+    (17s)
+
+===== montaje
+[6 Montaje] Desfase EEG–seguidor ocular (parpadeo): mínimo, s: informado 0.18 | recalculado 0.184 | guardado None | coincide 
+[6 Montaje] Desfase: máximo, s: informado 0.53 | recalculado 0.528 | guardado None | coincide 
+[6 Montaje] Desfase: mediana, s: informado 0.45 | recalculado 0.448 | guardado None | coincide 
+[6 Montaje] Desfase: cuartil inferior, s: informado 0.28 | recalculado 0.28 | guardado None | coincide 
+[6 Montaje] Desfase: cuartil superior, s: informado 0.48 | recalculado 0.48 | guardado None | coincide 
+[6 Montaje] Personas con desfase positivo (parpadeo): informado 41 | recalculado 41 | guardado None | coincide 
+[6 Montaje] Personas con desfase positivo (mirada horizontal): informado 41 | recalculado 41 | guardado None | coincide 
+[6 Montaje] Personas con desfase no positivo (mirada vertical): informado 4 | recalculado 4 | guardado None | coincide mínimo -0.808 s
+[6 Montaje] Desfase como % de la ventana de 2 s: mínimo: informado 9 | recalculado 0.092 | guardado None | coincide 
+[6 Montaje] Desfase como % de la ventana de 2 s: máximo: informado 26 | recalculado 0.264 | guardado None | coincide 
+[6 Montaje] Desfase como % de la ventana de 2 s: mediana: informado 22 | recalculado 0.224 | guardado None | coincide 
+[6 Montaje] INFORME montaje: "entre un 12 % y un 25 %" — mínimo: informado 12 | recalculado 0.092 | guardado None | difiere 
+[6 Montaje] INFORME montaje: "entre un 12 % y un 25 %" — máximo: informado 25 | recalculado 0.264 | guardado None | difiere 
+[6 Montaje] Grupo 1 (P2 a P21, P36, P37): mediana del desfase, s: informado 0.27 | recalculado 0.28 | guardado None | coincide con redondeo n=19; rango 0.184–0.352; media 0.2787
+[6 Montaje] Grupo 2 (resto): mediana del desfase, s: informado 0.47 | recalculado 0.48 | guardado None | coincide con redondeo n=22; rango 0.440–0.528; media 0.4840
+[6 Montaje] Separación limpia entre grupos (0 = el máximo del grupo 1 es menor que el mínimo del grupo 2): informado 0 | recalculado 0 | guardado None | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 0 (Fp1), mediana µV: informado 148 | recalculado 148.36279208320482 | guardado 148.36279208320482 | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 1 (Fp2), mediana µV: informado 151 | recalculado 151.02370033150498 | guardado 151.02370033150498 | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 8 (F7), mediana µV: informado 74 | recalculado 73.56259796073797 | guardado 73.56259796073797 | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 9 (F8), mediana µV: informado 77 | recalculado 77.42450397609286 | guardado 77.42450397609286 | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 10 (F3), mediana µV: informado 57 | recalculado 57.486473034336925 | guardado 57.486473034336925 | coincide 
+[6 Montaje] Amplitud del parpadeo, canal 11 (F4), mediana µV: informado 56 | recalculado 56.40528191905941 | guardado 56.40528191905941 | coincide 
+[6 Montaje] Central y temporal (2, 3, 12, 13): mínimo µV: informado 25 | recalculado 24.720440841374906 | guardado None | coincide 
+[6 Montaje] Central y temporal: máximo µV: informado 29 | recalculado 28.877592592036024 | guardado None | coincide 
+[6 Montaje] Parietal y occipital (4–7, 14, 15): mínimo µV: informado 18 | recalculado 18.45668517256034 | guardado None | coincide 
+[6 Montaje] Parietal y occipital: máximo µV: informado 24 | recalculado 23.875706416722586 | guardado None | coincide 
+[6 Montaje] Frontopolar "unos 150 µV": media de Fp1 y Fp2: informado 150 | recalculado 149.6932462073549 | guardado None | coincide 
+[6 Montaje] Posterior "unos 20 µV": mediana de las 6 medianas posteriores: informado 20 | recalculado 19.886728750899813 | guardado None | coincide 
+[6 Montaje] Personas cuyo canal de mayor respuesta al parpadeo es 0 o 1: informado 27 | recalculado 27 | guardado None | coincide 
+[6 Montaje] Personas con F7 y F8 utilizables: informado 37 | recalculado 37 | guardado None | coincide 
+[6 Montaje] Personas con signo opuesto de la mirada horizontal en F7 y F8: informado 31 | recalculado 31 | guardado None | coincide 
+[6 Montaje] Canales con mayor acoplamiento horizontal son 9, 13, 5 y 3 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide [9, 13, 5, 3]
+[6 Montaje] Canales utilizables por persona: mínimo: informado 11 | recalculado 11 | guardado None | coincide 
+[6 Montaje] Canales utilizables por persona: máximo: informado 16 | recalculado 16 | guardado None | coincide 
+[6 Montaje] Canales utilizables por persona: mediana: informado 15 | recalculado 15.0 | guardado None | coincide 
+[6 Montaje] Canales con más pérdidas son P4, O1, P7 y P3 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide ['P4', 'O1', 'P3', 'P7']
+[6 Montaje] Parpadeos detectados por persona: mínimo: informado 19 | recalculado 19 | guardado None | coincide 
+[6 Montaje] Parpadeos detectados por persona: máximo: informado 393 | recalculado 393 | guardado None | coincide 
+[6 Montaje] Frecuencia de muestreo efectiva, Hz: informado 125.1 | recalculado 125.13594338830234 | guardado None | coincide rango 125.008–125.167
+[6 Montaje] Mayor hueco entre muestras, s: informado 0.19 | recalculado 0.1900801658630371 | guardado None | coincide 
+[6 Montaje] Correlación máxima más baja entre personas (parpadeo) — "cercana a 0,1": informado 0.1 | recalculado 0.08027632224719572 | guardado None | coincide 
+   personas elegidas para el detalle (semilla 20261127): ['P18', 'P23', 'P26', 'P40', 'P44']
+[6 Montaje] Crudos, 41 personas: diferencia máxima del desfase del parpadeo frente a personas.csv, s: informado 0 | recalculado 0.0 | guardado None | coincide 
+[6 Montaje] Crudos, 41 personas: discrepancias en canales utilizables, parpadeos o canal utilizable: informado 0 | recalculado 0 | guardado None | coincide 
+[6 Montaje] Crudos, 41 personas: diferencia máxima de amplitud del parpadeo por canal, µV: informado 0 | recalculado 0.0 | guardado None | coincide 
+[6 Montaje] Crudos, 41 personas: diferencia máxima de la correlación horizontal por canal: informado 0 | recalculado 0.0 | guardado None | coincide 
+[6 Montaje] Crudos: desfase mínimo, s: informado 0.18 | recalculado 0.184 | guardado None | coincide 
+[6 Montaje] Crudos: desfase máximo, s: informado 0.53 | recalculado 0.528 | guardado None | coincide 
+[6 Montaje] Crudos: desfase mediano, s: informado 0.45 | recalculado 0.448 | guardado None | coincide 
+[6 Montaje] Crudos: amplitud mediana del parpadeo en Fp1, µV: informado 148 | recalculado 148.36279208320482 | guardado None | coincide 
+[6 Montaje] Crudos: amplitud mediana del parpadeo en Fp2, µV: informado 151 | recalculado 151.02370033150498 | guardado None | coincide 
+[6 Montaje] Crudos: personas con signo opuesto en F7 y F8: informado 31 | recalculado 31 | guardado None | coincide de 37
+[6 Montaje] Detalle P18: desfase del parpadeo, s: informado 0.264 | recalculado 0.264 | guardado None | coincide 15 canales; 73 parpadeos; Fp1 90.10 µV; Fp2 95.80 µV; F7 +0.1431; F8 -0.2167
+[6 Montaje] Detalle P23: desfase del parpadeo, s: informado 0.448 | recalculado 0.448 | guardado None | coincide 14 canales; 208 parpadeos; Fp1 215.24 µV; Fp2 271.17 µV; F7 -0.0079; F8 -0.2342
+[6 Montaje] Detalle P26: desfase del parpadeo, s: informado 0.496 | recalculado 0.496 | guardado None | coincide 15 canales; 131 parpadeos; Fp1 59.88 µV; Fp2 70.93 µV; F7 +0.0128; F8 -0.0895
+[6 Montaje] Detalle P40: desfase del parpadeo, s: informado 0.52 | recalculado 0.52 | guardado None | coincide 16 canales; 86 parpadeos; Fp1 85.12 µV; Fp2 107.91 µV; F7 +0.0231; F8 -0.0195
+[6 Montaje] Detalle P44: desfase del parpadeo, s: informado 0.472 | recalculado 0.472 | guardado None | coincide 16 canales; 144 parpadeos; Fp1 263.23 µV; Fp2 288.59 µV; F7 +0.1552; F8 -0.1809
+    (81s)
+
+===== limpieza
+[4 Limpieza] AUC eeg_c1: informado 0.681 | recalculado 0.6808945625853307 | guardado 0.6808945625853305 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica1_full: informado 0.661 | recalculado 0.6607729241780087 | guardado 0.6607729241780087 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica2_full: informado 0.638 | recalculado 0.6376832118966147 | guardado 0.6376832118966147 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica3_full: informado 0.621 | recalculado 0.6207791472235197 | guardado 0.6207791472235197 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica4_full: informado 0.613 | recalculado 0.6133544244017347 | guardado 0.6133544244017347 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ctrl3_full: informado 0.674 | recalculado 0.674300491173732 | guardado 0.674300491173732 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica3_lento_amp: informado 0.603 | recalculado 0.6024864146219344 | guardado 0.6024864146219344 | coincide con redondeo 41/41 sobre 0,5
+[4 Limpieza] AUC ica3_frontal: informado 0.621 | recalculado 0.620507747363133 | guardado 0.620507747363133 | coincide 41/41 sobre 0,5
+[4 Limpieza] AUC ica3_posterior: informado 0.562 | recalculado 0.5620018041078824 | guardado 0.5620018041078824 | coincide 38/41 sobre 0,5
+[4 Limpieza] AUC ica3_alfa_beta: informado 0.547 | recalculado 0.5474119583790354 | guardado 0.5474119583790354 | coincide 38/41 sobre 0,5
+[4 Limpieza] AUC orig12: informado 0.646 | recalculado 0.6457561542264688 | guardado 0.6457561542264688 | coincide 40/41 sobre 0,5
+[4 Limpieza] AUC reg12: informado 0.634 | recalculado 0.6338936466508233 | guardado 0.6338936466508233 | coincide 40/41 sobre 0,5
+[4 Limpieza] Personas con alfa y beta limpio sobre el azar: informado 38 | recalculado 38 | guardado None | coincide 
+[4 Limpieza] Personas con canales posteriores limpios sobre el azar: informado None | recalculado 38 | guardado None | sin cifra informada 
+[4 Limpieza] eeg_c1 − ica1_full: informado 0.02 | recalculado 0.020121638407321826 | guardado np.float64(0.020121638407321833) | coincide 33/41
+[4 Limpieza] eeg_c1 − ica2_full: informado 0.043 | recalculado 0.04321135068871574 | guardado np.float64(0.04321135068871574) | coincide 37/41
+[4 Limpieza] eeg_c1 − ica3_full: informado 0.06 | recalculado 0.06011541536181088 | guardado np.float64(0.060115415361810864) | coincide 39/41
+[4 Limpieza] eeg_c1 − ica4_full: informado 0.068 | recalculado 0.0675401381835958 | guardado np.float64(0.0675401381835958) | coincide 37/41
+[4 Limpieza] eeg_c1 − ctrl3_full: informado 0.007 | recalculado 0.0065940714115985824 | guardado np.float64(0.006594071411598594) | coincide 22/41
+[4 Limpieza] eeg_c1 − ctrl3_full · IC 95 % inferior: informado -0.001 | recalculado -0.0012471138776109583 | guardado np.float64(-0.0012471138776109347) | coincide 
+[4 Limpieza] eeg_c1 − ctrl3_full · IC 95 % superior: informado 0.015 | recalculado 0.014866963012079458 | guardado np.float64(0.014866963012079472) | coincide 
+[4 Limpieza] eeg_lento_amp − ica3_lento_amp: informado 0.07 | recalculado 0.07011042469090654 | guardado np.float64(0.07011042469090653) | coincide 39/41
+[4 Limpieza] eeg_frontal − ica3_frontal: informado 0.054 | recalculado 0.0543276877846677 | guardado np.float64(0.0543276877846677) | coincide 37/41
+[4 Limpieza] eeg_posterior − ica3_posterior: informado 0.04 | recalculado 0.04019168812675927 | guardado np.float64(0.04019168812675927) | coincide 34/41
+[4 Limpieza] eeg_alfa_beta − ica3_alfa_beta: informado 0.045 | recalculado 0.04526774019178318 | guardado None | coincide 35/41
+[4 Limpieza] ica3_frontal − ica3_posterior: informado 0.059 | recalculado 0.05850594325525066 | guardado np.float64(0.05850594325525064) | coincide 36/41
+[4 Limpieza] ica3_lento_amp − ica3_alfa_beta: informado 0.055 | recalculado 0.05507445624289888 | guardado np.float64(0.055074456242898896) | coincide 38/41
+[4 Limpieza] orig12 − reg12: informado 0.012 | recalculado 0.01186250757564551 | guardado np.float64(0.011862507575645538) | coincide 28/41
+[4 Limpieza] orig12 − reg12 · IC 95 % inferior: informado -0.0 | recalculado -0.0002943609248142554 | guardado np.float64(-0.0002943609248142204) | coincide 
+[4 Limpieza] orig12 − reg12 · IC 95 % superior: informado 0.024 | recalculado 0.024147578033135844 | guardado np.float64(0.02414757803313588) | coincide 
+[4 Limpieza] ica3_full − ica4_full: informado 0.007 | recalculado 0.007424722821784922 | guardado None | coincide 23/41
+[4 Limpieza] ica3_full − ica4_full · IC 95 % inferior: informado -0.0 | recalculado -5.946844494298034e-05 | guardado None | coincide 
+[4 Limpieza] ica3_full − ica4_full · IC 95 % superior: informado 0.015 | recalculado 0.015329301549995997 | guardado None | coincide 
+[4 Limpieza] Caída de alfa y beta sobre el azar: de +0,093 a +0,047 — después: informado 0.047 | recalculado 0.047411958379035446 | guardado None | coincide 
+[4 Limpieza] Control con etiquetas barajadas − 0,5 (una partición): informado -0.011 | recalculado -0.010952537581414894 | guardado np.float64(-0.010952537581414906) | coincide 
+[4 Limpieza] Control con etiquetas barajadas − 0,5 (una partición) · IC 95 % inferior: informado -0.023 | recalculado -0.023188327307567463 | guardado np.float64(-0.023188327307567484) | coincide 
+[4 Limpieza] Control con etiquetas barajadas − 0,5 (una partición) · IC 95 % superior: informado 0.001 | recalculado 0.0012555643672064185 | guardado np.float64(0.0012555643672064207) | coincide 
+[4 Limpieza] Control con etiquetas barajadas, AUC: informado 0.489 | recalculado 0.4890474624185852 | guardado None | coincide 
+[4 Limpieza] Control barajado: IC 90 % inferior: informado -0.021 | recalculado -0.02121270113809848 | guardado None | coincide 
+[4 Limpieza] Control barajado: IC 90 % superior: informado -0.001 | recalculado -0.0006612417941076917 | guardado None | coincide 
+[4 Limpieza] Máxima diferencia de probabilidad entre el filtro identidad y eeg_c1: informado 0 | recalculado 0.0 | guardado None | coincide 
+[4 Limpieza] Spearman medio por persona de la prob. eeg_c1 con el recorrido de la mirada (invertido): informado 0.41 | recalculado 0.4143053664414025 | guardado 0.41430536644140237 | coincide 
+[4 Limpieza] Spearman medio por persona de la prob. ica3_full con el recorrido de la mirada (invertido): informado 0.28 | recalculado 0.2803607263969537 | guardado 0.2803607263969537 | coincide 
+[4 Limpieza] Spearman medio por persona de la prob. ica3_alfa_beta con el recorrido de la mirada (invertido): informado 0.11 | recalculado 0.11380016925332366 | guardado 0.11380016925332366 | coincide 
+[4 Limpieza] Spearman medio por persona de la prob. reg12 con el recorrido de la mirada (invertido): informado None | recalculado 0.3047552679777941 | guardado 0.3047552679777941 | sin cifra informada 
+[4 Limpieza] L1 sin P23 y P39: informado 0.06 | recalculado 0.0598326559137117 | guardado None | coincide 
+[4 Limpieza] L2 sin P23 y P39: informado 0.052 | recalculado 0.05166247884694025 | guardado None | coincide 
+[4 Limpieza] L1 sin P23, P39 ni las cinco de identificación débil: informado 0.061 | recalculado 0.06106531511324314 | guardado None | coincide 
+[4 Limpieza] L2 sin P23, P39 ni las cinco de identificación débil: informado 0.054 | recalculado 0.05372001376597879 | guardado None | coincide 
+[4 Limpieza] L1: mediana: informado 0.06 | recalculado 0.06010458605210789 | guardado None | coincide media 0.060115
+[4 Limpieza] L1: sin la persona más influyente: informado 0.064 | recalculado 0.06438652991252282 | guardado None | coincide persona P9 (-0.111)
+[4 Limpieza] L2: mediana: informado 0.053 | recalculado 0.05342681290203155 | guardado None | coincide media 0.053521
+[4 Limpieza] L2: sin la persona más influyente: informado 0.058 | recalculado 0.05770113612739898 | guardado None | coincide persona P9 (-0.114)
+[4 Limpieza] P9: AUC original: informado 0.569 | recalculado 0.5693504901960784 | guardado None | coincide 
+[4 Limpieza] P9: AUC tras la limpieza: informado 0.68 | recalculado 0.6800796568627451 | guardado None | coincide 
+[4 Limpieza] Spearman entre la caída por persona y el puntaje del primer componente: informado 0.12 | recalculado 0.11898954703832752 | guardado None | coincide p 0.459
+[4 Limpieza] Spearman entre la caída por persona y la AUC de partida: informado 0.55 | recalculado 0.5513937282229965 | guardado None | coincide 
+[4 Limpieza] Correlación máxima canal–parpadeo, mediana entre personas, identidad: informado 0.28 | recalculado 0.27794316138524633 | guardado 0.27794316138524633 | coincide 
+[4 Limpieza] Correlación máxima canal–parpadeo, mediana entre personas, ica3: informado 0.08 | recalculado 0.07771640498384999 | guardado 0.07771640498384999 | coincide 
+[4 Limpieza] Correlación máxima canal–parpadeo, mediana entre personas, ctrl3: informado 0.31 | recalculado 0.31058033543357827 | guardado 0.31058033543357827 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada horizontal, mediana entre personas, identidad: informado 0.21 | recalculado 0.2092048687545052 | guardado 0.2092048687545052 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada horizontal, mediana entre personas, ica3: informado 0.11 | recalculado 0.10901753102356215 | guardado 0.10901753102356215 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada horizontal, mediana entre personas, ctrl3: informado 0.22 | recalculado 0.21744246544799217 | guardado 0.21744246544799217 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada vertical, mediana entre personas, identidad: informado 0.18 | recalculado 0.17586478285463886 | guardado 0.17586478285463886 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada vertical, mediana entre personas, ica3: informado 0.07 | recalculado 0.07382557115779484 | guardado 0.07382557115779484 | coincide 
+[4 Limpieza] Correlación máxima canal–mirada vertical, mediana entre personas, ctrl3: informado 0.18 | recalculado 0.17657038449313425 | guardado 0.17657038449313425 | coincide 
+[4 Limpieza] % de la varianza en los 3 componentes oculares (mediana): informado 3.5 | recalculado 0.034965968102985315 | guardado 0.034965968102985315 | coincide rango 0.0012–0.3493
+[4 Limpieza] % de la varianza en los 3 componentes de control (mediana): informado 72 | recalculado 0.7207016577442674 | guardado 0.7207016577442674 | coincide rango 0.3550–0.9576
+[4 Limpieza] Razón de varianza control / ocular ("veinte veces más"): informado 20 | recalculado 20.611517336559476 | guardado None | coincide con redondeo 
+[4 Limpieza] Puntaje ocular mediano del componente 1: informado 0.38 | recalculado 0.3808160105016945 | guardado None | coincide 
+[4 Limpieza] Puntaje ocular mediano del componente 2: informado 0.23 | recalculado 0.23059967294320627 | guardado None | coincide 
+[4 Limpieza] Puntaje ocular mediano del componente 3: informado 0.17 | recalculado 0.16923008060528927 | guardado None | coincide 
+[4 Limpieza] Puntaje ocular mediano del componente 4: informado 0.13 | recalculado 0.13246771431058507 | guardado None | coincide 
+[4 Limpieza] Puntaje ocular del control (mediana del máximo por persona): informado 0.06 | recalculado 0.05941254250876202 | guardado None | coincide máximo entre personas 0.1547
+[4 Limpieza] Canales utilizables por persona: mínimo: informado 11 | recalculado 11 | guardado None | coincide 
+[4 Limpieza] Canales utilizables por persona: máximo: informado 16 | recalculado 16 | guardado None | coincide 
+[4 Limpieza] 3 componentes como % de las dimensiones: mínimo: informado 19 | recalculado 0.1875 | guardado None | coincide 
+[4 Limpieza] 3 componentes como % de las dimensiones: máximo: informado 27 | recalculado 0.2727272727272727 | guardado None | coincide 
+[4 Limpieza] Personas con puntaje del primer componente bajo 0,15 son P12, P18, P22, P35 y P40 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide ['P12', 'P18', 'P22', 'P35', 'P40']; P18 0.1424; siguiente 0.2066
+[4 Limpieza] Desfase usado en la limpieza: mínimo, s: informado 0.25 | recalculado 0.232 | guardado None | difiere 
+[4 Limpieza] Desfase usado en la limpieza: máximo, s: informado 0.5 | recalculado 0.544 | guardado None | coincide 
+[4 Limpieza] Ventanas en que el filtro identidad reproduce la tabla vigente: informado 22211 | recalculado 22211 | guardado None | coincide 
+[4 Limpieza] Crudos, 41 personas: discrepancias en canales utilizables frente a personas_limpieza.csv: informado 0 | recalculado 0 | guardado None | coincide 
+[4 Limpieza] Crudos, 41 personas: diferencia máxima del desfase, s: informado 0 | recalculado 0.0 | guardado None | coincide 
+[4 Limpieza] Crudos, 41 personas: diferencia máxima de la fracción de varianza retirada por ica3: informado 0 | recalculado 7.13318293321663e-15 | guardado None | coincide 
+[4 Limpieza] Crudos, 41 personas: diferencia máxima de la fracción de varianza retirada por ctrl3: informado 0 | recalculado 2.0095036745715333e-13 | guardado None | coincide 
+[4 Limpieza] Crudos: % de varianza retirada por los 3 componentes oculares (mediana): informado 3.5 | recalculado 0.03496596810298488 | guardado None | coincide 
+[4 Limpieza] Crudos: % de varianza retirada por el control (mediana): informado 72 | recalculado 0.7207016577442692 | guardado None | coincide 
+[4 Limpieza] Crudos, 41 personas: diferencia máxima de las correlaciones canal–referencia (3 condiciones × 3 referencias): informado 0 | recalculado 1.2989609388114332e-14 | guardado None | coincide 
+[4 Limpieza] Crudos: correlación máxima canal–parpadeo, mediana, identidad: informado 0.28 | recalculado 0.27794316138524705 | guardado None | coincide 
+[4 Limpieza] Crudos: correlación máxima canal–parpadeo, mediana, ica3: informado 0.08 | recalculado 0.07771640498385037 | guardado None | coincide 
+[4 Limpieza] Crudos: correlación máxima canal–parpadeo, mediana, ctrl3: informado 0.31 | recalculado 0.3105803354335803 | guardado None | coincide 
+[4 Limpieza] Crudos: canales utilizables, mínimo: informado 11 | recalculado 11 | guardado None | coincide 
+[4 Limpieza] Crudos: canales utilizables, máximo: informado 16 | recalculado 16 | guardado None | coincide 
+[4 Limpieza] Detalle P18: fracción de varianza retirada por ica3: informado 0.01438702525025147 | recalculado 0.014387025250251335 | guardado 0.01438702525025147 | coincide control 0.788396; parpadeo 0.1652 → 0.0645 (control 0.1482); 15 canales; desfase 0.264 s
+[4 Limpieza] Detalle P23: fracción de varianza retirada por ica3: informado 0.011554840713594859 | recalculado 0.0115548407136011 | guardado 0.011554840713594859 | coincide control 0.676980; parpadeo 0.3191 → 0.1161 (control 0.3725); 14 canales; desfase 0.448 s
+[4 Limpieza] Detalle P26: fracción de varianza retirada por ica3: informado 0.0029282616560189997 | recalculado 0.0029282616560190313 | guardado 0.0029282616560189997 | coincide control 0.882491; parpadeo 0.0899 → 0.0918 (control 0.0981); 15 canales; desfase 0.504 s
+[4 Limpieza] Detalle P40: fracción de varianza retirada por ica3: informado 0.019934687805968996 | recalculado 0.01993468780596864 | guardado 0.019934687805968996 | coincide control 0.800780; parpadeo 0.0708 → 0.0698 (control 0.0706); 16 canales; desfase 0.496 s
+[4 Limpieza] Detalle P44: fracción de varianza retirada por ica3: informado 0.03728460791472996 | recalculado 0.037284607914729304 | guardado 0.03728460791472996 | coincide control 0.589487; parpadeo 0.4613 → 0.0689 (control 0.5378); 16 canales; desfase 0.472 s
+    (144s)
+
+===== red
+[5 Red cruda] AUC red_orig: informado 0.716 | recalculado 0.7159158584069619 | guardado np.float64(0.7159158584069619) | coincide 
+[5 Red cruda] AUC red_orig · IC 95 % inferior: informado 0.697 | recalculado 0.6966936356324405 | guardado np.float64(0.6966936356324405) | coincide 
+[5 Red cruda] AUC red_orig · IC 95 % superior: informado 0.735 | recalculado 0.7347978329869287 | guardado np.float64(0.7347978329869287) | coincide 
+[5 Red cruda] Personas con AUC red_orig sobre 0,5: informado 41 | recalculado 41 | guardado None | coincide 
+[5 Red cruda] AUC eeg_c1: informado 0.681 | recalculado 0.6808945625853307 | guardado np.float64(0.6808945625853305) | coincide 
+[5 Red cruda] AUC eeg_c1 · IC 95 % inferior: informado 0.665 | recalculado 0.6644516847704279 | guardado np.float64(0.6644516847704278) | coincide con redondeo 
+[5 Red cruda] AUC eeg_c1 · IC 95 % superior: informado 0.697 | recalculado 0.6971827177893829 | guardado np.float64(0.6971827177893829) | coincide 
+[5 Red cruda] Personas con AUC eeg_c1 sobre 0,5: informado 41 | recalculado 41 | guardado None | coincide 
+[5 Red cruda] AUC red_ica3: informado 0.649 | recalculado 0.6486186334498366 | guardado np.float64(0.6486186334498366) | coincide 
+[5 Red cruda] AUC red_ica3 · IC 95 % inferior: informado 0.63 | recalculado 0.6303852456792141 | guardado np.float64(0.6303852456792141) | coincide 
+[5 Red cruda] AUC red_ica3 · IC 95 % superior: informado 0.667 | recalculado 0.6666367653520132 | guardado np.float64(0.6666367653520132) | coincide 
+[5 Red cruda] Personas con AUC red_ica3 sobre 0,5: informado 41 | recalculado 41 | guardado None | coincide 
+[5 Red cruda] AUC ica3_full: informado 0.621 | recalculado 0.6207791472235197 | guardado np.float64(0.6207791472235197) | coincide 
+[5 Red cruda] AUC ica3_full · IC 95 % inferior: informado 0.607 | recalculado 0.6067271663807261 | guardado np.float64(0.6067271663807261) | coincide 
+[5 Red cruda] AUC ica3_full · IC 95 % superior: informado 0.635 | recalculado 0.6349464688656922 | guardado np.float64(0.6349464688656923) | coincide 
+[5 Red cruda] Personas con AUC ica3_full sobre 0,5: informado 41 | recalculado 41 | guardado None | coincide 
+[5 Red cruda] AUC red_act: informado 0.498 | recalculado 0.49849127736062954 | guardado np.float64(0.49849127736062954) | coincide 
+[5 Red cruda] AUC red_act · IC 95 % inferior: informado 0.478 | recalculado 0.47818856880960214 | guardado np.float64(0.47818856880960214) | coincide 
+[5 Red cruda] AUC red_act · IC 95 % superior: informado 0.518 | recalculado 0.5182262258964169 | guardado np.float64(0.5182262258964169) | coincide 
+[5 Red cruda] Personas con AUC red_act sobre 0,5: informado 20 | recalculado 20 | guardado None | coincide 
+[5 Red cruda] AUC hgb_eeg_act: informado 0.524 | recalculado 0.523695689888081 | guardado np.float64(0.523695689888081) | coincide 
+[5 Red cruda] AUC hgb_eeg_act · IC 95 % inferior: informado 0.497 | recalculado 0.4972509930665284 | guardado np.float64(0.4972509930665284) | coincide 
+[5 Red cruda] AUC hgb_eeg_act · IC 95 % superior: informado 0.551 | recalculado 0.5504934839745781 | guardado np.float64(0.5504934839745781) | coincide con redondeo 
+[5 Red cruda] Personas con AUC hgb_eeg_act sobre 0,5: informado 26 | recalculado 26 | guardado None | coincide 
+[5 Red cruda] AUC hgb_c1: informado 0.518 | recalculado 0.5176299961383577 | guardado np.float64(0.5176299961383577) | coincide 
+[5 Red cruda] AUC hgb_c1 · IC 95 % inferior: informado 0.491 | recalculado 0.49090106415841167 | guardado np.float64(0.49090106415841167) | coincide 
+[5 Red cruda] AUC hgb_c1 · IC 95 % superior: informado 0.545 | recalculado 0.5452941283016878 | guardado np.float64(0.5452941283016878) | coincide 
+[5 Red cruda] Personas con AUC hgb_c1 sobre 0,5: informado 22 | recalculado 22 | guardado None | coincide 
+[5 Red cruda] R1: informado 0.035 | recalculado 0.03502129582163135 | guardado None | coincide 32/41; p 0.000005; IC90 [0.0252; 0.0449]
+[5 Red cruda] R1 · IC 95 % inferior: informado 0.023 | recalculado 0.023262978153260717 | guardado None | coincide 
+[5 Red cruda] R1 · IC 95 % superior: informado 0.047 | recalculado 0.04679252794581893 | guardado None | coincide 
+[5 Red cruda] R2: informado 0.028 | recalculado 0.027839486226316927 | guardado None | coincide 30/41; p 0.000845; IC90 [0.0150; 0.0407]
+[5 Red cruda] R2 · IC 95 % inferior: informado 0.013 | recalculado 0.012576350534792181 | guardado None | coincide 
+[5 Red cruda] R2 · IC 95 % superior: informado 0.043 | recalculado 0.04320201719084302 | guardado None | coincide 
+[5 Red cruda] R3: informado 0.067 | recalculado 0.0672972249571253 | guardado None | coincide 39/41; p 0.000005; IC90 [0.0553; 0.0798]
+[5 Red cruda] R3 · IC 95 % inferior: informado 0.053 | recalculado 0.053003694191115114 | guardado None | coincide 
+[5 Red cruda] R3 · IC 95 % superior: informado 0.082 | recalculado 0.08237802182134736 | guardado None | coincide 
+[5 Red cruda] R4: informado -0.025 | recalculado -0.025204412527451356 | guardado None | coincide 15/41; p 0.099500; IC90 [-0.0497; -0.0013]
+[5 Red cruda] R4 · IC 95 % inferior: informado -0.055 | recalculado -0.05453942748996472 | guardado None | coincide 
+[5 Red cruda] R4 · IC 95 % superior: informado 0.003 | recalculado 0.003407520284925717 | guardado None | coincide 
+[5 Red cruda] R1 en la partición 1101: informado 0.033 | recalculado 0.03344088959764037 | guardado None | coincide 
+[5 Red cruda] R2 en la partición 1101: informado 0.028 | recalculado 0.028011475909618968 | guardado None | coincide 
+[5 Red cruda] R3 en la partición 1101: informado 0.068 | recalculado 0.06750963436525592 | guardado None | coincide 
+[5 Red cruda] R4 en la partición 1101: informado -0.039 | recalculado -0.03874194194701282 | guardado None | coincide 
+[5 Red cruda] R1 en la partición 1102: informado 0.036 | recalculado 0.03607561608334962 | guardado None | coincide 
+[5 Red cruda] R2 en la partición 1102: informado 0.024 | recalculado 0.023795720208736135 | guardado None | coincide 
+[5 Red cruda] R3 en la partición 1102: informado 0.068 | recalculado 0.06842914069547835 | guardado None | coincide 
+[5 Red cruda] R4 en la partición 1102: informado -0.042 | recalculado -0.04147999331434641 | guardado None | coincide con redondeo 
+[5 Red cruda] R1 en la partición 1103: informado 0.039 | recalculado 0.038723133765114486 | guardado None | coincide 
+[5 Red cruda] R2 en la partición 1103: informado 0.03 | recalculado 0.02992632340571879 | guardado None | coincide 
+[5 Red cruda] R3 en la partición 1103: informado 0.068 | recalculado 0.0679061809183576 | guardado None | coincide 
+[5 Red cruda] R4 en la partición 1103: informado -0.021 | recalculado -0.020456632021463517 | guardado None | coincide con redondeo 
+[5 Red cruda] R1 en la partición 1104: informado 0.037 | recalculado 0.03736634647492512 | guardado None | coincide 
+[5 Red cruda] R2 en la partición 1104: informado 0.032 | recalculado 0.031494750672035 | guardado None | coincide con redondeo 
+[5 Red cruda] R3 en la partición 1104: informado 0.067 | recalculado 0.06736352609599645 | guardado None | coincide 
+[5 Red cruda] R4 en la partición 1104: informado 0.002 | recalculado 0.0021359515315985665 | guardado None | coincide 
+[5 Red cruda] R1 en la partición 1105: informado 0.03 | recalculado 0.029500493187127122 | guardado None | coincide 
+[5 Red cruda] R2 en la partición 1105: informado 0.026 | recalculado 0.025969160935475695 | guardado None | coincide 
+[5 Red cruda] R3 en la partición 1105: informado 0.065 | recalculado 0.06527764271053818 | guardado None | coincide 
+[5 Red cruda] R4 en la partición 1105: informado -0.028 | recalculado -0.027479446886032616 | guardado None | coincide con redondeo 
+[5 Red cruda] R1 con la partición 1105 sola: IC 95 % inferior: informado 0.017 | recalculado 0.017226340911964025 | guardado None | coincide 
+[5 Red cruda] R1 sin P23 y P39: informado 0.0364 | recalculado 0.03641500758556047 | guardado None | coincide 
+[5 Red cruda] R1 sin P23 y P39 · IC 95 % inferior: informado 0.0248 | recalculado 0.02477678553469707 | guardado None | coincide 
+[5 Red cruda] R1 sin P23 y P39 · IC 95 % superior: informado 0.0482 | recalculado 0.048233026964849365 | guardado None | coincide 
+[5 Red cruda] R1 sin P23 y P39 (informe, 3 decimales): informado 0.036 | recalculado 0.03641500758556047 | guardado None | coincide 
+[5 Red cruda] R2 sin P23 y P39: informado 0.0282 | recalculado 0.028245506889880423 | guardado None | coincide 
+[5 Red cruda] R2 sin P23 y P39 · IC 95 % inferior: informado 0.0126 | recalculado 0.01258990865434225 | guardado None | coincide 
+[5 Red cruda] R2 sin P23 y P39 · IC 95 % superior: informado 0.0439 | recalculado 0.04386913795415643 | guardado None | coincide 
+[5 Red cruda] R2 sin P23 y P39 (informe, 3 decimales): informado 0.028 | recalculado 0.028245506889880423 | guardado None | coincide 
+[5 Red cruda] R3 sin P23 y P39: informado 0.068 | recalculado 0.06800215660939174 | guardado None | coincide 
+[5 Red cruda] R3 sin P23 y P39 · IC 95 % inferior: informado 0.0529 | recalculado 0.052947245341985104 | guardado None | coincide 
+[5 Red cruda] R3 sin P23 y P39 · IC 95 % superior: informado 0.0838 | recalculado 0.08377624033636921 | guardado None | coincide 
+[5 Red cruda] R3 sin P23 y P39 (informe, 3 decimales): informado 0.068 | recalculado 0.06800215660939174 | guardado None | coincide 
+[5 Red cruda] R4 sin P23 y P39: informado -0.0273 | recalculado -0.027316014835679286 | guardado None | coincide 
+[5 Red cruda] R4 sin P23 y P39 · IC 95 % inferior: informado -0.0574 | recalculado -0.05740599207612822 | guardado None | coincide 
+[5 Red cruda] R4 sin P23 y P39 · IC 95 % superior: informado 0.0026 | recalculado 0.0025857925474756216 | guardado None | coincide 
+[5 Red cruda] R4 sin P23 y P39 (informe, 3 decimales): informado -0.027 | recalculado -0.027316014835679286 | guardado None | coincide 
+[5 Red cruda] R1 dejando una persona fuera: IC 95 % inferior mínimo: informado 0.0215 | recalculado 0.021475393368911265 | guardado None | coincide 
+[5 Red cruda] R1 dejando una persona fuera: IC 95 % inferior máximo: informado 0.0257 | recalculado 0.025731905377578874 | guardado None | coincide 
+[5 Red cruda] R2 dejando una persona fuera: IC 95 % inferior mínimo: informado 0.01 | recalculado 0.010027364667193705 | guardado None | coincide 
+[5 Red cruda] R2 dejando una persona fuera: IC 95 % inferior máximo: informado 0.0173 | recalculado 0.017263757690806486 | guardado None | coincide 
+[5 Red cruda] R3 dejando una persona fuera: IC 95 % inferior mínimo: informado 0.0508 | recalculado 0.050758343274755445 | guardado None | coincide 
+[5 Red cruda] R4 pasa a "inferior" al quitar a P10, P24, P33, P34 o P40 (0 = exactamente esas cinco): informado 0 | recalculado 0 | guardado None | coincide ['P10', 'P24', 'P33', 'P34', 'P40']; IC superior al quitarlas: P10 -0.00145; P24 -0.00075; P33 -0.00077; P34 -0.00081; P40 -0.00070
+[5 Red cruda] R1 mantiene "efecto relevante" al quitar cualquier persona (0 = sí): informado 0 | recalculado 0 | guardado None | coincide 
+[5 Red cruda] R3 mantiene "efecto relevante" al quitar cualquier persona (0 = sí): informado 0 | recalculado 0 | guardado None | coincide 
+[5 Red cruda] R2 mantiene IC 95 % inferior > 0 al quitar cualquier persona (0 = sí): informado 0 | recalculado 0 | guardado None | coincide 
+[5 Red cruda] Las dos personas más favorables a R1 son P21 y P18 (0 = sí): informado 0 | recalculado 0 | guardado None | coincide ['P21', 'P18']
+[5 Red cruda] R1 sin P21 y P18: IC 95 % inferior: informado 0.0199 | recalculado 0.020111620478254995 | guardado None | difiere 
+[5 Red cruda] R1 sin P21 y P18: IC 95 % inferior con otras 30 semillas de remuestreo (mínimo): informado None | recalculado 0.019743183537906557 | guardado None | sin cifra informada máximo 0.02018; bajo 0,02 en 23 de 30; t de Student 0.01944
+[5 Red cruda] R1: IC 95 % inferior con 30 semillas, mínimo: informado 0.023 | recalculado 0.02290259657957246 | guardado None | coincide con redondeo máximo 0.02337
+[5 Red cruda] R1 − R2 (cambio de la ventaja de la red al limpiar): informado 0.007 | recalculado 0.007181809595314421 | guardado None | coincide p 0.288; 20/41; IC90 [-0.0034; 0.0182]
+[5 Red cruda] R1 − R2 (cambio de la ventaja de la red al limpiar) · IC 95 % inferior: informado -0.005 | recalculado -0.005478602753185993 | guardado None | coincide 
+[5 Red cruda] R1 − R2 (cambio de la ventaja de la red al limpiar) · IC 95 % superior: informado 0.02 | recalculado 0.02032262680882436 | guardado None | coincide 
+[5 Red cruda] R1 − R2: p: informado 0.29 | recalculado 0.28771356143219284 | guardado None | coincide 
+[5 Red cruda] R1 − R2: personas: informado 20 | recalculado 20 | guardado None | coincide 
+[5 Red cruda] (EEG + mirada + pupila) − solo EEG, activación: informado -0.006 | recalculado -0.0060656937497232345 | guardado np.float64(-0.006065693749723215) | coincide 
+[5 Red cruda] (EEG + mirada + pupila) − solo EEG, activación · IC 95 % inferior: informado -0.022 | recalculado -0.021651545059367085 | guardado np.float64(-0.02165154505936707) | coincide 
+[5 Red cruda] (EEG + mirada + pupila) − solo EEG, activación · IC 95 % superior: informado 0.009 | recalculado 0.008598716459470386 | guardado np.float64(0.008598716459470397) | coincide 
+[5 Red cruda] HGB solo EEG en activación − 0,5: p: informado 0.09 | recalculado 0.09267453662731687 | guardado 0.09267453662731687 | coincide 
+[5 Red cruda] Desviación entre semillas de la AUC por persona, red de activación (media): informado 0.045 | recalculado 0.04516499217637019 | guardado None | coincide HGB solo EEG 0.0396
+[5 Red cruda] AUC de la red original juntando todas las ventanas (media de 5 particiones): informado 0.684 | recalculado 0.6837198957444096 | guardado None | coincide por partición: 0.68912; 0.68334; 0.68075; 0.68349; 0.68189
+[5 Red cruda] Ídem, con la probabilidad promediada sobre particiones: informado None | recalculado 0.690381106631289 | guardado None | sin cifra informada 
+[5 Red cruda] Spearman medio por persona, prob. red_orig con el recorrido de la mirada (invertido): informado 0.48 | recalculado 0.48465551116721933 | guardado 0.4846555111672193 | coincide 
+[5 Red cruda] Spearman medio por persona, prob. eeg_c1 con el recorrido de la mirada (invertido): informado 0.41 | recalculado 0.4143053664414025 | guardado None | coincide 
+[5 Red cruda] Spearman medio por persona, prob. red_ica3 con el recorrido de la mirada (invertido): informado 0.33 | recalculado 0.32978272423152605 | guardado 0.32978272423152605 | coincide 
+[5 Red cruda] Spearman medio por persona, prob. red_orig con el puntaje ocular: informado 0.45 | recalculado 0.4540420337513156 | guardado 0.4540420337513156 | coincide 
+[5 Red cruda] Spearman medio por persona, prob. red_ica3 con el puntaje ocular: informado 0.32 | recalculado 0.3196914341875434 | guardado 0.3196914341875434 | coincide 
+[5 Red cruda] Parámetros entrenables de la red (conteo analítico): informado 1217 | recalculado 1217 | guardado None | coincide capa lineal con 112 entradas
+[5 Red cruda] Duración del núcleo temporal, s: informado 0.26 | recalculado 0.256 | guardado None | coincide 
+[5 Red cruda] Ventanas con la entrada toda en cero (tensor original, 22.211 ventanas): informado 50 | recalculado 50 | guardado None | coincide con etiqueta de atención 50; con etiqueta de activación 23; personas ['P11', 'P12', 'P13', 'P16', 'P20', 'P21', 'P22', 'P26', 'P27', 'P28', 'P30', 'P31', 'P32', 'P34', 'P36', 'P37', 'P38', 'P39', 'P4', 'P40', 'P46', 'P47', 'P6']
+[5 Red cruda] Ventanas con la entrada toda en cero (tensor limpio): informado 50 | recalculado 50 | guardado None | coincide 
+[5 Red cruda] Forma del tensor: ventanas: informado 22211 | recalculado 22211 | guardado None | coincide (22211, 16, 240)
+    (146s)
+
+===== etapas1611
+[7 Etapas del 16-11] V3: diferencia máxima de AUC media frente a metricas.csv (54 filas): informado 0 | recalculado np.float64(3.3306690738754696e-16) | guardado None | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de BA media frente a metricas.csv (54 filas): informado 0 | recalculado 0.0 | guardado None | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de macro-F1 media frente a metricas.csv (54 filas): informado 0 | recalculado 0.0 | guardado None | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de recall de la clase alta media frente a metricas.csv (54 filas): informado 0 | recalculado 0.0 | guardado None | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de recall de la clase baja media frente a metricas.csv (54 filas): informado 0 | recalculado 0.0 | guardado None | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de los IC 95 % de las cinco métricas (misma semilla): informado 0 | recalculado np.float64(2.220446049250313e-16) | guardado None | coincide 
+[7 Etapas del 16-11] V3: personas por partición — entrenamiento: informado 25 | recalculado 25 | guardado None | coincide 
+[7 Etapas del 16-11] V3: personas por partición — validación: informado 8 | recalculado 8 | guardado None | coincide 
+[7 Etapas del 16-11] V3: personas por partición — test: informado 8 | recalculado 8 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c1: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.6102482744211806 | guardado 0.6102482744211806 | coincide macro-F1 0.598675; recall alta 0.531235; recall baja 0.689261
+[7 Etapas del 16-11] V3 test atencion hgb_c32: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.6211254032253763 | guardado 0.6211254032253763 | coincide macro-F1 0.609302; recall alta 0.561708; recall baja 0.680543
+[7 Etapas del 16-11] V3 test atencion gru_c32: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.5764645300351272 | guardado 0.5764645300351272 | coincide macro-F1 0.533244; recall alta 0.436958; recall baja 0.715971
+[7 Etapas del 16-11] V3 test activacion hgb_c1: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.5038864381301738 | guardado 0.5038864381301738 | coincide macro-F1 0.485815; recall alta 0.619252; recall baja 0.388521
+[7 Etapas del 16-11] V3 test activacion hgb_c32: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.5418188153170653 | guardado 0.5418188153170653 | coincide macro-F1 0.520787; recall alta 0.666072; recall baja 0.417566
+[7 Etapas del 16-11] V3 test activacion gru_c32: BA / macro-F1 / recall alta / recall baja (se registra BA): informado None | recalculado 0.5370681309904943 | guardado 0.5370681309904943 | coincide macro-F1 0.488032; recall alta 0.387981; recall baja 0.686155
+[7 Etapas del 16-11] V3 test atencion hgb_c1: AUC: informado 0.662 | recalculado 0.6615664347653534 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c1: AUC · IC 95 % inferior: informado 0.619 | recalculado 0.6190584424579207 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c1: AUC · IC 95 % superior: informado 0.703 | recalculado 0.703277871033977 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c32: AUC: informado 0.69 | recalculado 0.6902733629946649 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c32: AUC · IC 95 % inferior: informado 0.644 | recalculado 0.6440657738549401 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion hgb_c32: AUC · IC 95 % superior: informado 0.733 | recalculado 0.733326420298851 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion gru_c32: AUC: informado 0.64 | recalculado 0.6402714462224872 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion gru_c32: AUC · IC 95 % inferior: informado 0.583 | recalculado 0.5834152809189371 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test atencion gru_c32: AUC · IC 95 % superior: informado 0.696 | recalculado 0.696058037119113 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c1: AUC: informado 0.514 | recalculado 0.5140866231607639 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c1: AUC · IC 95 % inferior: informado 0.451 | recalculado 0.4509860104858435 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c1: AUC · IC 95 % superior: informado 0.579 | recalculado 0.5788144918973874 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c32: AUC: informado 0.547 | recalculado 0.5470055056582337 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c32: AUC · IC 95 % inferior: informado 0.466 | recalculado 0.4660595020193585 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion hgb_c32: AUC · IC 95 % superior: informado 0.623 | recalculado 0.6225414651227719 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion gru_c32: AUC: informado 0.583 | recalculado 0.5830544381256202 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion gru_c32: AUC · IC 95 % inferior: informado 0.488 | recalculado 0.48774401965630054 | guardado None | coincide 
+[7 Etapas del 16-11] V3 test activacion gru_c32: AUC · IC 95 % superior: informado 0.676 | recalculado 0.6758550550762268 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activación, entrenamiento: AUC mínima entre estrategias ("entre 0,50 y 0,53"): informado 0.5 | recalculado 0.4964648350294626 | guardado None | coincide máxima 0.5316
+[7 Etapas del 16-11] V3 activación, entrenamiento: AUC máxima entre estrategias: informado 0.53 | recalculado 0.5315801890373338 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, oof_train: informado 0.018 | recalculado 0.01845302195624719 | guardado np.float64(0.01845302195624716) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, oof_train · IC 95 % inferior: informado 0.009 | recalculado 0.009058909834974349 | guardado np.float64(0.009058909834974323) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, oof_train · IC 95 % superior: informado 0.027 | recalculado 0.027291278789011858 | guardado np.float64(0.0272912787890118) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, oof_train: personas que mejoran: informado 20 | recalculado 20 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, validation: informado 0.02 | recalculado 0.020417293293946745 | guardado np.float64(0.020417293293946745) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, validation · IC 95 % inferior: informado -0.003 | recalculado -0.0026729223638294886 | guardado np.float64(-0.002672922363829447) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, validation · IC 95 % superior: informado 0.042 | recalculado 0.04197551358809841 | guardado np.float64(0.04197551358809837) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, validation: personas que mejoran: informado 6 | recalculado 6 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, test: informado 0.029 | recalculado 0.02870692822931152 | guardado np.float64(0.02870692822931155) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, test · IC 95 % inferior: informado 0.004 | recalculado 0.004442031554705189 | guardado np.float64(0.004442031554705203) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, test · IC 95 % superior: informado 0.052 | recalculado 0.05166294018480486 | guardado np.float64(0.05166294018480489) | coincide 
+[7 Etapas del 16-11] V3 atencion hgb_c32 − hgb_c1, test: personas que mejoran: informado 7 | recalculado 7 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, oof_train: informado 0.001 | recalculado 0.0008876746001246061 | guardado np.float64(0.0008876746001245972) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, oof_train · IC 95 % inferior: informado -0.013 | recalculado -0.013050878380975442 | guardado np.float64(-0.013050878380975448) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, oof_train · IC 95 % superior: informado 0.014 | recalculado 0.01443988419903596 | guardado np.float64(0.014439884199035975) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, oof_train: personas que mejoran: informado 11 | recalculado 11 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, validation: informado -0.004 | recalculado -0.003505218480880562 | guardado np.float64(-0.003505218480880548) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, validation · IC 95 % inferior: informado -0.036 | recalculado -0.036254018409509016 | guardado np.float64(-0.03625401840950893) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, validation · IC 95 % superior: informado 0.028 | recalculado 0.027718248901423895 | guardado np.float64(0.027718248901423964) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, validation: personas que mejoran: informado 4 | recalculado 4 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, test: informado 0.01 | recalculado 0.009512610674917654 | guardado np.float64(0.00951261067491764) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, test · IC 95 % inferior: informado -0.019 | recalculado -0.018614501305588144 | guardado np.float64(-0.018614501305588213) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, test · IC 95 % superior: informado 0.035 | recalculado 0.03480081829815111 | guardado np.float64(0.03480081829815111) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − gru_c1, test: personas que mejoran: informado 5 | recalculado 5 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, oof_train: informado 0.016 | recalculado 0.016204841039420187 | guardado np.float64(0.016204841039420177) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, oof_train · IC 95 % inferior: informado -0.036 | recalculado -0.03602145099721619 | guardado np.float64(-0.036021450997216195) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, oof_train · IC 95 % superior: informado 0.07 | recalculado 0.0695757646202672 | guardado np.float64(0.06957576462026718) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, oof_train: personas que mejoran: informado 15 | recalculado 15 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, validation: informado 0.059 | recalculado 0.058721977152031264 | guardado np.float64(0.05872197715203127) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, validation · IC 95 % inferior: informado -0.004 | recalculado -0.003991730418724788 | guardado np.float64(-0.003991730418724843) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, validation · IC 95 % superior: informado 0.131 | recalculado 0.13129905238367112 | guardado np.float64(0.13129905238367115) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, validation: personas que mejoran: informado 5 | recalculado 5 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, test: informado 0.033 | recalculado 0.03291888249746983 | guardado np.float64(0.032918882497469826) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, test · IC 95 % inferior: informado -0.021 | recalculado -0.021315486674067317 | guardado np.float64(-0.021315486674067255) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, test · IC 95 % superior: informado 0.094 | recalculado 0.09403237934309296 | guardado np.float64(0.09403237934309294) | coincide 
+[7 Etapas del 16-11] V3 activacion hgb_c32 − hgb_c1, test: personas que mejoran: informado 4 | recalculado 4 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, oof_train: informado -0.016 | recalculado -0.015782854577682543 | guardado np.float64(-0.015782854577682522) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, oof_train · IC 95 % inferior: informado -0.089 | recalculado -0.08912770590173005 | guardado np.float64(-0.08912770590173004) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, oof_train · IC 95 % superior: informado 0.048 | recalculado 0.04787699652056885 | guardado np.float64(0.04787699652056885) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, oof_train: personas que mejoran: informado 13 | recalculado 13 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, validation: informado 0.091 | recalculado 0.09069266021706004 | guardado np.float64(0.09069266021706006) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, validation · IC 95 % inferior: informado 0.018 | recalculado 0.01821075364849272 | guardado np.float64(0.01821075364849272) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, validation · IC 95 % superior: informado 0.188 | recalculado 0.1881692861524366 | guardado np.float64(0.18816928615243658) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, validation: personas que mejoran: informado 6 | recalculado 6 | guardado None | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, test: informado 0.084 | recalculado 0.08431258013069998 | guardado np.float64(0.08431258013069995) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, test · IC 95 % inferior: informado -0.011 | recalculado -0.010991477924194927 | guardado np.float64(-0.010991477924194961) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, test · IC 95 % superior: informado 0.165 | recalculado 0.16495884329626875 | guardado np.float64(0.16495884329626875) | coincide 
+[7 Etapas del 16-11] V3 activacion gru_c32 − gru_c1, test: personas que mejoran: informado 7 | recalculado 7 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, oof_train: informado -0.01 | recalculado -0.010392843689340786 | guardado np.float64(-0.010392843689340766) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, oof_train · IC 95 % inferior: informado -0.018 | recalculado -0.017714227042434968 | guardado np.float64(-0.01771422704243498) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, oof_train · IC 95 % superior: informado -0.003 | recalculado -0.0030721339351945675 | guardado np.float64(-0.0030721339351945367) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, oof_train: personas que mejoran: informado 7 | recalculado 7 | guardado None | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, validation: informado -0.008 | recalculado -0.007531077559457658 | guardado np.float64(-0.007531077559457713) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, validation · IC 95 % inferior: informado -0.02 | recalculado -0.020446611824971636 | guardado np.float64(-0.020446611824971747) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, validation · IC 95 % superior: informado 0.005 | recalculado 0.005304773094935572 | guardado np.float64(0.005304773094935572) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, test: informado -0.002 | recalculado -0.0021684253869794223 | guardado np.float64(-0.002168425386979436) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, test · IC 95 % inferior: informado -0.015 | recalculado -0.014688176752122209 | guardado np.float64(-0.01468817675212225) | coincide 
+[7 Etapas del 16-11] V3 atencion tardia_c32 − hgb_c32, test · IC 95 % superior: informado 0.008 | recalculado 0.00813289919815843 | guardado np.float64(0.00813289919815843) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, oof_train: informado -0.042 | recalculado -0.04207384048448479 | guardado np.float64(-0.042073840484484794) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, oof_train · IC 95 % inferior: informado -0.063 | recalculado -0.06320280276826176 | guardado np.float64(-0.06320280276826175) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, oof_train · IC 95 % superior: informado -0.022 | recalculado -0.022316113054824956 | guardado np.float64(-0.022316113054824997) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, validation: informado -0.044 | recalculado -0.04433224013731479 | guardado np.float64(-0.04433224013731482) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, validation · IC 95 % inferior: informado -0.092 | recalculado -0.09194247578066773 | guardado np.float64(-0.09194247578066772) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, validation · IC 95 % superior: informado -0.007 | recalculado -0.006837469405677983 | guardado np.float64(-0.006837469405677984) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, test: informado -0.05 | recalculado -0.05000191677217765 | guardado np.float64(-0.05000191677217765) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, test · IC 95 % inferior: informado -0.088 | recalculado -0.08828495185669653 | guardado np.float64(-0.0882849518566965) | coincide 
+[7 Etapas del 16-11] V3 atencion gru_c32 − hgb_c32, test · IC 95 % superior: informado -0.019 | recalculado -0.018999743432935007 | guardado np.float64(-0.01899974343293495) | coincide 
+[7 Etapas del 16-11] V3: diferencia máxima de los 54 contrastes (delta, IC, personas) frente a contrastes.csv: informado 0 | recalculado 1.249000902703301e-16 | guardado None | coincide 
+[7 Etapas del 16-11] V3: selección de hojas de activación, AUC media del modelo de 32 ventanas con 15 hojas (solo agregación del CSV): informado 0.5311 | recalculado 0.53106644856759 | guardado None | coincide 
+[7 Etapas del 16-11] V3: ídem con 7 hojas (solo agregación del CSV): informado 0.4994 | recalculado 0.499414265614623 | guardado None | coincide 
+[7 Etapas del 16-11] V3: hojas elegidas con la media de los tres largos de historial (0 = 15 hojas): informado 0 | recalculado 0 | guardado None | coincide 7 hojas 0.515242; 15 hojas 0.524758
+[7 Etapas del 16-11] Análisis final: diferencia máxima de AUC y BA medias frente a metricas.csv (10 filas): informado 0 | recalculado np.float64(1.1102230246251565e-16) | guardado None | coincide 
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: delta: informado 0.023 | recalculado 0.022790957794285596 | guardado 0.0228 | coincide n=25
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada): informado 0.014 | recalculado 0.01392182410355057 | guardado 0.0139 | coincide el CSV guarda 0.0139; diferencia +0.00002
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada): informado 0.031 | recalculado 0.031366903855942256 | guardado 0.0314 | coincide el CSV guarda 0.0314; diferencia -0.00003
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: personas que mejoran: informado 22 | recalculado 22 | guardado None | coincide de 25
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: delta: informado 0.032 | recalculado 0.03206448294892159 | guardado 0.0321 | coincide n=16
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada): informado 0.016 | recalculado 0.01592651996873027 | guardado 0.0159 | coincide el CSV guarda 0.0159; diferencia +0.00003
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada): informado 0.048 | recalculado 0.04808461849156647 | guardado 0.0481 | coincide el CSV guarda 0.0481; diferencia -0.00002
+[7 Etapas del 16-11] Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: personas que mejoran: informado 14 | recalculado 14 | guardado None | coincide de 16
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: delta: informado 0.055 | recalculado 0.05514256998123379 | guardado 0.0551 | coincide n=25
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada): informado 0.012 | recalculado 0.012167968151398364 | guardado 0.0122 | coincide el CSV guarda 0.0122; diferencia -0.00003
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada): informado 0.101 | recalculado 0.10050529166326642 | guardado 0.1005 | coincide el CSV guarda 0.1005; diferencia +0.00001
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: personas que mejoran: informado 17 | recalculado 17 | guardado None | coincide de 25
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: delta: informado 0.001 | recalculado 0.00144140321266268 | guardado 0.0014 | coincide n=16
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada): informado -0.052 | recalculado -0.05204460854503519 | guardado -0.052 | coincide el CSV guarda -0.052; diferencia -0.00004
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada): informado 0.055 | recalculado 0.0549026427723326 | guardado 0.0549 | coincide el CSV guarda 0.0549; diferencia +0.00000
+[7 Etapas del 16-11] Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: personas que mejoran: informado 7 | recalculado 7 | guardado None | coincide de 16
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: delta: informado 0.045 | recalculado 0.04533274498048666 | guardado 0.0453 | coincide n=25
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada): informado 0.007 | recalculado 0.006544383124748546 | guardado 0.0065 | coincide el CSV guarda 0.0065; diferencia +0.00004
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada): informado 0.083 | recalculado 0.08278615631163042 | guardado 0.0828 | coincide el CSV guarda 0.0828; diferencia -0.00001
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: personas que mejoran: informado 17 | recalculado 17 | guardado None | coincide de 25
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: delta: informado 0.059 | recalculado 0.058654773767174616 | guardado 0.0587 | coincide n=16
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada): informado 0.014 | recalculado 0.014286265093334612 | guardado 0.0143 | coincide el CSV guarda 0.0143; diferencia -0.00001
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada): informado 0.102 | recalculado 0.10149637090827783 | guardado 0.1015 | coincide con redondeo el CSV guarda 0.1015; diferencia -0.00000
+[7 Etapas del 16-11] Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: personas que mejoran: informado 11 | recalculado 11 | guardado None | coincide de 16
+[7 Etapas del 16-11] Heterogeneidad atencion GRU 32 − 1, 25 de entrenamiento: delta: informado 0.004 | recalculado 0.003956813559179269 | guardado 0.004 | coincide 
+[7 Etapas del 16-11] Heterogeneidad atencion GRU 32 − 1, 25 de entrenamiento: personas que mejoran: informado 15 | recalculado 15 | guardado None | coincide de 25
+[7 Etapas del 16-11] Heterogeneidad atencion GRU 32 − 1, 16 de validación y test: delta: informado 0.0146 | recalculado 0.014637802305479963 | guardado 0.0146 | coincide 
+[7 Etapas del 16-11] Heterogeneidad atencion GRU 32 − 1, 16 de validación y test: personas que mejoran: informado 11 | recalculado 11 | guardado None | coincide de 16
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: todas: informado 0.034 | recalculado 0.03418601709593776 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 25 de la búsqueda: informado 0.055 | recalculado 0.05514256998123379 | guardado None | coincide n=25; 17 a favor
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 25 de la búsqueda · IC 95 % inferior: informado 0.012 | recalculado 0.012167968151398364 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 25 de la búsqueda · IC 95 % superior: informado 0.101 | recalculado 0.10050529166326642 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 16 restantes: informado 0.001 | recalculado 0.00144140321266268 | guardado None | coincide n=16; 7 a favor
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 16 restantes · IC 95 % inferior: informado -0.052 | recalculado -0.05204460854503519 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 16-11: 16 restantes · IC 95 % superior: informado 0.055 | recalculado 0.0549026427723326 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: todas: informado 0.036 | recalculado 0.03644920235739794 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda: informado 0.046 | recalculado 0.04613788306636051 | guardado None | coincide n=25; 16 a favor
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda · IC 95 % inferior: informado 0.012 | recalculado 0.012374506729254121 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda · IC 95 % superior: informado 0.086 | recalculado 0.0856937018877052 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 16 restantes: informado 0.021 | recalculado 0.02131063874964391 | guardado None | coincide n=16; 7 a favor
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 16 restantes · IC 95 % inferior: informado -0.017 | recalculado -0.01717864137206791 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Principal, 5 particiones: 16 restantes · IC 95 % superior: informado 0.06 | recalculado 0.06029278855299445 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: todas: informado 0.026 | recalculado 0.02626923935848738 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda: informado 0.05 | recalculado 0.049954138418499126 | guardado None | coincide n=25; 19 a favor
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda · IC 95 % inferior: informado 0.013 | recalculado 0.013120745519871165 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda · IC 95 % superior: informado 0.085 | recalculado 0.0850162185841301 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 16 restantes: informado -0.011 | recalculado -0.010738415422780982 | guardado None | coincide n=16; 8 a favor
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 16 restantes · IC 95 % inferior: informado -0.066 | recalculado -0.06552134501942693 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con tiempo de sesión: 16 restantes · IC 95 % superior: informado 0.038 | recalculado 0.0380068558721939 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): todas: informado 0.032 | recalculado 0.032253327520560954 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 25 de la búsqueda: informado 0.049 | recalculado 0.049335377183879016 | guardado None | coincide n=25; 18 a favor
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 25 de la búsqueda · IC 95 % inferior: informado 0.018 | recalculado 0.018063851696231335 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 25 de la búsqueda · IC 95 % superior: informado 0.081 | recalculado 0.08124048742594966 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 16 restantes: informado 0.006 | recalculado 0.0055626249216264925 | guardado None | coincide n=16; 10 a favor
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 16 restantes · IC 95 % inferior: informado -0.043 | recalculado -0.043060264870834 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Con posición (Q1): 16 restantes · IC 95 % superior: informado 0.049 | recalculado 0.04932693696255235 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): todas: informado 0.038 | recalculado 0.03814873365246116 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda: informado 0.063 | recalculado 0.06327945207958807 | guardado None | coincide n=25; 17 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda · IC 95 % inferior: informado 0.021 | recalculado 0.020809639434734576 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda · IC 95 % superior: informado 0.109 | recalculado 0.10865513918159321 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 16 restantes: informado -0.001 | recalculado -0.001118013889924628 | guardado None | coincide n=16; 7 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 16 restantes · IC 95 % inferior: informado -0.056 | recalculado -0.05568933473896638 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − posición (18-11): 16 restantes · IC 95 % superior: informado 0.054 | recalculado 0.05387224581186379 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): todas: informado 0.038 | recalculado 0.03787258133865756 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda: informado 0.057 | recalculado 0.056851698739217825 | guardado None | coincide n=25; 17 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda · IC 95 % inferior: informado 0.023 | recalculado 0.02272012328181379 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda · IC 95 % superior: informado 0.092 | recalculado 0.09228799174722736 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 16 restantes: informado 0.008 | recalculado 0.008217710400282161 | guardado None | coincide n=16; 9 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 16 restantes · IC 95 % inferior: informado -0.048 | recalculado -0.04758045065293099 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial − placebo (16-11): 16 restantes · IC 95 % superior: informado 0.058 | recalculado 0.05828037949103869 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: todas: informado 0.046 | recalculado 0.04603771464184399 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda: informado 0.035 | recalculado 0.0345790909857017 | guardado None | coincide n=25; 17 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda · IC 95 % inferior: informado 0.003 | recalculado 0.003190199120064239 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda · IC 95 % superior: informado 0.064 | recalculado 0.06434324382426472 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes: informado 0.064 | recalculado 0.0639418141045663 | guardado None | coincide n=16; 11 a favor
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes · IC 95 % inferior: informado 0.015 | recalculado 0.014990520452287171 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes · IC 95 % superior: informado 0.115 | recalculado 0.11518281100237629 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: todas: informado 0.047 | recalculado 0.04712366170254597 | guardado None | coincide n=40
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda: informado 0.058 | recalculado 0.05832435893634023 | guardado None | coincide n=24; 19 a favor
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda · IC 95 % inferior: informado 0.015 | recalculado 0.015264527486582512 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda · IC 95 % superior: informado 0.101 | recalculado 0.10143755008497264 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 16 restantes: informado 0.03 | recalculado 0.03032261585185458 | guardado None | coincide n=16; 11 a favor
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 16 restantes · IC 95 % inferior: informado -0.003 | recalculado -0.0032245850845944142 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · Banda de 6 s − placebo: 16 restantes · IC 95 % superior: informado 0.068 | recalculado 0.06769297849758715 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: todas: informado 0.051 | recalculado 0.05053158548260879 | guardado None | coincide n=41
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda: informado 0.045 | recalculado 0.04533274498048666 | guardado None | coincide n=25; 17 a favor
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda · IC 95 % inferior: informado 0.007 | recalculado 0.006544383124748546 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda · IC 95 % superior: informado 0.083 | recalculado 0.08278615631163042 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes: informado 0.059 | recalculado 0.058654773767174616 | guardado None | coincide n=16; 11 a favor
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes · IC 95 % inferior: informado 0.014 | recalculado 0.014286265093334612 | guardado None | coincide 
+[7 Etapas del 16-11] Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes · IC 95 % superior: informado 0.101 | recalculado 0.10149637090827783 | guardado None | coincide 
+[7 Etapas del 16-11] Principal 16-11 de activación: diferencia entre grupos (25 − 16) y p por permutación de grupo: informado None | recalculado 0.05370116676857111 | guardado None | sin cifra informada p bilateral 0.1510 (20.000 permutaciones, semilla 20261127)
+[7 Etapas del 16-11] Robustez R3 activación, partición 101: informado 0.042 | recalculado 0.04324225569377088 | guardado None | difiere 
+[7 Etapas del 16-11] Robustez R3 activación, partición 202: informado 0.042 | recalculado 0.04159122433475006 | guardado None | coincide 
+[7 Etapas del 16-11] Robustez R3 activación, partición 303: informado 0.042 | recalculado 0.04160077890079201 | guardado None | coincide 
+    (147s)
+
+Recuento por veredicto:
+veredicto
+coincide                 884
+sin cifra informada       20
+coincide con redondeo     19
+difiere                    5

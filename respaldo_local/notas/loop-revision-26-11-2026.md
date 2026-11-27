@@ -68,3 +68,24 @@ Resultados de la ronda 3:
 - **Coherencia final entre documentos** (`ronda5/COHERENCIA_FINAL.md`): 76 hechos cotejados contra CSV y fuentes primarias en 11 documentos; ninguna cifra vigente difiere. 50 correcciones de redacción (0 bloqueantes, 13 importantes): "al menos"/"es ocular" que quedaban en cierre, lámina 33 y READMEs; cinco frente a siete decisiones en presentación y ensayo; "agente independiente" en los READMEs; bitácora sin entrada del 26-11. Aplicadas las 50 por un agente distinto, más cinco restos que quedaban fuera de la lista.
 - **Lista única de pendientes:** `notas/pendientes-cierre-26-11-2026.md` (45 pendientes en nueve grupos, cada uno con la ruta de su detalle).
 - Presentación regenerada (39 láminas); láminas 1, 2, 29, 32 y 33 revisadas visualmente; guion hablado en 2.717 palabras, máximo 150 por minuto.
+- Respaldo de la ronda 4: commit `cf2e84c`, `HEAD` igual a `origin/main`.
+
+### Ronda 5 — 26-11, 21:12
+
+Dos revisiones con enfoques que no se habían usado, sin tocar archivos:
+
+1. **Recálculo de los descriptivos que la auditoría del 23-11 dejó sin verificar** (evolución en la sesión, AUC por tipo de página, kappa de la etiqueta corregida, fiabilidad entre mitades, persistencia de la etiqueta, correlaciones con la mirada, calidad de la limpieza, robustez de la red, montaje, heterogeneidad por grupo, conteos de etiquetas), desde las predicciones y los datos guardados, sin ajustar modelos.
+2. **Segunda lectura de comisión**, por un lector estadístico que no conoce la primera hasta terminar la suya: inferencia, diseño, argumento, lagunas, legibilidad y defensa. Sirve además como prueba de convergencia: si ya no aparecen objeciones bloqueantes nuevas, los textos están estables.
+
+Pausa por límite de uso de la cuenta entre las 21:20 del 26-11 y la 01:10 del 27-11; las dos revisiones se reanudaron desde donde iban.
+
+Resultados de la ronda 5 (informes en `documentacion/auditoria_final_23-11-2026/ronda6/`):
+
+- **Recálculo de descriptivos** (`RECALCULO_DESCRIPTIVOS.md`, con script y registro): 928 valores; 884 coinciden, 19 coinciden con redondeo, 5 difieren y ninguno cambia una decisión ni una lectura. Montaje y calidad de la limpieza recalculados desde los crudos para las 41 personas; etiquetas GSR V2, de atención y corregida reconstruidas e idénticas a las guardadas; pesos del *Modelo Profesor* con PCA reproducidos. Correcciones en documentos vigentes: el límite de R1 sin dos personas es "en torno a 0,020" (depende de la semilla), y los dos grupos de desfase son 0,28 y 0,48 s. Siguen sin verificar, porque exigen entrenar o reajustar: importancias por permutación, selección de componentes de la ICA, AUC por fold de la búsqueda de hojas.
+- **Segunda lectura de comisión** (`SEGUNDA_LECTURA_COMITE.md`): 2 bloqueantes nuevas, 9 importantes, 8 menores. Verificadas en git, scripts y CSV, y aplicadas:
+  - El contraste del historial desplazado frente al placebo se registró a las 14:21 del 16-11, después de que el análisis de robustez (13:25) mostrara que el historial completo superaba al placebo en las mismas personas y particiones: es un refinamiento dirigido, no evidencia independiente.
+  - El placebo iguala la persona y el largo del historial, pero no el estímulo ni la cercanía en la sesión, y sus ventanas pueden ser posteriores.
+  - Resultados firmes que el texto no aprovechaba: el nulo de atención con posición no depende del margen (IC 95 % [−0,002; +0,005]) y la detección de atención es la misma dentro de un mismo estímulo (0,684).
+  - "Alta" en el *Attention Score* es mirada más quieta: dispersión y recorrido entran invertidos (`DIRECTIONS = [1, 1, −1, −1, 1]`). La propuesta del lector decía lo contrario y no se aplicó; se restituyó lo que consta en el código.
+- `ENSAYO.md` con 49 preguntas; lámina 30 titulada "Conclusiones provisorias: apoyo parcial".
+- Nuevos opcionales NO corridos, listados en minuta y pendientes: historial desplazado menos placebo dentro de un mismo estímulo; evaluación dejando grupos fuera.

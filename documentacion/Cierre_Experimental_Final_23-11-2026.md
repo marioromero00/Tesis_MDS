@@ -1,6 +1,6 @@
 # Cierre consolidado de la experimentación — 23-11-2026
 
-Este documento reemplaza como referencia a `Cierre_Experimental_Final_22-11-2026.md`, que es anterior a la reapertura. Reúne todas las etapas registradas entre el 16 y el 23 de noviembre de 2026, sus decisiones, su trazabilidad y la comprobación de reproducibilidad. No contiene resultados nuevos. Ante cualquier diferencia mandan los `INFORME.md` y los CSV de cada carpeta de resultados.
+Este documento reemplaza como referencia a `Cierre_Experimental_Final_22-11-2026.md`, que es anterior a la reapertura. Reúne todas las etapas registradas entre el 16 y el 23 de noviembre de 2026, sus decisiones, su trazabilidad y la comprobación de reproducibilidad. No contiene resultados nuevos. Ante cualquier diferencia de cifras mandan los `INFORME.md` y los CSV de cada carpeta de resultados; para las lecturas manda este documento y los borradores del 23-11, que moderan varias frases de los informes. Ajustado el 27-11-2026 a una segunda lectura crítica (`documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md`), sin cifras ni análisis nuevos.
 
 Estado: Mario Romero pidió este cierre el 23-11-2026. No hay aprobación del profesor guía registrada sobre estos resultados, sobre el margen práctico de 0,02 ni sobre el encuadre de la tesis. Etiqueta de Git: `cierre-experimental-2026-11-23` (anterior a la auditoría final; el texto vigente es el de `main`). Apunta a `aee6ab6`; la versión auditada es `af345a2` o posterior.
 
@@ -11,7 +11,7 @@ Evidencia mixta, con **apoyo parcial** a la hipótesis de temporalidad, que prov
 | Pregunta | Atención | Activación |
 |---|---|---|
 | ¿Mejora el modelo con historial? | Sí: +0,029 [+0,021; +0,037], efecto relevante | Sí: +0,036 [+0,010; +0,065], respaldo; concentrado en las 25 personas con que se eligió la configuración (+0,046, frente a +0,021 en las otras 16) |
-| ¿La mejora proviene de la fisiología de las ventanas previas? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | Evidencia acotada. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
+| ¿La mejora proviene de la fisiología de las ventanas previas? | No. Es la posición en el estímulo: con la posición como variable el historial agrega +0,001 [−0,002; +0,005], nulo concluyente | Evidencia acotada. El historial sin las ventanas de 6 s que promedia la etiqueta supera a un placebo en +0,046 [+0,018; +0,073] (contraste registrado el 16-11, después de ver que el historial completo superaba al placebo); ese contraste no excluye el soporte del filtro tónico de la GSR, que usa toda la sesión, y su placebo proviene de otros estímulos. En la curva del 22-11 solo hay respaldo para los 6 s anteriores (+0,047 [+0,017; +0,078]; una partición, 40 personas); a 12 s es inconcluso y desde 24 s no se distingue del placebo, sin demostrar ausencia |
 | ¿Queda algo al controlar la posición? | No: nulo concluyente dentro de ±0,02 | +0,032 [+0,004; +0,059], inconcluso tras Holm; dentro de un mismo estímulo, +0,009, también inconcluso |
 | ¿Aporta el orden de las ventanas (GRU)? | No: +0,008 [−0,004; +0,020], y rinde 0,040 bajo el HGB | No demostrado: GRU − HGB, ambos con historial, +0,020 [−0,017; +0,057], inconcluso. La GRU con historial supera a su control de una ventana (+0,051, secundario sin corrección), lo que mide el historial y no el orden |
 | ¿Qué fusión? | Tardía sobre temprana con MLP: +0,012 [+0,005; +0,021], secundario; con HGB (cierre V3) el signo es el contrario | Sin diferencias demostradas (inconcluso: +0,006 [−0,032; +0,042]) |
@@ -67,7 +67,7 @@ Las AUC son por persona. Las decisiones siguen las reglas registradas, con marge
 
 ## Trazabilidad
 
-Cada etapa con protocolo entró a Git antes que sus predicciones (orden de commits verificado; que se publicara antes de correr no es verificable desde el repositorio) y se ejecutó una vez. Salvedades: la versión 1 del cierre V3 se detuvo en el primer fold de entrenamiento por una auditoría de código y se conserva en `cierre_v3_16-11-2026_abortado_fusion`; la enmienda E1 se registró el 16-11 y se corrió el 18-11; la fase 2 se registró con la fase 1 en marcha y es post hoc.
+Cada etapa con protocolo entró a Git antes que sus predicciones (orden de commits verificado; que se publicara antes de correr no es verificable desde el repositorio) y se ejecutó una vez. Salvedades: la versión 1 del cierre V3 se detuvo en el primer fold de entrenamiento por una auditoría de código y se conserva en `cierre_v3_16-11-2026_abortado_fusion`; la enmienda E1 se registró el 16-11 y se corrió el 18-11; la fase 2 se registró con la fase 1 en marcha y es post hoc. La ampliación E1–E6 se registró a las 14:21:14 del 16-11 (`d2d5530`) y su enmienda a las 14:25:57 (`8beb675`), después del commit de resultados de la robustez (`550f924`, 13:25:45), cuyo informe ya mostraba que en activación el historial completo superaba al placebo (+0,038, p Holm 0,043). Usa las mismas 41 personas y la misma partición (los ocho grupos de los dos `protocolo.json` son idénticos): es un análisis dirigido por ese resultado, como el explicativo de posición, y no una evidencia independiente.
 
 | Etapa | Carpeta en `resultados/` | Registro | Enmienda previa a resultados | Resultados | Auditoría de resultados |
 |---|---|---|---|---|---|
@@ -106,7 +106,7 @@ Un asistente automático, a pedido del autor, recalculó con código separado la
 - **Sin hallazgos bloqueantes.** Seis hallazgos importantes, todos de lectura; este documento ya los incorpora:
   1. La red depende de lo ocular en su detección, no en su ventaja sobre el HGB.
   2. La limpieza ocular quita cerca de un tercio de la detección sobre el azar (0,060 de 0,181); que el resto sea ocular es una inferencia.
-  3. El efecto temporal en activación no está confirmado: el contraste principal se estimó nueve veces sobre las mismas personas (entre +0,028 y +0,047; 3 de 9 intervalos incluyen el cero) y es desigual entre personas (mediana +0,014; 23 de 41). El apoyo más sólido es el historial sin las ventanas de 6 s que promedia la etiqueta frente al placebo (+0,046, p Holm 0,004, registrado antes de correr).
+  3. El efecto temporal en activación no está confirmado: el contraste principal se estimó nueve veces sobre las mismas personas (entre +0,028 y +0,047; 3 de 9 intervalos incluyen el cero) y es desigual entre personas (mediana +0,014; 23 de 41). El contraste mejor sostenido es el historial sin las ventanas de 6 s que promedia la etiqueta frente al placebo (+0,046, p Holm 0,004; protocolo fijado antes de sus predicciones, pero después de ver que el historial completo superaba al placebo en las mismas personas y la misma partición).
   4. Solo la banda de 6 s tiene respaldo; de 12 s en adelante los resultados son inconclusos, no nulos.
   5. La ventaja de la fusión tardía es un secundario entre redes MLP; con HGB el signo es el contrario.
   6. El aporte por señal en activación descansa en importancias descriptivas y ruidosas.
@@ -142,7 +142,7 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 - Las etiquetas son pseudoetiquetas calculadas offline y relativas a la sesión de cada persona; no validan una medida externa de atención ni de activación.
 - La etiqueta de atención se define con la conducta ocular, y el EEG contiene la huella eléctrica de esa conducta. La regla de no-circularidad entre señales no asegura independencia fisiológica. Con estos datos no se puede afirmar detección cerebral de atención.
 - La limpieza ocular es parcial; 0,060 se lee como cota inferior de la contribución ocular. Es la lectura más defendible y no una demostración: los componentes se eligen con la mirada, que también define la etiqueta, el control no está igualado en esa relación y tres componentes arrastran actividad frontal no ocular.
-- El EEG y el seguidor ocular tienen un desfase de reloj de 0,18 a 0,53 s sin corregir; su efecto no se midió. Se agrupa en dos valores (cerca de 0,27 s en P2 a P21, P36 y P37; cerca de 0,47 s en el resto), lo que sugiere una causa sistemática de adquisición que no se investigó.
+- El EEG y el seguidor ocular tienen un desfase de reloj de 0,18 a 0,53 s sin corregir; su efecto no se midió. Se agrupa en dos valores (cerca de 0,28 s en P2 a P21, P36 y P37; cerca de 0,48 s en el resto), lo que sugiere una causa sistemática de adquisición que no se investigó.
 - El diseño de evaluación cambió después de un resultado nulo (cierre V3).
 - **Selección de la configuración (límite destacado).** Las 15 hojas del modelo de activación se eligieron con la AUC media de los modelos con 1, 8 y 32 ventanas; la elección la decidió el de 32 (0,5311 con 15 hojas frente a 0,4994 con 7), y las 25 personas de esa búsqueda son 25 de las 41 evaluadas. Los contrastes del HGB con historial hasta 32 se concentran en ellas. El sesgo a favor del historial es posible y no está demostrado: la diferencia entre grupos no es significativa con 16 personas, y el historial desplazado frente al placebo y la GRU son positivos en ambos grupos. No se corrió una sensibilidad con 7 hojas ni con selección anidada.
 - La etiqueta de atención (*Modelo Profesor* con PCA) se siguió usando tras observar que los modelos la predecían mejor que la de pesos iguales; eso no es un argumento de validez.
@@ -156,6 +156,14 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 - La red recibe la señal escalada por persona y canal y el modelo de referencia no: su ventaja no puede atribuirse a la arquitectura sin separar ese factor.
 - La red sobre la señal cruda es una sola arquitectura sin búsqueda; su pérdida al limpiar no tiene control propio.
 - El explicativo de posición y la fase 2 son post hoc. Los contrastes secundarios no llevan corrección por multiplicidad.
+- La ampliación con el historial desplazado es un análisis dirigido: se registró después de ver el placebo de la robustez (ver "Trazabilidad").
+- El placebo iguala la persona y el largo del historial, pero no el estímulo ni la cercanía en la sesión: sus ventanas se sortean entre las de la misma persona en otros estímulos, anteriores o posteriores. El contraste entre el historial real y el placebo no separa la fisiología previa de pertenecer a la misma página; dentro de un mismo estímulo no se demostró que el historial supere al tiempo transcurrido.
+- Los intervalos son percentiles de un *bootstrap* de personas: no recogen la dependencia entre las AUC por persona de una validación cruzada ni la variación por conjunto de entrenamiento.
+- El control del tiempo de sesión solo corrige la tendencia común a las personas.
+- La adaptación a la persona no es comparable con los demás contrastes: sus etiquetas de calibración se definen con la mediana de toda la sesión e informan sobre la parte evaluada.
+- "Alta" en el *Attention Score* designa una mirada más quieta (fijaciones más largas, menos dispersión y recorrido): la dispersión y el recorrido entran invertidos antes de la componente.
+- En las pruebas contra 0,5, "efecto relevante" solo indica que el límite inferior de la AUC supera 0,52.
+- El detalle de cada uno de estos límites está en el borrador de Resultados y Discusión (secciones 6.1, 6.2, 6.4, 6.6, 7.1, 7.7, 7.11 y 8.4).
 - En activación las AUC absolutas son bajas (0,50 a 0,59).
 
 ## Queda abierto (no es experimentación)
@@ -178,6 +186,6 @@ Trabajo de cierre:
 2. Ajustar `Escritura/Borrador Conclusiones 23-11-2026.md` según las decisiones anteriores.
 3. Leer en texto completo las 8 referencias contrastadas solo por resumen (Barry 2005 y 2007, Boucsein 2012, Critchley 2002, Croft y Barry 2000, Iwasaki 2005, Keren 2010 y Yuval-Greenberg 2008); detalle en `documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
 
-Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, sensibilidad del modelo de activación con 7 hojas o con selección anidada, y cohorte nueva.
+Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, sensibilidad del modelo de activación con 7 hojas o con selección anidada, historial desplazado menos placebo dentro de un mismo estímulo (saldría de predicciones guardadas, sin entrenar; requiere orden del autor y protocolo registrado), evaluación dejando grupos experimentales fuera (requiere volver a entrenar), y cohorte nueva.
 
 Presentación vigente: `presentaciones/avances_tesis_06-11-2026` (versión 7).

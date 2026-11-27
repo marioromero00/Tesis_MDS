@@ -1,13 +1,15 @@
 # Minuta: decisiones para la reunión con el profesor guía
 
 > [!info] Estado
-> Preparada el 23-11-2026 a pedido de Mario. Es una propuesta para la reunión; **ninguna decisión está tomada** y no hay aprobación registrada del profesor guía sobre los resultados de noviembre. Las cifras son AUC por persona con intervalo de 95 % y salen de `documentacion/Cierre_Experimental_Final_23-11-2026.md` y de los informes citados.
+> Preparada el 23-11-2026 a pedido de Mario. Es una propuesta para la reunión; **ninguna decisión está tomada** y no hay aprobación registrada del profesor guía sobre los resultados de noviembre. Las cifras son AUC por persona con intervalo de 95 % y salen de `documentacion/Cierre_Experimental_Final_23-11-2026.md` y de los informes citados. Puesta al día el 27-11-2026 con una segunda lectura crítica (`repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md`): agrega insumos y no decide nada.
 
 ## Lo que se presenta en una frase
 
 Con 41 personas, la hipótesis tiene apoyo parcial: el historial de las señales ayuda a predecir la activación (+0,046 [+0,018; +0,073] sobre un placebo en el contraste registrado el 16-11; con respaldo solo para los 6 s anteriores), no la atención; y cerca de un tercio de la detección de atención por EEG (0,681) depende de componentes ligados a los ojos (0,621 al quitarlos).
 
 Tres salvedades que conviene decir junto con esa frase: con el diseño original (entrenamiento, validación y test) el cierre V3 no había mostrado una ventaja consistente, y el análisis con 41 personas se registró después de verlo; el apoyo se refiere a un resumen del historial reciente, no a un modelo secuencial ni a la combinación de señales; y el contraste contra placebo excluye las ventanas de 6 s que promedia la etiqueta, pero no el soporte de su filtro tónico, que usa toda la sesión: la etiqueta es en lo esencial el nivel tónico de la GSR, y cerca de un cuarto de su peso cae antes de esas ventanas y otro cuarto después.
+
+Dos salvedades más, agregadas el 27-11: ese contraste se fijó antes de obtener sus predicciones, pero después de ver, el mismo día y en las mismas personas, que el historial completo superaba al placebo, de modo que es un análisis dirigido y no una evidencia independiente; y el placebo proviene de otros estímulos de la misma persona, así que el contraste no separa la fisiología de los segundos previos de pertenecer a la misma página (secciones 6.6 y 8.4 del borrador de Resultados y Discusión).
 
 ## Decisiones
 
@@ -21,6 +23,8 @@ Tres salvedades que conviene decir junto con esa frase: con el diseño original 
 Por qué importa: las 41 personas incluyen las de validación y test ya consultadas. Es la decisión que define si se escribe o se recluta.
 
 Dato agregado el 26-11 (auditoría de código, `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda3/AUDITORIA_CODIGO.md`): las 15 hojas del modelo de activación se eligieron con la AUC media de los modelos con 1, 8 y 32 ventanas, la elección la decidió el de 32, y las 25 personas de esa búsqueda son 25 de las 41 evaluadas. El contraste principal de activación se concentra en ellas: +0,055 [+0,012; +0,101] frente a +0,001 [−0,052; +0,055] en las otras 16 el 16-11, y +0,046 frente a +0,021 con cinco particiones. El sesgo a favor del historial es posible y no está demostrado: la diferencia entre grupos no es significativa con 16 personas, y el historial desplazado frente al placebo (+0,035 y +0,064) y la GRU (+0,045 y +0,059) son positivos en ambos grupos. Con la opción A hay que declararlo como límite destacado. Experimento opcional, que aquí solo se lista: una sensibilidad con 7 hojas o con selección anidada; requiere volver a correr y reabrir la experimentación.
+
+Otros dos experimentos opcionales, no corridos, que aquí solo se listan (agregados el 27-11): historial desplazado menos placebo dentro de un mismo estímulo (saldría de predicciones guardadas, sin entrenar; requiere orden del autor y protocolo registrado); y evaluación dejando grupos experimentales fuera (requiere volver a entrenar).
 Fuente: `resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md`.
 
 ### 2. ¿Qué cuenta como "mejor"? El margen práctico de 0,02
@@ -58,6 +62,16 @@ Fuente: `resultados/enfoques_41p_22-11-2026/INFORME.md`.
 | B. Solo la hipótesis de temporalidad | Más simple, pero deja fuera el hallazgo sobre el EEG y expone la detección de atención a la crítica de circularidad. |
 
 Esta decisión incluye con qué lectura del criterio de la hipótesis se llega a "apoyo parcial". El criterio escrito dice que hay apoyo parcial si la ventaja aparece en una sola de las dos variables. Con el análisis de 41 personas la ventaja de desempeño aparece en las dos; el borrador concluye apoyo parcial porque exige además que la ventaja provenga de las ventanas previas, exigencia que no está en el criterio escrito (sección 8.1 del borrador de Resultados y Discusión).
+
+Insumo agregado el 27-11 (segunda lectura crítica), sin decidir: "apoyo parcial" es la más favorable de tres lecturas posibles, y conviene verlas juntas.
+
+| Lectura | Diseño y regla | Qué se concluye |
+|---|---|---|
+| i | El diseño de evaluación y la regla planificados (entrenamiento, validación y test por separado) | No hay evidencia para sostener la hipótesis: sin ventaja consistente en ninguna de las dos variables |
+| ii | El segundo diseño (41 personas en validación cruzada) y el criterio escrito, al pie de la letra | Ventaja de desempeño en las dos variables |
+| iii | El segundo diseño y la exigencia añadida de que la ventaja provenga de las ventanas previas | Ventaja solo en activación. Descansa en el contraste del historial desplazado frente al placebo, que se fijó después de ver el placebo del historial completo y cuyo placebo proviene de otros estímulos |
+
+El borrador usa la lectura iii de forma provisoria. Otro insumo para el aporte de la opción A: la advertencia metodológica tiene dos partes, la huella ocular en el EEG y el caso de la posición (una ventaja de un modelo con historial que reproduce un solo número, el tiempo transcurrido en el estímulo).
 
 ### 6. ¿Se aceptan etiquetas normalizadas con la sesión completa?
 

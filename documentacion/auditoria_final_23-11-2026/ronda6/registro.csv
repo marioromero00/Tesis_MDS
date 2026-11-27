@@ -1,0 +1,929 @@
+seccion,cifra,informado,decimales,fuente,recalculado,escala,guardado,dif_guardado,veredicto,nota
+8 Etiquetas,Ventanas de las 41 personas,22211.0,0.0,INFORME etiquetas_gsr_calidad_v2,22211.0,1.0,,,coincide,
+8 Etiquetas,Ventanas en train,13524.0,0.0,INFORME etiquetas_gsr_calidad_v2,13524.0,1.0,,,coincide,
+8 Etiquetas,Ventanas en validation,4662.0,0.0,INFORME etiquetas_gsr_calidad_v2,4662.0,1.0,,,coincide,
+8 Etiquetas,Ventanas en test,4025.0,0.0,INFORME etiquetas_gsr_calidad_v2,4025.0,1.0,,,coincide,
+8 Etiquetas,Ventanas con etiqueta de activación (tabla guardada),11796.0,0.0,INFORME etiquetas_gsr_calidad_v2,11796.0,1.0,,,coincide,
+8 Etiquetas,Ventanas con etiqueta de activación (reconstrucción propia desde las variables),11796.0,0.0,INFORME etiquetas_gsr_calidad_v2,11796.0,1.0,,,coincide,
+8 Etiquetas,Etiquetas de activación reconstruidas idénticas a las guardadas (ventanas distintas),0.0,0.0,INFORME etiquetas_gsr_calidad_v2,0.0,1.0,,,coincide,
+8 Etiquetas,% de ventanas que conserva la etiqueta de activación,53.1,1.0,INFORME etiquetas_gsr_calidad_v2,0.5310881995407681,100.0,,,coincide,
+8 Etiquetas,"% de ventanas que conserva la etiqueta (cierre: ""53 %"")",53.0,0.0,"Cierre, límites",0.5310881995407681,100.0,,,coincide,
+8 Etiquetas,Ventanas sin etiqueta,10415.0,0.0,INFORME etiquetas_gsr_calidad_v2,10415.0,1.0,,,coincide,
+8 Etiquetas,Sin etiqueta por cobertura/flag inválido,401.0,0.0,INFORME etiquetas_gsr_calidad_v2,401.0,1.0,,,coincide,
+8 Etiquetas,Sin etiqueta por empate con la mediana,19.0,0.0,INFORME etiquetas_gsr_calidad_v2,19.0,1.0,,,coincide,
+8 Etiquetas,Sin etiqueta por historial insuficiente,9995.0,0.0,INFORME etiquetas_gsr_calidad_v2,9995.0,1.0,,,coincide,
+8 Etiquetas,Etiquetas de activación en train,7028.0,0.0,INFORME etiquetas_gsr_calidad_v2,7028.0,1.0,,,coincide,
+8 Etiquetas,Etiquetas de activación en validation,2584.0,0.0,INFORME etiquetas_gsr_calidad_v2,2584.0,1.0,,,coincide,
+8 Etiquetas,Etiquetas de activación en test,2184.0,0.0,INFORME etiquetas_gsr_calidad_v2,2184.0,1.0,,,coincide,
+8 Etiquetas,P4: ventanas con etiqueta de activación,26.0,0.0,INFORME etiquetas_gsr_calidad_v2,26.0,1.0,,,coincide,
+8 Etiquetas,P4: ventanas totales,459.0,0.0,INFORME etiquetas_gsr_calidad_v2,459.0,1.0,,,coincide,
+8 Etiquetas,Personas con ambas clases de activación,41.0,0.0,INFORME etiquetas_gsr_calidad_v2,41.0,1.0,,,coincide,
+8 Etiquetas,Ventanas con etiqueta de atención (reconstrucción propia del puntaje),22176.0,0.0,"Auditoría 23-11, integridad",22176.0,1.0,,,coincide,
+8 Etiquetas,Ventanas de atención en las predicciones guardadas,22176.0,0.0,Auditoría 23-11,22176.0,1.0,,,coincide,
+8 Etiquetas,Etiquetas de atención de las predicciones distintas de las reconstruidas,0.0,0.0,—,0.0,1.0,,,coincide,
+8 Etiquetas,Ventanas válidas de entrenamiento del Modelo Profesor,13498.0,0.0,INFORME profesor_binario,13498.0,1.0,,,coincide,
+8 Etiquetas,Ventanas de entrenamiento omitidas por componentes incompletos,26.0,0.0,INFORME profesor_binario,26.0,1.0,,,coincide,
+8 Etiquetas,% de varianza de la primera componente,51.5,1.0,Borrador Resultados §2,0.5151527696982168,100.0,0.5151527696982166,2.220446049250313e-16,coincide,
+8 Etiquetas,Peso PCA: duración total de fijaciones,0.398,3.0,Borrador Resultados §2; cierre H3,0.3976040720368326,1.0,0.3976040720368328,-1.6653345369377348e-16,coincide,
+8 Etiquetas,Peso PCA: duración media de fijación,,3.0,Borrador Resultados §2; cierre H3,0.5084861787631813,1.0,0.5084861787631806,6.661338147750939e-16,sin cifra informada,
+8 Etiquetas,Peso PCA: dispersión de la mirada,,3.0,Borrador Resultados §2; cierre H3,0.5204410927027577,1.0,0.5204410927027584,-6.661338147750939e-16,sin cifra informada,
+8 Etiquetas,Peso PCA: recorrido de la mirada,,3.0,Borrador Resultados §2; cierre H3,0.5566036942658185,1.0,0.5566036942658186,-1.1102230246251565e-16,sin cifra informada,
+8 Etiquetas,Peso PCA: pupila,-0.052,3.0,Borrador Resultados §2; cierre H3,-0.05182860660437075,1.0,-0.05182860660437087,1.249000902703301e-16,coincide,
+8 Etiquetas,Peso mínimo de las cuatro variables de mirada,0.4,2.0,"INFORME enfoques (""0,40 a 0,56"")",0.3976040720368326,1.0,,,coincide,
+8 Etiquetas,Peso máximo de las cuatro variables de mirada,0.56,2.0,"INFORME enfoques (""0,40 a 0,56"")",0.5566036942658185,1.0,,,coincide,
+8 Etiquetas,% de concordancia entre profesor igualitario y PCA,66.28,2.0,INFORME profesor_binario,0.6627648540524522,100.0,0.6627648540524522,0.0,coincide,
+8 Etiquetas,Kappa entre profesor igualitario y PCA,0.3255,4.0,INFORME profesor_binario,0.3255289825329022,1.0,0.3255289825329022,0.0,coincide,
+8 Etiquetas,Ventanas comparadas entre profesores,13498.0,0.0,INFORME profesor_binario,13498.0,1.0,,,coincide,
+8 Etiquetas,% de ventanas con etiqueta de atención y fijaciones > 2.000 ms,28.0,0.0,"Cierre, límites (""cerca del 28 %"")",0.2774170274170274,100.0,,,coincide,
+8 Etiquetas,AUC del nivel tónico de la ventana contra la etiqueta de activación (media por persona),0.911,3.0,Cierre H2,0.9106046945669846,1.0,,,coincide,
+8 Etiquetas,"Ídem, juntando todas las ventanas",,,—,0.8819931775644301,1.0,,,sin cifra informada,
+8 Etiquetas,AUC de la componente fásica de la ventana contra la etiqueta de activación (media de las personas en que la variable varía),0.595,3.0,Borrador Resultados §2; AUDITORIA_CODIGO,0.594618708079131,1.0,,,coincide,"41 personas; con las 41 (constante = 0,5): 0.594619"
+8 Etiquetas,AUC de la número de respuestas de la ventana contra la etiqueta de activación (media de las personas en que la variable varía),0.522,3.0,Borrador Resultados §2; AUDITORIA_CODIGO,0.5224410963360919,1.0,,,coincide,"32 personas; con las 41 (constante = 0,5): 0.517515"
+8 Etiquetas,AUC de la prominencia de las respuestas de la ventana contra la etiqueta de activación (media de las personas en que la variable varía),0.522,3.0,Borrador Resultados §2; AUDITORIA_CODIGO,0.5224628251999743,1.0,,,coincide,"32 personas; con las 41 (constante = 0,5): 0.517532"
+8 Etiquetas,Ventanas de activación de clase alta,5898.0,0.0,Borrador Secciones pendientes §4.6,5898.0,1.0,,,coincide,
+8 Etiquetas,Ventanas de activación de clase baja,5898.0,0.0,Borrador Secciones pendientes §4.6,5898.0,1.0,,,coincide,
+8 Etiquetas,P4: ventanas con GSR válida,58.0,0.0,Borrador Secciones pendientes §4.6,58.0,1.0,,,coincide,
+8 Etiquetas,Ventanas del archivo completo,25992.0,0.0,Borrador Secciones pendientes §4.7,25992.0,1.0,,,coincide,
+8 Etiquetas,% de ventanas del archivo con fijaciones > 2.000 ms,27.8,1.0,Borrador Secciones pendientes §4.7,0.27750846414281316,100.0,,,coincide,
+8 Etiquetas,% de ventanas de las 41 personas con fijaciones > 2.000 ms,27.7,1.0,Borrador Secciones pendientes §4.7,0.2769798748367926,100.0,,,coincide,
+8 Etiquetas,% de ventanas de las 41 personas con fijaciones > 3.000 ms,4.0,0.0,Borrador Secciones pendientes §4.7,0.040160280941875647,100.0,,,coincide,
+8 Etiquetas,"Duración total máxima de fijaciones en una ventana, ms",11365.0,0.0,Borrador Secciones pendientes §4.7,11365.0,1.0,,,coincide,
+1 Ampliación,"E4: diferencia máxima con fatiga_por_quintil.csv (20 filas × prevalencia, prob. media, AUC, personas)",0.0,9.0,fatiga_por_quintil.csv,1.1102230246251565e-16,1.0,,,coincide,
+1 Ampliación,"E6: diferencia máxima con por_categoria.csv (26 filas × ventanas, AUC, personas)",0.0,9.0,por_categoria.csv,1.1102230246251565e-16,1.0,,,coincide,
+1 Ampliación,"E4 atención, AUC sin historial, quintil 1",0.65,2.0,INFORME ampliación E4,0.6528417316093341,1.0,0.6528417316093341,0.0,coincide,
+1 Ampliación,"E4 atención, AUC sin historial, quintil 5",0.71,2.0,INFORME ampliación E4,0.7127217521114521,1.0,0.7127217521114521,0.0,coincide,
+1 Ampliación,"E4 atención, AUC con historial, quintil 1",0.69,2.0,INFORME ampliación E4,0.6886770749897824,1.0,0.6886770749897824,0.0,coincide,
+1 Ampliación,"E4 atención, AUC con historial, quintil 5",0.74,2.0,INFORME ampliación E4,0.744833440851264,1.0,0.744833440851264,0.0,coincide,
+1 Ampliación,"E4 atención, prevalencia de alta, quintil 3",0.32,2.0,INFORME ampliación E4,0.3176895306859206,1.0,0.3176895306859206,0.0,coincide,
+1 Ampliación,"E4 activación, prevalencia de alta, quintil 5",0.37,2.0,INFORME ampliación E4,0.36928934010152287,1.0,0.36928934010152287,0.0,coincide,
+1 Ampliación,"E4 activación, AUC con historial, quintil 5",0.64,2.0,INFORME ampliación E4,0.6404068037596077,1.0,0.6404068037596077,0.0,coincide,
+1 Ampliación,E4 atencion hgb_c1 quintil 1: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6528417316093341,1.0,0.6528417316093341,0.0,coincide,prevalencia np.float64(0.5489887640449438); personas 41
+1 Ampliación,E4 atencion hgb_c1 quintil 2: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6578902135378145,1.0,0.6578902135378145,0.0,coincide,prevalencia np.float64(0.5914124293785311); personas 40
+1 Ampliación,E4 atencion hgb_c1 quintil 3: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6585733027545313,1.0,0.6585733027545312,1.1102230246251565e-16,coincide,prevalencia np.float64(0.3176895306859206); personas 41
+1 Ampliación,E4 atencion hgb_c1 quintil 4: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.7040460869367674,1.0,0.7040460869367674,0.0,coincide,prevalencia np.float64(0.5236158192090395); personas 41
+1 Ampliación,E4 atencion hgb_c1 quintil 5: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.7127217521114521,1.0,0.7127217521114521,0.0,coincide,prevalencia np.float64(0.5157515751575158); personas 41
+1 Ampliación,E4 atencion hgb_c32 quintil 1: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6886770749897824,1.0,0.6886770749897824,0.0,coincide,prevalencia np.float64(0.5489887640449438); personas 41
+1 Ampliación,E4 atencion hgb_c32 quintil 2: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6939551205315919,1.0,0.6939551205315919,0.0,coincide,prevalencia np.float64(0.5914124293785311); personas 40
+1 Ampliación,E4 atencion hgb_c32 quintil 3: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6583526101208147,1.0,0.6583526101208147,0.0,coincide,prevalencia np.float64(0.3176895306859206); personas 41
+1 Ampliación,E4 atencion hgb_c32 quintil 4: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.7106701725889082,1.0,0.7106701725889082,0.0,coincide,prevalencia np.float64(0.5236158192090395); personas 41
+1 Ampliación,E4 atencion hgb_c32 quintil 5: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.744833440851264,1.0,0.744833440851264,0.0,coincide,prevalencia np.float64(0.5157515751575158); personas 41
+1 Ampliación,E4 activacion hgb_c1 quintil 1: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.5708047537127581,1.0,0.5708047537127581,0.0,coincide,prevalencia np.float64(0.5574736842105263); personas 34
+1 Ampliación,E4 activacion hgb_c1 quintil 2: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.5266983110493417,1.0,0.5266983110493417,0.0,coincide,prevalencia np.float64(0.44491705657167163); personas 36
+1 Ampliación,E4 activacion hgb_c1 quintil 3: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.4770397175919313,1.0,0.4770397175919313,0.0,coincide,prevalencia np.float64(0.6101910828025477); personas 41
+1 Ampliación,E4 activacion hgb_c1 quintil 4: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.5050264698472992,1.0,0.5050264698472992,0.0,coincide,prevalencia np.float64(0.5180774138664398); personas 35
+1 Ampliación,E4 activacion hgb_c1 quintil 5: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.5251032966824036,1.0,0.5251032966824036,0.0,coincide,prevalencia np.float64(0.36928934010152287); personas 34
+1 Ampliación,E4 activacion hgb_c32 quintil 1: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.554386525073231,1.0,0.554386525073231,0.0,coincide,prevalencia np.float64(0.5574736842105263); personas 34
+1 Ampliación,E4 activacion hgb_c32 quintil 2: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.5450459414693016,1.0,0.5450459414693016,0.0,coincide,prevalencia np.float64(0.44491705657167163); personas 36
+1 Ampliación,E4 activacion hgb_c32 quintil 3: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.4804678332256842,1.0,0.4804678332256842,0.0,coincide,prevalencia np.float64(0.6101910828025477); personas 41
+1 Ampliación,E4 activacion hgb_c32 quintil 4: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.522169401437513,1.0,0.522169401437513,0.0,coincide,prevalencia np.float64(0.5180774138664398); personas 35
+1 Ampliación,E4 activacion hgb_c32 quintil 5: prevalencia / AUC / personas,,,fatiga_por_quintil.csv,0.6404068037596077,1.0,0.6404068037596077,0.0,coincide,prevalencia np.float64(0.36928934010152287); personas 34
+1 Ampliación,E6 atencion hgb_c1 sitio web: AUC,0.707,3.0,INFORME ampliación E6,0.7066969013316976,1.0,0.7066969013316976,0.0,coincide,41 personas; 6423 ventanas
+1 Ampliación,E6 atencion hgb_c1 numerado: AUC,0.681,3.0,INFORME ampliación E6,0.6810317901075447,1.0,0.6810317901075447,0.0,coincide,41 personas; 6637 ventanas
+1 Ampliación,E6 atencion hgb_c1 diseño: AUC,0.649,3.0,INFORME ampliación E6,0.6486488407987343,1.0,0.6486488407987343,0.0,coincide,41 personas; 4082 ventanas
+1 Ampliación,E6 atencion hgb_c1 imagen emotion: AUC,0.668,3.0,INFORME ampliación E6,0.6680426085990222,1.0,0.6680426085990222,0.0,coincide,30 personas; 1792 ventanas
+1 Ampliación,E6 atencion hgb_c1 imagen blur: AUC,0.696,3.0,INFORME ampliación E6,0.6955259512417408,1.0,0.6955259512417408,0.0,coincide,25 personas; 891 ventanas
+1 Ampliación,E6 atencion hgb_c1 texto: AUC,0.604,3.0,INFORME ampliación E6,0.6044353686262264,1.0,0.6044353686262264,0.0,coincide,41 personas; 2255 ventanas
+1 Ampliación,E6 atencion hgb_c32 sitio web: AUC,0.71,3.0,INFORME ampliación E6,0.7095852510780306,1.0,0.7095852510780306,0.0,coincide,41 personas; 6423 ventanas
+1 Ampliación,E6 atencion hgb_c32 numerado: AUC,0.698,3.0,INFORME ampliación E6,0.6978310286344331,1.0,0.6978310286344331,0.0,coincide,41 personas; 6637 ventanas
+1 Ampliación,E6 atencion hgb_c32 diseño: AUC,0.637,3.0,INFORME ampliación E6,0.6370126402145245,1.0,0.6370126402145244,1.1102230246251565e-16,coincide,41 personas; 4082 ventanas
+1 Ampliación,E6 atencion hgb_c32 imagen emotion: AUC,0.667,3.0,INFORME ampliación E6,0.6672377469583829,1.0,0.6672377469583829,0.0,coincide,30 personas; 1792 ventanas
+1 Ampliación,E6 atencion hgb_c32 imagen blur: AUC,0.599,3.0,INFORME ampliación E6,0.5989655493085061,1.0,0.5989655493085061,0.0,coincide,25 personas; 891 ventanas
+1 Ampliación,E6 atencion hgb_c32 texto: AUC,0.633,3.0,INFORME ampliación E6,0.6328293548928506,1.0,0.6328293548928506,0.0,coincide,41 personas; 2255 ventanas
+1 Ampliación,E6 activacion hgb_c1 sitio web: AUC,0.525,3.0,INFORME ampliación E6,0.5250154838466567,1.0,0.5250154838466567,0.0,coincide,40 personas; 5457 ventanas
+1 Ampliación,E6 activacion hgb_c1 numerado: AUC,0.588,3.0,INFORME ampliación E6,0.5884194044381912,1.0,0.5884194044381912,0.0,coincide,34 personas; 3291 ventanas
+1 Ampliación,E6 activacion hgb_c1 diseño: AUC,0.506,3.0,INFORME ampliación E6,0.5061461416864165,1.0,0.5061461416864165,0.0,coincide,20 personas; 1316 ventanas
+1 Ampliación,E6 activacion hgb_c1 texto: AUC,0.506,3.0,INFORME ampliación E6,0.5057736505013877,1.0,0.5057736505013877,0.0,coincide,30 personas; 1285 ventanas
+1 Ampliación,E6 activacion hgb_c32 sitio web: AUC,0.588,3.0,INFORME ampliación E6,0.5878792537481221,1.0,0.5878792537481221,0.0,coincide,40 personas; 5457 ventanas
+1 Ampliación,E6 activacion hgb_c32 numerado: AUC,0.591,3.0,INFORME ampliación E6,0.5913040398350516,1.0,0.5913040398350516,0.0,coincide,34 personas; 3291 ventanas
+1 Ampliación,E6 activacion hgb_c32 diseño: AUC,0.506,3.0,INFORME ampliación E6,0.5060238256487027,1.0,0.5060238256487026,1.1102230246251565e-16,coincide,20 personas; 1316 ventanas
+1 Ampliación,E6 activacion hgb_c32 texto: AUC,0.524,3.0,INFORME ampliación E6,0.5237448127407643,1.0,0.5237448127407643,0.0,coincide,30 personas; 1285 ventanas
+1 Ampliación,"E6 activacion hgb_c1 imagen emotion: AUC (el informe pone ""—"")",,,por_categoria.csv,0.5940757220852098,1.0,0.5940757220852098,0.0,coincide,5 personas; 401 ventanas; el informe la omite
+1 Ampliación,"E6 activacion hgb_c32 imagen emotion: AUC (el informe pone ""—"")",,,por_categoria.csv,0.48736343268791094,1.0,0.48736343268791094,0.0,coincide,5 personas; 401 ventanas; el informe la omite
+1 Ampliación,E1: % de filas de activacion con historial desplazado 6 ventanas,73.0,0.0,INFORME ampliación E1,0.7344862665310274,100.0,0.7344862665310274,0.0,coincide,
+1 Ampliación,E1: % de filas de atencion con historial desplazado 6 ventanas,40.0,0.0,INFORME ampliación E1,0.3981782106782107,100.0,0.3981782106782107,0.0,coincide,
+2 Enfoques,E1: etiquetas corregidas de las predicciones distintas de mi reconstrucción,0.0,0.0,—,0.0,1.0,,,coincide,
+2 Enfoques,E1: kappa por persona entre etiqueta original y corregida,0.81,2.0,INFORME enfoques E1,0.8083485936205715,1.0,0.8083485936205713,2.220446049250313e-16,coincide,
+2 Enfoques,E1: % de ventanas en que coinciden ambas etiquetas,90.6,1.0,INFORME enfoques E1,0.9063852813852814,100.0,0.9063852813852814,0.0,coincide,
+2 Enfoques,E1: % de etiquetas que cambian,9.4,1.0,INFORME enfoques E1,0.0936147186147186,100.0,,,coincide,
+2 Enfoques,"E1: % de etiquetas que cambian (auditorías: 9,36 %)",9.36,2.0,AUDITORIA_RESULTADOS enfoques,0.0936147186147186,100.0,,,coincide,
+2 Enfoques,E1: personas con algún cambio de etiqueta,41.0,0.0,AUDITORIA_RESULTADOS enfoques,41.0,1.0,,,coincide,
+2 Enfoques,"E1/posición: prevalencia de atención alta, primer segundo",0.51,2.0,Borrador Resultados §7.2; INFORME explicativo,0.5086346465191581,1.0,,,coincide,
+2 Enfoques,"E1/posición: prevalencia de atención alta, segundo 2",0.37,2.0,Borrador Resultados §7.2; INFORME explicativo,0.3740488586303564,1.0,,,coincide,
+2 Enfoques,"E1/posición: prevalencia de atención alta, segundo 3",0.38,2.0,Borrador Resultados §7.2; INFORME explicativo,0.38106565176022833,1.0,,,coincide,
+2 Enfoques,"E1/posición: prevalencia de atención alta, 9 a 12 s",0.53,2.0,Borrador Resultados §7.2; INFORME explicativo,0.5347560975609756,1.0,,,coincide,
+2 Enfoques,"E1/posición: prevalencia de atención alta, 12 s o más",0.62,2.0,Borrador Resultados §7.2; INFORME explicativo,0.6198658843252305,1.0,,,coincide,
+2 Enfoques,"Posición: prevalencia de atención alta, 13 s o más (tramos 13–20 y 21–32 juntos)",,,—,0.6255913494030187,1.0,,,sin cifra informada,
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 1 s",,,e1_descriptivos.csv,0.5086346465191581,1.0,0.5086346465191581,0.0,coincide,corregida np.float64(0.4970318402590394); n=3706
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 2 s",,,e1_descriptivos.csv,0.3740488586303564,1.0,0.3740488586303564,0.0,coincide,corregida np.float64(0.49539447336804165); n=2497
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 3 s",,,e1_descriptivos.csv,0.38106565176022833,1.0,0.38106565176022833,0.0,coincide,corregida np.float64(0.4933396764985728); n=2102
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 4 s",,,e1_descriptivos.csv,0.42587601078167114,1.0,0.42587601078167114,0.0,coincide,corregida np.float64(0.4948787061994609); n=1855
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 5 s",,,e1_descriptivos.csv,0.46630565583634176,1.0,0.46630565583634176,0.0,coincide,corregida np.float64(0.49458483754512633); n=1662
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 6–8 s",,,e1_descriptivos.csv,0.5235087719298246,1.0,0.5235087719298246,0.0,coincide,corregida np.float64(0.49777777777777776); n=4275
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 9–12 s",,,e1_descriptivos.csv,0.5347560975609756,1.0,0.5347560975609756,0.0,coincide,corregida np.float64(0.49390243902439024); n=1640
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 13–20 s",,,e1_descriptivos.csv,0.5905550146056475,1.0,0.5905550146056475,0.0,coincide,corregida np.float64(0.4961051606621227); n=2054
+2 Enfoques,"E1: prevalencia de atención alta, etiqueta original, tramo 21–32 s",,,e1_descriptivos.csv,0.6557651991614256,1.0,0.6557651991614256,0.0,coincide,corregida np.float64(0.4964360587002096); n=2385
+2 Enfoques,E1: AUC hgb_c1 con etiqueta corregida,0.675,3.0,INFORME enfoques E1,0.6750299689488136,1.0,0.6750299689488136,0.0,coincide,
+2 Enfoques,E1: AUC hgb_c32 con etiqueta corregida,0.685,3.0,INFORME enfoques E1,0.6852286928565908,1.0,0.6852286928565909,-1.1102230246251565e-16,coincide,
+2 Enfoques,E1: AUC pos_c1 con etiqueta corregida,0.681,3.0,INFORME enfoques E1,0.680792199837675,1.0,0.680792199837675,0.0,coincide,
+2 Enfoques,E1: AUC pos_only con etiqueta corregida,0.504,3.0,INFORME enfoques E1,0.5044226964968556,1.0,0.5044226964968556,0.0,coincide,
+2 Enfoques,E1: AUC pos_only con etiqueta corregida · IC 95 % inferior,0.498,3.0,INFORME enfoques E1,0.4983318928077776,1.0,0.4983318928077776,0.0,coincide,
+2 Enfoques,E1: AUC pos_only con etiqueta corregida · IC 95 % superior,0.51,3.0,INFORME enfoques E1,0.5101151585412522,1.0,0.5101151585412522,0.0,coincide,
+2 Enfoques,E1: AUC hgb_c1 con etiqueta original,0.683,3.0,INFORME enfoques E1,0.6829713462923324,1.0,0.6829713462923324,0.0,coincide,
+2 Enfoques,E1: mejora del historial con etiqueta original,0.029,3.0,INFORME enfoques E1,0.02901323759706655,1.0,,,coincide,
+2 Enfoques,E1: mejora del historial con etiqueta corregida (A2),0.01,3.0,INFORME enfoques E1,0.010198723907777329,1.0,,,coincide,
+2 Enfoques,E1: A1 detección corregida − original,-0.008,3.0,INFORME enfoques E1,-0.00794137734351867,1.0,,,coincide,
+2 Enfoques,E2: AUC Todo el EEG,0.681,3.0,INFORME enfoques E2,0.6808945625853307,1.0,0.6808945625853305,1.1102230246251565e-16,coincide,"41/41 sobre 0,5"
+2 Enfoques,"E2: AUC Todo el EEG, a igual posición",0.675,3.0,INFORME enfoques E2,0.6745486646020634,1.0,0.6745486646020634,0.0,coincide,
+2 Enfoques,E2: AUC Potencia lenta y amplitud,0.673,3.0,INFORME enfoques E2,0.6725968393128409,1.0,0.6725968393128409,0.0,coincide,"41/41 sobre 0,5"
+2 Enfoques,"E2: AUC Potencia lenta y amplitud, a igual posición",0.659,3.0,INFORME enfoques E2,0.6585690422481217,1.0,0.6585690422481217,0.0,coincide,
+2 Enfoques,E2: AUC Canales frontales,0.675,3.0,INFORME enfoques E2,0.6748354351478008,1.0,0.6748354351478008,0.0,coincide,"41/41 sobre 0,5"
+2 Enfoques,"E2: AUC Canales frontales, a igual posición",0.667,3.0,INFORME enfoques E2,0.6666439788957631,1.0,0.6666439788957631,0.0,coincide,
+2 Enfoques,E2: AUC Canales posteriores,0.602,3.0,INFORME enfoques E2,0.6021934922346417,1.0,0.6021934922346417,0.0,coincide,"38/41 sobre 0,5"
+2 Enfoques,"E2: AUC Canales posteriores, a igual posición",0.6,3.0,INFORME enfoques E2,0.5999396373305933,1.0,0.5999396373305933,0.0,coincide,
+2 Enfoques,E2: AUC Solo alfa y beta,0.593,3.0,INFORME enfoques E2,0.5926796985708186,1.0,0.5926796985708186,0.0,coincide,"40/41 sobre 0,5"
+2 Enfoques,"E2: AUC Solo alfa y beta, a igual posición",0.593,3.0,INFORME enfoques E2,0.5925391455932579,1.0,0.5925391455932579,0.0,coincide,
+2 Enfoques,E2: AUC Solo GSR,0.545,3.0,INFORME enfoques E2,0.5452262437164975,1.0,0.5452262437164975,0.0,coincide,"36/41 sobre 0,5"
+2 Enfoques,"E2: AUC Solo GSR, a igual posición",0.547,3.0,INFORME enfoques E2,0.5470615645348915,1.0,0.5470615645348915,0.0,coincide,
+2 Enfoques,E2: B7 (lento y amplitud) − (alfa y beta),0.08,3.0,INFORME enfoques E2,0.07991714074202225,1.0,,,coincide,40/41
+2 Enfoques,E2: B8 frontales − posteriores,0.073,3.0,INFORME enfoques E2,0.07264194291315906,1.0,,,coincide,38/41
+2 Enfoques,E2: B3 (EEG + GSR) − solo EEG,0.002,3.0,INFORME enfoques E2,0.00207678370700173,1.0,,,coincide,24/41
+2 Enfoques,E2: B4 solo EEG − solo GSR,0.136,3.0,INFORME enfoques E2,0.13566831886883296,1.0,,,coincide,40/41
+2 Enfoques,"E2: control con etiquetas barajadas, AUC",0.496,3.0,INFORME enfoques E2,0.4964033939539211,1.0,0.4964033939539212,-1.1102230246251565e-16,coincide,
+2 Enfoques,"E2: control con etiquetas barajadas, AUC · IC 95 % inferior",0.482,3.0,INFORME enfoques E2,0.4818271220587159,1.0,0.4818271220587159,0.0,coincide,
+2 Enfoques,"E2: control con etiquetas barajadas, AUC · IC 95 % superior",0.51,3.0,INFORME enfoques E2,0.5097799701575444,1.0,0.5097799701575444,0.0,coincide,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_c1 con recorrido de la mirada (invertido)",0.41,2.0,INFORME enfoques E2,0.4143053664414025,1.0,0.41430536644140237,1.1102230246251565e-16,coincide,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_c1 con dispersión (invertida)",0.3,2.0,INFORME enfoques E2,0.29893964015353,1.0,0.29893964015353,0.0,coincide,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_c1 con duración total de fijaciones",0.29,2.0,INFORME enfoques E2,0.2924019573971859,1.0,0.2924019573971859,0.0,coincide,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_c1 con pupila",-0.09,2.0,INFORME enfoques E2,-0.09193806007903467,1.0,-0.09193806007903467,0.0,coincide,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_c1 con puntaje ocular",,2.0,INFORME enfoques E2,0.3795172919438137,1.0,0.3795172919438137,0.0,sin cifra informada,
+2 Enfoques,"E2: Spearman medio por persona, prob. eeg_alfa_beta con recorrido (invertido)",,2.0,INFORME enfoques E2,0.22439418724873142,1.0,0.22439418724873136,5.551115123125783e-17,sin cifra informada,
+2 Enfoques,E3: segmentos con objetivo (sin empates),1589.0,0.0,INFORME enfoques E3,1589.0,1.0,,,coincide,
+2 Enfoques,E3: segmentos excluidos por empate,47.0,0.0,INFORME enfoques E3,47.0,1.0,,,coincide,
+2 Enfoques,E3: % de segmentos con etiqueta unánime,79.0,0.0,INFORME enfoques E3,0.7948395217117684,100.0,0.7948395217117684,0.0,coincide,
+2 Enfoques,E3: mediana de segmentos por persona,36.0,0.0,INFORME enfoques E3,36.0,1.0,,,coincide,
+2 Enfoques,E3: segmentos con 3 o más ventanas etiquetadas,1348.0,0.0,INFORME enfoques E3,1348.0,1.0,,,coincide,
+2 Enfoques,E3: segmentos con dos o menos ventanas etiquetadas,241.0,0.0,INFORME enfoques E3,241.0,1.0,,,coincide,
+2 Enfoques,E3: filas por estrategia y partición en las predicciones,1589.0,0.0,INFORME enfoques E3,1589.0,1.0,,,coincide,
+2 Enfoques,E3: AUC seg,0.587,3.0,INFORME enfoques E3,0.5865803916494968,1.0,0.5865803916494968,0.0,coincide,
+2 Enfoques,E3: AUC seg · IC 95 % inferior,0.55,3.0,INFORME enfoques E3,0.5504193044515391,1.0,0.5504193044515391,0.0,coincide,
+2 Enfoques,E3: AUC seg · IC 95 % superior,0.622,3.0,INFORME enfoques E3,0.6215595594329504,1.0,0.6215595594329504,0.0,coincide,
+2 Enfoques,E3: AUC agg_c32,0.567,3.0,INFORME enfoques E3,0.5670370015803248,1.0,0.5670370015803248,0.0,coincide,
+2 Enfoques,E3: AUC agg_c1,0.532,3.0,INFORME enfoques E3,0.532443972415375,1.0,0.532443972415375,0.0,coincide,
+2 Enfoques,E3: AUC dur_only,0.535,3.0,INFORME enfoques E3,0.5354112818374832,1.0,0.5354112818374832,0.0,coincide,
+2 Enfoques,E3: AUC dur_only · IC 95 % inferior,0.488,3.0,INFORME enfoques E3,0.48769266535449163,1.0,0.48769266535449163,0.0,coincide,
+2 Enfoques,E3: AUC dur_only · IC 95 % superior,0.583,3.0,INFORME enfoques E3,0.5826360491796257,1.0,0.5826360491796257,0.0,coincide,
+2 Enfoques,"E3: personas con AUC del modelo de estímulo sobre 0,5",32.0,0.0,INFORME enfoques E3,32.0,1.0,,,coincide,
+2 Enfoques,E3: C2 modelo de estímulo − promedio por ventana con historial,0.02,3.0,INFORME enfoques E3,0.019543390069171995,1.0,,,coincide,23/41; p 0.1606
+2 Enfoques,E3: C2 modelo de estímulo − promedio por ventana con historial · IC 95 % inferior,-0.007,3.0,INFORME enfoques E3,-0.007322656217593825,1.0,,,coincide,
+2 Enfoques,E3: C2 modelo de estímulo − promedio por ventana con historial · IC 95 % superior,0.046,3.0,INFORME enfoques E3,0.04567974657050325,1.0,,,coincide,
+2 Enfoques,E3: modelo de estímulo − promedio por ventana sin historial,0.054,3.0,INFORME enfoques E3,0.05413641923412178,1.0,0.05413641923412177,1.3877787807814457e-17,coincide,27/41; p 0.0135
+2 Enfoques,E3: modelo de estímulo − promedio por ventana sin historial · IC 95 % inferior,0.013,3.0,INFORME enfoques E3,0.01339847772708679,1.0,0.01339847772708676,3.122502256758253e-17,coincide,
+2 Enfoques,E3: modelo de estímulo − promedio por ventana sin historial · IC 95 % superior,0.095,3.0,INFORME enfoques E3,0.09499374974415452,1.0,0.0949937497441545,1.3877787807814457e-17,coincide,
+2 Enfoques,E3: C3 (estímulo + duración) − solo duración,0.048,3.0,INFORME enfoques E3,0.04836905666398221,1.0,,,coincide,25/41; p 0.1332
+2 Enfoques,E3: C3 (estímulo + duración) − solo duración · IC 95 % inferior,-0.014,3.0,INFORME enfoques E3,-0.014117590494212698,1.0,,,coincide,
+2 Enfoques,E3: C3 (estímulo + duración) − solo duración · IC 95 % superior,0.109,3.0,INFORME enfoques E3,0.10923743477732165,1.0,,,coincide,
+2 Enfoques,"E3: C1 modelo de estímulo − 0,5",0.087,3.0,INFORME enfoques E3,0.08658039164949678,1.0,,,coincide,p 0.00004
+2 Enfoques,"E3: C1 modelo de estímulo − 0,5 · IC 95 % inferior",0.05,3.0,INFORME enfoques E3,0.05041930445153898,1.0,,,coincide,
+2 Enfoques,"E3: C1 modelo de estímulo − 0,5 · IC 95 % superior",0.122,3.0,INFORME enfoques E3,0.12155955943295033,1.0,,,coincide,
+2 Enfoques,E3: la numeración de segmentos del archivo coincide con mi reconstrucción (0 = sí),0.0,0.0,—,0.0,1.0,,,coincide,
+2 Enfoques,"E3 (3+ ventanas): estímulo − 0,5",0.099,3.0,INFORME enfoques E3,0.09850653734642988,1.0,0.09850653734642989,-1.3877787807814457e-17,coincide,
+2 Enfoques,"E3 (3+ ventanas): estímulo − 0,5 · IC 95 % inferior",0.062,3.0,INFORME enfoques E3,0.061706659529627284,1.0,0.061706659529627284,0.0,coincide,
+2 Enfoques,"E3 (3+ ventanas): estímulo − 0,5 · IC 95 % superior",0.134,3.0,INFORME enfoques E3,0.13409570806400845,1.0,0.13409570806400847,-2.7755575615628914e-17,coincide,
+2 Enfoques,E3 (3+ ventanas): estímulo − promedio por ventana,0.02,3.0,INFORME enfoques E3,0.020217692059068783,1.0,0.020217692059068787,-3.469446951953614e-18,coincide,
+2 Enfoques,E3 (3+ ventanas): estímulo − promedio por ventana · IC 95 % inferior,-0.006,3.0,INFORME enfoques E3,-0.006413588479768658,1.0,-0.006413588479768652,-6.071532165918825e-18,coincide,
+2 Enfoques,E3 (3+ ventanas): estímulo − promedio por ventana · IC 95 % superior,0.046,3.0,INFORME enfoques E3,0.04616600764777498,1.0,0.046166007647774995,-1.3877787807814457e-17,coincide,
+2 Enfoques,E3 (3+ ventanas): (estímulo + duración) − solo duración,0.054,3.0,INFORME enfoques E3,0.05361275193211536,1.0,0.05361275193211536,0.0,coincide,
+2 Enfoques,E3 (3+ ventanas): (estímulo + duración) − solo duración · IC 95 % inferior,-0.005,3.0,INFORME enfoques E3,-0.004911792599305744,1.0,-0.004911792599305745,8.673617379884035e-19,coincide,
+2 Enfoques,E3 (3+ ventanas): (estímulo + duración) − solo duración · IC 95 % superior,0.108,3.0,INFORME enfoques E3,0.10778978727228816,1.0,0.10778978727228816,0.0,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC sin historial",0.76,2.0,INFORME enfoques E4,0.7560975609756098,1.0,0.7560975609756099,-1.1102230246251565e-16,coincide,n=41
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC sin historial · IC 95 % inferior",0.58,2.0,INFORME enfoques E4,0.5807001974908039,1.0,0.580700197490804,-1.1102230246251565e-16,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC sin historial · IC 95 % superior",0.86,2.0,INFORME enfoques E4,0.8561226502714888,1.0,0.8561226502714888,0.0,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC con historial",0.64,2.0,INFORME enfoques E4,0.6428571428571429,1.0,0.6428571428571429,0.0,coincide,n=41
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC con historial · IC 95 % inferior",0.4,2.0,INFORME enfoques E4,0.4012001674975391,1.0,0.4012001674975391,0.0,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, AUC con historial · IC 95 % superior",0.8,2.0,INFORME enfoques E4,0.8035666030741211,1.0,0.8035666030741211,0.0,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, ganancia del historial",0.3,2.0,INFORME enfoques E4,0.29982578397212545,1.0,0.2998257839721255,-5.551115123125783e-17,coincide,n=41
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, ganancia del historial · IC 95 % inferior",-0.05,2.0,INFORME enfoques E4,-0.05170435185592913,1.0,-0.05170435185592912,-6.938893903907228e-18,coincide,
+2 Enfoques,"E4a atencion: fiabilidad entre mitades, ganancia del historial · IC 95 % superior",0.61,2.0,INFORME enfoques E4,0.6095412362531183,1.0,0.6095412362531184,-1.1102230246251565e-16,coincide,
+2 Enfoques,"E4b atencion: diferencia máxima con e4_descriptivos.csv (14 correlaciones, p y p Holm)",0.0,9.0,e4_descriptivos.csv,8.881784197001252e-16,1.0,,,coincide,
+2 Enfoques,E4c atención: pers_c1 − hgb_c1,0.006,3.0,INFORME enfoques E4,0.005734126654411946,1.0,,,coincide,25/41
+2 Enfoques,E4c atención: pers_c1 − hgb_c1 · IC 95 % inferior,0.0,3.0,INFORME enfoques E4,0.00016495894388947438,1.0,,,coincide,
+2 Enfoques,E4c atención: pers_c1 − hgb_c1 · IC 95 % superior,0.011,3.0,INFORME enfoques E4,0.011149915427627556,1.0,,,coincide,
+2 Enfoques,E4c atención: pers_c32 − hgb_c32,0.0,3.0,INFORME enfoques E4,0.0001400109883343338,1.0,,,coincide,19/41
+2 Enfoques,E4c atención: pers_c32 − hgb_c32 · IC 95 % inferior,-0.007,3.0,INFORME enfoques E4,-0.006658254456375551,1.0,,,coincide,
+2 Enfoques,E4c atención: pers_c32 − hgb_c32 · IC 95 % superior,0.008,3.0,INFORME enfoques E4,0.007642495419186786,1.0,,,coincide,
+2 Enfoques,E4c atencion: fracción mínima de sesión de una fila de evaluación,0.4,2.0,"AUDITORIA_RESULTADOS enfoques (""ninguna anterior al 40 %"")",0.4128593602170455,1.0,,,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC sin historial",0.66,2.0,INFORME enfoques E4,0.6602251407129456,1.0,0.6602251407129457,-1.1102230246251565e-16,coincide,n=40
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC sin historial · IC 95 % inferior",0.44,2.0,INFORME enfoques E4,0.44446534888943806,1.0,0.444465348889438,5.551115123125783e-17,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC sin historial · IC 95 % superior",0.8,2.0,INFORME enfoques E4,0.8017654484289651,1.0,0.8017654484289652,-1.1102230246251565e-16,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC con historial",0.58,2.0,INFORME enfoques E4,0.575797373358349,1.0,0.575797373358349,0.0,coincide,n=40
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC con historial · IC 95 % inferior",0.3,2.0,INFORME enfoques E4,0.30426305172061513,1.0,0.3042630517206152,-5.551115123125783e-17,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, AUC con historial · IC 95 % superior",0.78,2.0,INFORME enfoques E4,0.7802270232233068,1.0,0.7802270232233067,1.1102230246251565e-16,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, ganancia del historial",0.25,2.0,INFORME enfoques E4,0.2523452157598499,1.0,0.25234521575985,-5.551115123125783e-17,coincide,n=40
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, ganancia del historial · IC 95 % inferior",-0.04,2.0,INFORME enfoques E4,-0.04461701016796918,1.0,-0.04461701016796917,-6.938893903907228e-18,coincide,
+2 Enfoques,"E4a activacion: fiabilidad entre mitades, ganancia del historial · IC 95 % superior",0.51,2.0,INFORME enfoques E4,0.5083469237707415,1.0,0.5083469237707415,0.0,coincide,
+2 Enfoques,"E4b activacion: diferencia máxima con e4_descriptivos.csv (14 correlaciones, p y p Holm)",0.0,9.0,e4_descriptivos.csv,6.661338147750939e-16,1.0,,,coincide,
+2 Enfoques,E4c activación: personas con evaluación,40.0,0.0,INFORME enfoques E4,40.0,1.0,,,coincide,
+2 Enfoques,E4c activación: AUC general sin historial en la parte final de la sesión,0.502,3.0,INFORME enfoques E4,0.5017159361079804,1.0,0.5017159361079804,0.0,coincide,
+2 Enfoques,E4c activación: AUC adaptado sin historial en la parte final de la sesión,0.53,3.0,INFORME enfoques E4,0.5295339230051603,1.0,0.5295339230051603,0.0,coincide,
+2 Enfoques,E4c activación: AUC general con historial en la parte final de la sesión,0.543,3.0,INFORME enfoques E4,0.5426499606443176,1.0,0.5426499606443176,0.0,coincide,
+2 Enfoques,E4c activación: AUC adaptado con historial en la parte final de la sesión,0.587,3.0,INFORME enfoques E4,0.5874079829153667,1.0,0.5874079829153667,0.0,coincide,
+2 Enfoques,E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin),0.058,3.0,INFORME enfoques E4,0.05787405991020624,1.0,0.05787405991020626,-2.0816681711721685e-17,coincide,33/40
+2 Enfoques,E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin) · IC 95 % inferior,0.032,3.0,INFORME enfoques E4,0.032232391771304214,1.0,0.03223239177130422,-6.938893903907228e-18,coincide,
+2 Enfoques,E4c activación: historial en el modelo adaptado (adaptado con − adaptado sin) · IC 95 % superior,0.084,3.0,INFORME enfoques E4,0.08385466145830714,1.0,0.08385466145830714,0.0,coincide,
+2 Enfoques,E4c activación: pers_c1 − hgb_c1,0.028,3.0,INFORME enfoques E4,0.027817986897180076,1.0,,,coincide,29/40; p sin ajuste 0.016485
+2 Enfoques,E4c activación: pers_c1 − hgb_c1 · IC 95 % inferior,0.007,3.0,INFORME enfoques E4,0.006528992413714719,1.0,,,coincide,
+2 Enfoques,E4c activación: pers_c1 − hgb_c1 · IC 95 % superior,0.049,3.0,INFORME enfoques E4,0.04922501074609301,1.0,,,coincide,
+2 Enfoques,E4c activación: pers_c32 − hgb_c32,0.045,3.0,INFORME enfoques E4,0.044758022271049094,1.0,,,coincide,30/40; p sin ajuste 0.000100
+2 Enfoques,E4c activación: pers_c32 − hgb_c32 · IC 95 % inferior,0.023,3.0,INFORME enfoques E4,0.023415931833583054,1.0,,,coincide,
+2 Enfoques,E4c activación: pers_c32 − hgb_c32 · IC 95 % superior,0.069,3.0,INFORME enfoques E4,0.06857318995768277,1.0,,,coincide,
+2 Enfoques,"E4c activación: historial en el modelo general, mismas filas",,3.0,e4_descriptivos.csv,0.040934024536337245,1.0,0.040934024536337245,0.0,sin cifra informada,
+2 Enfoques,"E4c activación: AUC ""de 0,50 a 0,59"" (extremos)",0.59,2.0,INFORME enfoques E4,0.5874079829153667,1.0,,,coincide,
+2 Enfoques,E4c activacion: fracción mínima de sesión de una fila de evaluación,0.4,2.0,"AUDITORIA_RESULTADOS enfoques (""ninguna anterior al 40 %"")",0.41787387534029036,1.0,,,coincide,
+2 Enfoques,E4b: p Holm mínimo entre todos los correlatos,0.23,2.0,"INFORME enfoques E4 (""todos los p Holm ≥ 0,23"")",0.23084368206587624,1.0,,,coincide,
+3 Reapertura,D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo,0.535,3.0,INFORME reapertura,0.5350671960352767,1.0,0.5350671960352769,-1.1102230246251565e-16,coincide,
+3 Reapertura,D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % inferior,0.519,3.0,INFORME reapertura,0.5189156805006839,1.0,0.5189156805006839,0.0,coincide,
+3 Reapertura,D2 atencion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % superior,0.552,3.0,INFORME reapertura,0.5515129730707776,1.0,0.5515129730707776,0.0,coincide,
+3 Reapertura,D2 atencion: pares,8818.0,0.0,INFORME reapertura,8818.0,1.0,8818.0,0.0,coincide,
+3 Reapertura,D2 atencion: personas,41.0,0.0,INFORME reapertura,41.0,1.0,,,coincide,
+3 Reapertura,atencion: AUC absoluta hgb_c1 (5 particiones),0.683,3.0,INFORME reapertura,0.6829713462923324,1.0,0.6829713462923324,0.0,coincide,
+3 Reapertura,atencion: AUC absoluta hgb_c32 (5 particiones),0.712,3.0,INFORME reapertura,0.7119845838893988,1.0,0.7119845838893988,0.0,coincide,
+3 Reapertura,atencion: AUC absoluta c1_ts,,,auc_absolutas.csv,0.7083641155911562,1.0,0.7083641155911562,0.0,coincide,
+3 Reapertura,atencion: AUC absoluta c32_ts,,,auc_absolutas.csv,0.7403076324074825,1.0,0.7403076324074825,0.0,coincide,
+3 Reapertura,"atencion: P1 por partición, mínimo",0.028,3.0,INFORME reapertura,0.027908643039280534,1.0,,,coincide,por partición: 0.027909; 0.029764; 0.029379; 0.028322; 0.029692
+3 Reapertura,"atencion: P1 por partición, máximo",0.03,3.0,INFORME reapertura,0.029764354950152918,1.0,,,coincide,
+3 Reapertura,atencion: tiempo de sesión solo (c1_ts − hgb_c1),0.025,3.0,INFORME reapertura,0.025392769298823847,1.0,0.025392769298823847,0.0,coincide,
+3 Reapertura,atencion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % inferior,0.019,3.0,INFORME reapertura,0.019200584673180407,1.0,0.019200584673180397,1.0408340855860843e-17,coincide,
+3 Reapertura,atencion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % superior,0.032,3.0,INFORME reapertura,0.03216380609369973,1.0,0.03216380609369972,1.3877787807814457e-17,coincide,
+3 Reapertura,Curva atencion: filas con cobertura completa (reconstrucción propia),12613.0,0.0,INFORME reapertura,12613.0,1.0,,,coincide,
+3 Reapertura,"Curva atencion: filas reconstruidas que no están en las predicciones guardadas, o al revés",0.0,0.0,—,0.0,1.0,,,coincide,
+3 Reapertura,Curva atencion: personas con filas comunes,41.0,0.0,INFORME reapertura,41.0,1.0,,,coincide,
+3 Reapertura,Curva atencion: % de las filas etiquetadas,57.0,0.0,INFORME reapertura,0.5687680375180375,100.0,,,coincide,
+3 Reapertura,Curva atencion: mínimo de filas comunes por persona,149.0,0.0,cobertura_atencion.json,149.0,1.0,,,coincide,
+3 Reapertura,Curva atencion: % de las ventanas de la banda de 6 s que son del mismo estímulo,,0.0,"INFORME reapertura, límites",0.37465145347905515,100.0,,,sin cifra informada,
+3 Reapertura,Curva atencion: % de las ventanas de la banda de 12 s que son del mismo estímulo,,0.0,"INFORME reapertura, límites",0.26124816206502205,100.0,,,sin cifra informada,
+3 Reapertura,Curva atencion: % de las ventanas de la banda de 24 s que son del mismo estímulo,,0.0,"INFORME reapertura, límites",0.06564087860977047,100.0,,,sin cifra informada,
+3 Reapertura,Curva atencion: % de las ventanas de la banda de 48 s que son del mismo estímulo,,0.0,"INFORME reapertura, límites",0.0011589276056555666,100.0,,,sin cifra informada,
+3 Reapertura,Curva atencion: % de las ventanas de la banda de 96 s que son del mismo estímulo,,0.0,"INFORME reapertura, límites",0.0,100.0,,,sin cifra informada,
+3 Reapertura,Curva atencion: pendiente del contraste por duplicación del desfase,-0.002,3.0,INFORME reapertura,-0.0020468705449745036,1.0,-0.002046870544974503,-4.336808689942018e-19,coincide,
+3 Reapertura,Curva atencion: p de la pendiente,0.071,3.0,INFORME reapertura,0.07062464687676562,1.0,0.07062464687676562,0.0,coincide,
+3 Reapertura,Curva atencion: AUC absoluta c1_common,,,auc_absolutas.csv,0.6886754589577798,1.0,0.6886754589577798,0.0,coincide,
+3 Reapertura,Curva atencion: AUC absoluta lag12,,,auc_absolutas.csv,0.6893231374088047,1.0,0.6893231374088047,0.0,coincide,
+3 Reapertura,Curva atencion: AUC absoluta lag24,,,auc_absolutas.csv,0.6866057854703198,1.0,0.6866057854703198,0.0,coincide,
+3 Reapertura,Curva atencion: AUC absoluta lag48,,,auc_absolutas.csv,0.6808736855029116,1.0,0.6808736855029116,0.0,coincide,
+3 Reapertura,Curva atencion: AUC absoluta lag6,,,auc_absolutas.csv,0.6895993654355734,1.0,0.6895993654355733,1.1102230246251565e-16,coincide,
+3 Reapertura,Curva atencion: AUC absoluta lag96,,,auc_absolutas.csv,0.6835897386636476,1.0,0.6835897386636475,1.1102230246251565e-16,coincide,
+3 Reapertura,Curva atencion: AUC absoluta placebo,,,auc_absolutas.csv,0.693334397142939,1.0,0.6933343971429391,-1.1102230246251565e-16,coincide,
+3 Reapertura,X1 atencion: placebo de bloque − placebo disperso,-0.001,3.0,INFORME reapertura,-0.000577444228596356,1.0,-0.0005774442285963399,-1.6154612370034016e-17,coincide,
+3 Reapertura,"X2 atencion: historial − sin historial, mismo estímulo",0.013,3.0,INFORME reapertura,0.013449234637274687,1.0,0.013449234637274687,0.0,coincide,27/41; p 0.000670
+3 Reapertura,"X2 atencion: historial − sin historial, mismo estímulo · IC 95 % inferior",0.007,3.0,INFORME reapertura,0.006459840179053466,1.0,0.006459840179053466,0.0,coincide con redondeo,
+3 Reapertura,"X2 atencion: historial − sin historial, mismo estímulo · IC 95 % superior",0.021,3.0,INFORME reapertura,0.020632664073833108,1.0,0.020632664073833108,0.0,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c1, mismo estímulo",,3.0,INFORME reapertura,0.683557710476468,1.0,0.683557710476468,0.0,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c32, mismo estímulo",,3.0,INFORME reapertura,0.6970069451137427,1.0,0.6970069451137427,0.0,coincide,
+3 Reapertura,X2 atencion: % de pares dentro de mismo estímulo,2.0,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.021994607509982545,100.0,0.021994607509982545,0.0,coincide,
+3 Reapertura,"X2 atencion: historial − sin historial, mismo minuto",0.023,3.0,INFORME reapertura,0.023053228990862092,1.0,0.023053228990862092,0.0,coincide,34/41; p 0.000005
+3 Reapertura,"X2 atencion: historial − sin historial, mismo minuto · IC 95 % inferior",0.016,3.0,INFORME reapertura,0.015947838378363867,1.0,0.015947838378363867,0.0,coincide,
+3 Reapertura,"X2 atencion: historial − sin historial, mismo minuto · IC 95 % superior",0.03,3.0,INFORME reapertura,0.02990156056523251,1.0,0.02990156056523251,0.0,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c1, mismo minuto",,3.0,INFORME reapertura,0.6747970841147519,1.0,0.6747970841147519,0.0,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c32, mismo minuto",,3.0,INFORME reapertura,0.697850313105614,1.0,0.697850313105614,0.0,coincide,
+3 Reapertura,X2 atencion: % de pares dentro de mismo minuto,7.0,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.07516201430191749,100.0,0.07516201430191749,0.0,coincide con redondeo,
+3 Reapertura,"X2 atencion: historial − sin historial, misma posición",0.017,3.0,INFORME reapertura,0.017162973202093347,1.0,0.01716297320209335,-3.469446951953614e-18,coincide,35/41; p 0.000010
+3 Reapertura,"X2 atencion: historial − sin historial, misma posición · IC 95 % inferior",0.01,3.0,INFORME reapertura,0.010369055154526874,1.0,0.010369055154526874,0.0,coincide,
+3 Reapertura,"X2 atencion: historial − sin historial, misma posición · IC 95 % superior",0.024,3.0,INFORME reapertura,0.02419501387176967,1.0,0.02419501387176969,-1.734723475976807e-17,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c1, misma posición",,3.0,INFORME reapertura,0.6781070395562433,1.0,0.6781070395562433,0.0,coincide,
+3 Reapertura,"X2 atencion: AUC estratificada hgb_c32, misma posición",,3.0,INFORME reapertura,0.6952700127583366,1.0,0.6952700127583366,0.0,coincide,
+3 Reapertura,X2 atencion: % de pares dentro de misma posición,,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.07477098237882343,100.0,0.07477098237882343,0.0,sin cifra informada,
+3 Reapertura,D1 atencion: AUC de la posición sola,0.598,3.0,INFORME reapertura,0.5978209195017994,1.0,0.5978209195017993,1.1102230246251565e-16,coincide,
+3 Reapertura,D1 atencion: AUC de la posición sola · IC 95 % inferior,0.581,3.0,INFORME reapertura,0.5808446752702403,1.0,0.5808446752702403,0.0,coincide,
+3 Reapertura,D1 atencion: AUC de la posición sola · IC 95 % superior,0.614,3.0,INFORME reapertura,0.613845794509317,1.0,0.6138457945093171,-1.1102230246251565e-16,coincide,
+3 Reapertura,D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101),0.677,3.0,INFORME reapertura,0.6771289458106284,1.0,0.6771289458106284,0.0,coincide,
+3 Reapertura,D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101) · IC 95 % inferior,0.655,3.0,INFORME reapertura,0.6544986995582338,1.0,0.6544986995582338,0.0,coincide con redondeo,
+3 Reapertura,D1 atención: AUC sin historial entre ventanas de la misma posición (partición 1101) · IC 95 % superior,0.699,3.0,INFORME reapertura,0.6989586613177726,1.0,0.6989586613177726,0.0,coincide,
+3 Reapertura,D1 atención: AUC sin historial sin estratificar (partición 1101),0.684,3.0,INFORME reapertura,0.6836387291586963,1.0,,,coincide,
+3 Reapertura,Fase 3 atencion: AUC hgb_c1,0.683,3.0,INFORME fase 3,0.6829713462923324,1.0,0.6829713462923324,0.0,coincide,
+3 Reapertura,Fase 3 atencion: AUC pos_c1,0.711,3.0,INFORME fase 3,0.7112863505168137,1.0,0.7112863505168137,0.0,coincide,
+3 Reapertura,Fase 3 atencion: AUC hgb_c32,0.712,3.0,INFORME fase 3,0.7119845838893988,1.0,0.7119845838893988,0.0,coincide,
+3 Reapertura,Fase 3 atencion: AUC c32_pos,0.713,3.0,INFORME fase 3,0.7127037604708655,1.0,0.7127037604708655,0.0,coincide,
+3 Reapertura,Fase 3 atencion: pos_c1 − hgb_c1 (todas),0.028,3.0,INFORME fase 3,0.02831500422448132,1.0,0.02831500422448132,0.0,coincide,
+3 Reapertura,Fase 3 atencion: pos_c1 − hgb_c1 (todas) · IC 95 % inferior,0.021,3.0,INFORME fase 3,0.020544295907934208,1.0,0.020544295907934197,1.0408340855860843e-17,coincide,
+3 Reapertura,Fase 3 atencion: pos_c1 − hgb_c1 (todas) · IC 95 % superior,0.036,3.0,INFORME fase 3,0.03593394009624632,1.0,0.03593394009624632,0.0,coincide,
+3 Reapertura,Fase 3 atencion: hgb_c32 − pos_c1 (todas),0.001,3.0,INFORME fase 3,0.0006982333725852249,1.0,0.0006982333725852357,-1.0842021724855044e-17,coincide,
+3 Reapertura,Fase 3 atencion: hgb_c32 − pos_c1 (todas) · IC 95 % inferior,-0.003,3.0,INFORME fase 3,-0.002505591232783281,1.0,-0.002505591232783251,-2.992397996059992e-17,coincide,
+3 Reapertura,Fase 3 atencion: hgb_c32 − pos_c1 (todas) · IC 95 % superior,0.004,3.0,INFORME fase 3,0.003976661417925676,1.0,0.003976661417925671,5.204170427930421e-18,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (bloque60),-0.0,3.0,INFORME fase 3,-0.0004102049021751998,1.0,-0.0004102049021751998,0.0,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (bloque60) · IC 95 % inferior,-0.004,3.0,INFORME fase 3,-0.00371031026549489,1.0,-0.00371031026549489,0.0,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (bloque60) · IC 95 % superior,0.003,3.0,INFORME fase 3,0.002841426950563821,1.0,0.002841426950563821,0.0,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (posicion),0.005,3.0,INFORME fase 3,0.0053870457539483135,1.0,0.005387045753948311,2.6020852139652106e-18,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (posicion) · IC 95 % inferior,0.001,3.0,INFORME fase 3,0.0007934406371139272,1.0,0.0007934406371139245,2.710505431213761e-18,coincide,
+3 Reapertura,Fase 3 atencion: c32_pos − pos_c1 (posicion) · IC 95 % superior,0.01,3.0,INFORME fase 3,0.010222408258856685,1.0,0.010222408258856678,6.938893903907228e-18,coincide,
+3 Reapertura,Fase 3 atencion Q1: delta,0.001,3.0,INFORME fase 3,0.0014174099540517396,1.0,0.0014174099540517477,-8.023096076392733e-18,coincide,
+3 Reapertura,Fase 3 atencion Q1: mediana,0.001,3.0,INFORME fase 3,0.0009441707717570136,1.0,0.0009441707717569026,1.1102230246251565e-16,coincide,
+3 Reapertura,Fase 3 atencion Q1: persona más influyente es P36 (0 = sí),0.0,0.0,INFORME fase 3,0.0,1.0,,,coincide,P36 (+0.038)
+3 Reapertura,Fase 3 atencion Q1: sin la persona más influyente,0.001,3.0,INFORME fase 3,0.0005015308002742275,1.0,0.0005015308002742358,-8.348356728138384e-18,coincide,p 0.7272
+3 Reapertura,Fase 3 atencion Q1: sin la persona más influyente · IC 95 % inferior,-0.002,3.0,INFORME fase 3,-0.002309596813643012,1.0,-0.0023095968136429895,-2.2551405187698492e-17,coincide,
+3 Reapertura,Fase 3 atencion Q1: sin la persona más influyente · IC 95 % superior,0.003,3.0,INFORME fase 3,0.003244165902898939,1.0,0.0032441659028989473,-8.239936510889834e-18,coincide,
+3 Reapertura,Fase 3 atencion Q2: delta,-0.0,3.0,INFORME fase 3,-6.11759441580932e-05,1.0,-6.11759441580932e-05,0.0,coincide,
+3 Reapertura,Fase 3 atencion Q2: mediana,0.001,3.0,INFORME fase 3,0.001161946259985558,1.0,0.001161946259985558,0.0,coincide,
+3 Reapertura,Fase 3 atencion Q2: persona más influyente es P46 (0 = sí),0.0,0.0,INFORME fase 3,0.0,1.0,,,coincide,P46 (-0.024)
+3 Reapertura,Fase 3 atencion Q2: sin la persona más influyente,0.001,3.0,INFORME fase 3,0.0005368150409309991,1.0,0.0005368150409309991,0.0,coincide,p 0.7243
+3 Reapertura,Fase 3 atencion Q2: sin la persona más influyente · IC 95 % inferior,-0.002,3.0,INFORME fase 3,-0.002442497140298898,1.0,-0.002442497140298898,0.0,coincide,
+3 Reapertura,Fase 3 atencion Q2: sin la persona más influyente · IC 95 % superior,0.003,3.0,INFORME fase 3,0.003436279145221835,1.0,0.003436279145221835,0.0,coincide,
+3 Reapertura,D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo,0.68,3.0,INFORME reapertura,0.6798620269981583,1.0,0.6798620269981583,0.0,coincide,
+3 Reapertura,D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % inferior,0.634,3.0,INFORME reapertura,0.6343587994447537,1.0,0.6343587994447537,0.0,coincide,
+3 Reapertura,D2 activacion: AUC de la etiqueta 6 s antes en el mismo estímulo · IC 95 % superior,0.724,3.0,INFORME reapertura,0.7243301486335648,1.0,0.7243301486335648,0.0,coincide,
+3 Reapertura,D2 activacion: pares,5035.0,0.0,INFORME reapertura,5035.0,1.0,5035.0,0.0,coincide,
+3 Reapertura,D2 activacion: personas,40.0,0.0,INFORME reapertura,40.0,1.0,,,coincide,
+3 Reapertura,activacion: AUC absoluta hgb_c1 (5 particiones),0.518,3.0,INFORME reapertura,0.5176299961383577,1.0,0.5176299961383577,0.0,coincide,
+3 Reapertura,activacion: AUC absoluta hgb_c32 (5 particiones),0.554,3.0,INFORME reapertura,0.5540791984957557,1.0,0.5540791984957557,0.0,coincide,
+3 Reapertura,activacion: AUC absoluta c1_ts,,,auc_absolutas.csv,0.5364019314450075,1.0,0.5364019314450075,0.0,coincide,
+3 Reapertura,activacion: AUC absoluta c32_ts,,,auc_absolutas.csv,0.5626711708034949,1.0,0.5626711708034949,0.0,coincide,
+3 Reapertura,"activacion: P1 por partición, mínimo",0.028,3.0,INFORME reapertura,0.028140049786471336,1.0,,,coincide,por partición: 0.033944; 0.041318; 0.046914; 0.031930; 0.028140
+3 Reapertura,"activacion: P1 por partición, máximo",0.047,3.0,INFORME reapertura,0.0469140871202082,1.0,,,coincide,
+3 Reapertura,activacion: tiempo de sesión solo (c1_ts − hgb_c1),0.019,3.0,INFORME reapertura,0.018771935306649796,1.0,0.01877193530664979,6.938893903907228e-18,coincide,
+3 Reapertura,activacion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % inferior,-0.023,3.0,INFORME reapertura,-0.023392881252779243,1.0,-0.02339288125277927,2.7755575615628914e-17,coincide,
+3 Reapertura,activacion: tiempo de sesión solo (c1_ts − hgb_c1) · IC 95 % superior,0.061,3.0,INFORME reapertura,0.06077126840627631,1.0,0.0607712684062763,6.938893903907228e-18,coincide,
+3 Reapertura,Curva activacion: filas con cobertura completa (reconstrucción propia),6268.0,0.0,INFORME reapertura,6268.0,1.0,,,coincide,
+3 Reapertura,"Curva activacion: filas reconstruidas que no están en las predicciones guardadas, o al revés",0.0,0.0,—,0.0,1.0,,,coincide,
+3 Reapertura,Curva activacion: personas con filas comunes,40.0,0.0,INFORME reapertura,40.0,1.0,,,coincide,
+3 Reapertura,Curva activacion: % de las filas etiquetadas,53.0,0.0,INFORME reapertura,0.5313665649372669,100.0,,,coincide,
+3 Reapertura,Curva activacion: mínimo de filas comunes por persona,62.0,0.0,cobertura_activacion.json,62.0,1.0,,,coincide,
+3 Reapertura,Curva activacion: % de las ventanas de la banda de 6 s que son del mismo estímulo,73.0,0.0,"INFORME reapertura, límites",0.7303766167892468,100.0,,,coincide,
+3 Reapertura,Curva activacion: % de las ventanas de la banda de 12 s que son del mismo estímulo,48.0,0.0,"INFORME reapertura, límites",0.4840104246512341,100.0,,,coincide,
+3 Reapertura,Curva activacion: % de las ventanas de la banda de 24 s que son del mismo estímulo,13.0,0.0,"INFORME reapertura, límites",0.12778501830819836,100.0,,,coincide,
+3 Reapertura,Curva activacion: % de las ventanas de la banda de 48 s que son del mismo estímulo,0.0,0.0,"INFORME reapertura, límites",0.00272539314579287,100.0,,,coincide,
+3 Reapertura,Curva activacion: % de las ventanas de la banda de 96 s que son del mismo estímulo,0.0,0.0,"INFORME reapertura, límites",0.0,100.0,,,coincide,
+3 Reapertura,Curva activacion: pendiente del contraste por duplicación del desfase,-0.01,3.0,INFORME reapertura,-0.010353935640732564,1.0,-0.010353935640732564,0.0,coincide,
+3 Reapertura,Curva activacion: pendiente del contraste por duplicación del desfase · IC 95 % inferior,-0.018,3.0,INFORME reapertura,-0.01751560209795427,1.0,-0.01751560209795427,0.0,coincide,
+3 Reapertura,Curva activacion: pendiente del contraste por duplicación del desfase · IC 95 % superior,-0.003,3.0,INFORME reapertura,-0.00279534269163705,1.0,-0.0027953426916370516,1.734723475976807e-18,coincide,
+3 Reapertura,Curva activacion: p de la pendiente,0.009,3.0,INFORME reapertura,0.00930995345023275,1.0,0.00930995345023275,0.0,coincide,
+3 Reapertura,Curva activacion: personas con pendiente negativa,27.0,0.0,INFORME reapertura,27.0,1.0,,,coincide,de 40
+3 Reapertura,Curva activacion: AUC absoluta c1_common,,,auc_absolutas.csv,0.525327078850512,1.0,0.525327078850512,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta lag12,,,auc_absolutas.csv,0.5587908245542683,1.0,0.5587908245542683,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta lag24,,,auc_absolutas.csv,0.538546791961431,1.0,0.538546791961431,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta lag48,,,auc_absolutas.csv,0.5122053971887024,1.0,0.5122053971887024,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta lag6,,,auc_absolutas.csv,0.581848372211077,1.0,0.581848372211077,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta lag96,,,auc_absolutas.csv,0.5533714076901972,1.0,0.5533714076901972,0.0,coincide,
+3 Reapertura,Curva activacion: AUC absoluta placebo,,,auc_absolutas.csv,0.5347247105085311,1.0,0.5347247105085311,0.0,coincide,
+3 Reapertura,Curva activación: placebo − ventana actual,0.009,3.0,INFORME reapertura,0.0093976316580191,1.0,,,coincide,
+3 Reapertura,Curva activación: placebo − ventana actual · IC 95 % inferior,-0.024,3.0,INFORME reapertura,-0.023612902312114183,1.0,,,coincide,
+3 Reapertura,Curva activación: placebo − ventana actual · IC 95 % superior,0.043,3.0,INFORME reapertura,0.043312742903214525,1.0,,,coincide,
+3 Reapertura,Curva activación: 6 s − placebo,0.047,3.0,"Cierre (el INFORME dice +0,018)",0.04712366170254597,1.0,,,coincide,30/40; mediana 0.0416
+3 Reapertura,Curva activación: 6 s − placebo · IC 95 % inferior,0.017,3.0,"Cierre (el INFORME dice +0,018)",0.017473853576034072,1.0,,,coincide,
+3 Reapertura,Curva activación: 6 s − placebo · IC 95 % superior,0.078,3.0,"Cierre (el INFORME dice +0,018)",0.07763903705982063,1.0,,,coincide,
+3 Reapertura,"Curva activación: 6 s − placebo, mediana",0.042,3.0,"INFORME reapertura, sensibilidad",0.041590917592488674,1.0,,,coincide,
+3 Reapertura,"Curva activación: 6 s − placebo, personas a favor",30.0,0.0,INFORME reapertura,30.0,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: 6 s − placebo, sin la persona más influyente",0.039,3.0,INFORME reapertura,0.03936561456671382,1.0,,,coincide,persona P24 (+0.350); p 0.0063
+3 Reapertura,"Sensibilidad activación: 6 s − placebo, sin la persona más influyente · IC 95 % inferior",0.012,3.0,INFORME reapertura,0.012406255627881127,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: 6 s − placebo, sin la persona más influyente · IC 95 % superior",0.065,3.0,INFORME reapertura,0.06532654260154742,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente",0.046,3.0,INFORME reapertura,0.04579676902404194,1.0,,,coincide,persona P24 (+0.325); p 0.0011
+3 Reapertura,"Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente · IC 95 % inferior",0.021,3.0,INFORME reapertura,0.021225389670877823,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: 6 s − placebo de bloque, sin la persona más influyente · IC 95 % superior",0.07,3.0,INFORME reapertura,0.07018296044070206,1.0,,,coincide,
+3 Reapertura,"X1 activación: 6 s − placebo de bloque, mediana",0.056,3.0,INFORME reapertura,0.05551299351857533,1.0,,,coincide,media 0.052769; 31/40
+3 Reapertura,X1 activacion: placebo de bloque − placebo disperso,-0.006,3.0,INFORME reapertura,-0.0056453755958949265,1.0,-0.005645375595894916,-1.0408340855860843e-17,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, mismo estímulo",0.054,3.0,INFORME reapertura,0.05403269007648613,1.0,0.05403269007648613,0.0,coincide,26/41; p 0.011180
+3 Reapertura,"X2 activacion: historial − sin historial, mismo estímulo · IC 95 % inferior",0.015,3.0,INFORME reapertura,0.014731580297360077,1.0,0.014731580297360077,0.0,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, mismo estímulo · IC 95 % superior",0.094,3.0,INFORME reapertura,0.09442762526288197,1.0,0.09442762526288197,0.0,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c1, mismo estímulo",0.501,3.0,INFORME reapertura,0.5010082789934509,1.0,0.5010082789934509,0.0,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c32, mismo estímulo",0.555,3.0,INFORME reapertura,0.555040969069937,1.0,0.555040969069937,0.0,coincide,
+3 Reapertura,X2 activacion: % de pares dentro de mismo estímulo,3.0,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.025689146064515694,100.0,0.025689146064515694,0.0,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, mismo minuto",0.058,3.0,INFORME reapertura,0.05840053241782335,1.0,0.05840053241782337,-2.0816681711721685e-17,coincide,24/41; p 0.001005
+3 Reapertura,"X2 activacion: historial − sin historial, mismo minuto · IC 95 % inferior",0.027,3.0,INFORME reapertura,0.02698652776431368,1.0,0.02698652776431368,0.0,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, mismo minuto · IC 95 % superior",0.092,3.0,INFORME reapertura,0.09173652032342143,1.0,0.09173652032342144,-1.3877787807814457e-17,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c1, mismo minuto",0.501,3.0,INFORME reapertura,0.5011518379209468,1.0,0.5011518379209468,0.0,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c32, mismo minuto",0.56,3.0,INFORME reapertura,0.5595523703387703,1.0,0.5595523703387703,0.0,coincide,
+3 Reapertura,X2 activacion: % de pares dentro de mismo minuto,7.0,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.07182597634667977,100.0,0.07182597634667977,0.0,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, misma posición",0.027,3.0,INFORME reapertura,0.02736569296619534,1.0,0.027365692966195343,-3.469446951953614e-18,coincide,24/41; p 0.092470
+3 Reapertura,"X2 activacion: historial − sin historial, misma posición · IC 95 % inferior",-0.003,3.0,INFORME reapertura,-0.003342511336106964,1.0,-0.0033425113361069693,5.204170427930421e-18,coincide,
+3 Reapertura,"X2 activacion: historial − sin historial, misma posición · IC 95 % superior",0.059,3.0,INFORME reapertura,0.0585079773183864,1.0,0.0585079773183864,0.0,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c1, misma posición",,3.0,INFORME reapertura,0.5244789997156949,1.0,0.5244789997156949,0.0,coincide,
+3 Reapertura,"X2 activacion: AUC estratificada hgb_c32, misma posición",,3.0,INFORME reapertura,0.5518446926818903,1.0,0.5518446926818903,0.0,coincide,
+3 Reapertura,X2 activacion: % de pares dentro de misma posición,,0.0,"INFORME reapertura (""2–3 %"" y ""7 %"")",0.06560450492733176,100.0,0.06560450492733176,0.0,sin cifra informada,
+3 Reapertura,D1 activacion: AUC de la posición sola,0.543,3.0,INFORME reapertura,0.5430527891643068,1.0,0.5430527891643068,0.0,coincide,
+3 Reapertura,D1 activacion: AUC de la posición sola · IC 95 % inferior,0.492,3.0,INFORME reapertura,0.49149911651531,1.0,0.49149911651531,0.0,coincide con redondeo,
+3 Reapertura,D1 activacion: AUC de la posición sola · IC 95 % superior,0.595,3.0,INFORME reapertura,0.5947341200642481,1.0,0.594734120064248,1.1102230246251565e-16,coincide,
+3 Reapertura,"Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente",0.028,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.027745047800948275,1.0,,,coincide,persona P4 (+0.385); p 0.0196
+3 Reapertura,"Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente · IC 95 % inferior",0.006,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.005643373438932689,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: P1 historial − sin historial, sin la persona más influyente · IC 95 % superior",0.05,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.05002081875459628,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: P1 historial − sin historial, mediana",0.014,3.0,INFORME reapertura,0.014296653303905282,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: P1 historial − sin historial, personas a favor",23.0,0.0,INFORME reapertura,23.0,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo minuto, sin la persona más influyente",0.05,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.050377787107579286,1.0,,,coincide,persona P4 (+0.379); p 0.0018
+3 Reapertura,"Sensibilidad activación: mismo minuto, sin la persona más influyente · IC 95 % inferior",0.021,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.02091403520279265,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo minuto, sin la persona más influyente · IC 95 % superior",0.081,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.08091843348732568,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo minuto, mediana",0.042,3.0,INFORME reapertura,0.04152191894127377,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo minuto, personas a favor",24.0,0.0,INFORME reapertura,24.0,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo estímulo, sin la persona más influyente",0.044,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.04413350732839828,1.0,,,coincide,persona P4 (+0.450); p 0.0215
+3 Reapertura,"Sensibilidad activación: mismo estímulo, sin la persona más influyente · IC 95 % inferior",0.009,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.008456453488786514,1.0,,,coincide con redondeo,
+3 Reapertura,"Sensibilidad activación: mismo estímulo, sin la persona más influyente · IC 95 % superior",0.08,3.0,INFORME reapertura / AUDITORIA_RESULTADOS,0.08021316535762296,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo estímulo, mediana",0.052,3.0,INFORME reapertura,0.052314814814814814,1.0,,,coincide,
+3 Reapertura,"Sensibilidad activación: mismo estímulo, personas a favor",26.0,0.0,INFORME reapertura,26.0,1.0,,,coincide,
+3 Reapertura,"P1 activación: aporte de P4 a la media (0,009 de 0,036)",0.009,3.0,INFORME reapertura,0.009380863039399624,1.0,,,coincide,delta de P4 +0.3846
+3 Reapertura,P1 activación: media,0.036,3.0,INFORME reapertura,0.03644920235739794,1.0,,,coincide,
+3 Reapertura,Fase 3 activacion: AUC hgb_c1,0.518,3.0,INFORME fase 3,0.5176299961383577,1.0,0.5176299961383577,0.0,coincide,
+3 Reapertura,"Fase 3 activacion: AUC hgb_c1, mismo estímulo",0.501,3.0,INFORME fase 3,0.5010082789934509,1.0,0.5010082789934509,0.0,coincide,
+3 Reapertura,Fase 3 activacion: AUC pos_c1,0.523,3.0,INFORME fase 3,0.5231801615192998,1.0,0.5231801615192998,0.0,coincide,
+3 Reapertura,"Fase 3 activacion: AUC pos_c1, mismo estímulo",0.55,3.0,INFORME fase 3,0.5504381836728891,1.0,0.5504381836728891,0.0,coincide,
+3 Reapertura,Fase 3 activacion: AUC hgb_c32,0.554,3.0,INFORME fase 3,0.5540791984957557,1.0,0.5540791984957557,0.0,coincide,
+3 Reapertura,"Fase 3 activacion: AUC hgb_c32, mismo estímulo",0.555,3.0,INFORME fase 3,0.555040969069937,1.0,0.555040969069937,0.0,coincide,
+3 Reapertura,Fase 3 activacion: AUC c32_pos,0.555,3.0,INFORME fase 3,0.5554334890398607,1.0,0.5554334890398607,0.0,coincide,
+3 Reapertura,"Fase 3 activacion: AUC c32_pos, mismo estímulo",0.559,3.0,INFORME fase 3,0.558975660434625,1.0,0.558975660434625,0.0,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (todas),0.006,3.0,INFORME fase 3,0.005550165380941951,1.0,0.00555016538094193,2.0816681711721685e-17,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (todas) · IC 95 % inferior,-0.015,3.0,INFORME fase 3,-0.014577803105330592,1.0,-0.01457780310533061,1.9081958235744878e-17,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (todas) · IC 95 % superior,0.026,3.0,INFORME fase 3,0.025754664454956628,1.0,0.025754664454956614,1.3877787807814457e-17,coincide,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (todas),0.031,3.0,INFORME fase 3,0.030899036976455994,1.0,0.030899036976456004,-1.0408340855860843e-17,coincide,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (todas) · IC 95 % inferior,0.004,3.0,INFORME fase 3,0.003760753948134914,1.0,0.0037607539481349242,-1.0408340855860843e-17,coincide,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (todas) · IC 95 % superior,0.057,3.0,INFORME fase 3,0.05691685847278941,1.0,0.05691685847278941,0.0,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (estimulo),0.049,3.0,INFORME fase 3,0.049429904679438225,1.0,0.04942990467943821,1.3877787807814457e-17,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (estimulo) · IC 95 % inferior,0.027,3.0,INFORME fase 3,0.027327632198098393,1.0,0.027327632198098393,0.0,coincide,
+3 Reapertura,Fase 3 activacion: pos_c1 − hgb_c1 (estimulo) · IC 95 % superior,0.072,3.0,INFORME fase 3,0.07234875737074442,1.0,0.07234875737074442,0.0,coincide,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (estimulo),0.005,3.0,INFORME fase 3,0.0046027853970479,1.0,0.0046027853970479,0.0,coincide,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (estimulo) · IC 95 % inferior,-0.026,3.0,INFORME fase 3,-0.02549058158842337,1.0,-0.02549058158842337,0.0,coincide con redondeo,
+3 Reapertura,Fase 3 activacion: hgb_c32 − pos_c1 (estimulo) · IC 95 % superior,0.035,3.0,INFORME fase 3,0.03513873413526645,1.0,0.03513873413526645,0.0,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (bloque60),0.033,3.0,INFORME fase 3,0.03303073361202794,1.0,0.03303073361202794,0.0,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (bloque60) · IC 95 % inferior,0.005,3.0,INFORME fase 3,0.005225342943121612,1.0,0.005225342943121611,8.673617379884035e-19,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (bloque60) · IC 95 % superior,0.062,3.0,INFORME fase 3,0.062381431653516804,1.0,0.062381431653516804,0.0,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (posicion),0.026,3.0,INFORME fase 3,0.026033198338895915,1.0,0.026033198338895905,1.0408340855860843e-17,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (posicion) · IC 95 % inferior,-0.0,3.0,INFORME fase 3,-0.00030315795987968824,1.0,-0.0003031579598796937,5.4752209710517974e-18,coincide,
+3 Reapertura,Fase 3 activacion: c32_pos − pos_c1 (posicion) · IC 95 % superior,0.052,3.0,INFORME fase 3,0.051468362443674746,1.0,0.051468362443674746,0.0,coincide con redondeo,
+3 Reapertura,Fase 3 activacion Q1: delta,0.032,3.0,INFORME fase 3,0.032253327520560954,1.0,0.032253327520560954,0.0,coincide,
+3 Reapertura,Fase 3 activacion Q1: mediana,0.031,3.0,INFORME fase 3,0.03087831892759174,1.0,0.03087831892759174,0.0,coincide,
+3 Reapertura,Fase 3 activacion Q1: persona más influyente es P10 (0 = sí),0.0,0.0,INFORME fase 3,0.0,1.0,,,coincide,P10 (-0.241)
+3 Reapertura,Fase 3 activacion Q1: sin la persona más influyente,0.039,3.0,INFORME fase 3,0.039074456626942325,1.0,0.039074456626942325,0.0,coincide,p 0.0036
+3 Reapertura,Fase 3 activacion Q1: sin la persona más influyente · IC 95 % inferior,0.015,3.0,INFORME fase 3,0.014720286616907888,1.0,0.014720286616907888,0.0,coincide,
+3 Reapertura,Fase 3 activacion Q1: sin la persona más influyente · IC 95 % superior,0.063,3.0,INFORME fase 3,0.06321537811108573,1.0,0.06321537811108573,0.0,coincide,
+3 Reapertura,Fase 3 activacion Q2: delta,0.009,3.0,INFORME fase 3,0.008537476761735727,1.0,0.00853747676173573,-3.469446951953614e-18,coincide,
+3 Reapertura,Fase 3 activacion Q2: mediana,-0.001,3.0,INFORME fase 3,-0.0009259259259258856,1.0,-0.0009259259259258856,0.0,coincide,
+3 Reapertura,Fase 3 activacion Q2: persona más influyente es P44 (0 = sí),0.0,0.0,INFORME fase 3,0.0,1.0,,,coincide,P44 (-0.231)
+3 Reapertura,Fase 3 activacion Q2: sin la persona más influyente,0.015,3.0,INFORME fase 3,0.014520144450009886,1.0,0.014520144450009893,-6.938893903907228e-18,coincide,p 0.3034
+3 Reapertura,Fase 3 activacion Q2: sin la persona más influyente · IC 95 % inferior,-0.012,3.0,INFORME fase 3,-0.012006322704143134,1.0,-0.012006322704143136,1.734723475976807e-18,coincide,
+3 Reapertura,Fase 3 activacion Q2: sin la persona más influyente · IC 95 % superior,0.042,3.0,INFORME fase 3,0.04155409570255641,1.0,0.0415540957025564,6.938893903907228e-18,coincide,
+3 Reapertura,"Curva: % de filas en que el placebo iguala el nº de ventanas de la banda, mínimo (bandas 12–96 s, ambas tareas)",30.0,0.0,"INFORME reapertura, límites (""30–44 %"")",0.30064219456116703,100.0,,,coincide,atencion 12 s 0.3846; atencion 24 s 0.3164; atencion 48 s 0.3394; atencion 96 s 0.3006; activacion 12 s 0.4407; activacion 24 s 0.3409; activacion 48 s 0.4118; activacion 96 s 0.3330
+3 Reapertura,"Curva: ídem, máximo",44.0,0.0,"INFORME reapertura, límites (""30–44 %"")",0.4406509253350351,100.0,,,coincide,
+3 Reapertura,P4: pares positivo-negativo dentro del mismo estímulo en activación,4.0,0.0,"INFORME fase 3, auditorías",4.0,1.0,,,coincide,
+6 Montaje,"Desfase EEG–seguidor ocular (parpadeo): mínimo, s",0.18,2.0,INFORME montaje,0.184,1.0,,,coincide,
+6 Montaje,"Desfase: máximo, s",0.53,2.0,INFORME montaje,0.528,1.0,,,coincide,
+6 Montaje,"Desfase: mediana, s",0.45,2.0,INFORME montaje,0.448,1.0,,,coincide,
+6 Montaje,"Desfase: cuartil inferior, s",0.28,2.0,INFORME montaje,0.28,1.0,,,coincide,
+6 Montaje,"Desfase: cuartil superior, s",0.48,2.0,INFORME montaje,0.48,1.0,,,coincide,
+6 Montaje,Personas con desfase positivo (parpadeo),41.0,0.0,INFORME montaje,41.0,1.0,,,coincide,
+6 Montaje,Personas con desfase positivo (mirada horizontal),41.0,0.0,"Auditoría 23-11, M9",41.0,1.0,,,coincide,
+6 Montaje,Personas con desfase no positivo (mirada vertical),4.0,0.0,"Auditoría 23-11, M9",4.0,1.0,,,coincide,mínimo -0.808 s
+6 Montaje,Desfase como % de la ventana de 2 s: mínimo,9.0,0.0,"Borradores (""9–26 %""); el INFORME dice 12 %",0.092,100.0,,,coincide,
+6 Montaje,Desfase como % de la ventana de 2 s: máximo,26.0,0.0,"Borradores (""9–26 %""); el INFORME dice 25 %",0.264,100.0,,,coincide,
+6 Montaje,Desfase como % de la ventana de 2 s: mediana,22.0,0.0,Borradores,0.224,100.0,,,coincide,
+6 Montaje,"INFORME montaje: ""entre un 12 % y un 25 %"" — mínimo",12.0,0.0,INFORME montaje,0.092,100.0,,,difiere,
+6 Montaje,"INFORME montaje: ""entre un 12 % y un 25 %"" — máximo",25.0,0.0,INFORME montaje,0.264,100.0,,,difiere,
+6 Montaje,"Grupo 1 (P2 a P21, P36, P37): mediana del desfase, s",0.27,2.0,INFORME montaje; cierre,0.28,1.0,,,coincide con redondeo,n=19; rango 0.184–0.352; media 0.2787
+6 Montaje,"Grupo 2 (resto): mediana del desfase, s",0.47,2.0,INFORME montaje; cierre,0.48,1.0,,,coincide con redondeo,n=22; rango 0.440–0.528; media 0.4840
+6 Montaje,Separación limpia entre grupos (0 = el máximo del grupo 1 es menor que el mínimo del grupo 2),0.0,0.0,INFORME montaje,0.0,1.0,,,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 0 (Fp1), mediana µV",148.0,0.0,INFORME montaje,148.36279208320482,1.0,148.36279208320482,0.0,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 1 (Fp2), mediana µV",151.0,0.0,INFORME montaje,151.02370033150498,1.0,151.02370033150498,0.0,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 8 (F7), mediana µV",74.0,0.0,INFORME montaje,73.56259796073797,1.0,73.56259796073797,0.0,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 9 (F8), mediana µV",77.0,0.0,INFORME montaje,77.42450397609286,1.0,77.42450397609286,0.0,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 10 (F3), mediana µV",57.0,0.0,INFORME montaje,57.486473034336925,1.0,57.486473034336925,0.0,coincide,
+6 Montaje,"Amplitud del parpadeo, canal 11 (F4), mediana µV",56.0,0.0,INFORME montaje,56.40528191905941,1.0,56.40528191905941,0.0,coincide,
+6 Montaje,"Central y temporal (2, 3, 12, 13): mínimo µV",25.0,0.0,INFORME montaje,24.720440841374906,1.0,,,coincide,
+6 Montaje,Central y temporal: máximo µV,29.0,0.0,INFORME montaje,28.877592592036024,1.0,,,coincide,
+6 Montaje,"Parietal y occipital (4–7, 14, 15): mínimo µV",18.0,0.0,INFORME montaje,18.45668517256034,1.0,,,coincide,
+6 Montaje,Parietal y occipital: máximo µV,24.0,0.0,INFORME montaje,23.875706416722586,1.0,,,coincide,
+6 Montaje,"Frontopolar ""unos 150 µV"": media de Fp1 y Fp2",150.0,0.0,Borradores,149.6932462073549,1.0,,,coincide,
+6 Montaje,"Posterior ""unos 20 µV"": mediana de las 6 medianas posteriores",20.0,0.0,Borradores,19.886728750899813,1.0,,,coincide,
+6 Montaje,Personas cuyo canal de mayor respuesta al parpadeo es 0 o 1,27.0,0.0,INFORME montaje,27.0,1.0,,,coincide,
+6 Montaje,Personas con F7 y F8 utilizables,37.0,0.0,INFORME montaje,37.0,1.0,,,coincide,
+6 Montaje,Personas con signo opuesto de la mirada horizontal en F7 y F8,31.0,0.0,INFORME montaje,31.0,1.0,,,coincide,
+6 Montaje,"Canales con mayor acoplamiento horizontal son 9, 13, 5 y 3 (0 = sí)",0.0,0.0,INFORME montaje,0.0,1.0,,,coincide,"[9, 13, 5, 3]"
+6 Montaje,Canales utilizables por persona: mínimo,11.0,0.0,INFORME montaje,11.0,1.0,,,coincide,
+6 Montaje,Canales utilizables por persona: máximo,16.0,0.0,INFORME montaje,16.0,1.0,,,coincide,
+6 Montaje,Canales utilizables por persona: mediana,15.0,0.0,INFORME montaje,15.0,1.0,,,coincide,
+6 Montaje,"Canales con más pérdidas son P4, O1, P7 y P3 (0 = sí)",0.0,0.0,INFORME montaje,0.0,1.0,,,coincide,"['P4', 'O1', 'P3', 'P7']"
+6 Montaje,Parpadeos detectados por persona: mínimo,19.0,0.0,INFORME montaje,19.0,1.0,,,coincide,
+6 Montaje,Parpadeos detectados por persona: máximo,393.0,0.0,INFORME montaje,393.0,1.0,,,coincide,
+6 Montaje,"Frecuencia de muestreo efectiva, Hz",125.1,1.0,INFORME montaje,125.13594338830234,1.0,,,coincide,rango 125.008–125.167
+6 Montaje,"Mayor hueco entre muestras, s",0.19,2.0,INFORME montaje,0.1900801658630371,1.0,,,coincide,
+6 Montaje,"Correlación máxima más baja entre personas (parpadeo) — ""cercana a 0,1""",0.1,1.0,INFORME montaje,0.08027632224719572,1.0,,,coincide,
+6 Montaje,"Crudos, 41 personas: diferencia máxima del desfase del parpadeo frente a personas.csv, s",0.0,9.0,crudos en caché (41 personas),0.0,1.0,,,coincide,
+6 Montaje,"Crudos, 41 personas: discrepancias en canales utilizables, parpadeos o canal utilizable",0.0,0.0,crudos en caché (41 personas),0.0,1.0,,,coincide,
+6 Montaje,"Crudos, 41 personas: diferencia máxima de amplitud del parpadeo por canal, µV",0.0,6.0,crudos en caché (41 personas),0.0,1.0,,,coincide,
+6 Montaje,"Crudos, 41 personas: diferencia máxima de la correlación horizontal por canal",0.0,9.0,crudos en caché (41 personas),0.0,1.0,,,coincide,
+6 Montaje,"Crudos: desfase mínimo, s",0.18,2.0,crudos en caché (41 personas),0.184,1.0,,,coincide,
+6 Montaje,"Crudos: desfase máximo, s",0.53,2.0,crudos en caché (41 personas),0.528,1.0,,,coincide,
+6 Montaje,"Crudos: desfase mediano, s",0.45,2.0,crudos en caché (41 personas),0.448,1.0,,,coincide,
+6 Montaje,"Crudos: amplitud mediana del parpadeo en Fp1, µV",148.0,0.0,crudos en caché (41 personas),148.36279208320482,1.0,,,coincide,
+6 Montaje,"Crudos: amplitud mediana del parpadeo en Fp2, µV",151.0,0.0,crudos en caché (41 personas),151.02370033150498,1.0,,,coincide,
+6 Montaje,Crudos: personas con signo opuesto en F7 y F8,31.0,0.0,crudos en caché (41 personas),31.0,1.0,,,coincide,de 37
+6 Montaje,"Detalle P18: desfase del parpadeo, s",0.264,3.0,personas.csv,0.264,1.0,,,coincide,15 canales; 73 parpadeos; Fp1 90.10 µV; Fp2 95.80 µV; F7 +0.1431; F8 -0.2167
+6 Montaje,"Detalle P23: desfase del parpadeo, s",0.448,3.0,personas.csv,0.448,1.0,,,coincide,14 canales; 208 parpadeos; Fp1 215.24 µV; Fp2 271.17 µV; F7 -0.0079; F8 -0.2342
+6 Montaje,"Detalle P26: desfase del parpadeo, s",0.496,3.0,personas.csv,0.496,1.0,,,coincide,15 canales; 131 parpadeos; Fp1 59.88 µV; Fp2 70.93 µV; F7 +0.0128; F8 -0.0895
+6 Montaje,"Detalle P40: desfase del parpadeo, s",0.52,3.0,personas.csv,0.52,1.0,,,coincide,16 canales; 86 parpadeos; Fp1 85.12 µV; Fp2 107.91 µV; F7 +0.0231; F8 -0.0195
+6 Montaje,"Detalle P44: desfase del parpadeo, s",0.472,3.0,personas.csv,0.472,1.0,,,coincide,16 canales; 144 parpadeos; Fp1 263.23 µV; Fp2 288.59 µV; F7 +0.1552; F8 -0.1809
+4 Limpieza,AUC eeg_c1,0.681,3.0,INFORME limpieza,0.6808945625853307,1.0,0.6808945625853305,1.1102230246251565e-16,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica1_full,0.661,3.0,INFORME limpieza,0.6607729241780087,1.0,0.6607729241780087,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica2_full,0.638,3.0,INFORME limpieza,0.6376832118966147,1.0,0.6376832118966147,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica3_full,0.621,3.0,INFORME limpieza,0.6207791472235197,1.0,0.6207791472235197,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica4_full,0.613,3.0,INFORME limpieza,0.6133544244017347,1.0,0.6133544244017347,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ctrl3_full,0.674,3.0,INFORME limpieza,0.674300491173732,1.0,0.674300491173732,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica3_lento_amp,0.603,3.0,INFORME limpieza,0.6024864146219344,1.0,0.6024864146219344,0.0,coincide con redondeo,"41/41 sobre 0,5"
+4 Limpieza,AUC ica3_frontal,0.621,3.0,INFORME limpieza,0.620507747363133,1.0,0.620507747363133,0.0,coincide,"41/41 sobre 0,5"
+4 Limpieza,AUC ica3_posterior,0.562,3.0,INFORME limpieza,0.5620018041078824,1.0,0.5620018041078824,0.0,coincide,"38/41 sobre 0,5"
+4 Limpieza,AUC ica3_alfa_beta,0.547,3.0,INFORME limpieza,0.5474119583790354,1.0,0.5474119583790354,0.0,coincide,"38/41 sobre 0,5"
+4 Limpieza,AUC orig12,0.646,3.0,INFORME limpieza,0.6457561542264688,1.0,0.6457561542264688,0.0,coincide,"40/41 sobre 0,5"
+4 Limpieza,AUC reg12,0.634,3.0,INFORME limpieza,0.6338936466508233,1.0,0.6338936466508233,0.0,coincide,"40/41 sobre 0,5"
+4 Limpieza,Personas con alfa y beta limpio sobre el azar,38.0,0.0,INFORME limpieza,38.0,1.0,,,coincide,
+4 Limpieza,Personas con canales posteriores limpios sobre el azar,,,—,38.0,1.0,,,sin cifra informada,
+4 Limpieza,eeg_c1 − ica1_full,0.02,3.0,INFORME limpieza,0.020121638407321826,1.0,0.020121638407321833,-6.938893903907228e-18,coincide,33/41
+4 Limpieza,eeg_c1 − ica2_full,0.043,3.0,INFORME limpieza,0.04321135068871574,1.0,0.04321135068871574,0.0,coincide,37/41
+4 Limpieza,eeg_c1 − ica3_full,0.06,3.0,INFORME limpieza,0.06011541536181088,1.0,0.060115415361810864,1.3877787807814457e-17,coincide,39/41
+4 Limpieza,eeg_c1 − ica4_full,0.068,3.0,INFORME limpieza,0.0675401381835958,1.0,0.0675401381835958,0.0,coincide,37/41
+4 Limpieza,eeg_c1 − ctrl3_full,0.007,3.0,INFORME limpieza,0.0065940714115985824,1.0,0.006594071411598594,-1.1275702593849246e-17,coincide,22/41
+4 Limpieza,eeg_c1 − ctrl3_full · IC 95 % inferior,-0.001,3.0,INFORME limpieza,-0.0012471138776109583,1.0,-0.0012471138776109347,-2.3635607360183997e-17,coincide,
+4 Limpieza,eeg_c1 − ctrl3_full · IC 95 % superior,0.015,3.0,INFORME limpieza,0.014866963012079458,1.0,0.014866963012079472,-1.3877787807814457e-17,coincide,
+4 Limpieza,eeg_lento_amp − ica3_lento_amp,0.07,3.0,INFORME limpieza,0.07011042469090654,1.0,0.07011042469090653,1.3877787807814457e-17,coincide,39/41
+4 Limpieza,eeg_frontal − ica3_frontal,0.054,3.0,INFORME limpieza,0.0543276877846677,1.0,0.0543276877846677,0.0,coincide,37/41
+4 Limpieza,eeg_posterior − ica3_posterior,0.04,3.0,INFORME limpieza,0.04019168812675927,1.0,0.04019168812675927,0.0,coincide,34/41
+4 Limpieza,eeg_alfa_beta − ica3_alfa_beta,0.045,3.0,INFORME limpieza,0.04526774019178318,1.0,,,coincide,35/41
+4 Limpieza,ica3_frontal − ica3_posterior,0.059,3.0,INFORME limpieza,0.05850594325525066,1.0,0.05850594325525064,2.0816681711721685e-17,coincide,36/41
+4 Limpieza,ica3_lento_amp − ica3_alfa_beta,0.055,3.0,INFORME limpieza,0.05507445624289888,1.0,0.055074456242898896,-1.3877787807814457e-17,coincide,38/41
+4 Limpieza,orig12 − reg12,0.012,3.0,INFORME limpieza,0.01186250757564551,1.0,0.011862507575645538,-2.7755575615628914e-17,coincide,28/41
+4 Limpieza,orig12 − reg12 · IC 95 % inferior,-0.0,3.0,INFORME limpieza,-0.0002943609248142554,1.0,-0.0002943609248142204,-3.5019730171281793e-17,coincide,
+4 Limpieza,orig12 − reg12 · IC 95 % superior,0.024,3.0,INFORME limpieza,0.024147578033135844,1.0,0.02414757803313588,-3.469446951953614e-17,coincide,
+4 Limpieza,ica3_full − ica4_full,0.007,3.0,INFORME limpieza,0.007424722821784922,1.0,,,coincide,23/41
+4 Limpieza,ica3_full − ica4_full · IC 95 % inferior,-0.0,3.0,INFORME limpieza,-5.946844494298034e-05,1.0,,,coincide,
+4 Limpieza,ica3_full − ica4_full · IC 95 % superior,0.015,3.0,INFORME limpieza,0.015329301549995997,1.0,,,coincide,
+4 Limpieza,"Caída de alfa y beta sobre el azar: de +0,093 a +0,047 — después",0.047,3.0,AUDITORIA_RESULTADOS limpieza,0.047411958379035446,1.0,,,coincide,
+4 Limpieza,"Control con etiquetas barajadas − 0,5 (una partición)",-0.011,3.0,INFORME limpieza,-0.010952537581414894,1.0,-0.010952537581414906,1.214306433183765e-17,coincide,
+4 Limpieza,"Control con etiquetas barajadas − 0,5 (una partición) · IC 95 % inferior",-0.023,3.0,INFORME limpieza,-0.023188327307567463,1.0,-0.023188327307567484,2.0816681711721685e-17,coincide,
+4 Limpieza,"Control con etiquetas barajadas − 0,5 (una partición) · IC 95 % superior",0.001,3.0,INFORME limpieza,0.0012555643672064185,1.0,0.0012555643672064207,-2.168404344971009e-18,coincide,
+4 Limpieza,"Control con etiquetas barajadas, AUC",0.489,3.0,AUDITORIA_RESULTADOS limpieza,0.4890474624185852,1.0,,,coincide,
+4 Limpieza,Control barajado: IC 90 % inferior,-0.021,3.0,AUDITORIA_RESULTADOS limpieza,-0.02121270113809848,1.0,,,coincide,
+4 Limpieza,Control barajado: IC 90 % superior,-0.001,3.0,AUDITORIA_RESULTADOS limpieza,-0.0006612417941076917,1.0,,,coincide,
+4 Limpieza,Máxima diferencia de probabilidad entre el filtro identidad y eeg_c1,0.0,12.0,INFORME limpieza,0.0,1.0,,,coincide,
+4 Limpieza,Spearman medio por persona de la prob. eeg_c1 con el recorrido de la mirada (invertido),0.41,2.0,INFORME limpieza,0.4143053664414025,1.0,0.41430536644140237,1.1102230246251565e-16,coincide,
+4 Limpieza,Spearman medio por persona de la prob. ica3_full con el recorrido de la mirada (invertido),0.28,2.0,INFORME limpieza,0.2803607263969537,1.0,0.2803607263969537,0.0,coincide,
+4 Limpieza,Spearman medio por persona de la prob. ica3_alfa_beta con el recorrido de la mirada (invertido),0.11,2.0,INFORME limpieza,0.11380016925332366,1.0,0.11380016925332366,0.0,coincide,
+4 Limpieza,Spearman medio por persona de la prob. reg12 con el recorrido de la mirada (invertido),,2.0,INFORME limpieza,0.3047552679777941,1.0,0.3047552679777941,0.0,sin cifra informada,
+4 Limpieza,L1 sin P23 y P39,0.06,3.0,INFORME limpieza,0.0598326559137117,1.0,,,coincide,
+4 Limpieza,L2 sin P23 y P39,0.052,3.0,INFORME limpieza,0.05166247884694025,1.0,,,coincide,
+4 Limpieza,"L1 sin P23, P39 ni las cinco de identificación débil",0.061,3.0,INFORME limpieza,0.06106531511324314,1.0,,,coincide,
+4 Limpieza,"L2 sin P23, P39 ni las cinco de identificación débil",0.054,3.0,INFORME limpieza,0.05372001376597879,1.0,,,coincide,
+4 Limpieza,L1: mediana,0.06,3.0,"AUDITORIA_RESULTADOS limpieza (""0,060 y 0,053"")",0.06010458605210789,1.0,,,coincide,media 0.060115
+4 Limpieza,L1: sin la persona más influyente,0.064,3.0,AUDITORIA_RESULTADOS limpieza,0.06438652991252282,1.0,,,coincide,persona P9 (-0.111)
+4 Limpieza,L2: mediana,0.053,3.0,"AUDITORIA_RESULTADOS limpieza (""0,060 y 0,053"")",0.05342681290203155,1.0,,,coincide,media 0.053521
+4 Limpieza,L2: sin la persona más influyente,0.058,3.0,AUDITORIA_RESULTADOS limpieza,0.05770113612739898,1.0,,,coincide,persona P9 (-0.114)
+4 Limpieza,P9: AUC original,0.569,3.0,INFORME limpieza,0.5693504901960784,1.0,,,coincide,
+4 Limpieza,P9: AUC tras la limpieza,0.68,3.0,INFORME limpieza,0.6800796568627451,1.0,,,coincide,
+4 Limpieza,Spearman entre la caída por persona y el puntaje del primer componente,0.12,2.0,INFORME limpieza,0.11898954703832752,1.0,,,coincide,p 0.459
+4 Limpieza,Spearman entre la caída por persona y la AUC de partida,0.55,2.0,INFORME limpieza,0.5513937282229965,1.0,,,coincide,
+4 Limpieza,"Correlación máxima canal–parpadeo, mediana entre personas, identidad",0.28,2.0,INFORME limpieza,0.27794316138524633,1.0,0.27794316138524633,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–parpadeo, mediana entre personas, ica3",0.08,2.0,INFORME limpieza,0.07771640498384999,1.0,0.07771640498384999,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–parpadeo, mediana entre personas, ctrl3",0.31,2.0,INFORME limpieza,0.31058033543357827,1.0,0.31058033543357827,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada horizontal, mediana entre personas, identidad",0.21,2.0,INFORME limpieza,0.2092048687545052,1.0,0.2092048687545052,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada horizontal, mediana entre personas, ica3",0.11,2.0,INFORME limpieza,0.10901753102356215,1.0,0.10901753102356215,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada horizontal, mediana entre personas, ctrl3",0.22,2.0,INFORME limpieza,0.21744246544799217,1.0,0.21744246544799217,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada vertical, mediana entre personas, identidad",0.18,2.0,INFORME limpieza,0.17586478285463886,1.0,0.17586478285463886,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada vertical, mediana entre personas, ica3",0.07,2.0,INFORME limpieza,0.07382557115779484,1.0,0.07382557115779484,0.0,coincide,
+4 Limpieza,"Correlación máxima canal–mirada vertical, mediana entre personas, ctrl3",0.18,2.0,INFORME limpieza,0.17657038449313425,1.0,0.17657038449313425,0.0,coincide,
+4 Limpieza,% de la varianza en los 3 componentes oculares (mediana),3.5,1.0,INFORME limpieza,0.034965968102985315,100.0,0.034965968102985315,0.0,coincide,rango 0.0012–0.3493
+4 Limpieza,% de la varianza en los 3 componentes de control (mediana),72.0,0.0,INFORME limpieza,0.7207016577442674,100.0,0.7207016577442674,0.0,coincide,rango 0.3550–0.9576
+4 Limpieza,"Razón de varianza control / ocular (""veinte veces más"")",20.0,0.0,INFORME limpieza,20.611517336559476,1.0,,,coincide con redondeo,
+4 Limpieza,Puntaje ocular mediano del componente 1,0.38,2.0,INFORME limpieza,0.3808160105016945,1.0,,,coincide,
+4 Limpieza,Puntaje ocular mediano del componente 2,0.23,2.0,INFORME limpieza,0.23059967294320627,1.0,,,coincide,
+4 Limpieza,Puntaje ocular mediano del componente 3,0.17,2.0,INFORME limpieza,0.16923008060528927,1.0,,,coincide,
+4 Limpieza,Puntaje ocular mediano del componente 4,0.13,2.0,INFORME limpieza,0.13246771431058507,1.0,,,coincide,
+4 Limpieza,Puntaje ocular del control (mediana del máximo por persona),0.06,2.0,"INFORME limpieza (""0,06 como máximo"")",0.05941254250876202,1.0,,,coincide,máximo entre personas 0.1547
+4 Limpieza,Canales utilizables por persona: mínimo,11.0,0.0,INFORME limpieza,11.0,1.0,,,coincide,
+4 Limpieza,Canales utilizables por persona: máximo,16.0,0.0,INFORME limpieza,16.0,1.0,,,coincide,
+4 Limpieza,3 componentes como % de las dimensiones: mínimo,19.0,0.0,INFORME limpieza,0.1875,100.0,,,coincide,
+4 Limpieza,3 componentes como % de las dimensiones: máximo,27.0,0.0,INFORME limpieza,0.2727272727272727,100.0,,,coincide,
+4 Limpieza,"Personas con puntaje del primer componente bajo 0,15 son P12, P18, P22, P35 y P40 (0 = sí)",0.0,0.0,enmienda_v2 limpieza,0.0,1.0,,,coincide,"['P12', 'P18', 'P22', 'P35', 'P40']; P18 0.1424; siguiente 0.2066"
+4 Limpieza,"Desfase usado en la limpieza: mínimo, s",0.25,2.0,"INFORME limpieza (""0,25–0,5 s"")",0.232,1.0,,,difiere,
+4 Limpieza,"Desfase usado en la limpieza: máximo, s",0.5,1.0,"INFORME limpieza (""0,25–0,5 s"")",0.544,1.0,,,coincide,
+4 Limpieza,Ventanas en que el filtro identidad reproduce la tabla vigente,22211.0,0.0,INFORME limpieza,22211.0,1.0,,,coincide,
+4 Limpieza,"Crudos, 41 personas: discrepancias en canales utilizables frente a personas_limpieza.csv",0.0,0.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.0,1.0,,,coincide,
+4 Limpieza,"Crudos, 41 personas: diferencia máxima del desfase, s",0.0,9.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.0,1.0,,,coincide,
+4 Limpieza,"Crudos, 41 personas: diferencia máxima de la fracción de varianza retirada por ica3",0.0,6.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",7.13318293321663e-15,1.0,,,coincide,
+4 Limpieza,"Crudos, 41 personas: diferencia máxima de la fracción de varianza retirada por ctrl3",0.0,6.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",2.0095036745715333e-13,1.0,,,coincide,
+4 Limpieza,Crudos: % de varianza retirada por los 3 componentes oculares (mediana),3.5,1.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.03496596810298488,100.0,,,coincide,
+4 Limpieza,Crudos: % de varianza retirada por el control (mediana),72.0,0.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.7207016577442692,100.0,,,coincide,
+4 Limpieza,"Crudos, 41 personas: diferencia máxima de las correlaciones canal–referencia (3 condiciones × 3 referencias)",0.0,9.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",1.2989609388114332e-14,1.0,,,coincide,
+4 Limpieza,"Crudos: correlación máxima canal–parpadeo, mediana, identidad",0.28,2.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.27794316138524705,1.0,,,coincide,
+4 Limpieza,"Crudos: correlación máxima canal–parpadeo, mediana, ica3",0.08,2.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.07771640498385037,1.0,,,coincide,
+4 Limpieza,"Crudos: correlación máxima canal–parpadeo, mediana, ctrl3",0.31,2.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",0.3105803354335803,1.0,,,coincide,
+4 Limpieza,"Crudos: canales utilizables, mínimo",11.0,0.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",11.0,1.0,,,coincide,
+4 Limpieza,"Crudos: canales utilizables, máximo",16.0,0.0,"crudos en caché + filtros guardados (41 personas, sin reajustar la ICA)",16.0,1.0,,,coincide,
+4 Limpieza,Detalle P18: fracción de varianza retirada por ica3,0.01438702525025147,6.0,personas_limpieza.csv,0.014387025250251335,1.0,0.01438702525025147,-1.3530843112619095e-16,coincide,control 0.788396; parpadeo 0.1652 → 0.0645 (control 0.1482); 15 canales; desfase 0.264 s
+4 Limpieza,Detalle P23: fracción de varianza retirada por ica3,0.011554840713594859,6.0,personas_limpieza.csv,0.0115548407136011,1.0,0.011554840713594859,6.241535066564552e-15,coincide,control 0.676980; parpadeo 0.3191 → 0.1161 (control 0.3725); 14 canales; desfase 0.448 s
+4 Limpieza,Detalle P26: fracción de varianza retirada por ica3,0.0029282616560189997,6.0,personas_limpieza.csv,0.0029282616560190313,1.0,0.0029282616560189997,3.165870343657673e-17,coincide,control 0.882491; parpadeo 0.0899 → 0.0918 (control 0.0981); 15 canales; desfase 0.504 s
+4 Limpieza,Detalle P40: fracción de varianza retirada por ica3,0.019934687805968996,6.0,personas_limpieza.csv,0.01993468780596864,1.0,0.019934687805968996,-3.5735303605122226e-16,coincide,control 0.800780; parpadeo 0.0708 → 0.0698 (control 0.0706); 16 canales; desfase 0.496 s
+4 Limpieza,Detalle P44: fracción de varianza retirada por ica3,0.03728460791472996,6.0,personas_limpieza.csv,0.037284607914729304,1.0,0.03728460791472996,-6.591949208711867e-16,coincide,control 0.589487; parpadeo 0.4613 → 0.0689 (control 0.5378); 16 canales; desfase 0.472 s
+5 Red cruda,AUC red_orig,0.716,3.0,INFORME red cruda,0.7159158584069619,1.0,0.7159158584069619,0.0,coincide,
+5 Red cruda,AUC red_orig · IC 95 % inferior,0.697,3.0,INFORME red cruda,0.6966936356324405,1.0,0.6966936356324405,0.0,coincide,
+5 Red cruda,AUC red_orig · IC 95 % superior,0.735,3.0,INFORME red cruda,0.7347978329869287,1.0,0.7347978329869287,0.0,coincide,
+5 Red cruda,"Personas con AUC red_orig sobre 0,5",41.0,0.0,INFORME red cruda,41.0,1.0,,,coincide,
+5 Red cruda,AUC eeg_c1,0.681,3.0,INFORME red cruda,0.6808945625853307,1.0,0.6808945625853305,1.1102230246251565e-16,coincide,
+5 Red cruda,AUC eeg_c1 · IC 95 % inferior,0.665,3.0,INFORME red cruda,0.6644516847704279,1.0,0.6644516847704278,1.1102230246251565e-16,coincide con redondeo,
+5 Red cruda,AUC eeg_c1 · IC 95 % superior,0.697,3.0,INFORME red cruda,0.6971827177893829,1.0,0.6971827177893829,0.0,coincide,
+5 Red cruda,"Personas con AUC eeg_c1 sobre 0,5",41.0,0.0,INFORME red cruda,41.0,1.0,,,coincide,
+5 Red cruda,AUC red_ica3,0.649,3.0,INFORME red cruda,0.6486186334498366,1.0,0.6486186334498366,0.0,coincide,
+5 Red cruda,AUC red_ica3 · IC 95 % inferior,0.63,3.0,INFORME red cruda,0.6303852456792141,1.0,0.6303852456792141,0.0,coincide,
+5 Red cruda,AUC red_ica3 · IC 95 % superior,0.667,3.0,INFORME red cruda,0.6666367653520132,1.0,0.6666367653520132,0.0,coincide,
+5 Red cruda,"Personas con AUC red_ica3 sobre 0,5",41.0,0.0,INFORME red cruda,41.0,1.0,,,coincide,
+5 Red cruda,AUC ica3_full,0.621,3.0,INFORME red cruda,0.6207791472235197,1.0,0.6207791472235197,0.0,coincide,
+5 Red cruda,AUC ica3_full · IC 95 % inferior,0.607,3.0,INFORME red cruda,0.6067271663807261,1.0,0.6067271663807261,0.0,coincide,
+5 Red cruda,AUC ica3_full · IC 95 % superior,0.635,3.0,INFORME red cruda,0.6349464688656922,1.0,0.6349464688656923,-1.1102230246251565e-16,coincide,
+5 Red cruda,"Personas con AUC ica3_full sobre 0,5",41.0,0.0,INFORME red cruda,41.0,1.0,,,coincide,
+5 Red cruda,AUC red_act,0.498,3.0,INFORME red cruda,0.49849127736062954,1.0,0.49849127736062954,0.0,coincide,
+5 Red cruda,AUC red_act · IC 95 % inferior,0.478,3.0,INFORME red cruda,0.47818856880960214,1.0,0.47818856880960214,0.0,coincide,
+5 Red cruda,AUC red_act · IC 95 % superior,0.518,3.0,INFORME red cruda,0.5182262258964169,1.0,0.5182262258964169,0.0,coincide,
+5 Red cruda,"Personas con AUC red_act sobre 0,5",20.0,0.0,INFORME red cruda,20.0,1.0,,,coincide,
+5 Red cruda,AUC hgb_eeg_act,0.524,3.0,INFORME red cruda,0.523695689888081,1.0,0.523695689888081,0.0,coincide,
+5 Red cruda,AUC hgb_eeg_act · IC 95 % inferior,0.497,3.0,INFORME red cruda,0.4972509930665284,1.0,0.4972509930665284,0.0,coincide,
+5 Red cruda,AUC hgb_eeg_act · IC 95 % superior,0.551,3.0,INFORME red cruda,0.5504934839745781,1.0,0.5504934839745781,0.0,coincide con redondeo,
+5 Red cruda,"Personas con AUC hgb_eeg_act sobre 0,5",26.0,0.0,INFORME red cruda,26.0,1.0,,,coincide,
+5 Red cruda,AUC hgb_c1,0.518,3.0,INFORME red cruda,0.5176299961383577,1.0,0.5176299961383577,0.0,coincide,
+5 Red cruda,AUC hgb_c1 · IC 95 % inferior,0.491,3.0,INFORME red cruda,0.49090106415841167,1.0,0.49090106415841167,0.0,coincide,
+5 Red cruda,AUC hgb_c1 · IC 95 % superior,0.545,3.0,INFORME red cruda,0.5452941283016878,1.0,0.5452941283016878,0.0,coincide,
+5 Red cruda,"Personas con AUC hgb_c1 sobre 0,5",22.0,0.0,INFORME red cruda,22.0,1.0,,,coincide,
+5 Red cruda,R1,0.035,3.0,INFORME red cruda,0.03502129582163135,1.0,,,coincide,32/41; p 0.000005; IC90 [0.0252; 0.0449]
+5 Red cruda,R1 · IC 95 % inferior,0.023,3.0,INFORME red cruda,0.023262978153260717,1.0,,,coincide,
+5 Red cruda,R1 · IC 95 % superior,0.047,3.0,INFORME red cruda,0.04679252794581893,1.0,,,coincide,
+5 Red cruda,R2,0.028,3.0,INFORME red cruda,0.027839486226316927,1.0,,,coincide,30/41; p 0.000845; IC90 [0.0150; 0.0407]
+5 Red cruda,R2 · IC 95 % inferior,0.013,3.0,INFORME red cruda,0.012576350534792181,1.0,,,coincide,
+5 Red cruda,R2 · IC 95 % superior,0.043,3.0,INFORME red cruda,0.04320201719084302,1.0,,,coincide,
+5 Red cruda,R3,0.067,3.0,INFORME red cruda,0.0672972249571253,1.0,,,coincide,39/41; p 0.000005; IC90 [0.0553; 0.0798]
+5 Red cruda,R3 · IC 95 % inferior,0.053,3.0,INFORME red cruda,0.053003694191115114,1.0,,,coincide,
+5 Red cruda,R3 · IC 95 % superior,0.082,3.0,INFORME red cruda,0.08237802182134736,1.0,,,coincide,
+5 Red cruda,R4,-0.025,3.0,INFORME red cruda,-0.025204412527451356,1.0,,,coincide,15/41; p 0.099500; IC90 [-0.0497; -0.0013]
+5 Red cruda,R4 · IC 95 % inferior,-0.055,3.0,INFORME red cruda,-0.05453942748996472,1.0,,,coincide,
+5 Red cruda,R4 · IC 95 % superior,0.003,3.0,INFORME red cruda,0.003407520284925717,1.0,,,coincide,
+5 Red cruda,R1 en la partición 1101,0.033,3.0,"INFORME red cruda, robustez",0.03344088959764037,1.0,,,coincide,
+5 Red cruda,R2 en la partición 1101,0.028,3.0,"INFORME red cruda, robustez",0.028011475909618968,1.0,,,coincide,
+5 Red cruda,R3 en la partición 1101,0.068,3.0,"INFORME red cruda, robustez",0.06750963436525592,1.0,,,coincide,
+5 Red cruda,R4 en la partición 1101,-0.039,3.0,"INFORME red cruda, robustez",-0.03874194194701282,1.0,,,coincide,
+5 Red cruda,R1 en la partición 1102,0.036,3.0,"INFORME red cruda, robustez",0.03607561608334962,1.0,,,coincide,
+5 Red cruda,R2 en la partición 1102,0.024,3.0,"INFORME red cruda, robustez",0.023795720208736135,1.0,,,coincide,
+5 Red cruda,R3 en la partición 1102,0.068,3.0,"INFORME red cruda, robustez",0.06842914069547835,1.0,,,coincide,
+5 Red cruda,R4 en la partición 1102,-0.042,3.0,"INFORME red cruda, robustez",-0.04147999331434641,1.0,,,coincide con redondeo,
+5 Red cruda,R1 en la partición 1103,0.039,3.0,"INFORME red cruda, robustez",0.038723133765114486,1.0,,,coincide,
+5 Red cruda,R2 en la partición 1103,0.03,3.0,"INFORME red cruda, robustez",0.02992632340571879,1.0,,,coincide,
+5 Red cruda,R3 en la partición 1103,0.068,3.0,"INFORME red cruda, robustez",0.0679061809183576,1.0,,,coincide,
+5 Red cruda,R4 en la partición 1103,-0.021,3.0,"INFORME red cruda, robustez",-0.020456632021463517,1.0,,,coincide con redondeo,
+5 Red cruda,R1 en la partición 1104,0.037,3.0,"INFORME red cruda, robustez",0.03736634647492512,1.0,,,coincide,
+5 Red cruda,R2 en la partición 1104,0.032,3.0,"INFORME red cruda, robustez",0.031494750672035,1.0,,,coincide con redondeo,
+5 Red cruda,R3 en la partición 1104,0.067,3.0,"INFORME red cruda, robustez",0.06736352609599645,1.0,,,coincide,
+5 Red cruda,R4 en la partición 1104,0.002,3.0,"INFORME red cruda, robustez",0.0021359515315985665,1.0,,,coincide,
+5 Red cruda,R1 en la partición 1105,0.03,3.0,"INFORME red cruda, robustez",0.029500493187127122,1.0,,,coincide,
+5 Red cruda,R2 en la partición 1105,0.026,3.0,"INFORME red cruda, robustez",0.025969160935475695,1.0,,,coincide,
+5 Red cruda,R3 en la partición 1105,0.065,3.0,"INFORME red cruda, robustez",0.06527764271053818,1.0,,,coincide,
+5 Red cruda,R4 en la partición 1105,-0.028,3.0,"INFORME red cruda, robustez",-0.027479446886032616,1.0,,,coincide con redondeo,
+5 Red cruda,R1 con la partición 1105 sola: IC 95 % inferior,0.017,3.0,"INFORME red cruda, límites",0.017226340911964025,1.0,,,coincide,
+5 Red cruda,R1 sin P23 y P39,0.0364,4.0,AUDITORIA_RESULTADOS red,0.03641500758556047,1.0,,,coincide,
+5 Red cruda,R1 sin P23 y P39 · IC 95 % inferior,0.0248,4.0,AUDITORIA_RESULTADOS red,0.02477678553469707,1.0,,,coincide,
+5 Red cruda,R1 sin P23 y P39 · IC 95 % superior,0.0482,4.0,AUDITORIA_RESULTADOS red,0.048233026964849365,1.0,,,coincide,
+5 Red cruda,"R1 sin P23 y P39 (informe, 3 decimales)",0.036,3.0,INFORME red cruda,0.03641500758556047,1.0,,,coincide,
+5 Red cruda,R2 sin P23 y P39,0.0282,4.0,AUDITORIA_RESULTADOS red,0.028245506889880423,1.0,,,coincide,
+5 Red cruda,R2 sin P23 y P39 · IC 95 % inferior,0.0126,4.0,AUDITORIA_RESULTADOS red,0.01258990865434225,1.0,,,coincide,
+5 Red cruda,R2 sin P23 y P39 · IC 95 % superior,0.0439,4.0,AUDITORIA_RESULTADOS red,0.04386913795415643,1.0,,,coincide,
+5 Red cruda,"R2 sin P23 y P39 (informe, 3 decimales)",0.028,3.0,INFORME red cruda,0.028245506889880423,1.0,,,coincide,
+5 Red cruda,R3 sin P23 y P39,0.068,4.0,AUDITORIA_RESULTADOS red,0.06800215660939174,1.0,,,coincide,
+5 Red cruda,R3 sin P23 y P39 · IC 95 % inferior,0.0529,4.0,AUDITORIA_RESULTADOS red,0.052947245341985104,1.0,,,coincide,
+5 Red cruda,R3 sin P23 y P39 · IC 95 % superior,0.0838,4.0,AUDITORIA_RESULTADOS red,0.08377624033636921,1.0,,,coincide,
+5 Red cruda,"R3 sin P23 y P39 (informe, 3 decimales)",0.068,3.0,INFORME red cruda,0.06800215660939174,1.0,,,coincide,
+5 Red cruda,R4 sin P23 y P39,-0.0273,4.0,AUDITORIA_RESULTADOS red,-0.027316014835679286,1.0,,,coincide,
+5 Red cruda,R4 sin P23 y P39 · IC 95 % inferior,-0.0574,4.0,AUDITORIA_RESULTADOS red,-0.05740599207612822,1.0,,,coincide,
+5 Red cruda,R4 sin P23 y P39 · IC 95 % superior,0.0026,4.0,AUDITORIA_RESULTADOS red,0.0025857925474756216,1.0,,,coincide,
+5 Red cruda,"R4 sin P23 y P39 (informe, 3 decimales)",-0.027,3.0,INFORME red cruda,-0.027316014835679286,1.0,,,coincide,
+5 Red cruda,R1 dejando una persona fuera: IC 95 % inferior mínimo,0.0215,4.0,AUDITORIA_RESULTADOS red,0.021475393368911265,1.0,,,coincide,
+5 Red cruda,R1 dejando una persona fuera: IC 95 % inferior máximo,0.0257,4.0,AUDITORIA_RESULTADOS red,0.025731905377578874,1.0,,,coincide,
+5 Red cruda,R2 dejando una persona fuera: IC 95 % inferior mínimo,0.01,4.0,AUDITORIA_RESULTADOS red,0.010027364667193705,1.0,,,coincide,
+5 Red cruda,R2 dejando una persona fuera: IC 95 % inferior máximo,0.0173,4.0,AUDITORIA_RESULTADOS red,0.017263757690806486,1.0,,,coincide,
+5 Red cruda,R3 dejando una persona fuera: IC 95 % inferior mínimo,0.0508,4.0,AUDITORIA_RESULTADOS red,0.050758343274755445,1.0,,,coincide,
+5 Red cruda,"R4 pasa a ""inferior"" al quitar a P10, P24, P33, P34 o P40 (0 = exactamente esas cinco)",0.0,0.0,INFORME red cruda,0.0,1.0,,,coincide,"['P10', 'P24', 'P33', 'P34', 'P40']; IC superior al quitarlas: P10 -0.00145; P24 -0.00075; P33 -0.00077; P34 -0.00081; P40 -0.00070"
+5 Red cruda,"R1 mantiene ""efecto relevante"" al quitar cualquier persona (0 = sí)",0.0,0.0,INFORME red cruda,0.0,1.0,,,coincide,
+5 Red cruda,"R3 mantiene ""efecto relevante"" al quitar cualquier persona (0 = sí)",0.0,0.0,INFORME red cruda,0.0,1.0,,,coincide,
+5 Red cruda,R2 mantiene IC 95 % inferior > 0 al quitar cualquier persona (0 = sí),0.0,0.0,INFORME red cruda,0.0,1.0,,,coincide,
+5 Red cruda,Las dos personas más favorables a R1 son P21 y P18 (0 = sí),0.0,0.0,INFORME red cruda,0.0,1.0,,,coincide,"['P21', 'P18']"
+5 Red cruda,R1 sin P21 y P18: IC 95 % inferior,0.0199,4.0,INFORME red cruda,0.020111620478254995,1.0,,,difiere,
+5 Red cruda,R1 sin P21 y P18: IC 95 % inferior con otras 30 semillas de remuestreo (mínimo),,,—,0.019743183537906557,1.0,,,sin cifra informada,"máximo 0.02018; bajo 0,02 en 23 de 30; t de Student 0.01944"
+5 Red cruda,"R1: IC 95 % inferior con 30 semillas, mínimo",0.023,4.0,"AUDITORIA_RESULTADOS red (""entre 0,0230 y 0,0234"")",0.02290259657957246,1.0,,,coincide con redondeo,máximo 0.02337
+5 Red cruda,R1 − R2 (cambio de la ventaja de la red al limpiar),0.007,3.0,"Auditoría 23-11, I1",0.007181809595314421,1.0,,,coincide,p 0.288; 20/41; IC90 [-0.0034; 0.0182]
+5 Red cruda,R1 − R2 (cambio de la ventaja de la red al limpiar) · IC 95 % inferior,-0.005,3.0,"Auditoría 23-11, I1",-0.005478602753185993,1.0,,,coincide,
+5 Red cruda,R1 − R2 (cambio de la ventaja de la red al limpiar) · IC 95 % superior,0.02,3.0,"Auditoría 23-11, I1",0.02032262680882436,1.0,,,coincide,
+5 Red cruda,R1 − R2: p,0.29,2.0,"Auditoría 23-11, I1",0.28771356143219284,1.0,,,coincide,
+5 Red cruda,R1 − R2: personas,20.0,0.0,"Auditoría 23-11, I1",20.0,1.0,,,coincide,
+5 Red cruda,"(EEG + mirada + pupila) − solo EEG, activación",-0.006,3.0,"Auditoría 23-11, I6",-0.0060656937497232345,1.0,-0.006065693749723215,-1.9081958235744878e-17,coincide,
+5 Red cruda,"(EEG + mirada + pupila) − solo EEG, activación · IC 95 % inferior",-0.022,3.0,"Auditoría 23-11, I6",-0.021651545059367085,1.0,-0.02165154505936707,-1.3877787807814457e-17,coincide,
+5 Red cruda,"(EEG + mirada + pupila) − solo EEG, activación · IC 95 % superior",0.009,3.0,"Auditoría 23-11, I6",0.008598716459470386,1.0,0.008598716459470397,-1.0408340855860843e-17,coincide,
+5 Red cruda,"HGB solo EEG en activación − 0,5: p",0.09,2.0,INFORME red cruda,0.09267453662731687,1.0,0.09267453662731687,0.0,coincide,
+5 Red cruda,"Desviación entre semillas de la AUC por persona, red de activación (media)",0.045,3.0,"AUDITORIA_RESULTADOS red (""cercana a 0,045"")",0.04516499217637019,1.0,,,coincide,HGB solo EEG 0.0396
+5 Red cruda,AUC de la red original juntando todas las ventanas (media de 5 particiones),0.684,3.0,INFORME red cruda,0.6837198957444096,1.0,,,coincide,por partición: 0.68912; 0.68334; 0.68075; 0.68349; 0.68189
+5 Red cruda,"Ídem, con la probabilidad promediada sobre particiones",,,—,0.690381106631289,1.0,,,sin cifra informada,
+5 Red cruda,"Spearman medio por persona, prob. red_orig con el recorrido de la mirada (invertido)",0.48,2.0,INFORME red cruda,0.48465551116721933,1.0,0.4846555111672193,5.551115123125783e-17,coincide,
+5 Red cruda,"Spearman medio por persona, prob. eeg_c1 con el recorrido de la mirada (invertido)",0.41,2.0,INFORME red cruda,0.4143053664414025,1.0,,,coincide,
+5 Red cruda,"Spearman medio por persona, prob. red_ica3 con el recorrido de la mirada (invertido)",0.33,2.0,INFORME red cruda,0.32978272423152605,1.0,0.32978272423152605,0.0,coincide,
+5 Red cruda,"Spearman medio por persona, prob. red_orig con el puntaje ocular",0.45,2.0,AUDITORIA_RESULTADOS red,0.4540420337513156,1.0,0.4540420337513156,0.0,coincide,
+5 Red cruda,"Spearman medio por persona, prob. red_ica3 con el puntaje ocular",0.32,2.0,AUDITORIA_RESULTADOS red,0.3196914341875434,1.0,0.3196914341875434,0.0,coincide,
+5 Red cruda,Parámetros entrenables de la red (conteo analítico),1217.0,0.0,INFORME red cruda,1217.0,1.0,,,coincide,capa lineal con 112 entradas
+5 Red cruda,"Duración del núcleo temporal, s",0.26,2.0,INFORME red cruda,0.256,1.0,,,coincide,
+5 Red cruda,"Ventanas con la entrada toda en cero (tensor original, 22.211 ventanas)",50.0,0.0,INFORME red cruda,50.0,1.0,,,coincide,"con etiqueta de atención 50; con etiqueta de activación 23; personas ['P11', 'P12', 'P13', 'P16', 'P20', 'P21', 'P22', 'P26', 'P27', 'P28', 'P30', 'P31', 'P32', 'P34', 'P36', 'P37', 'P38', 'P39', 'P4', 'P40', 'P46', 'P47', 'P6']"
+5 Red cruda,Ventanas con la entrada toda en cero (tensor limpio),50.0,0.0,INFORME red cruda,50.0,1.0,,,coincide,
+5 Red cruda,Forma del tensor: ventanas,22211.0,0.0,INFORME red cruda,22211.0,1.0,,,coincide,"(22211, 16, 240)"
+7 Etapas del 16-11,V3: diferencia máxima de AUC media frente a metricas.csv (54 filas),0.0,9.0,cierre_v3 metricas.csv,3.3306690738754696e-16,1.0,,,coincide,
+7 Etapas del 16-11,V3: diferencia máxima de BA media frente a metricas.csv (54 filas),0.0,9.0,cierre_v3 metricas.csv,0.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: diferencia máxima de macro-F1 media frente a metricas.csv (54 filas),0.0,9.0,cierre_v3 metricas.csv,0.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: diferencia máxima de recall de la clase alta media frente a metricas.csv (54 filas),0.0,9.0,cierre_v3 metricas.csv,0.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: diferencia máxima de recall de la clase baja media frente a metricas.csv (54 filas),0.0,9.0,cierre_v3 metricas.csv,0.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: diferencia máxima de los IC 95 % de las cinco métricas (misma semilla),0.0,9.0,cierre_v3 metricas.csv,2.220446049250313e-16,1.0,,,coincide,
+7 Etapas del 16-11,V3: personas por partición — entrenamiento,25.0,0.0,INFORME cierre V3,25.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: personas por partición — validación,8.0,0.0,INFORME cierre V3,8.0,1.0,,,coincide,
+7 Etapas del 16-11,V3: personas por partición — test,8.0,0.0,INFORME cierre V3,8.0,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c1: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.6102482744211806,1.0,0.6102482744211806,0.0,coincide,macro-F1 0.598675; recall alta 0.531235; recall baja 0.689261
+7 Etapas del 16-11,V3 test atencion hgb_c32: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.6211254032253763,1.0,0.6211254032253763,0.0,coincide,macro-F1 0.609302; recall alta 0.561708; recall baja 0.680543
+7 Etapas del 16-11,V3 test atencion gru_c32: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.5764645300351272,1.0,0.5764645300351272,0.0,coincide,macro-F1 0.533244; recall alta 0.436958; recall baja 0.715971
+7 Etapas del 16-11,V3 test activacion hgb_c1: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.5038864381301738,1.0,0.5038864381301738,0.0,coincide,macro-F1 0.485815; recall alta 0.619252; recall baja 0.388521
+7 Etapas del 16-11,V3 test activacion hgb_c32: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.5418188153170653,1.0,0.5418188153170653,0.0,coincide,macro-F1 0.520787; recall alta 0.666072; recall baja 0.417566
+7 Etapas del 16-11,V3 test activacion gru_c32: BA / macro-F1 / recall alta / recall baja (se registra BA),,,cierre_v3 metricas.csv,0.5370681309904943,1.0,0.5370681309904943,0.0,coincide,macro-F1 0.488032; recall alta 0.387981; recall baja 0.686155
+7 Etapas del 16-11,V3 test atencion hgb_c1: AUC,0.662,3.0,INFORME cierre V3,0.6615664347653534,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c1: AUC · IC 95 % inferior,0.619,3.0,INFORME cierre V3,0.6190584424579207,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c1: AUC · IC 95 % superior,0.703,3.0,INFORME cierre V3,0.703277871033977,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c32: AUC,0.69,3.0,INFORME cierre V3,0.6902733629946649,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c32: AUC · IC 95 % inferior,0.644,3.0,INFORME cierre V3,0.6440657738549401,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion hgb_c32: AUC · IC 95 % superior,0.733,3.0,INFORME cierre V3,0.733326420298851,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion gru_c32: AUC,0.64,3.0,INFORME cierre V3,0.6402714462224872,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion gru_c32: AUC · IC 95 % inferior,0.583,3.0,INFORME cierre V3,0.5834152809189371,1.0,,,coincide,
+7 Etapas del 16-11,V3 test atencion gru_c32: AUC · IC 95 % superior,0.696,3.0,INFORME cierre V3,0.696058037119113,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c1: AUC,0.514,3.0,INFORME cierre V3,0.5140866231607639,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c1: AUC · IC 95 % inferior,0.451,3.0,INFORME cierre V3,0.4509860104858435,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c1: AUC · IC 95 % superior,0.579,3.0,INFORME cierre V3,0.5788144918973874,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c32: AUC,0.547,3.0,INFORME cierre V3,0.5470055056582337,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c32: AUC · IC 95 % inferior,0.466,3.0,INFORME cierre V3,0.4660595020193585,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion hgb_c32: AUC · IC 95 % superior,0.623,3.0,INFORME cierre V3,0.6225414651227719,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion gru_c32: AUC,0.583,3.0,INFORME cierre V3,0.5830544381256202,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion gru_c32: AUC · IC 95 % inferior,0.488,3.0,INFORME cierre V3,0.48774401965630054,1.0,,,coincide,
+7 Etapas del 16-11,V3 test activacion gru_c32: AUC · IC 95 % superior,0.676,3.0,INFORME cierre V3,0.6758550550762268,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activación, entrenamiento: AUC mínima entre estrategias (""entre 0,50 y 0,53"")",0.5,2.0,INFORME cierre V3,0.4964648350294626,1.0,,,coincide,máxima 0.5316
+7 Etapas del 16-11,"V3 activación, entrenamiento: AUC máxima entre estrategias",0.53,2.0,INFORME cierre V3,0.5315801890373338,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, oof_train",0.018,3.0,INFORME cierre V3,0.01845302195624719,1.0,0.01845302195624716,2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, oof_train · IC 95 % inferior",0.009,3.0,INFORME cierre V3,0.009058909834974349,1.0,0.009058909834974323,2.6020852139652106e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, oof_train · IC 95 % superior",0.027,3.0,INFORME cierre V3,0.027291278789011858,1.0,0.0272912787890118,5.898059818321144e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, oof_train: personas que mejoran",20.0,0.0,INFORME cierre V3,20.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, validation",0.02,3.0,INFORME cierre V3,0.020417293293946745,1.0,0.020417293293946745,0.0,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, validation · IC 95 % inferior",-0.003,3.0,INFORME cierre V3,-0.0026729223638294886,1.0,-0.002672922363829447,-4.163336342344337e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, validation · IC 95 % superior",0.042,3.0,INFORME cierre V3,0.04197551358809841,1.0,0.04197551358809837,4.163336342344337e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, validation: personas que mejoran",6.0,0.0,INFORME cierre V3,6.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, test",0.029,3.0,INFORME cierre V3,0.02870692822931152,1.0,0.02870692822931155,-2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, test · IC 95 % inferior",0.004,3.0,INFORME cierre V3,0.004442031554705189,1.0,0.004442031554705203,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, test · IC 95 % superior",0.052,3.0,INFORME cierre V3,0.05166294018480486,1.0,0.05166294018480489,-2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 atencion hgb_c32 − hgb_c1, test: personas que mejoran",7.0,0.0,INFORME cierre V3,7.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, oof_train",0.001,3.0,INFORME cierre V3,0.0008876746001246061,1.0,0.0008876746001245972,8.890457814381136e-18,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, oof_train · IC 95 % inferior",-0.013,3.0,INFORME cierre V3,-0.013050878380975442,1.0,-0.013050878380975448,5.204170427930421e-18,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, oof_train · IC 95 % superior",0.014,3.0,INFORME cierre V3,0.01443988419903596,1.0,0.014439884199035975,-1.5612511283791264e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, oof_train: personas que mejoran",11.0,0.0,INFORME cierre V3,11.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, validation",-0.004,3.0,INFORME cierre V3,-0.003505218480880562,1.0,-0.003505218480880548,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, validation · IC 95 % inferior",-0.036,3.0,INFORME cierre V3,-0.036254018409509016,1.0,-0.03625401840950893,-8.326672684688674e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, validation · IC 95 % superior",0.028,3.0,INFORME cierre V3,0.027718248901423895,1.0,0.027718248901423964,-6.938893903907228e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, validation: personas que mejoran",4.0,0.0,INFORME cierre V3,4.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, test",0.01,3.0,INFORME cierre V3,0.009512610674917654,1.0,0.00951261067491764,1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, test · IC 95 % inferior",-0.019,3.0,INFORME cierre V3,-0.018614501305588144,1.0,-0.018614501305588213,6.938893903907228e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, test · IC 95 % superior",0.035,3.0,INFORME cierre V3,0.03480081829815111,1.0,0.03480081829815111,0.0,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − gru_c1, test: personas que mejoran",5.0,0.0,INFORME cierre V3,5.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, oof_train",0.016,3.0,INFORME cierre V3,0.016204841039420187,1.0,0.016204841039420177,1.0408340855860843e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, oof_train · IC 95 % inferior",-0.036,3.0,INFORME cierre V3,-0.03602145099721619,1.0,-0.036021450997216195,6.938893903907228e-18,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, oof_train · IC 95 % superior",0.07,3.0,INFORME cierre V3,0.0695757646202672,1.0,0.06957576462026718,1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, oof_train: personas que mejoran",15.0,0.0,INFORME cierre V3,15.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, validation",0.059,3.0,INFORME cierre V3,0.058721977152031264,1.0,0.05872197715203127,-6.938893903907228e-18,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, validation · IC 95 % inferior",-0.004,3.0,INFORME cierre V3,-0.003991730418724788,1.0,-0.003991730418724843,5.4643789493269423e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, validation · IC 95 % superior",0.131,3.0,INFORME cierre V3,0.13129905238367112,1.0,0.13129905238367115,-2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, validation: personas que mejoran",5.0,0.0,INFORME cierre V3,5.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, test",0.033,3.0,INFORME cierre V3,0.03291888249746983,1.0,0.032918882497469826,6.938893903907228e-18,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, test · IC 95 % inferior",-0.021,3.0,INFORME cierre V3,-0.021315486674067317,1.0,-0.021315486674067255,-6.245004513516506e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, test · IC 95 % superior",0.094,3.0,INFORME cierre V3,0.09403237934309296,1.0,0.09403237934309294,1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 activacion hgb_c32 − hgb_c1, test: personas que mejoran",4.0,0.0,INFORME cierre V3,4.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, oof_train",-0.016,3.0,INFORME cierre V3,-0.015782854577682543,1.0,-0.015782854577682522,-2.0816681711721685e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, oof_train · IC 95 % inferior",-0.089,3.0,INFORME cierre V3,-0.08912770590173005,1.0,-0.08912770590173004,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, oof_train · IC 95 % superior",0.048,3.0,INFORME cierre V3,0.04787699652056885,1.0,0.04787699652056885,0.0,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, oof_train: personas que mejoran",13.0,0.0,INFORME cierre V3,13.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, validation",0.091,3.0,INFORME cierre V3,0.09069266021706004,1.0,0.09069266021706006,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, validation · IC 95 % inferior",0.018,3.0,INFORME cierre V3,0.01821075364849272,1.0,0.01821075364849272,0.0,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, validation · IC 95 % superior",0.188,3.0,INFORME cierre V3,0.1881692861524366,1.0,0.18816928615243658,2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, validation: personas que mejoran",6.0,0.0,INFORME cierre V3,6.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, test",0.084,3.0,INFORME cierre V3,0.08431258013069998,1.0,0.08431258013069995,2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, test · IC 95 % inferior",-0.011,3.0,INFORME cierre V3,-0.010991477924194927,1.0,-0.010991477924194961,3.469446951953614e-17,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, test · IC 95 % superior",0.165,3.0,INFORME cierre V3,0.16495884329626875,1.0,0.16495884329626875,0.0,coincide,
+7 Etapas del 16-11,"V3 activacion gru_c32 − gru_c1, test: personas que mejoran",7.0,0.0,INFORME cierre V3,7.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, oof_train",-0.01,3.0,INFORME cierre V3,-0.010392843689340786,1.0,-0.010392843689340766,-2.0816681711721685e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, oof_train · IC 95 % inferior",-0.018,3.0,INFORME cierre V3,-0.017714227042434968,1.0,-0.01771422704243498,1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, oof_train · IC 95 % superior",-0.003,3.0,INFORME cierre V3,-0.0030721339351945675,1.0,-0.0030721339351945367,-3.0791341698588326e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, oof_train: personas que mejoran",7.0,0.0,INFORME cierre V3,7.0,1.0,,,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, validation",-0.008,3.0,INFORME cierre V3,-0.007531077559457658,1.0,-0.007531077559457713,5.551115123125783e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, validation · IC 95 % inferior",-0.02,3.0,INFORME cierre V3,-0.020446611824971636,1.0,-0.020446611824971747,1.1102230246251565e-16,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, validation · IC 95 % superior",0.005,3.0,INFORME cierre V3,0.005304773094935572,1.0,0.005304773094935572,0.0,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, test",-0.002,3.0,INFORME cierre V3,-0.0021684253869794223,1.0,-0.002168425386979436,1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, test · IC 95 % inferior",-0.015,3.0,INFORME cierre V3,-0.014688176752122209,1.0,-0.01468817675212225,4.163336342344337e-17,coincide,
+7 Etapas del 16-11,"V3 atencion tardia_c32 − hgb_c32, test · IC 95 % superior",0.008,3.0,INFORME cierre V3,0.00813289919815843,1.0,0.00813289919815843,0.0,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, oof_train",-0.042,3.0,INFORME cierre V3,-0.04207384048448479,1.0,-0.042073840484484794,6.938893903907228e-18,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, oof_train · IC 95 % inferior",-0.063,3.0,INFORME cierre V3,-0.06320280276826176,1.0,-0.06320280276826175,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, oof_train · IC 95 % superior",-0.022,3.0,INFORME cierre V3,-0.022316113054824956,1.0,-0.022316113054824997,4.163336342344337e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, validation",-0.044,3.0,INFORME cierre V3,-0.04433224013731479,1.0,-0.04433224013731482,2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, validation · IC 95 % inferior",-0.092,3.0,INFORME cierre V3,-0.09194247578066773,1.0,-0.09194247578066772,-1.3877787807814457e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, validation · IC 95 % superior",-0.007,3.0,INFORME cierre V3,-0.006837469405677983,1.0,-0.006837469405677984,8.673617379884035e-19,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, test",-0.05,3.0,INFORME cierre V3,-0.05000191677217765,1.0,-0.05000191677217765,0.0,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, test · IC 95 % inferior",-0.088,3.0,INFORME cierre V3,-0.08828495185669653,1.0,-0.0882849518566965,-2.7755575615628914e-17,coincide,
+7 Etapas del 16-11,"V3 atencion gru_c32 − hgb_c32, test · IC 95 % superior",-0.019,3.0,INFORME cierre V3,-0.018999743432935007,1.0,-0.01899974343293495,-5.551115123125783e-17,coincide,
+7 Etapas del 16-11,"V3: diferencia máxima de los 54 contrastes (delta, IC, personas) frente a contrastes.csv",0.0,9.0,cierre_v3 contrastes.csv,1.249000902703301e-16,1.0,,,coincide,
+7 Etapas del 16-11,"V3: selección de hojas de activación, AUC media del modelo de 32 ventanas con 15 hojas (solo agregación del CSV)",0.5311,4.0,"Cierre, límites",0.53106644856759,1.0,,,coincide,
+7 Etapas del 16-11,V3: ídem con 7 hojas (solo agregación del CSV),0.4994,4.0,"Cierre, límites",0.499414265614623,1.0,,,coincide,
+7 Etapas del 16-11,V3: hojas elegidas con la media de los tres largos de historial (0 = 15 hojas),0.0,0.0,INFORME cierre V3,0.0,1.0,,,coincide,7 hojas 0.515242; 15 hojas 0.524758
+7 Etapas del 16-11,Análisis final: diferencia máxima de AUC y BA medias frente a metricas.csv (10 filas),0.0,9.0,cierre_final metricas.csv,1.1102230246251565e-16,1.0,,,coincide,
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: delta",0.023,3.0,INFORME análisis final; cierre,0.022790957794285596,1.0,0.0228,-9.042205714404616e-06,coincide,n=25
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada)",0.014,3.0,INFORME análisis final; cierre,0.01392182410355057,1.0,0.0139,2.1824103550571045e-05,coincide,el CSV guarda 0.0139; diferencia +0.00002
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada)",0.031,3.0,INFORME análisis final; cierre,0.031366903855942256,1.0,0.0314,-3.309614405774125e-05,coincide,el CSV guarda 0.0314; diferencia -0.00003
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 25 de entrenamiento: personas que mejoran",22.0,0.0,INFORME análisis final,22.0,1.0,,,coincide,de 25
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: delta",0.032,3.0,INFORME análisis final; cierre,0.03206448294892159,1.0,0.0321,-3.5517051078404194e-05,coincide,n=16
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada)",0.016,3.0,INFORME análisis final; cierre,0.01592651996873027,1.0,0.0159,2.6519968730268767e-05,coincide,el CSV guarda 0.0159; diferencia +0.00003
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada)",0.048,3.0,INFORME análisis final; cierre,0.04808461849156647,1.0,0.0481,-1.538150843352626e-05,coincide,el CSV guarda 0.0481; diferencia -0.00002
+7 Etapas del 16-11,"Heterogeneidad atencion HGB 32 − 1, 16 de validación y test: personas que mejoran",14.0,0.0,INFORME análisis final,14.0,1.0,,,coincide,de 16
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: delta",0.055,3.0,INFORME análisis final; cierre,0.05514256998123379,1.0,0.0551,4.256998123378791e-05,coincide,n=25
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada)",0.012,3.0,INFORME análisis final; cierre,0.012167968151398364,1.0,0.0122,-3.203184860163695e-05,coincide,el CSV guarda 0.0122; diferencia -0.00003
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada)",0.101,3.0,INFORME análisis final; cierre,0.10050529166326642,1.0,0.1005,5.2916632664185e-06,coincide,el CSV guarda 0.1005; diferencia +0.00001
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 25 de entrenamiento: personas que mejoran",17.0,0.0,INFORME análisis final,17.0,1.0,,,coincide,de 25
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: delta",0.001,3.0,INFORME análisis final; cierre,0.00144140321266268,1.0,0.0014,4.140321266267997e-05,coincide,n=16
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada)",-0.052,3.0,INFORME análisis final; cierre,-0.05204460854503519,1.0,-0.052,-4.4608545035192126e-05,coincide,el CSV guarda -0.052; diferencia -0.00004
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada)",0.055,3.0,INFORME análisis final; cierre,0.0549026427723326,1.0,0.0549,2.642772332604737e-06,coincide,el CSV guarda 0.0549; diferencia +0.00000
+7 Etapas del 16-11,"Heterogeneidad activacion HGB 32 − 1, 16 de validación y test: personas que mejoran",7.0,0.0,INFORME análisis final,7.0,1.0,,,coincide,de 16
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: delta",0.045,3.0,INFORME análisis final; cierre,0.04533274498048666,1.0,0.0453,3.274498048665836e-05,coincide,n=25
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: IC 95 % inferior (semilla registrada)",0.007,3.0,INFORME análisis final; cierre,0.006544383124748546,1.0,0.0065,4.4383124748545964e-05,coincide,el CSV guarda 0.0065; diferencia +0.00004
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: IC 95 % superior (semilla registrada)",0.083,3.0,INFORME análisis final; cierre,0.08278615631163042,1.0,0.0828,-1.3843688369583051e-05,coincide,el CSV guarda 0.0828; diferencia -0.00001
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 25 de entrenamiento: personas que mejoran",17.0,0.0,INFORME análisis final,17.0,1.0,,,coincide,de 25
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: delta",0.059,3.0,INFORME análisis final; cierre,0.058654773767174616,1.0,0.0587,-4.522623282538635e-05,coincide,n=16
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: IC 95 % inferior (semilla registrada)",0.014,3.0,INFORME análisis final; cierre,0.014286265093334612,1.0,0.0143,-1.3734906665388222e-05,coincide,el CSV guarda 0.0143; diferencia -0.00001
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: IC 95 % superior (semilla registrada)",0.102,3.0,INFORME análisis final; cierre,0.10149637090827783,1.0,0.1015,-3.629091722176514e-06,coincide con redondeo,el CSV guarda 0.1015; diferencia -0.00000
+7 Etapas del 16-11,"Heterogeneidad activacion GRU 32 − 1, 16 de validación y test: personas que mejoran",11.0,0.0,INFORME análisis final,11.0,1.0,,,coincide,de 16
+7 Etapas del 16-11,"Heterogeneidad atencion GRU 32 − 1, 25 de entrenamiento: delta",0.004,4.0,heterogeneidad_por_grupo.csv,0.003956813559179269,1.0,0.004,-4.3186440820731226e-05,coincide,
+7 Etapas del 16-11,"Heterogeneidad atencion GRU 32 − 1, 25 de entrenamiento: personas que mejoran",15.0,0.0,INFORME análisis final,15.0,1.0,,,coincide,de 25
+7 Etapas del 16-11,"Heterogeneidad atencion GRU 32 − 1, 16 de validación y test: delta",0.0146,4.0,heterogeneidad_por_grupo.csv,0.014637802305479963,1.0,0.0146,3.780230547996248e-05,coincide,
+7 Etapas del 16-11,"Heterogeneidad atencion GRU 32 − 1, 16 de validación y test: personas que mejoran",11.0,0.0,INFORME análisis final,11.0,1.0,,,coincide,de 16
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: todas",0.034,3.0,"Cierre, tabla de la auditoría de código",0.03418601709593776,1.0,,,coincide,n=41
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 25 de la búsqueda",0.055,3.0,"Cierre, tabla de la auditoría de código",0.05514256998123379,1.0,,,coincide,n=25; 17 a favor
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 25 de la búsqueda · IC 95 % inferior",0.012,3.0,"Cierre, tabla de la auditoría de código",0.012167968151398364,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 25 de la búsqueda · IC 95 % superior",0.101,3.0,"Cierre, tabla de la auditoría de código",0.10050529166326642,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 16 restantes",0.001,3.0,"Cierre, tabla de la auditoría de código",0.00144140321266268,1.0,,,coincide,n=16; 7 a favor
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 16 restantes · IC 95 % inferior",-0.052,3.0,"Cierre, tabla de la auditoría de código",-0.05204460854503519,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 16-11: 16 restantes · IC 95 % superior",0.055,3.0,"Cierre, tabla de la auditoría de código",0.0549026427723326,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: todas",0.036,3.0,"Cierre, tabla de la auditoría de código",0.03644920235739794,1.0,,,coincide,n=41
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda",0.046,3.0,"Cierre, tabla de la auditoría de código",0.04613788306636051,1.0,,,coincide,n=25; 16 a favor
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda · IC 95 % inferior",0.012,3.0,"Cierre, tabla de la auditoría de código",0.012374506729254121,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 25 de la búsqueda · IC 95 % superior",0.086,3.0,"Cierre, tabla de la auditoría de código",0.0856937018877052,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 16 restantes",0.021,3.0,"Cierre, tabla de la auditoría de código",0.02131063874964391,1.0,,,coincide,n=16; 7 a favor
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 16 restantes · IC 95 % inferior",-0.017,3.0,"Cierre, tabla de la auditoría de código",-0.01717864137206791,1.0,,,coincide,
+7 Etapas del 16-11,"Tabla por grupo · Principal, 5 particiones: 16 restantes · IC 95 % superior",0.06,3.0,"Cierre, tabla de la auditoría de código",0.06029278855299445,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: todas,0.026,3.0,"Cierre, tabla de la auditoría de código",0.02626923935848738,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda,0.05,3.0,"Cierre, tabla de la auditoría de código",0.049954138418499126,1.0,,,coincide,n=25; 19 a favor
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda · IC 95 % inferior,0.013,3.0,"Cierre, tabla de la auditoría de código",0.013120745519871165,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 25 de la búsqueda · IC 95 % superior,0.085,3.0,"Cierre, tabla de la auditoría de código",0.0850162185841301,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 16 restantes,-0.011,3.0,"Cierre, tabla de la auditoría de código",-0.010738415422780982,1.0,,,coincide,n=16; 8 a favor
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 16 restantes · IC 95 % inferior,-0.066,3.0,"Cierre, tabla de la auditoría de código",-0.06552134501942693,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con tiempo de sesión: 16 restantes · IC 95 % superior,0.038,3.0,"Cierre, tabla de la auditoría de código",0.0380068558721939,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): todas,0.032,3.0,"Cierre, tabla de la auditoría de código",0.032253327520560954,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 25 de la búsqueda,0.049,3.0,"Cierre, tabla de la auditoría de código",0.049335377183879016,1.0,,,coincide,n=25; 18 a favor
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 25 de la búsqueda · IC 95 % inferior,0.018,3.0,"Cierre, tabla de la auditoría de código",0.018063851696231335,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 25 de la búsqueda · IC 95 % superior,0.081,3.0,"Cierre, tabla de la auditoría de código",0.08124048742594966,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 16 restantes,0.006,3.0,"Cierre, tabla de la auditoría de código",0.0055626249216264925,1.0,,,coincide,n=16; 10 a favor
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 16 restantes · IC 95 % inferior,-0.043,3.0,"Cierre, tabla de la auditoría de código",-0.043060264870834,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Con posición (Q1): 16 restantes · IC 95 % superior,0.049,3.0,"Cierre, tabla de la auditoría de código",0.04932693696255235,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): todas,0.038,3.0,"Cierre, tabla de la auditoría de código",0.03814873365246116,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda,0.063,3.0,"Cierre, tabla de la auditoría de código",0.06327945207958807,1.0,,,coincide,n=25; 17 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda · IC 95 % inferior,0.021,3.0,"Cierre, tabla de la auditoría de código",0.020809639434734576,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 25 de la búsqueda · IC 95 % superior,0.109,3.0,"Cierre, tabla de la auditoría de código",0.10865513918159321,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 16 restantes,-0.001,3.0,"Cierre, tabla de la auditoría de código",-0.001118013889924628,1.0,,,coincide,n=16; 7 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 16 restantes · IC 95 % inferior,-0.056,3.0,"Cierre, tabla de la auditoría de código",-0.05568933473896638,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − posición (18-11): 16 restantes · IC 95 % superior,0.054,3.0,"Cierre, tabla de la auditoría de código",0.05387224581186379,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): todas,0.038,3.0,"Cierre, tabla de la auditoría de código",0.03787258133865756,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda,0.057,3.0,"Cierre, tabla de la auditoría de código",0.056851698739217825,1.0,,,coincide,n=25; 17 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda · IC 95 % inferior,0.023,3.0,"Cierre, tabla de la auditoría de código",0.02272012328181379,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 25 de la búsqueda · IC 95 % superior,0.092,3.0,"Cierre, tabla de la auditoría de código",0.09228799174722736,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 16 restantes,0.008,3.0,"Cierre, tabla de la auditoría de código",0.008217710400282161,1.0,,,coincide,n=16; 9 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 16 restantes · IC 95 % inferior,-0.048,3.0,"Cierre, tabla de la auditoría de código",-0.04758045065293099,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial − placebo (16-11): 16 restantes · IC 95 % superior,0.058,3.0,"Cierre, tabla de la auditoría de código",0.05828037949103869,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: todas,0.046,3.0,"Cierre, tabla de la auditoría de código",0.04603771464184399,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda,0.035,3.0,"Cierre, tabla de la auditoría de código",0.0345790909857017,1.0,,,coincide,n=25; 17 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda · IC 95 % inferior,0.003,3.0,"Cierre, tabla de la auditoría de código",0.003190199120064239,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 25 de la búsqueda · IC 95 % superior,0.064,3.0,"Cierre, tabla de la auditoría de código",0.06434324382426472,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes,0.064,3.0,"Cierre, tabla de la auditoría de código",0.0639418141045663,1.0,,,coincide,n=16; 11 a favor
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes · IC 95 % inferior,0.015,3.0,"Cierre, tabla de la auditoría de código",0.014990520452287171,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Historial desplazado 6 − placebo: 16 restantes · IC 95 % superior,0.115,3.0,"Cierre, tabla de la auditoría de código",0.11518281100237629,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: todas,0.047,3.0,"Cierre, tabla de la auditoría de código",0.04712366170254597,1.0,,,coincide,n=40
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda,0.058,3.0,"Cierre, tabla de la auditoría de código",0.05832435893634023,1.0,,,coincide,n=24; 19 a favor
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda · IC 95 % inferior,0.015,3.0,"Cierre, tabla de la auditoría de código",0.015264527486582512,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 25 de la búsqueda · IC 95 % superior,0.101,3.0,"Cierre, tabla de la auditoría de código",0.10143755008497264,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 16 restantes,0.03,3.0,"Cierre, tabla de la auditoría de código",0.03032261585185458,1.0,,,coincide,n=16; 11 a favor
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 16 restantes · IC 95 % inferior,-0.003,3.0,"Cierre, tabla de la auditoría de código",-0.0032245850845944142,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · Banda de 6 s − placebo: 16 restantes · IC 95 % superior,0.068,3.0,"Cierre, tabla de la auditoría de código",0.06769297849758715,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: todas,0.051,3.0,"Cierre, tabla de la auditoría de código",0.05053158548260879,1.0,,,coincide,n=41
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda,0.045,3.0,"Cierre, tabla de la auditoría de código",0.04533274498048666,1.0,,,coincide,n=25; 17 a favor
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda · IC 95 % inferior,0.007,3.0,"Cierre, tabla de la auditoría de código",0.006544383124748546,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 25 de la búsqueda · IC 95 % superior,0.083,3.0,"Cierre, tabla de la auditoría de código",0.08278615631163042,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes,0.059,3.0,"Cierre, tabla de la auditoría de código",0.058654773767174616,1.0,,,coincide,n=16; 11 a favor
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes · IC 95 % inferior,0.014,3.0,"Cierre, tabla de la auditoría de código",0.014286265093334612,1.0,,,coincide,
+7 Etapas del 16-11,Tabla por grupo · GRU hasta 32 − GRU una ventana: 16 restantes · IC 95 % superior,0.101,3.0,"Cierre, tabla de la auditoría de código",0.10149637090827783,1.0,,,coincide,
+7 Etapas del 16-11,Principal 16-11 de activación: diferencia entre grupos (25 − 16) y p por permutación de grupo,,,"Cierre, límites (""no es significativa con 16 personas"")",0.05370116676857111,1.0,,,sin cifra informada,"p bilateral 0.1510 (20.000 permutaciones, semilla 20261127)"
+7 Etapas del 16-11,"Robustez R3 activación, partición 101",0.042,3.0,"INFORME robustez (""+0,042 en las tres"")",0.04324225569377088,1.0,,,difiere,
+7 Etapas del 16-11,"Robustez R3 activación, partición 202",0.042,3.0,"INFORME robustez (""+0,042 en las tres"")",0.04159122433475006,1.0,,,coincide,
+7 Etapas del 16-11,"Robustez R3 activación, partición 303",0.042,3.0,"INFORME robustez (""+0,042 en las tres"")",0.04160077890079201,1.0,,,coincide,

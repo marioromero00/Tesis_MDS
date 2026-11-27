@@ -85,13 +85,13 @@ Los datos son del proyecto Fondecyt 1231122. Sin estos documentos no se puede es
 | 24 | Volumen, número y páginas de las 18 referencias. | RD, "Referencias"; REF |
 | 25 | Marco teórico (2.2 a 2.12) y 3.3, sin literatura verificada. | SP, "Secciones que siguen pendientes" |
 | 26 | Repetir la búsqueda que sostiene "no encontré estas cuatro señales en navegación web" (lámina 7). | ENS; PRES (lámina 7) |
-| 27 | Dejar explícito el signo con que entra cada variable en el *Attention Score*. | ENS, pregunta 15 |
+| 27 | Signo con que entra cada variable en el *Attention Score*. Redactado el 27-11 en RD 6.1, tras comprobarlo en el script y en el archivo del *Modelo Profesor*: la dispersión y el recorrido entran invertidos, y "alta" designa una mirada más quieta. Falta la revisión del autor. | RD 6.1 (texto y nota de trabajo); ENS, preguntas 15 y 41 |
 
 ## G. Elecciones de estilo y de edición que quedaron para el autor
 
 | # | Pendiente | Detalle |
 |---|---|---|
-| 28 | Criterio escrito de "apoyo parcial" frente a la lectura más exigente que usa el borrador (ligado a la decisión 5). | RD 8.1; SP 4.8.3; MI (decisión 5); LOOP, "Puntos que quedan para Mario" |
+| 28 | Criterio escrito de "apoyo parcial" frente a la lectura más exigente que usa el borrador (ligado a la decisión 5). Desde el 27-11 la minuta trae las tres lecturas posibles como insumo, sin decidir. | RD 8.1; SP 4.8.3; MI (decisión 5); LOOP, "Puntos que quedan para Mario" |
 | 29 | Párrafo nuevo sobre adaptación a la persona. | RD 8.5; LOOP |
 | 30 | Cuáles son las limitaciones principales (RD 8.8 nombra cinco desde la ronda 4). | RD 8.8; LOOP |
 | 31 | Definiciones de los dos placebos de la curva, tomadas del informe. | RD 6.2 (nota de trabajo); `repos/Tesis_MDS/resultados/reapertura_41p_22-11-2026/INFORME.md` |
@@ -121,6 +121,22 @@ No se propone correr ninguno. Solo si se piden.
 | 43 | Corrección del desfase entre EEG y seguidor ocular. | CI, "Queda abierto"; RD 7.8 y 8.9 |
 | 44 | Modelo de referencia con variables escaladas por persona; evaluación dejando grupos completos fuera; mínimo de ventanas por persona; indicador de movimiento. | RD 8.9 (como trabajo futuro) |
 | 45 | Estabilidad de las pseudoetiquetas y evolución en la sesión con el score continuo (objetivos 3 y 6). | MI, "Hipótesis, objetivos y contribuciones que conviene revisar" (filas del objetivo 3 y de la contribución 6) |
+| 46 | Historial desplazado menos placebo dentro de un mismo estímulo (saldría de predicciones guardadas, sin entrenar; requiere orden del autor y protocolo registrado). | MI (decisión 1); CI, "Queda abierto"; RD 8.4; `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md` (B2 y D) |
+| 47 | Evaluación dejando grupos experimentales fuera (requiere volver a entrenar). | MI (decisión 1); CI, "Queda abierto"; RD 8.9; ENS, pregunta 28 |
+
+## J. Pendientes agregados el 27-11-2026 (segunda lectura crítica)
+
+Salen de `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md`. Lo que se pudo comprobar en las fuentes ya está redactado en los borradores; esto es lo que queda.
+
+| # | Pendiente | Detalle |
+|---|---|---|
+| 48 | Párrafo que describa los estímulos: cuántos son, de qué tipos y cuánto duran. Las cifras no están comprobadas en ningún informe. | RD 6.3 (nota de trabajo) |
+| 49 | Nombres de las etapas por su contenido en vez de por su fecha. No se cambió: es una elección del autor. | RD 6.6 y capítulo 7 |
+| 50 | Legibilidad de RD 7.2, 7.3, 7.5 y 7.7 (tablas que la segunda lectura pide; "hojas" y "contexto de 32" sin definir antes de 7.5; líneas "Fuentes:" dentro de cada sección). No se cambió. | Segunda lectura, sección E (puntos 2, 3, 6, 7, 8 y 9) |
+| 51 | Recuento del total de pruebas hechas en las doce etapas. No existe. | ENS, pregunta 46 |
+| 52 | Qué modelo se evaluaría en una cohorte nueva (en el análisis con 41 personas hay un modelo por grupo de la validación cruzada) y con qué contraste se calcula el tamaño de muestra. | ENS, pregunta 14 |
+| 53 | La lámina 31 y el guion siguen diciendo "una advertencia"; CO 9.7 nombra dos desde el 27-11. Unificar según lo que se decida en la decisión 5. | PRES (lámina 31); CO 9.7 |
+| 54 | Otros análisis que la segunda lectura lista como nuevos y que no se corrieron: línea base de identidad del estímulo; intervalos t o BCa y *bootstrap* por grupo experimental; mínimo de ventanas por persona y por clase; placebo del mismo estímulo con ventanas posteriores; etiqueta de activación con filtro causal y etiqueta de atención con pesos iguales. | Segunda lectura, sección D |
 
 ## Pendientes que un documento daba por resueltos y otro por abiertos
 
