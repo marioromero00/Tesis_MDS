@@ -1,6 +1,6 @@
 # Cierre consolidado de la experimentación — 23-11-2026
 
-Este documento reemplaza como referencia a `Cierre_Experimental_Final_22-11-2026.md`, que es anterior a la reapertura. Reúne todas las etapas registradas entre el 16 y el 23 de noviembre de 2026, sus decisiones, su trazabilidad y la comprobación de reproducibilidad. No contiene resultados nuevos. Ante cualquier diferencia de cifras mandan los `INFORME.md` y los CSV de cada carpeta de resultados; para las lecturas manda este documento y los borradores del 23-11, que moderan varias frases de los informes. Ajustado el 27-11-2026 a una segunda lectura crítica (`documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md`), sin cifras ni análisis nuevos.
+Este documento reemplaza como referencia a `Cierre_Experimental_Final_22-11-2026.md`, que es anterior a la reapertura. Reúne todas las etapas registradas entre el 16 y el 23 de noviembre de 2026, sus decisiones, su trazabilidad y la comprobación de reproducibilidad. No contiene resultados nuevos. Ante cualquier diferencia de cifras mandan los `INFORME.md` y los CSV de cada carpeta de resultados; para las lecturas manda este documento y los borradores del 23-11, que moderan varias frases de los informes. Ajustado el 27-11-2026 a una segunda lectura crítica (`documentacion/auditoria_final_23-11-2026/ronda6/SEGUNDA_LECTURA_COMITE.md`), sin cifras ni análisis nuevos. Ajustado ese mismo día, en "Límites que deben ir en la tesis" y "Queda abierto", a una tercera lectura, de un evaluador de neurociencia cognitiva y psicofisiología (`documentacion/auditoria_final_23-11-2026/ronda7/TERCERA_LECTURA_ESPECIALISTA.md`), tras comprobar cada hecho en las fuentes; sin análisis nuevos.
 
 Estado: Mario Romero pidió este cierre el 23-11-2026. No hay aprobación del profesor guía registrada sobre estos resultados, sobre el margen práctico de 0,02 ni sobre el encuadre de la tesis. Etiqueta de Git: `cierre-experimental-2026-11-23` (anterior a la auditoría final; el texto vigente es el de `main`). Apunta a `aee6ab6`; la versión auditada es `af345a2` o posterior.
 
@@ -163,7 +163,12 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 - La adaptación a la persona no es comparable con los demás contrastes: sus etiquetas de calibración se definen con la mediana de toda la sesión e informan sobre la parte evaluada.
 - "Alta" en el *Attention Score* designa una mirada más quieta (fijaciones más largas, menos dispersión y recorrido): la dispersión y el recorrido entran invertidos antes de la componente.
 - En las pruebas contra 0,5, "efecto relevante" solo indica que el límite inferior de la AUC supera 0,52.
-- El detalle de cada uno de estos límites está en el borrador de Resultados y Discusión (secciones 6.1, 6.2, 6.4, 6.6, 7.1, 7.7, 7.11 y 8.4).
+- "Navegación web" nombra el contexto del experimento: los sitios web reúnen 6.423 de las 22.176 ventanas con etiqueta de atención (menos de un tercio); el resto son textos, diseños, estímulos numerados e imágenes, cuyo contenido no está documentado.
+- La calidad del EEG como registro de actividad cerebral no está establecida: no constan la referencia, el tipo de electrodo ni las impedancias, no se rechazaron ventanas por amplitud y no se examinó el espectro. Los resultados sobre el EEG, incluido el de activación, valen para este registro.
+- Lo que se llama nivel tónico es la componente lenta de la GSR, que incluye la acumulación de las respuestas; el conteo de respuestas no se validó.
+- Los componentes "oculares" lo son por orden y con puntajes bajos, y la limpieza no se dirigió al potencial de espiga sacádica. Los parpadeos pueden entrar en la etiqueta de atención por la pérdida de mirada.
+- El movimiento no se analizó: el acelerómetro del equipo de EEG y la posición del mouse están en los archivos y no se usaron.
+- El detalle de cada uno de estos límites está en el borrador de Resultados y Discusión (secciones 6.1, 6.2, 6.3, 6.4, 6.6, 7.1, 7.7, 7.9, 7.11, 8.3.3 y 8.4) y, para los de registro y preprocesamiento, en el de Secciones pendientes (secciones 4.6.1, 4.6.3, 4.6.4 y 4.7).
 - En activación las AUC absolutas son bajas (0,50 a 0,59).
 
 ## Queda abierto (no es experimentación)
@@ -178,13 +183,14 @@ Decisiones con el profesor guía:
 6. Si se aceptan las etiquetas normalizadas con la sesión completa de cada persona (el manuscrito pide normalizar solo con entrenamiento).
 7. Si el *Modelo Profesor* con PCA queda como definición del *Attention Score* (la nota de diseño proponía la fusión igualitaria como principal).
 
-Ninguna de las siete está tomada. Las opciones de cada una están en la minuta del 23-11 (`Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md`), que desde el 26-11 lista además las hipótesis, objetivos y contribuciones del esqueleto que conviene revisar, la información de participantes y ética que hay que pedir al proyecto, y la pregunta de cómo declarar el uso de asistentes automáticos.
+Ninguna de las siete está tomada. Las opciones de cada una están en la minuta del 23-11 (`Avances/Avance - 23-11-2026 (Minuta de decisiones con el profesor).md`), que desde el 26-11 lista además las hipótesis, objetivos y contribuciones del esqueleto que conviene revisar, la información de participantes y ética que hay que pedir al proyecto (desde el 27-11, también la del protocolo de estímulos y la de las condiciones de registro que no constan), y la pregunta de cómo declarar el uso de asistentes automáticos.
 
 Trabajo de cierre:
 
 1. Revisar el borrador integrado `Escritura/Borrador Resultados y Discusión 23-11-2026.md` (reemplaza al del 18-11) y pasarlo a LaTeX.
 2. Ajustar `Escritura/Borrador Conclusiones 23-11-2026.md` según las decisiones anteriores.
 3. Leer en texto completo las 8 referencias contrastadas solo por resumen (Barry 2005 y 2007, Boucsein 2012, Critchley 2002, Croft y Barry 2000, Iwasaki 2005, Keren 2010 y Yuval-Greenberg 2008); detalle en `documentacion/auditoria_final_23-11-2026/VERIFICACION_REFERENCIAS.md`.
+4. Conseguir fuente para las afirmaciones fisiológicas que la tercera lectura propone y que ninguna de las 18 referencias sostiene; mientras tanto están en notas de trabajo y no en la prosa (lista en `notas/pendientes-cierre-26-11-2026.md`, sección F, en la raíz del espacio de trabajo).
 
 Experimentos opcionales, solo si se piden: red con filtro de control, corrección del desfase entre EEG y seguidor ocular, sensibilidad del modelo de activación con 7 hojas o con selección anidada, historial desplazado menos placebo dentro de un mismo estímulo (saldría de predicciones guardadas, sin entrenar; requiere orden del autor y protocolo registrado), evaluación dejando grupos experimentales fuera (requiere volver a entrenar), y cohorte nueva.
 

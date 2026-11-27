@@ -14,7 +14,7 @@ Es la hipótesis tal cual está en el manuscrito. Para probarla comparo siempre 
 
 ## 04. Los datos: Toma de Muestra 2, navegación web en laboratorio
 
-Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este conjunto de datos, y la ubicación de los electrodos no está documentada.
+Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en agosto de 2025. Tobii registra la mirada, la pupila y la GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los junté por persona y hora, y corté todo en ventanas de dos segundos. No hay expresión facial en este conjunto de datos, y no están documentadas la ubicación de los electrodos, la referencia ni las impedancias. Ojo con “navegación web”: los sitios web son cinco y reúnen 6.423 de las 22.176 ventanas con etiqueta de atención, menos de un tercio; el resto son textos, diseños, estímulos numerados e imágenes, y no tengo documentado su contenido. El 116 cuenta nombres en la exportación, no contenidos comprobados.
 
 ## 05. Unas señales arman la etiqueta y otras la predicen
 
@@ -58,7 +58,7 @@ Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guard
 
 ## 15. “Alta” es estar sobre su propia mediana de activación: así se ve en P22
 
-Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si P22 está más activada que de costumbre en ese momento.
+Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si el puntaje de GSR de P22 está sobre su mediana de la sesión en ese momento; no es una medida validada de activación.
 
 ## 16. La etiqueta antigua y la nueva coinciden solo en la mitad de las ventanas
 
@@ -88,7 +88,7 @@ Comparé el historial real con un placebo y con una sola variable: los segundos 
 
 Al entrar a una página, la etiqueta de atención cae a 37 % entre el segundo 2 y 3 y después sube hasta 62 %. El modelo con historial aprendía eso a través del largo del historial. Lo más probable es que refleje cómo se arma la etiqueta con fijaciones y mirada al cambiar de página; no separé cuánto es conducta y cuánto es el cálculo de las fijaciones. Este análisis lo hice después de ver el placebo, así que es explicativo.
 
-## 23. En activación, los segundos previos aportan frente al placebo
+## 23. En activación, el historial de la misma página supera a un placebo de otras páginas
 
 Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filtro tónico de la GSR usa toda la sesión, y la etiqueta es en lo esencial el nivel tónico: cerca de un cuarto de su peso cae antes de esas ventanas, así que no puedo decir que no haya solapamiento. Aun así le gana al placebo por +0,046 y mejora en 28 de 41 personas, p Holm 0,004; es positivo tanto en las 25 personas con que elegí la configuración (+0,035) como en las otras 16 (+0,064). Ojo: fijé ese contraste antes de tener sus predicciones, pero después de ver que el historial completo le ganaba al placebo, y el placebo viene de otras páginas. Frente a un modelo que conoce los segundos en la página, el historial sumaba +0,038 en el análisis post hoc del 18-11; el 22-11, con 5 particiones y la posición en ambos modelos, da +0,032 y queda inconcluso tras la corrección. Las cifras del gráfico son del 16 y 18-11. Ojo que el modelo sigue siendo débil: la AUC queda entre 0,55 y 0,58 según el análisis.
 
@@ -102,7 +102,7 @@ Por persona separé el EEG en componentes independientes y quité los más ligad
 
 ## 26. Una red sobre la señal cruda rinde más, y también depende de la huella ocular
 
-Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control. Tampoco puedo separar si la ventaja viene de la arquitectura o de la escala por persona que recibe la red.
+Probé un modelo más complejo: una red convolucional que aprende directo de la señal cruda. En atención le gana al modelo de referencia, 0,716 contra 0,681, por +0,035; pasa por poco el margen de 0,02, que es una propuesta mía sin aprobar. Pero al quitar los componentes oculares cae a 0,649, y su probabilidad sigue el recorrido de la mirada más que la del modelo de referencia. Su ventaja sobre el modelo de referencia se mantiene con el EEG limpio: +0,028. En activación queda en el azar (0,498 frente a 0,524; comparación inconclusa). Es una sola arquitectura sin búsqueda, y no entrené una red con el filtro de control. Tampoco puedo separar si la ventaja viene de la arquitectura o de la escala por persona que recibe la red. “Cruda” quiere decir sin variables calculadas: la señal está filtrada, escalada por persona y canal y recortada.
 
 ## 27. Por qué: el ojo genera señal eléctrica que llega a los electrodos
 
@@ -110,7 +110,7 @@ La explicación fisiológica. El ojo es un dipolo: córnea positiva, retina nega
 
 ## 28. Por qué puede costar detectar la activación desde el EEG
 
-La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta, y es posible que dependa de regiones profundas que el EEG de superficie ve poco; eso último no lo pude confirmar en la fuente. Ojo: esa latencia vale para la parte fásica, y mi etiqueta es en lo esencial el nivel tónico, que es más lento aún. Una ventana de EEG de 2 s no calza con un nivel que cambia tan lento. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos.
+La etiqueta de activación viene de la GSR, que mide glándulas sudoríparas bajo control simpático. Esa vía es lenta. Ojo: esa latencia vale para las respuestas individuales; mi etiqueta es en lo esencial la componente lenta de la GSR, que llamo nivel tónico e incluye la acumulación de esas respuestas, y es más lenta aún. Una ventana de EEG de 2 s no calza con un nivel que cambia tan lento. Esto es coherente con mi resultado temporal: en activación solo hay respaldo para el historial de los 6 s previos. Además no comprobé la calidad del EEG como registro cerebral, así que este resultado vale para este registro. De las 18 referencias, 8 las contrasté solo con el resumen.
 
 ## 29. Qué responde la tesis
 

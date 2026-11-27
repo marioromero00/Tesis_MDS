@@ -19,6 +19,7 @@ Rutas relativas al repositorio, salvo indicación explícita. Los resultados ant
 - resultados/activacion_gsr_v2_recalculo_02-11-2026/protocolo.json
 - resultados/ampliacion_41p_16-11-2026/INFORME.md
 - resultados/ampliacion_41p_16-11-2026/enmienda_e1_lag6/contrastes.csv
+- resultados/ampliacion_41p_16-11-2026/por_categoria.csv
 - resultados/cierre_final_41p_16-11-2026/INFORME.md
 - resultados/cierre_final_41p_16-11-2026/protocolo.json
 - resultados/cierre_robustez_41p_16-11-2026/INFORME.md
@@ -35,6 +36,7 @@ Rutas relativas al repositorio, salvo indicación explícita. Los resultados ant
 - resultados/limpieza_ocular_41p_23-11-2026/INFORME.md
 - resultados/modelado/particion_participantes.csv
 - resultados/montaje_ocular_41p_23-11-2026/INFORME.md
+- resultados/preprocesamiento/caracteristicas_multimodales.csv
 - resultados/profesor_binario_reconstruido_29-10-2026/INFORME.md
 - resultados/profesor_binario_reconstruido_29-10-2026/comparacion_profesores_modelos.csv
 - resultados/protocolo_hipotesis_reintento_06-11-2026/INFORME.md

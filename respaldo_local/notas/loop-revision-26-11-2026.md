@@ -91,7 +91,21 @@ Resultados de la ronda 5 (informes en `documentacion/auditoria_final_23-11-2026/
 - Nuevos opcionales NO corridos, listados en minuta y pendientes: historial desplazado menos placebo dentro de un mismo estímulo; evaluación dejando grupos fuera.
 - Respaldo de la ronda 5: commit `4202b16`, `HEAD` igual a `origin/main`.
 
-### Ronda 6 — 27-11, 01:40 a 02:30
+### Ronda 6 — 27-11, 01:40 a 01:52
 
 - **Verificación del diff de la ronda 5** (`ronda7/VERIFICACION_CORRECCIONES_R5.md`): 116 bloques de cambio; ningún hecho falso ni error bloqueante; 3 importantes y 13 menores, casi todos en el ensayo (una cifra no propagada, un recorte que afirmaba ausencia, "desigual entre personas" atribuido al contraste equivocado). Aplicados los 16 y cinco puntos sin propagar. Confirmado por el verificador: orden del registro del 16-11, qué iguala el placebo, cifras dentro del mismo estímulo, nulo de atención, sentido de "alta" en el *Attention Score*.
 - Precisión nueva: las pruebas de robustez del 16-11 también se registraron (12:47) después de ver el contraste principal de ese día (11:56), así que son dirigidas; el borrador, las conclusiones y el cierre lo dicen ahora.
+- Respaldo de la ronda 6: commit `1c915df`, `HEAD` igual a `origin/main`.
+
+### Ronda 7 — 27-11, 01:53
+
+Tercera lectura, como prueba de convergencia: un evaluador de neurociencia cognitiva y psicofisiología, que no ve los dos informes anteriores hasta cerrar su lista. Revisa la fisiología, los constructos, las interpretaciones alternativas, los datos de método que faltan y las preguntas de defensa de su área.
+
+Resultado de la ronda 7 (`ronda7/TERCERA_LECTURA_ESPECIALISTA.md`): en diseño y estadística, nada que los dos lectores anteriores no hubieran visto; la fisiología escrita es correcta y no excede a sus fuentes. Desde su área: 2 bloqueantes, 10 importantes, 11 menores. Verificados en CSV, scripts y documentación, y aplicados:
+
+- **"Navegación web" describe el contexto, no la mayoría de las ventanas:** los sitios web son 6.423 de las 22.176 ventanas de atención (29 %) y 5.457 de las 11.796 de activación (46 %). El resto: estímulos numerados, diseños, textos, imágenes `emotion` y `blur`, cuyo contenido no está documentado. Declarado en RD 6.3, SP, CO 9.5 y cierre; la minuta lo lista para revisar con el profesor (título e hipótesis no se tocaron).
+- **Calidad del EEG como registro no establecida:** sin referencia, tierra, electrodos ni impedancias documentados; sin re-referencia ni rechazo por amplitud; espectro nunca comprobado. La saturación mediana es 2,5 % en las 48 sesiones principales (el 27,9 % que citó el lector incluye 51 sesiones de prueba).
+- El movimiento no se analizó, pero hay acelerómetro y posición del mouse en los archivos; los parpadeos entran a la etiqueta de atención por pérdida de mirada; la limpieza no se dirigió al potencial de espiga sacádica y sus puntajes oculares son bajos (0,38 a 0,13); el "nivel tónico" es la componente bajo 0,05 Hz; lectura alternativa del historial en activación por la respuesta al cambio de estímulo; se suprimió el argumento de las regiones profundas (sin fuente).
+- **116 frente a 95 estímulos:** 116 son nombres distintos en la columna de estímulo; 95 sin el sufijo de repetición. Ninguna cuenta contenidos. La lámina 4 dice ahora "116 nombres de estímulo".
+- Datos de método que constaban en el repositorio y faltaban en el texto (programa y filtro del seguidor ocular, pantalla, canales, parpadeos, diámetro pupilar, Welch) agregados a Secciones pendientes.
+- Nada marcado "requiere fuente" entró a la prosa: quedó en notas de trabajo y en los pendientes 55 a 64. `ENSAYO.md` con 66 preguntas.
