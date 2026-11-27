@@ -66,9 +66,9 @@ Los datos son del proyecto Fondecyt 1231122. Sin estos documentos no se puede es
 | 15 | Consentimiento informado y aprobación del comité de ética. | MI, "Información que hay que pedir al proyecto" |
 | 16 | Reclutamiento, criterios de inclusión, edad y sexo. | MI, misma sección |
 | 17 | Protocolo de estímulos y criterio con que se armaron los cuatro grupos. Desde el 27-11 se pide además: contenido y propósito de los estímulos numerados y de las imágenes `emotion` y `blur`, tarea e instrucciones, duración de los estímulos y si las páginas se podían desplazar. | MI, misma sección; RD 6.3; SP 4.3 |
-| 18 | Documentación del montaje de los electrodos. Los datos son compatibles con el montaje por defecto, pero eso no reemplaza el documento. | MI, misma sección (agregado el 26-11); RD 7.8; SP 4.5.2; `repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md` |
+| 18 | Documentación del montaje de los electrodos. Los datos son compatibles con el montaje por defecto, pero eso no reemplaza el documento. | MI, misma sección (agregado el 26-11); RD 7.8; SP 4.7; `repos/Tesis_MDS/resultados/montaje_ocular_41p_23-11-2026/INFORME.md` |
 | 18b | Condiciones de registro que no constan (agregado el 27-11): referencia, tierra, tipo de electrodo e impedancias del EEG; modelo del seguidor ocular, tamaño de la pantalla y distancia de observación; equipo, sitio de registro y mano de la conductancia de la piel, y si esa mano usaba el mouse; iluminación y temperatura de la sala. | MI, misma sección; SP 4.6.1 y 4.7 |
-| 19 | Unidad física de la GSR, que la exportación no declara. | MI, misma sección (agregado el 26-11); SP 4.7 |
+| 19 | Unidad física de la GSR, que la exportación no declara. | MI, misma sección (agregado el 26-11); SP 4.5.2 y 4.6.3 |
 | 20 | Revisión del emparejamiento de P29. | SP 4.3 y 4.6.1 |
 
 ## E. Norma del programa
@@ -178,3 +178,10 @@ Estado después de las correcciones del 26-11 (ronda 4 del bucle).
 | Montaje de los electrodos | RD, SP y PRES lo dan por no documentado; MI no lo pedía al proyecto; `notas/resumen-ultimo-mes-22-11-2026.md` dice "resuelto en lo que permiten los datos". | Sigue faltando el documento (pendiente 18). MI ya lo pide. El resumen del mes conserva su frase: es un registro anterior a la auditoría y lleva aviso. |
 | Número de decisiones | PRES y ENS contaban cinco, más dos al pie; los demás, siete. | Siete. La nota de la portada y la lista de "lo que no se puede decir" del ensayo ya dicen siete; el índice dice "las decisiones abiertas". La lámina 33 sigue mostrando cinco preguntas y las otras dos al pie, y conserva su título ("Necesito decidir cinco cosas con usted"). El plan de tiempo y el guion de la lámina 33 en ENS siguen hablando de "cinco decisiones", por las cinco de esa lámina. |
 | Lectura del criterio de "apoyo parcial" | RD, SP, MI y LOOP la dan por abierta, dentro de la decisión 5; CO, CI, PRES y ENS no la mencionaban. | Abierta (pendiente 28). CI ya la menciona en la decisión 5. CO, PRES y ENS siguen sin mencionarla. |
+
+## L. Extensión del borrador de Resultados y Discusión (decisión del autor)
+
+El cuerpo de los capítulos 6 a 8 tiene unas 18.700 palabras (sin notas de trabajo ni fuentes). La verificación de la ronda 9 del bucle listó el material que podría pasar a anexos sin perder contenido, unas 6.900 palabras, con lo que el cuerpo quedaría cerca de 11.800. No se movió nada: decidir qué sale del cuerpo es del autor. La tabla completa, con sección y extensión de cada bloque, está en `repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda9/VERIFICACION_CONSOLIDACION.md`. Los bloques mayores: lista completa de limitaciones de 8.8 (1.340 palabras, dejando en el cuerpo las cinco principales), estabilidad entre grupos de 7.5 (520), términos y composición de los estímulos de 6.3 (430), tabla de etapas de 6.6 (410), montaje y sincronía de 7.8 (380) y diferencias entre personas de 7.11 (365).
+
+Dos puntos de redacción que también quedan para el autor: el orden de los límites en RD 8.4 (ya no se declara "en orden de importancia"), y que "evidencia acotada" tiene tres objetos distintos en RD 8.1 (la mejora proviene de la fisiología de las ventanas previas), RD 8.4 (no se explica solo por la persona) y CO 9.7 (el historial ayuda a predecir); la de 8.1 es la más fuerte.
+

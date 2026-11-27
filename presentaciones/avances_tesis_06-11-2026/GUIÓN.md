@@ -18,7 +18,7 @@ Los datos son de la Toma de Muestra 2 del Fondecyt 1231122, en laboratorio, en a
 
 ## 05. Unas señales arman la etiqueta y otras la predicen
 
-No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. En atención la etiqueta sale en la práctica de la mirada: en el Modelo Profesor con PCA la pupila pesa −0,05. En activación es, en lo esencial, el nivel tónico de la GSR. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
+No hay una etiqueta directa, así que la armo con unas señales y la predigo con las otras. En atención la etiqueta sale en la práctica de la mirada: en el Modelo Profesor con PCA la pupila pesa −0,05. “Alta” en el Attention Score es una mirada más quieta que lo habitual en esa persona: fijaciones más largas, menos dispersión y menos recorrido; no designa más atención en un sentido validado. En activación es, en lo esencial, el nivel tónico de la GSR. La mediana usa toda la sesión, así que esto no sirve tal cual en línea.
 
 ## 06. 48 personas registradas, 41 en el análisis
 
@@ -30,7 +30,7 @@ La tendencia es fusionar varias señales con modelos tipo Transformer. Lo más c
 
 ## 08. Lo que falta en la literatura y lo que intento aportar
 
-Las tres brechas salen de mi revisión. Cada una tiene su respuesta en el diseño. La comparación de fusión temprana, intermedia y tardía la muestro en resultados.
+Las tres brechas salen de mi revisión. Cada una tiene su respuesta en el diseño. Lo que queda como aporte al final es más acotado; va en la lámina 31. La comparación de fusión temprana, intermedia y tardía la muestro en resultados.
 
 ## 09. Sigo KDD, adaptado en cinco etapas
 
@@ -56,7 +56,7 @@ Esto fue lo que me hizo dudar. P4 casi no tenía señal y aun así todas sus ven
 
 Repitiendo el cálculo con el error obtengo los mismos puntajes que tenía guardados, así que las AUC de activación de antes no sirven. El 25.992 es el archivo completo, incluidas personas fuera del análisis.
 
-## 15. “Alta” es estar sobre su propia mediana de activación: así se ve en P22
+## 15. “Alta” es estar sobre la mediana del propio puntaje de GSR: así se ve en P22
 
 Este es un tramo real de P22. La línea es el puntaje GSR de seis segundos y la punteada, su mediana en toda la sesión. Los puntos azules quedan como “alta” y los grises como “baja”. La etiqueta dice si el puntaje de GSR de P22 está sobre su mediana de la sesión en ese momento; no es una medida validada de activación.
 
@@ -80,7 +80,7 @@ Con la misma familia de modelo, en atención la fusión tardía le gana a la tem
 
 En atención la AUC sube a lo largo de la sesión. Por tipo de página, funciona mejor en sitios web y peor en textos. En activación, la proporción de ventanas altas cae al final, compatible con habituación y también con una deriva lenta de la señal o con el orden de las páginas. La línea gris es la AUC de activación por quinto; es descriptiva y con 34 a 41 personas por punto. Todo esto es descriptivo.
 
-## 21. ¿De dónde viene la mejora?
+## 21. En atención, un placebo da la misma mejora; en activación, no
 
 Comparé el historial real con un placebo y con una sola variable: los segundos que lleva la persona en la página. En atención, el placebo y los segundos solos dan lo mismo que el historial real. En activación, al comparar entre todas las ventanas, el placebo y los segundos no aportan, y el historial sí, incluso sin las ventanas de 6 s que promedia la etiqueta. Ojo: el placebo viene de otras páginas, y dentro de una misma página los segundos sí aportan y no demostré que el historial los supere.
 
@@ -94,7 +94,7 @@ Excluí del historial las ventanas de 6 s que promedia la etiqueta. Ojo: el filt
 
 ## 24. Los parpadeos y los movimientos de los ojos se ven en el EEG
 
-La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo pega 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además es compatible con el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.
+La etiqueta de atención se arma con la mirada y la predigo con EEG. Antes de interpretar eso revisé cuánto de los ojos se cuela en el EEG. El parpadeo llega a unos 150 µV en los dos canales de la frente y baja hasta unos 20 atrás. Ese patrón además es compatible con el montaje por defecto, que no estaba documentado. Otro hallazgo: el EEG va entre 0,18 y 0,53 s atrasado respecto del seguidor ocular; no lo corregí.
 
 ## 25. Al quitar los componentes oculares, la detección de atención cae
 
@@ -118,7 +118,7 @@ La respuesta corta: hay evidencia acotada de que el historial reciente ayuda a p
 
 ## 30. Conclusiones provisorias: apoyo parcial
 
-Son las conclusiones del borrador del capítulo 9. Con el encuadre provisorio, que es una de las decisiones abiertas, la hipótesis se apoya en parte, y solo por activación. El efecto se sostiene frente al placebo, que viene de otras páginas, pero es pequeño, desigual entre personas (en el contraste con y sin historial mejoran 23 de 41) y con respaldo solo para los 6 s previos: a 12 s es inconcluso (+0,024). En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11, después de ver que el historial completo le ganaba al placebo; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
+Son las conclusiones del borrador del capítulo 9. Con el encuadre provisorio, que es una de las decisiones abiertas, la hipótesis se apoya en parte, y solo por activación. Ojo: “apoyo parcial” es una de tres lecturas. Con el diseño original no había evidencia; con el segundo diseño y el criterio escrito al pie de la letra, la ventaja aparece en las dos variables; yo pido además que venga de las ventanas previas, y esa exigencia no está en el criterio escrito. Cuál corresponde es parte de la decisión 5. El efecto se sostiene frente al placebo, que viene de otras páginas, pero es pequeño, desigual entre personas (en el contraste con y sin historial mejoran 23 de 41) y con respaldo solo para los 6 s previos: a 12 s es inconcluso (+0,024). En atención, lo que parecía temporal era la posición dentro de la página. Al controlar la posición, el efecto de activación conserva su tamaño (+0,032) pero queda inconcluso. El +0,046 de esta lámina, de la 23 y de la 29 es el contraste registrado el 16-11, después de ver que el historial completo le ganaba al placebo; la curva del 22-11 da +0,047 a 6 s (una partición, 40 personas). Con las particiones originales no había una ventaja consistente, y lo que tiene apoyo es un resumen del historial, no un modelo secuencial ni la combinación de señales.
 
 ## 31. Conclusiones: qué detecta el EEG
 

@@ -289,7 +289,7 @@ def apply(slides):
        ('Solo segundos en la página',*row(pos,task,'contrast','pos_c1 − hgb_c1'),ORANGE if False else DARK),
        ('Historial sin las ventanas de 6 s\nque promedia la etiqueta',*row(lag6,task,'contrast','lag6_real − hgb_c1'),LIGHT)]
   for j,(l_,d_,lo,hi,col) in enumerate(its):
-   ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(d_,j-.3,c(d_,3,True),ha='center',fontsize=12)
+   ax.errorbar(d_,j,xerr=[[d_-lo],[hi-d_]],fmt='o',color=col,capsize=5,ms=9,lw=2);ax.text(d_,j-.3,c(d_,3,True),ha='center',fontsize=12,bbox=dict(facecolor='white',edgecolor='none',pad=1.5))
   ax.axvline(0,color=ORANGE,ls='--',lw=1.2);ax.set(title=lab,yticks=range(4),yticklabels=[i[0] for i in its],ylim=(3.6,-.7));ax.grid(axis='x');comma_axis(ax,'x',2)
  axes[1].tick_params(labelleft=False);fig_=f;f.supxlabel('Mejora de AUC frente al modelo sin historial (41 personas)',fontsize=12);save(f,'origen_mejora')
  # C) Etiqueta según segundos en la página
@@ -304,7 +304,7 @@ def apply(slides):
  # D) Activación: real vs placebo sin solapamiento
  f,ax=fig(11,3.2);its=[]
  for task,lab in [('activacion','Activación'),('atencion','Atención')]:
-  its.append((f'{lab} · historial real − placebo',*row(lag6,task,'contrast','lag6_real − lag6_placebo'),BLUE if task=='activacion' else GRAY))
+  its.append((f'{lab} · historial desplazado − placebo',*row(lag6,task,'contrast','lag6_real − lag6_placebo'),BLUE if task=='activacion' else GRAY))
  its.append(('Activación · historial − solo segundos en la página',*row(pos,'activacion','contrast','hgb_c32 − pos_c1'),LIGHT))
  its.append(('Atención · historial − solo segundos en la página',*row(pos,'atencion','contrast','hgb_c32 − pos_c1'),GRAY))
  for j,(l_,d_,lo,hi,col) in enumerate(its):

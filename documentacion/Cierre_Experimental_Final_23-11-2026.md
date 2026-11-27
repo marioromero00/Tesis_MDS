@@ -168,7 +168,7 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 - Lo que se llama nivel tónico es la componente lenta de la GSR, que incluye la acumulación de las respuestas; el conteo de respuestas no se validó.
 - Los componentes "oculares" lo son por orden y con puntajes bajos, y la limpieza no se dirigió al potencial de espiga sacádica. Los parpadeos pueden entrar en la etiqueta de atención por la pérdida de mirada.
 - El movimiento no se analizó: el acelerómetro del equipo de EEG y la posición del mouse están en los archivos y no se usaron.
-- El detalle de cada uno de estos límites está en el borrador de Resultados y Discusión (secciones 6.1, 6.2, 6.3, 6.4, 6.6, 7.1, 7.7, 7.9, 7.11, 8.3.3 y 8.4) y, para los de registro y preprocesamiento, en el de Secciones pendientes (secciones 4.6.1, 4.6.3, 4.6.4 y 4.7).
+- El detalle de cada uno de estos límites está en el borrador de Resultados y Discusión (secciones 6.1, 6.2, 6.3, 6.4, 6.6, 7.1, 7.5, 7.7, 7.9, 7.10, 7.11, 8.3.3, 8.4 y 8.8) y, para los de registro y preprocesamiento, en el de Secciones pendientes (secciones 4.6.1, 4.6.3, 4.6.4 y 4.7).
 - En activación las AUC absolutas son bajas (0,50 a 0,59).
 
 ## Queda abierto (no es experimentación)

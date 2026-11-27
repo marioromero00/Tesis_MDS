@@ -116,3 +116,18 @@ Resultado de la ronda 7 (`ronda7/TERCERA_LECTURA_ESPECIALISTA.md`): en diseño y
 - **Verificación del diff de la ronda 7** (`ronda8/VERIFICACION_CORRECCIONES_R7.md`): 96 afirmaciones nuevas comprobadas en su fuente, 84 exactas; 0 bloqueantes, 2 importantes, 12 menores, ninguna cambia una cifra de resultado. Aplicadas las 14 y dos puntos sin propagar. Nada marcado "requiere fuente" está en la prosa.
 - **Consolidación de los borradores** (copia previa en `ronda8/pre_consolidacion/`, comprobación en `ronda8/comprobar_consolidacion.py`): cada límite con sus cifras en un solo lugar; RD 8.4 en tres bloques (qué se observó, qué lo limita, qué lecturas alternativas no se separaron); RD 8.3.3 con seis candidatos numerados; tabla "Composición de los estímulos" en RD 6.3; lista de lo que no consta en SP 4.6.1. Cifras faltantes: 0; citas y notas de trabajo: todas. No se renumeró ninguna sección.
 - El borrador de Resultados y Discusión no se acortó (22.301 palabras): la consolidación ordena, pero cada cifra y salvedad sigue presente. Acortarlo de verdad exige decidir qué sale del cuerpo, y eso es del autor.
+- Respaldo de la ronda 8: commit `d8e1f1e`, `HEAD` igual a `origin/main`.
+
+### Ronda 9 — 27-11, 02:42
+
+Dos revisiones, sin tocar archivos:
+
+1. **Verificación de fondo de la consolidación:** cifra en contexto en cada pasaje reescrito, remisiones cuyo destino contenga lo que prometen, salvedades con la misma fuerza, lectura de corrido del borrador de Resultados y Discusión, y lista de material candidato a anexos (decisión del autor).
+2. **Revisión final de la presentación y del ensayo:** las 39 láminas a tamaño completo, relato de principio a fin frente al cierre y las conclusiones, si las láminas todavía dejan claro qué sí se encontró, y contradicciones, duplicados e índice temático de las 66 preguntas.
+
+Pausa por límite de uso entre las 03:00 y las 06:10 del 27-11; las dos revisiones se reanudaron desde donde iban.
+
+Resultados de la ronda 9 (informes en `documentacion/auditoria_final_23-11-2026/ronda9/`):
+
+- **Verificación de la consolidación** (`VERIFICACION_CONSOLIDACION.md`): ninguna cifra ni salvedad perdida, ninguna cifra cambiada de contexto, ninguna remisión rota (229 revisadas). 0 bloqueantes, 2 importantes, 15 menores, aplicados. Los importantes eran agregados de la consolidación: "en orden de importancia" en los límites de RD 8.4 (priorización que es del autor; se quitó) y una cláusula marcada "requiere fuente" que había entrado a RD 8.2 (se sacó). Lista de candidatos a anexos (unas 6.900 de las 18.700 palabras del cuerpo) anotada en la sección L de los pendientes; no se movió nada.
+- **Revisión final de la presentación y del ensayo** (`REVISION_FINAL_PRESENTACION.md`): 39 láminas sin texto cortado y con cifras que calzan; 0 bloqueantes, 12 importantes, 21 menores; 6 contradicciones entre respuestas del ensayo y 9 grupos de preguntas duplicadas. Aplicado todo salvo tres menores que el informe da por aceptables y uno que exige información externa. El ensayo tiene ahora guion hablado para la versión de 10 minutos (600 s, 17 láminas, máximo 150 palabras por minuto), índice temático de las 66 preguntas, lista de diez para ensayar primero y el historial de cambios al final. Rótulo de la lámina 23 corregido a "historial desplazado − placebo"; el cambio de diseño tras el cierre V3 pasó al pie visible de la lámina 18. 16 láminas revisadas a tamaño completo.
