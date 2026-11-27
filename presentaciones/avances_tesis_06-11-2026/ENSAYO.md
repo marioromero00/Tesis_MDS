@@ -24,7 +24,7 @@ Escrito el 23-11-2026 para la versión 7 de la presentación (39 láminas: 33 pr
 - Tres lecturas que la segunda lectura crítica (27-11) pidió moderar:
   - "Registrado antes de correr", sin más, para el +0,046. Su protocolo se fijó antes de sus predicciones, pero después de ver, el mismo día y en las mismas personas, que el historial completo le ganaba al placebo (+0,038): es un análisis dirigido, no una segunda evidencia.
   - "El placebo controla todo menos el tiempo". Iguala la persona y el largo del historial; viene de otras páginas y de cualquier momento de la sesión. Dentro de una misma página los segundos transcurridos aportan y no demostré que el historial los supere.
-  - "La GSR tarda segundos y por eso no calza con el EEG", sin más. La latencia vale para la parte fásica; la etiqueta es en lo esencial el nivel tónico, más lento.
+  - "La GSR tarda segundos y por eso no calza con el EEG", sin más. La latencia vale para las respuestas individuales; la etiqueta es en lo esencial la componente lenta, que llamo nivel tónico e incluye la acumulación de esas respuestas.
 - Cinco lecturas que la tercera lectura (27-11, especialista en psicofisiología) pidió corregir:
   - "No medí movimiento". Los archivos del EEG traen tres canales de acelerómetro y Tobii registra la posición del mouse: no los usé ni comprobé qué contienen. Lo correcto es "no analicé el movimiento".
   - "Navegación web", sin más. Los sitios web son 6.423 de las 22.176 ventanas con etiqueta de atención, menos de un tercio; el resto son textos, diseños, estímulos numerados e imágenes cuyo contenido no tengo documentado.
@@ -162,7 +162,7 @@ Subtotales: láminas 1 a 11, 145 s; 14 y 17, 50 s; 18 y 21 a 23, 155 s; 24 a 26,
 
 **Lámina 3 · La hipótesis (40 s).** Esta es la hipótesis tal como está en el manuscrito: que los modelos temporales multimodales rinden mejor fuera de muestra que los estáticos comparables. Para probarla comparo siempre el mismo modelo, con la misma etiqueta, y lo único que cambio es si ve las ventanas anteriores, hasta 32; más adelante se ve que con eso el modelo también se entera de cuánto lleva la persona en la página. La hipótesis dice emociones, pero con GSR lo que mido es activación; esa es una de las preguntas del final.
 
-**Lámina 4 · Los datos (35 s).** Los datos son de la Toma de Muestra 2 del Fondecyt, en laboratorio, de agosto de 2025. El Tobii registra mirada, pupila y GSR en un mismo archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los sincronicé por persona y hora, en ventanas de 2 segundos que avanzan de a 1. No hay expresión facial ni documentación del montaje. Y ojo: los sitios web son menos de un tercio de las ventanas de atención; el resto son textos, diseños e imágenes.
+**Lámina 4 · Los datos (35 s).** Los datos son de la Toma de Muestra 2 del Fondecyt, en laboratorio, de agosto de 2025. El Tobii registra mirada, pupila y GSR en un archivo; el EEG viene aparte, de un OpenBCI de 16 canales a 125 Hz. Los sincronicé por persona y hora, en ventanas de 2 segundos con paso de 1. No hay expresión facial ni documentación del montaje. Ojo: los sitios web son menos de un tercio de las ventanas de atención; el resto son estímulos numerados, diseños, textos e imágenes.
 
 **Lámina 5 · Unas señales arman la etiqueta y otras la predicen (50 s).** No tengo una etiqueta directa, así que la construyo. El Modelo Profesor arma la etiqueta con unas señales y el Modelo Estudiante la predice con otras. En atención, el Attention Score sale de la mirada y la pupila, y lo predigo con EEG y GSR. En activación, el Arousal Score sale de la GSR, y lo predigo con EEG, mirada y pupila. "Alta" significa sobre la mediana de esa persona en su sesión completa, así que esto no sirve tal cual en línea. Dos precisiones: en el Attention Score la pupila casi no pesa, así que en la práctica es conducta de mirada; y el Arousal Score es, en lo esencial, el nivel tónico de la GSR.
 
@@ -520,11 +520,11 @@ Lo trae: tres canales en cada archivo de EEG. No los usé ni comprobé su conten
 Fuente: `Analisis de Datos/DOCUMENTACION_DATOS_MDS.md` (vault), sección 3.2.
 
 **57. ¿Con qué criterio llamó "ocular" a un componente? ¿Qué correlación tenían?**
-Por orden, no por umbral: los tres de mayor correlación con la mirada o los parpadeos, entre 1 y 15 Hz. Las medianas son 0,38, 0,23 y 0,17; en el control, 0,06 como máximo. Son correlaciones bajas, y el tercero puede no ser ocular. El número, tres, estaba fijado de antemano (pregunta 11).
+Por orden, no por umbral: los tres de mayor correlación con la mirada o los parpadeos, entre 1 y 15 Hz. Las medianas son 0,38, 0,23 y 0,17; en el control, la mediana del puntaje más alto es 0,06. Son correlaciones bajas, y el tercero puede no ser ocular. El número, tres, estaba fijado de antemano (pregunta 11).
 Fuentes: `scripts/limpieza_ocular_41p.py`; `resultados/limpieza_ocular_41p_23-11-2026/INFORME.md`.
 
 **58. Con ese criterio, ¿cómo habría detectado el potencial de espiga sacádica?**
-No lo habría detectado: ocupa aproximadamente de 20 a 90 Hz (Keren y colegas, 2010) y mi puntaje llega a 15 Hz, con un seguidor ocular de 60 Hz. La limpieza no se dirigió a esa fuente. Es una razón más para leer la caída de 0,060 como cota inferior de la contribución ocular.
+No lo habría detectado: ocupa aproximadamente de 20 a 90 Hz (Keren y colegas, 2010) y mi puntaje llega a 15 Hz, con un seguidor ocular de 60 Hz. La limpieza no se dirigió a esa fuente. Es una razón más para leer la caída de 0,060 como cota inferior de la contribución ocular (preguntas 11 y 57).
 
 **59. Los parpadeos, ¿entran en su etiqueta?**
 Pueden entrar. No interpolo las pérdidas de mirada, así que un parpadeo puede acortar o dividir las fijaciones de la ventana, que son dos de las variables de la etiqueta; y el parpadeo es la mayor deflexión que medí en el EEG, unos 150 µV adelante. No medí cuánto pesa esa vía.
