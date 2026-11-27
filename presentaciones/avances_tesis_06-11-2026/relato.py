@@ -224,7 +224,7 @@ def apply(old):
    '<div class="timeline3"><div><b>Experimentos</b><span>Ninguno imprescindible</span><p>No espero que más corridas sobre estas 41 personas cambien las conclusiones; ya se habían consultado todas.</p></div>'
    '<div><b>Decisiones</b><span>Con el profesor guía</span><p>Cohorte nueva o no, el margen de 0,02, activación en vez de emociones, qué etiqueta de atención usar y el encuadre.</p></div>'
    '<div><b>Cierre</b><span>Sin experimentos nuevos</span><p>Revisar el borrador integrado del 23-11 y ajustar las conclusiones según lo que se decida.</p></div></div>'
-   +caption('Opcionales, solo si se piden: red con filtro de control, corregir el desfase entre EEG y seguidor ocular, una sensibilidad con 7 hojas o selección anidada, y una cohorte nueva para confirmar.'),
+   +caption('Opcionales, solo si se piden: una cohorte nueva para confirmar, una sensibilidad con 7 hojas o selección anidada, y otros cuatro que están en la minuta.'),
    'Mi propuesta es cerrar aquí. Lo que falta son decisiones y escritura. Sobre la etiqueta: el 22 de noviembre probé una etiqueta de atención corregida por la posición en la página, y hay que decidir si reemplaza a la original. De los opcionales, el único que cambiaría el estatus de los resultados es la cohorte nueva.',
    'documentacion/Cierre_Experimental_Final_23-11-2026.md; '+LIM+'; '+RED)
  S(D6,'Necesito decidir cinco cosas con usted',

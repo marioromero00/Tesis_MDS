@@ -1,6 +1,6 @@
 # Pendientes para cerrar la tesis — lista única (26-11-2026)
 
-**Qué es.** La lista de todo lo que sigue abierto, reunida en un solo lugar a partir de los documentos vigentes. No agrega pendientes nuevos ni resuelve ninguno: dice qué falta y en qué documento está el detalle.
+**Qué es.** La lista de todo lo que sigue abierto, reunida en un solo lugar a partir de los documentos vigentes. No resuelve ninguno: dice qué falta y en qué documento está el detalle. La sección J, agregada el 27-11-2026, reúne los pendientes que salieron de la segunda lectura crítica.
 
 **Cuándo se armó.** El 26-11-2026, durante el bucle de revisión (`notas/loop-revision-26-11-2026.md`), a partir de la auditoría de coherencia entre documentos (`repos/Tesis_MDS/documentacion/auditoria_final_23-11-2026/ronda5/COHERENCIA_FINAL.md`, sección 6) y con el estado de los documentos después de aplicar sus correcciones.
 

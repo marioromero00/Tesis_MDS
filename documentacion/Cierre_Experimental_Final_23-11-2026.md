@@ -138,7 +138,7 @@ Los `INFORME.md` de cada etapa no se modificaron: conservan su redacción origin
 
 ## Límites que deben ir en la tesis
 
-- Las 41 personas incluyen las de validación y test consultadas en etapas anteriores. Todo lo posterior al 16-11 es exploratorio o dirigido; nada es una confirmación independiente en una cohorte nueva.
+- Las 41 personas incluyen las de validación y test consultadas en etapas anteriores. Todo lo hecho desde el 16-11, incluidas la robustez y la ampliación de ese día, es exploratorio o dirigido; nada es una confirmación independiente en una cohorte nueva.
 - Las etiquetas son pseudoetiquetas calculadas offline y relativas a la sesión de cada persona; no validan una medida externa de atención ni de activación.
 - La etiqueta de atención se define con la conducta ocular, y el EEG contiene la huella eléctrica de esa conducta. La regla de no-circularidad entre señales no asegura independencia fisiológica. Con estos datos no se puede afirmar detección cerebral de atención.
 - La limpieza ocular es parcial; 0,060 se lee como cota inferior de la contribución ocular. Es la lectura más defendible y no una demostración: los componentes se eligen con la mirada, que también define la etiqueta, el control no está igualado en esa relación y tres componentes arrastran actividad frontal no ocular.

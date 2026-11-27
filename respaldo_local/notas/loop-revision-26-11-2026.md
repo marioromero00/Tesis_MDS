@@ -83,9 +83,15 @@ Resultados de la ronda 5 (informes en `documentacion/auditoria_final_23-11-2026/
 
 - **Recálculo de descriptivos** (`RECALCULO_DESCRIPTIVOS.md`, con script y registro): 928 valores; 884 coinciden, 19 coinciden con redondeo, 5 difieren y ninguno cambia una decisión ni una lectura. Montaje y calidad de la limpieza recalculados desde los crudos para las 41 personas; etiquetas GSR V2, de atención y corregida reconstruidas e idénticas a las guardadas; pesos del *Modelo Profesor* con PCA reproducidos. Correcciones en documentos vigentes: el límite de R1 sin dos personas es "en torno a 0,020" (depende de la semilla), y los dos grupos de desfase son 0,28 y 0,48 s. Siguen sin verificar, porque exigen entrenar o reajustar: importancias por permutación, selección de componentes de la ICA, AUC por fold de la búsqueda de hojas.
 - **Segunda lectura de comisión** (`SEGUNDA_LECTURA_COMITE.md`): 2 bloqueantes nuevas, 9 importantes, 8 menores. Verificadas en git, scripts y CSV, y aplicadas:
-  - El contraste del historial desplazado frente al placebo se registró a las 14:21 del 16-11, después de que el análisis de robustez (13:25) mostrara que el historial completo superaba al placebo en las mismas personas y particiones: es un refinamiento dirigido, no evidencia independiente.
+  - El contraste del historial desplazado frente al placebo se registró a las 14:21 del 16-11, después de que el análisis de robustez (13:25) mostrara que el historial completo superaba al placebo en las mismas personas y la misma partición: es un refinamiento dirigido, no evidencia independiente.
   - El placebo iguala la persona y el largo del historial, pero no el estímulo ni la cercanía en la sesión, y sus ventanas pueden ser posteriores.
   - Resultados firmes que el texto no aprovechaba: el nulo de atención con posición no depende del margen (IC 95 % [−0,002; +0,005]) y la detección de atención es la misma dentro de un mismo estímulo (0,684).
   - "Alta" en el *Attention Score* es mirada más quieta: dispersión y recorrido entran invertidos (`DIRECTIONS = [1, 1, −1, −1, 1]`). La propuesta del lector decía lo contrario y no se aplicó; se restituyó lo que consta en el código.
 - `ENSAYO.md` con 49 preguntas; lámina 30 titulada "Conclusiones provisorias: apoyo parcial".
 - Nuevos opcionales NO corridos, listados en minuta y pendientes: historial desplazado menos placebo dentro de un mismo estímulo; evaluación dejando grupos fuera.
+- Respaldo de la ronda 5: commit `4202b16`, `HEAD` igual a `origin/main`.
+
+### Ronda 6 — 27-11, 01:40 a 02:30
+
+- **Verificación del diff de la ronda 5** (`ronda7/VERIFICACION_CORRECCIONES_R5.md`): 116 bloques de cambio; ningún hecho falso ni error bloqueante; 3 importantes y 13 menores, casi todos en el ensayo (una cifra no propagada, un recorte que afirmaba ausencia, "desigual entre personas" atribuido al contraste equivocado). Aplicados los 16 y cinco puntos sin propagar. Confirmado por el verificador: orden del registro del 16-11, qué iguala el placebo, cifras dentro del mismo estímulo, nulo de atención, sentido de "alta" en el *Attention Score*.
+- Precisión nueva: las pruebas de robustez del 16-11 también se registraron (12:47) después de ver el contraste principal de ese día (11:56), así que son dirigidas; el borrador, las conclusiones y el cierre lo dicen ahora.
